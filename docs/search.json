@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Date\nLes-son\nTopic\nVideo\nTB 1\nTB 2\nSlides HTML\nSlides PDF\nPractice\n\n\n\n\n\n0\nWelcome\n\n\n\n\n\n\n\n\n06/22\n1\nIntroduction to the Introduction\n\nIntro\n\n\n\n\n\n\n06/24\n2\nDownloading R and RStudio\n\n\n3.4\n\n\n\n\n\n06/29\n3\nWorkflow: Basics\n\n2.1-2.3\n\n\n\n\n\n\n07/01\n4\nFunctions\n\n2.4\n3.6\n\n\n\n\n\n07/06\n5\nPackages\n\n\n3.7\n\n\n\n\n\n07/08\n6\nScripts\n\n6.1\n3.8\n\n\n\n\n\n07/13\n7\nR projects and working directories\n\n6.2\n6\n\n\n\n\n\n07/15\n8\nObjects\n\n\n3.10\n\n\n\n\n\n07/20\n9\nPiping\n\n3.4\n8.1\n\n\n\n\n\n07/22\n10\nKey operators and functions\n\n\n8.2\n\n\n\n\n\n07/27\n11\nTidy data\n\n5.2\n4.1\n\n\n\n\n\n07/29\n12\nImport and Export\n\n7\n7\n\n\n\n\n\n08/03\n13\nWorkflow: code style\n\n4\n\n\n\n\n\n\n08/05\n14\nWorkflow: getting help\n\n8\n\n\n\n\n\n\n08/12\n15\nData transformation: basics\n\n3.1\n\n\n\n\n\n\n08/19\n16\nData transformation: rows\n\n3.2\n\n\n\n\n\n\n08/24\n17\nData transformation: columns\n\n3.3\n\n\n\n\n\n\n08/26\n18\nData transformation: groups\n\n3.5\n\n\n\n\n\n\n\n19\nDescriptive tables\n\n\n17\n\n\n\n\n\n08/31\n20\nLengthening data\n\n5.3\n\n\n\n\n\n\n\n21\nWidening data\n\n5.4\n\n\n\n\n\n\n\n22\nData visualization: intro to ggplot\n\n1.1-1.2\n\n\n\n\n\n\n\n23\nData visualization: ggplot2 calls\n\n1.3\n\n\n\n\n\n\n\n24\nData visualization: distributions\n\n1.4\n\n\n\n\n\n\n\n25\nData visualization: relationships\n\n1.5"
+  }
+]
