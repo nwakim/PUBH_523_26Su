@@ -12,7 +12,7 @@ format:
 ```{css, echo=FALSE}
 .title{
   font-size: 30px;
-  color: #5B9BD5;
+  color: #3070BF;
   background-color: #fff;
   padding: 0px;
 }
@@ -52,8 +52,8 @@ library(here)
 source(here("class_dates.R"))
 ```
 
-| Date | Les-son | Topic | Video | [TB 1](https://r4ds.hadley.nz/) | [TB 2](https://epirhandbook.com/en/) | Slides HTML | Slides PDF | Practice |
-|:--:|:--:|:---|:--:|:--:|----|:--:|:--:|:--:|
+| Suggested Date | Les-son | Topic | Video | [TB 1](https://r4ds.hadley.nz/) | [TB 2](https://epirhandbook.com/en/) | Slides HTML | Slides PDF | Practice |
+|:------:|:------:|:-------|:------:|:------:|--------|:------:|:------:|:------:|
 |  | 0 | Welcome |  |  |  |  |  |  |
 | `{r} w1d1 %>% format("%m/%d")` | 1 | Introduction to the Introduction | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [Intro](https://r4ds.hadley.nz/intro.html) |  | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
 | `{r} w1d2 %>% format("%m/%d")` | 2 | Downloading R and RStudio | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |  | [3.4](https://epirhandbook.com/en/new_pages/basics.html#installation) | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>Introduction to R</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,32 +26,115 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="index_files/libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-702b68d2bb46f0b77d76c36fa481b3ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
 
 </head>
 
-<body class="quarto-light">
+<body class="nav-fixed quarto-light">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-sm " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/PUBH523.png" alt="" class="navbar-logo light-content">
+    <img src="./images/PUBH523.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Introduction to R</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./syllabus.qmd"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./instructors.qmd"> 
+<span class="menu-text">Instructors</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./homeworks.qmd"> 
+<span class="menu-text">Homework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project.qmd"> 
+<span class="menu-text">Project</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<main class="content column-page" id="quarto-document-content">
 
 
 
-
-<div style="background-color: #C2352F">
+<div style="background-color: #3070BF">
 <div style="color: #FFFFFF">
 <div class="grid">
 <div class="g-col-4">
@@ -61,12 +144,13 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </div>
-<section id="bsta-513613-categorical-data-analysis" class="level1 g-col-7">
-<h1>BSTA 513/613: Categorical Data Analysis</h1>
-<section id="spring-2026" class="level3">
-<h3 class="anchored" data-anchor-id="spring-2026">Spring 2026</h3>
+<section id="pubh-523-introduction-to-r" class="level1 g-col-7">
+<h1>PUBH 523: Introduction to R</h1>
+<section id="summer-2026" class="level3">
+<h3 class="anchored" data-anchor-id="summer-2026">Summer 2026</h3>
 <p>&nbsp;</p>
-<p>Welcome to BSTA 513/613! In this course, we will continue to learn about regression analysis, but not with categorical outcomes. We will build some theoretical understanding in order to interpret and apply logistic regression models appropriately. We will learn how to build a logistic regression model, interpret the model and coefficients, and diagnose potential issues with our model. &nbsp;</p>
+<p>This course provides an introduction to programming in R in public health, medicine, and related fields. Students will gain basic proficiency with the R environment and toolkit, focusing on reproducible workflows, data manipulation, visualization, and reporting. Topics include basic R programming, working in project-based folders, data transformations and summaries, data visualizations and plots, generating dynamic reports, and constructing summary tables. By the end of the course, students will be comfortable initiating data exploration projects in R and will be prepared to apply these skills in further analysis courses. No prior statistical or coding experience is expected or required.</p>
+<p>&nbsp;</p>
 </section>
 </section>
 </div>
@@ -77,44 +161,34 @@ ul.task-list li input[type="checkbox"] {
 <div class="columns">
 <div class="column" style="width:2%;">
 
-</div><div class="column" style="width:16%;">
+</div><div class="column" style="width:23%;">
 <section id="links" class="level3">
 <h3 class="anchored" data-anchor-id="links">Links</h3>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="material-symbols:folder" style="font-size: 24px;"></iconify-icon></span> <a href="https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_513_26S/Student_files_BSTA_513?csf=1&amp;web=1&amp;e=Q8KOMt">OneDrive Folder</a></p>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="mdi:video" style="font-size: 28px;"></iconify-icon></span><a href="https://echo360.org/section/87bbad0a-58f2-4758-a290-b95378fbbab4/home">Echo 360</a></p>
+<p><span style="color:#3070BF;"><iconify-icon inline="" icon="material-symbols:folder" style="font-size: 24px;"></iconify-icon></span> <a href="https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_513_26S/Student_files_BSTA_513?csf=1&amp;web=1&amp;e=Q8KOMt">OneDrive Folder</a></p>
+<p><span style="color:#3070BF;"><iconify-icon inline="" icon="mdi:video" style="font-size: 28px;"></iconify-icon></span><a href="https://echo360.org/section/87bbad0a-58f2-4758-a290-b95378fbbab4/home">Echo 360</a></p>
 </section>
-</div><div class="column" style="width:17%;">
+</div><div class="column" style="width:25%;">
 <section id="instructor" class="level3">
 <h3 class="anchored" data-anchor-id="instructor">Instructor</h3>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="fluent:person-24-filled" style="font-size: 24px;"></iconify-icon></span> <a href="instructors.qmd">Dr.&nbsp;Nicky Wakim</a></p>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="bi:building-fill" style="font-size: 24px;"></iconify-icon></span> Vanport 622A</p>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="tabler:mail-filled" style="font-size: 24px;"></iconify-icon></span> <a href="mailto:wakim@ohsu.edu">wakim@ohsu.edu</a></p>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="icon-park-solid:time" style="font-size: 24px;"></iconify-icon></span> W 3-4pm</p>
+<p><span style="color:#3070BF;"><iconify-icon inline="" icon="fluent:person-24-filled" style="font-size: 24px;"></iconify-icon></span> <a href="instructors.qmd">Dr.&nbsp;Nicky Wakim</a></p>
+<p><span style="color:#3070BF;"><iconify-icon inline="" icon="bi:building-fill" style="font-size: 24px;"></iconify-icon></span> Vanport 622A</p>
+<p><span style="color:#3070BF;"><iconify-icon inline="" icon="tabler:mail-filled" style="font-size: 24px;"></iconify-icon></span> <a href="mailto:wakim@ohsu.edu">wakim@ohsu.edu</a></p>
+<p><span style="color:#3070BF;"><iconify-icon inline="" icon="icon-park-solid:time" style="font-size: 24px;"></iconify-icon></span> W 3-4pm</p>
 </section>
-</div><div class="column" style="width:22%;">
+</div><div class="column" style="width:25%;">
 <section id="office-hours" class="level3">
 <h3 class="anchored" data-anchor-id="office-hours">Office Hours</h3>
 <div class="columns">
 <div class="column" style="width:30%;">
-<p><a href="https://ohsu.webex.com/meet/akula">Sheetal</a></p>
-<p><a href="https://pdx.zoom.us/j/88514661813">Kelsey</a></p>
-<p><a href="https://ohsu.webex.com/ohsu/j.php?MTID=mdbce9989431762f801161e75dd8f444f">Sophia</a></p>
+<p><a href="">Nicky</a></p>
+<p><a href="https://ohsu.webex.com/meet/akula">TA?</a></p>
 </div><div class="column" style="width:70%;">
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="icon-park-solid:time" style="font-size: 24px;"></iconify-icon></span> F 12-1pm</p>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="icon-park-solid:time" style="font-size: 24px;"></iconify-icon></span> Th 3:30-4:30pm</p>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="icon-park-solid:time" style="font-size: 24px;"></iconify-icon></span> T 10:30-11:30am</p>
+<p><span style="color:#3070BF;"><iconify-icon inline="" icon="icon-park-solid:time" style="font-size: 24px;"></iconify-icon></span> F 12-1pm</p>
+<p><span style="color:#3070BF;"><iconify-icon inline="" icon="icon-park-solid:time" style="font-size: 24px;"></iconify-icon></span> Th 3:30-4:30pm</p>
 </div>
 </div>
 </section>
-</div><div class="column" style="width:21%;">
-<section id="course-details" class="level3">
-<h3 class="anchored" data-anchor-id="course-details">Course details</h3>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="fa6-solid:calendar-days" style="font-size: 24px;"></iconify-icon></span> Mondays, Wednesdays</p>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="fa6-solid:calendar" style="font-size: 24px;"></iconify-icon></span> March 30 - June 9</p>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="icon-park-solid:time" style="font-size: 24px;"></iconify-icon></span> 1:00 PM - 2:50 PM</p>
-<p><span style="color:#C2352F;"><iconify-icon inline="" icon="fa6-solid:person-chalkboard" style="font-size: 24px;"></iconify-icon></span> In-person, RLSB 3A001</p>
-</section>
-</div><div class="column" style="width:20%;">
+</div><div class="column" style="width:25%;">
 <section id="contacting-me" class="level3">
 <h3 class="anchored" data-anchor-id="contacting-me">Contacting me</h3>
 <p>E-mail or Slack is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours Monday-Friday.</p>
@@ -129,12 +203,13 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 <div class="g-col-3">
-<p><a href="https://github.com/nwakim/BSTA_513_S25"><iconify-icon inline="" icon="icomoon-free:github" style="font-size: 24px;"></iconify-icon> View the source on GitHub</a></p>
+<p><a href="https://github.com/nwakim/PUBH_523_26Su"><iconify-icon inline="" icon="icomoon-free:github" style="font-size: 24px;"></iconify-icon> View the source on GitHub</a></p>
 </div>
 </div>
 
-</main>
-<!-- /main column -->
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
