@@ -1,0 +1,25 @@
+---
+title: "Lesson 1: Introduction to the Introduction"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Lesson 01 Slides
+    html-math-method: mathjax
+    highlight-style: arrow
+execute:
+  echo: true
+  freeze: auto
+---
+
+## Some good skills to know
+
+- Copying code: the copy option on all code!
+

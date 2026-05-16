@@ -1,0 +1,189 @@
+---
+title: "Lesson 3: Workflow: Basics"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Lesson 03 Slides
+    html-math-method: mathjax
+    highlight-style: arrow
+execute:
+  echo: true
+  freeze: auto
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+```
+
+# Learning Objectives
+
+## Coding basics
+
+
+
+```{r}
+1 / 200 * 30
+(59 + 73 + 2) / 3
+sin(pi / 2)
+```
+
+## 
+
+You can create new objects with the assignment operator `<-`:
+
+```{r}
+x <- 3 * 4
+```
+
+Note that the value of `x` is not printed, it's just stored.
+If you want to view the value, type `x` in the console.
+
+## 
+
+You can **c**ombine multiple elements into a vector with `c()`:
+
+```{r}
+primes <- c(2, 3, 5, 7, 11, 13)
+```
+
+And basic arithmetic on vectors is applied to every element of the vector:
+
+```{r}
+primes * 2
+primes - 1
+```
+
+## 
+
+All R statements where you create objects, **assignment** statements, have the same form:
+
+```{r}
+#| eval: false
+object_name <- value
+```
+
+When reading that code, say "object name gets value" in your head.
+
+You will make lots of assignments, and `<-` is a pain to type.
+You can save time with RStudio's keyboard shortcut: Alt + - (the minus sign).
+Notice that RStudio automatically surrounds `<-` with spaces, which is a good code formatting practice.
+Code can be miserable to read on a good day, so giveyoureyesabreak and use spaces.
+
+## Comments
+
+R will ignore any text after `#` for that line.
+This allows you to write **comments**, text that is ignored by R but read by other humans.
+We'll sometimes include comments in examples explaining what's happening with the code.
+
+## 
+
+Comments can be helpful for briefly describing what the following code does.
+
+```{r}
+# create vector of primes
+primes <- c(2, 3, 5, 7, 11, 13)
+
+# multiply primes by 2
+primes * 2
+```
+
+With short pieces of code like this, leaving a comment for every single line of code might not be necessary.
+But as the code you're writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code.
+
+## 
+
+Use comments to explain the *why* of your code, not the *how* or the *what*.
+The *what* and *how* of your code are always possible to figure out, even if it might be tedious, by carefully reading it.
+If you describe every step in the comments, and then change the code, you will have to remember to update the comments as well or it will be confusing when you return to your code in the future.
+
+##
+
+Figuring out *why* something was done is much more difficult, if not impossible.
+For example, `geom_smooth()` has an argument called `span`, which controls the smoothness of the curve, with larger values yielding a smoother curve.
+Suppose you decide to change the value of `span` from its default of 0.75 to 0.9: it's easy for a future reader to understand *what* is happening, but unless you note your thinking in a comment, no one will understand *why* you changed the default.
+
+##
+
+For data analysis code, use comments to explain your overall plan of attack and record important insights as you encounter them.
+There's no way to re-capture this knowledge from the code itself.
+
+## What's in a name? {#sec-whats-in-a-name}
+
+Object names must start with a letter and can only contain letters, numbers, `_`, and `.`.
+You want your object names to be descriptive, so you'll need to adopt a convention for multiple words.
+We recommend **snake_case**, where you separate lowercase words with `_`.
+
+```{r}
+#| eval: false
+i_use_snake_case
+otherPeopleUseCamelCase
+some.people.use.periods
+And_aFew.People_RENOUNCEconvention
+```
+
+We'll return to names again when we discuss code style in @sec-workflow-style.
+
+You can inspect an object by typing its name:
+
+```{r}
+x
+```
+
+##
+
+Make another assignment:
+
+```{r}
+this_is_a_really_long_name <- 2.5
+```
+
+To inspect this object, try out RStudio's completion facility: type "this", press TAB, add characters until you have a unique prefix, then press return.
+
+Let's assume you made a mistake, and that the value of `this_is_a_really_long_name` should be 3.5, not 2.5.
+You can use another keyboard shortcut to help you fix it.
+For example, you can press ↑ to bring the last command you typed and edit it.
+Or, type "this" then press Cmd/Ctrl + ↑ to list all the commands you've typed that start with those letters.
+Use the arrow keys to navigate, then press enter to retype the command.
+
+##
+
+Change 2.5 to 3.5 and rerun.
+
+Make yet another assignment:
+
+```{r}
+r_rocks <- 2^3
+```
+
+##
+
+Let's try to inspect it:
+
+```{r}
+#| eval: false
+r_rock
+#> Error: object 'r_rock' not found
+R_rocks
+#> Error: object 'R_rocks' not found
+```
+
+This illustrates the implied contract between you and R: R will do the tedious computations for you, but in exchange, you must be completely precise in your instructions.
+If not, you're likely to get an error that says the object you're looking for was not found.
+Typos matter; R can't read your mind and say, "oh, they probably meant `r_rocks` when they typed `r_rock`".
+Case matters; similarly, R can't read your mind and say, "oh, they probably meant `r_rocks` when they typed `R_rocks`".

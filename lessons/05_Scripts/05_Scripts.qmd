@@ -1,0 +1,35 @@
+---
+title: "Lesson 3: Workflow: Scripts"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1467
+    height: 825
+    footer: Lesson 03 Slides
+    html-math-method: mathjax
+    highlight-style: arrow
+execute:
+  echo: true
+  freeze: auto
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+```
+
+# Learning Objectives
+

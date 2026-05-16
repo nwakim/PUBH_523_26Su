@@ -4,5 +4,68 @@
   },
   "index.qmd": {
     "index.html": "30c7b984"
+  },
+  "lessons/slides_R_berd_2026.qmd": {
+    "slides_R_berd_2026.html": "70de0944"
+  },
+  "lessons/01_Intro_to_Intro/01_Intro_to_Intro.qmd": {
+    "01_Intro_to_Intro.html": "c0ac193e"
+  },
+  "lessons/R09_tidyverse_02/R09_tidyverse_02.qmd": {
+    "R09_tidyverse_02.html": "97bad59c"
+  },
+  "lessons/R10_Table_1/R13_Table_1.qmd": {
+    "R13_Table_1.html": "53361ee4"
+  },
+  "lessons/R07_LaTeX/R07_LaTeX.qmd": {
+    "R07_LaTeX.html": "8dd75c08"
+  },
+  "lessons/R02_Basics_01/R02_Basics_01.qmd": {
+    "R02_Basics_01.html": "2b73e342"
+  },
+  "lessons/R11_Quarto_02/R4_Quarto_02.qmd": {
+    "R4_Quarto_02.html": "a6f07a40"
+  },
+  "lessons/R11_Quarto_02/R04_Quarto_pkgs_data_import.qmd": {
+    "R04_Quarto_pkgs_data_import.html": "f4e06372"
+  },
+  "lessons/R07_Summarizing_data/R07_Summarizing_data.qmd": {
+    "R07_Summarizing_data.html": "de59aa90"
+  },
+  "lessons/R08_tidyverse_01/R08_tidyverse_01.qmd": {
+    "R08_tidyverse_01.html": "d0679a45"
+  },
+  "lessons/R04_Reproducibility/R04_Reproducibility.qmd": {
+    "R04_Reproducibility.html": "5303a5b1"
+  },
+  "lessons/R03_Basics_02/R03_Basics_02.qmd": {
+    "R03_Basics_02.html": "7690e1e5"
+  },
+  "lessons/02_Download_R/02_Download_R.qmd": {
+    "02_Download_R.html": "8f571cfa"
+  },
+  "lessons/R08_Help/R08_Help.qmd": {
+    "R08_Help.html": "822d62ed"
+  },
+  "lessons/R06_ggplot_01/R06_ggplot_01.qmd": {
+    "R06_ggplot_01.html": "742d5eb5"
+  },
+  "lessons/R05_Quarto_01/R05_Quarto_01.qmd": {
+    "R05_Quarto_01.html": "d78b3e4c"
+  },
+  "lessons/R01_Download_R/R01_Download_R_key_info.qmd": {
+    "R01_Download_R_key_info.html": "e7f8d032"
+  },
+  "lessons/R01_Download_R/R01_Download_R_muddy_points.qmd": {
+    "R01_Download_R_muddy_points.html": "bf993156"
+  },
+  "lessons/03_Workflow_Basics/03_Workflow_Basics.qmd": {
+    "03_Workflow_Basics.html": "335122ff"
+  },
+  "lessons/05_Scripts/05_Scripts.qmd": {
+    "05_Scripts.html": "16623811"
+  },
+  "lessons/06_Functions/06_Functions.qmd": {
+    "06_Functions.html": "ec28a365"
   }
 }
