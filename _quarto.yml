@@ -7,7 +7,7 @@ website:
   navbar:
     background: primary
     search: true
-    logo: "images/PUBH523.png"
+    logo: "images/PUBH_R.png"
     foreground: "#fff"
     collapse-below: sm
     right:
