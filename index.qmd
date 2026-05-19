@@ -7,13 +7,16 @@ link-external-newwindow: true
 
 ::: {style="background-color: #3070BF"}
 ::: {style="color: #FFFFFF"}
-::: grid
-::: g-col-4
+
+::: columns
+
+::: {.column width="30%"}
 ![](images/PUBH_R.png){fig-align="center" width="337"}
 :::
 
-::: g-col-7
-# PUBH 523: Introduction to R
+::: {.column width="65%"}
+
+## PUBH 523: Introduction to R
 
 ### Summer 2026
 
@@ -23,6 +26,10 @@ This course provides an introduction to programming in R in public health, medic
 
  
 :::
+
+::: {.column width="5%"}
+:::
+
 :::
 :::
 :::
@@ -38,21 +45,21 @@ This course provides an introduction to programming in R in public health, medic
 ::: {.column width="23%"}
 ### Links
 
-[{{< iconify material-symbols folder size=24px >}}]{style="color:#3070BF;"} [OneDrive Folder](https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_513_26S/Student_files_BSTA_513?csf=1&web=1&e=Q8KOMt)
+[{{< iconify material-symbols folder size=24px >}}]{style="color:#C83532;"} [OneDrive Folder](https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_513_26S/Student_files_BSTA_513?csf=1&web=1&e=Q8KOMt)
 
-[{{< iconify mdi video size=28px >}}]{style="color:#3070BF;"}[Echo 360](https://echo360.org/section/87bbad0a-58f2-4758-a290-b95378fbbab4/home)
+[{{< iconify mdi video size=28px >}}]{style="color:#C83532;"}[Echo 360](https://echo360.org/section/87bbad0a-58f2-4758-a290-b95378fbbab4/home)
 :::
 
 ::: {.column width="25%"}
 ### Instructor
 
-[{{< iconify fluent person-24-filled size=24px >}}]{style="color:#3070BF;"} [Dr. Nicky Wakim](instructors.qmd)
+[{{< iconify fluent person-24-filled size=24px >}}]{style="color:#C83532;"} [Dr. Nicky Wakim](instructors.qmd)
 
-[{{< iconify bi building-fill size=24px >}}]{style="color:#3070BF;"} Vanport 622A
+[{{< iconify bi building-fill size=24px >}}]{style="color:#C83532;"} Vanport 622A
 
-[{{< iconify tabler mail-filled size=24px >}}]{style="color:#3070BF;"} [wakim\@ohsu.edu](mailto:wakim@ohsu.edu)
+[{{< iconify tabler mail-filled size=24px >}}]{style="color:#C83532;"} [wakim\@ohsu.edu](mailto:wakim@ohsu.edu)
 
-[{{< iconify icon-park-solid time size=24px >}}]{style="color:#3070BF;"} W 3-4pm
+[{{< iconify icon-park-solid time size=24px >}}]{style="color:#C83532;"} W 3-4pm
 :::
 
 ::: {.column width="25%"}
@@ -64,9 +71,9 @@ This course provides an introduction to programming in R in public health, medic
 [TA?](https://ohsu.webex.com/meet/akula)
 :::
 ::: {.column width="70%"}
-[{{< iconify icon-park-solid time size=24px >}}]{style="color:#3070BF;"} F 12-1pm
+[{{< iconify icon-park-solid time size=24px >}}]{style="color:#C83532;"} F 12-1pm
 
-[{{< iconify icon-park-solid time size=24px >}}]{style="color:#3070BF;"} Th 3:30-4:30pm
+[{{< iconify icon-park-solid time size=24px >}}]{style="color:#C83532;"} Th 3:30-4:30pm
 
 :::
 :::
