@@ -6,11 +6,13 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Nicky Wakim">
-  <title>Introduction to R – Lesson 3: Workflow: Scripts</title>
+  <title>Introduction to R – R Scripts</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -132,7 +134,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#3070BF" class="quarto-title-block center">
-  <h1 class="title">Lesson 3: Workflow: Scripts</h1>
+  <h1 class="title">R Scripts</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -143,15 +145,77 @@ Nicky Wakim
 </div>
 
 </section>
-<section id="learning-objectives" class="title-slide slide level1 center">
-<h1>Learning Objectives</h1>
-
-
+<section>
+<section id="what-is-an-r-script" class="title-slide slide level1 center">
+<h1>What is an R script?</h1>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="pink">
+<div class="pink-ttl">
+<p>R script</p>
+</div>
+<div class="pink-cont">
+<p>An <strong>R script</strong> is a document that can hold your code, comments, and outputs</p>
+</div>
+</div>
+<ul>
+<li>Unlike the console, we can <strong>save our work in an R script</strong> and <strong>come back to it later</strong></li>
+<li>Think of this like a very basic Word or Google document file</li>
+</ul>
+</div><div class="column" style="width:55%;">
+<p><img data-src="../img_slides/script.png"></p>
+</div></div>
 </section>
+<section id="how-to-create-an-r-script" class="slide level2">
+<h2>How to create an R script?</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p>Create a new R script by going to <code>File</code> &gt; <code>New File</code> &gt; <code>R Script</code></p>
+<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../img_slides/new_R_script_file.mov"></video>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p>Create a new R script by clicking <code>New File</code> icon in the toolbar and selecting <code>R Script</code></p>
+<video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../img_slides/new_R_script_icon.mov"></video>
+</div></div>
+</section>
+<section id="how-to-run-code-in-an-r-script" class="slide level2">
+<h2>How to run code in an R script?</h2>
+<div class="columns">
+<div class="column" style="width:25%;">
+<ol type="1">
+<li>Highlighting the code and clicking the <code>Run</code> button in the toolbar</li>
+<li>Highlighting the code and <code>Ctrl + Enter</code> (Windows) or <code>Cmd + Enter</code> (Mac)</li>
+<li>Placing the cursor on the line of code and clicking the <code>Run</code> button in the toolbar</li>
+<li>Placing the cursor on the line of code and <code>Ctrl + Enter</code> (Windows) or <code>Cmd + Enter</code> (Mac)</li>
+</ol>
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:73%;">
+<video id="video_shortcode_videojs_video3" width="1450" class="video-js vjs-default-skin vjs-big-play-centered " controls="" preload="auto" data-setup="{}" title=""><source src="../img_slides/running_code.mov"></video>
+</div></div>
+</section>
+<section id="saving-an-r-script" class="slide level2">
+<h2>Saving an R script</h2>
+<div class="columns">
+<div class="column" style="width:25%;">
+<ol type="1">
+<li>Go to <code>File</code> &gt; <code>Save</code> or <code>Save As</code></li>
+<li>Click the <code>Save</code> icon in the toolbar</li>
+<li>Click the <code>Save</code> icon in the Editor</li>
+</ol>
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:73%;">
+<video id="video_shortcode_videojs_video4" width="1450" class="video-js vjs-default-skin vjs-big-play-centered " controls="" preload="auto" data-setup="{}" title=""><source src="../img_slides/saving_R_script.mov"></video>
+</div></div>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Lesson 03 Slides</p>
+<p>R Scripts</p>
 </div>
 </div></div>
 
@@ -331,9 +395,9 @@ Nicky Wakim
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1467,
+        width: 1955,
 
-        height: 825,
+        height: 1100,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
@@ -571,6 +635,10 @@ Nicky Wakim
         }
       });
       </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
+    <script>videojs(video_shortcode_videojs_video2);</script>
+    <script>videojs(video_shortcode_videojs_video3);</script>
+    <script>videojs(video_shortcode_videojs_video4);</script>
     
 
 </body></html>

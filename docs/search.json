@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Suggested Date\nLes-son\nTopic\nLesson video\nDemo video\nTB 1\nTB 2\nSlides HTML\nSlides PDF\nPractice\n\n\n\n\n\n0\nWelcome\n\n\n\n\n\n\n\n\n\n06/22\n1\nIntroduction to the Introduction\n\n\nIntro\n\n\n\n\n\n\n06/24\n2\nDownloading R and RStudio\n\n\n\n3.4\n\n\n\n\n\n\n3\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n\n06/29\n4\nWorkflow: Basics\n\n\n2.1-2.3\n\n\n\n\n\n\n07/01\n5\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n\n07/06\n6\nPackages\n\n\n\n3.7\n\n\n\n\n\n07/08\n7\nQuarto documents\n\n\n\n\n\n\n\n\n\n07/13\n8\nR projects and working directories\n\n\n6.2\n6\n\n\n\n\n\n07/15\n9\nObjects\n\n\n\n3.10\n\n\n\n\n\n\n10\nVariables in R\n\n\n\n\n\n\n\n\n\n07/20\n11\nPiping\n\n\n3.4\n8.1\n\n\n\n\n\n07/22\n12\nKey operators and functions\n\n\n\n8.2\n\n\n\n\n\n07/27\n13\nTidy data\n\n\n5.2\n4.1\n\n\n\n\n\n07/29\n14\nImport and Export\n\n\n7\n7\n\n\n\n\n\n08/03\n15\nWorkflow: code style\n\n\n4\n\n\n\n\n\n\n08/05\n16\nWorkflow: getting help\n\n\n8\n\n\n\n\n\n\n08/12\n17\nData transformation: basics\n\n\n3.1\n\n\n\n\n\n\n08/19\n18\nData transformation: rows\n\n\n3.2\n\n\n\n\n\n\n08/24\n19\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n\n08/26\n20\nData transformation: groups\n\n\n3.5\n\n\n\n\n\n\n\n21\nData summarization: quantitative data\n\n\n\n\n\n\n\n\n\n\n22\nData summarization: categorical data\n\n\n\n\n\n\n\n\n\n\n23\nDescriptive tables\n\n\n\n17\n\n\n\n\n\n08/31\n24\nLengthening data\n\n\n5.3\n\n\n\n\n\n\n\n25\nWidening data\n\n\n5.4\n\n\n\n\n\n\n\n26\nData visualization: intro to ggplot\n\n\n1.1-1.2\n\n\n\n\n\n\n\n27\nData visualization: ggplot2 calls\n\n\n1.3\n\n\n\n\n\n\n\n28\nData visualization: distributions\n\n\n1.4\n\n\n\n\n\n\n\n29\nData visualization: relationships\n\n\n1.5\n\n\n\n\n\n\n\n30\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n\n\n31\nMissing data: transformations\n\n\n\n\n\n\n\n\n\n\nOTHER options:\n\nVariables (factors, etc.)\nshowing missingness\nreporducibility:\n\nand quarto\n\nworking dataset for the course\n\nuse synthpop to make dataset"
+    "text": "Suggested Date\nLes-son\nTopic\nLesson video\nDemo video\nTB 1\nTB 2\nSlides HTML\nSlides PDF\nPractice\n\n\n\n\n\n0\nWelcome\n\n\n\n\n\n\n\n\n\n06/22\n1\nIntroduction to the Introduction\n\n\nIntro\n\n\n\n\n\n\n06/24\n2\nDownloading R and RStudio\n\n\n\n3.4\n\n\n\n\n\n\n3\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n\n06/29\n4\nWorkflow: Basics\n\n\n2.1-2.3\n\n\n\n\n\n\n07/01\n5\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n\n07/06\n6\nPackages\n\n\n\n3.7\n\n\n\n\n\n07/08\n7\nQuarto documents\n\n\n\n\n\n\n\n\n\n07/13\n8\nR projects and working directories\n\n\n6.2\n6\n\n\n\n\n\n07/15\n9\nObjects\n\n\n\n3.10\n\n\n\n\n\n\n10\nVariables in R\n\n\n\n\n\n\n\n\n\n07/20\n11\nPiping\n\n\n3.4\n8.1\n\n\n\n\n\n07/22\n12\nKey operators and functions\n\n\n\n8.2\n\n\n\n\n\n\n\nNaming: file naming and variable naming?\n\n\n\n\n\n\n\n\n\n07/27\n13\nTidy data\n\n\n5.2\n4.1\n\n\n\n\n\n07/29\n14\nImport and Export\n\n\n7\n7\n\n\n\n\n\n08/03\n15\nWorkflow: code style\n\n\n4\n\n\n\n\n\n\n08/05\n16\nWorkflow: getting help\n\n\n8\n\n\n\n\n\n\n08/12\n17\nData transformation: basics\n\n\n3.1\n\n\n\n\n\n\n08/19\n18\nData transformation: rows\n\n\n3.2\n\n\n\n\n\n\n08/24\n19\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n\n08/26\n20\nData transformation: groups\n\n\n3.5\n\n\n\n\n\n\n\n21\nData summarization: quantitative data\n\n\n\n\n\n\n\n\n\n\n22\nData summarization: categorical data\n\n\n\n\n\n\n\n\n\n\n23\nDescriptive tables\n\n\n\n17\n\n\n\n\n\n08/31\n24\nLengthening data\n\n\n5.3\n\n\n\n\n\n\n\n25\nWidening data\n\n\n5.4\n\n\n\n\n\n\n\n26\nData visualization: intro to ggplot\n\n\n1.1-1.2\n\n\n\n\n\n\n\n27\nData visualization: ggplot2 calls\n\n\n1.3\n\n\n\n\n\n\n\n28\nData visualization: distributions\n\n\n1.4\n\n\n\n\n\n\n\n29\nData visualization: relationships\n\n\n1.5\n\n\n\n\n\n\n\n30\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n\n\n31\nMissing data: transformations\n\n\n\n\n\n\n\n\n\n\nOTHER options:\n\nVariables (factors, etc.)\nshowing missingness\nreporducibility:\n\nand quarto\n\nworking dataset for the course\n\nuse synthpop to make dataset"
   },
   {
     "objectID": "index.html",
@@ -1482,5 +1482,131 @@
     "title": "Introduction to R",
     "section": "",
     "text": "This course provides an introduction to programming in R in public health, medicine, and related fields. Students will gain basic proficiency with the R environment and toolkit, focusing on reproducible workflows, data manipulation, visualization, and reporting. Topics include basic R programming, working in project-based folders, data transformations and summaries, data visualizations and plots, generating dynamic reports, and constructing summary tables. By the end of the course, students will be comfortable initiating data exploration projects in R and will be prepared to apply these skills in further analysis courses. No prior statistical or coding experience is expected or required."
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "1 / 200 * 30\n\n[1] 0.15\n\n(59 + 73 + 2) / 3\n\n[1] 44.66667\n\nsin(pi / 2)\n\n[1] 1\n\n\n\n\n\nYou can create new objects with the assignment operator &lt;-:\n\nx &lt;- 3 * 4\n\nNote that the value of x is not printed, it’s just stored. If you want to view the value, type x in the console.\n\n\n\nYou can combine multiple elements into a vector with c():\n\nprimes &lt;- c(2, 3, 5, 7, 11, 13)\n\nAnd basic arithmetic on vectors is applied to every element of the vector:\n\nprimes * 2\n\n[1]  4  6 10 14 22 26\n\nprimes - 1\n\n[1]  1  2  4  6 10 12\n\n\n\n\n\nAll R statements where you create objects, assignment statements, have the same form:\n\nobject_name &lt;- value\n\nWhen reading that code, say “object name gets value” in your head.\nYou will make lots of assignments, and &lt;- is a pain to type. You can save time with RStudio’s keyboard shortcut: Alt + - (the minus sign). Notice that RStudio automatically surrounds &lt;- with spaces, which is a good code formatting practice. Code can be miserable to read on a good day, so giveyoureyesabreak and use spaces.\n\n\n\nR will ignore any text after # for that line. This allows you to write comments, text that is ignored by R but read by other humans. We’ll sometimes include comments in examples explaining what’s happening with the code.\n\n\n\nComments can be helpful for briefly describing what the following code does.\n\n# create vector of primes\nprimes &lt;- c(2, 3, 5, 7, 11, 13)\n\n# multiply primes by 2\nprimes * 2\n\n[1]  4  6 10 14 22 26\n\n\nWith short pieces of code like this, leaving a comment for every single line of code might not be necessary. But as the code you’re writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code.\n\n\n\nUse comments to explain the why of your code, not the how or the what. The what and how of your code are always possible to figure out, even if it might be tedious, by carefully reading it. If you describe every step in the comments, and then change the code, you will have to remember to update the comments as well or it will be confusing when you return to your code in the future.\n\n\n\nFiguring out why something was done is much more difficult, if not impossible. For example, geom_smooth() has an argument called span, which controls the smoothness of the curve, with larger values yielding a smoother curve. Suppose you decide to change the value of span from its default of 0.75 to 0.9: it’s easy for a future reader to understand what is happening, but unless you note your thinking in a comment, no one will understand why you changed the default.\n\n\n\nFor data analysis code, use comments to explain your overall plan of attack and record important insights as you encounter them. There’s no way to re-capture this knowledge from the code itself.\n\n\n\nObject names must start with a letter and can only contain letters, numbers, _, and .. You want your object names to be descriptive, so you’ll need to adopt a convention for multiple words. We recommend snake_case, where you separate lowercase words with _.\n\ni_use_snake_case\notherPeopleUseCamelCase\nsome.people.use.periods\nAnd_aFew.People_RENOUNCEconvention\n\nWe’ll return to names again when we discuss code style in ?@sec-workflow-style.\nYou can inspect an object by typing its name:\n\nx\n\n[1] 12\n\n\n\n\n\nMake another assignment:\n\nthis_is_a_really_long_name &lt;- 2.5\n\nTo inspect this object, try out RStudio’s completion facility: type “this”, press TAB, add characters until you have a unique prefix, then press return.\nLet’s assume you made a mistake, and that the value of this_is_a_really_long_name should be 3.5, not 2.5. You can use another keyboard shortcut to help you fix it. For example, you can press ↑ to bring the last command you typed and edit it. Or, type “this” then press Cmd/Ctrl + ↑ to list all the commands you’ve typed that start with those letters. Use the arrow keys to navigate, then press enter to retype the command.\n\n\n\nChange 2.5 to 3.5 and rerun.\nMake yet another assignment:\n\nr_rocks &lt;- 2^3\n\n\n\n\nLet’s try to inspect it:\n\nr_rock\n#&gt; Error: object 'r_rock' not found\nR_rocks\n#&gt; Error: object 'R_rocks' not found\n\nThis illustrates the implied contract between you and R: R will do the tedious computations for you, but in exchange, you must be completely precise in your instructions. If not, you’re likely to get an error that says the object you’re looking for was not found. Typos matter; R can’t read your mind and say, “oh, they probably meant r_rocks when they typed r_rock”. Case matters; similarly, R can’t read your mind and say, “oh, they probably meant r_rocks when they typed R_rocks”."
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#coding-basics",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#coding-basics",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "1 / 200 * 30\n\n[1] 0.15\n\n(59 + 73 + 2) / 3\n\n[1] 44.66667\n\nsin(pi / 2)\n\n[1] 1"
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "You can create new objects with the assignment operator &lt;-:\n\nx &lt;- 3 * 4\n\nNote that the value of x is not printed, it’s just stored. If you want to view the value, type x in the console."
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-1",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-1",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "You can combine multiple elements into a vector with c():\n\nprimes &lt;- c(2, 3, 5, 7, 11, 13)\n\nAnd basic arithmetic on vectors is applied to every element of the vector:\n\nprimes * 2\n\n[1]  4  6 10 14 22 26\n\nprimes - 1\n\n[1]  1  2  4  6 10 12"
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-2",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-2",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "All R statements where you create objects, assignment statements, have the same form:\n\nobject_name &lt;- value\n\nWhen reading that code, say “object name gets value” in your head.\nYou will make lots of assignments, and &lt;- is a pain to type. You can save time with RStudio’s keyboard shortcut: Alt + - (the minus sign). Notice that RStudio automatically surrounds &lt;- with spaces, which is a good code formatting practice. Code can be miserable to read on a good day, so giveyoureyesabreak and use spaces."
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#comments",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#comments",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "R will ignore any text after # for that line. This allows you to write comments, text that is ignored by R but read by other humans. We’ll sometimes include comments in examples explaining what’s happening with the code."
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-3",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-3",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "Comments can be helpful for briefly describing what the following code does.\n\n# create vector of primes\nprimes &lt;- c(2, 3, 5, 7, 11, 13)\n\n# multiply primes by 2\nprimes * 2\n\n[1]  4  6 10 14 22 26\n\n\nWith short pieces of code like this, leaving a comment for every single line of code might not be necessary. But as the code you’re writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code."
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-4",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-4",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "Use comments to explain the why of your code, not the how or the what. The what and how of your code are always possible to figure out, even if it might be tedious, by carefully reading it. If you describe every step in the comments, and then change the code, you will have to remember to update the comments as well or it will be confusing when you return to your code in the future."
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-5",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-5",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "Figuring out why something was done is much more difficult, if not impossible. For example, geom_smooth() has an argument called span, which controls the smoothness of the curve, with larger values yielding a smoother curve. Suppose you decide to change the value of span from its default of 0.75 to 0.9: it’s easy for a future reader to understand what is happening, but unless you note your thinking in a comment, no one will understand why you changed the default."
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-6",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-6",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "For data analysis code, use comments to explain your overall plan of attack and record important insights as you encounter them. There’s no way to re-capture this knowledge from the code itself."
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#sec-whats-in-a-name",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#sec-whats-in-a-name",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "Object names must start with a letter and can only contain letters, numbers, _, and .. You want your object names to be descriptive, so you’ll need to adopt a convention for multiple words. We recommend snake_case, where you separate lowercase words with _.\n\ni_use_snake_case\notherPeopleUseCamelCase\nsome.people.use.periods\nAnd_aFew.People_RENOUNCEconvention\n\nWe’ll return to names again when we discuss code style in ?@sec-workflow-style.\nYou can inspect an object by typing its name:\n\nx\n\n[1] 12"
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-7",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-7",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "Make another assignment:\n\nthis_is_a_really_long_name &lt;- 2.5\n\nTo inspect this object, try out RStudio’s completion facility: type “this”, press TAB, add characters until you have a unique prefix, then press return.\nLet’s assume you made a mistake, and that the value of this_is_a_really_long_name should be 3.5, not 2.5. You can use another keyboard shortcut to help you fix it. For example, you can press ↑ to bring the last command you typed and edit it. Or, type “this” then press Cmd/Ctrl + ↑ to list all the commands you’ve typed that start with those letters. Use the arrow keys to navigate, then press enter to retype the command."
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-8",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-8",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "Change 2.5 to 3.5 and rerun.\nMake yet another assignment:\n\nr_rocks &lt;- 2^3"
+  },
+  {
+    "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-9",
+    "href": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#section-9",
+    "title": "Lesson 3: Workflow: Basics",
+    "section": "",
+    "text": "Let’s try to inspect it:\n\nr_rock\n#&gt; Error: object 'r_rock' not found\nR_rocks\n#&gt; Error: object 'R_rocks' not found\n\nThis illustrates the implied contract between you and R: R will do the tedious computations for you, but in exchange, you must be completely precise in your instructions. If not, you’re likely to get an error that says the object you’re looking for was not found. Typos matter; R can’t read your mind and say, “oh, they probably meant r_rocks when they typed r_rock”. Case matters; similarly, R can’t read your mind and say, “oh, they probably meant r_rocks when they typed R_rocks”."
+  },
+  {
+    "objectID": "lessons/05_Scripts/05_Scripts.html#what-is-an-r-script",
+    "href": "lessons/05_Scripts/05_Scripts.html#what-is-an-r-script",
+    "title": "R Scripts",
+    "section": "What is an R script?",
+    "text": "What is an R script?\n\n\n\n\nR script\n\n\nAn R script is a document that can hold your code, comments, and outputs\n\n\n\nUnlike the console, we can save our work in an R script and come back to it later\nThink of this like a very basic Word or Google document file"
+  },
+  {
+    "objectID": "lessons/05_Scripts/05_Scripts.html#how-to-create-an-r-script",
+    "href": "lessons/05_Scripts/05_Scripts.html#how-to-create-an-r-script",
+    "title": "R Scripts",
+    "section": "How to create an R script?",
+    "text": "How to create an R script?\n\n\nCreate a new R script by going to File &gt; New File &gt; R Script\n\n\n\n\nCreate a new R script by clicking New File icon in the toolbar and selecting R Script"
+  },
+  {
+    "objectID": "lessons/05_Scripts/05_Scripts.html#how-to-run-code-in-an-r-script",
+    "href": "lessons/05_Scripts/05_Scripts.html#how-to-run-code-in-an-r-script",
+    "title": "R Scripts",
+    "section": "How to run code in an R script?",
+    "text": "How to run code in an R script?\n\n\n\nHighlighting the code and clicking the Run button in the toolbar\nHighlighting the code and Ctrl + Enter (Windows) or Cmd + Enter (Mac)\nPlacing the cursor on the line of code and clicking the Run button in the toolbar\nPlacing the cursor on the line of code and Ctrl + Enter (Windows) or Cmd + Enter (Mac)"
+  },
+  {
+    "objectID": "lessons/05_Scripts/05_Scripts.html#saving-an-r-script",
+    "href": "lessons/05_Scripts/05_Scripts.html#saving-an-r-script",
+    "title": "R Scripts",
+    "section": "Saving an R script",
+    "text": "Saving an R script\n\n\n\nGo to File &gt; Save or Save As\nClick the Save icon in the toolbar\nClick the Save icon in the Editor"
   }
 ]

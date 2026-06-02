@@ -67,5 +67,8 @@
   },
   "lessons/06_Functions/06_Functions.qmd": {
     "06_Functions.html": "ec28a365"
+  },
+  "lessons/16_Workflow_getting_help/16_Workflow_getting_help.qmd": {
+    "16_Workflow_getting_help.html": "3b3bbac1"
   }
 }
