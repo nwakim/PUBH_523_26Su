@@ -1817,7 +1817,7 @@
     "href": "lessons/04_Comments/04_Comments.html#describing-your-process-with-comments",
     "title": "Comments",
     "section": "Describing your process with comments",
-    "text": "Describing your process with comments\nComments can be helpful for briefly describing what the following code does.\n\n# Subtract 1 from 10, then divide by 2\n(10 - 1) / 2\n\n[1] 4.5\n\n# Take the sine of 3\nsin(3)\n\n[1] 0.14112\n\n\n\nWith short pieces of code like this, leaving a comment for every single line of code might not be necessary. But as the code you’re writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code."
+    "text": "Describing your process with comments\nComments can be helpful for briefly describing what the following code does.\n\n# Subtract 1 from 10, then divide by 2\n(10 - 1) / 2\n\n[1] 4.5\n\n# Take the sine of 3\nsin(3)\n\n[1] 0.14112\n\n\n\nComment on every line is not necessary\nAs code gets more complex, comments can help you figure out your process"
   },
   {
     "objectID": "lessons/04_Comments/04_Comments.html#better-use-of-comments",

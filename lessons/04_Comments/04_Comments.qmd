@@ -61,8 +61,8 @@ Comments can be helpful for briefly describing what the following code does.
 sin(3)
 ```
 
-- With short pieces of code like this, leaving a comment for every single line of code might not be necessary.
-But as the code you're writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code.
+- Comment on every line is not necessary
+- As code gets more complex, comments can help you figure out your process 
 
 ## Better use of comments
 
