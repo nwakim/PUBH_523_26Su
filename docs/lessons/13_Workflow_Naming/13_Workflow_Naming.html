@@ -9,8 +9,8 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.36">
 
-  <meta name="author" content="Nicky Wakim, Jessica Minnier, and Meike Niederhausen">
-  <title>Introduction to R – Download + Intro to R &amp; Rstudio</title>
+  <meta name="author" content="Nicky Wakim">
+  <title>Introduction to R – Workflow: Naming</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -31,6 +31,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-2feb3c383bc1dd3e33ec63809b09283c.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -132,129 +198,77 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#3070BF" class="quarto-title-block center">
-  <h1 class="title">Download + Intro to R &amp; Rstudio</h1>
+  <h1 class="title">Workflow: Naming</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Nicky Wakim, Jessica Minnier, and Meike Niederhausen 
+Nicky Wakim 
 </div>
 </div>
 </div>
 
 </section>
-<section id="introduction-to-r" class="slide level2">
-<h2>Introduction to R</h2>
-
-<img data-src="../img_slides/horst_welcome_R.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://allisonhorst.com/everything-else">Artwork by @allison_horst</a></p></section>
-<section id="what-is-r" class="slide level2">
-<h2>What is R?</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
+<section id="naming" class="slide level2">
+<h2>Naming</h2>
 <ul>
-<li>A programming language</li>
-<li>Focus on statistical modeling and data analysis</li>
-<li>Useful for epidemiology, biostatistics, and data science</li>
-<li>Great visualizations</li>
-<li>Also useful for most anything else you’d want to tell a computer to do</li>
-<li>Interfaces with other languages i.e.&nbsp;python, C++, bash</li>
-<li>Free and open source!</li>
-</ul>
-</div><div class="column" style="width:30%;">
-<p><img data-src="../img_slides/R_logo.png"></p>
-</div></div>
-</section>
-<section id="what-is-rstudio" class="slide level2">
-<h2>What is RStudio?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>R is a programming language</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>RStudio is an integrated development environment (IDE)<br>
-
-<ul>
-<li>An interface to use R (with perks!)</li>
-</ul></li>
-</ul>
-</div></div>
-
-<img data-src="../img_slides/r_vs_rstudio_1.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://moderndive.com/1-getting-started.html#r-rstudio">Modern Dive</a></p></section>
-<section id="we-open-rstudio-on-our-computer-not-r" class="slide level2">
-<h2>We open RStudio on our computer (not R!)</h2>
-<ul>
-<li>When you are on your computer, you will open RStudio to use R</li>
-<li>If you open R directly, it will much harder to navigate!</li>
-</ul>
-<p>&nbsp;</p>
-<div class="columns">
-<div class="column" style="width:10%;">
-
-</div><div class="column" style="width:35%;">
-<div class="blue">
-<div class="blue-ttl">
-<p>Do NOT open this!</p>
-</div>
-<div class="blue-cont">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../img_slides/R_logo.png" class="quarto-figure quarto-figure-center" width="500"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column" style="width:35%;">
-<div class="pink">
-<div class="pink-ttl">
-<p>Open this!</p>
-</div>
-<div class="pink-cont">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../img_slides/rstudiologo.png" class="quarto-figure quarto-figure-center" width="438"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:10%;">
-
-</div></div>
-</section>
-<section id="rstudio-anatomy" class="slide level2">
-<h2>RStudio anatomy</h2>
-
-<img data-src="../img_slides/RStudio_Anatomy.svg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://buzzrbeeline.blog/2018/07/04/rstudio-anatomy/">Emma Rand</a></p></section>
-<section id="so-lets-download-them" class="slide level2">
-<h2>So let’s download them!</h2>
-<ul>
-<li>Use this link to start: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li>You must install R first
-<ul>
-<li>Even if you have R installed already, I highly recommend installing the latest version</li>
-<li>In the future, you will periodically want to update this</li>
-</ul></li>
-<li>Install RStudio Desktop Open Source License (second)</li>
+<li>File naming</li>
+<li>variable naming</li>
 </ul>
 </section>
-<section id="references" class="slide level2">
-<h2>References</h2>
-<ul>
-<li>Read more about RStudio’s layout in Section 3.4 of <a href="https://ismayc.github.io/rbasics-book/3-rstudiobasics.html#rstudio-layout" target="_blank">Getting Used to R, RStudio, and R Markdown</a> (Ismay and Kennedy 2021)</li>
-</ul>
+<section id="sec-whats-in-a-name" class="slide level2">
+<h2>What’s in a name?</h2>
+<p>Object names must start with a letter and can only contain letters, numbers, <code>_</code>, and <code>.</code>. You want your object names to be descriptive, so you’ll need to adopt a convention for multiple words. We recommend <strong>snake_case</strong>, where you separate lowercase words with <code>_</code>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>i_use_snake_case</span>
+<span id="cb1-2"><a></a>otherPeopleUseCamelCase</span>
+<span id="cb1-3"><a></a>some.people.use.periods</span>
+<span id="cb1-4"><a></a>And_aFew.People_RENOUNCEconvention</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>We’ll return to names again when we discuss code style in <strong>?@sec-workflow-style</strong>.</p>
+<p>You can inspect an object by typing its name:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>x <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb2-2"><a></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<p>Make another assignment:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>this_is_a_really_long_name <span class="ot">&lt;-</span> <span class="fl">2.5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>To inspect this object, try out RStudio’s completion facility: type “this”, press TAB, add characters until you have a unique prefix, then press return.</p>
+<p>Let’s assume you made a mistake, and that the value of <code>this_is_a_really_long_name</code> should be 3.5, not 2.5. You can use another keyboard shortcut to help you fix it. For example, you can press ↑ to bring the last command you typed and edit it. Or, type “this” then press Cmd/Ctrl + ↑ to list all the commands you’ve typed that start with those letters. Use the arrow keys to navigate, then press enter to retype the command.</p>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<p>Change 2.5 to 3.5 and rerun.</p>
+<p>Make yet another assignment:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>r_rocks <span class="ot">&lt;-</span> <span class="dv">2</span><span class="sc">^</span><span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p>Let’s try to inspect it:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>r_rock</span>
+<span id="cb6-2"><a></a><span class="co">#&gt; Error: object 'r_rock' not found</span></span>
+<span id="cb6-3"><a></a>R_rocks</span>
+<span id="cb6-4"><a></a><span class="co">#&gt; Error: object 'R_rocks' not found</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>This illustrates the implied contract between you and R: R will do the tedious computations for you, but in exchange, you must be completely precise in your instructions. If not, you’re likely to get an error that says the object you’re looking for was not found. Typos matter; R can’t read your mind and say, “oh, they probably meant <code>r_rocks</code> when they typed <code>r_rock</code>”. Case matters; similarly, R can’t read your mind and say, “oh, they probably meant <code>r_rocks</code> when they typed <code>R_rocks</code>”.</p>
 
 
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Download + Intro to R &amp; Rstudio</p>
+<p>Workflow: Basics</p>
 </div>
 </div></div>
 

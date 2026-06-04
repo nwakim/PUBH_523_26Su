@@ -6,11 +6,11 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-665ef5c5d77cfb05cd7a07c04fb2ab30.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.36">
 
-  <meta name="author" content="Nicky Wakim, Jessica Minnier, and Meike Niederhausen">
-  <title>Introduction to R – Download + Intro to R &amp; Rstudio</title>
+  <meta name="author" content="Nicky Wakim">
+  <title>Introduction to R – Objects</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -31,6 +31,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #575f66;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #575f66; } /* Normal */
+    code span.al { color: #f51818; background-color: #faefef; font-weight: bold; } /* Alert */
+    code span.an { color: #e6ba7e; } /* Annotation */
+    code span.at { color: #399ee6; } /* Attribute */
+    code span.bn { color: #ff9940; } /* BaseN */
+    code span.bu { color: #4cbf99; } /* BuiltIn */
+    code span.cf { color: #fa8d3e; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4cbf99; } /* Char */
+    code span.cn { color: #a37acc; } /* Constant */
+    code span.co { color: #607880; font-style: italic; } /* Comment */
+    code span.cv { color: #a37acc; } /* CommentVar */
+    code span.do { color: #607880; } /* Documentation */
+    code span.dt { color: #fa8d3e; } /* DataType */
+    code span.dv { color: #ff9940; } /* DecVal */
+    code span.er { color: #f51818; text-decoration: underline; } /* Error */
+    code span.ex { color: #399ee6; font-weight: bold; } /* Extension */
+    code span.fl { color: #ff9940; } /* Float */
+    code span.fu { color: #f2ae49; } /* Function */
+    code span.im { color: #86b300; } /* Import */
+    code span.in { color: #ff9940; } /* Information */
+    code span.kw { color: #fa8d3e; font-weight: bold; } /* Keyword */
+    code span.op { color: #ed9366; } /* Operator */
+    code span.ot { color: #55b4d4; } /* Other */
+    code span.pp { color: #f07171; } /* Preprocessor */
+    code span.re { color: #399ee6; background-color: #ddecf3; } /* RegionMarker */
+    code span.sc { color: #4cbf99; } /* SpecialChar */
+    code span.ss { color: #4cbf99; } /* SpecialString */
+    code span.st { color: #86b300; } /* String */
+    code span.va { color: #55b4d4; } /* Variable */
+    code span.vs { color: #86b300; } /* VerbatimString */
+    code span.wa { color: #f07171; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-2feb3c383bc1dd3e33ec63809b09283c.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -132,129 +198,153 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#3070BF" class="quarto-title-block center">
-  <h1 class="title">Download + Intro to R &amp; Rstudio</h1>
+  <h1 class="title">Objects</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Nicky Wakim, Jessica Minnier, and Meike Niederhausen 
+Nicky Wakim 
 </div>
 </div>
 </div>
 
 </section>
-<section id="introduction-to-r" class="slide level2">
-<h2>Introduction to R</h2>
-
-<img data-src="../img_slides/horst_welcome_R.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://allisonhorst.com/everything-else">Artwork by @allison_horst</a></p></section>
-<section id="what-is-r" class="slide level2">
-<h2>What is R?</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
+<section id="what-are-r-objects" class="slide level2">
+<h2>What are R objects?</h2>
 <ul>
-<li>A programming language</li>
-<li>Focus on statistical modeling and data analysis</li>
-<li>Useful for epidemiology, biostatistics, and data science</li>
-<li>Great visualizations</li>
-<li>Also useful for most anything else you’d want to tell a computer to do</li>
-<li>Interfaces with other languages i.e.&nbsp;python, C++, bash</li>
-<li>Free and open source!</li>
+<li>R objects are stored “things” in R</li>
+<li>R objects can be data, numbers, text, model output, etc.</li>
+<li>R objects are created with <strong>assignments</strong> that can be used in later commands</li>
 </ul>
-</div><div class="column" style="width:30%;">
-<p><img data-src="../img_slides/R_logo.png"></p>
-</div></div>
 </section>
-<section id="what-is-rstudio" class="slide level2">
-<h2>What is RStudio?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>R is a programming language</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>RStudio is an integrated development environment (IDE)<br>
-
-<ul>
-<li>An interface to use R (with perks!)</li>
-</ul></li>
-</ul>
-</div></div>
-
-<img data-src="../img_slides/r_vs_rstudio_1.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://moderndive.com/1-getting-started.html#r-rstudio">Modern Dive</a></p></section>
-<section id="we-open-rstudio-on-our-computer-not-r" class="slide level2">
-<h2>We open RStudio on our computer (not R!)</h2>
-<ul>
-<li>When you are on your computer, you will open RStudio to use R</li>
-<li>If you open R directly, it will much harder to navigate!</li>
-</ul>
+<section id="how-can-we-create-an-object" class="slide level2">
+<h2>How can we create an object?</h2>
+<p>Here is the generic way we assign something like a <code>value</code> to an <code>object_name</code>:</p>
 <p>&nbsp;</p>
-<div class="columns">
-<div class="column" style="width:10%;">
-
-</div><div class="column" style="width:35%;">
-<div class="blue">
-<div class="blue-ttl">
-<p>Do NOT open this!</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>object_name <span class="ot">&lt;-</span> value</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="blue-cont">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../img_slides/R_logo.png" class="quarto-figure quarto-figure-center" width="500"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column" style="width:35%;">
-<div class="pink">
-<div class="pink-ttl">
-<p>Open this!</p>
-</div>
-<div class="pink-cont">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../img_slides/rstudiologo.png" class="quarto-figure quarto-figure-center" width="438"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:10%;">
-
-</div></div>
-</section>
-<section id="rstudio-anatomy" class="slide level2">
-<h2>RStudio anatomy</h2>
-
-<img data-src="../img_slides/RStudio_Anatomy.svg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://buzzrbeeline.blog/2018/07/04/rstudio-anatomy/">Emma Rand</a></p></section>
-<section id="so-lets-download-them" class="slide level2">
-<h2>So let’s download them!</h2>
-<ul>
-<li>Use this link to start: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></li>
-</ul>
 <p>&nbsp;</p>
 <ul>
-<li>You must install R first
-<ul>
-<li>Even if you have R installed already, I highly recommend installing the latest version</li>
-<li>In the future, you will periodically want to update this</li>
-</ul></li>
-<li>Install RStudio Desktop Open Source License (second)</li>
+<li>Reads as “object name gets value” or “value is assigned to object name”</li>
 </ul>
 </section>
-<section id="references" class="slide level2">
-<h2>References</h2>
+<section id="a-note-on-the-assignment-operator" class="slide level2">
+<h2>A note on the assignment operator</h2>
 <ul>
-<li>Read more about RStudio’s layout in Section 3.4 of <a href="https://ismayc.github.io/rbasics-book/3-rstudiobasics.html#rstudio-layout" target="_blank">Getting Used to R, RStudio, and R Markdown</a> (Ismay and Kennedy 2021)</li>
+<li>Can assign a variable using either <code>=</code> or <code>&lt;-</code>
+<ul>
+<li><strong>Using <code>&lt;-</code> is preferable</strong> for certain occasions</li>
+<li>I usually just use <code>=</code> because less typing hehe</li>
+</ul></li>
 </ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>x <span class="ot">=</span> <span class="dv">5</span></span>
+<span id="cb2-2"><a></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb4-2"><a></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+</section>
+<section id="objects-can-include-text-characters" class="slide level2">
+<h2>Objects can include text (characters)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>hi <span class="ot">&lt;-</span> <span class="st">"hello"</span></span>
+<span id="cb6-2"><a></a>hi</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "hello"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>greetings <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Guten Tag"</span>, <span class="st">"Hola"</span>, hi)</span>
+<span id="cb8-2"><a></a>greetings</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Guten Tag" "Hola"      "hello"    </code></pre>
+</div>
+</div>
+</section>
+<section id="types-of-objects" class="slide level2">
+<h2>Types of objects</h2>
+
+<img data-src="../img_slides/dataStructures.png" class="r-stretch"></section>
+<section id="types-of-objects-1" class="slide level2">
+<h2>Types of objects</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>What is it?</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Character</td>
+<td>These are text or words that are in quotations. Math cannot be done on these.</td>
+<td><code>“My example character”</code></td>
+</tr>
+<tr class="even">
+<td>Integer</td>
+<td>Whole numbers</td>
+<td><code>-5</code>, <code>14</code>, or <code>2000</code></td>
+</tr>
+<tr class="odd">
+<td>Numeric</td>
+<td>Numbers that can include decimals</td>
+<td><code>-5.3</code>, <code>14.5</code>, or <code>2000.0001</code></td>
+</tr>
+<tr class="even">
+<td>Factor</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Date</td>
+<td>Character that represents a date</td>
+<td><code>"12-13-2005"</code></td>
+</tr>
+<tr class="even">
+<td>Logical</td>
+<td>Values that take TRUE or FALSE</td>
+<td><code>TRUE</code> or <code>FALSE</code></td>
+</tr>
+<tr class="odd">
+<td>Vector</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Matrix</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>data.frame</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>list</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Download + Intro to R &amp; Rstudio</p>
+<p>Lesson 03 Slides</p>
 </div>
 </div></div>
 
@@ -635,6 +725,119 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
             }
           });
         }
+            let selectedAnnoteEl;
+            const selectorForAnnotation = ( cell, annotation) => {
+              let cellAttr = 'data-code-cell="' + cell + '"';
+              let lineAttr = 'data-code-annotation="' +  annotation + '"';
+              const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+              return selector;
+            }
+            const selectCodeLines = (annoteEl) => {
+              const doc = window.document;
+              const targetCell = annoteEl.getAttribute("data-target-cell");
+              const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+              const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+              const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+              const lineIds = lines.map((line) => {
+                return targetCell + "-" + line;
+              })
+              let top = null;
+              let height = null;
+              let parent = null;
+              if (lineIds.length > 0) {
+                  //compute the position of the single el (top and bottom and make a div)
+                  const el = window.document.getElementById(lineIds[0]);
+                  top = el.offsetTop;
+                  height = el.offsetHeight;
+                  parent = el.parentElement.parentElement;
+                if (lineIds.length > 1) {
+                  const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+                  const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+                  height = bottom - top;
+                }
+                if (top !== null && height !== null && parent !== null) {
+                  // cook up a div (if necessary) and position it 
+                  let div = window.document.getElementById("code-annotation-line-highlight");
+                  if (div === null) {
+                    div = window.document.createElement("div");
+                    div.setAttribute("id", "code-annotation-line-highlight");
+                    div.style.position = 'absolute';
+                    parent.appendChild(div);
+                  }
+                  div.style.top = top - 2 + "px";
+                  div.style.height = height + 4 + "px";
+                  div.style.left = 0;
+                  let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+                  if (gutterDiv === null) {
+                    gutterDiv = window.document.createElement("div");
+                    gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                    gutterDiv.style.position = 'absolute';
+                    const codeCell = window.document.getElementById(targetCell);
+                    const gutter = codeCell.querySelector('.code-annotation-gutter');
+                    gutter.appendChild(gutterDiv);
+                  }
+                  gutterDiv.style.top = top - 2 + "px";
+                  gutterDiv.style.height = height + 4 + "px";
+                }
+                selectedAnnoteEl = annoteEl;
+              }
+            };
+            const unselectCodeLines = () => {
+              const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+              elementsIds.forEach((elId) => {
+                const div = window.document.getElementById(elId);
+                if (div) {
+                  div.remove();
+                }
+              });
+              selectedAnnoteEl = undefined;
+            };
+              // Handle positioning of the toggle
+          window.addEventListener(
+            "resize",
+            throttle(() => {
+              elRect = undefined;
+              if (selectedAnnoteEl) {
+                selectCodeLines(selectedAnnoteEl);
+              }
+            }, 10)
+          );
+          function throttle(fn, ms) {
+          let throttle = false;
+          let timer;
+            return (...args) => {
+              if(!throttle) { // first call gets through
+                  fn.apply(this, args);
+                  throttle = true;
+              } else { // all the others get throttled
+                  if(timer) clearTimeout(timer); // cancel #2
+                  timer = setTimeout(() => {
+                    fn.apply(this, args);
+                    timer = throttle = false;
+                  }, ms);
+              }
+            };
+          }
+            // Attach click handler to the DT
+            const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+            for (const annoteDlNode of annoteDls) {
+              annoteDlNode.addEventListener('click', (event) => {
+                const clickedEl = event.target;
+                if (clickedEl !== selectedAnnoteEl) {
+                  unselectCodeLines();
+                  const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+                  if (activeEl) {
+                    activeEl.classList.remove('code-annotation-active');
+                  }
+                  selectCodeLines(clickedEl);
+                  clickedEl.classList.add('code-annotation-active');
+                } else {
+                  // Unselect the line
+                  unselectCodeLines();
+                  clickedEl.classList.remove('code-annotation-active');
+                }
+              });
+            }
         const findCites = (el) => {
           const parentEl = el.parentElement;
           if (parentEl) {

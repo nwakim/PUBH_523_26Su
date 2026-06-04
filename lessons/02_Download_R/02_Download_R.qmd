@@ -1,6 +1,6 @@
 ---
-title: "Lesson 2: Download + Intro to R & Rstudio"
-author: "Nicky Wakim, Jessica, Minnier, and Meike Niederhausen"
+title: "Download + Intro to R & Rstudio"
+author: "Nicky Wakim, Jessica Minnier, and Meike Niederhausen"
 title-slide-attributes:
     data-background-color: "#3070BF"
 format: 
@@ -11,7 +11,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 02 Slides
+    footer: "Download + Intro to R & Rstudio"
     html-math-method: mathjax
     highlight-style: arrow
 execute:
@@ -33,11 +33,6 @@ library(here)
 # terminal: for icons
 # quarto install extension quarto-ext/fontawesome
 ```
-
-# Learning Objectives
-
-1. Understand the difference between R and RStudio
-2. Download and install R and RStudio
 
 ## Introduction to R
 
@@ -123,7 +118,6 @@ Open this!
 
 ![[Emma Rand](https://buzzrbeeline.blog/2018/07/04/rstudio-anatomy/)](../img_slides/RStudio_Anatomy.svg){fig-align="center"}
 
-Read more about RStudio's layout in Section 3.4 of [Getting Used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/3-rstudiobasics.html#rstudio-layout){target="_blank"} (Ismay and Kennedy 2021)
 
 ## So let's download them!
 
@@ -135,3 +129,7 @@ Read more about RStudio's layout in Section 3.4 of [Getting Used to R, RStudio, 
   - Even if you have R installed already, I highly recommend installing the latest version
   - In the future, you will periodically want to update this
 - Install RStudio Desktop Open Source License (second)
+
+## References
+
+- Read more about RStudio's layout in Section 3.4 of [Getting Used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/3-rstudiobasics.html#rstudio-layout){target="_blank"} (Ismay and Kennedy 2021)

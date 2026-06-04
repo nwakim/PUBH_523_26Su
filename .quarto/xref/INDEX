@@ -70,5 +70,14 @@
   },
   "lessons/16_Workflow_getting_help/16_Workflow_getting_help.qmd": {
     "16_Workflow_getting_help.html": "3b3bbac1"
+  },
+  "instructors.qmd": {
+    "instructors.html": "4bc5eadc"
+  },
+  "lessons/13_Workflow_Naming/13_Workflow_Naming.qmd": {
+    "13_Workflow_Naming.html": "26f3a0d8"
+  },
+  "lessons/09_Objects/09_Objects.qmd": {
+    "09_Objects.html": "7aa4a9e1"
   }
 }
