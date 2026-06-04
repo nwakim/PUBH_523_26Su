@@ -1,5 +1,5 @@
 ---
-title: "Workflow: Basics"
+title: "Basics"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
@@ -11,7 +11,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: "Workflow: Basics"
+    footer: "Basics"
     html-math-method: mathjax
     highlight-style: arrow
 execute:
@@ -34,6 +34,7 @@ library(here)
 ## Coding basics
 
 - R can be used to do calculations (like a calculator)
+- It will follow the order of operations (PEMDAS) when doing calculations
 
 ```{r}
 1 / 200 * 30
@@ -41,87 +42,38 @@ library(here)
 sin(pi / 2)
 ```
 
-## Create a new object
+## Different operators
 
-You can create new objects with the assignment operator `<-`:
+- Most operators are the same as in math, but some are different
 
-```{r}
-x <- 3 * 4
-```
+ 
 
-Note that the value of `x` is not printed, it's just stored.
-If you want to view the value, type `x` in the console.
+Here are some common operators:
 
-```{r}
-x
-```
+| Operation      | Written                   | In R                   |
+|----------------|---------------------------|------------------------|
+| Addition       | $1+1$                     | `1+1`                  |
+| Subtraction    | $2-1$                     | `2-1`                  |
+| Multiplication | $3\times 2$ or $3\cdot 2$ | `3*2`                  |
+| Division       | $3 / 2$ or $\dfrac{3}{2}$ | `3/2`                  |
+| Exponential    | $4^2$                     | `4^2`                  |
+| Square root    | $\sqrt{4}$ or $4^{1/2}$   | `4^(1/2)` or `sqrt(4)` |
 
-## 
+## Relational operators
 
-You can **c**ombine multiple elements into a vector with `c()`:
+- These operators are interpreted as questions
 
-```{r}
-primes <- c(2, 3, 5, 7, 11, 13)
-```
+- R will return a true or false answer, depending on if it meets the criteria
 
-And basic arithmetic on vectors is applied to every element of the vector:
+| Operation                | In R   |
+|--------------------------|--------|
+| Less than                | `1<1`  |
+| Greater than             | `1>1`  |
+| Less than or equal to    | `1<=1` |
+| Greater than or equal to | `1>=1` |
+| Equal to                 | `1==1` |
+| Not equal to             | `1!=1` |
 
-```{r}
-primes * 2
-primes - 1
-```
+## References
 
-## 
-
-All R statements where you create objects, **assignment** statements, have the same form:
-
-```{r}
-#| eval: false
-object_name <- value
-```
-
-When reading that code, say "object name gets value" in your head.
-
-You will make lots of assignments, and `<-` is a pain to type.
-You can save time with RStudio's keyboard shortcut: Alt + - (the minus sign).
-Notice that RStudio automatically surrounds `<-` with spaces, which is a good code formatting practice.
-Code can be miserable to read on a good day, so giveyoureyesabreak and use spaces.
-
-## Comments
-
-R will ignore any text after `#` for that line.
-This allows you to write **comments**, text that is ignored by R but read by other humans.
-We'll sometimes include comments in examples explaining what's happening with the code.
-
-## 
-
-Comments can be helpful for briefly describing what the following code does.
-
-```{r}
-# create vector of primes
-primes <- c(2, 3, 5, 7, 11, 13)
-
-# multiply primes by 2
-primes * 2
-```
-
-With short pieces of code like this, leaving a comment for every single line of code might not be necessary.
-But as the code you're writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code.
-
-## 
-
-Use comments to explain the *why* of your code, not the *how* or the *what*.
-The *what* and *how* of your code are always possible to figure out, even if it might be tedious, by carefully reading it.
-If you describe every step in the comments, and then change the code, you will have to remember to update the comments as well or it will be confusing when you return to your code in the future.
-
-##
-
-Figuring out *why* something was done is much more difficult, if not impossible.
-For example, `geom_smooth()` has an argument called `span`, which controls the smoothness of the curve, with larger values yielding a smoother curve.
-Suppose you decide to change the value of `span` from its default of 0.75 to 0.9: it's easy for a future reader to understand *what* is happening, but unless you note your thinking in a comment, no one will understand *why* you changed the default.
-
-##
-
-For data analysis code, use comments to explain your overall plan of attack and record important insights as you encounter them.
-There's no way to re-capture this knowledge from the code itself.
-
+- You can find more R operators here: <https://bookdown.org/manishpatwal/bookdown-demo/basic-operations-in-r.html>

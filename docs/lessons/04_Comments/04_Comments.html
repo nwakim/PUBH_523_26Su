@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Nicky Wakim">
-  <title>Introduction to R – Basics</title>
+  <title>Introduction to R – Comments</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -198,7 +198,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#3070BF" class="quarto-title-block center">
-  <h1 class="title">Basics</h1>
+  <h1 class="title">Comments</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -209,129 +209,73 @@ Nicky Wakim
 </div>
 
 </section>
-<section id="coding-basics" class="slide level2">
-<h2>Coding basics</h2>
+<section id="comments" class="slide level2">
+<h2>Comments</h2>
 <ul>
-<li>R can be used to do calculations (like a calculator)</li>
-<li>It will follow the order of operations (PEMDAS) when doing calculations</li>
+<li>R will ignore any text after <code>#</code> for that line.</li>
+<li>This allows you to write <strong>comments</strong>, text that is ignored by R but read by other humans.</li>
+<li>We’ll sometimes include comments in examples explaining why we are running code</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="dv">1</span> <span class="sc">/</span> <span class="dv">200</span> <span class="sc">*</span> <span class="dv">30</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.15</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>(<span class="dv">59</span> <span class="sc">+</span> <span class="dv">73</span> <span class="sc">+</span> <span class="dv">2</span>) <span class="sc">/</span> <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 44.66667</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">sin</span>(pi <span class="sc">/</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1</code></pre>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># This is a comment</span></span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a><span class="do">## This is also a comment</span></span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a><span class="do">########## This is a comment that can help me section off code ##########</span></span>
+<span id="cb1-6"><a></a></span>
+<span id="cb1-7"><a></a>This is not a comment <span class="co"># but this part is a comment</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="different-operators" class="slide level2">
-<h2>Different operators</h2>
+<section id="describing-your-process-with-comments" class="slide level2">
+<h2>Describing your process with comments</h2>
+<p>Comments can be helpful for briefly describing what the following code does.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># Subtract 1 from 10, then divide by 2</span></span>
+<span id="cb2-2"><a></a>(<span class="dv">10</span> <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">/</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4.5</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># Take the sine of 3</span></span>
+<span id="cb4-2"><a></a><span class="fu">sin</span>(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.14112</code></pre>
+</div>
+</div>
 <ul>
-<li>Most operators are the same as in math, but some are different</li>
+<li>With short pieces of code like this, leaving a comment for every single line of code might not be necessary. But as the code you’re writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code.</li>
+</ul>
+</section>
+<section id="better-use-of-comments" class="slide level2">
+<h2>Better use of comments</h2>
+<ul>
+<li>Use comments to explain the <em>why</em> of your code</li>
 </ul>
 <p>&nbsp;</p>
-<p>Here are some common operators:</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Operation</th>
-<th>Written</th>
-<th>In R</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Addition</td>
-<td><span class="math inline">\(1+1\)</span></td>
-<td><code>1+1</code></td>
-</tr>
-<tr class="even">
-<td>Subtraction</td>
-<td><span class="math inline">\(2-1\)</span></td>
-<td><code>2-1</code></td>
-</tr>
-<tr class="odd">
-<td>Multiplication</td>
-<td><span class="math inline">\(3\times 2\)</span> or <span class="math inline">\(3\cdot 2\)</span></td>
-<td><code>3*2</code></td>
-</tr>
-<tr class="even">
-<td>Division</td>
-<td><span class="math inline">\(3 / 2\)</span> or <span class="math inline">\(\dfrac{3}{2}\)</span></td>
-<td><code>3/2</code></td>
-</tr>
-<tr class="odd">
-<td>Exponential</td>
-<td><span class="math inline">\(4^2\)</span></td>
-<td><code>4^2</code></td>
-</tr>
-<tr class="even">
-<td>Square root</td>
-<td><span class="math inline">\(\sqrt{4}\)</span> or <span class="math inline">\(4^{1/2}\)</span></td>
-<td><code>4^(1/2)</code> or <code>sqrt(4)</code></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="relational-operators" class="slide level2">
-<h2>Relational operators</h2>
 <ul>
-<li><p>These operators are interpreted as questions</p></li>
-<li><p>R will return a true or false answer, depending on if it meets the criteria</p></li>
-</ul>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Operation</th>
-<th>In R</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Less than</td>
-<td><code>1&lt;1</code></td>
-</tr>
-<tr class="even">
-<td>Greater than</td>
-<td><code>1&gt;1</code></td>
-</tr>
-<tr class="odd">
-<td>Less than or equal to</td>
-<td><code>1&lt;=1</code></td>
-</tr>
-<tr class="even">
-<td>Greater than or equal to</td>
-<td><code>1&gt;=1</code></td>
-</tr>
-<tr class="odd">
-<td>Equal to</td>
-<td><code>1==1</code></td>
-</tr>
-<tr class="even">
-<td>Not equal to</td>
-<td><code>1!=1</code></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="references" class="slide level2">
-<h2>References</h2>
+<li>Think of it as <strong>note-taking for your future</strong> self and others who might read your code
 <ul>
-<li>You can find more R operators here: <a href="https://bookdown.org/manishpatwal/bookdown-demo/basic-operations-in-r.html" class="uri">https://bookdown.org/manishpatwal/bookdown-demo/basic-operations-in-r.html</a></li>
+<li>In theory, we should be able to figure out what we were doing</li>
+<li>So we want to leave ourselves notes about <strong>why we were doing it</strong>, and any <strong>important details that might not be obvious</strong> from the code itself</li>
+</ul></li>
 </ul>
+<p>&nbsp;</p>
+<ul>
+<li>For example:</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="co"># Calculate average age of 3 people</span></span>
+<span id="cb6-2"><a></a>(<span class="dv">29</span> <span class="sc">+</span> <span class="dv">42</span> <span class="sc">+</span> <span class="dv">68</span>) <span class="sc">/</span> <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 46.33333</code></pre>
+</div>
+</div>
 
 
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Basics</p>
+<p>Comments</p>
 </div>
 </div></div>
 

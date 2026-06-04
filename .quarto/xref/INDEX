@@ -82,5 +82,8 @@
   },
   "lessons/00_Orientation/00_Orientation.qmd": {
     "00_Orientation.html": "9a90922f"
+  },
+  "lessons/04_Comments/04_Comments.qmd": {
+    "04_Comments.html": "d5089bd3"
   }
 }

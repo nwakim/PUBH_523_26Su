@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Suggested Date\nLes-son\nTopic\nLesson video\nDemo video\nTB 1\nTB 2\nSlides HTML\nSlides PDF\nPractice\n\n\n\n\n\n0\nWelcome\n\n\n\n\n\n\n\n\n\n\n0\nOrientation to the course site\n\n\n\n\n\n\n\n\n\n06/22\n1\nIntroduction to the Introduction\n\n\nIntro\n\n\n\n\n\n\n06/24\n2\nDownload + Intro to R & Rstudio\n\n\n\n3.4-3.5\n\n\n\n\n\n\n3\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n\n06/29\n4\nWorkflow: Basics\n\n\n2.1-2.3\n\n\n\n\n\n\n07/01\n5\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n\n07/06\n6\nPackages\n\n\n\n3.7\n\n\n\n\n\n07/08\n7\nQuarto documents\n\n\n\n\n\n\n\n\n\n07/13\n8\nR projects and working directories\n\n\n6.2\n6\n\n\n\n\n\n07/15\n9\nObjects\n\n\n\n3.10\n\n\n\n\n\n\n10\nVariables in R\n\n\n\n\n\n\n\n\n\n07/20\n11\nPiping\n\n\n3.4\n8.1\n\n\n\n\n\n07/22\n12\nKey operators and functions\n\n\n\n8.2\n\n\n\n\n\n\n\nNaming: file naming and variable naming?\n\n\n\n\n\n\n\n\n\n07/27\n13\nTidy data\n\n\n5.2\n4.1\n\n\n\n\n\n07/29\n14\nImport and Export\n\n\n7\n7\n\n\n\n\n\n08/03\n15\nWorkflow: code style\n\n\n4\n\n\n\n\n\n\n08/05\n16\nWorkflow: getting help\n\n\n8\n\n\n\n\n\n\n08/12\n17\nData transformation: basics\n\n\n3.1\n\n\n\n\n\n\n08/19\n18\nData transformation: rows\n\n\n3.2\n\n\n\n\n\n\n08/24\n19\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n\n08/26\n20\nData transformation: groups\n\n\n3.5\n\n\n\n\n\n\n\n21\nData summarization: quantitative data\n\n\n\n\n\n\n\n\n\n\n22\nData summarization: categorical data\n\n\n\n\n\n\n\n\n\n\n23\nDescriptive tables\n\n\n\n17\n\n\n\n\n\n08/31\n24\nLengthening data\n\n\n5.3\n\n\n\n\n\n\n\n25\nWidening data\n\n\n5.4\n\n\n\n\n\n\n\n26\nData visualization: intro to ggplot\n\n\n1.1-1.2\n\n\n\n\n\n\n\n27\nData visualization: ggplot2 calls\n\n\n1.3\n\n\n\n\n\n\n\n28\nData visualization: distributions\n\n\n1.4\n\n\n\n\n\n\n\n29\nData visualization: relationships\n\n\n1.5\n\n\n\n\n\n\n\n30\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n\n\n31\nMissing data: transformations\n\n\n\n\n\n\n\n\n\n\nOTHER options:\n\nVariables (factors, etc.)\nshowing missingness\nreporducibility:\n\nand quarto\n\nworking dataset for the course\n\nuse synthpop to make dataset"
+    "text": "Suggested Date\nLes-son\nTopic\nLesson video\nDemo video\nTB 1\nTB 2\nSlides HTML\nSlides PDF\nPractice\n\n\n\n\n\n0\nWelcome\n\n\n\n\n\n\n\n\n\n\n0\nOrientation to the course site\n\n\n\n\n\n\n\n\n\n06/22\n1\nIntroduction to the Introduction\n\n\nIntro\n\n\n\n\n\n\n06/24\n2\nDownload + Intro to R & Rstudio\n\n\n\n3.4-3.5\n\n\n\n\n\n\n3\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n\n06/29\n4\nWorkflow: Basics\n\n\n2.1\n\n\n\n\n\n\n\n\nComments\n\n\n2.2\n\n\n\n\n\n\n07/01\n5\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n\n07/06\n6\nPackages\n\n\n\n3.7\n\n\n\n\n\n07/08\n7\nQuarto documents\n\n\n\n\n\n\n\n\n\n07/13\n8\nR projects and working directories\n\n\n6.2\n6\n\n\n\n\n\n07/15\n9\nObjects\n\n\n\n3.10\n\n\n\n\n\n\n10\nVariables in R\n\n\n\n\n\n\n\n\n\n07/20\n11\nPiping\n\n\n3.4\n8.1\n\n\n\n\n\n07/22\n12\nKey operators and functions\n\n\n\n8.2\n\n\n\n\n\n\n\nNaming: file naming and variable naming?\n\n\n\n\n\n\n\n\n\n07/27\n13\nTidy data\n\n\n5.2\n4.1\n\n\n\n\n\n07/29\n14\nImport and Export\n\n\n7\n7\n\n\n\n\n\n08/03\n15\nWorkflow: code style\n\n\n4\n\n\n\n\n\n\n08/05\n16\nWorkflow: getting help\n\n\n8\n\n\n\n\n\n\n08/12\n17\nData transformation: basics\n\n\n3.1\n\n\n\n\n\n\n08/19\n18\nData transformation: rows\n\n\n3.2\n\n\n\n\n\n\n08/24\n19\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n\n08/26\n20\nData transformation: groups\n\n\n3.5\n\n\n\n\n\n\n\n21\nData summarization: quantitative data\n\n\n\n\n\n\n\n\n\n\n22\nData summarization: categorical data\n\n\n\n\n\n\n\n\n\n\n23\nDescriptive tables\n\n\n\n17\n\n\n\n\n\n08/31\n24\nLengthening data\n\n\n5.3\n\n\n\n\n\n\n\n25\nWidening data\n\n\n5.4\n\n\n\n\n\n\n\n26\nData visualization: intro to ggplot\n\n\n1.1-1.2\n\n\n\n\n\n\n\n27\nData visualization: ggplot2 calls\n\n\n1.3\n\n\n\n\n\n\n\n28\nData visualization: distributions\n\n\n1.4\n\n\n\n\n\n\n\n29\nData visualization: relationships\n\n\n1.5\n\n\n\n\n\n\n\n30\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n\n\n31\nMissing data: transformations\n\n\n\n\n\n\n\n\n\n\nOTHER options:\n\nVariables (factors, etc.)\nshowing missingness\nreporducibility:\n\nand quarto\n\nworking dataset for the course\n\nuse synthpop to make dataset"
   },
   {
     "objectID": "index.html",
@@ -1339,44 +1339,44 @@
   {
     "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#coding-basics",
     "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#coding-basics",
-    "title": "Workflow: Basics",
+    "title": "Basics",
     "section": "Coding basics",
-    "text": "Coding basics\n\nR can be used to do calculations (like a calculator)\n\n\n1 / 200 * 30\n\n[1] 0.15\n\n(59 + 73 + 2) / 3\n\n[1] 44.66667\n\nsin(pi / 2)\n\n[1] 1"
+    "text": "Coding basics\n\nR can be used to do calculations (like a calculator)\nIt will follow the order of operations (PEMDAS) when doing calculations\n\n\n1 / 200 * 30\n\n[1] 0.15\n\n(59 + 73 + 2) / 3\n\n[1] 44.66667\n\nsin(pi / 2)\n\n[1] 1"
   },
   {
     "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#section",
     "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#section",
     "title": "Workflow: Basics",
     "section": "",
-    "text": "You can combine multiple elements into a vector with c():\n\nprimes &lt;- c(2, 3, 5, 7, 11, 13)\n\nAnd basic arithmetic on vectors is applied to every element of the vector:\n\nprimes * 2\n\n[1]  4  6 10 14 22 26\n\nprimes - 1\n\n[1]  1  2  4  6 10 12"
+    "text": "Comments can be helpful for briefly describing what the following code does.\n\n# Subtract 1 from 10, then divide by 2\n(10 - 1) / 2\n\n[1] 4.5\n\n# Take the sine of 3\nsin(3)\n\n[1] 0.14112\n\n\n\nWith short pieces of code like this, leaving a comment for every single line of code might not be necessary. But as the code you’re writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code."
   },
   {
     "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#section-1",
     "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#section-1",
     "title": "Workflow: Basics",
     "section": "",
-    "text": "All R statements where you create objects, assignment statements, have the same form:\n\nobject_name &lt;- value\n\nWhen reading that code, say “object name gets value” in your head.\nYou will make lots of assignments, and &lt;- is a pain to type. You can save time with RStudio’s keyboard shortcut: Alt + - (the minus sign). Notice that RStudio automatically surrounds &lt;- with spaces, which is a good code formatting practice. Code can be miserable to read on a good day, so giveyoureyesabreak and use spaces."
+    "text": "Use comments to explain the why of your code, not the how or the what. The what and how of your code are always possible to figure out, even if it might be tedious, by carefully reading it. If you describe every step in the comments, and then change the code, you will have to remember to update the comments as well or it will be confusing when you return to your code in the future."
   },
   {
     "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#section-2",
     "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#section-2",
     "title": "Workflow: Basics",
     "section": "",
-    "text": "Comments can be helpful for briefly describing what the following code does.\n\n# create vector of primes\nprimes &lt;- c(2, 3, 5, 7, 11, 13)\n\n# multiply primes by 2\nprimes * 2\n\n[1]  4  6 10 14 22 26\n\n\nWith short pieces of code like this, leaving a comment for every single line of code might not be necessary. But as the code you’re writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code."
+    "text": "Figuring out why something was done is much more difficult, if not impossible. For example, geom_smooth() has an argument called span, which controls the smoothness of the curve, with larger values yielding a smoother curve. Suppose you decide to change the value of span from its default of 0.75 to 0.9: it’s easy for a future reader to understand what is happening, but unless you note your thinking in a comment, no one will understand why you changed the default."
   },
   {
     "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#comments",
     "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#comments",
     "title": "Workflow: Basics",
     "section": "Comments",
-    "text": "Comments\nR will ignore any text after # for that line. This allows you to write comments, text that is ignored by R but read by other humans. We’ll sometimes include comments in examples explaining what’s happening with the code."
+    "text": "Comments\n\nR will ignore any text after # for that line.\nThis allows you to write comments, text that is ignored by R but read by other humans.\nWe’ll sometimes include comments in examples explaining why we are running code\n\n\n# This is a comment\n\n## This is also a comment\n\n########## This is a comment that can help me section off code ##########\n\nThis is not a comment # but this part is a comment"
   },
   {
     "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#section-3",
     "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#section-3",
     "title": "Workflow: Basics",
     "section": "",
-    "text": "Use comments to explain the why of your code, not the how or the what. The what and how of your code are always possible to figure out, even if it might be tedious, by carefully reading it. If you describe every step in the comments, and then change the code, you will have to remember to update the comments as well or it will be confusing when you return to your code in the future."
+    "text": "For data analysis code, use comments to explain your overall plan of attack and record important insights as you encounter them. There’s no way to re-capture this knowledge from the code itself."
   },
   {
     "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#section-4",
@@ -1790,5 +1790,61 @@
     "title": "Download + Intro to R & Rstudio",
     "section": "RStudio interface",
     "text": "RStudio interface\n\n\n\nEditor window: where you write your code\nConsole: where you see the output of your code\nEnvironment pane: where you see the objects you’ve created\nViewer pane: where you see plots, files, and help pages"
+  },
+  {
+    "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#describing-your-process-with-comments",
+    "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#describing-your-process-with-comments",
+    "title": "Workflow: Basics",
+    "section": "Describing your process with comments",
+    "text": "Describing your process with comments\nComments can be helpful for briefly describing what the following code does.\n\n# Subtract 1 from 10, then divide by 2\n(10 - 1) / 2\n\n[1] 4.5\n\n# Take the sine of 3\nsin(3)\n\n[1] 0.14112\n\n\n\nWith short pieces of code like this, leaving a comment for every single line of code might not be necessary. But as the code you’re writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code."
+  },
+  {
+    "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#better-use-of-comments",
+    "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#better-use-of-comments",
+    "title": "Workflow: Basics",
+    "section": "Better use of comments",
+    "text": "Better use of comments\n\nUse comments to explain the why of your code\n\n \n\nThink of it as note-taking for your future self and others who might read your code\n\nIn theory, we should be able to figure out what we were doing\nSo we want to leave ourselves notes about why we were doing it, and any important details that might not be obvious from the code itself\n\n\n \n\nFor example:\n\n\n# Calculate average age of 3 people\n(29 + 42 + 68) / 3\n\n[1] 46.33333"
+  },
+  {
+    "objectID": "lessons/04_Comments/04_Comments.html#comments",
+    "href": "lessons/04_Comments/04_Comments.html#comments",
+    "title": "Comments",
+    "section": "Comments",
+    "text": "Comments\n\nR will ignore any text after # for that line.\nThis allows you to write comments, text that is ignored by R but read by other humans.\nWe’ll sometimes include comments in examples explaining why we are running code\n\n\n# This is a comment\n\n## This is also a comment\n\n########## This is a comment that can help me section off code ##########\n\nThis is not a comment # but this part is a comment"
+  },
+  {
+    "objectID": "lessons/04_Comments/04_Comments.html#describing-your-process-with-comments",
+    "href": "lessons/04_Comments/04_Comments.html#describing-your-process-with-comments",
+    "title": "Comments",
+    "section": "Describing your process with comments",
+    "text": "Describing your process with comments\nComments can be helpful for briefly describing what the following code does.\n\n# Subtract 1 from 10, then divide by 2\n(10 - 1) / 2\n\n[1] 4.5\n\n# Take the sine of 3\nsin(3)\n\n[1] 0.14112\n\n\n\nWith short pieces of code like this, leaving a comment for every single line of code might not be necessary. But as the code you’re writing gets more complex, comments can save you (and your collaborators) a lot of time figuring out what was done in the code."
+  },
+  {
+    "objectID": "lessons/04_Comments/04_Comments.html#better-use-of-comments",
+    "href": "lessons/04_Comments/04_Comments.html#better-use-of-comments",
+    "title": "Comments",
+    "section": "Better use of comments",
+    "text": "Better use of comments\n\nUse comments to explain the why of your code\n\n \n\nThink of it as note-taking for your future self and others who might read your code\n\nIn theory, we should be able to figure out what we were doing\nSo we want to leave ourselves notes about why we were doing it, and any important details that might not be obvious from the code itself\n\n\n \n\nFor example:\n\n\n# Calculate average age of 3 people\n(29 + 42 + 68) / 3\n\n[1] 46.33333"
+  },
+  {
+    "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#different-operators",
+    "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#different-operators",
+    "title": "Basics",
+    "section": "Different operators",
+    "text": "Different operators\n\nMost operators are the same as in math, but some are different\n\n \nHere are some common operators:\n\n\n\nOperation\nWritten\nIn R\n\n\n\n\nAddition\n\\(1+1\\)\n1+1\n\n\nSubtraction\n\\(2-1\\)\n2-1\n\n\nMultiplication\n\\(3\\times 2\\) or \\(3\\cdot 2\\)\n3*2\n\n\nDivision\n\\(3 / 2\\) or \\(\\dfrac{3}{2}\\)\n3/2\n\n\nExponential\n\\(4^2\\)\n4^2\n\n\nSquare root\n\\(\\sqrt{4}\\) or \\(4^{1/2}\\)\n4^(1/2) or sqrt(4)"
+  },
+  {
+    "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#relational-operators",
+    "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#relational-operators",
+    "title": "Basics",
+    "section": "Relational operators",
+    "text": "Relational operators\n\nThese operators are interpreted as questions\nR will return a true or false answer, depending on if it meets the criteria\n\n\n\n\nOperation\nIn R\n\n\n\n\nLess than\n1&lt;1\n\n\nGreater than\n1&gt;1\n\n\nLess than or equal to\n1&lt;=1\n\n\nGreater than or equal to\n1&gt;=1\n\n\nEqual to\n1==1\n\n\nNot equal to\n1!=1"
+  },
+  {
+    "objectID": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#references",
+    "href": "lessons/03_Workflow_Basics/03_Workflow_Basics.html#references",
+    "title": "Basics",
+    "section": "References",
+    "text": "References\n\nYou can find more R operators here: https://bookdown.org/manishpatwal/bookdown-demo/basic-operations-in-r.html"
   }
 ]
