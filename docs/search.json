@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Suggested Date\nLes-son\nTopic\nLesson video\nDemo video\nTB 1\nTB 2\nSlides HTML\nSlides PDF\nPractice\n\n\n\n\n\n0\nWelcome\n\n\n\n\n\n\n\n\n\n\n0\nOrientation to the course site\n\n\n\n\n\n\n\n\n\n06/22\n1\nIntroduction to the Introduction\n\n\nIntro\n\n\n\n\n\n\n06/24\n2\nDownloading R and RStudio\n\n\n\n3.4\n\n\n\n\n\n\n3\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n\n06/29\n4\nWorkflow: Basics\n\n\n2.1-2.3\n\n\n\n\n\n\n07/01\n5\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n\n07/06\n6\nPackages\n\n\n\n3.7\n\n\n\n\n\n07/08\n7\nQuarto documents\n\n\n\n\n\n\n\n\n\n07/13\n8\nR projects and working directories\n\n\n6.2\n6\n\n\n\n\n\n07/15\n9\nObjects\n\n\n\n3.10\n\n\n\n\n\n\n10\nVariables in R\n\n\n\n\n\n\n\n\n\n07/20\n11\nPiping\n\n\n3.4\n8.1\n\n\n\n\n\n07/22\n12\nKey operators and functions\n\n\n\n8.2\n\n\n\n\n\n\n\nNaming: file naming and variable naming?\n\n\n\n\n\n\n\n\n\n07/27\n13\nTidy data\n\n\n5.2\n4.1\n\n\n\n\n\n07/29\n14\nImport and Export\n\n\n7\n7\n\n\n\n\n\n08/03\n15\nWorkflow: code style\n\n\n4\n\n\n\n\n\n\n08/05\n16\nWorkflow: getting help\n\n\n8\n\n\n\n\n\n\n08/12\n17\nData transformation: basics\n\n\n3.1\n\n\n\n\n\n\n08/19\n18\nData transformation: rows\n\n\n3.2\n\n\n\n\n\n\n08/24\n19\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n\n08/26\n20\nData transformation: groups\n\n\n3.5\n\n\n\n\n\n\n\n21\nData summarization: quantitative data\n\n\n\n\n\n\n\n\n\n\n22\nData summarization: categorical data\n\n\n\n\n\n\n\n\n\n\n23\nDescriptive tables\n\n\n\n17\n\n\n\n\n\n08/31\n24\nLengthening data\n\n\n5.3\n\n\n\n\n\n\n\n25\nWidening data\n\n\n5.4\n\n\n\n\n\n\n\n26\nData visualization: intro to ggplot\n\n\n1.1-1.2\n\n\n\n\n\n\n\n27\nData visualization: ggplot2 calls\n\n\n1.3\n\n\n\n\n\n\n\n28\nData visualization: distributions\n\n\n1.4\n\n\n\n\n\n\n\n29\nData visualization: relationships\n\n\n1.5\n\n\n\n\n\n\n\n30\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n\n\n31\nMissing data: transformations\n\n\n\n\n\n\n\n\n\n\nOTHER options:\n\nVariables (factors, etc.)\nshowing missingness\nreporducibility:\n\nand quarto\n\nworking dataset for the course\n\nuse synthpop to make dataset"
+    "text": "Suggested Date\nLes-son\nTopic\nLesson video\nDemo video\nTB 1\nTB 2\nSlides HTML\nSlides PDF\nPractice\n\n\n\n\n\n0\nWelcome\n\n\n\n\n\n\n\n\n\n\n0\nOrientation to the course site\n\n\n\n\n\n\n\n\n\n06/22\n1\nIntroduction to the Introduction\n\n\nIntro\n\n\n\n\n\n\n06/24\n2\nDownload + Intro to R & Rstudio\n\n\n\n3.4-3.5\n\n\n\n\n\n\n3\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n\n06/29\n4\nWorkflow: Basics\n\n\n2.1-2.3\n\n\n\n\n\n\n07/01\n5\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n\n07/06\n6\nPackages\n\n\n\n3.7\n\n\n\n\n\n07/08\n7\nQuarto documents\n\n\n\n\n\n\n\n\n\n07/13\n8\nR projects and working directories\n\n\n6.2\n6\n\n\n\n\n\n07/15\n9\nObjects\n\n\n\n3.10\n\n\n\n\n\n\n10\nVariables in R\n\n\n\n\n\n\n\n\n\n07/20\n11\nPiping\n\n\n3.4\n8.1\n\n\n\n\n\n07/22\n12\nKey operators and functions\n\n\n\n8.2\n\n\n\n\n\n\n\nNaming: file naming and variable naming?\n\n\n\n\n\n\n\n\n\n07/27\n13\nTidy data\n\n\n5.2\n4.1\n\n\n\n\n\n07/29\n14\nImport and Export\n\n\n7\n7\n\n\n\n\n\n08/03\n15\nWorkflow: code style\n\n\n4\n\n\n\n\n\n\n08/05\n16\nWorkflow: getting help\n\n\n8\n\n\n\n\n\n\n08/12\n17\nData transformation: basics\n\n\n3.1\n\n\n\n\n\n\n08/19\n18\nData transformation: rows\n\n\n3.2\n\n\n\n\n\n\n08/24\n19\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n\n08/26\n20\nData transformation: groups\n\n\n3.5\n\n\n\n\n\n\n\n21\nData summarization: quantitative data\n\n\n\n\n\n\n\n\n\n\n22\nData summarization: categorical data\n\n\n\n\n\n\n\n\n\n\n23\nDescriptive tables\n\n\n\n17\n\n\n\n\n\n08/31\n24\nLengthening data\n\n\n5.3\n\n\n\n\n\n\n\n25\nWidening data\n\n\n5.4\n\n\n\n\n\n\n\n26\nData visualization: intro to ggplot\n\n\n1.1-1.2\n\n\n\n\n\n\n\n27\nData visualization: ggplot2 calls\n\n\n1.3\n\n\n\n\n\n\n\n28\nData visualization: distributions\n\n\n1.4\n\n\n\n\n\n\n\n29\nData visualization: relationships\n\n\n1.5\n\n\n\n\n\n\n\n30\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n\n\n31\nMissing data: transformations\n\n\n\n\n\n\n\n\n\n\nOTHER options:\n\nVariables (factors, etc.)\nshowing missingness\nreporducibility:\n\nand quarto\n\nworking dataset for the course\n\nuse synthpop to make dataset"
   },
   {
     "objectID": "index.html",
@@ -653,7 +653,7 @@
   {
     "objectID": "lessons/01_Intro_to_Intro/01_Intro_to_Intro.html#some-good-skills-to-know",
     "href": "lessons/01_Intro_to_Intro/01_Intro_to_Intro.html#some-good-skills-to-know",
-    "title": "Lesson 1: Introduction to the Introduction",
+    "title": "Introduction to the Introduction",
     "section": "Some good skills to know",
     "text": "Some good skills to know\n\nCopying code: the copy option on all code!"
   },
@@ -1762,5 +1762,33 @@
     "title": "Objects",
     "section": "Types of objects",
     "text": "Types of objects\n\n\n\n\n\n\n\n\nClass\nWhat is it?\nExamples\n\n\n\n\nCharacter\nThese are text or words that are in quotations. Math cannot be done on these.\n“My example character”\n\n\nInteger\nWhole numbers\n-5, 14, or 2000\n\n\nNumeric\nNumbers that can include decimals\n-5.3, 14.5, or 2000.0001\n\n\nFactor\n\n\n\n\nDate\nCharacter that represents a date\n\"12-13-2005\"\n\n\nLogical\nValues that take TRUE or FALSE\nTRUE or FALSE\n\n\nVector\n\n\n\n\nMatrix\n\n\n\n\ndata.frame\n\n\n\n\nlist"
+  },
+  {
+    "objectID": "lessons/01_Intro_to_Intro/01_Intro_to_Intro.html#what-will-we-learn",
+    "href": "lessons/01_Intro_to_Intro/01_Intro_to_Intro.html#what-will-we-learn",
+    "title": "Introduction to the Introduction",
+    "section": "What will we learn?",
+    "text": "What will we learn?\n\n\nIn this class, we will cover the following topics:\n\nImporting data\nTidying data\nTransforming data\nVisualizing data\nSummarizing data\n\n\n\n\n\nFigure from R for Data Science TB"
+  },
+  {
+    "objectID": "lessons/00_Orientation/00_Orientation.html",
+    "href": "lessons/00_Orientation/00_Orientation.html",
+    "title": "Orientation to the Course",
+    "section": "",
+    "text": "Copying code: the copy option on all code!"
+  },
+  {
+    "objectID": "lessons/00_Orientation/00_Orientation.html#some-good-things-to-know-for-this-class",
+    "href": "lessons/00_Orientation/00_Orientation.html#some-good-things-to-know-for-this-class",
+    "title": "Orientation to the Course",
+    "section": "Some good things to know for this class!",
+    "text": "Some good things to know for this class!\n\nCopying code: the copy option on all code!\nAccessing the source code for this site via GitHub"
+  },
+  {
+    "objectID": "lessons/02_Download_R/02_Download_R.html#rstudio-interface",
+    "href": "lessons/02_Download_R/02_Download_R.html#rstudio-interface",
+    "title": "Download + Intro to R & Rstudio",
+    "section": "RStudio interface",
+    "text": "RStudio interface\n\n\n\nEditor window: where you write your code\nConsole: where you see the output of your code\nEnvironment pane: where you see the objects you’ve created\nViewer pane: where you see plots, files, and help pages"
   }
 ]

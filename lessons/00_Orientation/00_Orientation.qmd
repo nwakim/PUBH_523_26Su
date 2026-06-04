@@ -1,0 +1,27 @@
+---
+title: "Orientation to the Course"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: "Orientation to the Course"
+    html-math-method: mathjax
+    highlight-style: arrow
+execute:
+  echo: true
+  freeze: auto
+---
+
+
+## Some good things to know for this class!
+
+- Copying code: the copy option on all code!
+- Accessing the source code for this site via GitHub
+

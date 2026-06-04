@@ -1,5 +1,5 @@
 ---
-title: "Lesson 1: Introduction to the Introduction"
+title: "Introduction to the Introduction"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
@@ -11,7 +11,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 01 Slides
+    footer: "Introduction to the Introduction"
     html-math-method: mathjax
     highlight-style: arrow
 execute:
@@ -19,7 +19,20 @@ execute:
   freeze: auto
 ---
 
-## Some good skills to know
+## What will we learn?
 
-- Copying code: the copy option on all code!
+::: columns
+::: {.column width="30%"}
+In this class, we will cover the following topics:
 
+- Importing data
+- Tidying data
+- Transforming data
+- Visualizing data
+- Summarizing data
+:::
+
+::: {.column width="70%"}
+![[Figure from R for Data Science TB](https://r4ds.hadley.nz/intro.html#fig-ds-diagram)](../img_slides/DS_process.png)
+:::
+:::

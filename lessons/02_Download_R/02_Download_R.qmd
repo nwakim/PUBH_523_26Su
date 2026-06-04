@@ -114,10 +114,20 @@ Open this!
 :::
 ::::::::::::::
 
-## RStudio anatomy
+## RStudio interface
 
-![[Emma Rand](https://buzzrbeeline.blog/2018/07/04/rstudio-anatomy/)](../img_slides/RStudio_Anatomy.svg){fig-align="center"}
+::::: columns
+::: {.column width="25%"}
+- [Editor window]{style="color: #5BAFF8;"}: where you write your code
+- [Console]{style="color: #9F71F7;"}: where you see the output of your code
+- [Environment pane]{style="color: #EF85B3;"}: where you see the objects you've created
+- [Viewer pane]{style="color: #459B99;"}: where you see plots, files, and help pages
+:::
 
+::: {.column width="75%"}
+![](../img_slides/RStudio_interface.png){fig-align="center"}
+:::
+:::::
 
 ## So let's download them!
 

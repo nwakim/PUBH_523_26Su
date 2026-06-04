@@ -31,7 +31,7 @@ library(janitor)
 library(here)
 ```
 
-# What is an R script?
+## What is an R script?
 
 ::: columns
 ::: {.column width="45%"}
