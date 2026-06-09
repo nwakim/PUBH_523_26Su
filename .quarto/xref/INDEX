@@ -85,5 +85,54 @@
   },
   "lessons/04_Comments/04_Comments.qmd": {
     "04_Comments.html": "d5089bd3"
+  },
+  "lessons/06_Packages/06_Packages.qmd": {
+    "06_Packages.html": "28d950c2"
+  },
+  "lesson_references.qmd": {
+    "lesson_references.html": "56093468"
+  },
+  "lessons/R02_Basics_01/04_Functions.qmd": {
+    "04_Functions.html": "a739ac93"
+  },
+  "syllabus.qmd": {
+    "syllabus.html": "56ce9bbf",
+    "syllabus.tex": "f637408e"
+  },
+  "homeworks.qmd": {
+    "homeworks.html": "fd3dd547"
+  },
+  "homework/HW_02_ans.qmd": {
+    "HW_02_ans.html": "7b165a17"
+  },
+  "homework/HW_03_ans.qmd": {
+    "HW_03_ans.html": "6a3ff007"
+  },
+  "homework/HW_01_ans.qmd": {
+    "HW_01_ans.html": "63f2a8aa"
+  },
+  "homework/HW_04_ans.qmd": {
+    "HW_04_ans.html": "5fd14ab8"
+  },
+  "homework/HW_03.qmd": {
+    "HW_03.html": "ea74590d"
+  },
+  "homework/HW_02.qmd": {
+    "HW_02.html": "fc34e638"
+  },
+  "homework/HW_00.qmd": {
+    "HW_00.html": "a1706cdc"
+  },
+  "homework/HW_01.qmd": {
+    "HW_01.html": "527341b0"
+  },
+  "homework/HW_05.qmd": {
+    "HW_05.html": "8f6eeccb"
+  },
+  "homework/HW_04.qmd": {
+    "HW_04.html": "6b6d2341"
+  },
+  "project.qmd": {
+    "project.html": "6e431830"
   }
 }

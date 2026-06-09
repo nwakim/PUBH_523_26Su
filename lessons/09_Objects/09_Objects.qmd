@@ -83,7 +83,7 @@ greetings
 ## Types of objects
 
 | Class | What is it? | Examples |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Character | These are text or words that are in quotations. Math cannot be done on these. | `“My example character”` |
 | Integer | Whole numbers | `-5`, `14`, or `2000` |
 | Numeric | Numbers that can include decimals | `-5.3`, `14.5`, or `2000.0001` |
@@ -94,3 +94,18 @@ greetings
 | Matrix |  |  |
 | data.frame |  |  |
 | list |  |  |
+
+## 
+
+You can **c**ombine multiple elements into a vector with `c()`:
+
+```{r}
+primes <- c(2, 3, 5, 7, 11, 13)
+```
+
+And basic arithmetic on vectors is applied to every element of the vector:
+
+```{r}
+primes * 2
+primes - 1
+```

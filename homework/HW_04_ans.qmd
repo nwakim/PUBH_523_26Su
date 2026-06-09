@@ -1,0 +1,305 @@
+---
+title: "Homework 4 Answers"
+subtitle: "BSTA 513/613"
+author: "Nicky Wakim"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    self-contained: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+```{=html}
+<style>div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}</style>
+```
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(rstatix)
+library(broom)
+library(gt)
+library(janitor)
+library(readxl)
+library(gridExtra)
+library(ggfortify)  # autoplot(model)
+library(gtsummary)
+library(describedata) # gladder()
+library(haven)
+library(here)
+```
+
+## Questions Part 1
+
+### Question 1
+
+*In this problem, we will practice performing model diagnostics in a logistic regression model.*
+
+This question is taken from the Hosmer and Lemeshow textbook. The ICU study data set consists of a sample of 200 subjects who were part of a much larger study on survival of patients following admission to an adult intensive care unit (ICU). The dataset should be available in our shared folder. The major goal of this study was to develop a logistic regression model to predict the probability of survival to hospital discharge of these patients. In this question, the primary outcome variable is vital (survival) status at hospital discharge, STA. Clinicians associated with the study felt that a key determinant of survival was the patient’s age at admission, AGE. We will build to a multivariable logistic regression model while adjusting for cancer part of the present problem (CAN), CPR prior to ICU admission (CPR), infection probable at ICU admission (INF), and level of consciousness at ICU admission (LOC).
+
+A code sheet for the variables to be considered is displayed in Table 1.5 below (from the Hosmer and Lemeshow textbook, pg. 23). We refer to this data set as the ICU data.
+
+**You will need to use some of the mutations implemented in [HW 2, Q2, Part d](https://nwakim.github.io/BSTA_513_S25/homework/HW_02.html#part-d-1).**
+
+![](./images/ICU_codebook.png){width="557"}
+
+**We will use the following model:** $$\text{logit}(\pi(\textbf{X}))=\beta_0 + \beta_1 \cdot I(CAN=\text{``Yes"}) + \beta_2 \cdot I(CPR=\text{``Yes"}) + \\ \beta_3 \cdot I(INF=\text{``Yes"})$$
+
+```{r message=FALSE, warning=FALSE}
+icu = read_csv(here("data", "icu.csv"))
+icu1 = icu %>% mutate(STA = as.factor(STA) %>% relevel(ref = "Lived"))
+icu2 = icu1 %>% mutate(CAN = as.factor(CAN) %>% relevel(ref = "No"), 
+                     CPR = as.factor(CPR) %>% relevel(ref = "No"), 
+                     INF = as.factor(INF) %>% relevel(ref = "No"), 
+                     LOC = as.factor(LOC) %>% 
+                       relevel(ref = "No Coma or Deep Stupor"))
+```
+
+::: blue
+```{r}
+#| echo: false
+
+model1 = glm(STA ~ CAN + CPR + INF,
+            data = icu2, family = binomial)
+m1_tidy = tidy(model1, conf.int = T) 
+
+m1_tidy %>% gt() %>% 
+  tab_options(table.font.size = 16) %>%
+  fmt_number(decimals = 3)
+```
+
+```{r}
+#| echo: false
+
+# Augment for residuals
+library(broom)
+aug_m1 = augment(model1, type.predict = "response", type.residuals = "deviance")
+
+# Calculate influence measures (Cook's D, DFFITS, DFBETAs)
+infl = influence.measures(model1)
+dx_m1 = cbind(aug_m1, as.data.frame(infl$infmat)) %>%
+          dplyr::select(-c(cook.d, cov.r, hat))
+```
+
+:::
+
+#### Part a
+
+How many potential covariate patterns does the regression equation have?
+
+::: blue
+Not given
+:::
+
+#### Part b
+
+Plot the standardized Deviance residual by predicted probability. Do you notice any potential outliers? Explain your reasoning.
+
+::: blue
+```{r fig.height=5, fig.width=8}
+
+ggplot(dx_m1, aes(x = .fitted, y = .std.resid)) +
+  geom_point() +
+  geom_hline(yintercept = c(-3, 3), col = "red", linetype="dashed") +
+  labs(x = "Predicted Probability", y = "Std. Deviance Residual")
+```
+:::
+
+#### Part c
+
+Plot the Cook's distance by predicted probability. Do you notice any potential influential points? Explain your reasoning.
+
+::: blue
+Not given
+:::
+
+#### Part d
+
+Plot the change in coefficient estimate by predicted probability. Do you notice any influential points? Explain your reasoning.
+
+::: blue
+Not given
+:::
+
+
+### Question 2
+
+This question stems from an example from an [online textbook](https://bookdown.org/rwnahhas/RMPH/) by Dr. Ramzi W. Nahhas. The dataset for this problem includes a subset of individuals from the 2019 National Survey on Drug Use and Health (NSDUH). Overall, our study aims included investigating potential risk factors for lifetime heroin use. Lifetime heroin use is a binary outcome, which we regress on age at first use of alcohol (alc_agefirst), age with 6 categories (demog_age_cat6), and sex assigned at birth (demog_sex).
+
+```{r echo=TRUE}
+load(here("data", "nsduh2019_adult_sub_rmph.RData"))
+nsduh = nsduh_adult_sub %>% 
+  dplyr::select(her_lifetime, alc_agefirst, demog_age_cat6, demog_sex) %>% 
+  drop_na()
+```
+
+#### Part a
+
+Using the `nsduh` dataset from the above chunk of code, please run a regression model and present the model summary using lifetime heroin use as our outcome, and age at first use of alcohol, categorical age, and sex assigned at birth as covariates in our model. No need to write out your model, you just need to write the R code to run it.
+
+::: blue
+```{r}
+#| warning: false
+#| echo: false
+her_model = glm(her_lifetime ~ alc_agefirst + demog_age_cat6 +
+                demog_sex, family = binomial, data = nsduh)
+
+m_tidy = tidy(her_model, conf.int = T) 
+
+m_tidy %>% gt() %>% 
+  tab_options(table.font.size = 16) %>%
+  fmt_number(decimals = 3)
+```
+:::
+
+#### Part b
+
+Are we encountering a numerical problem with our regression? If yes, please name the numerical issue. What first clued you into that issue? Provide conclusive evidence of this numerical issue (with a contingency table), and explain which variable(s) are causing this problem.
+
+::: blue
+Yes
+:::
+
+#### Part c
+
+What would you do to "fix" this numerical issue? Please apply your "fix" and rerun the regression
+
+::: blue
+Not given
+:::
+
+
+### Question 3
+
+*In this problem, we will practice fitting and interpreting a **log-binomial regression.***
+
+This question is taken from the Hosmer and Lemeshow textbook. The ICU study data set consists of a sample of 200 subjects who were part of a much larger study on survival of patients following admission to an adult intensive care unit (ICU). The dataset should be available in our shared folder. The major goal of this study was to develop a logistic regression model to predict the probability of survival to hospital discharge of these patients. In this question, the primary outcome variable is vital (survival) status at hospital discharge, STA. Clinicians associated with the study felt that a key determinant of survival was the patient’s age at admission, AGE. We will build to a multivariable logistic regression model while adjusting for cancer part of the present problem (CAN), CPR prior to ICU admission (CPR), infection probable at ICU admission (INF), and level of consciousness at ICU admission (LOC).
+
+A code sheet for the variables to be considered is displayed in Table 1.5 below (from the Hosmer and Lemeshow textbook, pg. 23). We refer to this data set as the ICU data.
+
+**You will need to use some of the mutations implemented in [HW 2, Q2, Part d](https://nwakim.github.io/BSTA_513_S25/homework/HW_02.html#part-d-1).**
+
+![](./images/ICU_codebook.png){width="557"}
+
+#### Part a
+
+Write down the population equation for the log-binomial regression model of STA on AGE, CAN, CPR, and INF. How many parameters does this model contain?
+
+::: blue
+This model contains 5 parameters.
+:::
+
+#### Part b
+
+Try using `glm()` to obtain the maximum likelihood estimates of the parameters of the log-binomial regression model in Part a. Do you run into any issues using `glm()`? If you try `logbin()`, does it fix the issues? Explain why and what warnings `logbin()` gives you. 
+
+*Hint: keep the `glm()` function in its own code chunk so you can add `#| eval: false`. `glm()` may throw an error, so we want to show the work for `glm()` even though it'll break your qmd rendering.*
+
+::: blue
+`glm()` does not work. `logbin()` has warnings.
+:::
+
+#### Part c
+
+Using `logbin()`, obtain the maximum likelihood estimates of the parameters of the log-binomial regression model in Part a, **but now take out age**. Using these estimates, write down the equation with the fitted values.
+
+::: blue
+
+```{r}
+#| echo: false
+
+library(logbin)
+logbin_mod2 <- logbin(STA ~ CAN + CPR + INF, 
+                  data = icu2)
+summary(logbin_mod2)
+```
+:::
+
+#### Part d
+
+Interpret the exponential of the coefficient (risk ratio) estimate for `CPR`.
+
+::: blue
+Not given
+:::
+
+#### Part e
+
+We were not able to fit a model with age, but let's just entertain a scenario here. Let's say we fit the model in Part a and got a coefficient estimate of 0.29 with a 95% confidence interval of 0.23 to 0.35. Using the model is Part a, interpret the exponential of the coefficient (risk ratio) estimate for `AGE`.
+
+::: blue
+Not given
+:::
+
+## Questions Part 2
+
+### Question 4
+
+For each of the following outcomes, what type of regression would you use? Explain your answer.
+
+#### Part a
+
+Number of minutes of moderate-to-vigorous physical activity per week (range: 0 to 600+)
+
+Which regression model is most appropriate?
+
+a.  Linear regression
+b.  Logistic regression
+c.  Log-binomial regression
+d.  Poisson regression
+e.  Multinomial logistic regression
+
+::: blue
+a.  Linear regression
+:::
+
+#### Part b
+
+Whether the participant meets CDC recommendations for weekly physical activity (Yes/No)
+
+Which regression model is most appropriate?
+
+a.  Linear regression
+b.  Logistic regression
+c.  Log-binomial regression
+d.  Poisson regression
+e.  Multinomial logistic regression
+
+::: blue
+Not given
+:::
+
+#### Part c
+
+Number of workouts the person completed in the past week (values: 0, 1, 2, ..., 14)
+
+Which regression model is most appropriate?
+
+a.  Linear regression
+b.  Logistic regression
+c.  Log-binomial regression
+d.  Poisson regression
+e.  Multinomial logistic regression
+
+::: blue
+Not given
+:::
+
+#### Part d
+
+Self-reported activity level: Sedentary, Moderately active, Highly active
+
+Which regression model is most appropriate?
+
+a.  Linear regression
+b.  Logistic regression
+c.  Log-binomial regression
+d.  Poisson regression
+e.  Multinomial logistic regression
+
+::: blue
+Not given
+:::

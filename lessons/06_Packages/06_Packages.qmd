@@ -1,0 +1,208 @@
+---
+title: "Packages"
+author: "Nicky Wakim, Jessica Minnier, and Meike Niederhausen"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Packages
+    html-math-method: mathjax
+    highlight-style: ayu
+code-annotations: below
+execute:
+  echo: true
+  freeze: auto
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+```
+
+## What are R packages?
+
+A good analogy for R packages is that **they are like apps you can download onto a mobile phone**:
+
+![[ModernDive Figure 1.4](https://moderndive.netlify.com/1-getting-started.html#packages)](../img_slides/R_vs_R_packages.png){fig-align="center"}
+
+-   Packages contain **additional functions and data** that are not built into R
+
+## Installing packages
+
+Two options to install packages:
+
+::: columns
+::: {.column width="50%"}
+1.  **Preferred way:** `install.packages()` with the package name in quotes
+
+```{r}
+#| eval: false
+
+install.packages("janitor")   
+```
+:::
+
+::: {.column width="50%"}
+2.  The "Packages" tab in [Viewer pane]{style="color:#459B99;"}
+
+![](../img_slides/screenshot_packages_window.png){fig-align="center"}
+
+:::
+:::
+
+
+-   **Only install packages once** *(unless you want to update them)*
+-   Installed from [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/) = package mothership
+
+## Load packages with `library()` command
+
+-   Use the `library()` command to **load each required package**
+-   Packages need to be reloaded *every* time you open Rstudio.
+-   **Tip:** at the top of your files, have a segment of code dedicated to loading packages 
+    -   This way, you can easily see and load packages required for your code
+
+ 
+    
+- For example, to load a package called `dplyr`, you would run the code below:
+  ```{r}
+  library(dplyr) 
+  ```
+
+## Another way to load (and install) packages: `pacman`
+
+-  The `pacman` package has a function called `p_load()` 
+    - Can be used to both install and load packages in one step
+    - Installs the package if necessary
+- Best when you are loading many packages at once
+
+- For example, to load a package called `dplyr` using `pacman`, you would run the code below:
+  ```{r}
+  #| eval: false
+  pacman::p_load(dplyr) 
+  ```
+  
+- Note that I am using `pacman::p_load()`
+  - This is another way to access a package's function without loading the whole package
+  - I am accessing `p_load()` from the `pacman` package
+
+
+## Packages used in this class
+
+::: {.columns}
+                                        
+::: {.column width="62%"}
+-   `tidyverse`
+    -   We install and load `tidyverse`
+    -   It is a collection of many packages
+    -   **[Core tidyverse]{style="color:#C83532"}**: most commonly used {tidyverse} packages
+        -   [Complete list of core {tidyverse} packages](https://tidyverse.tidyverse.org/#usage){target="_blank"}
+    -   **[Additional tidyverse]{style="color:#5BAFF8"}** packages
+        -   The [additional packages](https://tidyverse.tidyverse.org/#packages){target="_blank"} are installed when the {tidyverse} package is installed, but they are not loaded when the {tidyverse} package is loaded. 
+        -   They need to be loaded individually to use.
+
+:::
+       
+::: {.column width="8%"}
+
+:::
+::: {.column width="30%"}
+
+-   For **loading** datasets:
+
+    -   [readr]{style="color:#C83532"} 
+    -   [readxl]{style="color:#5BAFF8"}
+    -   [haven]{style="color:#5BAFF8"}
+
+-   For **summarizing** and **visualizing** data:
+
+    -   {janitor}
+    -   {gt}
+    -   {rstatix}
+    -   {gtsummary}
+    -   {naniar}
+    -   [{ggplot2}]{style="color:#C83532"} 
+
+-   for **wrangling** data
+
+    -   [{dplyr}, {tidyr}]{style="color:#C83532"} 
+
+:::
+                                          
+:::
+
+## Tidyverse
+
+![[Image made by Silvia Canelón](https://github.com/spcanelon/tour-of-the-tidyverse/blob/master/images/pptx/tidyverse.png)](../img_slides/tidyverse_packages.png)
+
+
+## Install and load packages: Option 1
+
+::: columns
+::: column  
+-   Run the code below to install packages:
+
+```{r}
+#| eval: FALSE
+install.packages("tidyverse")  # this takes a while to install
+install.packages("writexl")
+install.packages("rstatix") 
+install.packages("janitor")
+install.packages("naniar")
+install.packages("gt")
+install.packages("gtsummary")
+```
+
+-   It is **VERY IMPORTANT** that you install these packages in order to run the code for the workshop!
+:::
+
+::: column
+Load packages with `library()` command:
+
+```{r}
+library(tidyverse)
+library(writexl)
+library(rstatix)
+library(janitor)
+library(naniar)
+library(gt)
+library(gtsummary)
+library(readxl)
+```
+:::
+:::
+
+## Install and load packages: Option 1
+
+```{r}
+pacman::p_load(
+  tidyverse, 
+  writexl, 
+  rstatix, 
+  janitor, 
+  naniar,
+  gt,
+  gtsummary,
+  readxl
+)
+```
+
+
+
+
+## References
+
+-   Danielle Navarro’s YouTube video on ***Installing and loading R packages***: <https://www.youtube.com/watch?v=kpHZVyDvEhQ>
+    -   If you want to get more information on packages

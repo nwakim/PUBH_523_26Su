@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-06-04">
+<meta name="dcterms.date" content="2026-06-08">
 
 <title>Schedule – Introduction to R</title>
 <style>
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.qmd"> 
+    <a class="nav-link" href="./syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
@@ -110,11 +110,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Instructors</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./homeworks.qmd"> 
+    <a class="nav-link" href="./homeworks.html"> 
 <span class="menu-text">Homework</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./project.qmd"> 
+    <a class="nav-link" href="./project.html"> 
 <span class="menu-text">Project</span></a>
   </li>  
 </ul>
@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 4, 2026</p>
+      <p class="date">June 8, 2026</p>
     </div>
   </div>
   
@@ -168,17 +168,23 @@ ul.task-list li input[type="checkbox"] {
   padding: 0px;
 }
 
-.assignments table tbody tr:nth-child(11) td, 
-.assignments table tbody tr:nth-child(17) td,
-.assignments table tbody tr:nth-child(n+21):nth-child(-n+23) td,
-.assignments table tbody tr:nth-child(28) td,
-.assignments table tbody tr:nth-child(32) td,
-.assignments table tbody tr:nth-child(n+37):nth-child(-n+39) td, 
-.assignments table tbody tr:nth-child(43) td, 
-.assignments table tbody tr:nth-child(n+48):nth-child(-n+50) td, 
-.assignments table tbody tr:nth-child(n+57):nth-child(-n+58) td{
-  background-color: #f0f6fc !important;
-  color: #5B9BD5; 
+.assignments table tbody tr:nth-child(5) td, 
+.assignments table tbody tr:nth-child(11) td,
+.assignments table tbody tr:nth-child(n+21):nth-child(-n+22) td{
+  background-color: #fcf2f7 !important;
+  color: #EF85B3; 
+}
+
+.basics table tbody tr:nth-child(11) td, 
+.basics table tbody tr:nth-child(n+21):nth-child(-n+23) td{
+  background-color: #fcf2f7 !important;
+  color: #EF85B3; 
+}
+
+.transf table tbody tr:nth-child(11) td, 
+.transf table tbody tr:nth-child(n+21):nth-child(-n+23) td{
+  background-color: #fcf2f7 !important;
+  color: #EF85B3; 
 }
 
 .red table tbody tr:nth-child(1) td,
@@ -192,12 +198,13 @@ ul.task-list li input[type="checkbox"] {
 .red table tbody tr:nth-child(45) td,
 .red table tbody tr:nth-child(52) td,
 .red table tbody tr:nth-child(56) td {
-  background-color: #C2352F !important; /* A light red; use 'red' for bright red */
+  background-color: #3070BF !important; /* A light red; use 'red' for bright red */
   color: #fff; 
   height: 5px; 
 }
 </style>
 </div>
+<div class="assignments">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -264,6 +271,18 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
 <td style="text-align: center;">3</td>
 <td style="text-align: left;">R scripts</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="https://www.loom.com/share/dae3a73b80f540189f60f1ed547917fc"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></a></span></td>
@@ -274,19 +293,19 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;">06/29</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: left;">Workflow: Basics</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="https://www.loom.com/share/520012d15ef442109896878ba8c5683c"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-basics.html">2.1</a></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#operators">8.2</a></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/03_Workflow_Basics/03_Workflow_Basics.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: left;">Comments</td>
@@ -298,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;">07/01</td>
 <td style="text-align: center;">5</td>
 <td style="text-align: left;">Functions</td>
@@ -307,42 +326,6 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-basics.html#calling-functions">2.4</a></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#functions">3.6</a></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/06_Functions/06_Functions.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">07/06</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: left;">Packages</td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#packages">3.7</a></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">07/08</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: left;">Quarto documents</td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">07/13</td>
-<td style="text-align: center;">8</td>
-<td style="text-align: left;">R projects and working directories</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-scripts.html#projects">6.2</a></td>
-<td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/r_projects.html">6</a></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
@@ -371,6 +354,42 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: center;">07/06</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">Packages</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
+<td style="text-align: center;">SKIP andcome back to with ALL packages</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#packages">3.7</a></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">07/08</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">Quarto documents</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">07/13</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">R projects and working directories</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-scripts.html#projects">6.2</a></td>
+<td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/r_projects.html">6</a></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: center;">07/20</td>
 <td style="text-align: center;">11</td>
 <td style="text-align: left;">Piping</td>
@@ -382,7 +401,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;">07/22</td>
 <td style="text-align: center;">12</td>
 <td style="text-align: left;">Key operators and functions</td>
@@ -394,7 +413,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: left;">Naming: file naming and variable naming?</td>
@@ -406,7 +425,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;">07/27</td>
 <td style="text-align: center;">13</td>
 <td style="text-align: left;">Tidy data</td>
@@ -418,7 +437,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;">07/29</td>
 <td style="text-align: center;">14</td>
 <td style="text-align: left;">Import and Export</td>
@@ -430,7 +449,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;">08/03</td>
 <td style="text-align: center;">15</td>
 <td style="text-align: left;">Workflow: code style</td>
@@ -442,7 +461,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;">08/05</td>
 <td style="text-align: center;">16</td>
 <td style="text-align: left;">Workflow: getting help</td>
@@ -454,7 +473,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;">08/12</td>
 <td style="text-align: center;">17</td>
 <td style="text-align: left;">Data transformation: basics</td>
@@ -466,7 +485,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;">08/19</td>
 <td style="text-align: center;">18</td>
 <td style="text-align: left;">Data transformation: rows</td>
@@ -478,7 +497,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;">08/24</td>
 <td style="text-align: center;">19</td>
 <td style="text-align: left;">Data transformation: columns</td>
@@ -490,7 +509,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;">08/26</td>
 <td style="text-align: center;">20</td>
 <td style="text-align: left;">Data transformation: groups</td>
@@ -502,7 +521,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">21</td>
 <td style="text-align: left;">Data summarization: quantitative data</td>
@@ -514,7 +533,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">22</td>
 <td style="text-align: left;">Data summarization: categorical data</td>
@@ -526,7 +545,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">23</td>
 <td style="text-align: left;">Descriptive tables</td>
@@ -538,7 +557,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;">08/31</td>
 <td style="text-align: center;">24</td>
 <td style="text-align: left;">Lengthening data</td>
@@ -550,7 +569,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">25</td>
 <td style="text-align: left;">Widening data</td>
@@ -562,7 +581,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">26</td>
 <td style="text-align: left;">Data visualization: intro to ggplot</td>
@@ -574,7 +593,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">27</td>
 <td style="text-align: left;">Data visualization: ggplot2 calls</td>
@@ -586,7 +605,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">28</td>
 <td style="text-align: left;">Data visualization: distributions</td>
@@ -598,7 +617,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">29</td>
 <td style="text-align: left;">Data visualization: relationships</td>
@@ -610,7 +629,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">30</td>
 <td style="text-align: left;">Missing data: summarization and visualization</td>
@@ -622,7 +641,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"></td>
 <td style="text-align: center;">31</td>
 <td style="text-align: left;">Missing data: transformations</td>
@@ -636,6 +655,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</div>
 <p>OTHER options:</p>
 <ul>
 <li><p>Variables (factors, etc.)</p></li>

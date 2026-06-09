@@ -17,17 +17,23 @@ format:
   padding: 0px;
 }
 
-.assignments table tbody tr:nth-child(11) td, 
-.assignments table tbody tr:nth-child(17) td,
-.assignments table tbody tr:nth-child(n+21):nth-child(-n+23) td,
-.assignments table tbody tr:nth-child(28) td,
-.assignments table tbody tr:nth-child(32) td,
-.assignments table tbody tr:nth-child(n+37):nth-child(-n+39) td, 
-.assignments table tbody tr:nth-child(43) td, 
-.assignments table tbody tr:nth-child(n+48):nth-child(-n+50) td, 
-.assignments table tbody tr:nth-child(n+57):nth-child(-n+58) td{
-  background-color: #f0f6fc !important;
-  color: #5B9BD5; 
+.assignments table tbody tr:nth-child(5) td, 
+.assignments table tbody tr:nth-child(11) td,
+.assignments table tbody tr:nth-child(n+21):nth-child(-n+22) td{
+  background-color: #fcf2f7 !important;
+  color: #EF85B3; 
+}
+
+.basics table tbody tr:nth-child(11) td, 
+.basics table tbody tr:nth-child(n+21):nth-child(-n+23) td{
+  background-color: #fcf2f7 !important;
+  color: #EF85B3; 
+}
+
+.transf table tbody tr:nth-child(11) td, 
+.transf table tbody tr:nth-child(n+21):nth-child(-n+23) td{
+  background-color: #fcf2f7 !important;
+  color: #EF85B3; 
 }
 
 .red table tbody tr:nth-child(1) td,
@@ -41,7 +47,7 @@ format:
 .red table tbody tr:nth-child(45) td,
 .red table tbody tr:nth-child(52) td,
 .red table tbody tr:nth-child(56) td {
-  background-color: #C2352F !important; /* A light red; use 'red' for bright red */
+  background-color: #3070BF !important; /* A light red; use 'red' for bright red */
   color: #fff; 
   height: 5px; 
 }
@@ -52,21 +58,23 @@ library(here)
 source(here("class_dates.R"))
 ```
 
+::: assignments
 | Suggested Date | Les-son | Topic | Lesson video | Demo video | [TB 1](https://r4ds.hadley.nz/) | [TB 2](https://epirhandbook.com/en/) | Slides HTML | Slides PDF | Practice |
 |:------:|:------:|:-------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 |  | 0 | Welcome | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |  |  |  | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
 |  | 0 | Orientation to the course site | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |  |  |  | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
 | `{r} w1d1 %>% format("%m/%d")` | 1 | Introduction to the Introduction | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ic twotone-ondemand-video size=30px >}}]{style="color:#f8f5f0;"} | [Intro](https://r4ds.hadley.nz/intro.html) |  | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/01_Intro_to_Intro/01_Intro_to_Intro.qmd)]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
 | `{r} w1d2 %>% format("%m/%d")` | 2 | Download + Intro to R & Rstudio | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/77f8aea2a5bf4b26acc886a28de33569)]{style="color:#f8f5f0;"} |  |  | [3.4-3.5](https://epirhandbook.com/en/new_pages/basics.html#installation) | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/02_Download_R/02_Download_R.qmd)]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
+|  |  |  |  |  |  |  |  |  |  |
 |  | 3 | R scripts | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/dae3a73b80f540189f60f1ed547917fc)]{style="color:#f8f5f0;"} |  | [6.1](https://r4ds.hadley.nz/workflow-scripts.html#scripts) | [3.8](https://epirhandbook.com/en/new_pages/basics.html#scripts) | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/05_Scripts/05_Scripts.qmd)]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
-| `{r} w2d1 %>% format("%m/%d")` | 4 | Workflow: Basics | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/520012d15ef442109896878ba8c5683c)]{style="color:#f8f5f0;"} |  | [2.1](https://r4ds.hadley.nz/workflow-basics.html) |  | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/03_Workflow_Basics/03_Workflow_Basics.qmd)]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
+| `{r} w2d1 %>% format("%m/%d")` | 4 | Workflow: Basics | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/520012d15ef442109896878ba8c5683c)]{style="color:#f8f5f0;"} |  | [2.1](https://r4ds.hadley.nz/workflow-basics.html) | [8.2](https://epirhandbook.com/en/new_pages/basics.html#operators) | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/03_Workflow_Basics/03_Workflow_Basics.qmd)]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
 |  |  | Comments | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/79cbe592ce374632b497d4d50e732cdb)]{style="color:#f8f5f0;"} |  | [2.2](https://r4ds.hadley.nz/workflow-basics.html#comments) |  | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/04_Comments/04_Comments.qmd)]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
 | `{r} w2d2 %>% format("%m/%d")` | 5 | Functions | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |  | [2.4](https://r4ds.hadley.nz/workflow-basics.html#calling-functions) | [3.6](https://epirhandbook.com/en/new_pages/basics.html#functions) | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/06_Functions/06_Functions.qmd)]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
-| `{r} w3d1 %>% format("%m/%d")` | 6 | Packages | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |  |  | [3.7](https://epirhandbook.com/en/new_pages/basics.html#packages) | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
-| `{r} w3d2 %>% format("%m/%d")` | 7 | Quarto documents | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |  |  |  | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
-| `{r} w4d1 %>% format("%m/%d")` | 8 | R projects and working directories |  |  | [6.2](https://r4ds.hadley.nz/workflow-scripts.html#projects) | [6](https://epirhandbook.com/en/new_pages/r_projects.html) | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
 | `{r} w4d2 %>% format("%m/%d")` | 9 | Objects |  |  |  | [3.10](https://epirhandbook.com/en/new_pages/basics.html#objects) | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/09_Objects/09_Objects.qmd)]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
 |  | 10 | Variables in R |  |  |  |  |  |  |  |
+| `{r} w3d1 %>% format("%m/%d")` | 6 | Packages | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | SKIP andcome back to with ALL packages |  | [3.7](https://epirhandbook.com/en/new_pages/basics.html#packages) | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
+| `{r} w3d2 %>% format("%m/%d")` | 7 | Quarto documents | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} |  |  |  | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
+| `{r} w4d1 %>% format("%m/%d")` | 8 | R projects and working directories |  |  | [6.2](https://r4ds.hadley.nz/workflow-scripts.html#projects) | [6](https://epirhandbook.com/en/new_pages/r_projects.html) | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
 | `{r} w5d1 %>% format("%m/%d")` | 11 | Piping |  |  | [3.4](https://r4ds.hadley.nz/data-transform.html#sec-the-pipe) | [8.1](https://epirhandbook.com/en/new_pages/basics.html#piping) | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
 | `{r} w5d2 %>% format("%m/%d")` | 12 | Key operators and functions |  |  |  | [8.2](https://epirhandbook.com/en/new_pages/basics.html#operators) | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
 |  |  | Naming: file naming and variable naming? |  |  |  |  | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/13_Workflow_Naming/13_Workflow_Naming.qmd)]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
@@ -89,6 +97,7 @@ source(here("class_dates.R"))
 |  | 29 | Data visualization: relationships |  |  | [1.5](https://r4ds.hadley.nz/data-visualize.html#visualizing-relationships) |  | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify bi file-earmark-pdf-fill size=28px >}}]{style="color:#f8f5f0;"} |  |
 |  | 30 | Missing data: summarization and visualization |  |  |  |  |  |  |  |
 |  | 31 | Missing data: transformations |  |  |  |  |  |  |  |
+:::
 
 OTHER options:
 

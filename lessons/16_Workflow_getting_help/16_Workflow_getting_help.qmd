@@ -38,6 +38,52 @@ library(here)
 3. Searching forums
 4. Using AI
 
+## Common console errors (1/2)
+
+**Incomplete commands**
+
+::: columns
+::: {.column width="50%"}
+-   When the console is waiting for a new command, the prompt line begins with `>`
+    -   If the console prompt is `+`, then a previous command is incomplete
+    -   You can finish typing the command in the console window
+:::
+
+::: {.column width="50%"}
+Example:
+
+```{r}
+#| error: true
+#| message: true
+#| warning: true
+#| prompt: true
+3 + (2*6
+)
+```
+:::
+:::
+
+## Common console errors (2/2)
+
+**Object is not found**
+
+-   This happens when text is entered for a non-existent variable (object)
+
+Example:
+
+```{r}
+#| error: true
+hello
+```
+
+-   Can be due to missing quotes
+
+```{r}
+#| error: true
+install.packages(dplyr) 
+# correct code is: install.packages("dplyr")
+```
+
 # Getting help with R
 
 ## There are many ways to get help when you are stuck
