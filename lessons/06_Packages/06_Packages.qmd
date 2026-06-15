@@ -14,7 +14,7 @@ format:
     footer: Packages
     html-math-method: mathjax
     highlight-style: ayu
-code-annotations: below
+code-annotations: hover
 execute:
   echo: true
   freeze: auto
@@ -152,11 +152,12 @@ install.packages("janitor")
 
 ::: columns
 ::: column  
--   Run the code below to install packages:
+Run the code below to install packages:
 
 ```{r}
 #| eval: FALSE
-install.packages("tidyverse")  # this takes a while to install
+install.packages("here")
+install.packages("tidyverse")  # <1>
 install.packages("writexl")
 install.packages("rstatix") 
 install.packages("janitor")
@@ -165,13 +166,15 @@ install.packages("gt")
 install.packages("gtsummary")
 ```
 
--   It is **VERY IMPORTANT** that you install these packages in order to run the code for the workshop!
+1. This will take a while to install
+
 :::
 
 ::: column
 Load packages with `library()` command:
 
 ```{r}
+library(here)
 library(tidyverse)
 library(writexl)
 library(rstatix)
@@ -184,10 +187,11 @@ library(readxl)
 :::
 :::
 
-## Install and load packages: Option 1
+## Install and load packages: Option 2
 
 ```{r}
 pacman::p_load(
+  here, 
   tidyverse, 
   writexl, 
   rstatix, 

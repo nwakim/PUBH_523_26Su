@@ -1,4 +1,82 @@
 ---
-title: "Untitled"
+title: "Functions"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Functions
+    html-math-method: mathjax
+    highlight-style: ayu
+code-annotations: below
+execute:
+  echo: true
+  freeze: auto
 ---
 
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+```
+
+## Using functions
+
+-   `mean()` is an example of a function
+-   functions have "arguments" that can be specified within the `()`
+-   `?mean` in console will show help file for `mean()`
+
+::: columns
+::: {.column width="50%"}
+Function <font color="#BF396F">arguments specified</font> by name:
+
+```{r}
+mean(x = 1:4)
+```
+
+```{r}
+seq(from = 1, to = 12, by = 3)
+seq(by = 3, to = 12, from = 1)
+```
+:::
+
+::: {.column width="50%"}
+Function <font color="#BF396F">arguments not specified</font>, but listed in order:
+
+```{r}
+mean(1:4)
+```
+
+```{r}
+seq(1, 12, 3)
+```
+:::
+:::
+
+## Now let's use some functions for summary statistics
+
+-   We will calculate the mean for `c`
+-   Let's also calculate the standard deviation for `c`
+    -   Recall, our function is `sd()`
+    -   Use `?sd` in the console to identify the arguments for `c`
+
+ 
+
+-   If you have more time, you can try to calculate the median and IQR for `c`
+
+```{r}
+#| echo: false
+countdown::countdown(3)
+```

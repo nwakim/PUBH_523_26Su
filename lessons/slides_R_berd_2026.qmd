@@ -49,11 +49,11 @@ theme_set(theme_bw(base_size = 22))
 ```
 
 
-## Workshop webpage
+## (DONE) Workshop webpage
 
 Please go to the webpage [https://ohsu-octri-berd.github.io/R_Intro_BERD_2026_04/](https://ohsu-octri-berd.github.io/R_Intro_BERD_2026_04/){target="_blank"} to access workshop materials.
 
-## Overview
+## (DONE) Overview
 
 ::: columns
 ::: {.column width="50%"}
@@ -86,11 +86,11 @@ Please go to the webpage [https://ohsu-octri-berd.github.io/R_Intro_BERD_2026_04
 :::
 :::
 
-# Introduction to R
+# (DONE) Introduction to R
 
 ![[Artwork by \@allison_horst](https://allisonhorst.com/everything-else){target="_blank"}](image/horst_welcome_R.png){fig-align="center"}
 
-## What is R?
+## (DONE) What is R?
 
 ::: columns
 ::: {.column width="70%"}
@@ -115,7 +115,7 @@ For the history and details: [Wikipedia](https://bit.ly/1efFmaY){target="_blank"
 -   procedural programming with functions
 -   Why "R"?? Scheme inspired S (invented at Bell Labs in 1976) which inspired R since 1st letters of original authors (**free and open source!** in 2000)
 
-## What is RStudio?
+## (DONE) What is RStudio?
 
 ::: columns
 ::: {.column width="50%"}
@@ -129,11 +129,11 @@ RStudio is an integrated development environment (IDE) = an interface to use R (
 
 ![[Modern Dive](https://moderndive.com/1-getting-started.html#r-rstudio){target="_blank"}](image/r_vs_rstudio_1.png){fig-align="center"}
 
-## Open RStudio on your computer (not R!)
+## (DONE) Open RStudio on your computer (not R!)
 
 ![[Modern Dive](https://moderndive.com/1-getting-started.html#using-r-via-rstudio){target="_blank"}](image/01_md_r.png){fig-align="center"}
 
-## RStudio anatomy
+## (DONE) RStudio anatomy
 
 ![[Emma Rand](http://www-users.york.ac.uk/~er13/17C%20-%202018/pracs/01IntroductionToModuleAndRStudio.html#what_are_r_and_rstudio){target="_blank"}](image/RStudio_Anatomy.svg){fig-align="center"}
 
@@ -276,7 +276,7 @@ An empty code chunk looks like this:
 Note that a code chunks start with ```` ```{r} ```` and ends with ```` ``` ````. Make sure there is no space before ```` ``` ````.
 :::
 
-## Enter and run code (1/2)
+## (DONE) Enter and run code (1/2)
 
 -   **Type R code** inside code chunks
 -   **Select code** you want to run, by
@@ -335,11 +335,11 @@ Note that a code chunks start with ```` ```{r} ```` and ends with ```` ``` ````.
 
 ![](image/code_chunk_insert_visual.png)
 
-# R packages: installing & loading
+# (DONE)R packages: installing & loading
 
 ![](image/tidyverse_celestial.jpg){fig-align="center"}
 
-## What are R Packages?
+## (DONE) What are R Packages?
 
 <div style="text-align: center;">
 A good analogy for R packages is that they\
@@ -349,7 +349,7 @@ are like apps you can download onto a smart phone
 ![[ModernDive Figure 1.4](https://moderndive.com/1-getting-started.html#packages){target="_blank"}](image/R_vs_R_packages.png){fig-align="center"}
 
 
-## Installing packages
+## (DONE) Installing packages
 
 -   Packages contain additional functions and data
 
@@ -375,7 +375,7 @@ install.packages("janitor")   # only do this ONCE, use quotes
 :::
 :::
 
-## Packages used in this workshop
+## (DONE) Packages used in this workshop
 
 
 ::: {.columns}
@@ -425,7 +425,7 @@ install.packages("janitor")   # only do this ONCE, use quotes
 
 
 
-## Install packages used in this workshop
+## (DONE) Install packages used in this workshop
 
 -   Run the code below to install packages:
 
@@ -442,7 +442,7 @@ install.packages("gtsummary")
 
 -   It is **VERY IMPORTANT** that you install these packages in order to run the code for the workshop!
 
-## Load packages with `library()` function
+## (DONE) Load packages with `library()` function
 
 -   Use the `library()` function to load each required package.
 -   Packages need to be loaded *every* time you open Rstudio.
@@ -465,7 +465,7 @@ library(janitor)    # run this every time you open Rstudio
 :::
 :::
 
-## Load packages used in this workshop
+## (DONE) Load packages used in this workshop
 
 -   Run the code below in your R session
 

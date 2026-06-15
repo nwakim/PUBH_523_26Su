@@ -1,0 +1,85 @@
+---
+title: "Data transformation: Basics"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: "Data transformation: Basics"
+    html-math-method: mathjax
+    highlight-style: ayu
+    code-annotations: hover
+execute:
+  echo: true
+  freeze: auto
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+library(readxl)
+```
+
+```{r}
+# library(readxl)
+# note we are saving the data from the Excel file in our environment 
+# with the object name hrs_data
+hrs_data <- read_excel(here("./data/hrs_data_narch.xlsx"))
+
+names(hrs_data)
+
+# Clean up the variable names for ease of use (makes everything lower case here)
+hrs_data <- clean_names(hrs_data) # need the janitor package loaded to use this
+names(hrs_data)
+```
+
+## `dplyr` basics
+
+- `dplyr` is a package in the tidyverse that provides a set of functions for data manipulation and transformation
+- Each function in `dplyr` serves almost like a **verb** that describes the action being performed on the data
+- Most functions within `dplyr` have similar input and output:
+  - Input: a data frame (usually the first argument in the function)
+  - Output: a data frame
+  - Additional arguments: typically describe what columns (variables) to operate on
+
+## Example of a `dplyr` function: `select()`
+
+- I can use the `select()` function to select specific columns from my data frame
+
+```{r}
+hrs_data |> # <1> 
+  select( # <2>
+    age, # <3>
+    ed  # <3>
+    ) # <2>
+```
+
+1. The first argument is the data frame we want to operate on (in this case, `hrs_data`)
+2. `select` is the function we are using on the data frame
+3. `age` and `ed` are the columns (in the data frame) that we perform the `select()` function on
+
+## Types of `dplyr` functions
+
+`dplyr` functions can be categorized into four groups based on what they operate on:
+
+1. **rows**: functions that operate on rows of a data frame (e.g., `filter()`, `slice()`)
+2. **columns**: functions that operate on columns of a data frame (e.g., `select()`, `mutate()`)
+3. **groups**: functions that operate on groups of rows in a data frame (e.g., `group_by()`, `summarize()`)
+4. **joins**: functions that combine two data frames based on a common key (e.g., `left_join()`, `inner_join()`)
+    - Not covering in this class (You can take BSTA 526 to learn about joins)
+
+
+

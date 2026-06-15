@@ -1,0 +1,86 @@
+
+---
+title: "Lab 4 Instructions"
+author: "Your Name Here"
+subtitle: "PUBH 523/623: Data Visualization"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    self-contained: true
+    embed-resources: true
+    number-sections: true
+    number-depth: 4
+    code-annotations: hover
+    page-layout: full
+editor_options: 
+  chunk_output_type: console
+execute:
+  freeze: auto 
+---
+
+```{r}
+#| label: setup
+#| message: false
+
+library(tidyverse)
+library(here)
+
+# Load your summarized data objects from Lab 3
+
+```
+
+### Introduction
+
+This final lab covers data visualization using `ggplot2`. You will map out the relationships between 2-3 project variables simultaneously to produce the core visual anchor for your upcoming final scrollable sheet.
+
+## Lab activities
+
+### Visualizing Distributions with an Asset Lens
+
+To visualize how supportive safety nets or structural assets match up against community stability, you need to construct a plot layout capable of displaying raw data density without losing group visibility.
+
+::: callout-important
+
+#### Task
+
+Create either a boxplot (`geom_boxplot()`) or a violin plot (`geom_violin()`) that charts your continuous asset index on the y-axis against your categorical outcome on the x-axis. Use the `fill` aesthetic to overlay a third variable (such as your demographic group).
+:::
+
+### Resolving Overplotting via Jittering
+
+When plotting survey data with distinct integer scores, dots stack directly on top of each other, obscuring sample size density. We will fix this using position adjustments.
+
+::: callout-important
+
+#### Task
+
+Layer jittered raw points over your distribution plot using `geom_jitter()`. If you are filling by a third variable, make sure to use `position = position_jitterdodge()` so the data points align perfectly over their corresponding boxplots. Adjust the `alpha` and `size` parameters to make it readable.
+:::
+
+### Adding Professional Design Polish
+
+A public health visualization should communicate clearly without requiring technical code background knowledge from the reader. Clean up the default theme layout, color scales, and title elements.
+
+::: callout-important
+
+#### Task
+
+Incorporate the following styling updates into your plot pipeline:
+
+1. Apply a clean theme function (e.g., `theme_minimal()` or `theme_classic()`).
+2. Use an accessible color palette flag (such as `scale_fill_brewer(palette = "Set2")` or a manual viridis palette).
+3. Add an asset-focused `labs()` framework containing a clear `title`, `subtitle`, explicit axis labels with units, and a descriptive legend label.
+:::
+
+### final Check: Code Styling and Output Verification
+
+Your final scrolling sheet needs to render smoothly without showing messy error blocks or warnings to your audience.
+
+::: callout-important
+
+#### Task
+
+Review your script style according to our workflow guidelines. Set your chunk options (`#| warning: false` and `#| message: false`) appropriately. Render your complete Quarto document to HTML and check your final file output layout.
+:::

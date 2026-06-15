@@ -1,0 +1,212 @@
+---
+title: "Data transformation: Columns"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: "Data transformation: Columns"
+    html-math-method: mathjax
+    highlight-style: ayu
+    code-annotations: hover
+execute:
+  echo: true
+  freeze: auto
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+library(readxl)
+library(gt)
+library(rstatix)
+```
+
+```{r}
+#| echo: false
+# library(readxl)
+# note we are saving the data from the Excel file in our environment 
+# with the object name hrs_data
+hrs_data2 <- read_excel(here("./data/hrs_data_narch.xlsx"))
+hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
+hrs_data <- clean_names(hrs_data) %>%
+  relocate(race_original, female, .after = degree)#
+```
+
+## Data transformations on columns
+
+- There are many functions that can be used to transform columns
+- We can use columns to create new variables, subset features, and reorganize a dataset
+- We will cover the most column functions:
+  - `mutate()`
+  - `select()`
+  - `rename()`
+  - `relocate()`
+
+# `mutate()`
+
+![[Artwork by \@allison_horst](https://allisonhorst.com/everything-else){target="_blank"}](../img_slides/horst_mutate.jpg){fig-align="center"}
+
+
+## `mutate()`: transform and create variables
+
+- `mutate()` allows us to transform existing columns and/or add new columns to the dataset
+
+ 
+
+- Think of this like adding a formula in Excel to calculate the value of a new column based on previous columns
+
+ 
+
+- `mutate()` is useful for:
+  - Converting the units of one column to new units (e.g., months to years)
+  - Performing arithmetic using multiple columns
+  - Changing variable types or recoding categories
+
+## Example: calculating a new variable
+
+- Let's convert `age_months` into years by dividing it by 12
+- We will name this new variable `age_yrs`
+
+```{r}
+hrs_data |> 
+  mutate(
+    age_yrs = age_months / 12 # <1>
+  )
+```
+
+1.  **Notice we use a single `=` inside mutate**, not `==` or `<-`. This sets our new column name equal to the mathematical operation.
+
+## Example: calculating multiple columns and saving
+
+- We can create multiple new columns within a single `mutate()` function by separating them with a comma
+- Let's save our work to a new object called `hrs_data2` to avoid overwriting our original dataset
+
+```{r}
+hrs_data2 <- hrs_data |> # <1>
+  mutate(
+    age_yrs = age_months / 12, # <2>
+    age_decades = age_yrs / 10 # <3>
+  )
+```
+
+1.  We use the assignment operator `<-` to save the output into a brand new data frame called `hrs_data2`.
+2.  First, we create the `age_yrs` column.
+3.  Second, we create `age_decades` using the `age_yrs` variable we *just* defined in the step right above it!
+
+- Let's take a look at the new data frame `hrs_data2` to see our new columns
+
+# `select()`
+
+## Subsetting columns using `select()`
+
+- The `select()` function allows us to isolate specific variables or columns from our dataset
+- Why use `select()`?
+  - Drops unneeded information to **maximize processing speed and visual clarity**
+  - Isolates specific blocks of data for focused modeling or visualization
+
+## Example: selecting specific columns
+
+- Let's keep only three variables from our dataset: `age`, `smoke2now`, and `diab`
+  - Column names do NOT need quotes in `select()`
+
+```{r}
+hrs_data2 |> 
+  select(
+    age, smoke2now, diab # <1>
+  )
+
+```
+
+1.  We provide the exact column names we want to keep, separated by commas. All other columns will be dropped from the output.
+
+## Example: removing specific columns
+
+- If we want to keep everything **except** a few specified variables, we use a minus sign (`-`)
+
+```{r}
+hrs_data2 |> 
+  select(
+    -drink, -lung_dis # <1>
+  )
+
+```
+
+1.  Placing `-` in front of `drink` and `lung_dis` explicitly drops them, while retaining every other original variable.
+
+## Example: selecting consecutive columns
+
+- We can select a continuous block of columns using the `:` operator
+
+```{r}
+hrs_data2 |> 
+  select(
+    age:drink # <1>
+  )
+```
+
+1.  This keeps `age`, `drink`, and every single column positioned between them in the data frame. **Make sure you know your column order before using this!**
+
+## Distinguishing `filter()` vs `select()`
+
+# `rename()`
+
+## Renaming with `rename()`
+
+-   You can rename columns with `select()` but it's a bit easier to do this with the `rename()` function.
+
+-   You just need to remember `new_name = old_name` ordering.
+
+```{r}
+hrs_data3 <- hrs_data2 |> 
+  rename(
+    id = hhid,
+    race = race_original,
+    sex_bin = female
+    )
+```
+
+# `relocate()`
+
+## Reordering columns using `relocate()`
+
+- `relocate()` moves columns to a different horizontal position in your dataset
+- By default, variables sent into `relocate()` move directly to the **very front** of the dataset
+
+```{r}
+#| eval: false
+hrs_data3 |> relocate(lung_dis, arthritis) # <1>
+hrs_data3 |> relocate(lung_dis, .after = birthdate)       # <2>
+hrs_data3 |> relocate(lung_dis, .before = race)        # <3>
+```
+
+1.  Moves `lung_dis` and `arthritis` to the very front of the dataset, before all other columns.
+2.  Moves `income` to place it directly behind the `record` column.
+3.  Moves `income` to place it right before the `age` column.
+
+- Let's take a look at the output!
+
+## Wrap-up
+
+- We learned three functions that allow us to transform columns in our dataset:
+  - `mutate()`
+    - Transform existing columns and/or create new columns
+  - `select()`
+    - Subset specific columns to keep or drop
+  - `rename()`
+    - Rename columns with new names
+  - `relocate()`
+    - Reorder columns to a different spot in the dataset

@@ -1,0 +1,92 @@
+---
+title: "Lab 3 Instructions"
+author: "Your Name Here"
+subtitle: "PUBH 523/623: Data Summarization"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    self-contained: true
+    embed-resources: true
+    number-sections: true
+    number-depth: 4
+    code-annotations: hover
+    page-layout: full
+editor_options: 
+  chunk_output_type: console
+execute:
+  freeze: auto 
+---
+
+```{r}
+#| label: setup
+#| message: false
+
+library(tidyverse)
+library(gtsummary)
+library(here)
+
+# Load your transformed project data from Lab 2
+
+```
+
+## Introduction
+
+With your custom metrics calculated, this lab guides you through quantitative and categorical data summarization using `group_by()`, `summarize()`, and specialized public health descriptive tables using `gtsummary`.
+
+## Lab activities
+
+### Categorical Frequency Checks
+
+Before summarizing data patterns, we need to inspect the distribution of our newly created variables to ensure there are no unintended structural artifacts or empty categories.
+
+::: callout-important
+
+#### Task
+
+Use the `count()` function to generate a frequency distribution table for your asset-flipped outcome variable and your main demographic group. Ensure any `NA` or "Unknown" values are accounted for.
+:::
+
+### Stratified Summarization Pipelines
+
+We want to observe how your combined safety net score or access metric varies across groups. You will combine `group_by()` and `summarize()` to extract key descriptive summary statistics.
+
+::: callout-important
+
+#### Task
+
+Write a tidyverse pipeline that groups your data by your demographic factor **and** your asset-flipped outcome variable. Use `summarize()` to calculate:
+
+1. The total count (`n()`) of households per cell.
+2. The mean of your combined safety net metric.
+3. The standard deviation or median of your metric.
+Make sure to use `na.rm = TRUE` to handle any missing values safely.
+:::
+
+### Building a Professional Table 1
+
+In public health reporting, a structured "Table 1" describes the characteristics of your study population. We will utilize the `gtsummary` package to build a beautiful, publication-ready table.
+
+```{r}
+#| eval: false
+#| label: table1-template
+
+# Example template layout
+wbns_cleaned %>%
+  select(demographic_var, asset_metric, outcome_var) %>%
+  tbl_summary(
+    by = outcome_var,
+    label = list(demographic_var ~ "Race/Ethnicity", asset_metric ~ "Active Support Programs")
+  ) %>%
+  add_p() %>%
+  bold_labels()
+
+```
+
+::: callout-important
+
+#### Task
+
+Generate a descriptive `tbl_summary()` object stratified by your asset outcome variable. Customize your variable labels so they show up as clean, professional English titles rather than shorthand code names (e.g., change `PPETHM` to "Race and Ethnicity").
+:::

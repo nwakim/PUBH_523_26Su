@@ -1,0 +1,158 @@
+---
+title: "Lab 1 Instructions"
+author: "Nicky Wakim"
+subtitle: "PUBH 523/623"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    self-contained: true
+    embed-resources: true
+    number-sections: true
+    number-depth: 4
+    code-annotations: hover
+    page-layout: full
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+execute:
+  freeze: auto  # re-render only when source changes
+---
+
+
+```{r}
+#| message: false
+#| echo: false
+
+# PLEASE DO NOT REMOVE THIS CODE CHUNK!!!
+### ADD YOUR LIBRARIES HERE!!! ####
+
+library(tidyverse)
+library(gtsummary)
+library(here)
+```
+
+## Directions
+
+[You can download the `.qmd` file for this lab here.](https://github.com/nwakim/BSTA_513_26S/blob/main/project/LastName_FirstInit_Lab_01.qmd)
+
+The above link will take you to your **editing** file. **Please do not remove anything from this editing file!!** You will only add your code and work to this file.
+
+## Lab activities
+
+### Familiarize yourself with the Well-Being and Basic Needs Survey
+
+Please read the [Urban Institute's page](https://www.urban.org/policy-centers/health-policy-center/projects/well-being-and-basic-needs-survey) on the Well-Being and Basic Needs Survey (WBNS) and more of their [published information of the survey](https://www.urban.org/sites/default/files/publication/98919/the_well-being_and_basic_needs_survey_1.pdf) (at least the first 4 pages). You can also read about the overarching [From Safety Net to Solid Ground Initiative](https://www.urban.org/tags/safety-net-solid-ground#about) that started the survey. Answer the following questions:
+
+-   What is the motivation for this study? 
+-   How could an analysis that looks at associations with food insecurity help facilitate change in policy?
+-   Why is it important to study food insecurity?
+
+::: callout-important
+#### Task
+
+Answer the following questions using information on WBNS:
+
+-   What is the motivation for this study? 
+-   How could an analysis that looks at associations with food insecurity help facilitate change in policy?
+-   Why is it important to study food insecurity?
+:::
+
+### File organization
+
+Before downloading the data, set up your folders for the class and project, including making an `.Rproj` file. Make sure you are working with the project by using the `here()` function to display your working directory. 
+
+::: callout-important
+#### Task
+
+Display your working directory using the `here` package and `here()` function.
+
+Insert an image of your folder organization with the `.Rproj` file in the correct place.
+:::
+
+### Access and download the data
+
+1.  Go to the [Health and Medical Care Archive page for the 2024 Well-Being and Basic Needs Survey](https://www.icpsr.umich.edu/web/HMCA/studies/39691/datadocumentation)
+2.  Go to the Data & Documentation tab ![](./images/Lab_01/dnd.png)
+3.  Download the R version of the Public use data ![](./images/Lab_01/download.png)
+4.  Read and agree to the Terms of Use. After this, you will be redirected to a new page.
+5.  Log into ICPSR by clicking "Access through your institution". You should be taken to a new page where you need to select "Oregon Health & Science University" ![](./images/Lab_01/ICPSR.png)
+6.  Login using standard OHSU login. Then the download should begin!
+7.  Make sure to move this into your project folder under the "data" folder.
+8.  Take a look at the folders/files you just downloaded. Make sure to locate and understand the difference between the Codebook, Questionnaire, and User Guide. (Note that the website also contains the codebook if you go to the variable tab. I think the online one has an easier user interface than the pdf.)
+9. **Read the User Guide!** There is some important information about the data and how to use it.
+
+::: callout-important
+#### Task
+
+No task to report back on. Just make sure you have the data and read the User Guide!
+:::
+
+### Load the data and rename the dataset
+
+The dataset you downloaded from ICPSR comes compressed in a zip file. Once you unzip it, locate the R data file (which usually has a `.RData` or `.rda` extension) inside the data folder.
+
+Load your data using the appropriate functions for the file type and file path. Once your data are loaded, assign the dataset a cleaner, more intuitive name for your project workflows.
+
+::: callout-important
+#### Task
+
+Load your downloaded data file into R. Rename the loaded object to a clean dataset name of your choice.
+:::
+
+### Decide on your project question
+
+At the end of this project, we will create a scrolling fact/information sheet that will display summaries and visuals of the WBNS data that focus on a specific question. 
+
+Choose one of the following 4 options for your project scope:
+
+1.  **The Safety Net Multiplier:** How do overlapping nutrition programs (SNAP `Q26`, free school meals `Q26A`, free groceries `Q25`, free meals `Q25A`) collectively stabilize food security environments?
+2.  **The Health Insurance Dividend:** How does having public health coverage remove financial barriers to care and support medical utilization?
+3.  **Housing & Rental Assistance Impact:** How do rental vouchers and utility safety nets support overall household stability?
+4.  **Work Support Resilience:** How do child care subsidies or financial assistance programs bolster a family's capacity to navigate emergencies?
+
+::: callout-important
+#### Task
+
+Write down your chosen project option number. 
+:::
+
+### Getting data in working format
+
+Use the following code (with your dataset's name) to remove the parentheses with values that are in front of the category names. You need to copy this code and change `old_df` and `new_df` to your respective dataset names.
+
+```{r}
+#| eval: false
+
+new_df <- old_df |>
+  mutate(
+    across(
+      where(is.factor), ~ {
+        levels(.) <- gsub("^\\(-?\\d+\\)\\s*", "", levels(.))
+        .
+        }
+      )
+    )
+```
+
+Use `glimpse` to verify that the parentheses are gone. 
+
+
+::: callout-important
+#### Task
+
+Remove the parentheses with values that are in front of the category names. Verify that the parentheses are gone using `glimpse()`.
+:::
+
+### Save data for processing with `.Rda`
+
+Within this document, or in a separate document, use R to save a copy of the dataset so that you can process it without changing the raw data. Recall the file organization that we discussed to set up proper folders. Include a screenshot showing the new `.Rda` file within your Data folder.
+
+::: callout-important
+#### Task
+
+Include a screenshot showing the new `.Rda` file within your data folder.
+:::
+
+

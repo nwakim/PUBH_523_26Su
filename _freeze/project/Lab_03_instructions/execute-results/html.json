@@ -1,0 +1,15 @@
+{
+  "hash": "fa0db4ee5dcb675bc24cec78ea57cf0c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Lab 3 Instructions\"\nauthor: \"Your Name Here\"\nsubtitle: \"PUBH 523/623: Data Summarization\"\ndate-modified: \"today\"\nformat: \n  html:\n    link-external-newwindow: true\n    toc: true\n    self-contained: true\n    embed-resources: true\n    number-sections: true\n    number-depth: 4\n    code-annotations: hover\n    page-layout: full\neditor_options: \n  chunk_output_type: console\nexecute:\n  freeze: auto \n---\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\nlibrary(gtsummary)\nlibrary(here)\n\n# Load your transformed project data from Lab 2\n```\n:::\n\n\n## Introduction\n\nWith your custom metrics calculated, this lab guides you through quantitative and categorical data summarization using `group_by()`, `summarize()`, and specialized public health descriptive tables using `gtsummary`.\n\n## Lab activities\n\n### Categorical Frequency Checks\n\nBefore summarizing data patterns, we need to inspect the distribution of our newly created variables to ensure there are no unintended structural artifacts or empty categories.\n\n::: callout-important\n\n#### Task\n\nUse the `count()` function to generate a frequency distribution table for your asset-flipped outcome variable and your main demographic group. Ensure any `NA` or \"Unknown\" values are accounted for.\n:::\n\n### Stratified Summarization Pipelines\n\nWe want to observe how your combined safety net score or access metric varies across groups. You will combine `group_by()` and `summarize()` to extract key descriptive summary statistics.\n\n::: callout-important\n\n#### Task\n\nWrite a tidyverse pipeline that groups your data by your demographic factor **and** your asset-flipped outcome variable. Use `summarize()` to calculate:\n\n1. The total count (`n()`) of households per cell.\n2. The mean of your combined safety net metric.\n3. The standard deviation or median of your metric.\nMake sure to use `na.rm = TRUE` to handle any missing values safely.\n:::\n\n### Building a Professional Table 1\n\nIn public health reporting, a structured \"Table 1\" describes the characteristics of your study population. We will utilize the `gtsummary` package to build a beautiful, publication-ready table.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Example template layout\nwbns_cleaned %>%\n  select(demographic_var, asset_metric, outcome_var) %>%\n  tbl_summary(\n    by = outcome_var,\n    label = list(demographic_var ~ \"Race/Ethnicity\", asset_metric ~ \"Active Support Programs\")\n  ) %>%\n  add_p() %>%\n  bold_labels()\n```\n:::\n\n\n::: callout-important\n\n#### Task\n\nGenerate a descriptive `tbl_summary()` object stratified by your asset outcome variable. Customize your variable labels so they show up as clean, professional English titles rather than shorthand code names (e.g., change `PPETHM` to \"Race and Ethnicity\").\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,108 @@
+---
+title: "Intro to data transformations and summarizations"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: "Intro to data transformations and summarizations"
+    html-math-method: mathjax
+    highlight-style: ayu
+    code-annotations: hover
+execute:
+  echo: true
+  freeze: auto
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+library(readxl)
+```
+
+```{r}
+#| echo: false
+
+hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
+hrs_data <- clean_names(hrs_data)
+```
+
+## `dplyr` basics
+
+
+- `dplyr` is a package in the tidyverse that provides a **set of functions for data manipulation and transformation**
+
+ 
+
+- **Each function** in `dplyr` is like a **verb that describes the action** being performed on the data
+
+ 
+
+- Most functions within `dplyr` have similar input and output:
+  - *Input:* a data frame (usually the first argument in the function)
+  - *Output:* a data frame
+  - *Additional arguments:* typically describe what columns (variables) to operate on
+
+## Example of a `dplyr` function: `select()`
+
+::: columns
+::: {.column width="30%"}
+
+::: pink2
+::: pink2-cont
+I can use the `select()` function to select specific columns (`age` and `ed`) from my data frame (`hrs_data`)
+:::
+:::
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="65%"}
+```{r}
+hrs_data |> # <1> 
+  select( # <2>
+    age, # <3>
+    ed  # <3>
+    ) # <2>
+```
+
+1. The first argument is the data frame we want to operate on (in this case, `hrs_data`)
+2. `select` is the function we are using on the data frame
+3. `age` and `ed` are the columns (in the data frame) that we perform the `select()` function on
+
+:::
+:::
+
+## Types of `dplyr` functions
+
+`dplyr` functions can be categorized into four groups based on what they operate on:
+
+1. [**rows**]{style="color: #5BAFF8;"}: functions that operate on rows of a data frame 
+    - Examples: `filter()`, `slice()`
+    - Under the Data Transformation lesson series
+2. [**columns**]{style="color: #E75B5C;"}: functions that operate on columns of a data frame
+    - Examples: `select()`, `mutate()`
+    - Under the Data Transformation lesson series
+3. [**groups**]{style="color: #EF85B3;"}: functions that operate on groups of rows in a data frame 
+    - Examples: `group_by()`, `summarize()`
+    - Under the Data Summarization lesson series
+4. [**joins**]{style="color: #459B99;"}: functions that combine two data frames based on a common key 
+    - Examples: `left_join()`, `inner_join()`
+    - Not covered in this class
+
+## Resources
+
+- [`dplyr` cheat sheet](https://rstudio.github.io/cheatsheets/html/data-transformation.html)
+

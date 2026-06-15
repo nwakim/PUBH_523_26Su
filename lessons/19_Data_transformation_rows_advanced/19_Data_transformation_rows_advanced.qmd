@@ -1,0 +1,149 @@
+---
+title: "Data transformation: Rows, *Advanced*"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: "Data transformation: Rows, *Advanced*"
+    html-math-method: mathjax
+    highlight-style: ayu
+    code-annotations: hover
+execute:
+  echo: true
+  freeze: auto
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+library(readxl)
+```
+
+```{r}
+#| echo: false
+hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
+hrs_data <- clean_names(hrs_data)
+```
+
+# 
+
+## Filtering requires a little logic
+
+-   We can chain multiple criteria using the [`&` (AND)]{style="color:darkorange"} or [`|` (OR) operators]{style="color:darkorange"}.
+    -   But we need to review a little logic before we do this.
+
+
+
+-   If we wanted to return participants who identified as
+    -   `Female` **and** are in 10th grade,
+    -   we would use an `&` to chain these criteria together:
+
+```         
+sex == "Female" & grade == "10th"
+```
+
+
+
+-   Note that *SPELLING AND CASE MATTER*!
+    -   You must write the name of the column exactly and
+    -   also the value (i.e. "Female" not "female") exactly.
+
+## Filtering with `&` (AND) criteria
+
+```{r}
+hrs_data |>
+  filter(diab == "Yes" & 
+           degree == "Master's degree")
+
+```
+
+-   Note that we could also use the comma in this case:
+
+```{r}
+hrs_data |>
+  filter(diab == "Yes",    # <1> Comma is equivalent to "&" within filter()
+         degree == "Master's degree")
+
+```
+
+## Filtering with `|` (OR) criteria
+
+If we wanted patients who were
+
+`Female` [**or**]{style="color:darkorange"} in 10th grade
+
+we would use a `|` to chain these criteria together.
+
+```{r}
+hrs_data |>
+  filter(diab == "Yes" |
+           degree == "Master's degree")
+```
+
+::: {.callout-warning icon="false"}
+## Think about it:
+
+Which of the AND vs. OR code blocks will return a larger number of participants?
+:::
+
+## More filter examples
+
+-   See [this slide](https://jminnier-berd-r-courses.netlify.app/02-data-wrangling-tidyverse/02_data_wrangling_slides_part1.html#27){target="_blank"} from a previous BERD workshop.
+
+-   Also read the [filter section](https://r4ds.hadley.nz/data-transform.html#rows){target="_blank"} in the "Data Transformation" chapter from *R for Data Science (2e)*.
+
+<br>
+
+### More about comparison and logical operators
+
+Click [here](https://www.datamentor.io/r-programming/operator/){target="_blank"} for a useful reference for all the different operators (both logical and comparison) that you can use.
+
+## 
+
+Using %in%
+
+# `arrange()`
+
+## `arrange()` after `count()`-ing categorical data
+
+-   Another example of when `arrange()` is useful
+
+::: columns
+::: {.column width="48%"}
+-   We can also use `count()` to count all of the unique values for a categorical variable.
+-   This will also show `NA` category, which is the special missing variable type:
+
+```{r}
+hrs_data |>
+  count(age)
+```
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+-   Sometimes it helps to arrange by that category if you have many categories to view.
+-   This can also alert us if there are categorical coding mistakes (such as misspellings) in our data.
+
+```{r}
+hrs_data |>
+  count(age) |>
+  arrange(n)
+```
+:::
+:::

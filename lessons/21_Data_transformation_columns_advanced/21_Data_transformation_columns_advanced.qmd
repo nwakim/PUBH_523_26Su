@@ -1,0 +1,448 @@
+---
+title: "Data transformation: Columns, *Advanced*"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: "Data transformation: Rows, *Advanced*"
+    html-math-method: mathjax
+    highlight-style: ayu
+    code-annotations: hover
+execute:
+  echo: true
+  freeze: auto
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+library(readxl)
+library(gt)
+library(rstatix)
+```
+
+```{r}
+#| echo: false
+hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
+hrs_data <- clean_names(hrs_data)
+hrs_new = hrs_data
+```
+
+## Categorical data (`factor`s) 
+
+::: {.panel-tabset}
+
+### Intro
+
+-   One data type that we haven't yet looked at are `factor` variables
+    -   [factors are how R represents **levels** of *categorical data*]{style="color:darkorange"}.
+-   For the most part, you can use `character` and `factors` interchangeably for categorical data.
+-   However, there are two main differences:
+    -   `factor`s define the *permissible* values in a vector with an argument called `levels`.
+    -   The levels define the order in which the permissible values are displayed, such as in a table or figure.
+    -   The default order of levels (values) is in **alphanumeric** order.
+
+
+
+### Make `degree` factor
+
+-   Below we use the `factor()` function within a `mutate()` to transform `degree` from a `character` variable into a `factor` variable.
+
+```{r}
+class(hrs_new$degree) # what's the data type of degree?
+hrs_new |> tabyl(degree)
+
+hrs_new <- hrs_new |> 
+  #create a factor variable
+  mutate(degree_fac1 = factor(degree)) 
+
+# Checks:
+class(hrs_new$degree_fac1) # what's the data type of degree_fac1?
+levels(hrs_new$degree_fac1) # what are its levels?
+# values are the same in the two degree variables:
+hrs_new |> tabyl(degree, degree_fac1) |> adorn_title()
+```
+
+### Change order of levels
+
+-   Use the `levels` argument within the `factor()` function
+
+Example: Create `degree_fac2` variable as a factor version of degree with degrees in "correct" order:
+
+```{r}
+hrs_new <- hrs_new |> 
+  #create a factor variable
+  mutate(degree_fac2 = factor(
+    degree, 
+    levels = c("9th","10th","11th","12th")
+    ))
+
+# Checks:
+class(hrs_new$degree_fac2) # what's the data type of degree_fac1?
+levels(hrs_new$degree_fac2) # what are its levels?
+hrs_new |> tabyl(degree_fac2)
+
+# values are the same in the two degree factor variables:
+hrs_new |> tabyl(degree_fac1, degree_fac2) |> adorn_title()
+```
+
+### Be careful! 
+
+-   Recall that the `levels` of a factor are the *permissible values* in a `factor`.
+
+::: callout-warning
+*Spelling matters!*
+:::
+
+-   If we try to use a factor level that doesn't exist ("10" vs "10th"),
+    -   we won't have any data in that category, and
+    -   the non-specified levels ("10") get set to `NA` (missing).
+
+```{r}
+hrs_new <- hrs_new |> 
+  mutate(degree_fac3 = factor(
+    degree, 
+    levels = c("9th","10","11th","12th") # typo!!
+    )) 
+
+# check
+levels(hrs_new$degree_fac3) # what are its levels?
+hrs_new |> tabyl(degree_fac3)
+# compare
+hrs_new |> tabyl(degree_fac2, degree_fac3) |> adorn_title()
+```
+
+
+### Replace `degree` with factor version
+
+-   Below we are doing something called *reassignment*:
+    -   We’re taking the previous values of our variable (`degree`),
+    -   doing something to them (making them a factor), and 
+    -   then reassigning the variable `degree` to its new set of values.
+-   *I don't recommend replacing a variable with new values until you are 100% positive that your code is correct!!*
+    -   I can't compare the new `degree` values to the original ones anymore to check my work
+
+```{r}
+hrs_new <- hrs_new |> 
+  mutate(degree = factor(
+    degree, 
+    levels = c("9th","10th","11th","12th")
+    )) 
+
+# compare to degree_fac2 (which we determined to be correct)
+hrs_new |> tabyl(degree, degree_fac2) |> adorn_title()
+```
+
+### Remove extra variables
+
+-   This step isn't necessary, but we don't need the columns `degree_fac1`, `degree_fac1-degree_fac3` anymore.
+
+```{r}
+names(hrs_new)
+hrs_new <- hrs_new |> select(-degree_fac1:-degree_fac3)
+names(hrs_new)
+```
+
+
+:::
+
+
+
+# Practice time! (part 5)
+
+1.  Create a new variable `income` that calculates income based on `income` and `weight_kg`. Note the formula for income is weight/income\^2 (weight is in kilograms and income is in meters). Create a scatterplot of `income` vs `income`.
+
+2.  Create a new factor variable `female_fac` that orders the values of `female` as Male, Female.
+
+# Make variables with `case_when()`
+
+![[Artwork by \@allison_horst](https://allisonhorst.com/everything-else){target="_blank"}](image/dplyr_case_when.png){fig-align="center"}
+
+## `case_when()`
+
+::: {.panel-tabset}
+
+### Intro
+
+-   How can we dichotomize a continuous variable, such as income?
+-   How can we combine categories of a variable, such as race?
+-   How can we convert categories to numbers, such as female?
+
+These are all examples where `case_when()` can be used.
+
+### Code
+
+-   The code follows a **basic pattern** for each category inside `case_when()`:
+    -   [*condition* \~ *category name*]{style="color:darkorange"}
+-   The *left* side of the `~` is where we specify how to *define* the category.
+-   The *right* side of the `~` is where we specify the *category name*.
+-   Separate each "case" with a comma.
+
+### Example 1
+
+```{r}
+hrs_new |> tabyl(female)
+```
+
+
+-   Convert `female` to a new numeric variable called `female` whose values are
+    -   1 when `female` is Female, and
+    -   0 when `female` is Male
+
+[*left side* defines the condition *\~* *right side* names the category]{style="color:darkorange"}
+
+```{r}
+hrs_new <- hrs_new |>
+  mutate(
+    female = case_when(
+      # when female is Female, make female equal to 1 
+      female == "Female" ~ 1, # do not forget this comma!
+      
+      # when female is Male, make female equal to 0
+      female == "Male" ~ 0
+      )
+    ) 
+
+# checks
+hrs_new |> tabyl(female) # look at the categories
+class(hrs_new$female)
+# compare female and female variables
+# hrs_new |> tabyl(female, female) |> adorn_title()
+```
+
+-   How were the missing values (`NA`) handled?
+
+
+
+### Example 2
+
+-   Dichotomize the numeric variable `income` into two categories with 30 as the cutoff.
+
+[*left side* defines the condition *\~* *right side* names the category]{style="color:darkorange"}
+
+```{r}
+hrs_new <- hrs_new |>
+  mutate(
+    income30 = case_when(
+      income < 30 ~ "<30", # don't forget a comma between cases
+      income >= 30 ~ "30+"
+      ) 
+  ) 
+
+# check
+hrs_new |> tabyl(income30)
+class(hrs_new$income30)
+
+# check values were categorized correctly: (look at mins & maxes)
+hrs_new |> 
+  group_by(income30) |> 
+  get_summary_stats(income) |> 
+  gt()
+
+```
+
+
+### Example 3
+
+-   Recode `income` to have 4 levels:
+    -   `<20` (not including exactly 20)
+    -   `20-30` (not including exactly 30)
+    -   `30+`
+    -   `unknown` if missing
+
+-   Code comments
+    -   Notice that for the middle category we use an `&` statement similar to how we used logic in filter
+    -   New: used `.default` option to specify what to assign in all other unspecified cases.
+
+```{r }
+hrs_new <- hrs_new |>
+  mutate(
+    income3cat = case_when(
+      income < 20 ~ "<20",
+      (income >=20) & (income < 30) ~ "20-30",
+      income >= 30 ~ "30+",
+      .default = "unknown"  # apply this in all other cases
+      ),
+    income3cat = factor(income3cat) # make it factor after creating categories
+    )
+  
+# check
+hrs_new |> tabyl(income3cat)
+class(hrs_new$income3cat)
+
+# check values were categorized correctly: (look at mins & maxes)
+hrs_new |> 
+  group_by(income3cat) |> 
+  get_summary_stats(income) |> 
+  gt()
+```
+
+:::
+
+
+# Practice time! (part 6)
+
+1.  Create a new variable called `degree_num` in `hrs_new` that converts `degree` to numeric.
+
+2.  Create a new variable called `race_cat` that relabels `race4` to have shorter race category names: W (White), H/L (Hispanic/Latino), B/AA (Black or African American), Other (All other races). Make `race_cat` a factor variable with levels ordered by the size of the group in descending order.
+
+3.  Create a `tabyl` of the new variable `race_cat` and `race4` to check your work, including the ordering of the factors.
+
+
+# Replace missing values with `replace_na()`
+
+## `replace_na()`
+
+-   Sometimes we want to fill in missing values with a certain value.
+-   We can use the `replace_na()` function inside of `mutate()` to specify this.
+
+::: {.panel-tabset}
+
+### Example 1
+
+-   For example, suppose if the income variable is missing,
+    -   we want to replace it with the average income across the entire data set.
+
+```{r}
+hrs_new <- hrs_new |>
+  mutate(
+    income_filled = replace_na(
+      income,
+      mean(income, na.rm = TRUE))
+    )           
+
+# check
+hrs_new |> 
+  select(contains("income")) |> 
+  tail()
+# how does income_filled compare to income?
+hrs_new |> 
+  select(income, income_filled) |> 
+  get_summary_stats() |> 
+  select(-iqr, -se, -ci) |> 
+  gt()
+
+```
+
+### Example 2
+
+-   We can also fill in missing values for character variables
+-   Here we replace missingness in the `female` column with `unknown`:
+
+```{r}
+class(hrs_new$female)
+hrs_new |> tabyl(female)
+
+hrs_new <- hrs_new |>
+    mutate(
+      femalefilled = replace_na(female, "unknown"))
+
+# check
+hrs_new |> tabyl(femalefilled, female) |> adorn_title()
+```
+
+### Example 3
+
+-   What happens when we use `replace_na()` to fill in missing values for factor variables?
+
+```{r}
+class(hrs_new$degree)
+```
+
+
+```{r}
+#| error: true
+
+hrs_new <- hrs_new |>
+    mutate(
+      degreefilled = replace_na(degree, "unknown"))
+```
+
+:::
+
+# `select()` 
+
+## `{tidyselect}`
+
+-   There are ways to select columns by "searching" for them.
+-   These are called `{tidyselect}` helpers.
+-   See more examples from the [{tidyselect} webpage](https://tidyselect.r-lib.org/reference/language.html){target="_blank"}.
+
+
+### `contains`
+
+-   For instance, you can see how this might be useful, where we select all columns where the column name includes the word "race":
+
+```{r}
+hrs_data |> 
+  select(contains("race"))
+```
+
+### `starts_with`, `ends_with`
+
+-   Select all columns starting with "race":
+
+```{r}
+hrs_data |> 
+  select(starts_with("prob")) |> 
+  names()
+```
+
+-   Select all columns ending with "e":
+
+```{r}
+hrs_data |> 
+  select(ends_with("e")) |> 
+  names()
+```
+
+### Select columns by data type
+
+-   We can also select variables based on data types
+-   For instance, `select(where(is.numeric))` selects all numeric columns
+    -   (`where()` is a helper function that returns columns where the inside function is `TRUE`,
+    -   in this case `is.numeric` returns the `TRUE`/`FALSE`)
+
+
+```{r}
+hrs_data |> 
+  select(where(is.numeric)) |> 
+  names()
+
+hrs_data |> 
+  select(where(is.character)) |> 
+  names()
+
+```
+
+
+# Practice time! (part 4)
+
+Perform some subsetting functions on the `hrs_data` data:
+
+1.  Use `filter()` to select people who are in 9th or 10th degree and who have income less than 25. Save the resulting dataset as `yrbss_filtered`.
+
+2.  Use `rename()` to rename 2 of the column names of `yrbss_filtered` to something more meaningful.
+
+3.  Use `select()` to keep only the columns that denote record, female, degree, income, and the 2 renamed columns.
+
+4.  Arrange the data by income, starting with the highest value and ending with the least value.
+
+5.  Save the resulting data set in the file `data/practice4_data.xslx`.
+
+
+

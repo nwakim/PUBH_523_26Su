@@ -133,6 +133,46 @@
     "HW_04.html": "6b6d2341"
   },
   "project.qmd": {
-    "project.html": "6e431830"
+    "project.html": "6e431830",
+    "project.tex": "b3c55994"
+  },
+  "lessons/17_Data_transformation_basics/17_Data_transformation_basics.qmd": {
+    "17_Data_transformation_basics.html": "e33d2b48"
+  },
+  "lessons/18_Data_transformation_rows/18_Data_transformation_rows.qmd": {
+    "18_Data_transformation_rows.html": "b2e99242"
+  },
+  "lessons/19_Data_transformation_columns/19_Data_transformation_columns.qmd": {
+    "19_Data_transformation_columns.html": "f1401b2c"
+  },
+  "lessons/20_Data_transformation_groups/20_Data_transformation_groups.qmd": {
+    "20_Data_transformation_groups.html": "e133c0fb"
+  },
+  "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.qmd": {
+    "26_Data_viz_Intro_to_ggplot.html": "70843aea"
+  },
+  "project/Lab_01_instructions.qmd": {
+    "Lab_01_instructions.html": "688a6be0"
+  },
+  "project/Lab_04_instructions.qmd": {
+    "Lab_04_instructions.html": "fbca602c"
+  },
+  "project/Lab_03_instructions.qmd": {
+    "Lab_03_instructions.html": "83b19899"
+  },
+  "project/Lab_02_instructions.qmd": {
+    "Lab_02_instructions.html": "58c3f449"
+  },
+  "lessons/17_Intro_data_trans_summ/17_Intro_data_trans_summ.qmd": {
+    "17_Intro_data_trans_summ.html": "f900cdaf"
+  },
+  "lessons/19_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.qmd": {
+    "19_Data_transformation_rows_advanced.html": "ecb7b3cf"
+  },
+  "lessons/03_Basics_operators/03_Basics_operators.qmd": {
+    "03_Basics_operators.html": "a34715d9"
+  },
+  "lessons/21_Data_transformation_columns_advanced/21_Data_transformation_columns_advanced.qmd": {
+    "21_Data_transformation_columns_advanced.html": "03559d7a"
   }
 }

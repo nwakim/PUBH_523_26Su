@@ -37,17 +37,38 @@ $presentation-heading-font: Signika, sans-serif !default;
 $presentation-heading-color: $dark-blue !default;
 
 div.cell-output-stdout {
-  font-size: 1.7em;
+  font-size: 1.63em;
 }
 
 .reveal .sourceCode {
-  font-size: 1em !important;
+  font-size: 0.98em !important;
 }
 
 .reveal code {
   max-height: 100% !important;
 }
 
+
+// Target the Tippy box explicitly for code annotations
+.tippy-box {
+  font-size: 1.1em !important; /* Bump up as much as you need */
+  
+  // --- Widens the hover popup box ---
+  max-width: 550px !important;  /* Prevents Tippy from clamping the width */
+  width: 500px !important;      /* Sets the actual width of the box */
+  
+  // Target the container grid inside the popup
+  dl.code-annotation-container-grid {
+    font-size: 1.1em !important; 
+    
+    dt {
+      font-size: 1.1em !important; /* Sizes the numbers (e.g., 1, 2) */
+    }
+    dd {
+      font-size: 1.1em !important; /* Sizes your actual description text */
+    }
+  }
+}
 
 
 
@@ -98,7 +119,7 @@ div.cell-output-stdout {
   padding-left: 15px;
   color: black;
   background-color: white;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 // blue2
@@ -126,7 +147,7 @@ div.cell-output-stdout {
   padding-left: 15px;
   color: black;
   background-color: white;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 
@@ -155,7 +176,7 @@ div.cell-output-stdout {
   padding-left: 15px;
   color: black;
   background-color: white;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 // pink2
@@ -183,7 +204,7 @@ div.cell-output-stdout {
   padding-left: 15px;
   color: black;
   background-color: white;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 // orange
@@ -211,7 +232,7 @@ div.cell-output-stdout {
   padding-left: 15px;
   color: black;
   background-color: white;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 
@@ -240,7 +261,7 @@ div.cell-output-stdout {
   padding-left: 15px;
   color: black;
   background-color: white;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 // purple
@@ -268,7 +289,7 @@ div.cell-output-stdout {
   padding-left: 15px;
   color: black;
   background-color: white;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 // purple2
@@ -296,7 +317,7 @@ div.cell-output-stdout {
   padding-left: 15px;
   color: black;
   background-color: white;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 // green
@@ -324,7 +345,7 @@ div.cell-output-stdout {
   padding-left: 15px;
   color: black;
   background-color: white;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 // green2
@@ -352,7 +373,7 @@ div.cell-output-stdout {
   padding-left: 15px;
   color: black;
   background-color: white;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 
