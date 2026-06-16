@@ -25,3 +25,6 @@ execute:
 - Copying code: the copy option on all code!
 - Accessing the source code for this site via GitHub
 
+## Course Overview
+
+![](../img_slides/course_org.png){fig-align="right" width="60%"}
