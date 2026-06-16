@@ -161,47 +161,45 @@ ul.task-list li input[type="checkbox"] {
   padding: 0px;
 }
 
-.assignments table tbody tr:nth-child(5) td, 
-.assignments table tbody tr:nth-child(11) td,
-.assignments table tbody tr:nth-child(n+21):nth-child(-n+22) td{
+.rbasics table tbody tr:has(.rbasics) td:nth-child(5){
   background-color: #fcf2f7 !important;
   color: #EF85B3; 
 }
 
-.basics table tbody tr:nth-child(11) td, 
-.basics table tbody tr:nth-child(n+21):nth-child(-n+23) td{
-  background-color: #fcf2f7 !important;
-  color: #EF85B3; 
+.randr table tbody tr:has(.randr) td:nth-child(5){
+  background-color: #F8F9FA !important;
+  color: #6C757D; 
 }
 
-.transf table tbody tr:nth-child(11) td, 
-.transf table tbody tr:nth-child(n+21):nth-child(-n+23) td{
-  background-color: #fcf2f7 !important;
-  color: #EF85B3; 
+.bestpract table tbody tr:has(.bestpract) td:nth-child(5){
+  background-color: #DAECFE !important;
+  color: #5BAFF8; 
 }
 
-.red table tbody tr:nth-child(1) td,
-.red table tbody tr:nth-child(6) td,
-.red table tbody tr:nth-child(13) td,
-.red table tbody tr:nth-child(19) td,
-.red table tbody tr:nth-child(25) td,
-.red table tbody tr:nth-child(30) td,
-.red table tbody tr:nth-child(34) td,
-.red table tbody tr:nth-child(41) td,
-.red table tbody tr:nth-child(45) td,
-.red table tbody tr:nth-child(52) td,
-.red table tbody tr:nth-child(56) td {
+.assignments table tbody tr:has(.hw-row) td, 
+.assignments table tbody tr:has(.proj-row) td,
+.assignments table tbody tr:has(.lab-row) td{
+  background-color: #F8EAF0 !important;
+  color: #BF396F; 
+}
+
+.red table tbody tr:has(.week-row) td{
   background-color: #3070BF !important; /* A light red; use 'red' for bright red */
   color: #fff; 
   height: 5px; 
 }
 </style>
 </div>
+<div class="red">
 <div class="assignments">
+<div class="rbasics">
+<div class="randr">
+<div class="bestpract">
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th style="text-align: center;">Suggested Date</th>
+<th>Week</th>
+<th style="text-align: center;">Date</th>
 <th style="text-align: center;">Les-son</th>
 <th style="text-align: left;">Topic</th>
 <th></th>
@@ -213,7 +211,8 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"></td>
+<td>1</td>
+<td style="text-align: center;">06/22</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: left;">Welcome</td>
 <td></td>
@@ -223,6 +222,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">0</td>
 <td style="text-align: left;">Orientation to the course site</td>
@@ -233,7 +233,8 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">06/22</td>
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;">Introduction to the Introduction</td>
 <td></td>
@@ -243,19 +244,65 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">06/24</td>
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;">Download + Intro to R &amp; Rstudio</td>
-<td></td>
+<td><span class="rbasics">R Basics</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="https://www.loom.com/share/77f8aea2a5bf4b26acc886a28de33569"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/02_Download_R/02_Download_R.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#installation">3.4-3.5</a></td>
 </tr>
 <tr class="odd">
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">R scripts</td>
+<td><span class="rbasics">R Basics</span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="https://www.loom.com/share/dae3a73b80f540189f60f1ed547917fc"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/05_Scripts/05_Scripts.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-scripts.html#scripts">6.1</a></td>
+<td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#scripts">3.8</a></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Basics and Operators</td>
+<td><span class="rbasics">R Basics</span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="https://www.loom.com/share/520012d15ef442109896878ba8c5683c"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/03_Workflow_Basics/03_Workflow_Basics.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-basics.html">2.1</a></td>
+<td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#operators">8.2</a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">Comments</td>
+<td><span class="rbasics">R Basics</span> / <span class="bestpract">Best Practices in R</span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="https://www.loom.com/share/79cbe592ce374632b497d4d50e732cdb"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/04_Comments/04_Comments.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-basics.html#comments">2.2</a></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: center;">06/25</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="hw-row">HW 0 due</span></td>
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: left;">HW 1 DUE?</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td><span class="week-row"></span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
 <td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
@@ -263,37 +310,8 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
-<td style="text-align: center;">3</td>
-<td style="text-align: left;">R scripts</td>
-<td><img src="images/rbasics.png" class="img-fluid" width="140"></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="https://www.loom.com/share/dae3a73b80f540189f60f1ed547917fc"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></a></span></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/05_Scripts/05_Scripts.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
-<td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-scripts.html#scripts">6.1</a></td>
-<td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#scripts">3.8</a></td>
-</tr>
-<tr class="odd">
+<td>2</td>
 <td style="text-align: center;">06/29</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: left;">Basics and Operators</td>
-<td><img src="images/rbasics.png" class="img-fluid" width="140"></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="https://www.loom.com/share/520012d15ef442109896878ba8c5683c"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></a></span></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/03_Workflow_Basics/03_Workflow_Basics.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
-<td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-basics.html">2.1</a></td>
-<td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#operators">8.2</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"></td>
-<td style="text-align: center;">5</td>
-<td style="text-align: left;">Comments</td>
-<td><img src="images/rbasics.png" class="img-fluid" width="140"><img src="images/bestpract.png" class="img-fluid" width="140"></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="https://www.loom.com/share/79cbe592ce374632b497d4d50e732cdb"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></a></span></td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/04_Comments/04_Comments.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
-<td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-basics.html#comments">2.2</a></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"></td>
 <td style="text-align: center;">6</td>
 <td style="text-align: left;">Intro to our working dataset: HRS</td>
 <td></td>
@@ -302,80 +320,121 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">07/01</td>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">7</td>
 <td style="text-align: left;">Functions</td>
-<td><img src="images/rbasics.png" class="img-fluid" width="140"></td>
+<td><span class="rbasics">R Basics</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/06_Functions/06_Functions.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-basics.html#calling-functions">2.4</a></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#functions">3.6</a></td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">07/15</td>
+<tr class="even">
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">8</td>
 <td style="text-align: left;">Objects</td>
-<td></td>
+<td><span class="rbasics">R Basics</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/09_Objects/09_Objects.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#objects">3.10</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">9</td>
 <td style="text-align: left;">Variables in R</td>
-<td></td>
+<td><span class="rbasics">R Basics</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">07/06</td>
+<tr class="even">
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">10</td>
 <td style="text-align: left;">Packages</td>
-<td></td>
+<td><span class="rbasics">R Basics</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/06_Packages/06_Packages.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#packages">3.7</a></td>
 </tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;">07/12</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="hw-row">HW 1 due</span></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
 <tr class="even">
-<td style="text-align: center;">07/08</td>
+<td><span class="week-row"></span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Nicky on vacation this week</td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td style="text-align: center;">07/06</td>
 <td style="text-align: center;">11</td>
 <td style="text-align: left;">R projects and working directories</td>
-<td></td>
+<td><span class="randr">Rigor &amp; Reproducibility</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-scripts.html#projects">6.2</a></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/r_projects.html">6</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">15</td>
 <td style="text-align: left;">Naming: file naming and variable naming?</td>
-<td></td>
+<td><span class="randr">Rigor &amp; Reproducibility</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/13_Workflow_Naming/13_Workflow_Naming.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">07/13</td>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">12</td>
 <td style="text-align: left;">Quarto documents</td>
-<td><img src="images/RndR.png" class="img-fluid" width="140"></td>
+<td><span class="randr">Rigor &amp; Reproducibility</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
+<tr class="even">
+<td></td>
+<td style="text-align: center;">07/26</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="hw-row">HW 2 DUE</span></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
 <tr class="odd">
+<td><span class="week-row"></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: left;">HW 2 DUE</td>
+<td style="text-align: left;">Nicky out of town, but can answer emails</td>
 <td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
@@ -383,117 +442,140 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">07/20</td>
+<td>4</td>
+<td style="text-align: center;">07/13</td>
 <td style="text-align: center;">13</td>
 <td style="text-align: left;">Piping</td>
-<td></td>
+<td><span class="rbasics">R Basics</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-transform.html#sec-the-pipe">3.4</a></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#piping">8.1</a></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">07/22</td>
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">14</td>
 <td style="text-align: left;">Key operators and functions</td>
-<td></td>
+<td><span class="rbasics">R Basics</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/basics.html#operators">8.2</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">07/27</td>
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">16</td>
 <td style="text-align: left;">Tidy data</td>
-<td></td>
+<td><span class="rbasics">R Basics</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-tidy.html#sec-tidy-data">5.2</a></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/transition_to_R.html#tidy-data">4.1</a></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">07/29</td>
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">17</td>
 <td style="text-align: left;">Import and Export</td>
-<td></td>
+<td><span class="rbasics">R Basics</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-import.html">7</a></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/importing.html">7</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;">PROJECT LAB 1 DUE</td>
 <td></td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">08/03</td>
 <td style="text-align: center;">18</td>
 <td style="text-align: left;">Workflow: code style</td>
-<td><img src="images/bestpract.png" class="img-fluid" width="140"></td>
+<td><span class="bestpract">Best Practices in R</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-style.html">4</a></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">08/05</td>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">19</td>
 <td style="text-align: left;">Workflow: getting help</td>
-<td><img src="images/bestpract.png" class="img-fluid" width="140"></td>
+<td><span class="bestpract">Best Practices in R</span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/16_Workflow_getting_help/16_Workflow_getting_help.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/workflow-help.html">8</a></td>
 <td style="text-align: center;"></td>
 </tr>
+<tr class="even">
+<td></td>
+<td style="text-align: center;">07/05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="lab-row">Lab 1 due</span></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
 <tr class="odd">
-<td style="text-align: center;">08/12</td>
+<td><span class="week-row"></span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td style="text-align: center;">07/20</td>
 <td style="text-align: center;">20</td>
 <td style="text-align: left;">Intro to data transformations and summarizations</td>
-<td></td>
+<td>Data transformation, Data summarization</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/17_Intro_data_trans_summ/17_Intro_data_trans_summ.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-transform.html#introduction">3.1</a></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">08/19</td>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">21</td>
 <td style="text-align: left;">Data transformation: rows</td>
-<td><img src="images/datatrans.png" width="140" height="38"></td>
+<td>Data transformation</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/18_Data_transformation_rows/18_Data_transformation_rows.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-transform.html#rows">3.2</a></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/grouping.html#arranging-grouped-data">13.7-13.8</a></td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">08/24</td>
+<tr class="even">
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">22</td>
 <td style="text-align: left;">Data transformation: columns</td>
-<td></td>
+<td>Data transformation</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/19_Data_transformation_columns/19_Data_transformation_columns.qmd"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-transform.html#columns">3.3</a></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">23</td>
 <td style="text-align: left;">Data transformations: advanced</td>
-<td></td>
+<td>Data transformation</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/logicals.html#comparisons">12.2</a>, <a href="https://r4ds.hadley.nz/factors.html">16</a></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">08/26</td>
+<tr class="even">
+<td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">24</td>
 <td style="text-align: left;">Data transformation: groups</td>
 <td></td>
@@ -502,10 +584,22 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-transform.html#groups">3.5</a></td>
 <td style="text-align: center;"></td>
 </tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;">08/09</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="hw-row">HW 3 due</span></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
 <tr class="even">
+<td><span class="week-row"></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: left;">HW 3 DUE</td>
+<td style="text-align: left;"></td>
 <td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
@@ -513,47 +607,63 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;">LAB 2 DUE</td>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"></td>
+<td>6</td>
+<td style="text-align: center;">07/27</td>
 <td style="text-align: center;">25</td>
 <td style="text-align: left;">Data summarization: quantitative data</td>
-<td></td>
+<td>Data summarization</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">26</td>
 <td style="text-align: left;">Data summarization: categorical data</td>
-<td></td>
+<td>Data summarization</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">27</td>
 <td style="text-align: left;">Descriptive tables</td>
-<td></td>
+<td>Data summarization</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/tables_descriptive.html">17</a></td>
 </tr>
+<tr class="even">
+<td></td>
+<td style="text-align: center;">08/23</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="lab-row">Lab 2 due</span></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
 <tr class="odd">
-<td style="text-align: center;">08/31</td>
+<td><span class="week-row"></span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td style="text-align: center;">08/03</td>
 <td style="text-align: center;">28</td>
 <td style="text-align: left;">Lengthening data</td>
 <td></td>
@@ -562,7 +672,8 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-tidy.html#sec-pivoting">5.3</a></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">29</td>
 <td style="text-align: left;">Widening data</td>
@@ -572,10 +683,22 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-tidy.html#widening-data">5.4</a></td>
 <td style="text-align: center;"></td>
 </tr>
+<tr class="even">
+<td></td>
+<td style="text-align: center;">08/02</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="lab-row">Lab 3 due</span></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
 <tr class="odd">
+<td><span class="week-row"></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: left;">HW 4 DUE</td>
+<td style="text-align: left;"></td>
 <td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
@@ -583,49 +706,54 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;">LAB 3 DUE</td>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"></td>
+<td>8</td>
+<td style="text-align: center;">08/10</td>
 <td style="text-align: center;">30</td>
 <td style="text-align: left;">Data visualization: Intro to ggplot</td>
-<td></td>
+<td>Data visualization</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-visualize.html#introduction">1.1-1.3</a></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/ggplot_basics.html#basics-of-ggplot">30.2-30.5</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">31</td>
 <td style="text-align: left;">Data visualization: Basic plotting</td>
-<td></td>
+<td>Data visualization</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/layers.html#aesthetic-mappings">9.2-9.3</a></td>
 <td style="text-align: center;"><a href="https://epirhandbook.com/en/new_pages/ggplot_basics.html#geoms">30.4-30.5</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">32</td>
 <td style="text-align: left;">Data visualization: Design choices</td>
-<td></td>
+<td>Data visualization</td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="mdi:video" style="font-size: 34px;"></iconify-icon></span></td>
 <td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></span></td>
 <td style="text-align: center;"><a href="https://r4ds.hadley.nz/data-visualize.html#visualizing-relationships">1.5</a></td>
 <td style="text-align: center;"></td>
 </tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;">08/02</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="hw-row">HW 4 due</span></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
 <tr class="even">
+<td><span class="week-row"></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: left;">HW 5 DUE</td>
+<td style="text-align: left;"></td>
 <td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
@@ -633,17 +761,8 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: left;">LAB 4 DUE</td>
-<td></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"></td>
+<td>9</td>
+<td style="text-align: center;">08/17</td>
 <td style="text-align: center;">33</td>
 <td style="text-align: left;">Missing data: summarization and visualization</td>
 <td></td>
@@ -652,7 +771,8 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">34</td>
 <td style="text-align: left;">Missing data: transformations</td>
@@ -662,10 +782,55 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;">08/16</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="lab-row">Lab 4 due</span></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
 <tr class="even">
+<td><span class="week-row"></span></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: left;">PROJECT DUE</td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td style="text-align: center;">08/24</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Project help</td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><span class="week-row"></span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td style="text-align: center;">08/31</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="proj-row">Final Project due</span></td>
 <td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
@@ -674,6 +839,10 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="quarto-figure quarto-figure-right">
 <figure class="figure">

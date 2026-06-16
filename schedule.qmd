@@ -16,36 +16,29 @@ format:
   padding: 0px;
 }
 
-.assignments table tbody tr:nth-child(5) td, 
-.assignments table tbody tr:nth-child(11) td,
-.assignments table tbody tr:nth-child(n+21):nth-child(-n+22) td{
+.rbasics table tbody tr:has(.rbasics) td:nth-child(5){
   background-color: #fcf2f7 !important;
   color: #EF85B3; 
 }
 
-.basics table tbody tr:nth-child(11) td, 
-.basics table tbody tr:nth-child(n+21):nth-child(-n+23) td{
-  background-color: #fcf2f7 !important;
-  color: #EF85B3; 
+.randr table tbody tr:has(.randr) td:nth-child(5){
+  background-color: #F8F9FA !important;
+  color: #6C757D; 
 }
 
-.transf table tbody tr:nth-child(11) td, 
-.transf table tbody tr:nth-child(n+21):nth-child(-n+23) td{
-  background-color: #fcf2f7 !important;
-  color: #EF85B3; 
+.bestpract table tbody tr:has(.bestpract) td:nth-child(5){
+  background-color: #DAECFE !important;
+  color: #5BAFF8; 
 }
 
-.red table tbody tr:nth-child(1) td,
-.red table tbody tr:nth-child(6) td,
-.red table tbody tr:nth-child(13) td,
-.red table tbody tr:nth-child(19) td,
-.red table tbody tr:nth-child(25) td,
-.red table tbody tr:nth-child(30) td,
-.red table tbody tr:nth-child(34) td,
-.red table tbody tr:nth-child(41) td,
-.red table tbody tr:nth-child(45) td,
-.red table tbody tr:nth-child(52) td,
-.red table tbody tr:nth-child(56) td {
+.assignments table tbody tr:has(.hw-row) td, 
+.assignments table tbody tr:has(.proj-row) td,
+.assignments table tbody tr:has(.lab-row) td{
+  background-color: #F8EAF0 !important;
+  color: #BF396F; 
+}
+
+.red table tbody tr:has(.week-row) td{
   background-color: #3070BF !important; /* A light red; use 'red' for bright red */
   color: #fff; 
   height: 5px; 
@@ -57,56 +50,75 @@ library(here)
 source(here("class_dates.R"))
 ```
 
-::: assignments
-| Suggested Date | Les-son | Topic |   | Lesson video | Slides HTML | [TB 1](https://r4ds.hadley.nz/) | [TB 2](https://epirhandbook.com/en/) |
-|:------:|:------:|:-------|--------|:------:|:------:|:------:|:------:|
-|  | 0 | Welcome |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-|  | 0 | Orientation to the course site |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-| `{r} w1d1 %>% format("%m/%d")` | 1 | Introduction to the Introduction |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/01_Intro_to_Intro/01_Intro_to_Intro.qmd)]{style="color:#f8f5f0;"} | [Intro](https://r4ds.hadley.nz/intro.html) |  |
-| `{r} w1d2 %>% format("%m/%d")` | 2 | Download + Intro to R & Rstudio |  | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/77f8aea2a5bf4b26acc886a28de33569)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/02_Download_R/02_Download_R.qmd)]{style="color:#f8f5f0;"} |  | [3.4-3.5](https://epirhandbook.com/en/new_pages/basics.html#installation) |
-|  |  | HW 1 DUE? |  |  |  |  |  |
-|  | 3 | R scripts | ![](images/rbasics.png){width="140"} | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/dae3a73b80f540189f60f1ed547917fc)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/05_Scripts/05_Scripts.qmd)]{style="color:#f8f5f0;"} | [6.1](https://r4ds.hadley.nz/workflow-scripts.html#scripts) | [3.8](https://epirhandbook.com/en/new_pages/basics.html#scripts) |
-| `{r} w2d1 %>% format("%m/%d")` | 4 | Basics and Operators | ![](images/rbasics.png){width="140"} | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/520012d15ef442109896878ba8c5683c)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/03_Workflow_Basics/03_Workflow_Basics.qmd)]{style="color:#f8f5f0;"} | [2.1](https://r4ds.hadley.nz/workflow-basics.html) | [8.2](https://epirhandbook.com/en/new_pages/basics.html#operators) |
-|  | 5 | Comments | ![](images/rbasics.png){width="140"}![](images/bestpract.png){width="140"} | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/79cbe592ce374632b497d4d50e732cdb)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/04_Comments/04_Comments.qmd)]{style="color:#f8f5f0;"} | [2.2](https://r4ds.hadley.nz/workflow-basics.html#comments) |  |
-|  | 6 | Intro to our working dataset: HRS |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-| `{r} w2d2 %>% format("%m/%d")` | 7 | Functions | ![](images/rbasics.png){width="140"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/06_Functions/06_Functions.qmd)]{style="color:#f8f5f0;"} | [2.4](https://r4ds.hadley.nz/workflow-basics.html#calling-functions) | [3.6](https://epirhandbook.com/en/new_pages/basics.html#functions) |
-| `{r} w4d2 %>% format("%m/%d")` | 8 | Objects |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/09_Objects/09_Objects.qmd)]{style="color:#f8f5f0;"} |  | [3.10](https://epirhandbook.com/en/new_pages/basics.html#objects) |
-|  | 9 | Variables in R |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-| `{r} w3d1 %>% format("%m/%d")` | 10 | Packages |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/06_Packages/06_Packages.qmd)]{style="color:#f8f5f0;"} |  | [3.7](https://epirhandbook.com/en/new_pages/basics.html#packages) |
-| `{r} w3d2 %>% format("%m/%d")` | 11 | R projects and working directories |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [6.2](https://r4ds.hadley.nz/workflow-scripts.html#projects) | [6](https://epirhandbook.com/en/new_pages/r_projects.html) |
-|  | 15 | Naming: file naming and variable naming? |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/13_Workflow_Naming/13_Workflow_Naming.qmd)]{style="color:#f8f5f0;"} |  |  |
-| `{r} w4d1 %>% format("%m/%d")` | 12 | Quarto documents | ![](images/RndR.png){width="140"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-|  |  | HW 2 DUE |  |  |  |  |  |
-| `{r} w5d1 %>% format("%m/%d")` | 13 | Piping |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [3.4](https://r4ds.hadley.nz/data-transform.html#sec-the-pipe) | [8.1](https://epirhandbook.com/en/new_pages/basics.html#piping) |
-| `{r} w5d2 %>% format("%m/%d")` | 14 | Key operators and functions |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  | [8.2](https://epirhandbook.com/en/new_pages/basics.html#operators) |
-| `{r} w6d1 %>% format("%m/%d")` | 16 | Tidy data |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [5.2](https://r4ds.hadley.nz/data-tidy.html#sec-tidy-data) | [4.1](https://epirhandbook.com/en/new_pages/transition_to_R.html#tidy-data) |
-| `{r} w6d2 %>% format("%m/%d")` | 17 | Import and Export |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [7](https://r4ds.hadley.nz/data-import.html) | [7](https://epirhandbook.com/en/new_pages/importing.html) |
-|  |  | PROJECT LAB 1 DUE |  |  |  |  |  |
-| `{r} w7d1 %>% format("%m/%d")` | 18 | Workflow: code style | ![](images/bestpract.png){width="140"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [4](https://r4ds.hadley.nz/workflow-style.html) |  |
-| `{r} w7d2 %>% format("%m/%d")` | 19 | Workflow: getting help | ![](images/bestpract.png){width="140"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/16_Workflow_getting_help/16_Workflow_getting_help.qmd)]{style="color:#f8f5f0;"} | [8](https://r4ds.hadley.nz/workflow-help.html) |  |
-| `{r} w8d2 %>% format("%m/%d")` | 20 | Intro to data transformations and summarizations |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/17_Intro_data_trans_summ/17_Intro_data_trans_summ.qmd)]{style="color:#f8f5f0;"} | [3.1](https://r4ds.hadley.nz/data-transform.html#introduction) |  |
-| `{r} w9d2 %>% format("%m/%d")` | 21 | Data transformation: rows | ![](images/datatrans.png){width="140" height="38"} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/18_Data_transformation_rows/18_Data_transformation_rows.qmd)]{style="color:#f8f5f0;"} | [3.2](https://r4ds.hadley.nz/data-transform.html#rows) | [13.7-13.8](https://epirhandbook.com/en/new_pages/grouping.html#arranging-grouped-data) |
-| `{r} w10d1 %>% format("%m/%d")` | 22 | Data transformation: columns |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/19_Data_transformation_columns/19_Data_transformation_columns.qmd)]{style="color:#f8f5f0;"} | [3.3](https://r4ds.hadley.nz/data-transform.html#columns) |  |
-|  | 23 | Data transformations: advanced |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [12.2](https://r4ds.hadley.nz/logicals.html#comparisons), [16](https://r4ds.hadley.nz/factors.html) |  |
-| `{r} w10d2 %>% format("%m/%d")` | 24 | Data transformation: groups |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [3.5](https://r4ds.hadley.nz/data-transform.html#groups) |  |
-|  |  | HW 3 DUE |  |  |  |  |  |
-|  |  | LAB 2 DUE |  |  |  |  |  |
-|  | 25 | Data summarization: quantitative data |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-|  | 26 | Data summarization: categorical data |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-|  | 27 | Descriptive tables |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  | [17](https://epirhandbook.com/en/new_pages/tables_descriptive.html) |
-| `{r} w11d1 %>% format("%m/%d")` | 28 | Lengthening data |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [5.3](https://r4ds.hadley.nz/data-tidy.html#sec-pivoting) |  |
-|  | 29 | Widening data |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [5.4](https://r4ds.hadley.nz/data-tidy.html#widening-data) |  |
-|  |  | HW 4 DUE |  |  |  |  |  |
-|  |  | LAB 3 DUE |  |  |  |  |  |
-|  | 30 | Data visualization: Intro to ggplot |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.qmd)]{style="color:#f8f5f0;"} | [1.1-1.3](https://r4ds.hadley.nz/data-visualize.html#introduction) | [30.2-30.5](https://epirhandbook.com/en/new_pages/ggplot_basics.html#basics-of-ggplot) |
-|  | 31 | Data visualization: Basic plotting |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.qmd)]{style="color:#f8f5f0;"} | [9.2-9.3](https://r4ds.hadley.nz/layers.html#aesthetic-mappings) | [30.4-30.5](https://epirhandbook.com/en/new_pages/ggplot_basics.html#geoms) |
-|  | 32 | Data visualization: Design choices |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [1.5](https://r4ds.hadley.nz/data-visualize.html#visualizing-relationships) |  |
-|  |  | HW 5 DUE |  |  |  |  |  |
-|  |  | LAB 4 DUE |  |  |  |  |  |
-|  | 33 | Missing data: summarization and visualization |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-|  | 34 | Missing data: transformations |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-|  |  | PROJECT DUE |  |  |  |  |  |
+::::::: red
+:::::: assignments
+::::: rbasics
+:::: randr
+::: bestpract
+| Week | Date | Les-son | Topic |   | Lesson video | Slides HTML | [TB 1](https://r4ds.hadley.nz/) | [TB 2](https://epirhandbook.com/en/) |
+|--------|:------:|:------:|:-------|--------|:------:|:------:|:------:|:------:|
+| 1 | `{r} w1d1 %>% format("%m/%d")` | 0 | Welcome |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+|  |  | 0 | Orientation to the course site |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+|  |  | 1 | Introduction to the Introduction |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/01_Intro_to_Intro/01_Intro_to_Intro.qmd)]{style="color:#f8f5f0;"} | [Intro](https://r4ds.hadley.nz/intro.html) |  |
+|  |  | 2 | Download + Intro to R & Rstudio | [R Basics]{.rbasics} | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/77f8aea2a5bf4b26acc886a28de33569)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/02_Download_R/02_Download_R.qmd)]{style="color:#f8f5f0;"} |  | [3.4-3.5](https://epirhandbook.com/en/new_pages/basics.html#installation) |
+|  |  | 3 | R scripts | [R Basics]{.rbasics} | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/dae3a73b80f540189f60f1ed547917fc)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/05_Scripts/05_Scripts.qmd)]{style="color:#f8f5f0;"} | [6.1](https://r4ds.hadley.nz/workflow-scripts.html#scripts) | [3.8](https://epirhandbook.com/en/new_pages/basics.html#scripts) |
+|  |  | 4 | Basics and Operators | [R Basics]{.rbasics} | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/520012d15ef442109896878ba8c5683c)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/03_Workflow_Basics/03_Workflow_Basics.qmd)]{style="color:#f8f5f0;"} | [2.1](https://r4ds.hadley.nz/workflow-basics.html) | [8.2](https://epirhandbook.com/en/new_pages/basics.html#operators) |
+|  |  | 5 | Comments | [R Basics]{.rbasics} / [Best Practices in R]{.bestpract} | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/79cbe592ce374632b497d4d50e732cdb)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/04_Comments/04_Comments.qmd)]{style="color:#f8f5f0;"} | [2.2](https://r4ds.hadley.nz/workflow-basics.html#comments) |  |
+|  | `{r} hw0 %>% format("%m/%d")` |  | [HW 0 due]{.hw-row} |  |  |  |  |  |
+| []{.week-row} |  |  |  |  |  |  |  |  |
+| 2 | `{r} w2d1 %>% format("%m/%d")` | 6 | Intro to our working dataset: HRS |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+|  |  | 7 | Functions | [R Basics]{.rbasics} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/06_Functions/06_Functions.qmd)]{style="color:#f8f5f0;"} | [2.4](https://r4ds.hadley.nz/workflow-basics.html#calling-functions) | [3.6](https://epirhandbook.com/en/new_pages/basics.html#functions) |
+|  |  | 8 | Objects | [R Basics]{.rbasics} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/09_Objects/09_Objects.qmd)]{style="color:#f8f5f0;"} |  | [3.10](https://epirhandbook.com/en/new_pages/basics.html#objects) |
+|  |  | 9 | Variables in R | [R Basics]{.rbasics} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+|  |  | 10 | Packages | [R Basics]{.rbasics} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/06_Packages/06_Packages.qmd)]{style="color:#f8f5f0;"} |  | [3.7](https://epirhandbook.com/en/new_pages/basics.html#packages) |
+|  | `{r} hw1 %>% format("%m/%d")` |  | [HW 1 due]{.hw-row} |  |  |  |  |  |
+| []{.week-row} |  |  | Nicky on vacation this week |  |  |  |  |  |
+| 3 | `{r} w3d1 %>% format("%m/%d")` | 11 | R projects and working directories | [Rigor & Reproducibility]{.randr} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [6.2](https://r4ds.hadley.nz/workflow-scripts.html#projects) | [6](https://epirhandbook.com/en/new_pages/r_projects.html) |
+|  |  | 15 | Naming: file naming and variable naming? | [Rigor & Reproducibility]{.randr} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/13_Workflow_Naming/13_Workflow_Naming.qmd)]{style="color:#f8f5f0;"} |  |  |
+|  |  | 12 | Quarto documents | [Rigor & Reproducibility]{.randr} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+|  | `{r} hw2 %>% format("%m/%d")` |  | [HW 2 DUE]{.hw-row} |  |  |  |  |  |
+| []{.week-row} |  |  | Nicky out of town, but can answer emails |  |  |  |  |  |
+| 4 | `{r} w4d1 %>% format("%m/%d")` | 13 | Piping | [R Basics]{.rbasics} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [3.4](https://r4ds.hadley.nz/data-transform.html#sec-the-pipe) | [8.1](https://epirhandbook.com/en/new_pages/basics.html#piping) |
+|  |  | 14 | Key operators and functions | [R Basics]{.rbasics} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  | [8.2](https://epirhandbook.com/en/new_pages/basics.html#operators) |
+|  |  | 16 | Tidy data | [R Basics]{.rbasics} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [5.2](https://r4ds.hadley.nz/data-tidy.html#sec-tidy-data) | [4.1](https://epirhandbook.com/en/new_pages/transition_to_R.html#tidy-data) |
+|  |  | 17 | Import and Export | [R Basics]{.rbasics} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [7](https://r4ds.hadley.nz/data-import.html) | [7](https://epirhandbook.com/en/new_pages/importing.html) |
+|  |  | 18 | Workflow: code style | [Best Practices in R]{.bestpract} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [4](https://r4ds.hadley.nz/workflow-style.html) |  |
+|  |  | 19 | Workflow: getting help | [Best Practices in R]{.bestpract} | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/16_Workflow_getting_help/16_Workflow_getting_help.qmd)]{style="color:#f8f5f0;"} | [8](https://r4ds.hadley.nz/workflow-help.html) |  |
+|  | `{r} lab1 %>% format("%m/%d")` |  | [Lab 1 due]{.lab-row} |  |  |  |  |  |
+| []{.week-row} |  |  |  |  |  |  |  |  |
+| 5 | `{r} w5d1 %>% format("%m/%d")` | 20 | Intro to data transformations and summarizations | Data transformation, Data summarization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/17_Intro_data_trans_summ/17_Intro_data_trans_summ.qmd)]{style="color:#f8f5f0;"} | [3.1](https://r4ds.hadley.nz/data-transform.html#introduction) |  |
+|  |  | 21 | Data transformation: rows | Data transformation | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/18_Data_transformation_rows/18_Data_transformation_rows.qmd)]{style="color:#f8f5f0;"} | [3.2](https://r4ds.hadley.nz/data-transform.html#rows) | [13.7-13.8](https://epirhandbook.com/en/new_pages/grouping.html#arranging-grouped-data) |
+|  |  | 22 | Data transformation: columns | Data transformation | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/19_Data_transformation_columns/19_Data_transformation_columns.qmd)]{style="color:#f8f5f0;"} | [3.3](https://r4ds.hadley.nz/data-transform.html#columns) |  |
+|  |  | 23 | Data transformations: advanced | Data transformation | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [12.2](https://r4ds.hadley.nz/logicals.html#comparisons), [16](https://r4ds.hadley.nz/factors.html) |  |
+|  |  | 24 | Data transformation: groups |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [3.5](https://r4ds.hadley.nz/data-transform.html#groups) |  |
+|  | `{r} hw3 %>% format("%m/%d")` |  | [HW 3 due]{.hw-row} |  |  |  |  |  |
+| []{.week-row} |  |  |  |  |  |  |  |  |
+| 6 | `{r} w6d1 %>% format("%m/%d")` | 25 | Data summarization: quantitative data | Data summarization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+|  |  | 26 | Data summarization: categorical data | Data summarization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+|  |  | 27 | Descriptive tables | Data summarization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  | [17](https://epirhandbook.com/en/new_pages/tables_descriptive.html) |
+|  | `{r} hw4 %>% format("%m/%d")` |  | [Lab 2 due]{.lab-row} |  |  |  |  |  |
+| []{.week-row} |  |  |  |  |  |  |  |  |
+| 7 | `{r} w7d1 %>% format("%m/%d")` | 28 | Lengthening data |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [5.3](https://r4ds.hadley.nz/data-tidy.html#sec-pivoting) |  |
+|  |  | 29 | Widening data |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [5.4](https://r4ds.hadley.nz/data-tidy.html#widening-data) |  |
+|  | `{r} lab3 %>% format("%m/%d")` |  | [Lab 3 due]{.lab-row} |  |  |  |  |  |
+| []{.week-row} |  |  |  |  |  |  |  |  |
+| 8 | `{r} w8d1 %>% format("%m/%d")` | 30 | Data visualization: Intro to ggplot | Data visualization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.qmd)]{style="color:#f8f5f0;"} | [1.1-1.3](https://r4ds.hadley.nz/data-visualize.html#introduction) | [30.2-30.5](https://epirhandbook.com/en/new_pages/ggplot_basics.html#basics-of-ggplot) |
+|  |  | 31 | Data visualization: Basic plotting | Data visualization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.qmd)]{style="color:#f8f5f0;"} | [9.2-9.3](https://r4ds.hadley.nz/layers.html#aesthetic-mappings) | [30.4-30.5](https://epirhandbook.com/en/new_pages/ggplot_basics.html#geoms) |
+|  |  | 32 | Data visualization: Design choices | Data visualization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [1.5](https://r4ds.hadley.nz/data-visualize.html#visualizing-relationships) |  |
+|  | `{r} lab3 %>% format("%m/%d")` |  | [HW 4 due]{.hw-row} |  |  |  |  |  |
+| []{.week-row} |  |  |  |  |  |  |  |  |
+| 9 | `{r} w9d1 %>% format("%m/%d")` | 33 | Missing data: summarization and visualization |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+|  |  | 34 | Missing data: transformations |  | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+|  | `{r} lab4 %>% format("%m/%d")` |  | [Lab 4 due]{.lab-row} |  |  |  |  |  |
+| []{.week-row} |  |  |  |  |  |  |  |  |
+| 10 | `{r} w10d1 %>% format("%m/%d")` |  | Project help |  |  |  |  |  |
+| []{.week-row} |  |  |  |  |  |  |  |  |
+| 11 | `{r} w11d1 %>% format("%m/%d")` |  | [Final Project due]{.proj-row} |  |  |  |  |  |
 :::
+::::
+:::::
+::::::
+:::::::
 
 ![](images/course_org.png){fig-align="right" width="60%"}
 
