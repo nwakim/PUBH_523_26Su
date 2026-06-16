@@ -30,6 +30,22 @@ library(tidyverse)
 library(lubridate)
 library(janitor)
 library(here)
+library(readxl)
+library(gt)
+library(rstatix)
+
+theme_set(theme_grey(base_size = 24)) 
+```
+
+```{r}
+#| echo: false
+# library(readxl)
+# note we are saving the data from the Excel file in our environment 
+# with the object name hrs_data
+hrs_data2 <- read_excel(here("./data/hrs_data_narch.xlsx"))
+hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
+hrs_data <- clean_names(hrs_data) %>%
+  relocate(race_original, female, .after = degree)#
 ```
 
 ## Introduction to `ggplot2`
@@ -87,10 +103,6 @@ library(here)
 
 3.  Each value must have its own cell.
 
-## Basics of a ggplot
-
-![](../img_slides/ggplot_basics_from_ppt.png){fig-align="center"}
-
 ## Grammar of ggplot2
 
 ::::: columns
@@ -111,7 +123,7 @@ library(here)
 
 ## **Data**
 
--   ggplot2 uses data to construct a plot
+-   `ggplot2` uses **data** to construct a plot
 
 -   Works best with tidy data (when every observation is a row and each variable is a column)
 
@@ -121,18 +133,20 @@ library(here)
 
 ## Data
 
--   For example, if we intend to make a graphic about the `mpg` dataset, we would start as follows:
+-   For example, if we intend to make a graphic about the `hrs_data` dataset, we would start as follows:
 
 ```{r}
-#| fig-width: 6
-#| fig-height: 4
+#| fig-width: 10
+#| fig-height: 7
 #| fig-align: center
 #| output-location: column
 
 ggplot(
-  data = mpg
+  data = hrs_data #<1>
   )
 ```
+
+1. We input the data that contains our variables of interest.
 
 ## **Mapping**
 
@@ -142,23 +156,25 @@ ggplot(
 
 ## Data + Mapping
 
--   If we want the `cty` and `hwy` columns to map to the x- and y-coordinates in the plot, we can do that as follows:
+-   If we want the `age` and `income` columns to map to the x- and y-coordinates in the plot, we can do that as follows:
 
 ```{r}
-#| fig-width: 8
-#| fig-height: 6
+#| fig-width: 10
+#| fig-height: 7
 #| fig-align: center
 #| output-location: column
-
+#| code-line-numbers: "3-6"
 
 ggplot(
-  mpg, 
-  mapping = aes(
-    x = cty, 
-    y = hwy
-    )
+  hrs_data, 
+  mapping = aes( #<1>
+    x = age,  
+    y = income
+    ) #<1>
   )
 ```
+
+1. We use the `aes()` function to specify the mapping of variables to axes. In this case, we are mapping `age` to the x-axis and `income` to the y-axis.
 
 ## **Layers**
 
@@ -176,21 +192,21 @@ ggplot(
 
 ## Data + Mapping + Layers
 
-Here is how we can use two layers to display the `cty` and `hwy` columns of the `mpg` dataset as points and stack a trend line on top:
+Here is how we can use two layers to display the `age` and `income` columns of the `hrs_data` dataset as points and stack a trend line on top:
 
 ```{r}
-#| fig-width: 6
-#| fig-height: 4
+#| fig-width: 10
+#| fig-height: 7
 #| fig-align: center
 #| output-location: column
 
 ggplot(
-  mpg, 
+  hrs_data, 
   mapping = aes(
-    x = cty, 
-    y = hwy
+    x = age, 
+    y = income
     )
-  ) +
+  ) + 
   geom_point() +  # <1>
   geom_smooth(  # <2> 
     formula = y ~ x, 
@@ -201,30 +217,104 @@ ggplot(
 1. To create a scatterplot
 2. To fit and overlay a line
 
+## Notice: the following create the same plot
+
+::: columns
+::: column
+[Naming the input arguments in the `ggplot()` function]{style="color: #5BAFF8;"}
+```{r}
+#| eval: false
+
+ggplot(
+  data = hrs_data, #<1>
+  mapping = aes( #<2>
+    x = age, 
+    y = income
+    )
+  ) + 
+  geom_point()
+```
+1. We name the input argument for the dataset as `data`
+2. We name the input argument for the mapping as `mapping`
+:::
+::: column
+[More concise, no naming input arguments]{style="color: #BF396F;"}
+```{r}
+#| eval: false
+
+ggplot(
+  hrs_data, #<1>
+  aes( #<2>
+    x = age, 
+    y = income
+    )
+  ) + 
+  geom_point()
+```
+1. Removed input argument name
+2. Removed input argument name
+:::
+::: column
+[We can pipe the dataset into `ggplot()`]{style="color: #459B99;"}
+```{r}
+#| eval: false
+
+hrs_data |> #<1>
+  ggplot(
+    aes(
+      x = age, 
+      y = income
+      )
+    ) + 
+  geom_point()
+```
+1. We use the pipe operator to pass the dataset into `ggplot()`
+:::
+::: column
+[We can also move `aes()` out of `ggplot()`]{style="color: #3070BF;"}
+```{r}
+#| eval: false
+
+ggplot(hrs_data) + 
+  aes( #<1>
+    x = age, 
+    y = income
+  ) + #<1>
+  geom_point()
+```
+1. We move the `aes()` function out of the `ggplot()` function
+:::
+:::
+
 ## We can also make plots with a single variable
 
--   Data: still `mpg`
+-   Data: still `hrs_data`
 
--   Mapping: using aesthetic to specify only one variable in the x-axis (`cty`)
+-   Mapping: using aesthetic to specify only one variable in the x-axis (`age`)
 
--   Layers: using `geom_histogram()` to show a plot of the counts per `cty` (which is city mileage)
+-   Layers: using `geom_histogram()` to show a plot of the counts per `age` 
 
 ```{r}
-#| fig-width: 6
-#| fig-height: 4
+#| fig-width: 10
+#| fig-height: 7
 #| fig-align: center
 #| output-location: column
 
-ggplot(mpg, aes(cty)) +
-  # to create a histogram
-  geom_histogram()
+ggplot(
+  hrs_data, 
+  aes(age) #<1>
+  ) +
+  geom_histogram() #<2>
 ```
 
-## Let's take a second to try this out
+1. We specify only one variable in the `aes()` function, which will be mapped to the x-axis by default
+2. We use `geom_histogram()` to create a histogram of the counts per `age
+
+## Let's take a second to try this out {visibility="hidden"}
 
 -   Make sure you are working in a Quarto document that has all the libraries loaded
 
--   Use `glimpse()` to look at the variables in `mpg`
+-   Use `glimpse()` to look at the variables in `hrs_data`
 
 -   Choose one of the variables to make a plot for
 
@@ -246,36 +336,91 @@ countdown::countdown(5)
 We can change labels!
 
 ```{r}
-#| fig-width: 6
-#| fig-height: 4
+#| fig-width: 10
+#| fig-height: 7
 #| fig-align: center
-#| code-line-numbers: "3-4"
+#| code-line-numbers: "6-10"
+#| output-location: column
 
-ggplot(mpg, aes(cty)) +
+ggplot(
+  hrs_data, 
+  aes(age)
+  ) +
   geom_histogram() +
-  labs(x = "City mileage (mpg)", y = "Frequency", 
-       title = "Histogram of city mileage")
+  labs( #<1>
+    x = "Age (years)",#<2>
+    y = "Frequency", #<3>
+    title = "Distribution of Age" #<4>
+    ) #<1>
 ```
+
+1. We use the `labs()` function to change the labels of the axes and title of the plot
+2. We change the x-axis label to "Age (years)"
+3. We change the y-axis label to "Frequency"
+4. We change the title of the plot to "Distribution of Age"
 
 ## Adding more to plots!
 
 Increase (or decrease) text size so we can read it / it fits nicely!
 
 ```{r}
-#| fig-width: 6
-#| fig-height: 4
+#| fig-width: 10
+#| fig-height: 7
 #| fig-align: center
-#| code-line-numbers: "5-7"
-ggplot(mpg, aes(cty)) +
+#| code-line-numbers: "11-15"
+#| output-location: column
+
+ggplot(
+  hrs_data, 
+  aes(age)
+  ) +
   geom_histogram() +
-  labs(x = "City mileage (mpg)", y = "Frequency", 
-       title = "Histogram of city mileage") +
-  theme(axis.text = element_text(size = 15), 
-        axis.title = element_text(size = 15), 
-        title = element_text(size = 15))
+  labs( 
+    x = "Age (years)",
+    y = "Frequency",
+    title = "Distribution of Age"
+    ) +
+  theme( #<1>
+    axis.text = element_text(size = 28), #<2>
+    axis.title = element_text(size = 28), #<3>
+    title = element_text(size = 28) #<4>
+    ) #<1>
 ```
 
-## Take a moment
+## Notice: common components of `ggplot2`
+
+::: columns
+::: column
+- Common components of `ggplot2` include: 
+  - `ggplot()`: the main function to create a plot
+  - `aes()`: the function to specify the mapping of variables to axes
+  - `geom_*()` or `stat_*()`: functions to add layers to the plot
+  - `labs()`: the function to change labels of axes and title
+  - `theme()`: the function to adjust non-data plot elements such as text size,
+:::
+::: column
+
+ 
+
+```{r}
+#| eval: false
+
+ggplot(
+  data = my_data, 
+  mapping = aes(x = col1, y = col2)
+  ) +  #<1>       
+  
+  geom_point() +          
+  
+  labs() +       
+  
+  theme()                                  
+```
+:::
+:::
+
+
+## Take a moment {visibility="hidden"}
 
 -   To add labels to your plot and change the text size if you want
 -   If you have time, look up help on the `element_text()` function
@@ -285,6 +430,19 @@ ggplot(mpg, aes(cty)) +
 #| echo: false
 countdown::countdown(5)
 ```
+
+## Wrap-up
+
+- `ggplot2` is great data visualization tool in R
+
+ 
+
+- Grammar of Graphics: data, mapping, layers, scales, facets, coordinates, themes
+  - We can add a lot of different components to our plots to make them more informative and visually appealing
+  
+ 
+  
+- We discussed *some* of the options in `ggplot2` but there are many more to explore!
 
 ## Resources on `ggplot`
 

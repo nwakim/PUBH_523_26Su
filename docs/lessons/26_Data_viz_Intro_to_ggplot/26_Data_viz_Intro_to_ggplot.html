@@ -98,7 +98,7 @@
     code span.vs { color: #86b300; } /* VerbatimString */
     code span.wa { color: #f07171; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-a48041e0ee28fe79034feed90a9eeb2d.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-29229577c278b008ccf51c6e44f93f60.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -276,10 +276,6 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <li><p>Each value must have its own cell.</p></li>
 </ol>
 <aside><ol class="aside-footnotes"><li id="fn1"><p>Source: R for Data Science. Grolemund and Wickham.</p></li></ol></aside></section>
-<section id="basics-of-a-ggplot" class="slide level2">
-<h2>Basics of a ggplot</h2>
-
-<img data-src="../img_slides/ggplot_basics_from_ppt.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="grammar-of-ggplot2" class="slide level2">
 <h2>Grammar of ggplot2</h2>
 <div class="columns">
@@ -308,7 +304,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <section id="data" class="slide level2">
 <h2><strong>Data</strong></h2>
 <ul>
-<li><p>ggplot2 uses data to construct a plot</p></li>
+<li><p><code>ggplot2</code> uses <strong>data</strong> to construct a plot</p></li>
 <li><p>Works best with tidy data (when every observation is a row and each variable is a column)</p></li>
 <li><p>First step in plotting:</p>
 <ul>
@@ -319,18 +315,26 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <section id="data-1" class="slide level2">
 <h2>Data</h2>
 <ul>
-<li>For example, if we intend to make a graphic about the <code>mpg</code> dataset, we would start as follows:</li>
+<li>For example, if we intend to make a graphic about the <code>hrs_data</code> dataset, we would start as follows:</li>
 </ul>
 <div class="cell columns column-output-location" data-layout-align="center">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">ggplot</span>(</span>
-<span id="cb1-2"><a></a>  <span class="at">data =</span> mpg</span>
-<span id="cb1-3"><a></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1"></a><span class="fu">ggplot</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1">1</button><span id="annotated-cell-1-2" class="code-annotation-target"><a href="#annotated-cell-1-2"></a>  <span class="at">data =</span> hrs_data</span>
+<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3"></a>  )</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="2" data-code-annotation="1">We input the data that contains our variables of interest.</span>
+</dd>
+</dl>
+</div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center" width="576"></p>
+<p><img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
 </figure>
 </div>
 </div>
@@ -348,22 +352,30 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <section id="data-mapping" class="slide level2">
 <h2>Data + Mapping</h2>
 <ul>
-<li>If we want the <code>cty</code> and <code>hwy</code> columns to map to the x- and y-coordinates in the plot, we can do that as follows:</li>
+<li>If we want the <code>age</code> and <code>income</code> columns to map to the x- and y-coordinates in the plot, we can do that as follows:</li>
 </ul>
 <div class="cell columns column-output-location" data-layout-align="center">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">ggplot</span>(</span>
-<span id="cb2-2"><a></a>  mpg, </span>
-<span id="cb2-3"><a></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(</span>
-<span id="cb2-4"><a></a>    <span class="at">x =</span> cty, </span>
-<span id="cb2-5"><a></a>    <span class="at">y =</span> hwy</span>
-<span id="cb2-6"><a></a>    )</span>
-<span id="cb2-7"><a></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-2" data-code-line-numbers="3-6"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2"></a>  hrs_data, </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-3" class="code-annotation-target"><a href="#annotated-cell-2-3"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(</span>
+<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4"></a>    <span class="at">x =</span> age,  </span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5"></a>    <span class="at">y =</span> income</span>
+<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6"></a>    )</span>
+<span id="annotated-cell-2-7"><a href="#annotated-cell-2-7"></a>  )</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="3,6" data-code-annotation="1">We use the <code>aes()</code> function to specify the mapping of variables to axes. In this case, we are mapping <code>age</code> to the x-axis and <code>income</code> to the y-axis.</span>
+</dd>
+</dl>
+</div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" width="768"></p>
+<p><img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
 </figure>
 </div>
 </div>
@@ -386,16 +398,16 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 </section>
 <section id="data-mapping-layers" class="slide level2">
 <h2>Data + Mapping + Layers</h2>
-<p>Here is how we can use two layers to display the <code>cty</code> and <code>hwy</code> columns of the <code>mpg</code> dataset as points and stack a trend line on top:</p>
+<p>Here is how we can use two layers to display the <code>age</code> and <code>income</code> columns of the <code>hrs_data</code> dataset as points and stack a trend line on top:</p>
 <div class="cell columns column-output-location" data-layout-align="center">
 <div class="column">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-3"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-3-1"><a href="#annotated-cell-3-1"></a><span class="fu">ggplot</span>(</span>
-<span id="annotated-cell-3-2"><a href="#annotated-cell-3-2"></a>  mpg, </span>
+<span id="annotated-cell-3-2"><a href="#annotated-cell-3-2"></a>  hrs_data, </span>
 <span id="annotated-cell-3-3"><a href="#annotated-cell-3-3"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(</span>
-<span id="annotated-cell-3-4"><a href="#annotated-cell-3-4"></a>    <span class="at">x =</span> cty, </span>
-<span id="annotated-cell-3-5"><a href="#annotated-cell-3-5"></a>    <span class="at">y =</span> hwy</span>
+<span id="annotated-cell-3-4"><a href="#annotated-cell-3-4"></a>    <span class="at">x =</span> age, </span>
+<span id="annotated-cell-3-5"><a href="#annotated-cell-3-5"></a>    <span class="at">y =</span> income</span>
 <span id="annotated-cell-3-6"><a href="#annotated-cell-3-6"></a>    )</span>
-<span id="annotated-cell-3-7"><a href="#annotated-cell-3-7"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-3-7"><a href="#annotated-cell-3-7"></a>  ) <span class="sc">+</span> </span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-8" class="code-annotation-target"><a href="#annotated-cell-3-8"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="2">2</button><span id="annotated-cell-3-9" class="code-annotation-target"><a href="#annotated-cell-3-9"></a>  <span class="fu">geom_smooth</span>(</span>
 <span id="annotated-cell-3-10"><a href="#annotated-cell-3-10"></a>    <span class="at">formula =</span> y <span class="sc">~</span> x, </span>
@@ -417,8 +429,99 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center" width="576"></p>
+<p><img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
 </figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="notice-the-following-create-the-same-plot" class="slide level2">
+<h2>Notice: the following create the same plot</h2>
+<div class="columns">
+<div class="column">
+<p><span style="color: #5BAFF8;">Naming the input arguments in the <code>ggplot()</code> function</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-7"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1"></a><span class="fu">ggplot</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1">1</button><span id="annotated-cell-7-2" class="code-annotation-target"><a href="#annotated-cell-7-2"></a>  <span class="at">data =</span> hrs_data,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="2">2</button><span id="annotated-cell-7-3" class="code-annotation-target"><a href="#annotated-cell-7-3"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(</span>
+<span id="annotated-cell-7-4"><a href="#annotated-cell-7-4"></a>    <span class="at">x =</span> age, </span>
+<span id="annotated-cell-7-5"><a href="#annotated-cell-7-5"></a>    <span class="at">y =</span> income</span>
+<span id="annotated-cell-7-6"><a href="#annotated-cell-7-6"></a>    )</span>
+<span id="annotated-cell-7-7"><a href="#annotated-cell-7-7"></a>  ) <span class="sc">+</span> </span>
+<span id="annotated-cell-7-8"><a href="#annotated-cell-7-8"></a>  <span class="fu">geom_point</span>()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-7" data-code-lines="2" data-code-annotation="1">We name the input argument for the dataset as <code>data</code></span>
+</dd>
+<dt data-target-cell="annotated-cell-7" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-7" data-code-lines="3" data-code-annotation="2">We name the input argument for the mapping as <code>mapping</code></span>
+</dd>
+</dl>
+</div>
+</div>
+</div><div class="column">
+<p><span style="color: #BF396F;">More concise, no naming input arguments</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-8"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-8-1"><a href="#annotated-cell-8-1"></a><span class="fu">ggplot</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-8" data-target-annotation="1">1</button><span id="annotated-cell-8-2" class="code-annotation-target"><a href="#annotated-cell-8-2"></a>  hrs_data,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-8" data-target-annotation="2">2</button><span id="annotated-cell-8-3" class="code-annotation-target"><a href="#annotated-cell-8-3"></a>  <span class="fu">aes</span>(</span>
+<span id="annotated-cell-8-4"><a href="#annotated-cell-8-4"></a>    <span class="at">x =</span> age, </span>
+<span id="annotated-cell-8-5"><a href="#annotated-cell-8-5"></a>    <span class="at">y =</span> income</span>
+<span id="annotated-cell-8-6"><a href="#annotated-cell-8-6"></a>    )</span>
+<span id="annotated-cell-8-7"><a href="#annotated-cell-8-7"></a>  ) <span class="sc">+</span> </span>
+<span id="annotated-cell-8-8"><a href="#annotated-cell-8-8"></a>  <span class="fu">geom_point</span>()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-8" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-8" data-code-lines="2" data-code-annotation="1">Removed input argument name</span>
+</dd>
+<dt data-target-cell="annotated-cell-8" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-8" data-code-lines="3" data-code-annotation="2">Removed input argument name</span>
+</dd>
+</dl>
+</div>
+</div>
+</div><div class="column">
+<p><span style="color: #459B99;">We can pipe the dataset into <code>ggplot()</code></span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-9"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="1">1</button><span id="annotated-cell-9-1" class="code-annotation-target"><a href="#annotated-cell-9-1"></a>hrs_data <span class="sc">|&gt;</span></span>
+<span id="annotated-cell-9-2"><a href="#annotated-cell-9-2"></a>  <span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-9-3"><a href="#annotated-cell-9-3"></a>    <span class="fu">aes</span>(</span>
+<span id="annotated-cell-9-4"><a href="#annotated-cell-9-4"></a>      <span class="at">x =</span> age, </span>
+<span id="annotated-cell-9-5"><a href="#annotated-cell-9-5"></a>      <span class="at">y =</span> income</span>
+<span id="annotated-cell-9-6"><a href="#annotated-cell-9-6"></a>      )</span>
+<span id="annotated-cell-9-7"><a href="#annotated-cell-9-7"></a>    ) <span class="sc">+</span> </span>
+<span id="annotated-cell-9-8"><a href="#annotated-cell-9-8"></a>  <span class="fu">geom_point</span>()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-9" data-code-lines="1" data-code-annotation="1">We use the pipe operator to pass the dataset into <code>ggplot()</code></span>
+</dd>
+</dl>
+</div>
+</div>
+</div><div class="column">
+<p><span style="color: #3070BF;">We can also move <code>aes()</code> out of <code>ggplot()</code></span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-10"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-10-1"><a href="#annotated-cell-10-1"></a><span class="fu">ggplot</span>(hrs_data) <span class="sc">+</span> </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-10" data-target-annotation="1">1</button><span id="annotated-cell-10-2" class="code-annotation-target"><a href="#annotated-cell-10-2"></a>  <span class="fu">aes</span>(</span>
+<span id="annotated-cell-10-3"><a href="#annotated-cell-10-3"></a>    <span class="at">x =</span> age, </span>
+<span id="annotated-cell-10-4"><a href="#annotated-cell-10-4"></a>    <span class="at">y =</span> income</span>
+<span id="annotated-cell-10-5"><a href="#annotated-cell-10-5"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-10-6"><a href="#annotated-cell-10-6"></a>  <span class="fu">geom_point</span>()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-10" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-10" data-code-lines="2,5" data-code-annotation="1">We move the <code>aes()</code> function out of the <code>ggplot()</code> function</span>
+</dd>
+</dl>
 </div>
 </div>
 </div></div>
@@ -426,85 +529,162 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <section id="we-can-also-make-plots-with-a-single-variable" class="slide level2">
 <h2>We can also make plots with a single variable</h2>
 <ul>
-<li><p>Data: still <code>mpg</code></p></li>
-<li><p>Mapping: using aesthetic to specify only one variable in the x-axis (<code>cty</code>)</p></li>
-<li><p>Layers: using <code>geom_histogram()</code> to show a plot of the counts per <code>cty</code> (which is city mileage)</p></li>
+<li><p>Data: still <code>hrs_data</code></p></li>
+<li><p>Mapping: using aesthetic to specify only one variable in the x-axis (<code>age</code>)</p></li>
+<li><p>Layers: using <code>geom_histogram()</code> to show a plot of the counts per <code>age</code></p></li>
 </ul>
 <div class="cell columns column-output-location" data-layout-align="center">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(cty)) <span class="sc">+</span></span>
-<span id="cb3-2"><a></a>  <span class="co"># to create a histogram</span></span>
-<span id="cb3-3"><a></a>  <span class="fu">geom_histogram</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2"></a>  hrs_data, </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-3" class="code-annotation-target"><a href="#annotated-cell-4-3"></a>  <span class="fu">aes</span>(age)</span>
+<span id="annotated-cell-4-4"><a href="#annotated-cell-4-4"></a>  ) <span class="sc">+</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="2">2</button><span id="annotated-cell-4-5" class="code-annotation-target"><a href="#annotated-cell-4-5"></a>  <span class="fu">geom_histogram</span>()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="3" data-code-annotation="1">We specify only one variable in the <code>aes()</code> function, which will be mapped to the x-axis by default</span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="5" data-code-annotation="2">We use <code>geom_histogram()</code> to create a histogram of the counts per `age</span>
+</dd>
+</dl>
+</div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center" width="576"></p>
+<p><img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
 </figure>
 </div>
 </div>
 </div></div>
 </section>
-<section id="lets-take-a-second-to-try-this-out" class="slide level2">
-<h2>Let’s take a second to try this out</h2>
-<ul>
-<li><p>Make sure you are working in a Quarto document that has all the libraries loaded</p></li>
-<li><p>Use <code>glimpse()</code> to look at the variables in <code>mpg</code></p></li>
-<li><p>Choose one of the variables to make a plot for</p></li>
-</ul>
-<!-- -->
-<ul>
-<li><p>Go to this site: <a href="https://bookdown.dongzhuoer.com/hadley/ggplot2-book/geom" class="uri">https://bookdown.dongzhuoer.com/hadley/ggplot2-book/geom</a></p>
-<ul>
-<li>Choose one of the “One variable” geoms that would work well for the variable you chose (discrete or continuous options)</li>
-</ul></li>
-<li><p>Make a plot for the variable!</p></li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_37aec67f" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
-</div>
-</div>
-</section>
+
 <section id="we-can-add-more-to-plots" class="slide level2">
 <h2>We can add more to plots!</h2>
 <p>We can change labels!</p>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(cty)) <span class="sc">+</span></span>
-<span id="cb4-2"><a></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
-<span id="cb4-3"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"City mileage (mpg)"</span>, <span class="at">y =</span> <span class="st">"Frequency"</span>, </span>
-<span id="cb4-4"><a></a>       <span class="at">title =</span> <span class="st">"Histogram of city mileage"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-
+<div class="cell columns column-output-location" data-layout-align="center">
+<div class="column">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-5" data-code-line-numbers="6-10"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-5-2"><a href="#annotated-cell-5-2"></a>  hrs_data, </span>
+<span id="annotated-cell-5-3"><a href="#annotated-cell-5-3"></a>  <span class="fu">aes</span>(age)</span>
+<span id="annotated-cell-5-4"><a href="#annotated-cell-5-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-5-5"><a href="#annotated-cell-5-5"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1">1</button><span id="annotated-cell-5-6" class="code-annotation-target"><a href="#annotated-cell-5-6"></a>  <span class="fu">labs</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2">2</button><span id="annotated-cell-5-7" class="code-annotation-target"><a href="#annotated-cell-5-7"></a>    <span class="at">x =</span> <span class="st">"Age (years)"</span>,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="3">3</button><span id="annotated-cell-5-8" class="code-annotation-target"><a href="#annotated-cell-5-8"></a>    <span class="at">y =</span> <span class="st">"Frequency"</span>,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="4">4</button><span id="annotated-cell-5-9" class="code-annotation-target"><a href="#annotated-cell-5-9"></a>    <span class="at">title =</span> <span class="st">"Distribution of Age"</span></span>
+<span id="annotated-cell-5-10"><a href="#annotated-cell-5-10"></a>    )</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column">
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="6,10" data-code-annotation="1">We use the <code>labs()</code> function to change the labels of the axes and title of the plot</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="7" data-code-annotation="2">We change the x-axis label to “Age (years)”</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="8" data-code-annotation="3">We change the y-axis label to “Frequency”</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="9" data-code-annotation="4">We change the title of the plot to “Distribution of Age”</span>
+</dd>
+</dl>
 </div>
-<img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
 <section id="adding-more-to-plots" class="slide level2">
 <h2>Adding more to plots!</h2>
 <p>Increase (or decrease) text size so we can read it / it fits nicely!</p>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" data-code-line-numbers="5-7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(cty)) <span class="sc">+</span></span>
-<span id="cb5-2"><a></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
-<span id="cb5-3"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"City mileage (mpg)"</span>, <span class="at">y =</span> <span class="st">"Frequency"</span>, </span>
-<span id="cb5-4"><a></a>       <span class="at">title =</span> <span class="st">"Histogram of city mileage"</span>) <span class="sc">+</span></span>
-<span id="cb5-5"><a></a>  <span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">15</span>), </span>
-<span id="cb5-6"><a></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">15</span>), </span>
-<span id="cb5-7"><a></a>        <span class="at">title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">15</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-
+<div class="cell columns column-output-location" data-layout-align="center">
+<div class="column">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-6" data-code-line-numbers="11-15"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy"><code class="sourceCode r"><span id="annotated-cell-6-1"><a href="#annotated-cell-6-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-6-2"><a href="#annotated-cell-6-2"></a>  hrs_data, </span>
+<span id="annotated-cell-6-3"><a href="#annotated-cell-6-3"></a>  <span class="fu">aes</span>(age)</span>
+<span id="annotated-cell-6-4"><a href="#annotated-cell-6-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-6-5"><a href="#annotated-cell-6-5"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="annotated-cell-6-6"><a href="#annotated-cell-6-6"></a>  <span class="fu">labs</span>( </span>
+<span id="annotated-cell-6-7"><a href="#annotated-cell-6-7"></a>    <span class="at">x =</span> <span class="st">"Age (years)"</span>,</span>
+<span id="annotated-cell-6-8"><a href="#annotated-cell-6-8"></a>    <span class="at">y =</span> <span class="st">"Frequency"</span>,</span>
+<span id="annotated-cell-6-9"><a href="#annotated-cell-6-9"></a>    <span class="at">title =</span> <span class="st">"Distribution of Age"</span></span>
+<span id="annotated-cell-6-10"><a href="#annotated-cell-6-10"></a>    ) <span class="sc">+</span></span>
+<span id="annotated-cell-6-11"><a href="#annotated-cell-6-11"></a>  <span class="fu">theme</span>(</span>
+<span id="annotated-cell-6-12"><a href="#annotated-cell-6-12"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">28</span>),</span>
+<span id="annotated-cell-6-13"><a href="#annotated-cell-6-13"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">28</span>),</span>
+<span id="annotated-cell-6-14"><a href="#annotated-cell-6-14"></a>    <span class="at">title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">28</span>)</span>
+<span id="annotated-cell-6-15"><a href="#annotated-cell-6-15"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
+</figure>
 </div>
-<img data-src="26_Data_viz_Intro_to_ggplot_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
-<section id="take-a-moment" class="slide level2">
-<h2>Take a moment</h2>
+</div>
+</div></div>
+</section>
+<section id="notice-common-components-of-ggplot2" class="slide level2">
+<h2>Notice: common components of <code>ggplot2</code></h2>
+<div class="columns">
+<div class="column">
 <ul>
-<li>To add labels to your plot and change the text size if you want</li>
-<li>If you have time, look up help on the <code>element_text()</code> function
+<li>Common components of <code>ggplot2</code> include:
 <ul>
-<li>See if you can tilt your text or change the color</li>
+<li><code>ggplot()</code>: the main function to create a plot</li>
+<li><code>aes()</code>: the function to specify the mapping of variables to axes</li>
+<li><code>geom_*()</code> or <code>stat_*()</code>: functions to add layers to the plot</li>
+<li><code>labs()</code>: the function to change labels of axes and title</li>
+<li><code>theme()</code>: the function to adjust non-data plot elements such as text size,</li>
 </ul></li>
 </ul>
+</div><div class="column">
+<p>&nbsp;</p>
 <div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_8a5feba0" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-11"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy"><code class="sourceCode r"><span id="annotated-cell-11-1"><a href="#annotated-cell-11-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-11-2"><a href="#annotated-cell-11-2"></a>  <span class="at">data =</span> my_data, </span>
+<span id="annotated-cell-11-3"><a href="#annotated-cell-11-3"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> col1, <span class="at">y =</span> col2)</span>
+<span id="annotated-cell-11-4"><a href="#annotated-cell-11-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-11-5"><a href="#annotated-cell-11-5"></a>  </span>
+<span id="annotated-cell-11-6"><a href="#annotated-cell-11-6"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span>          </span>
+<span id="annotated-cell-11-7"><a href="#annotated-cell-11-7"></a>  </span>
+<span id="annotated-cell-11-8"><a href="#annotated-cell-11-8"></a>  <span class="fu">labs</span>() <span class="sc">+</span>       </span>
+<span id="annotated-cell-11-9"><a href="#annotated-cell-11-9"></a>  </span>
+<span id="annotated-cell-11-10"><a href="#annotated-cell-11-10"></a>  <span class="fu">theme</span>()                                  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</div>
+</div></div>
+</section>
+
+<section id="wrap-up" class="slide level2">
+<h2>Wrap-up</h2>
+<ul>
+<li><code>ggplot2</code> is great data visualization tool in R</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Grammar of Graphics: data, mapping, layers, scales, facets, coordinates, themes
+<ul>
+<li>We can add a lot of different components to our plots to make them more informative and visually appealing</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>We discussed <em>some</em> of the options in <code>ggplot2</code> but there are many more to explore!</li>
+</ul>
 </section>
 <section id="resources-on-ggplot" class="slide level2">
 <h2>Resources on <code>ggplot</code></h2>

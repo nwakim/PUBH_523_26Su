@@ -1,0 +1,172 @@
+---
+title: "Data visualization: Basic plotting"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: "Data visualization: Basic plotting"
+    html-math-method: mathjax
+    highlight-style: ayu
+code-annotations: hover
+execute:
+  echo: true
+  freeze: auto
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+library(readxl)
+library(gt)
+library(rstatix)
+
+theme_set(theme_grey(base_size = 24)) 
+```
+
+```{r}
+#| echo: false
+# library(readxl)
+# note we are saving the data from the Excel file in our environment 
+# with the object name hrs_data
+hrs_data2 <- read_excel(here("./data/hrs_data_narch.xlsx"))
+hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
+hrs_data <- clean_names(hrs_data) %>%
+  relocate(race_original, female, .after = degree)#
+```
+
+## Recall: common components of `ggplot2`
+
+::: columns
+::: column
+- Common components of `ggplot2` include: 
+  - `ggplot()`: the main function to create a plot
+  - `aes()`: the function to specify the mapping of variables to axes
+  - `geom_*()` or `stat_*()`: functions to add layers to the plot
+  - `labs()`: the function to change labels of axes and title
+  - `theme()`: the function to adjust non-data plot elements such as text size,
+:::
+::: column
+
+ 
+
+```{r}
+#| eval: false
+
+ggplot(
+  data = my_data, 
+  mapping = aes(x = col1, y = col2)
+  ) +  #<1>       
+  
+  geom_point() +          
+  
+  labs() +       
+  
+  theme()                                  
+```
+:::
+:::
+
+::: blue
+::: blue-cont
+In this lesson, we will focus on **using different geometric objects** and **building the mapping**.
+:::
+:::
+
+# Geometric objects
+
+## Geometric objects
+
+- Geometric objects (geoms) are used to represent the datapoints
+  - The same variable's data can be represented in different ways
+
+For example: we can plot Age vs. Income using a scatterplot or a smoothed line
+
+::: columns
+::: column
+```{r}
+#| fig-width: 10
+#| fig-height: 7
+#| fig-align: center
+#| echo: false
+
+ggplot(
+  hrs_data, 
+  mapping = aes(
+    x = age, 
+    y = income
+    )
+  ) + 
+  geom_point()
+```
+:::
+::: column
+```{r}
+#| fig-width: 10
+#| fig-height: 7
+#| fig-align: center
+#| echo: false
+
+ggplot(
+  hrs_data, 
+  mapping = aes(
+    x = age, 
+    y = income
+    )
+  ) + 
+  geom_smooth()
+```
+:::
+:::
+
+## Types of geoms
+
+- Common geoms include:
+  - `geom_histogram()`
+  - `geom_bar()`
+  - `geom_boxplot()`
+  - `geom_point()`
+  - `geom_line()`
+  - `geom_smooth()`
+
+## Let's check out the `ggplot2` cheatsheet together
+
+## EXAMPLES
+
+# Mapping
+
+## Aesthetic mapping 
+
+- If we want to change the visual properties of the plotted data, we use **aesthetic mapping**
+  - This is not about the design choices of the figure, but the aesthetics of the **data**
+
+- Here are a list of common aesthetic options (from the [Epi Handbook](https://epirhandbook.com/en/new_pages/ggplot_basics.html#plot-aesthetics)):
+  - `shape` = Display a point with geom_point() as a dot, star, triangle, or square…
+  - `fill` = The interior color (e.g. of a bar or boxplot)
+  - `color` = The exterior line of a bar, boxplot, etc., or the point color if using geom_point()
+  - `size` = Size (e.g. line thickness, point size)
+  - `alpha` = Transparency (1 = opaque, 0 = invisible)
+  - `binwidth` = Width of histogram bins (for `geom_histogram()` only)
+  - `width` = Width of bar plot columns (for `geom_bar()` only)
+  - `linetype` = Line type (e.g. solid, dashed, dotted)
+  
+## Resources
+
+- [`ggplot2` Cheatsheet in html form](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
+- [`ggplot2` Cheatsheet in pdf form](https://rstudio.github.io/cheatsheets/data-visualization.pdf)
+
+
+

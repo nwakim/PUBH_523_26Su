@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Suggested Date\nLes-son\nTopic\nLesson video\nDemo video\nTB 1\nTB 2\nSlides HTML\nSlides PDF\nPractice\n\n\n\n\n\n0\nWelcome\n\n\n\n\n\n\n\n\n\n\n0\nOrientation to the course site\n\n\n\n\n\n\n\n\n\n06/22\n1\nIntroduction to the Introduction\n\n\nIntro\n\n\n\n\n\n\n06/24\n2\nDownload + Intro to R & Rstudio\n\n\n\n3.4-3.5\n\n\n\n\n\n\n\nHW 1 DUE?\n\n\n\n\n\n\n\n\n\n\n3\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n\n06/29\n4\nBasics and Operators\n\n\n2.1\n8.2\n\n\n\n\n\n\n\nComments\n\n\n2.2\n\n\n\n\n\n\n07/01\n5\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n\n07/15\n9\nObjects\n\n\n\n3.10\n\n\n\n\n\n\n10\nVariables in R\n\n\n\n\n\n\n\n\n\n07/06\n6\nPackages\n\nSKIP andcome back to with ALL packages\n\n3.7\n\n\n\n\n\n07/08\n7\nQuarto documents\n\n\n\n\n\n\n\n\n\n07/13\n8\nR projects and working directories\n\n\n6.2\n6\n\n\n\n\n\n\n\nHW 2 DUE\n\n\n\n\n\n\n\n\n\n\n\nIntro to our working dataset: HRS\n\n\n\n\n\n\n\n\n\n07/20\n11\nPiping\n\n\n3.4\n8.1\n\n\n\n\n\n07/22\n12\nKey operators and functions\n\n\n\n8.2\n\n\n\n\n\n\n\nNaming: file naming and variable naming?\n\n\n\n\n\n\n\n\n\n07/27\n13\nTidy data\n\n\n5.2\n4.1\n\n\n\n\n\n07/29\n14\nImport and Export\n\n\n7\n7\n\n\n\n\n\n\n\nPROJECT LAB 1 DUE\n\n\n\n\n\n\n\n\n\n08/03\n15\nWorkflow: code style\n\n\n4\n\n\n\n\n\n\n08/05\n16\nWorkflow: getting help\n\n\n8\n\n\n\n\n\n\n08/12\n17\nIntro to data transformations and summarizations\n\n\n3.1\n\n\n\n\n\n\n08/19\n18\nData transformation: rows\n\n\n3.2\n13.7-13.8\n\n\n\n\n\n08/24\n19\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n\n\n\nData transformations: advanced\n\n\n12.2, 16\n\n\n\n\n\n\n08/26\n20\nData transformation: groups\n\n\n3.5\n\n\n\n\n\n\n\n\nHW 3 DUE\n\n\n\n\n\n\n\n\n\n\n\nLAB 2 DUE\n\n\n\n\n\n\n\n\n\n\n21\nData summarization: quantitative data\n\n\n\n\n\n\n\n\n\n\n22\nData summarization: categorical data\n\n\n\n\n\n\n\n\n\n\n23\nDescriptive tables\n\n\n\n17\n\n\n\n\n\n08/31\n24\nLengthening data\n\n\n5.3\n\n\n\n\n\n\n\n25\nWidening data\n\n\n5.4\n\n\n\n\n\n\n\n\nHW 4 DUE\n\n\n\n\n\n\n\n\n\n\n\nLAB 3 DUE\n\n\n\n\n\n\n\n\n\n\n26\nData visualization: intro to ggplot\n\n\n1.1-1.2\n\n\n\n\n\n\n\n27\nData visualization: ggplot2 calls\n\n\n1.3\n\n\n\n\n\n\n\n28\nData visualization: distributions\n\n\n1.4\n\n\n\n\n\n\n\n29\nData visualization: relationships\n\n\n1.5\n\n\n\n\n\n\n\n\nHW 5 DUE\n\n\n\n\n\n\n\n\n\n\n\nLAB 4 DUE\n\n\n\n\n\n\n\n\n\n\n30\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n\n\n31\nMissing data: transformations\n\n\n\n\n\n\n\n\n\n\n\nPROJECT DUE\n\n\n\n\n\n\n\n\n\n\n\nOTHER options:\n\nVariables (factors, etc.)\nshowing missingness\nreporducibility:\n\nand quarto\n\nworking dataset for the course\n\nuse synthpop to make dataset"
+    "text": "Suggested Date\nLes-son\nTopic\n\nLesson video\nSlides HTML\nTB 1\nTB 2\n\n\n\n\n\n0\nWelcome\n\n\n\n\n\n\n\n\n0\nOrientation to the course site\n\n\n\n\n\n\n\n06/22\n1\nIntroduction to the Introduction\n\n\n\nIntro\n\n\n\n06/24\n2\nDownload + Intro to R & Rstudio\n\n\n\n\n3.4-3.5\n\n\n\n\nHW 1 DUE?\n\n\n\n\n\n\n\n\n3\nR scripts\n\n\n\n6.1\n3.8\n\n\n06/29\n4\nBasics and Operators\n\n\n\n2.1\n8.2\n\n\n\n5\nComments\n\n\n\n2.2\n\n\n\n\n6\nIntro to our working dataset: HRS\n\n\n\n\n\n\n\n07/01\n7\nFunctions\n\n\n\n2.4\n3.6\n\n\n07/15\n8\nObjects\n\n\n\n\n3.10\n\n\n\n9\nVariables in R\n\n\n\n\n\n\n\n07/06\n10\nPackages\n\n\n\n\n3.7\n\n\n07/08\n11\nR projects and working directories\n\n\n\n6.2\n6\n\n\n\n15\nNaming: file naming and variable naming?\n\n\n\n\n\n\n\n07/13\n12\nQuarto documents\n\n\n\n\n\n\n\n\n\nHW 2 DUE\n\n\n\n\n\n\n\n07/20\n13\nPiping\n\n\n\n3.4\n8.1\n\n\n07/22\n14\nKey operators and functions\n\n\n\n\n8.2\n\n\n07/27\n16\nTidy data\n\n\n\n5.2\n4.1\n\n\n07/29\n17\nImport and Export\n\n\n\n7\n7\n\n\n\n\nPROJECT LAB 1 DUE\n\n\n\n\n\n\n\n08/03\n18\nWorkflow: code style\n\n\n\n4\n\n\n\n08/05\n19\nWorkflow: getting help\n\n\n\n8\n\n\n\n08/12\n20\nIntro to data transformations and summarizations\n\n\n\n3.1\n\n\n\n08/19\n21\nData transformation: rows\n\n\n\n3.2\n13.7-13.8\n\n\n08/24\n22\nData transformation: columns\n\n\n\n3.3\n\n\n\n\n23\nData transformations: advanced\n\n\n\n12.2, 16\n\n\n\n08/26\n24\nData transformation: groups\n\n\n\n3.5\n\n\n\n\n\nHW 3 DUE\n\n\n\n\n\n\n\n\n\nLAB 2 DUE\n\n\n\n\n\n\n\n\n25\nData summarization: quantitative data\n\n\n\n\n\n\n\n\n26\nData summarization: categorical data\n\n\n\n\n\n\n\n\n27\nDescriptive tables\n\n\n\n\n17\n\n\n08/31\n28\nLengthening data\n\n\n\n5.3\n\n\n\n\n29\nWidening data\n\n\n\n5.4\n\n\n\n\n\nHW 4 DUE\n\n\n\n\n\n\n\n\n\nLAB 3 DUE\n\n\n\n\n\n\n\n\n30\nData visualization: Intro to ggplot\n\n\n\n1.1-1.3\n30.2-30.5\n\n\n\n31\nData visualization: Basic plotting\n\n\n\n9.2-9.3\n30.4-30.5\n\n\n\n32\nData visualization: Design choices\n\n\n\n1.5\n\n\n\n\n\nHW 5 DUE\n\n\n\n\n\n\n\n\n\nLAB 4 DUE\n\n\n\n\n\n\n\n\n33\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n34\nMissing data: transformations\n\n\n\n\n\n\n\n\n\nPROJECT DUE\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOTHER options:\n\nVariables (factors, etc.)\nshowing missingness"
   },
   {
     "objectID": "index.html",
@@ -1943,7 +1943,7 @@
     "href": "lesson_references.html",
     "title": "References",
     "section": "",
-    "text": "Lesson #\nLesson Name\nReferences\n\n\n\n\n\nPackages\n\nDanielle Navarro’s YouTube video on Installing and loading R packages: https://www.youtube.com/watch?v=kpHZVyDvEhQ\n\nIf you want to get more information on packages\n\n\n\n\n\nIntro to data transformations and summarizations\n\n`dplyr` cheat sheet"
+    "text": "Lesson #\nLesson Name\nReferences\n\n\n\n\n\nQuarto documents\n\nTo learn more about working with Quarto, check out our BERD workshop: Creating Professional Presentations and Websites using R/Quarto\n\n\n\n\nPackages\n\nDanielle Navarro’s YouTube video on Installing and loading R packages: https://www.youtube.com/watch?v=kpHZVyDvEhQ\n\nIf you want to get more information on packages\n\n\n\n\n\nIntro to data transformations and summarizations\n\n`dplyr` cheat sheet\n\n\n\n\nData visualization: Intro to ggplot2\n\nggplot2 package website: https://ggplot2.tidyverse.org/articles/ggplot2.html\nOnline textbook for ggplot2: https://ggplot2-book.org/\nAnother online resource for data visualization with ggplot2: https://socviz.co/index.html#preface"
   },
   {
     "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#common-console-errors-12",
@@ -2874,7 +2874,7 @@
     "href": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#data-1",
     "title": "Data visualization: Introduction to ggplot2",
     "section": "Data",
-    "text": "Data\n\nFor example, if we intend to make a graphic about the mpg dataset, we would start as follows:\n\n\n\nggplot(\n  data = mpg\n  )"
+    "text": "Data\n\nFor example, if we intend to make a graphic about the hrs_data dataset, we would start as follows:\n\n\n\nggplot(\n1  data = hrs_data\n  )\n\n\n\n1\n\nWe input the data that contains our variables of interest."
   },
   {
     "objectID": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#mapping",
@@ -2888,7 +2888,7 @@
     "href": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#data-mapping",
     "title": "Data visualization: Introduction to ggplot2",
     "section": "Data + Mapping",
-    "text": "Data + Mapping\n\nIf we want the cty and hwy columns to map to the x- and y-coordinates in the plot, we can do that as follows:\n\n\n\nggplot(\n  mpg, \n  mapping = aes(\n    x = cty, \n    y = hwy\n    )\n  )"
+    "text": "Data + Mapping\n\nIf we want the age and income columns to map to the x- and y-coordinates in the plot, we can do that as follows:\n\n\n\nggplot(\n  hrs_data, \n1  mapping = aes(\n    x = age,  \n    y = income\n    )\n  )\n\n\n\n1\n\nWe use the aes() function to specify the mapping of variables to axes. In this case, we are mapping age to the x-axis and income to the y-axis."
   },
   {
     "objectID": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#layers",
@@ -2902,14 +2902,14 @@
     "href": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#data-mapping-layers",
     "title": "Data visualization: Introduction to ggplot2",
     "section": "Data + Mapping + Layers",
-    "text": "Data + Mapping + Layers\nHere is how we can use two layers to display the cty and hwy columns of the mpg dataset as points and stack a trend line on top:\n\n\nggplot(\n  mpg, \n  mapping = aes(\n    x = cty, \n    y = hwy\n    )\n  ) +\n1  geom_point() +\n2  geom_smooth(\n    formula = y ~ x, \n    method = \"lm\"\n    )\n\n\n\n1\n\nTo create a scatterplot\n\n2\n\nTo fit and overlay a line"
+    "text": "Data + Mapping + Layers\nHere is how we can use two layers to display the age and income columns of the hrs_data dataset as points and stack a trend line on top:\n\n\nggplot(\n  hrs_data, \n  mapping = aes(\n    x = age, \n    y = income\n    )\n  ) + \n1  geom_point() +\n2  geom_smooth(\n    formula = y ~ x, \n    method = \"lm\"\n    )\n\n\n\n1\n\nTo create a scatterplot\n\n2\n\nTo fit and overlay a line"
   },
   {
     "objectID": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#we-can-also-make-plots-with-a-single-variable",
     "href": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#we-can-also-make-plots-with-a-single-variable",
     "title": "Data visualization: Introduction to ggplot2",
     "section": "We can also make plots with a single variable",
-    "text": "We can also make plots with a single variable\n\nData: still mpg\nMapping: using aesthetic to specify only one variable in the x-axis (cty)\nLayers: using geom_histogram() to show a plot of the counts per cty (which is city mileage)\n\n\n\nggplot(mpg, aes(cty)) +\n  # to create a histogram\n  geom_histogram()"
+    "text": "We can also make plots with a single variable\n\nData: still hrs_data\nMapping: using aesthetic to specify only one variable in the x-axis (age)\nLayers: using geom_histogram() to show a plot of the counts per age\n\n\n\nggplot(\n  hrs_data, \n1  aes(age)\n  ) +\n2  geom_histogram()\n\n\n\n1\n\nWe specify only one variable in the aes() function, which will be mapped to the x-axis by default\n\n2\n\nWe use geom_histogram() to create a histogram of the counts per `age"
   },
   {
     "objectID": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#lets-take-a-second-to-try-this-out",
@@ -2923,14 +2923,14 @@
     "href": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#we-can-add-more-to-plots",
     "title": "Data visualization: Introduction to ggplot2",
     "section": "We can add more to plots!",
-    "text": "We can add more to plots!\nWe can change labels!\n\nggplot(mpg, aes(cty)) +\n  geom_histogram() +\n  labs(x = \"City mileage (mpg)\", y = \"Frequency\", \n       title = \"Histogram of city mileage\")"
+    "text": "We can add more to plots!\nWe can change labels!\n\n\nggplot(\n  hrs_data, \n  aes(age)\n  ) +\n  geom_histogram() +\n1  labs(\n2    x = \"Age (years)\",\n3    y = \"Frequency\",\n4    title = \"Distribution of Age\"\n    )\n\n\n\n1\n\nWe use the labs() function to change the labels of the axes and title of the plot\n\n2\n\nWe change the x-axis label to “Age (years)”\n\n3\n\nWe change the y-axis label to “Frequency”\n\n4\n\nWe change the title of the plot to “Distribution of Age”"
   },
   {
     "objectID": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#adding-more-to-plots",
     "href": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#adding-more-to-plots",
     "title": "Data visualization: Introduction to ggplot2",
     "section": "Adding more to plots!",
-    "text": "Adding more to plots!\nIncrease (or decrease) text size so we can read it / it fits nicely!\n\nggplot(mpg, aes(cty)) +\n  geom_histogram() +\n  labs(x = \"City mileage (mpg)\", y = \"Frequency\", \n       title = \"Histogram of city mileage\") +\n  theme(axis.text = element_text(size = 15), \n        axis.title = element_text(size = 15), \n        title = element_text(size = 15))"
+    "text": "Adding more to plots!\nIncrease (or decrease) text size so we can read it / it fits nicely!\n\n\nggplot(\n  hrs_data, \n  aes(age)\n  ) +\n  geom_histogram() +\n  labs( \n    x = \"Age (years)\",\n    y = \"Frequency\",\n    title = \"Distribution of Age\"\n    ) +\n  theme(\n    axis.text = element_text(size = 28),\n    axis.title = element_text(size = 28),\n    title = element_text(size = 28)\n    )"
   },
   {
     "objectID": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#take-a-moment",
@@ -3505,5 +3505,985 @@
     "title": "Data transformation: Columns, Advanced",
     "section": "{tidyselect}",
     "text": "{tidyselect}\n\nThere are ways to select columns by “searching” for them.\nThese are called {tidyselect} helpers.\nSee more examples from the {tidyselect} webpage.\n\n\ncontains\n\nFor instance, you can see how this might be useful, where we select all columns where the column name includes the word “race”:\n\n\nhrs_data |&gt; \n  select(contains(\"race\"))\n\n# A tibble: 2,728 × 1\n   race_original         \n   &lt;chr&gt;                 \n 1 White/Caucasian       \n 2 &lt;NA&gt;                  \n 3 &lt;NA&gt;                  \n 4 &lt;NA&gt;                  \n 5 Black/African American\n 6 &lt;NA&gt;                  \n 7 Other                 \n 8 Other                 \n 9 White/Caucasian       \n10 White/Caucasian       \n# ℹ 2,718 more rows\n\n\n\n\nstarts_with, ends_with\n\nSelect all columns starting with “race”:\n\n\nhrs_data |&gt; \n  select(starts_with(\"prob\")) |&gt; \n  names()\n\ncharacter(0)\n\n\n\nSelect all columns ending with “e”:\n\n\nhrs_data |&gt; \n  select(ends_with(\"e\")) |&gt; \n  names()\n\n[1] \"birthdate\" \"degree\"    \"female\"    \"age\"       \"income\"   \n\n\n\n\nSelect columns by data type\n\nWe can also select variables based on data types\nFor instance, select(where(is.numeric)) selects all numeric columns\n\n(where() is a helper function that returns columns where the inside function is TRUE,\nin this case is.numeric returns the TRUE/FALSE)\n\n\n\nhrs_data |&gt; \n  select(where(is.numeric)) |&gt; \n  names()\n\n [1] \"birthyr\"    \"birthmo\"    \"birthdate\"  \"ed\"         \"age_months\"\n [6] \"age\"        \"weight\"     \"cond_count\" \"r16hosp\"    \"r16cesd\"   \n[11] \"income\"    \n\nhrs_data |&gt; \n  select(where(is.character)) |&gt; \n  names()\n\n [1] \"hhid\"          \"pn\"            \"degree\"        \"proxy\"        \n [5] \"coupled\"       \"female\"        \"race_original\" \"smokeever\"    \n [9] \"smoke2now\"     \"drink\"         \"self_health\"   \"high_bp\"      \n[13] \"diab\"          \"cancer\"        \"lung_dis\"      \"heart_dis\"    \n[17] \"strk\"          \"psych_prob\"    \"sleep_prob\"    \"arthritis\""
+  },
+  {
+    "objectID": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#wrap-up",
+    "href": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#wrap-up",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Wrap-up",
+    "text": "Wrap-up\n\nggplot2 is great data visualization tool in R\n\n \n\nGrammar of Graphics: data, mapping, layers, scales, facets, coordinates, themes\n\nWe can add a lot of different components to our plots to make them more informative and visually appealing\n\n\n \n\nWe discussed some of the options in ggplot2 but there are many more to explore!"
+  },
+  {
+    "objectID": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#notice-my-different-ggplot-calls",
+    "href": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#notice-my-different-ggplot-calls",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Notice my different ggplot calls",
+    "text": "Notice my different ggplot calls\nThe following all create the same plot:\n\n\nNaming the input arguments in the ggplot() function\n\nggplot(\n1  data = hrs_data,\n2  mapping = aes(\n    x = age, \n    y = income\n    )\n  ) + \n  geom_point()\n\n\n1\n\nWe name the input argument for the dataset as data\n\n2\n\nWe name the input argument for the mapping as mapping\n\n\n\n\n\nMore concise, no naming input arguments\n\nggplot(\n1  hrs_data,\n2  aes(\n    x = age, \n    y = income\n    )\n  ) + \n  geom_point()\n\n\n1\n\nRemoved input argument name\n\n2\n\nRemoved input argument name\n\n\n\n\n\nWe can pipe the dataset into ggplot()\n\n1hrs_data |&gt;\n  ggplot(\n    aes(\n      x = age, \n      y = income\n      )\n    ) + \n  geom_point()\n\n\n1\n\nWe use the pipe operator to pass the dataset into ggplot()\n\n\n\n\n\nWe can also move aes() out of ggplot()\n\nggplot(hrs_data) + \n1  aes(\n    x = age, \n    y = income\n  ) +\n  geom_point()\n\n\n1\n\nWe move the aes() function out of the ggplot() function"
+  },
+  {
+    "objectID": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#notice-the-following-create-the-same-plot",
+    "href": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#notice-the-following-create-the-same-plot",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Notice: the following create the same plot",
+    "text": "Notice: the following create the same plot\n\n\nNaming the input arguments in the ggplot() function\n\nggplot(\n1  data = hrs_data,\n2  mapping = aes(\n    x = age, \n    y = income\n    )\n  ) + \n  geom_point()\n\n\n1\n\nWe name the input argument for the dataset as data\n\n2\n\nWe name the input argument for the mapping as mapping\n\n\n\n\n\nMore concise, no naming input arguments\n\nggplot(\n1  hrs_data,\n2  aes(\n    x = age, \n    y = income\n    )\n  ) + \n  geom_point()\n\n\n1\n\nRemoved input argument name\n\n2\n\nRemoved input argument name\n\n\n\n\n\nWe can pipe the dataset into ggplot()\n\n1hrs_data |&gt;\n  ggplot(\n    aes(\n      x = age, \n      y = income\n      )\n    ) + \n  geom_point()\n\n\n1\n\nWe use the pipe operator to pass the dataset into ggplot()\n\n\n\n\n\nWe can also move aes() out of ggplot()\n\nggplot(hrs_data) + \n1  aes(\n    x = age, \n    y = income\n  ) +\n  geom_point()\n\n\n1\n\nWe move the aes() function out of the ggplot() function"
+  },
+  {
+    "objectID": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#notice-common-components-of-ggplot2",
+    "href": "lessons/26_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.html#notice-common-components-of-ggplot2",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Notice: common components of ggplot2",
+    "text": "Notice: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_point() +          \n  \n  labs() +       \n  \n  theme()"
+  },
+  {
+    "objectID": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#recall-common-components-of-ggplot2",
+    "href": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#recall-common-components-of-ggplot2",
+    "title": "Data visualization: Basic plotting",
+    "section": "Recall: common components of ggplot2",
+    "text": "Recall: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_point() +          \n  \n  labs() +       \n  \n  theme()                                  \n\n\n\n\nIn this lesson, we will focus on using different geometric objects and building the mapping."
+  },
+  {
+    "objectID": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#geometric-objects-1",
+    "href": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#geometric-objects-1",
+    "title": "Data visualization: Basic plotting",
+    "section": "Geometric objects",
+    "text": "Geometric objects\n\nGeometric objects (geoms) are used to represent the datapoints\n\nThe same variable’s data can be represented in different ways\n\n\nFor example: we can plot Age vs. Income using a scatterplot or a smoothed line"
+  },
+  {
+    "objectID": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#types-of-geoms",
+    "href": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#types-of-geoms",
+    "title": "Data visualization: Basic plotting",
+    "section": "Types of geoms",
+    "text": "Types of geoms\n\nCommon geoms include:\n\ngeom_histogram()\ngeom_bar()\ngeom_boxplot()\ngeom_point()\ngeom_line()\ngeom_smooth()"
+  },
+  {
+    "objectID": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#resources",
+    "href": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#resources",
+    "title": "Data visualization: Basic plotting",
+    "section": "Resources",
+    "text": "Resources\n\nggplot2 Cheatsheet in html form\nggplot2 Cheatsheet in pdf form"
+  },
+  {
+    "objectID": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#lets-check-out-the-ggplot2-cheatsheet-together",
+    "href": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#lets-check-out-the-ggplot2-cheatsheet-together",
+    "title": "Data visualization: Basic plotting",
+    "section": "Let’s check out the ggplot2 cheatsheet together",
+    "text": "Let’s check out the ggplot2 cheatsheet together"
+  },
+  {
+    "objectID": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#examples",
+    "href": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#examples",
+    "title": "Data visualization: Basic plotting",
+    "section": "EXAMPLES",
+    "text": "EXAMPLES"
+  },
+  {
+    "objectID": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#aesthetic-mapping",
+    "href": "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.html#aesthetic-mapping",
+    "title": "Data visualization: Basic plotting",
+    "section": "Aesthetic mapping",
+    "text": "Aesthetic mapping\n\nIf we want to change the visual properties of the plotted data, we use aesthetic mapping\n\nThis is not about the design choices of the figure, but the aesthetics of the data\n\nHere are a list of common aesthetic options (from the Epi Handbook):\n\nshape = Display a point with geom_point() as a dot, star, triangle, or square…\nfill = The interior color (e.g. of a bar or boxplot)\ncolor = The exterior line of a bar, boxplot, etc., or the point color if using geom_point()\nsize = Size (e.g. line thickness, point size)\nalpha = Transparency (1 = opaque, 0 = invisible)\nbinwidth = Width of histogram bins (for geom_histogram() only)\nwidth = Width of bar plot columns (for geom_bar() only)\nlinetype = Line type (e.g. solid, dashed, dotted)"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#quarto-.qmd-file-code-text-to-html",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#quarto-.qmd-file-code-text-to-html",
+    "title": "Quarto documents",
+    "section": "Quarto = .qmd file = Code + text \\(\\to\\) html",
+    "text": "Quarto = .qmd file = Code + text \\(\\to\\) html\n.qmd files contain code + markdown syntax which can be “rendered” to other formats (html, pdf, Word, etc)\n\n\n.qmd file \n\nhtml output"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-a-quarto-file-.qmd",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-a-quarto-file-.qmd",
+    "title": "Quarto documents",
+    "section": "1. Create a Quarto file (.qmd)",
+    "text": "1. Create a Quarto file (.qmd)\n\n\nTwo options:\n\nclick on File \\(\\rightarrow\\) New File \\(\\rightarrow\\) Quarto Document…\\(\\rightarrow\\) OK,\nor in upper left corner of RStudio click on  \\(\\rightarrow\\) \n\nPop-up window selections:\n\nEnter a title and your name\nSelect HTML output format (default)\nEngine: select Knitr\nEditor: Select Use visual markdown editor\nClick Create"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-a-quarto-file-.qmd-1",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-a-quarto-file-.qmd-1",
+    "title": "Quarto documents",
+    "section": "1. Create a Quarto file (.qmd)",
+    "text": "1. Create a Quarto file (.qmd)\nTwo options:\n\nclick on File \\(\\rightarrow\\) New File \\(\\rightarrow\\) Quarto Document…\\(\\rightarrow\\) OK,\nor in upper left corner of RStudio click on  \\(\\rightarrow\\) \n\n\n\nPop-up window selections:\n\nEnter a title and your name\nSelect HTML output format (default)\nEngine: select Knitr\nEditor: Select Use visual markdown editor\nClick Create"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#save-the-quarto-file-.qmd",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#save-the-quarto-file-.qmd",
+    "title": "Quarto documents",
+    "section": "3. Save the Quarto file (.qmd)",
+    "text": "3. Save the Quarto file (.qmd)\n\nSave the file by\n\nselecting File -&gt; Save,\nor clicking on  (towards the left above the scripting window),\nor keyboard shortcut\n\nPC: Ctrl + s\nMac: Command + s\n\n\nYou will need to specify (Use what we learned in last lesson!!)\n\na filename to save the file as\n\nALWAYS use .qmd as the filename extension for Quarto files\n\nthe folder to save the file in\nHint: this will probability go under “R_activities” and with a name like “R05_Quarto-work.qmd”"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-render-html-file",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-render-html-file",
+    "title": "Quarto documents",
+    "section": "4. Create (render) html file",
+    "text": "4. Create (render) html file\nWe create the html file by rendering the .qmd file.\nTwo options:\n\nclick on the Render icon  at the top of the editor window,\nor use keyboard shortcuts\n\nMac: Command+Shift+K\nPC: Ctrl+Shift+K\n\n\n\nA new window will open with the html output.\nYou will now see both .qmd and .html files in the folder where you saved the .qmd file.\n\n\n\n\n\n\n\nNote\n\n\n\nThe template .qmd file that RStudio creates will render to an html file by default.\nThe output format can be changed to create a Word doc, pdf, slides, etc."
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#qmd-file-vs.-its-html-output",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#qmd-file-vs.-its-html-output",
+    "title": "Quarto documents",
+    "section": ".qmd file vs. its html output",
+    "text": ".qmd file vs. its html output\n\n\n.qmd file \n\nhtml output"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#code-chunks",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#code-chunks",
+    "title": "Quarto documents",
+    "section": "3. Code chunks",
+    "text": "3. Code chunks\nR, Python, Julia, Observable, or any language with a Jupyter kernel.\n```{r}\n#| label: fig-penguins\n#| fig-cap: \"Dimensions of penguins across three species.\"\n#| warning: false\nlibrary(tidyverse, quietly = TRUE)\nlibrary(palmerpenguins)\npenguins |&gt;\n  ggplot(aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species)) +\n  scale_color_manual(\n    values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n  theme_minimal()\n```"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#what-does-a-code-chunk-look-like",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#what-does-a-code-chunk-look-like",
+    "title": "Quarto documents",
+    "section": "What does a code chunk look like?",
+    "text": "What does a code chunk look like?\nAn empty code chunk looks like this:\nVisual editor\n\nSource editor\n\n\n\n\n\n\n\nImportant\n\n\nNote that a code chunks start with ```{r} and ends with ```. Make sure there is no space before ```."
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#done-enter-and-run-code-12",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#done-enter-and-run-code-12",
+    "title": "Quarto documents",
+    "section": "(DONE) Enter and run code (1/2)",
+    "text": "(DONE) Enter and run code (1/2)\n\nType R code inside code chunks\nSelect code you want to run, by\n\nplacing the cursor in the line of code you want to run,\nor highlighting the code you want to run\n\n\n\n\n\nRun selected code by\n\nclicking on the  button in the top right corner of the scripting window and choosing Run Selected Line(s),\nor typing one of the following key combinations:\n\n\n\n\n\nMac\nctrl + return\n\n\nPC\ncommand + return\n\n\n\n\nWhere does the output appear?"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#enter-and-run-code-22",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#enter-and-run-code-22",
+    "title": "Quarto documents",
+    "section": "Enter and run code (2/2)",
+    "text": "Enter and run code (2/2)\n\nWe can run code like we saw in the lesson on Basics\nRun all code in a chunk by\n\nby clicking the play button in the top right corner of the chunk\n\nThe code output appears below the code chunk\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe output should also appear in the Console.\nSettings can be changed so that the output appears only in the Console and not below the code chunk:\n\nSelect {{&lt; fa solid gear &gt;}} (to right of Render button) and then Chunk Output in Console."
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-a-code-chunk",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-a-code-chunk",
+    "title": "Quarto documents",
+    "section": "Create a code chunk",
+    "text": "Create a code chunk\n3 options to create a code chunk\n\nClick on  at top right of the editor window, or\nKeyboard shortcut\n\n\n\n\nMac\nCommand + Option + I\n\n\nPC\nCtrl + Alt + I\n\n\n\n\nVisual editor: Select Insert -&gt; Executable Cell -&gt; R"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#creating-reproducible-reports-with-quarto",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#creating-reproducible-reports-with-quarto",
+    "title": "Quarto documents",
+    "section": "Creating reproducible reports with Quarto",
+    "text": "Creating reproducible reports with Quarto\n\nArtwork by @allison_horst"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#example-creating-an-html-file",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#example-creating-an-html-file",
+    "title": "Quarto documents",
+    "section": "Example: creating an html file",
+    "text": "Example: creating an html file\n\n\n.qmd file\n\n\n\n\n\n\n\n\n.html output"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#quarto-.qmd-file-code-text",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#quarto-.qmd-file-code-text",
+    "title": "Quarto documents",
+    "section": "Quarto = .qmd file = Code + text",
+    "text": "Quarto = .qmd file = Code + text\nWe can take .qmd files containing code (R and other types) + plain text (like we might make in Word), and then render to it other formats (html, pdf, Word, etc) that nicely display the code and text!\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#before-we-get-further-in-.qmd-files",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#before-we-get-further-in-.qmd-files",
+    "title": "Quarto documents",
+    "section": "Before we get further in .qmd files",
+    "text": "Before we get further in .qmd files\n\nLet’s make sure we all have Rstudio open\nAnd then open your PUBH_523_26Su project!\n\n \nSteps for making a Quarto file\n\nCreate a Quarto file (.qmd)\nEdit a Quarto file (.qmd)\nSave the Quarto file (.qmd)\nCreate html file"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#edit-a-quarto-file-.qmd",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#edit-a-quarto-file-.qmd",
+    "title": "Quarto documents",
+    "section": "2. Edit a Quarto file (.qmd)",
+    "text": "2. Edit a Quarto file (.qmd)\n\n\n\nAfter clicking on Create, you should then see the following in your editor window:\n\n \n\nYou can try editing the text or changing the code!\n\nMake sure you are only editing at the “Quarto” header and below"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-html-file",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-html-file",
+    "title": "Quarto documents",
+    "section": "4. Create html file",
+    "text": "4. Create html file\nWe create the .html file by rendering the .qmd file.\nTwo options:\n\nclick on the Render icon  at the top of the editor window,\nor use keyboard shortcuts\n\nMac: Command+Shift+K\nPC: Ctrl+Shift+K\n\n\n\nA new window will open with the html output.\nYou will now see both .qmd and .html files in the folder where you saved the .qmd file.\n\nThe html file will automatically have the same name as the qmd file"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#tip-changing-the-render-view",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#tip-changing-the-render-view",
+    "title": "Quarto documents",
+    "section": "Tip: changing the render view",
+    "text": "Tip: changing the render view\n\nYou can change where your .html file pops up\nI have it set to open in the “Viewer Pane” in the bottom right"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#qmd-vs.-its-.html-output",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#qmd-vs.-its-.html-output",
+    "title": "Quarto documents",
+    "section": ".qmd vs. its .html output",
+    "text": ".qmd vs. its .html output\n\n\n.qmd file\n\n\n\n\n\n\n\n\n.html output"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-a-quarto-file-.qmd-2",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#create-a-quarto-file-.qmd-2",
+    "title": "Quarto documents",
+    "section": "2. Create a Quarto file (.qmd)",
+    "text": "2. Create a Quarto file (.qmd)\n\nAfter clicking on Create, you should then see the following in your editor window:"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#save-the-quarto-file-.qmd-1",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#save-the-quarto-file-.qmd-1",
+    "title": "Quarto documents",
+    "section": "3. Save the Quarto file (.qmd)",
+    "text": "3. Save the Quarto file (.qmd)\n\nSave the file by\n\nselecting File -&gt; Save,\nor clicking on  (towards the left above the scripting window),\nor keyboard shortcut\n\nPC: Ctrl + s\nMac: Command + s\n\n\nYou will need to specify\n\na filename to save the file as\n\nALWAYS use .qmd as the filename extension for Quarto files\n\nthe folder to save the file in"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#we-often-render-a-.qmd-file-to-an-.html-file",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#we-often-render-a-.qmd-file-to-an-.html-file",
+    "title": "Quarto documents",
+    "section": "We often render a .qmd file to an .html file",
+    "text": "We often render a .qmd file to an .html file\n\n\n.qmd file\n\n\n\n\n\n\n\n\n.html output"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#types-of-quarto-content",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#types-of-quarto-content",
+    "title": "Quarto documents",
+    "section": "3 types of Quarto content",
+    "text": "3 types of Quarto content\n\nYAML metadata\nText, lists, images, tables, links\nCode chunks\n\n\nIllustration by Alison Hill and Allison Horst, for RStudio."
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#resources",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#resources",
+    "title": "Quarto documents",
+    "section": "Resources",
+    "text": "Resources\n\nTo learn more about working with Quarto, check out our BERD workshop: Creating Professional Presentations and Websites using R/Quarto\nPublish and Share with Quarto\n\nPDF Cheatsheet\nhtml Cheatsheet"
+  },
+  {
+    "objectID": "lessons/04_Basics_operators/04_Basics_operators.html",
+    "href": "lessons/04_Basics_operators/04_Basics_operators.html",
+    "title": "Basics",
+    "section": "",
+    "text": "R can be used to do calculations (like a calculator)\nIt will follow the order of operations (PEMDAS) when doing calculations\n\n\n1 / 200 * 30\n\n[1] 0.15\n\n(59 + 73 + 2) / 3\n\n[1] 44.66667\n\nsin(pi / 2)\n\n[1] 1"
+  },
+  {
+    "objectID": "lessons/04_Basics_operators/04_Basics_operators.html#coding-basics",
+    "href": "lessons/04_Basics_operators/04_Basics_operators.html#coding-basics",
+    "title": "Basics",
+    "section": "",
+    "text": "R can be used to do calculations (like a calculator)\nIt will follow the order of operations (PEMDAS) when doing calculations\n\n\n1 / 200 * 30\n\n[1] 0.15\n\n(59 + 73 + 2) / 3\n\n[1] 44.66667\n\nsin(pi / 2)\n\n[1] 1"
+  },
+  {
+    "objectID": "lessons/04_Basics_operators/04_Basics_operators.html#different-operators",
+    "href": "lessons/04_Basics_operators/04_Basics_operators.html#different-operators",
+    "title": "Basics",
+    "section": "Different operators",
+    "text": "Different operators\n\nMost operators are the same as in math, but some are different\n\n \nHere are some common operators:\n\n\n\nOperation\nWritten\nIn R\n\n\n\n\nAddition\n\\(1+1\\)\n1+1\n\n\nSubtraction\n\\(2-1\\)\n2-1\n\n\nMultiplication\n\\(3\\times 2\\) or \\(3\\cdot 2\\)\n3*2\n\n\nDivision\n\\(3 / 2\\) or \\(\\dfrac{3}{2}\\)\n3/2\n\n\nExponential\n\\(4^2\\)\n4^2\n\n\nSquare root\n\\(\\sqrt{4}\\) or \\(4^{1/2}\\)\n4^(1/2) or sqrt(4)"
+  },
+  {
+    "objectID": "lessons/04_Basics_operators/04_Basics_operators.html#relational-operators",
+    "href": "lessons/04_Basics_operators/04_Basics_operators.html#relational-operators",
+    "title": "Basics",
+    "section": "Relational operators",
+    "text": "Relational operators\n\nThese operators are interpreted as questions\nR will return a true or false answer, depending on if it meets the criteria\n\n\n\n\nOperation\nIn R\n\n\n\n\nLess than\n1&lt;1\n\n\nGreater than\n1&gt;1\n\n\nLess than or equal to\n1&lt;=1\n\n\nGreater than or equal to\n1&gt;=1\n\n\nEqual to\n1==1\n\n\nNot equal to\n1!=1"
+  },
+  {
+    "objectID": "lessons/04_Basics_operators/04_Basics_operators.html#references",
+    "href": "lessons/04_Basics_operators/04_Basics_operators.html#references",
+    "title": "Basics",
+    "section": "References",
+    "text": "References\n\nYou can find more R operators here: https://bookdown.org/manishpatwal/bookdown-demo/basic-operations-in-r.html"
+  },
+  {
+    "objectID": "lessons/03_Scripts/03_Scripts.html",
+    "href": "lessons/03_Scripts/03_Scripts.html",
+    "title": "R Scripts",
+    "section": "",
+    "text": "R script\n\n\nAn R script is a document that can hold your code, comments, and outputs\n\n\n\nUnlike the console, we can save our work in an R script and come back to it later\nThink of this like a very basic Word or Google document file"
+  },
+  {
+    "objectID": "lessons/03_Scripts/03_Scripts.html#what-is-an-r-script",
+    "href": "lessons/03_Scripts/03_Scripts.html#what-is-an-r-script",
+    "title": "R Scripts",
+    "section": "",
+    "text": "R script\n\n\nAn R script is a document that can hold your code, comments, and outputs\n\n\n\nUnlike the console, we can save our work in an R script and come back to it later\nThink of this like a very basic Word or Google document file"
+  },
+  {
+    "objectID": "lessons/03_Scripts/03_Scripts.html#how-to-create-an-r-script",
+    "href": "lessons/03_Scripts/03_Scripts.html#how-to-create-an-r-script",
+    "title": "R Scripts",
+    "section": "How to create an R script?",
+    "text": "How to create an R script?\n\n\nCreate a new R script by going to File &gt; New File &gt; R Script\n\n\n\n\nCreate a new R script by clicking New File icon in the toolbar and selecting R Script"
+  },
+  {
+    "objectID": "lessons/03_Scripts/03_Scripts.html#how-to-run-code-in-an-r-script",
+    "href": "lessons/03_Scripts/03_Scripts.html#how-to-run-code-in-an-r-script",
+    "title": "R Scripts",
+    "section": "How to run code in an R script?",
+    "text": "How to run code in an R script?\n\n\n\nHighlighting the code and clicking the Run button in the toolbar\nHighlighting the code and Ctrl + Enter (Windows) or Cmd + Enter (Mac)\nPlacing the cursor on the line of code and clicking the Run button in the toolbar\nPlacing the cursor on the line of code and Ctrl + Enter (Windows) or Cmd + Enter (Mac)"
+  },
+  {
+    "objectID": "lessons/03_Scripts/03_Scripts.html#saving-an-r-script",
+    "href": "lessons/03_Scripts/03_Scripts.html#saving-an-r-script",
+    "title": "R Scripts",
+    "section": "Saving an R script",
+    "text": "Saving an R script\n\n\n\nGo to File &gt; Save or Save As\nClick the Save icon in the toolbar\nClick the Save icon in the Editor"
+  },
+  {
+    "objectID": "lessons/19_Workflow_getting_help/16_Workflow_getting_help.html",
+    "href": "lessons/19_Workflow_getting_help/16_Workflow_getting_help.html",
+    "title": "Workflow: Getting help",
+    "section": "",
+    "text": "Learn to read some basic errors.\nSearching R documentation\nSearching forums\nUsing AI\n\n\n\nIncomplete commands\n\n\n\nWhen the console is waiting for a new command, the prompt line begins with &gt;\n\nIf the console prompt is +, then a previous command is incomplete\nYou can finish typing the command in the console window\n\n\n\nExample:\n\n&gt; 3 + (2*6\n+ )\n\n[1] 15\n\n\n\n\n\n\n\nObject is not found\n\nThis happens when text is entered for a non-existent variable (object)\n\nExample:\n\nhello\n\nError:\n! object 'hello' not found\n\n\n\nCan be due to missing quotes\n\n\ninstall.packages(dplyr) \n\nError:\n! object 'dplyr' not found\n\n# correct code is: install.packages(\"dplyr\")"
+  },
+  {
+    "objectID": "lessons/19_Workflow_getting_help/16_Workflow_getting_help.html#common-console-errors-12",
+    "href": "lessons/19_Workflow_getting_help/16_Workflow_getting_help.html#common-console-errors-12",
+    "title": "Workflow: Getting help",
+    "section": "",
+    "text": "Incomplete commands\n\n\n\nWhen the console is waiting for a new command, the prompt line begins with &gt;\n\nIf the console prompt is +, then a previous command is incomplete\nYou can finish typing the command in the console window\n\n\n\nExample:\n\n&gt; 3 + (2*6\n+ )\n\n[1] 15"
+  },
+  {
+    "objectID": "lessons/19_Workflow_getting_help/16_Workflow_getting_help.html#common-console-errors-22",
+    "href": "lessons/19_Workflow_getting_help/16_Workflow_getting_help.html#common-console-errors-22",
+    "title": "Workflow: Getting help",
+    "section": "",
+    "text": "Object is not found\n\nThis happens when text is entered for a non-existent variable (object)\n\nExample:\n\nhello\n\nError:\n! object 'hello' not found\n\n\n\nCan be due to missing quotes\n\n\ninstall.packages(dplyr) \n\nError:\n! object 'dplyr' not found\n\n# correct code is: install.packages(\"dplyr\")"
+  },
+  {
+    "objectID": "lessons/19_Workflow_getting_help/16_Workflow_getting_help.html#there-are-many-ways-to-get-help-when-you-are-stuck",
+    "href": "lessons/19_Workflow_getting_help/16_Workflow_getting_help.html#there-are-many-ways-to-get-help-when-you-are-stuck",
+    "title": "Workflow: Getting help",
+    "section": "There are many ways to get help when you are stuck",
+    "text": "There are many ways to get help when you are stuck\n\nUse the ? in front of the function name to get more information!\n\nUsually if I need help with the arguments for a function\n\nGoogle or go to stackoverflow.com\n\nOften when I Google, I get redirected to something like stackoverflow\nFor example, let’s say my mean function was outputting NA. I would Google something like “keep getting NA for mean in R” Then end up here\n\nI can also go to my favorite AI tool to get help\n\nThis is most useful for getting code started if it’s complicated (we’re not really at that level yet)\nI asked ChatGPT “can you give me the code for calculating the mean in R”\n\nThis is what I got\n\nFor code generation, it gives you WAY too much\nI also asked ChatGPT “Why is the mean function in R giving me an NA?” (in above link)"
+  },
+  {
+    "objectID": "lessons/19_Workflow_getting_help/16_Workflow_getting_help.html#more-on-ai-usage",
+    "href": "lessons/19_Workflow_getting_help/16_Workflow_getting_help.html#more-on-ai-usage",
+    "title": "Workflow: Getting help",
+    "section": "More on AI usage",
+    "text": "More on AI usage\n\nIn the syllabus\nIf you cannot trace code back to the class notes, then do NOT use it!\n\nThere’s different coding practices and functions out there\nI’m giving you a specific set of tools that will serve as a good introduction\nYou should be able to explain all your code and work"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html",
+    "title": "Data transformation: Rows",
+    "section": "",
+    "text": "We defined dplyr functions as operations that use columns as arguments\n\nThis is still true for row transformations\nWe use columns to define the rows we want to keep, remove, or modify\n\nThere are many functions that can be used to transform rows\nWe will cover the most common ones here:\n\nfilter()\narrange()\ndistinct()"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#data-transformations-on-rows",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#data-transformations-on-rows",
+    "title": "Data transformation: Rows",
+    "section": "",
+    "text": "We defined dplyr functions as operations that use columns as arguments\n\nThis is still true for row transformations\nWe use columns to define the rows we want to keep, remove, or modify\n\nThere are many functions that can be used to transform rows\nWe will cover the most common ones here:\n\nfilter()\narrange()\ndistinct()"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#filter-quantitative-data",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#filter-quantitative-data",
+    "title": "Data transformation: Rows",
+    "section": "filter(): quantitative data",
+    "text": "filter(): quantitative data\n\nfilter() allows us to keep rows (aka subset our data) based on conditions we specify (in the columns)\nWe input our data frame as the first argument, and then we specify the conditions for filtering in the second argument\nWe can use the following comparison operators to specify our conditions:\n\n&gt;: greater than\n&lt;: less than\n&gt;=: greater than or equal to\n&lt;=: less than or equal to\n==: equal to\n!=: not equal to"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-filtering-age",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-filtering-age",
+    "title": "Data transformation: Rows",
+    "section": "Example: filtering age",
+    "text": "Example: filtering age\n\nLet’s filter on a numeric variable, age: all rows with age values greater than 99\n\nWe will expect to return rows with age values of 100 and above from hrs_data\n\n\n\n1hrs_data |&gt;\n2  filter(\n3    age &gt; 99\n    )\n\n\n1\n\nThe first argument is the data frame we want to operate on (in this case, hrs_data)\n\n2\n\nThe second argument is the condition we want to apply to filter our data (in this case, age &gt; 99)\n\n3\n\nThe condition is specified using a comparison operator (in this case, &gt;) and the variable we want to filter on (in this case, age)\n\n\n\n\n# A tibble: 3 × 31\n  hhid   pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n  &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n1 559512 010      1928       9    -13653   100    14 Assoc… Resp… No spo… Female\n2 554703 010      1928       5    -13834   100    12 High … Resp… No spo… Female\n3 559512 010      1927       9    -12070   100    14 Assoc… Resp… No spo… Female\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-filtering-age-now-only-exact-matches",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-filtering-age-now-only-exact-matches",
+    "title": "Data transformation: Rows",
+    "section": "Example: filtering age, now only exact matches",
+    "text": "Example: filtering age, now only exact matches\n\nLet’s filter on a numeric variable, age: all rows with age values equal to 38\n\nWe will expect to return rows with age values of 38 from hrs_data\n\n\n\nhrs_data |&gt; \n  filter( \n1    age == 38\n    ) \n\n\n1\n\nNotice the change in the operator!! We are now using ==.\n\n\n\n\n# A tibble: 2 × 31\n  hhid   pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n  &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n1 559477 020      1985       2      9327    38    17 Maste… Resp… Marrie… Female\n2 555037 020      1984       3      9115    38    NA &lt;NA&gt;   Resp… Marrie… Female\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#filter-categorical-data",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#filter-categorical-data",
+    "title": "Data transformation: Rows",
+    "section": "filter(): categorical data",
+    "text": "filter(): categorical data\n\nFor categorical variables, we can use the same comparison operators\n\nBut now we need to filter on specific categories (levels) of the variable"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-filtering-degree",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-filtering-degree",
+    "title": "Data transformation: Rows",
+    "section": "Example: filtering degree",
+    "text": "Example: filtering degree\n\nFor degree, the possible values are: NA, None, GED, High school diploma, Associate's degree, Bachelor's degree, and Master's degree, Professional degree (Ph.D./M.D./JD)\n\n\nhrs_data |&gt;\n  filter(\n1    degree == \"Master's degree\"\n    )\n\n\n1\n\nWe must include ” ” around the value for categorical variables. The exact spelling needs to match.\n\n\n\n\n\n\n# A tibble: 444 × 31\n  hhid   pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n  &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n1 557411 010      1970       3      3698    53    16 Maste… Resp… Marrie… Female\n2 557020 020      1969       2      3302    53    16 Maste… Resp… Marrie… Male  \n3 550524 010      1952      12     -2573    69    16 Maste… Resp… No spo… Male  \n4 555572 020      1966       9      2449    57    17 Maste… Resp… Marrie… Female\n5 557909 020      1986      12      9327    35    16 Maste… Resp… Marrie… Female\n# ℹ 439 more rows\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-filtering-degree-but-mispelling-the-value",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-filtering-degree-but-mispelling-the-value",
+    "title": "Data transformation: Rows",
+    "section": "Example: filtering degree but mispelling the value",
+    "text": "Example: filtering degree but mispelling the value\n\nWhat happens if I mispell “Master’s degree” as “Masters degree” (without the apostrophe)?\nR will not throw an error: we need to check our output!!\n\n\nhrs_data |&gt;\n  filter(\n1    degree == \"Masters degree\"\n    )\n\n\n1\n\nI forgot the apostrophe in “Master’s degree” and I get 0 rows returned.\n\n\n\n\n\n\n# A tibble: 0 × 31\n# ℹ 31 variables: hhid &lt;chr&gt;, pn &lt;chr&gt;, birthyr &lt;dbl&gt;, birthmo &lt;dbl&gt;,\n#   birthdate &lt;dbl&gt;, age &lt;dbl&gt;, ed &lt;dbl&gt;, degree &lt;chr&gt;, proxy &lt;chr&gt;,\n#   coupled &lt;chr&gt;, female &lt;chr&gt;, age_months &lt;dbl&gt;, race_original &lt;chr&gt;,\n#   smokeever &lt;chr&gt;, smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;,\n#   self_health &lt;chr&gt;, high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;,\n#   heart_dis &lt;chr&gt;, strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;,\n#   arthritis &lt;chr&gt;, cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, …"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-filtering-degree-for-everything-except-a-masters",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-filtering-degree-for-everything-except-a-masters",
+    "title": "Data transformation: Rows",
+    "section": "Example: filtering degree for everything except a Master’s",
+    "text": "Example: filtering degree for everything except a Master’s\n\nIf we want everything* except Master’s degrees, we use the “not equal” sign (!=)\n\n*Everything does not include NA values, which we will discuss in the next slide\n\n\n\nhrs_data |&gt;\n  filter(\n    degree != \"Master's degree\"\n    )\n\n# A tibble: 1,804 × 31\n   hhid  pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 5590… 010      1967      12      2905    54    13 Assoc… Resp… No spo… Female\n 2 5548… 020      1956       7     -1234    66     0 None   Resp… Marrie… Female\n 3 5555… 020      1967       7      2752    55    10 None   Resp… Marrie… Female\n 4 5557… 020      1954       6     -1934    68    12 High … Resp… Marrie… Female\n 5 5521… 010      1965      10      2114    57    15 Assoc… Resp… Marrie… Male  \n 6 5504… 010      1969       3      3361    54    14 Bache… Resp… Marrie… Female\n 7 5517… 010      1969       4      3392    53    17 Profe… Resp… No spo… Female\n 8 5512… 010      1966      10      2479    57    12 None   Resp… No spo… Male  \n 9 5533… 010      1970      12      4001    51    12 High … Resp… No spo… Female\n10 5527… 010      1953       8     -2361    69    13 High … Resp… Marrie… Male  \n# ℹ 1,794 more rows\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#new-since-feb-2026-filter_out",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#new-since-feb-2026-filter_out",
+    "title": "Data transformation: Rows",
+    "section": "New since Feb 2026: filter_out()",
+    "text": "New since Feb 2026: filter_out()\n\nfilter_out() requires {dplyr} 1.2.0 (or later version)\n\n\nhrs_data |&gt;\n  filter_out(\n    degree == \"Master's degree\"\n    )\n\n# A tibble: 2,284 × 31\n   hhid  pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 5590… 010      1967      12      2905    54    13 Assoc… Resp… No spo… Female\n 2 5548… 020      1956       7     -1234    66     0 None   Resp… Marrie… Female\n 3 5586… 010      1968       3      2996    54    NA &lt;NA&gt;   Resp… No spo… Female\n 4 5555… 010      1966       4      2296    57    NA &lt;NA&gt;   Resp… No spo… Female\n 5 5555… 020      1967       7      2752    55    10 None   Resp… Marrie… Female\n 6 5576… 010      1971       5      4152    51    NA &lt;NA&gt;   Resp… No spo… Female\n 7 5557… 020      1954       6     -1934    68    12 High … Resp… Marrie… Female\n 8 5521… 010      1965      10      2114    57    15 Assoc… Resp… Marrie… Male  \n 9 5504… 010      1969       3      3361    54    14 Bache… Resp… Marrie… Female\n10 5517… 010      1969       4      3392    53    17 Profe… Resp… No spo… Female\n# ℹ 2,274 more rows\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#wait-did-those-two-operations-have-different-rows",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#wait-did-those-two-operations-have-different-rows",
+    "title": "Data transformation: Rows",
+    "section": "WAIT! Did those two operations have different rows?",
+    "text": "WAIT! Did those two operations have different rows?\n\nIt’s always good to check your output!\n\n \n\nI did not notice that filter_out() and filter() with != had different outputs until I checked the number of rows in each output\n\n \n\nfilter_out() keeps the NA values, while filter() with != does not keep the NA values (because NA is not equal to anything, including itself)\n\n\n\n\n\n\n\nWhen using !=, I suggest using filter_out()"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#filtering-out-missing-values-using-drop_na",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#filtering-out-missing-values-using-drop_na",
+    "title": "Data transformation: Rows",
+    "section": "Filtering out missing values using drop_na()",
+    "text": "Filtering out missing values using drop_na()\n\nWe may want to remove rows that have missing data, which are coded as NA.\nIf we want to remove rows with missing data in ANY of the columns\n\nAKA, we are only keeping complete observations\n\n\n\nhrs_data |&gt; drop_na()\n\n# A tibble: 2,111 × 31\n   hhid  pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 5590… 010      1967      12      2905    54    13 Assoc… Resp… No spo… Female\n 2 5555… 020      1967       7      2752    55    10 None   Resp… Marrie… Female\n 3 5557… 020      1954       6     -1934    68    12 High … Resp… Marrie… Female\n 4 5521… 010      1965      10      2114    57    15 Assoc… Resp… Marrie… Male  \n 5 5504… 010      1969       3      3361    54    14 Bache… Resp… Marrie… Female\n 6 5574… 010      1970       3      3698    53    16 Maste… Resp… Marrie… Female\n 7 5517… 010      1969       4      3392    53    17 Profe… Resp… No spo… Female\n 8 5512… 010      1966      10      2479    57    12 None   Resp… No spo… Male  \n 9 5570… 020      1969       2      3302    53    16 Maste… Resp… Marrie… Male  \n10 5533… 010      1970      12      4001    51    12 High … Resp… No spo… Female\n# ℹ 2,101 more rows\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#filtering-out-missing-values-in-specific-columns-using-drop_na",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#filtering-out-missing-values-in-specific-columns-using-drop_na",
+    "title": "Data transformation: Rows",
+    "section": "Filtering out missing values in specific columns using drop_na()",
+    "text": "Filtering out missing values in specific columns using drop_na()\n\n1hrs_data |&gt; drop_na(degree)\n\n\n1\n\nThis will only drop rows with NA values in the degree column, and will keep rows with NA values in other columns.\n\n\n\n\n# A tibble: 2,248 × 31\n   hhid  pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 5590… 010      1967      12      2905    54    13 Assoc… Resp… No spo… Female\n 2 5548… 020      1956       7     -1234    66     0 None   Resp… Marrie… Female\n 3 5555… 020      1967       7      2752    55    10 None   Resp… Marrie… Female\n 4 5557… 020      1954       6     -1934    68    12 High … Resp… Marrie… Female\n 5 5521… 010      1965      10      2114    57    15 Assoc… Resp… Marrie… Male  \n 6 5504… 010      1969       3      3361    54    14 Bache… Resp… Marrie… Female\n 7 5574… 010      1970       3      3698    53    16 Maste… Resp… Marrie… Female\n 8 5517… 010      1969       4      3392    53    17 Profe… Resp… No spo… Female\n 9 5512… 010      1966      10      2479    57    12 None   Resp… No spo… Male  \n10 5570… 020      1969       2      3302    53    16 Maste… Resp… Marrie… Male  \n# ℹ 2,238 more rows\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#sorting-datasets-using-arrange",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#sorting-datasets-using-arrange",
+    "title": "Data transformation: Rows",
+    "section": "Sorting datasets using arrange()",
+    "text": "Sorting datasets using arrange()\n\narrange() changes the order of the rows in a dataset based on the values in one or more columns\n\n \n\nYou can arrange by ascending or descending order\n\n \n\nWhy use arrange()?\n\nVisual clarity when you look at data (see a variable ordered)\nHelpful in conjunction with other functions (like count())"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-sort-data-by-ascending-birth-year",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-sort-data-by-ascending-birth-year",
+    "title": "Data transformation: Rows",
+    "section": "Example: sort data by ascending birth year",
+    "text": "Example: sort data by ascending birth year\n\nBy default, arrage() sorts in ascending order:\n\n\nhrs_data |&gt; \n  arrange(\n    birthyr\n    )\n\n# A tibble: 2,728 × 31\n   hhid  pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 5593… 010      1922      12    -12070    97    12 High … Resp… No spo… Female\n 2 5593… 010      1922      12    -12314    95    12 High … Resp… No spo… Female\n 3 5547… 010      1922       4    -12284    97    12 High … Resp… No spo… Female\n 4 5547… 010      1926       5    -12284    95    12 High … Resp… No spo… Female\n 5 5595… 010      1927       9    -12070   100    14 Assoc… Resp… No spo… Female\n 6 5566… 010      1928       5    -10122    93    12 None   Resp… No spo… Male  \n 7 5595… 010      1928       9    -13653   100    14 Assoc… Resp… No spo… Female\n 8 5547… 010      1928       5    -13834   100    12 High … Resp… No spo… Female\n 9 5567… 010      1930      11    -10609    90    11 None   Resp… Marrie… Male  \n10 5527… 010      1931      12    -10122    91    14 Bache… Resp… No spo… Female\n# ℹ 2,718 more rows\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-sort-data-by-descending-birth-year",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-sort-data-by-descending-birth-year",
+    "title": "Data transformation: Rows",
+    "section": "Example: sort data by descending birth year",
+    "text": "Example: sort data by descending birth year\n\nhrs_data |&gt; \n  arrange(\n1    desc(birthyr)\n    )\n\n\n1\n\nWe wrap birthyr in desc() to sort by descending birth year.\n\n\n\n\n# A tibble: 2,728 × 31\n   hhid  pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 5533… 020      1990       7     10057    31    16 Assoc… Resp… Marrie… Female\n 2 5532… 020      1990       8      8962    34     4 None   Resp… Marrie… Female\n 3 5532… 020      1988       8      8474    40     3 None   Resp… Marrie… Female\n 4 5538… 020      1987       9      9115    36    NA &lt;NA&gt;   Resp… Marrie… Female\n 5 5516… 020      1987       7      9327    35    14 Bache… Resp… Marrie… Female\n 6 5579… 020      1986      12      9327    35    16 Maste… Resp… Marrie… Female\n 7 5579… 020      1986      12      9327    34    16 Maste… Resp… Marrie… Female\n 8 5538… 020      1986      11      9327    31    NA &lt;NA&gt;   Resp… Marrie… Female\n 9 5532… 020      1986       7      8962    31     5 None   Resp… Marrie… Female\n10 5532… 020      1985       7      8474    39     3 None   Resp… Marrie… Female\n# ℹ 2,718 more rows\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#sorting-datasets-by-multiple-variables",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#sorting-datasets-by-multiple-variables",
+    "title": "Data transformation: Rows",
+    "section": "Sorting datasets by multiple variables",
+    "text": "Sorting datasets by multiple variables\n\nYou can also arrange by multiple variables.\n\nThe code below sorts by age first, and then within age, we sort by pn.\n\n\n\nhrs_data |&gt; \n1  arrange(age, ed)\n\n\n1\n\nThis will sort by age first, and then within age, it will sort by ed.\n\n\n\n\n# A tibble: 2,728 × 31\n   hhid  pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 5532… 020      1986       7      8962    31     5 None   Resp… Marrie… Female\n 2 5516… 020      1984       6     11215    31    15 Bache… Resp… Marrie… Female\n 3 5533… 020      1990       7     10057    31    16 Assoc… Resp… Marrie… Female\n 4 5538… 020      1986      11      9327    31    NA &lt;NA&gt;   Resp… Marrie… Female\n 5 5532… 020      1990       8      8962    34     4 None   Resp… Marrie… Female\n 6 5579… 020      1986      12      9327    34    16 Maste… Resp… Marrie… Female\n 7 5538… 020      1984       9     10332    34    NA &lt;NA&gt;   Resp… Marrie… Female\n 8 5516… 020      1987       7      9327    35    14 Bache… Resp… Marrie… Female\n 9 5579… 020      1986      12      9327    35    16 Maste… Resp… Marrie… Female\n10 5579… 020      1985      12      9784    35    16 Maste… Resp… Marrie… Female\n# ℹ 2,718 more rows\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#sorting-datasets-by-multiple-variables-order-matters",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#sorting-datasets-by-multiple-variables-order-matters",
+    "title": "Data transformation: Rows",
+    "section": "Sorting datasets by multiple variables: order matters!",
+    "text": "Sorting datasets by multiple variables: order matters!\n\nhrs_data |&gt; \n1  arrange(ed, age)\n\n\n1\n\nThis will sort by ed first, and then within ed, it will sort by age. This is different from the previous code chunk where we sorted by age first, and then within age, we sorted by ed.\n\n\n\n\n# A tibble: 2,728 × 31\n   hhid  pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 5598… 020      1969       4      3392    51     0 None   Resp… Marrie… Male  \n 2 5598… 010      1964       7      1596    62     0 None   Resp… Marrie… Female\n 3 5528… 020      1961       9       561    62     0 None   Resp… Marrie… Male  \n 4 5550… 010      1958       6      -626    65     0 None   Resp… No spo… Male  \n 5 5548… 020      1956       7     -1234    66     0 None   Resp… Marrie… Female\n 6 5512… 010      1957       5      -930    66     0 None   Resp… No spo… Male  \n 7 5528… 020      1957       9     -1539    67     0 None   Resp… Marrie… Female\n 8 5528… 020      1953       9     -2330    69     0 None   Resp… Marrie… Female\n 9 5516… 010      1952       8     -2695    71     0 None   Resp… No spo… Male  \n10 5524… 010      1947      11     -4430    75     0 None   Resp… No spo… Female\n# ℹ 2,718 more rows\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#distinct-keeps-unique-rows",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#distinct-keeps-unique-rows",
+    "title": "Data transformation: Rows",
+    "section": "distinct() keeps unique rows",
+    "text": "distinct() keeps unique rows\n\ndistinct() allows us to keep only unique rows based on the values in one or more columns\ndistinct() can run without any arguments: it will return all unique rows in the dataset\n\nThis can be helpful if you have repeat observations in your dataset and you want to keep only one of each\n\ndistinct() can also take specific columns as arguments: it will return unique rows based on the values in those columns"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-keep-unique-rows-in-dataset",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-keep-unique-rows-in-dataset",
+    "title": "Data transformation: Rows",
+    "section": "Example: keep unique rows in dataset",
+    "text": "Example: keep unique rows in dataset\n\nhrs_data |&gt; \n  distinct()\n\n# A tibble: 2,660 × 31\n   hhid  pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 5590… 010      1967      12      2905    54    13 Assoc… Resp… No spo… Female\n 2 5548… 020      1956       7     -1234    66     0 None   Resp… Marrie… Female\n 3 5586… 010      1968       3      2996    54    NA &lt;NA&gt;   Resp… No spo… Female\n 4 5555… 010      1966       4      2296    57    NA &lt;NA&gt;   Resp… No spo… Female\n 5 5555… 020      1967       7      2752    55    10 None   Resp… Marrie… Female\n 6 5576… 010      1971       5      4152    51    NA &lt;NA&gt;   Resp… No spo… Female\n 7 5557… 020      1954       6     -1934    68    12 High … Resp… Marrie… Female\n 8 5521… 010      1965      10      2114    57    15 Assoc… Resp… Marrie… Male  \n 9 5504… 010      1969       3      3361    54    14 Bache… Resp… Marrie… Female\n10 5574… 010      1970       3      3698    53    16 Maste… Resp… Marrie… Female\n# ℹ 2,650 more rows\n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-keep-unique-rows-based-on-degree",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-keep-unique-rows-based-on-degree",
+    "title": "Data transformation: Rows",
+    "section": "Example: keep unique rows based on degree",
+    "text": "Example: keep unique rows based on degree\n\nhrs_data |&gt; \n1  distinct(degree)\n\n\n1\n\nThis will return unique rows based on the values in the degree column. The output will only include the degree column, and it will return one row for each unique value in the degree column.\n\n\n\n\n# A tibble: 8 × 1\n  degree                             \n  &lt;chr&gt;                              \n1 Associate's degree                 \n2 None                               \n3 &lt;NA&gt;                               \n4 High school diploma                \n5 Bachelor's degree                  \n6 Master's degree                    \n7 Professional degree (Ph.D./M.D./JD)\n8 GED"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-keep-unique-rows-based-on-degree-with-all-columns",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-keep-unique-rows-based-on-degree-with-all-columns",
+    "title": "Data transformation: Rows",
+    "section": "Example: keep unique rows based on degree with all columns",
+    "text": "Example: keep unique rows based on degree with all columns\n\nhrs_data |&gt; \n  distinct(\n    degree, \n1    .keep_all = TRUE\n    ) \n\n\n1\n\nIf we want to keep all columns in the output, we can use the argument .keep_all = TRUE. This will return all columns for the unique rows based on the specified column(s).\n\n\n\n\n# A tibble: 8 × 31\n  hhid   pn    birthyr birthmo birthdate   age    ed degree proxy coupled female\n  &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n1 559011 010      1967      12      2905    54    13 Assoc… Resp… No spo… Female\n2 554887 020      1956       7     -1234    66     0 None   Resp… Marrie… Female\n3 558666 010      1968       3      2996    54    NA &lt;NA&gt;   Resp… No spo… Female\n4 555780 020      1954       6     -1934    68    12 High … Resp… Marrie… Female\n5 550417 010      1969       3      3361    54    14 Bache… Resp… Marrie… Female\n6 557411 010      1970       3      3698    53    16 Maste… Resp… Marrie… Female\n7 551784 010      1969       4      3392    53    17 Profe… Resp… No spo… Female\n8 558936 010      1959       6      -200    63    11 GED    Resp… No spo… Male  \n# ℹ 20 more variables: age_months &lt;dbl&gt;, race_original &lt;chr&gt;, smokeever &lt;chr&gt;,\n#   smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;, heart_dis &lt;chr&gt;,\n#   strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;,\n#   cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-keep-unique-rows-based-on-degree-and-self_health",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#example-keep-unique-rows-based-on-degree-and-self_health",
+    "title": "Data transformation: Rows",
+    "section": "Example: keep unique rows based on degree and self_health",
+    "text": "Example: keep unique rows based on degree and self_health\n\nhrs_data |&gt; \n  distinct(\n1    degree,\n    self_health\n    )\n\n\n1\n\nThis will return unique rows based on the values in the degree and self_health columns. This allows us to see unique combinations of degree and self_health in our dataset.\n\n\n\n\n# A tibble: 42 × 2\n   degree                              self_health\n   &lt;chr&gt;                               &lt;chr&gt;      \n 1 Associate's degree                  Fair       \n 2 None                                Fair       \n 3 &lt;NA&gt;                                Good       \n 4 None                                Very Good  \n 5 &lt;NA&gt;                                Fair       \n 6 High school diploma                 Fair       \n 7 Associate's degree                  Very Good  \n 8 Bachelor's degree                   Fair       \n 9 Master's degree                     Poor       \n10 Professional degree (Ph.D./M.D./JD) Very Good  \n# ℹ 32 more rows"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#wrap-up",
+    "href": "lessons/21_Data_transformation_rows/18_Data_transformation_rows.html#wrap-up",
+    "title": "Data transformation: Rows",
+    "section": "Wrap-up",
+    "text": "Wrap-up\n\nWe learned three functions that allow us to transform rows in our dataset:\n\nfilter() (and filter_out())\n\nKeep rows based on conditions we specify in the columns\n\narrange()\n\nSort rows based on the values in one or more columns\n\ndistinct()\n\nKeep only unique rows based on the values in one or more columns"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html",
+    "title": "Data transformation: Columns",
+    "section": "",
+    "text": "There are many functions that can be used to transform columns\nWe can use columns to create new variables, subset features, and reorganize a dataset\nWe will cover the most column functions:\n\nmutate()\nselect()\nrename()\nrelocate()"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#data-transformations-on-columns",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#data-transformations-on-columns",
+    "title": "Data transformation: Columns",
+    "section": "",
+    "text": "There are many functions that can be used to transform columns\nWe can use columns to create new variables, subset features, and reorganize a dataset\nWe will cover the most column functions:\n\nmutate()\nselect()\nrename()\nrelocate()"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#mutate-transform-and-create-variables",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#mutate-transform-and-create-variables",
+    "title": "Data transformation: Columns",
+    "section": "mutate(): transform and create variables",
+    "text": "mutate(): transform and create variables\n\nmutate() allows us to transform existing columns and/or add new columns to the dataset\n\n \n\nThink of this like adding a formula in Excel to calculate the value of a new column based on previous columns\n\n \n\nmutate() is useful for:\n\nConverting the units of one column to new units (e.g., months to years)\nPerforming arithmetic using multiple columns\nChanging variable types or recoding categories"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#example-calculating-a-new-variable",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#example-calculating-a-new-variable",
+    "title": "Data transformation: Columns",
+    "section": "Example: calculating a new variable",
+    "text": "Example: calculating a new variable\n\nLet’s convert age_months into years by dividing it by 12\nWe will name this new variable age_yrs\n\n\nhrs_data |&gt; \n  mutate(\n1    age_yrs = age_months / 12\n  )\n\n\n1\n\nNotice we use a single = inside mutate, not == or &lt;-. This sets our new column name equal to the mathematical operation.\n\n\n\n\n# A tibble: 2,728 × 32\n   hhid  pn    birthyr birthmo birthdate    ed degree race_original female proxy\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;         &lt;chr&gt;  &lt;chr&gt;\n 1 5590… 010      1967      12      2905    13 Assoc… White/Caucas… Female Resp…\n 2 5548… 020      1956       7     -1234     0 None   &lt;NA&gt;          Female Resp…\n 3 5586… 010      1968       3      2996    NA &lt;NA&gt;   &lt;NA&gt;          Female Resp…\n 4 5555… 010      1966       4      2296    NA &lt;NA&gt;   &lt;NA&gt;          Female Resp…\n 5 5555… 020      1967       7      2752    10 None   Black/Africa… Female Resp…\n 6 5576… 010      1971       5      4152    NA &lt;NA&gt;   &lt;NA&gt;          Female Resp…\n 7 5557… 020      1954       6     -1934    12 High … Other         Female Resp…\n 8 5521… 010      1965      10      2114    15 Assoc… Other         Male   Resp…\n 9 5504… 010      1969       3      3361    14 Bache… White/Caucas… Female Resp…\n10 5574… 010      1970       3      3698    16 Maste… White/Caucas… Female Resp…\n# ℹ 2,718 more rows\n# ℹ 22 more variables: coupled &lt;chr&gt;, age_months &lt;dbl&gt;, age &lt;dbl&gt;,\n#   smokeever &lt;chr&gt;, smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;,\n#   self_health &lt;chr&gt;, high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;,\n#   heart_dis &lt;chr&gt;, strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;,\n#   arthritis &lt;chr&gt;, cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;,\n#   income &lt;dbl&gt;, age_yrs &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#example-calculating-multiple-columns-and-saving",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#example-calculating-multiple-columns-and-saving",
+    "title": "Data transformation: Columns",
+    "section": "Example: calculating multiple columns and saving",
+    "text": "Example: calculating multiple columns and saving\n\nWe can create multiple new columns within a single mutate() function by separating them with a comma\nLet’s save our work to a new object called hrs_data2 to avoid overwriting our original dataset\n\n\n1hrs_data2 &lt;- hrs_data |&gt;\n  mutate(\n2    age_yrs = age_months / 12,\n3    age_decades = age_yrs / 10\n  )\n\n\n1\n\nWe use the assignment operator &lt;- to save the output into a brand new data frame called hrs_data2.\n\n2\n\nFirst, we create the age_yrs column.\n\n3\n\nSecond, we create age_decades using the age_yrs variable we just defined in the step right above it!\n\n\n\n\n\nLet’s take a look at the new data frame hrs_data2 to see our new columns"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#subsetting-columns-using-select",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#subsetting-columns-using-select",
+    "title": "Data transformation: Columns",
+    "section": "Subsetting columns using select()",
+    "text": "Subsetting columns using select()\n\nThe select() function allows us to isolate specific variables or columns from our dataset\nWhy use select()?\n\nDrops unneeded information to maximize processing speed and visual clarity\nIsolates specific blocks of data for focused modeling or visualization"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#example-selecting-specific-columns",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#example-selecting-specific-columns",
+    "title": "Data transformation: Columns",
+    "section": "Example: selecting specific columns",
+    "text": "Example: selecting specific columns\n\nLet’s keep only three variables from our dataset: age, smoke2now, and diab\n\nColumn names do NOT need quotes in select()\n\n\n\nhrs_data2 |&gt; \n  select(\n1    age, smoke2now, diab\n  )\n\n\n1\n\nWe provide the exact column names we want to keep, separated by commas. All other columns will be dropped from the output.\n\n\n\n\n# A tibble: 2,728 × 3\n     age smoke2now diab \n   &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;\n 1    54 Yes       No   \n 2    66 No        No   \n 3    54 No        No   \n 4    57 No        No   \n 5    55 Yes       No   \n 6    51 Yes       No   \n 7    68 Yes       No   \n 8    57 Yes       No   \n 9    54 Yes       No   \n10    53 No        Yes  \n# ℹ 2,718 more rows"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#example-removing-specific-columns",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#example-removing-specific-columns",
+    "title": "Data transformation: Columns",
+    "section": "Example: removing specific columns",
+    "text": "Example: removing specific columns\n\nIf we want to keep everything except a few specified variables, we use a minus sign (-)\n\n\nhrs_data2 |&gt; \n  select(\n1    -drink, -lung_dis\n  )\n\n\n1\n\nPlacing - in front of drink and lung_dis explicitly drops them, while retaining every other original variable.\n\n\n\n\n# A tibble: 2,728 × 31\n   hhid  pn    birthyr birthmo birthdate    ed degree race_original female proxy\n   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;         &lt;chr&gt;  &lt;chr&gt;\n 1 5590… 010      1967      12      2905    13 Assoc… White/Caucas… Female Resp…\n 2 5548… 020      1956       7     -1234     0 None   &lt;NA&gt;          Female Resp…\n 3 5586… 010      1968       3      2996    NA &lt;NA&gt;   &lt;NA&gt;          Female Resp…\n 4 5555… 010      1966       4      2296    NA &lt;NA&gt;   &lt;NA&gt;          Female Resp…\n 5 5555… 020      1967       7      2752    10 None   Black/Africa… Female Resp…\n 6 5576… 010      1971       5      4152    NA &lt;NA&gt;   &lt;NA&gt;          Female Resp…\n 7 5557… 020      1954       6     -1934    12 High … Other         Female Resp…\n 8 5521… 010      1965      10      2114    15 Assoc… Other         Male   Resp…\n 9 5504… 010      1969       3      3361    14 Bache… White/Caucas… Female Resp…\n10 5574… 010      1970       3      3698    16 Maste… White/Caucas… Female Resp…\n# ℹ 2,718 more rows\n# ℹ 21 more variables: coupled &lt;chr&gt;, age_months &lt;dbl&gt;, age &lt;dbl&gt;,\n#   smokeever &lt;chr&gt;, smoke2now &lt;chr&gt;, weight &lt;dbl&gt;, self_health &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, heart_dis &lt;chr&gt;, strk &lt;chr&gt;,\n#   psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;, arthritis &lt;chr&gt;, cond_count &lt;dbl&gt;,\n#   r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;, income &lt;dbl&gt;, age_yrs &lt;dbl&gt;,\n#   age_decades &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#example-selecting-consecutive-columns",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#example-selecting-consecutive-columns",
+    "title": "Data transformation: Columns",
+    "section": "Example: selecting consecutive columns",
+    "text": "Example: selecting consecutive columns\n\nWe can select a continuous block of columns using the : operator\n\n\nhrs_data2 |&gt; \n  select(\n1    age:drink\n  )\n\n\n1\n\nThis keeps age, drink, and every single column positioned between them in the data frame. Make sure you know your column order before using this!\n\n\n\n\n# A tibble: 2,728 × 4\n     age smokeever smoke2now drink\n   &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;\n 1    54 No        Yes       Yes  \n 2    66 No        No        No   \n 3    54 No        No        No   \n 4    57 No        No        Yes  \n 5    55 Yes       Yes       Yes  \n 6    51 Yes       Yes       Yes  \n 7    68 No        Yes       Yes  \n 8    57 No        Yes       Yes  \n 9    54 Yes       Yes       Yes  \n10    53 Yes       No        Yes  \n# ℹ 2,718 more rows"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#distinguishing-filter-vs-select",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#distinguishing-filter-vs-select",
+    "title": "Data transformation: Columns",
+    "section": "Distinguishing filter() vs select()",
+    "text": "Distinguishing filter() vs select()"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#renaming-with-rename",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#renaming-with-rename",
+    "title": "Data transformation: Columns",
+    "section": "Renaming with rename()",
+    "text": "Renaming with rename()\n\nYou can rename columns with select() but it’s a bit easier to do this with the rename() function.\nYou just need to remember new_name = old_name ordering.\n\n\nhrs_data3 &lt;- hrs_data2 |&gt; \n  rename(\n    id = hhid,\n    race = race_original,\n    sex_bin = female\n    )"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#reordering-columns-using-relocate",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#reordering-columns-using-relocate",
+    "title": "Data transformation: Columns",
+    "section": "Reordering columns using relocate()",
+    "text": "Reordering columns using relocate()\n\nrelocate() moves columns to a different horizontal position in your dataset\nBy default, variables sent into relocate() move directly to the very front of the dataset\n\n\n1hrs_data3 |&gt; relocate(lung_dis, arthritis)\n2hrs_data3 |&gt; relocate(lung_dis, .after = birthdate)\n3hrs_data3 |&gt; relocate(lung_dis, .before = race)\n\n\n1\n\nMoves lung_dis and arthritis to the very front of the dataset, before all other columns.\n\n2\n\nMoves income to place it directly behind the record column.\n\n3\n\nMoves income to place it right before the age column.\n\n\n\n\n\nLet’s take a look at the output!"
+  },
+  {
+    "objectID": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#wrap-up",
+    "href": "lessons/22_Data_transformation_columns/19_Data_transformation_columns.html#wrap-up",
+    "title": "Data transformation: Columns",
+    "section": "Wrap-up",
+    "text": "Wrap-up\n\nWe learned three functions that allow us to transform columns in our dataset:\n\nmutate()\n\nTransform existing columns and/or create new columns\n\nselect()\n\nSubset specific columns to keep or drop\n\nrename()\n\nRename columns with new names\n\nrelocate()\n\nReorder columns to a different spot in the dataset"
+  },
+  {
+    "objectID": "lessons/05_Comments/05_Comments.html",
+    "href": "lessons/05_Comments/05_Comments.html",
+    "title": "Comments",
+    "section": "",
+    "text": "R will ignore any text after # for that line.\nThis allows you to write comments, text that is ignored by R but read by other humans.\nWe’ll sometimes include comments in examples explaining why we are running code\n\n\n# This is a comment\n\n## This is also a comment\n\n########## This is a comment that can help me section off code ##########\n\nThis is not a comment # but this part is a comment"
+  },
+  {
+    "objectID": "lessons/05_Comments/05_Comments.html#comments",
+    "href": "lessons/05_Comments/05_Comments.html#comments",
+    "title": "Comments",
+    "section": "",
+    "text": "R will ignore any text after # for that line.\nThis allows you to write comments, text that is ignored by R but read by other humans.\nWe’ll sometimes include comments in examples explaining why we are running code\n\n\n# This is a comment\n\n## This is also a comment\n\n########## This is a comment that can help me section off code ##########\n\nThis is not a comment # but this part is a comment"
+  },
+  {
+    "objectID": "lessons/05_Comments/05_Comments.html#describing-your-process-with-comments",
+    "href": "lessons/05_Comments/05_Comments.html#describing-your-process-with-comments",
+    "title": "Comments",
+    "section": "Describing your process with comments",
+    "text": "Describing your process with comments\nComments can be helpful for briefly describing what the following code does.\n\n# Subtract 1 from 10, then divide by 2\n(10 - 1) / 2\n\n[1] 4.5\n\n# Take the sine of 3\nsin(3)\n\n[1] 0.14112\n\n\n\nComment on every line is not necessary\nAs code gets more complex, comments can help you figure out your process"
+  },
+  {
+    "objectID": "lessons/05_Comments/05_Comments.html#better-use-of-comments",
+    "href": "lessons/05_Comments/05_Comments.html#better-use-of-comments",
+    "title": "Comments",
+    "section": "Better use of comments",
+    "text": "Better use of comments\n\nUse comments to explain the why of your code\n\n \n\nThink of it as note-taking for your future self and others who might read your code\n\nIn theory, we should be able to figure out what we were doing\nSo we want to leave ourselves notes about why we were doing it, and any important details that might not be obvious from the code itself\n\n\n \n\nFor example:\n\n\n# Calculate average age of 3 people\n(29 + 42 + 68) / 3\n\n[1] 46.33333"
+  },
+  {
+    "objectID": "lessons/08_Objects/07_Objects.html",
+    "href": "lessons/08_Objects/07_Objects.html",
+    "title": "Objects",
+    "section": "",
+    "text": "R objects are stored “things” in R\nR objects can be data, numbers, text, model output, etc.\nR objects are created with assignments that can be used in later commands"
+  },
+  {
+    "objectID": "lessons/08_Objects/07_Objects.html#what-are-r-objects",
+    "href": "lessons/08_Objects/07_Objects.html#what-are-r-objects",
+    "title": "Objects",
+    "section": "",
+    "text": "R objects are stored “things” in R\nR objects can be data, numbers, text, model output, etc.\nR objects are created with assignments that can be used in later commands"
+  },
+  {
+    "objectID": "lessons/08_Objects/07_Objects.html#how-can-we-create-an-object",
+    "href": "lessons/08_Objects/07_Objects.html#how-can-we-create-an-object",
+    "title": "Objects",
+    "section": "How can we create an object?",
+    "text": "How can we create an object?\nHere is the generic way we assign something like a value to an object_name:\n \n\nobject_name &lt;- value\n\n \n\nReads as “object name gets value” or “value is assigned to object name”"
+  },
+  {
+    "objectID": "lessons/08_Objects/07_Objects.html#a-note-on-the-assignment-operator",
+    "href": "lessons/08_Objects/07_Objects.html#a-note-on-the-assignment-operator",
+    "title": "Objects",
+    "section": "A note on the assignment operator",
+    "text": "A note on the assignment operator\n\nCan assign a variable using either = or &lt;-\n\nUsing &lt;- is preferable for certain occasions\nI usually just use = because less typing hehe\n\n\n\nx = 5\nx\n\n[1] 5\n\nx &lt;- 5\nx\n\n[1] 5"
+  },
+  {
+    "objectID": "lessons/08_Objects/07_Objects.html#objects-can-include-text-characters",
+    "href": "lessons/08_Objects/07_Objects.html#objects-can-include-text-characters",
+    "title": "Objects",
+    "section": "Objects can include text (characters)",
+    "text": "Objects can include text (characters)\n\nhi &lt;- \"hello\"\nhi\n\n[1] \"hello\"\n\ngreetings &lt;- c(\"Guten Tag\", \"Hola\", hi)\ngreetings\n\n[1] \"Guten Tag\" \"Hola\"      \"hello\""
+  },
+  {
+    "objectID": "lessons/08_Objects/07_Objects.html#types-of-objects",
+    "href": "lessons/08_Objects/07_Objects.html#types-of-objects",
+    "title": "Objects",
+    "section": "Types of objects",
+    "text": "Types of objects"
+  },
+  {
+    "objectID": "lessons/08_Objects/07_Objects.html#types-of-objects-1",
+    "href": "lessons/08_Objects/07_Objects.html#types-of-objects-1",
+    "title": "Objects",
+    "section": "Types of objects",
+    "text": "Types of objects\n\n\n\n\n\n\n\n\nClass\nWhat is it?\nExamples\n\n\n\n\nCharacter\nThese are text or words that are in quotations. Math cannot be done on these.\n“My example character”\n\n\nInteger\nWhole numbers\n-5, 14, or 2000\n\n\nNumeric\nNumbers that can include decimals\n-5.3, 14.5, or 2000.0001\n\n\nFactor\n\n\n\n\nDate\nCharacter that represents a date\n\"12-13-2005\"\n\n\nLogical\nValues that take TRUE or FALSE\nTRUE or FALSE\n\n\nVector\n\n\n\n\nMatrix\n\n\n\n\ndata.frame\n\n\n\n\nlist"
+  },
+  {
+    "objectID": "lessons/08_Objects/07_Objects.html#section",
+    "href": "lessons/08_Objects/07_Objects.html#section",
+    "title": "Objects",
+    "section": "",
+    "text": "You can combine multiple elements into a vector with c():\n\nprimes &lt;- c(2, 3, 5, 7, 11, 13)\n\nAnd basic arithmetic on vectors is applied to every element of the vector:\n\nprimes * 2\n\n[1]  4  6 10 14 22 26\n\nprimes - 1\n\n[1]  1  2  4  6 10 12"
+  },
+  {
+    "objectID": "lessons/10_Packages/09_Packages.html",
+    "href": "lessons/10_Packages/09_Packages.html",
+    "title": "Packages",
+    "section": "",
+    "text": "A good analogy for R packages is that they are like apps you can download onto a mobile phone:\n\n\n\nModernDive Figure 1.4\n\n\n\nPackages contain additional functions and data that are not built into R"
+  },
+  {
+    "objectID": "lessons/10_Packages/09_Packages.html#what-are-r-packages",
+    "href": "lessons/10_Packages/09_Packages.html#what-are-r-packages",
+    "title": "Packages",
+    "section": "",
+    "text": "A good analogy for R packages is that they are like apps you can download onto a mobile phone:\n\n\n\nModernDive Figure 1.4\n\n\n\nPackages contain additional functions and data that are not built into R"
+  },
+  {
+    "objectID": "lessons/10_Packages/09_Packages.html#installing-packages",
+    "href": "lessons/10_Packages/09_Packages.html#installing-packages",
+    "title": "Packages",
+    "section": "Installing packages",
+    "text": "Installing packages\nTwo options to install packages:\n\n\n\nPreferred way: install.packages() with the package name in quotes\n\n\ninstall.packages(\"janitor\")   \n\n\n\nThe “Packages” tab in Viewer pane\n\n\n\n\n\n\n\n\n\nOnly install packages once (unless you want to update them)\nInstalled from Comprehensive R Archive Network (CRAN) = package mothership"
+  },
+  {
+    "objectID": "lessons/10_Packages/09_Packages.html#load-packages-with-library-command",
+    "href": "lessons/10_Packages/09_Packages.html#load-packages-with-library-command",
+    "title": "Packages",
+    "section": "Load packages with library() command",
+    "text": "Load packages with library() command\n\nUse the library() command to load each required package\nPackages need to be reloaded every time you open Rstudio.\nTip: at the top of your files, have a segment of code dedicated to loading packages\n\nThis way, you can easily see and load packages required for your code\n\n\n \n\nFor example, to load a package called dplyr, you would run the code below:\n\nlibrary(dplyr)"
+  },
+  {
+    "objectID": "lessons/10_Packages/09_Packages.html#another-way-to-load-and-install-packages-pacman",
+    "href": "lessons/10_Packages/09_Packages.html#another-way-to-load-and-install-packages-pacman",
+    "title": "Packages",
+    "section": "Another way to load (and install) packages: pacman",
+    "text": "Another way to load (and install) packages: pacman\n\nThe pacman package has a function called p_load()\n\nCan be used to both install and load packages in one step\nInstalls the package if necessary\n\nBest when you are loading many packages at once\nFor example, to load a package called dplyr using pacman, you would run the code below:\n\npacman::p_load(dplyr) \n\nNote that I am using pacman::p_load()\n\nThis is another way to access a package’s function without loading the whole package\nI am accessing p_load() from the pacman package"
+  },
+  {
+    "objectID": "lessons/10_Packages/09_Packages.html#packages-used-in-this-class",
+    "href": "lessons/10_Packages/09_Packages.html#packages-used-in-this-class",
+    "title": "Packages",
+    "section": "Packages used in this class",
+    "text": "Packages used in this class\n\n\n\ntidyverse\n\nWe install and load tidyverse\nIt is a collection of many packages\nCore tidyverse: most commonly used {tidyverse} packages\n\nComplete list of core {tidyverse} packages\n\nAdditional tidyverse packages\n\nThe additional packages are installed when the {tidyverse} package is installed, but they are not loaded when the {tidyverse} package is loaded.\nThey need to be loaded individually to use.\n\n\n\n\n\n\n\nFor loading datasets:\n\nreadr\nreadxl\nhaven\n\nFor summarizing and visualizing data:\n\n{janitor}\n{gt}\n{rstatix}\n{gtsummary}\n{naniar}\n{ggplot2}\n\nfor wrangling data\n\n{dplyr}, {tidyr}"
+  },
+  {
+    "objectID": "lessons/10_Packages/09_Packages.html#tidyverse",
+    "href": "lessons/10_Packages/09_Packages.html#tidyverse",
+    "title": "Packages",
+    "section": "Tidyverse",
+    "text": "Tidyverse\n\n\n\nImage made by Silvia Canelón"
+  },
+  {
+    "objectID": "lessons/10_Packages/09_Packages.html#install-and-load-packages-option-1",
+    "href": "lessons/10_Packages/09_Packages.html#install-and-load-packages-option-1",
+    "title": "Packages",
+    "section": "Install and load packages: Option 1",
+    "text": "Install and load packages: Option 1\n\n\nRun the code below to install packages:\n\ninstall.packages(\"here\")\n1install.packages(\"tidyverse\")\ninstall.packages(\"writexl\")\ninstall.packages(\"rstatix\") \ninstall.packages(\"janitor\")\ninstall.packages(\"naniar\")\ninstall.packages(\"gt\")\ninstall.packages(\"gtsummary\")\n\n\n1\n\nThis will take a while to install\n\n\n\n\n\nLoad packages with library() command:\n\nlibrary(here)\nlibrary(tidyverse)\nlibrary(writexl)\nlibrary(rstatix)\n\n\nAttaching package: 'rstatix'\n\n\nThe following object is masked from 'package:janitor':\n\n    make_clean_names\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\nlibrary(janitor)\nlibrary(naniar)\nlibrary(gt)\nlibrary(gtsummary)\nlibrary(readxl)"
+  },
+  {
+    "objectID": "lessons/10_Packages/09_Packages.html#install-and-load-packages-option-2",
+    "href": "lessons/10_Packages/09_Packages.html#install-and-load-packages-option-2",
+    "title": "Packages",
+    "section": "Install and load packages: Option 2",
+    "text": "Install and load packages: Option 2\n\npacman::p_load(\n  here, \n  tidyverse, \n  writexl, \n  rstatix, \n  janitor, \n  naniar,\n  gt,\n  gtsummary,\n  readxl\n)"
+  },
+  {
+    "objectID": "lessons/10_Packages/09_Packages.html#references",
+    "href": "lessons/10_Packages/09_Packages.html#references",
+    "title": "Packages",
+    "section": "References",
+    "text": "References\n\nDanielle Navarro’s YouTube video on Installing and loading R packages: https://www.youtube.com/watch?v=kpHZVyDvEhQ\n\nIf you want to get more information on packages"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html",
+    "href": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html",
+    "title": "Data transformation: Rows, Advanced",
+    "section": "",
+    "text": "We can chain multiple criteria using the & (AND) or | (OR) operators.\n\nBut we need to review a little logic before we do this.\n\nIf we wanted to return participants who identified as\n\nFemale and are in 10th grade,\nwe would use an & to chain these criteria together:\n\n\nsex == \"Female\" & grade == \"10th\"\n\nNote that SPELLING AND CASE MATTER!\n\nYou must write the name of the column exactly and\nalso the value (i.e. “Female” not “female”) exactly.\n\n\n\n\n\n\nhrs_data |&gt;\n  filter(diab == \"Yes\" & \n           degree == \"Master's degree\")\n\n# A tibble: 81 × 31\n   hhid   pn    birthyr birthmo birthdate    ed degree      proxy coupled female\n   &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 557411 010      1970       3      3698    16 Master's d… Resp… Marrie… Female\n 2 555572 020      1966       9      2449    17 Master's d… Resp… Marrie… Female\n 3 555658 010      1953       3     -2511    16 Master's d… Resp… Marrie… Female\n 4 552554 020      1974       5      5187    16 Master's d… Resp… Marrie… Female\n 5 557791 010      1971       1      4032    16 Master's d… Resp… No spo… Female\n 6 550718 010      1951       1     -3214    17 Master's d… Resp… Marrie… Male  \n 7 559963 010      1969       3      3361    16 Master's d… Resp… No spo… Male  \n 8 550401 010      1969      12      3636    16 Master's d… Resp… Marrie… Male  \n 9 551771 010      1958       9      -443    16 Master's d… Resp… Marrie… Female\n10 551334 010      1959      10       -47    16 Master's d… Resp… Marrie… Female\n# ℹ 71 more rows\n# ℹ 21 more variables: age_months &lt;dbl&gt;, age &lt;dbl&gt;, race_original &lt;chr&gt;,\n#   smokeever &lt;chr&gt;, smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;,\n#   self_health &lt;chr&gt;, high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;,\n#   heart_dis &lt;chr&gt;, strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;,\n#   arthritis &lt;chr&gt;, cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;,\n#   income &lt;dbl&gt;\n\n\n\nNote that we could also use the comma in this case:\n\n\nhrs_data |&gt;\n  filter(diab == \"Yes\",    # &lt;1&gt; Comma is equivalent to \"&\" within filter()\n         degree == \"Master's degree\")\n\n# A tibble: 81 × 31\n   hhid   pn    birthyr birthmo birthdate    ed degree      proxy coupled female\n   &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 557411 010      1970       3      3698    16 Master's d… Resp… Marrie… Female\n 2 555572 020      1966       9      2449    17 Master's d… Resp… Marrie… Female\n 3 555658 010      1953       3     -2511    16 Master's d… Resp… Marrie… Female\n 4 552554 020      1974       5      5187    16 Master's d… Resp… Marrie… Female\n 5 557791 010      1971       1      4032    16 Master's d… Resp… No spo… Female\n 6 550718 010      1951       1     -3214    17 Master's d… Resp… Marrie… Male  \n 7 559963 010      1969       3      3361    16 Master's d… Resp… No spo… Male  \n 8 550401 010      1969      12      3636    16 Master's d… Resp… Marrie… Male  \n 9 551771 010      1958       9      -443    16 Master's d… Resp… Marrie… Female\n10 551334 010      1959      10       -47    16 Master's d… Resp… Marrie… Female\n# ℹ 71 more rows\n# ℹ 21 more variables: age_months &lt;dbl&gt;, age &lt;dbl&gt;, race_original &lt;chr&gt;,\n#   smokeever &lt;chr&gt;, smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;,\n#   self_health &lt;chr&gt;, high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;,\n#   heart_dis &lt;chr&gt;, strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;,\n#   arthritis &lt;chr&gt;, cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;,\n#   income &lt;dbl&gt;\n\n\n\n\n\nIf we wanted patients who were\nFemale or in 10th grade\nwe would use a | to chain these criteria together.\n\nhrs_data |&gt;\n  filter(diab == \"Yes\" |\n           degree == \"Master's degree\")\n\n# A tibble: 1,133 × 31\n   hhid   pn    birthyr birthmo birthdate    ed degree      proxy coupled female\n   &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 557411 010      1970       3      3698    16 Master's d… Resp… Marrie… Female\n 2 551228 010      1966      10      2479    12 None        Resp… No spo… Male  \n 3 557020 020      1969       2      3302    16 Master's d… Resp… Marrie… Male  \n 4 553327 010      1970      12      4001    12 High schoo… Resp… No spo… Female\n 5 550524 010      1952      12     -2573    16 Master's d… Resp… No spo… Male  \n 6 557080 010      1966      11      2510    NA &lt;NA&gt;        Resp… No spo… Female\n 7 559263 010      1941       3     -6652     8 None        Resp… Marrie… Female\n 8 556907 010      1948       8     -4522    16 Profession… Resp… Marrie… Male  \n 9 550299 020      1973       1      4822    NA &lt;NA&gt;        Resp… Marrie… Female\n10 552423 020      1966       3      2265    13 Associate'… Resp… Marrie… Female\n# ℹ 1,123 more rows\n# ℹ 21 more variables: age_months &lt;dbl&gt;, age &lt;dbl&gt;, race_original &lt;chr&gt;,\n#   smokeever &lt;chr&gt;, smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;,\n#   self_health &lt;chr&gt;, high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;,\n#   heart_dis &lt;chr&gt;, strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;,\n#   arthritis &lt;chr&gt;, cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;,\n#   income &lt;dbl&gt;\n\n\n\n\n\n\n\n\nWarningThink about it:\n\n\n\nWhich of the AND vs. OR code blocks will return a larger number of participants?\n\n\n\n\n\n\nSee this slide from a previous BERD workshop.\nAlso read the filter section in the “Data Transformation” chapter from R for Data Science (2e).\n\n\n\n\nClick here for a useful reference for all the different operators (both logical and comparison) that you can use.\n\n\n\n\nUsing %in%"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#filtering-requires-a-little-logic",
+    "href": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#filtering-requires-a-little-logic",
+    "title": "Data transformation: Rows, Advanced",
+    "section": "",
+    "text": "We can chain multiple criteria using the & (AND) or | (OR) operators.\n\nBut we need to review a little logic before we do this.\n\nIf we wanted to return participants who identified as\n\nFemale and are in 10th grade,\nwe would use an & to chain these criteria together:\n\n\nsex == \"Female\" & grade == \"10th\"\n\nNote that SPELLING AND CASE MATTER!\n\nYou must write the name of the column exactly and\nalso the value (i.e. “Female” not “female”) exactly."
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#filtering-with-and-criteria",
+    "href": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#filtering-with-and-criteria",
+    "title": "Data transformation: Rows, Advanced",
+    "section": "",
+    "text": "hrs_data |&gt;\n  filter(diab == \"Yes\" & \n           degree == \"Master's degree\")\n\n# A tibble: 81 × 31\n   hhid   pn    birthyr birthmo birthdate    ed degree      proxy coupled female\n   &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 557411 010      1970       3      3698    16 Master's d… Resp… Marrie… Female\n 2 555572 020      1966       9      2449    17 Master's d… Resp… Marrie… Female\n 3 555658 010      1953       3     -2511    16 Master's d… Resp… Marrie… Female\n 4 552554 020      1974       5      5187    16 Master's d… Resp… Marrie… Female\n 5 557791 010      1971       1      4032    16 Master's d… Resp… No spo… Female\n 6 550718 010      1951       1     -3214    17 Master's d… Resp… Marrie… Male  \n 7 559963 010      1969       3      3361    16 Master's d… Resp… No spo… Male  \n 8 550401 010      1969      12      3636    16 Master's d… Resp… Marrie… Male  \n 9 551771 010      1958       9      -443    16 Master's d… Resp… Marrie… Female\n10 551334 010      1959      10       -47    16 Master's d… Resp… Marrie… Female\n# ℹ 71 more rows\n# ℹ 21 more variables: age_months &lt;dbl&gt;, age &lt;dbl&gt;, race_original &lt;chr&gt;,\n#   smokeever &lt;chr&gt;, smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;,\n#   self_health &lt;chr&gt;, high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;,\n#   heart_dis &lt;chr&gt;, strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;,\n#   arthritis &lt;chr&gt;, cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;,\n#   income &lt;dbl&gt;\n\n\n\nNote that we could also use the comma in this case:\n\n\nhrs_data |&gt;\n  filter(diab == \"Yes\",    # &lt;1&gt; Comma is equivalent to \"&\" within filter()\n         degree == \"Master's degree\")\n\n# A tibble: 81 × 31\n   hhid   pn    birthyr birthmo birthdate    ed degree      proxy coupled female\n   &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 557411 010      1970       3      3698    16 Master's d… Resp… Marrie… Female\n 2 555572 020      1966       9      2449    17 Master's d… Resp… Marrie… Female\n 3 555658 010      1953       3     -2511    16 Master's d… Resp… Marrie… Female\n 4 552554 020      1974       5      5187    16 Master's d… Resp… Marrie… Female\n 5 557791 010      1971       1      4032    16 Master's d… Resp… No spo… Female\n 6 550718 010      1951       1     -3214    17 Master's d… Resp… Marrie… Male  \n 7 559963 010      1969       3      3361    16 Master's d… Resp… No spo… Male  \n 8 550401 010      1969      12      3636    16 Master's d… Resp… Marrie… Male  \n 9 551771 010      1958       9      -443    16 Master's d… Resp… Marrie… Female\n10 551334 010      1959      10       -47    16 Master's d… Resp… Marrie… Female\n# ℹ 71 more rows\n# ℹ 21 more variables: age_months &lt;dbl&gt;, age &lt;dbl&gt;, race_original &lt;chr&gt;,\n#   smokeever &lt;chr&gt;, smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;,\n#   self_health &lt;chr&gt;, high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;,\n#   heart_dis &lt;chr&gt;, strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;,\n#   arthritis &lt;chr&gt;, cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;,\n#   income &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#filtering-with-or-criteria",
+    "href": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#filtering-with-or-criteria",
+    "title": "Data transformation: Rows, Advanced",
+    "section": "",
+    "text": "If we wanted patients who were\nFemale or in 10th grade\nwe would use a | to chain these criteria together.\n\nhrs_data |&gt;\n  filter(diab == \"Yes\" |\n           degree == \"Master's degree\")\n\n# A tibble: 1,133 × 31\n   hhid   pn    birthyr birthmo birthdate    ed degree      proxy coupled female\n   &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; \n 1 557411 010      1970       3      3698    16 Master's d… Resp… Marrie… Female\n 2 551228 010      1966      10      2479    12 None        Resp… No spo… Male  \n 3 557020 020      1969       2      3302    16 Master's d… Resp… Marrie… Male  \n 4 553327 010      1970      12      4001    12 High schoo… Resp… No spo… Female\n 5 550524 010      1952      12     -2573    16 Master's d… Resp… No spo… Male  \n 6 557080 010      1966      11      2510    NA &lt;NA&gt;        Resp… No spo… Female\n 7 559263 010      1941       3     -6652     8 None        Resp… Marrie… Female\n 8 556907 010      1948       8     -4522    16 Profession… Resp… Marrie… Male  \n 9 550299 020      1973       1      4822    NA &lt;NA&gt;        Resp… Marrie… Female\n10 552423 020      1966       3      2265    13 Associate'… Resp… Marrie… Female\n# ℹ 1,123 more rows\n# ℹ 21 more variables: age_months &lt;dbl&gt;, age &lt;dbl&gt;, race_original &lt;chr&gt;,\n#   smokeever &lt;chr&gt;, smoke2now &lt;chr&gt;, drink &lt;chr&gt;, weight &lt;dbl&gt;,\n#   self_health &lt;chr&gt;, high_bp &lt;chr&gt;, diab &lt;chr&gt;, cancer &lt;chr&gt;, lung_dis &lt;chr&gt;,\n#   heart_dis &lt;chr&gt;, strk &lt;chr&gt;, psych_prob &lt;chr&gt;, sleep_prob &lt;chr&gt;,\n#   arthritis &lt;chr&gt;, cond_count &lt;dbl&gt;, r16hosp &lt;dbl&gt;, r16cesd &lt;dbl&gt;,\n#   income &lt;dbl&gt;\n\n\n\n\n\n\n\n\nWarningThink about it:\n\n\n\nWhich of the AND vs. OR code blocks will return a larger number of participants?"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#more-filter-examples",
+    "href": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#more-filter-examples",
+    "title": "Data transformation: Rows, Advanced",
+    "section": "",
+    "text": "See this slide from a previous BERD workshop.\nAlso read the filter section in the “Data Transformation” chapter from R for Data Science (2e).\n\n\n\n\nClick here for a useful reference for all the different operators (both logical and comparison) that you can use."
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#section-1",
+    "href": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#section-1",
+    "title": "Data transformation: Rows, Advanced",
+    "section": "",
+    "text": "Using %in%"
+  },
+  {
+    "objectID": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#arrange-after-count-ing-categorical-data",
+    "href": "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.html#arrange-after-count-ing-categorical-data",
+    "title": "Data transformation: Rows, Advanced",
+    "section": "arrange() after count()-ing categorical data",
+    "text": "arrange() after count()-ing categorical data\n\nAnother example of when arrange() is useful\n\n\n\n\nWe can also use count() to count all of the unique values for a categorical variable.\nThis will also show NA category, which is the special missing variable type:\n\n\nhrs_data |&gt;\n  count(age)\n\n# A tibble: 65 × 2\n     age     n\n   &lt;dbl&gt; &lt;int&gt;\n 1    31     4\n 2    34     3\n 3    35     5\n 4    36     2\n 5    37     2\n 6    38     2\n 7    39     3\n 8    40     4\n 9    41    10\n10    42    12\n# ℹ 55 more rows\n\n\n\n\n\n\nSometimes it helps to arrange by that category if you have many categories to view.\nThis can also alert us if there are categorical coding mistakes (such as misspellings) in our data.\n\n\nhrs_data |&gt;\n  count(age) |&gt;\n  arrange(n)\n\n# A tibble: 65 × 2\n     age     n\n   &lt;dbl&gt; &lt;int&gt;\n 1    86     1\n 2    92     1\n 3    36     2\n 4    37     2\n 5    38     2\n 6    85     2\n 7    89     2\n 8    90     2\n 9    93     2\n10    94     2\n# ℹ 55 more rows"
+  },
+  {
+    "objectID": "lessons/24_Data_transformation_groups/20_Data_transformation_groups.html",
+    "href": "lessons/24_Data_transformation_groups/20_Data_transformation_groups.html",
+    "title": "Data transformation: Basics",
+    "section": "",
+    "text": "# library(readxl)\n# note we are saving the data from the Excel file in our environment \n# with the object name hrs_data\nhrs_data &lt;- read_excel(here(\"./data/hrs_data_narch.xlsx\"))\n\nnames(hrs_data)\n\n [1] \"hhid\"          \"pn\"            \"subhh\"         \"BIRTHMO\"      \n [5] \"BIRTHYR\"       \"proxy\"         \"coupled\"       \"female\"       \n [9] \"age\"           \"ed\"            \"degree\"        \"race_original\"\n[13] \"black\"         \"hispanic\"      \"mexican\"       \"smoke3now\"    \n[17] \"income\"        \"weight\"        \"height\"        \"bmi\"          \n[21] \"strk\"          \"strk_dr\"       \"diab\"          \"diab_medorl\"  \n[25] \"diab_medins\"   \"lung\"          \"doctor\"       \n\n# Clean up the variable names for ease of use (makes everything lower case here)\nhrs_data &lt;- clean_names(hrs_data) # need the janitor package loaded to use this\nnames(hrs_data)\n\n [1] \"hhid\"          \"pn\"            \"subhh\"         \"birthmo\"      \n [5] \"birthyr\"       \"proxy\"         \"coupled\"       \"female\"       \n [9] \"age\"           \"ed\"            \"degree\"        \"race_original\"\n[13] \"black\"         \"hispanic\"      \"mexican\"       \"smoke3now\"    \n[17] \"income\"        \"weight\"        \"height\"        \"bmi\"          \n[21] \"strk\"          \"strk_dr\"       \"diab\"          \"diab_medorl\"  \n[25] \"diab_medins\"   \"lung\"          \"doctor\""
+  },
+  {
+    "objectID": "lessons/24_Data_transformation_groups/20_Data_transformation_groups.html#dplyr-basics",
+    "href": "lessons/24_Data_transformation_groups/20_Data_transformation_groups.html#dplyr-basics",
+    "title": "Data transformation: Basics",
+    "section": "dplyr basics",
+    "text": "dplyr basics\n\ndplyr is a package in the tidyverse that provides a set of functions for data manipulation and transformation\nEach function in dplyr serves almost like a verb that describes the action being performed on the data\nMost functions within dplyr have similar input and output:\n\nInput: a data frame (usually the first argument in the function)\nOutput: a data frame\nAdditional arguments: typically describe what columns (variables) to operate on"
+  },
+  {
+    "objectID": "lessons/24_Data_transformation_groups/20_Data_transformation_groups.html#example-of-a-dplyr-function-select",
+    "href": "lessons/24_Data_transformation_groups/20_Data_transformation_groups.html#example-of-a-dplyr-function-select",
+    "title": "Data transformation: Basics",
+    "section": "Example of a dplyr function: select()",
+    "text": "Example of a dplyr function: select()\n\nI can use the select() function to select specific columns from my data frame\n\n\n1hrs_data |&gt;\n2  select(\n3    age,\n    ed\n    )\n\n\n1\n\nThe first argument is the data frame we want to operate on (in this case, hrs_data)\n\n2\n\nselect is the function we are using on the data frame\n\n3\n\nage and ed are the columns (in the data frame) that we perform the select() function on\n\n\n\n\n# A tibble: 14,775 × 2\n     age    ed\n   &lt;dbl&gt; &lt;dbl&gt;\n 1    64    16\n 2    73    12\n 3    72    13\n 4    83    16\n 5    77    16\n 6    79    17\n 7    85    16\n 8    92    17\n 9    83     8\n10    89    17\n# ℹ 14,765 more rows"
+  },
+  {
+    "objectID": "lessons/24_Data_transformation_groups/20_Data_transformation_groups.html#types-of-dplyr-functions",
+    "href": "lessons/24_Data_transformation_groups/20_Data_transformation_groups.html#types-of-dplyr-functions",
+    "title": "Data transformation: Basics",
+    "section": "Types of dplyr functions",
+    "text": "Types of dplyr functions\ndplyr functions can be categorized into four groups based on what they operate on:\n\nrows: functions that operate on rows of a data frame (e.g., filter(), slice())\ncolumns: functions that operate on columns of a data frame (e.g., select(), mutate())\ngroups: functions that operate on groups of rows in a data frame (e.g., group_by(), summarize())\njoins: functions that combine two data frames based on a common key (e.g., left_join(), inner_join())\n\nNot covering in this class (You can take BSTA 526 to learn about joins)"
+  },
+  {
+    "objectID": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html",
+    "href": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html",
+    "title": "Intro to data transformations and summarizations",
+    "section": "",
+    "text": "dplyr is a package in the tidyverse that provides a set of functions for data manipulation and transformation\n\n \n\nEach function in dplyr is like a verb that describes the action being performed on the data\n\n \n\nMost functions within dplyr have similar input and output:\n\nInput: a data frame (usually the first argument in the function)\nOutput: a data frame\nAdditional arguments: typically describe what columns (variables) to operate on"
+  },
+  {
+    "objectID": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#dplyr-basics",
+    "href": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#dplyr-basics",
+    "title": "Intro to data transformations and summarizations",
+    "section": "",
+    "text": "dplyr is a package in the tidyverse that provides a set of functions for data manipulation and transformation\n\n \n\nEach function in dplyr is like a verb that describes the action being performed on the data\n\n \n\nMost functions within dplyr have similar input and output:\n\nInput: a data frame (usually the first argument in the function)\nOutput: a data frame\nAdditional arguments: typically describe what columns (variables) to operate on"
+  },
+  {
+    "objectID": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#example-of-a-dplyr-function-select",
+    "href": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#example-of-a-dplyr-function-select",
+    "title": "Intro to data transformations and summarizations",
+    "section": "Example of a dplyr function: select()",
+    "text": "Example of a dplyr function: select()\n\n\n\n\nI can use the select() function to select specific columns (age and ed) from my data frame (hrs_data)\n\n\n\n\n\n\n1hrs_data |&gt;\n2  select(\n3    age,\n    ed\n    )\n\n\n1\n\nThe first argument is the data frame we want to operate on (in this case, hrs_data)\n\n2\n\nselect is the function we are using on the data frame\n\n3\n\nage and ed are the columns (in the data frame) that we perform the select() function on\n\n\n\n\n# A tibble: 2,728 × 2\n     age    ed\n   &lt;dbl&gt; &lt;dbl&gt;\n 1    54    13\n 2    66     0\n 3    54    NA\n 4    57    NA\n 5    55    10\n 6    51    NA\n 7    68    12\n 8    57    15\n 9    54    14\n10    53    16\n# ℹ 2,718 more rows"
+  },
+  {
+    "objectID": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#types-of-dplyr-functions",
+    "href": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#types-of-dplyr-functions",
+    "title": "Intro to data transformations and summarizations",
+    "section": "Types of dplyr functions",
+    "text": "Types of dplyr functions\ndplyr functions can be categorized into four groups based on what they operate on:\n\nrows: functions that operate on rows of a data frame\n\nExamples: filter(), slice()\nUnder the Data Transformation lesson series\n\ncolumns: functions that operate on columns of a data frame\n\nExamples: select(), mutate()\nUnder the Data Transformation lesson series\n\ngroups: functions that operate on groups of rows in a data frame\n\nExamples: group_by(), summarize()\nUnder the Data Summarization lesson series\n\njoins: functions that combine two data frames based on a common key\n\nExamples: left_join(), inner_join()\nNot covered in this class"
+  },
+  {
+    "objectID": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#resources",
+    "href": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#resources",
+    "title": "Intro to data transformations and summarizations",
+    "section": "Resources",
+    "text": "Resources\n\ndplyr cheat sheet"
+  },
+  {
+    "objectID": "lessons/07_Functions/06_Functions.html",
+    "href": "lessons/07_Functions/06_Functions.html",
+    "title": "Lesson 4: Calling Functions",
+    "section": "",
+    "text": "R has many built-in functions that allow you to perform a variety of tasks\nFunctions usually take the form:\n\n\n1function_name(\n2  argument1 = input_value1,\n  argument2 = input_value2,\n  ...\n  )\n\n\n1\n\nfunction_name is the name of the function we are using. function_output\n\n2\n\nWithin the parentheses of the function, there are set arguments that we assign values to.\n\n\n\n\n\n\n\n\nseq() is a function that generates a sequence of numbers.\nIt has three arguments: from, to, and by\nOutput will be the sequence numbers\n\n\nseq(\n  from = 1, \n  to = 10, \n  by = 2\n)\n\n[1] 1 3 5 7 9\n\n\n\n\n\n\nseq(1, 10, 2)\n\n[1] 1 3 5 7 9\n\n\n\n\n\n\nWe can also assign the output of a function to an object using the assignment operator &lt;-:\n\n\nfunction_output &lt;- function_name(\n  argument1 = input_value1,\n  argument2 = input_value2,\n  ...\n  )\n\n\nThe output will not print, but it will be stored in the object function_output\n\n\n\n\n\nWe will assign the output of the seq() function to an object called odds:\n\n\nodds &lt;- seq(\n  from = 1, \n  to = 10, \n  by = 2\n)\n\n\nSo odds will now contain the sequence (1,3,5,7,9)"
+  },
+  {
+    "objectID": "lessons/07_Functions/06_Functions.html#what-are-functions",
+    "href": "lessons/07_Functions/06_Functions.html#what-are-functions",
+    "title": "Lesson 4: Calling Functions",
+    "section": "",
+    "text": "R has many built-in functions that allow you to perform a variety of tasks\nFunctions usually take the form:\n\n\n1function_name(\n2  argument1 = input_value1,\n  argument2 = input_value2,\n  ...\n  )\n\n\n1\n\nfunction_name is the name of the function we are using. function_output\n\n2\n\nWithin the parentheses of the function, there are set arguments that we assign values to."
+  },
+  {
+    "objectID": "lessons/07_Functions/06_Functions.html#example-calling-the-seq-function",
+    "href": "lessons/07_Functions/06_Functions.html#example-calling-the-seq-function",
+    "title": "Lesson 4: Calling Functions",
+    "section": "",
+    "text": "seq() is a function that generates a sequence of numbers.\nIt has three arguments: from, to, and by\nOutput will be the sequence numbers\n\n\nseq(\n  from = 1, \n  to = 10, \n  by = 2\n)\n\n[1] 1 3 5 7 9"
+  },
+  {
+    "objectID": "lessons/07_Functions/06_Functions.html#we-dont-need-to-specify-the-argument-names",
+    "href": "lessons/07_Functions/06_Functions.html#we-dont-need-to-specify-the-argument-names",
+    "title": "Lesson 4: Calling Functions",
+    "section": "",
+    "text": "seq(1, 10, 2)\n\n[1] 1 3 5 7 9"
+  },
+  {
+    "objectID": "lessons/07_Functions/06_Functions.html#output-of-a-function",
+    "href": "lessons/07_Functions/06_Functions.html#output-of-a-function",
+    "title": "Lesson 4: Calling Functions",
+    "section": "",
+    "text": "We can also assign the output of a function to an object using the assignment operator &lt;-:\n\n\nfunction_output &lt;- function_name(\n  argument1 = input_value1,\n  argument2 = input_value2,\n  ...\n  )\n\n\nThe output will not print, but it will be stored in the object function_output"
+  },
+  {
+    "objectID": "lessons/07_Functions/06_Functions.html#now-with-the-seq-function",
+    "href": "lessons/07_Functions/06_Functions.html#now-with-the-seq-function",
+    "title": "Lesson 4: Calling Functions",
+    "section": "",
+    "text": "We will assign the output of the seq() function to an object called odds:\n\n\nodds &lt;- seq(\n  from = 1, \n  to = 10, \n  by = 2\n)\n\n\nSo odds will now contain the sequence (1,3,5,7,9)"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#source-file-hello.qmd",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#source-file-hello.qmd",
+    "title": "Quarto documents",
+    "section": "Source File: hello.qmd",
+    "text": "Source File: hello.qmd\n---\ntitle: \"Hello, Penguins\"\nformat: html\nexecute:\n  echo: false\n---\n\n## Meet the penguins\n\nThe `penguins` data contains size measurements for \npenguins from three islands in the Palmer Archipelago, \nAntarctica.\n\nThe three species of penguins have quite distinct \ndistributions of physical dimensions (@fig-penguins).\n\n```{r}\n#| label: fig-penguins\n#| fig-cap: \"Dimensions of penguins across three species.\"\n#| warning: false\nlibrary(tidyverse, quietly = TRUE)\nlibrary(palmerpenguins)\npenguins |&gt;\n  ggplot(aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species)) +\n  scale_color_manual(\n    values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n  theme_minimal()\n```"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#highlights-in-the-source-file",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#highlights-in-the-source-file",
+    "title": "Quarto documents",
+    "section": "Highlights in the source file",
+    "text": "Highlights in the source file\n\nSet format(s) and options. Use YAML Syntax.\n---\ntitle: \"Hello, Penguins\"\nformat: html\nexecute:\n  echo: false\n---"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#write-with-markdown",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#write-with-markdown",
+    "title": "Quarto documents",
+    "section": "Write with Markdown",
+    "text": "Write with Markdown\n## Write with **Markdown**\nRStudio: Help &gt; Markdown Quick Reference\nRStudio, Positron and VS Code: Use the Visual Editor\n## Meet the penguins\n\nThe `penguins` data contains size measurements for \npenguins from three islands in the Palmer Archipelago, \nAntarctica.\n\nThe three species of penguins have quite distinct \ndistributions of physical dimensions (@fig-penguins)."
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#include-code.",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#include-code.",
+    "title": "Quarto documents",
+    "section": "Include code.",
+    "text": "Include code.\nR, Python, Julia, Observable, or any language with a Jupyter kernel.\n\n```` markdown\n```{r}\n#| label: fig-penguins\n#| fig-cap: \"Dimensions of penguins across three species.\"\n#| warning: false\nlibrary(tidyverse, quietly = TRUE)\nlibrary(palmerpenguins)\npenguins |&gt;\n  ggplot(aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species)) +\n  scale_color_manual(\n    values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n  theme_minimal()\n```\n````"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#yaml-metadata",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#yaml-metadata",
+    "title": "Quarto documents",
+    "section": "1. YAML metadata",
+    "text": "1. YAML metadata\n\nSet format(s) and options. Use YAML Syntax.\n---\ntitle: \"Hello, Penguins\"\nformat: html\nexecute:\n  echo: false\n---"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#text-lists-images-tables-links",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#text-lists-images-tables-links",
+    "title": "Quarto documents",
+    "section": "2. Text, lists, images, tables, links",
+    "text": "2. Text, lists, images, tables, links\n## Write with **Markdown**\nRStudio: Help &gt; Markdown Quick Reference\nRStudio, Positron and VS Code: Use the Visual Editor\n## Meet the penguins\n\nThe `penguins` data contains size measurements for \npenguins from three islands in the Palmer Archipelago, \nAntarctica.\n\nThe three species of penguins have quite distinct \ndistributions of physical dimensions (@fig-penguins)."
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#code-chunks-1",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#code-chunks-1",
+    "title": "Quarto documents",
+    "section": "Code chunks",
+    "text": "Code chunks\n.qmd file"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#code-cells",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#code-cells",
+    "title": "Quarto documents",
+    "section": "Code Cells",
+    "text": "Code Cells\nCode cells start with ```{language}, and end with ```.\nRStudio, Positron & VS Code: Use Insert Code Chunk/Cell.\n\n\n\n```{r}\n#| label: chunk-id\n```\n\n\n```{python}\n#| label: chunk-id\n```\n\n\n\nOther languages: {julia}, {ojs}\nAdd code cell options with #| comments.\nCell options control execution, figures, tables, layout and more. See them all at: https://quarto.org/docs/reference/cells/"
+  },
+  {
+    "objectID": "lessons/11_Quarto_docs/11_Quarto_docs.html#execution",
+    "href": "lessons/11_Quarto_docs/11_Quarto_docs.html#execution",
+    "title": "Quarto documents",
+    "section": "Execution Options",
+    "text": "Execution Options\n\n\n\n\n\n\n\n\nOption\nDefault\nEffects\n\n\n\n\necho\ntrue\nfalse: hide code in output\nfenced: include code cell syntax\n\n\neval\ntrue\nfalse: don’t run code\n\n\ninclude\ntrue\nfalse: don’t include code or results\n\n\noutput\ntrue\nfalse: don’t include results\nasis: treat results as raw markdown\n\n\nwarning\ntrue\nfalse: don’t include warnings in output\n\n\nerror\nfalse\ntrue: include error in output and continue with render\n\n\n\nYou can set execution options at the cell level:\n\n\n\n```{r}\n#| echo: false\n```\n\n\n```{python}\n#| echo: false\n```"
   }
 ]

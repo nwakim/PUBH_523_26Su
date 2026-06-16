@@ -174,5 +174,47 @@
   },
   "lessons/21_Data_transformation_columns_advanced/21_Data_transformation_columns_advanced.qmd": {
     "21_Data_transformation_columns_advanced.html": "03559d7a"
+  },
+  "lessons/30_Data_viz_Basic_plotting/30_Data_viz_Basic_plotting.qmd": {
+    "30_Data_viz_Basic_plotting.html": "8ba8346c"
+  },
+  "lessons/11_Quarto_docs/11_Quarto_docs.qmd": {
+    "11_Quarto_docs.html": "0835c9b2"
+  },
+  "lessons/05_Comments/05_Comments.qmd": {
+    "05_Comments.html": "c4ec1f85"
+  },
+  "lessons/08_Objects/07_Objects.qmd": {
+    "07_Objects.html": "f4da6ffb"
+  },
+  "lessons/22_Data_transformation_columns/19_Data_transformation_columns.qmd": {
+    "19_Data_transformation_columns.html": "fffd2483"
+  },
+  "lessons/10_Packages/09_Packages.qmd": {
+    "09_Packages.html": "21ba4316"
+  },
+  "lessons/21_Data_transformation_rows/18_Data_transformation_rows.qmd": {
+    "18_Data_transformation_rows.html": "18b420af"
+  },
+  "lessons/21_Data_transformation_rows_advanced/19_Data_transformation_rows_advanced.qmd": {
+    "19_Data_transformation_rows_advanced.html": "e7f27bca"
+  },
+  "lessons/19_Workflow_getting_help/16_Workflow_getting_help.qmd": {
+    "16_Workflow_getting_help.html": "d05604e8"
+  },
+  "lessons/24_Data_transformation_groups/20_Data_transformation_groups.qmd": {
+    "20_Data_transformation_groups.html": "3d8ecd88"
+  },
+  "lessons/03_Scripts/03_Scripts.qmd": {
+    "03_Scripts.html": "636b7fc7"
+  },
+  "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.qmd": {
+    "17_Intro_data_trans_summ.html": "dafbdc28"
+  },
+  "lessons/04_Basics_operators/04_Basics_operators.qmd": {
+    "04_Basics_operators.html": "ed14b7ba"
+  },
+  "lessons/07_Functions/06_Functions.qmd": {
+    "06_Functions.html": "ee6b7c45"
   }
 }
