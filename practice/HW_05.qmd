@@ -1,0 +1,69 @@
+---
+title: "Homework 5"
+subtitle: "BSTA 513/613"
+author: "Your name here - update this!!!!"
+description: "Due: Thursday June 6, 2024 at 11pm"
+date-modified: "today"
+date: "6/6/2024"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    self-contained: true
+    embed-resources: true
+---
+
+```{=html}
+<style>div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}</style>
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.height = 4, fig.width = 6, fig.align = "center")
+
+library(tidyverse)
+library(rstatix)
+library(broom)
+library(gt)
+library(janitor)
+library(readxl)
+library(gridExtra)
+library(ggfortify)  # autoplot(model)
+library(gtsummary)
+library(describedata) # gladder()
+library(haven)
+library(here)
+```
+
+::: callout-caution
+Nicky needs to edit
+:::
+
+## Directions
+
+-   [Download the `.qmd` file here.](https://github.com/nwakim/BSTA_513_26S/blob/main/homework/HW5.qmd)
+
+-   You will need to download the datasets. Use [this link to download](https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S2024_BSTA_513_613/Student_files/Data/Homework?csf=1&web=1&e=QEsqb9) the homework datasets needed in this assignment. If you do not want to make changes to the paths set in this document, then make sure the files are stored in a folder named "data" that is housed in the same location as this homework `.qmd` file.
+
+-   Please upload your homework to [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-513-1-AV-Sp24/tool/c5ad42cb-c245-44d3-a4f3-535eec24e879). **Upload both your `.qmd` code file and the rendered `.html` file**
+
+    -   **Please rename you homework as `Lastname_Firstinitial_HW5.qmd`. This will help organize the homeworks when the TAs grade them.**
+
+    -   **Please also add the following line under `subtitle: "BSTA 513/613"`: `author: First-name Last-name` with your first and last name so it is attached to the viewable document.**
+
+-   For each question, make sure to include all code and resulting output in the html file to support your answers.
+
+-   Show the work of your calculations using R code within a code chunk. Make sure that both your code and output are visible in the rendered html file. This is the default setting.
+
+-   If you are computing something by hand, you may take a picture of your work and insert the image in this file. You may also use LaTeX to write it inline.
+
+-   Write all answers in complete sentences as if communicating the results to a collaborator. This means including a sentence summarizing results in the context of the research study.
+
+::: callout-tip
+It is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your qmd file and rendering frequently helps you catch your errors more quickly.
+:::
+
+# Questions
+
+
+
+

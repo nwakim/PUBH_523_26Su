@@ -27,4 +27,11 @@ execute:
 
 ## Course Overview
 
-![](../img_slides/course_org.png){fig-align="right" width="60%"}
+![](../img_slides/course_org.png){fig-align="center" width="60%"}
+
+## Each week
+
+- A "new" week starts on Monday
+- You will watch the videos set in the week
+- At the end of the week, there is a practice due Sunday night at 11pm
+- Some weeks will also have labs due on Sunday night at 11pm

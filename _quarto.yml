@@ -17,8 +17,8 @@ website:
         text: Syllabus
       - href: instructors.qmd
         text: Instructors
-      - href: homeworks.qmd
-        text: Homework
+      - href: practice.qmd
+        text: Practice
       - href: project.qmd
         text: Project
           

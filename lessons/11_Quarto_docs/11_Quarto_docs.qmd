@@ -1,6 +1,6 @@
 ---
 title: "Quarto documents"
-author: "Nicky Wakim"
+author: "Nicky Wakim, Jessica Minnier, and Meike Niederhausen"
 title-slide-attributes:
     data-background-color: "#3070BF"
 format: 
@@ -26,13 +26,15 @@ execute:
 #| message: false
 #| warning: false
 
-library(tidyverse)
-library(lubridate)
-library(janitor)
-library(here)
-library(readxl)
-library(gt)
-library(rstatix)
+pacman::p_load(
+  tidyverse, 
+  lubridate, 
+  janitor, 
+  here, 
+  readxl, 
+  gt, 
+  rstatix
+)
 
 theme_set(theme_grey(base_size = 24)) 
 ```

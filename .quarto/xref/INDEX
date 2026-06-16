@@ -217,5 +217,41 @@
   },
   "lessons/07_Functions/06_Functions.qmd": {
     "06_Functions.html": "ee6b7c45"
+  },
+  "practice.qmd": {
+    "practice.html": "fb74becd"
+  },
+  "practice/HW_02_ans.qmd": {
+    "HW_02_ans.html": "4bdc0f02"
+  },
+  "practice/HW_03_ans.qmd": {
+    "HW_03_ans.html": "ede86b68"
+  },
+  "practice/HW_01_ans.qmd": {
+    "HW_01_ans.html": "ba1651b0"
+  },
+  "practice/HW_04_ans.qmd": {
+    "HW_04_ans.html": "f500adb3"
+  },
+  "practice/HW_03.qmd": {
+    "HW_03.html": "4f249b66"
+  },
+  "practice/HW_02.qmd": {
+    "HW_02.html": "5974d1a0"
+  },
+  "practice/HW_00.qmd": {
+    "HW_00.html": "14de9309"
+  },
+  "practice/HW_01.qmd": {
+    "HW_01.html": "cd2870e1"
+  },
+  "practice/HW_05.qmd": {
+    "HW_05.html": "503edbe0"
+  },
+  "practice/HW_04.qmd": {
+    "HW_04.html": "bfaf02dc"
+  },
+  "lessons/10_Packages/Packages.qmd": {
+    "Packages.html": "8749d822"
   }
 }

@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\nDate\nLes-son\nTheme\nTopic\nLesson video\nSlides HTML\nTB 1\nTB 2\n\n\n\n\n1\n06/22\n0\nCourse info\nWelcome\n\n\n\n\n\n\n\n\n0\nCourse info\nOrientation to the course site\n\n\n\n\n\n\n\n\n1\nRigor & Reproducibility\nIntroduction to the Introduction\n\n\nIntro\n\n\n\n\n\n2\nR Basics\nDownload + Intro to R & Rstudio\n\n\n\n3.4-3.5\n\n\n\n\n3\nR Basics\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n4\nR Basics\nBasics and Operators\n\n\n2.1\n8.2\n\n\n\n\n5\nBest Practices in R\nComments\n\n\n2.2\n\n\n\n\n06/25\n\n\nHW 0 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n2\n06/29\n6\nCourse info\nIntro to our working dataset: HRS\n\n\n\n\n\n\n\n\n7\nR Basics\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n8\nR Basics\nObjects\n\n\n\n3.10\n\n\n\n\n9\nR Basics\nVariables in R\n\n\n\n\n\n\n\n\n10\nR Basics\nPackages\n\n\n\n3.7\n\n\n\n07/12\n\n\nHW 1 due\n\n\n\n\n\n\n \n\n\n\nNicky on vacation this week\n\n\n\n\n\n\n3\n07/06\n11\nRigor & Reproducibility\nR projects and working directories\n\n\n6.2\n6\n\n\n\n\n15\nRigor & Reproducibility\nNaming: file naming and variable naming?\n\n\n\n\n\n\n\n\n12\nRigor & Reproducibility\nQuarto documents\n\n\n\n\n\n\n\n07/26\n\n\nHW 2 DUE\n\n\n\n\n\n\n \n\n\n\nNicky out of town, but can answer emails\n\n\n\n\n\n\n4\n07/13\n13\nR Basics\nPiping\n\n\n3.4\n8.1\n\n\n\n\n14\nR Basics\nKey operators and functions\n\n\n\n8.2\n\n\n\n\n16\nR Basics\nTidy data\n\n\n5.2\n4.1\n\n\n\n\n17\nR Basics\nImport and Export\n\n\n7\n7\n\n\n\n\n18\nBest Practices in R\nWorkflow: code style\n\n\n4\n\n\n\n\n\n19\nBest Practices in R\nWorkflow: getting help\n\n\n8\n\n\n\n\n07/05\n\n\nLab 1 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n5\n07/20\n20\nData transformation\nIntro to data transformations and summarizations\n\n\n3.1\n\n\n\n\n\n21\nData transformation\nData transformation: rows\n\n\n3.2\n13.7-13.8\n\n\n\n\n22\nData transformation\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n23\nData transformation\nData transformations: advanced\n\n\n12.2, 16\n\n\n\n\n08/09\n\n\nHW 3 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n6\n07/27\n25\nData summarization\nData summarization: quantitative data\n\n\n3.5\n\n\n\n\n\n26\nData summarization\nData summarization: categorical data\n\n\n\n\n\n\n\n\n27\nData summarization\nDescriptive tables\n\n\n\n17\n\n\n\n08/23\n\n\nLab 2 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n7\n08/03\n28\nData transformation\nLengthening data\n\n\n5.3\n\n\n\n\n\n29\nData transformation\nWidening data\n\n\n5.4\n\n\n\n\n08/02\n\n\nLab 3 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n8\n08/10\n30\nData visualization\nData visualization: Intro to ggplot\n\n\n1.1-1.3\n30.2-30.5\n\n\n\n\n31\nData visualization\nData visualization: Basic plotting\n\n\n9.2-9.3\n30.4-30.5\n\n\n\n\n32\nData visualization\nData visualization: Design choices\n\n\n1.5\n\n\n\n\n08/02\n\n\nHW 4 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n9\n08/17\n33\n\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n34\n\nMissing data: transformations\n\n\n\n\n\n\n\n08/16\n\n\nLab 4 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n10\n08/24\n\nCourse info\nProject help\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n11\n08/31\n\n\nFinal Project due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOTHER options:\n\nVariables (factors, etc.)\nshowing missingness"
+    "text": "Week\nDate\nLes-son\nTheme\nTopic\nLesson video\nSlides HTML\nTB 1\nTB 2\n\n\n\n\n1\n06/22\n0\nCourse info\nWelcome\n\n\n\n\n\n\n\n\n0\nCourse info\nOrientation to the course site\n\n\n\n\n\n\n\n\n1\nRigor & Reproducibility\nIntroduction to the Introduction\n\n\nIntro\n\n\n\n\n\n2\nR Basics\nDownload + Intro to R & Rstudio\n\n\n\n3.4-3.5\n\n\n\n\n3\nR Basics\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n4\nR Basics\nBasics and Operators\n\n\n2.1\n8.2\n\n\n\n\n5\nBest Practices in R\nComments\n\n\n2.2\n\n\n\n\n06/28\n\n\nPractice 1 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n2\n06/29\n6\nCourse info\nIntro to our working dataset: HRS\n\n\n\n\n\n\n\n\n7\nR Basics\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n8\nR Basics\nObjects\n\n\n\n3.10\n\n\n\n\n9\nR Basics\nVariables in R\n\n\n\n\n\n\n\n\n10\nR Basics\nPackages\n\n\n\n3.7\n\n\n\n07/05\n\n\nPractice 2 due\n\n\n\n\n\n\n \n\n\n\nNicky on vacation this week\n\n\n\n\n\n\n3\n07/06\n11\nRigor & Reproducibility\nR projects and working directories\n\n\n6.2\n6\n\n\n\n\n15\nRigor & Reproducibility\nNaming: file naming and variable naming?\n\n\n\n\n\n\n\n\n12\nRigor & Reproducibility\nQuarto documents\n\n\n\n\n\n\n\n07/12\n\n\nPractice 3 Due\n\n\n\n\n\n\n \n\n\n\nNicky out of town, but can answer emails\n\n\n\n\n\n\n4\n07/13\n13\nR Basics\nPiping\n\n\n3.4\n8.1\n\n\n\n\n14\nR Basics\nKey operators and functions\n\n\n\n8.2\n\n\n\n\n16\nR Basics\nTidy data\n\n\n5.2\n4.1\n\n\n\n\n17\nR Basics\nImport and Export\n\n\n7\n7\n\n\n\n\n18\nBest Practices in R\nWorkflow: code style\n\n\n4\n\n\n\n\n\n19\nBest Practices in R\nWorkflow: getting help\n\n\n8\n\n\n\n\n07/19\n\n\nPractice 4 due\n\n\n\n\n\n\n\n07/19\n\n\nLab 1 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n5\n07/20\n20\nData transformation\nIntro to data transformations and summarizations\n\n\n3.1\n\n\n\n\n\n21\nData transformation\nData transformation: rows\n\n\n3.2\n13.7-13.8\n\n\n\n\n22\nData transformation\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n23\nData transformation\nData transformations: advanced\n\n\n12.2, 16\n\n\n\n\n07/26\n\n\nPractice 5 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n6\n07/27\n25\nData summarization\nData summarization: quantitative data\n\n\n3.5\n\n\n\n\n\n26\nData summarization\nData summarization: categorical data\n\n\n\n\n\n\n\n\n27\nData summarization\nDescriptive tables\n\n\n\n17\n\n\n\n08/02\n\n\nPractice 6 due\n\n\n\n\n\n\n\n08/02\n\n\nLab 2 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n7\n08/03\n28\nData transformation\nLengthening data\n\n\n5.3\n\n\n\n\n\n29\nData transformation\nWidening data\n\n\n5.4\n\n\n\n\n08/09\n\n\nPractice 7 due\n\n\n\n\n\n\n\n08/09\n\n\nLab 3 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n8\n08/10\n30\nData visualization\nData visualization: Intro to ggplot\n\n\n1.1-1.3\n30.2-30.5\n\n\n\n\n31\nData visualization\nData visualization: Basic plotting\n\n\n9.2-9.3\n30.4-30.5\n\n\n\n\n32\nData visualization\nData visualization: Design choices\n\n\n1.5\n\n\n\n\n08/16\n\n\nPractice 8 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n9\n08/17\n33\n\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n34\n\nMissing data: transformations\n\n\n\n\n\n\n\n08/23\n\n\nPractice 9 due\n\n\n\n\n\n\n\n08/30\n\n\nLab 4 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n10\n08/24\n\nCourse info\nProject help\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n11\n08/31\n\n\nFinal Project due"
   },
   {
     "objectID": "index.html",
@@ -2265,7 +2265,7 @@
     "href": "homeworks.html",
     "title": "Homework",
     "section": "",
-    "text": "Homework\nAssignment\nLessons covered\nData\nAssignment due (@11pm)\nAnswers\nSolution folder*\n\n\n\n\n0\n\n\n\n06/25\n\n\n\n\n1\n\n\n\n07/12\n\n\n\n\n2\n\n\n\n07/26\n\n\n\n\n3\n\n\n\n08/09\n\n\n\n\n4\n\n\n\n08/23\n*Please note that you need to download the .html file to see the LaTeX math properly."
+    "text": "Homework\nAssignment\nLessons covered\nData\nAssignment due (@11pm)\nAnswers\nSolution folder*\n\n\n\n\n0\n\n\n\n06/25\n\n\n\n\n1\n\n1-5\n\n07/12\n\n\n\n\n2\n\n6-10\n\n07/26\n\n\n\n\n3\n\n11-13\n\n08/09\n\n\n\n\n4\n\n14-19\n\n08/23\n\n\n\n\n5\n\n20-23\n\n08/23\n\n\n\n\n6\n\n25-27\n\n08/23\n\n\n\n\n7\n\n28-29\n\n08/23\n\n\n\n\n8\n\n30-32\n\n08/23\n*Please note that you need to download the .html file to see the LaTeX math properly."
   },
   {
     "objectID": "homeworks.html#file-naming",
@@ -4492,5 +4492,208 @@
     "title": "Orientation to the Course",
     "section": "Course Overview",
     "text": "Course Overview"
+  },
+  {
+    "objectID": "lessons/00_Orientation/00_Orientation.html#each-week",
+    "href": "lessons/00_Orientation/00_Orientation.html#each-week",
+    "title": "Orientation to the Course",
+    "section": "Each week",
+    "text": "Each week\n\nA “new” week starts on Monday\nYou will watch the videos set in the week\nAt the end of the week, there is a practice due Sunday night at 11pm\nSome weeks will also have labs due on Sunday night at 11pm"
+  },
+  {
+    "objectID": "practice.html",
+    "href": "practice.html",
+    "title": "Practice",
+    "section": "",
+    "text": "Homework\nAssignment\nData\nAssignment due (@11pm)\nAnswers\nSolution folder*\n\n\n\n\n1\n\n\n06/28\n\n\n\n\n2\n\n\n07/05\n\n\n\n\n3\n\n\n07/12\n\n\n\n\n4\n\n\n07/19\n\n\n\n\n5\n\n\n07/26\n\n\n\n\n6\n\n\n08/02\n\n\n\n\n7\n\n\n08/09\n\n\n\n\n8\n\n\n08/16\n\n\n\n\n9\n\n\n08/23\n*Please note that you need to download the .html file to see the LaTeX math properly."
+  },
+  {
+    "objectID": "practice.html#file-naming",
+    "href": "practice.html#file-naming",
+    "title": "Practice",
+    "section": "File Naming",
+    "text": "File Naming\n\nFor Practice assignments, please use the following file naming: “Lastname_Firstinitial_HW0.qmd” and “Lastname_Firstinitial_HW0.html”"
+  },
+  {
+    "objectID": "practice.html#rubrics",
+    "href": "practice.html#rubrics",
+    "title": "Practice",
+    "section": "Rubrics",
+    "text": "Rubrics\n\n\n\n\n\n\n\n\n\n1 point\n0 points\n\n\n\n\nCompleteness\n75% of the question parts are thoroughly worked out and have an answer. “Question parts” means the sub-questions labeled “Part _.” Answers can be incorrect or correct. For parts with longer processes and calculations, solution set up and calculations are required.\nLess than 75% of question parts are thoroughly worked out. Attempts do not count as thoroughly worked out."
+  },
+  {
+    "objectID": "practice/HW_04.html",
+    "href": "practice/HW_04.html",
+    "title": "Homework 4",
+    "section": "",
+    "text": "Caution\n\n\n\nThis is ready to go! (Nicky 5/21/26)"
+  },
+  {
+    "objectID": "practice/HW_04.html#purpose",
+    "href": "practice/HW_04.html#purpose",
+    "title": "Homework 4",
+    "section": "Purpose",
+    "text": "Purpose\nThis homework is designed to help you practice the following important skills and knowledge that we covered in Lesson 13, 15-16:\n\nVisually assessing observations for which the model does not fit well\nSelecting the appropriate regression model based on outcome type\nFitting and interpreting a log-binomial regressions"
+  },
+  {
+    "objectID": "practice/HW_04.html#directions",
+    "href": "practice/HW_04.html#directions",
+    "title": "Homework 4",
+    "section": "Directions",
+    "text": "Directions\n\nDownload the .qmd file here.\nYou will need to download the datasets from our shared folder.\nPlease upload your homework to Sakai. Upload both your .qmd code file and the rendered .html file\n\nPlease rename you homework as Lastname_Firstinitial_HW04.qmd. This will help organize the homeworks when the TAs grade them.\n\nFor each question, make sure to include all code and resulting output in the html file to support your answers\nShow the work of your calculations using R code within a code chunk. Make sure that both your code and output are visible in the rendered html file. This is the default setting.\n\n\n\n\n\n\n\nTip\n\n\n\nIt is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your qmd file and rendering frequently helps you catch your errors more quickly."
+  },
+  {
+    "objectID": "practice/HW_04.html#questions-part-1",
+    "href": "practice/HW_04.html#questions-part-1",
+    "title": "Homework 4",
+    "section": "Questions Part 1",
+    "text": "Questions Part 1\n\nQuestion 1\nIn this problem, we will practice performing model diagnostics in a logistic regression model.\nThis question is taken from the Hosmer and Lemeshow textbook. The ICU study data set consists of a sample of 200 subjects who were part of a much larger study on survival of patients following admission to an adult intensive care unit (ICU). The dataset should be available in our shared folder. The major goal of this study was to develop a logistic regression model to predict the probability of survival to hospital discharge of these patients. In this question, the primary outcome variable is vital (survival) status at hospital discharge, STA. Clinicians associated with the study felt that a key determinant of survival was the patient’s age at admission, AGE. We will build to a multivariable logistic regression model while adjusting for cancer part of the present problem (CAN), CPR prior to ICU admission (CPR), infection probable at ICU admission (INF), and level of consciousness at ICU admission (LOC).\nA code sheet for the variables to be considered is displayed in Table 1.5 below (from the Hosmer and Lemeshow textbook, pg. 23). We refer to this data set as the ICU data.\nYou will need to use some of the mutations implemented in HW 2, Q2, Part c.\n\nWe will use the following model: \\[\\text{logit}(\\pi(\\textbf{X}))=\\beta_0 + \\beta_1 \\cdot I(CAN=\\text{``Yes\"}) + \\beta_2 \\cdot I(CPR=\\text{``Yes\"}) + \\\\ \\beta_3 \\cdot I(INF=\\text{``Yes\"})\\]\n\nicu = read_csv(here(\"data\", \"icu.csv\"))\nicu1 = icu %&gt;% mutate(STA = as.factor(STA) %&gt;% relevel(ref = \"Lived\"))\nicu2 = icu1 %&gt;% mutate(CAN = as.factor(CAN) %&gt;% relevel(ref = \"No\"), \n                     CPR = as.factor(CPR) %&gt;% relevel(ref = \"No\"), \n                     INF = as.factor(INF) %&gt;% relevel(ref = \"No\"), \n                     LOC = as.factor(LOC) %&gt;% \n                       relevel(ref = \"No Coma or Deep Stupor\"))\n\n\nPart a\nHow many covariate patterns does the regression equation have?\n\n\nPart b\nPlot the standardized Deviance residual by predicted probability. Do you notice any potential outliers? Explain your reasoning.\n\n\nPart c\nPlot the Cook’s distance by predicted probability. Do you notice any potential influential points? Explain your reasoning.\n\n\nPart d\nPlot the change in predicted probability by predicted probability. Do you notice any influential points? Explain your reasoning.\n\n\n\nQuestion 2\nThis question stems from an example from an online textbook by Dr. Ramzi W. Nahhas. The dataset for this problem includes a subset of individuals from the 2019 National Survey on Drug Use and Health (NSDUH). Overall, our study aims included investigating potential risk factors for lifetime heroin use. Lifetime heroin use is a binary outcome, which we regress on age at first use of alcohol (alc_agefirst), age with 6 categories (demog_age_cat6), and sex assigned at birth (demog_sex).\n\nload(here(\"data\", \"nsduh2019_adult_sub_rmph.RData\"))\nnsduh = nsduh_adult_sub %&gt;% \n  dplyr::select(her_lifetime, alc_agefirst, demog_age_cat6, demog_sex) %&gt;% \n  drop_na()\n\n\nPart a\nUsing the nsduh dataset from the above chunk of code, please run a regression model using lifetime heroin use as our outcome, and age at first use of alcohol, categorical age, and sex assigned at birth as covariates in our model. No need to write out your model, you just need to write the R code to run the regression and display the summary.\n\n\nPart b\nAre we encountering a numerical problem with our regression? If yes, please name the numerical issue. What first clued you into that issue? Provide conclusive evidence of this numerical issue (with a contingency table), and explain which variable(s) are causing this problem.\n\n\nPart c\nWhat would you do to “fix” this numerical issue? Please apply your “fix” and rerun the regression\n\n\n\nQuestion 3\nIn this problem, we will practice fitting and interpreting a log-binomial regression. \nThis question is taken from the Hosmer and Lemeshow textbook. The ICU study data set consists of a sample of 200 subjects who were part of a much larger study on survival of patients following admission to an adult intensive care unit (ICU). The dataset should be available in our shared folder. The major goal of this study was to develop a logistic regression model to predict the probability of survival to hospital discharge of these patients. In this question, the primary outcome variable is vital (survival) status at hospital discharge, STA. Clinicians associated with the study felt that a key determinant of survival was the patient’s age at admission, AGE. We will build to a multivariable logistic regression model while adjusting for cancer part of the present problem (CAN), CPR prior to ICU admission (CPR), infection probable at ICU admission (INF), and level of consciousness at ICU admission (LOC).\nA code sheet for the variables to be considered is displayed in Table 1.5 below (from the Hosmer and Lemeshow textbook, pg. 23). We refer to this data set as the ICU data.\nYou will need to use some of the mutations implemented in HW 2, Q2, Part d.\n\n\nPart a\nWrite down the population equation for the log-binomial regression model of STA on AGE, CAN, CPR, and INF. How many parameters does this model contain?\n\n\nPart b\nTry using glm() to obtain the maximum likelihood estimates of the parameters of the log-binomial regression model in Part a. Do you run into any issues using glm()? If you try logbin(), does it fix the issues? Explain why and what warnings logbin() gives you.\nHint: keep the glm() function in its own code chunk so you can add #| eval: false. glm() may throw an error, so we want to show the work for glm() even though it’ll break your qmd rendering.\n\n\nPart c\nUsing logbin(), obtain the maximum likelihood estimates of the parameters of the log-binomial regression model in Part a, but now take out age. Using these estimates, write down the equation with the fitted values.\n\n\nPart c\nInterpret the exponential of the coefficient (risk ratio) estimate for CPR.\n\n\nPart e\nWe were not able to fit a model with age, but let’s just entertain a scenario here. Let’s say we fit the model in Part a and got a coefficient estimate of 0.29 with a 95% confidence interval of 0.23 to 0.35. Using the model is Part a, interpret the exponential of the coefficient (risk ratio) estimate for AGE."
+  },
+  {
+    "objectID": "practice/HW_04.html#questions-part-2",
+    "href": "practice/HW_04.html#questions-part-2",
+    "title": "Homework 4",
+    "section": "Questions Part 2",
+    "text": "Questions Part 2\n\nQuestion 4\nFor each of the following outcomes, what type of regression would you use? Explain your answer.\n\nPart a\nNumber of minutes of moderate-to-vigorous physical activity per week (range: 0 to 600+)\nWhich regression model is most appropriate?\n\nLinear regression\nLogistic regression\nLog-binomial regression\nPoisson regression\nMultinomial logistic regression\n\n\n\nPart b\nWhether the participant meets CDC recommendations for weekly physical activity (Yes/No)\nWhich regression model is most appropriate?\n\nLinear regression\nLogistic regression\nLog-binomial regression\nPoisson regression\nMultinomial logistic regression\n\n\n\nPart c\nNumber of workouts the person completed in the past week (values: 0, 1, 2, …, 14)\nWhich regression model is most appropriate?\n\nLinear regression\nLogistic regression\nLog-binomial regression\nPoisson regression\nMultinomial logistic regression\n\n\n\nPart d\nSelf-reported activity level: Sedentary, Moderately active, Highly active\nWhich regression model is most appropriate?\n\nLinear regression\nLogistic regression\nLog-binomial regression\nPoisson regression\nMultinomial logistic regression"
+  },
+  {
+    "objectID": "practice/HW_01.html",
+    "href": "practice/HW_01.html",
+    "title": "Homework 1",
+    "section": "",
+    "text": "Caution\n\n\n\nThis homework is ready to go! (Nicky 4/9/26)"
+  },
+  {
+    "objectID": "practice/HW_01.html#purpose",
+    "href": "practice/HW_01.html#purpose",
+    "title": "Homework 1",
+    "section": "Purpose",
+    "text": "Purpose\nThis homework is designed to help you practice the following important skills and knowledge that we covered in Lessons 2-5:\n\nPracticing and outlining your decision process to analyze the relationship between two categorical variables\nInterpreting research aims into questions/tests that can be answered with statistics\nUsing R to calculate sample proportions\nUsing R to calculate test statistic values for inference tests\nInterpreting new phrasing of questions that were introduced in class\nCalculate and interpret the estimated risk difference, relative risk, and odds ratios, and their confidence intervals\nExpand work on contingency tables to evaluate the agreement or reproducibility using Cohen’s Kappa\nUnderstand important differences between linear regression and logistic regression\nConstruct a simple logistic regression model"
+  },
+  {
+    "objectID": "practice/HW_01.html#directions",
+    "href": "practice/HW_01.html#directions",
+    "title": "Homework 1",
+    "section": "Directions",
+    "text": "Directions\n\nDownload the .qmd file here.\nYou will not need to download datasets for this homework.\nPlease upload your homework to Sakai. Upload both your .qmd code file and the rendered .html file\n\nPlease rename you homework as Lastname_Firstinitial_HW1.qmd. This will help organize the homeworks when the TAs grade them.\nPlease also add the following line under subtitle: “BSTA 513/613”: author: First-name Last-name with your first and last name so it is attached to the viewable document.\n\nFor each question, make sure to include all code and resulting output in the html file to support your answers\nShow the work of your calculations using R code within a code chunk. Make sure that both your code and output are visible in the rendered html file. This is the default setting.\nWrite all answers in complete sentences as if communicating the results to a collaborator.\n\n\n\n\n\n\n\nTip\n\n\n\nIt is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your .qmd file and rendering frequently helps you catch your errors more quickly."
+  },
+  {
+    "objectID": "practice/HW_01.html#questons-part-1",
+    "href": "practice/HW_01.html#questons-part-1",
+    "title": "Homework 1",
+    "section": "Questons Part 1",
+    "text": "Questons Part 1\nThe following questions are intended to give you practice in understanding concepts and completing calculations.\n\nQuestion 1\nIf the probability that one white blood cell is a lymphocyte is 0.3, compute the probability of 2 lymphocytes out of 10 white blood cells. Also, compute the probability that at least 3 lymphocytes out of 10 white blood cells. You may calculate by hand, using a web app, or using R.\n\n\nQuestion 2\nConsider a 2 x 2 table from a prospective cohort study:\n\n\n\n\n\n\nFavorable\nUnfavorable\n\n\n\n\nTreatment\n30\n20\n\n\nPlacebo\n10\n60\n\n\n\n\n\n\nPart a\nEstimate the probability of having favorable results for subjects in the treatment group. Include an interpretation and report with the 95% confidence interval.\n\n\nPart b\nRepeat part a for the placebo group.\n\n\nPart c\nConduct a statistical test to evaluate whether there is an association between group and outcome. What is the name of the test? Make sure to follow the entire test process demonstrated in the slides.\n\n\n\nQuestion 3\nConsider a cohort study with results shown as in following table:\n\n\n\n\n\n\nFavorable\nUnfavorable\n\n\n\n\nTreatment\n6\n1\n\n\nPlacebo\n2\n5\n\n\n\n\n\nConduct a statistical test to evaluate whether there is an association between group and outcome. What is the name of the test? Make sure to follow the entire test process demonstrated in the slides.\n\n\nQuestion 4\nTable 4 shows the information of a selected group of adolescents on whether they use smokeless tobacco and their perception of risk for using smokeless tobacco.\nTable 4:\n\n\n\n\n\n\nYES\nNO\n\n\n\n\nMinimal\n25\n60\n\n\nModerate\n35\n172\n\n\nSubstantial\n10\n200\n\n\n\n\n\n\nPart a\nConduct a statistical test to examine general association between adolescent smokeless tobacco users and risk perception. What is the name of the test? Make sure to follow the entire test process demonstrated in the slides.\n\n\nPart b\nIs there a trend of increased risk perception for smokeless tobacco users? What test would you use? Make sure to follow the entire test process demonstrated in the slides.\n\n\n\nQuestion 5\nA study looked at the effects of oral contraceptive (OC) use on heart disease in women 40 to 44 years of age. The researchers prospectively tracked whether or not the women developed a myocardial infarction (MI) over a 3-year period. The table below summarizes their results with columns indicating whether or not women developed MI and rows indicating their OC use.\n\n\n\n\n\n\nYes\nNo\n\n\n\n\nOC users\n13\n4987\n\n\nNon-OC users\n7\n9993\n\n\n\n\n\n\nPart a\nCompute the estimated risk difference comparing OC users to non-OC users. Include a 95% CI for the estimate and interpretation of the estimated value.\n\n\nPart b\nCompute the estimated relative risk comparing OC users to non-OC users. Include a 95% CI for the estimate and interpretation of the estimated value.\n\n\nPart c\nCompute the estimated odds ratio comparing OC users to non-OC users. Include a 95% CI for the estimate and interpretation of the estimated value.\n\n\nPart d\nIs the OR a good approximation of the RR? Explain why or why not.\n\n\n\nQuestion 6\nOne important aspect of medical diagnosis is its reproducibility. Suppose that two different doctors examine 100 patients for dyspnea in a respiratory-disease clinic, and that doctor A diagnosed 15 patients as having dyspnea (while doctor B did not), doctor B diagnosed 10 patients as having dyspnea (while doctor A did not), and both doctor A and doctor B diagnosed 7 patients as having dyspnea.\n\nPart a\nConstruct a two-way contingency table to summarize the dyspnea diagnoses from doctor A and B.\n\n\nPart b\nCompute the Cohen’s kappa, 95% confidence interval, and interpret the results. What level of agreement does your kappa indicate?"
+  },
+  {
+    "objectID": "practice/HW_01.html#questions-part-2",
+    "href": "practice/HW_01.html#questions-part-2",
+    "title": "Homework 1",
+    "section": "Questions Part 2",
+    "text": "Questions Part 2\nThe following questions are intended to give you practice in connecting concepts that will help you make decisions in real world applications.\n\nQuestion 7\nStart making a comprehensive table or outline for the inference tests that we have covered. Here is a list of the tests we have covered:\n\nSingle proportion\nChi-squared test for general association\nFisher’s Exact test for general association\nCochran-Armitage test for trend\nMantel-Haenszel test for linear trend\n\nAnd here is a list of attributes to include:\n\nNumber of variables testing\nTypes of variables\nCriteria (if any)\nHypothesis test\nTest statistic (if we went over it)\nR code for test\nSample size / Power calculation (optional, not discussed in class)\nSpecial notes (optional)\n\nFor example, I could make a table with different rows corresponding to different tests and different columns for each attribute.\n\n\nQuestion 8\nI want you to gain experience exploring a package and function. This is an important skill in coding that can help you grow as an applied statistician.\nIn your previous course, the function lm() was introduced to perform linear regression. In this class, we will heavily use the function glm(). By typing “?glm” in the R console, we can open the Help page for glm(). The following questions ask about the glm() function. You can Google or use R documentation to answer the questions.\nFeel free to read more about the differences between lm() and glm().\n\nPart a\nWhat does the input “family” mean? If I wanted to perform regression using a Poisson distribution, what would I input into family?\n\n\nPart b\nWhat is the default action for the “na.action” input?\n\n\nPart c\nHow does the glm() function fit our model? (Hint: see “method”)\n\n\nPart d\nDo you think the output of summary() will be the same for lm() and glm()?\n\n\n\nQuestion 9\nThis question is meant to emphasize the differences between linear regression and logistic regression. Each part will ask about different aspects of the two regression models. If the question has multiple choice answers, then you must write 1-2 sentences justifying your answer.\n\nPart a\nIn linear regression, what type of variable is our response/outcome variable?\n\nbinary\ncontinuous\ncount\nordinal\n\n\n\nPart b\nIn logistic regression, what type of variable is our response/outcome variable?\n\nbinary\ncontinuous\ncount\nnormal\n\n\n\nPart c\nWhat assumptions in linear regression? Please state the assumption name and characteristics of that assumption.\n\n\nPart d\nWhich assumptions of linear regression are violated if we try to fit a binary response using linear regression? You may choose more than one answer.\n\nIndependence\nLinearity\nNormality\nHomoscedasticity\n\n\n\nPart e\nPlease use our notes on generalized linear models (GLMs) to answer this question. What is the random component used in linear regression? What is the random component used in logistic regression? Name the specific variable type and distribution for it.\n\n\nPart f\nPlease use our notes on generalized linear models (GLMs) to answer this question. What link function do we use in linear regression? What link function do we use in logistic regression? Name the link and write out the function.\n\n\nPart g\nPlease use our notes on generalized linear models (GLMs) to answer this question. What is the systematic component used in simple linear regression? What is the systematic component used in simple logistic regression? Please write out the function for the systematic component for a single covariate.\n\n\nPart h\nHow do we determine our coefficient estimates (estimates of the parameter values) in linear regression? You may choose more than one answer.\n\nOrdinary least squares\nMaximum likelihood estimation\n\n\n\nPart i\nHow do we determine our coefficient estimates (estimates of the parameter values) in logistic regression? You may choose more than one answer.\n\nOrdinary least squares\nMaximum likelihood estimation\n\n\n\n\nQuestion 10\nOPTIONAL: you do not need to complete this for your grade\nLet’s make a decision tree on the different tests we learned! I would like you to make a flow chart for the different tests we learned in Classes 1 and 2. You’ll need to include characteristics for:\n\nNumber of variables (1, 2, or 3 - we will go over 3 variables in Class 4)\nNumber of categories in each variable\nSample size is small\nOrdinal/nominal independent variable\nOrdinal/nominal response variable(s)\n\nFor example, if I make a decision tree that includes end nodes for different animals (cat, dog, snake, turtle, and hawk) using yes/no characteristics (has a shell, woof/meows, has fur, or flies), then my flow chart would look like the one below. You are welcome to draw this chart. I used SmartArt under the Insert tab in Word to create mine."
+  },
+  {
+    "objectID": "practice/HW_00.html",
+    "href": "practice/HW_00.html",
+    "title": "Homework 0",
+    "section": "",
+    "text": "This homework does not need to be turned in on Brightspace."
+  },
+  {
+    "objectID": "practice/HW_00.html#questions",
+    "href": "practice/HW_00.html#questions",
+    "title": "Homework 0",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 1\nJoin our Slack workspace.\n\n\nQuestion 2\nEdit your Slack profile with the following changes:\n\nPlease upload a picture of yourself. Make sure your face is visible in this picture. It will help me identify you. Here is a video with instructions.\nProvide a pronunciation of your name. Here is a video with instructions.\nIf you are comfortable sharing your pronouns, please edit your name to include them at the end. For example, my profile says “Nicky Wakim (she/her)”\n\n\n\nQuestion 3\nPlease complete the following when2meet poll so that we can schedule office hours. Please use a unique identifier (does not have to be your name), so that I can make sure each student can attend at least one office hour.\n\n\nQuestion 4\nIn Slack, send a direct message to me with a screenshot of your Rstudio window open. This is to make sure you have access to Rstudio and can use it for our class. If you have any issues with Rstudio, please let me know ASAP and we can troubleshoot together.\n\n\nQuestion 5 (OPTIONAL)\nCompletion of this question is only necessary if you have accommodations. If you have any learning accommodations, please email me about your needs. I should receive a direct email from the Office of Student Access, but it is important that we discuss how accommodations will translate to our class. If you plan to seek accommodations, but do not have the formal document yet, please let me know!\nI highly suggest that you make an appointment with a learning specialist through Student Academic Support Services! If you often need more time on a test, struggle to focus in class, or noticed a difference between your learning style and typical styles offered in school, talk to academic support services and see if you qualify for accommodations! Most professors should be working towards an inclusive classroom, but this is the best way to insure you get the learning environment you need!"
+  },
+  {
+    "objectID": "practice/HW_05.html",
+    "href": "practice/HW_05.html",
+    "title": "Homework 5",
+    "section": "",
+    "text": "Caution\n\n\n\nNicky needs to edit"
+  },
+  {
+    "objectID": "practice/HW_05.html#directions",
+    "href": "practice/HW_05.html#directions",
+    "title": "Homework 5",
+    "section": "Directions",
+    "text": "Directions\n\nDownload the .qmd file here.\nYou will need to download the datasets. Use this link to download the homework datasets needed in this assignment. If you do not want to make changes to the paths set in this document, then make sure the files are stored in a folder named “data” that is housed in the same location as this homework .qmd file.\nPlease upload your homework to Sakai. Upload both your .qmd code file and the rendered .html file\n\nPlease rename you homework as Lastname_Firstinitial_HW5.qmd. This will help organize the homeworks when the TAs grade them.\nPlease also add the following line under subtitle: \"BSTA 513/613\": author: First-name Last-name with your first and last name so it is attached to the viewable document.\n\nFor each question, make sure to include all code and resulting output in the html file to support your answers.\nShow the work of your calculations using R code within a code chunk. Make sure that both your code and output are visible in the rendered html file. This is the default setting.\nIf you are computing something by hand, you may take a picture of your work and insert the image in this file. You may also use LaTeX to write it inline.\nWrite all answers in complete sentences as if communicating the results to a collaborator. This means including a sentence summarizing results in the context of the research study.\n\n\n\n\n\n\n\nTip\n\n\n\nIt is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your qmd file and rendering frequently helps you catch your errors more quickly."
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#what-are-r-packages",
+    "href": "lessons/10_Packages/Packages.html#what-are-r-packages",
+    "title": "Packages",
+    "section": "What are R packages?",
+    "text": "What are R packages?\nA good analogy for R packages is that they are like apps you can download onto a mobile phone:\n\nModernDive Figure 1.4\nPackages contain additional functions and data that are not built into R"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#installing-packages",
+    "href": "lessons/10_Packages/Packages.html#installing-packages",
+    "title": "Packages",
+    "section": "Installing packages",
+    "text": "Installing packages\nThee options to install packages:\n\n\n\nUse install.packages() with the package name in quotes\n\ninstall.packages(\"janitor\")   \n\n\n \n\nPreferred way: Use pacman::p_load() with the package name\n\npacman::p_load(janitor)   \n\n\n\n\nThe “Packages” tab in Viewer pane"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#load-packages-with-library-command",
+    "href": "lessons/10_Packages/Packages.html#load-packages-with-library-command",
+    "title": "Packages",
+    "section": "Load packages with library() command",
+    "text": "Load packages with library() command\n\nUse the library() command to load each required package\nPackages need to be reloaded every time you open Rstudio.\nTip: at the top of your files, have a segment of code dedicated to loading packages\n\nThis way, you can easily see and load packages required for your code\n\n\n \n\nFor example, to load a package called dplyr, you would run the code below:\n\nlibrary(dplyr)"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#another-way-to-load-and-install-packages-pacman",
+    "href": "lessons/10_Packages/Packages.html#another-way-to-load-and-install-packages-pacman",
+    "title": "Packages",
+    "section": "Another way to load (and install) packages: pacman",
+    "text": "Another way to load (and install) packages: pacman\n\nThe pacman package has a function called p_load()\n\nCan be used to both install and load packages in one step\nInstalls the package if necessary\n\nBest when you are loading many packages at once\nFor example, to load a package called dplyr using pacman, you would run the code below:\n\npacman::p_load(dplyr) \n\nNote that I am using pacman::p_load()\n\nThis is another way to access a package’s function without loading the whole package\nI am accessing p_load() from the pacman package"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#packages-used-in-this-class",
+    "href": "lessons/10_Packages/Packages.html#packages-used-in-this-class",
+    "title": "Packages",
+    "section": "Packages used in this class",
+    "text": "Packages used in this class\n\n\n\ntidyverse\n\nWe install and load tidyverse\nIt is a collection of many packages\nCore tidyverse: most commonly used {tidyverse} packages\n\nComplete list of core {tidyverse} packages\n\nAdditional tidyverse packages\n\nThe additional packages are installed when the {tidyverse} package is installed, but they are not loaded when the {tidyverse} package is loaded.\nThey need to be loaded individually to use.\n\n\n\n\n\n\n\nFor loading datasets:\n\nreadr\nreadxl\nhaven\n\nFor summarizing and visualizing data:\n\n{janitor}\n{gt}\n{rstatix}\n{gtsummary}\n{naniar}\n{ggplot2}\n\nfor wrangling data\n\n{dplyr}, {tidyr}"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#tidyverse",
+    "href": "lessons/10_Packages/Packages.html#tidyverse",
+    "title": "Packages",
+    "section": "Tidyverse",
+    "text": "Tidyverse\n\nImage made by Silvia Canelón"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#install-and-load-packages-option-1",
+    "href": "lessons/10_Packages/Packages.html#install-and-load-packages-option-1",
+    "title": "Packages",
+    "section": "Install and load packages: Option 1",
+    "text": "Install and load packages: Option 1\n\n\nRun the code below to install packages:\n\ninstall.packages(\"here\")\n1install.packages(\"tidyverse\")\ninstall.packages(\"writexl\")\ninstall.packages(\"rstatix\") \ninstall.packages(\"janitor\")\ninstall.packages(\"naniar\")\ninstall.packages(\"gt\")\ninstall.packages(\"gtsummary\")\n\n\n1\n\nThis will take a while to install\n\n\n\n\n\nLoad packages with library() command:\n\nlibrary(here)\nlibrary(tidyverse)\nlibrary(writexl)\nlibrary(rstatix)\nlibrary(janitor)\nlibrary(naniar)\nlibrary(gt)\nlibrary(gtsummary)\nlibrary(readxl)"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#install-and-load-packages-option-2",
+    "href": "lessons/10_Packages/Packages.html#install-and-load-packages-option-2",
+    "title": "Packages",
+    "section": "Install and load packages: Option 2",
+    "text": "Install and load packages: Option 2\n\npacman::p_load(\n  here, \n  tidyverse, \n  writexl, \n  rstatix, \n  janitor, \n  naniar,\n  gt,\n  gtsummary,\n  readxl\n)"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#references",
+    "href": "lessons/10_Packages/Packages.html#references",
+    "title": "Packages",
+    "section": "References",
+    "text": "References\n\nDanielle Navarro’s YouTube video on Installing and loading R packages: https://www.youtube.com/watch?v=kpHZVyDvEhQ\n\nIf you want to get more information on packages\n\nComprehensive R Archive Network (CRAN) = package mothership"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#loading-packages",
+    "href": "lessons/10_Packages/Packages.html#loading-packages",
+    "title": "Packages",
+    "section": "Loading packages",
+    "text": "Loading packages\nTwo options to load packages:\n\n\n\nUse library() with the package name (no quotes!)\n\nlibrary(janitor)   \n\n\n\n\nPreferred way: Use pacman::p_load() with the package name\n\npacman::p_load(janitor)   \n\n\n\n\nNote: this is the same as installing with p_load()\n\nThat’s because p_load() will install the package if it is not already installed, and then load it"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#from-installing-to-loading",
+    "href": "lessons/10_Packages/Packages.html#from-installing-to-loading",
+    "title": "Packages",
+    "section": "From installing to loading",
+    "text": "From installing to loading\n\nOnly install packages once (unless you want to update them)\nInstalled from Comprehensive R Archive Network (CRAN) = package mothership\n\n \n\nOnce packages are installed, we need to load them every time we want to use them in R\nTip: at the top of your files, have a segment of code dedicated to loading packages\n\nThis way, you can easily see and load packages required for your code"
   }
 ]
