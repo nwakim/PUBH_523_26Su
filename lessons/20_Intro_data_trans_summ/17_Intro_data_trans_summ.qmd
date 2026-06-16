@@ -26,11 +26,17 @@ execute:
 #| message: false
 #| warning: false
 
-library(tidyverse)
-library(lubridate)
-library(janitor)
-library(here)
-library(readxl)
+pacman::p_load(
+  here, 
+  tidyverse, 
+  writexl, 
+  rstatix, 
+  janitor, 
+  naniar,
+  gt,
+  gtsummary,
+  readxl
+)
 ```
 
 ```{r}

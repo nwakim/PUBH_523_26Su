@@ -1941,9 +1941,9 @@
   {
     "objectID": "lesson_references.html",
     "href": "lesson_references.html",
-    "title": "References",
+    "title": "External Resources",
     "section": "",
-    "text": "Lesson #\nLesson Name\nReferences\n\n\n\n\n\nQuarto documents\n\nTo learn more about working with Quarto, check out our BERD workshop: Creating Professional Presentations and Websites using R/Quarto\n\n\n\n\nPackages\n\nDanielle Navarro’s YouTube video on Installing and loading R packages: https://www.youtube.com/watch?v=kpHZVyDvEhQ\n\nIf you want to get more information on packages\n\n\n\n\n\nIntro to data transformations and summarizations\n\n`dplyr` cheat sheet\n\n\n\n\nData visualization: Intro to ggplot2\n\nggplot2 package website: https://ggplot2.tidyverse.org/articles/ggplot2.html\nOnline textbook for ggplot2: https://ggplot2-book.org/\nAnother online resource for data visualization with ggplot2: https://socviz.co/index.html#preface"
+    "text": "Lesson #\nLesson Name\nResources\n\n\n\n\n\n\nQuarto documents\n\nTo learn more about working with Quarto, check out our BERD workshop: Creating Professional Presentations and Websites using R/Quarto\n\n\n\n\n\nPackages\n\nDanielle Navarro’s YouTube video on Installing and loading R packages: https://www.youtube.com/watch?v=kpHZVyDvEhQ\n\nIf you want to get more information on packages\n\nComprehensive R Archive Network (CRAN) = package mothership\n\n\n\n\n\nIntro to data transformations and summarizations\n\ndplyr cheat sheet\n\n\n\n\nData visualization: Intro to ggplot2\n\nggplot2 package website: https://ggplot2.tidyverse.org/articles/ggplot2.html\nOnline textbook for ggplot2: https://ggplot2-book.org/\nAnother online resource for data visualization with ggplot2: https://socviz.co/index.html#preface"
   },
   {
     "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#common-console-errors-12",
@@ -4357,8 +4357,8 @@
     "objectID": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#dplyr-basics",
     "href": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#dplyr-basics",
     "title": "Intro to data transformations and summarizations",
-    "section": "",
-    "text": "dplyr is a package in the tidyverse that provides a set of functions for data manipulation and transformation\n\n \n\nEach function in dplyr is like a verb that describes the action being performed on the data\n\n \n\nMost functions within dplyr have similar input and output:\n\nInput: a data frame (usually the first argument in the function)\nOutput: a data frame\nAdditional arguments: typically describe what columns (variables) to operate on"
+    "section": "dplyr basics",
+    "text": "dplyr basics\n\ndplyr is a package in the tidyverse that provides a set of functions for data manipulation and transformation\n\n \n\nEach function in dplyr is like a verb that describes the action being performed on the data\n\n \n\nMost functions within dplyr have similar input and output:\n\nInput: a data frame (usually the first argument in the function)\nOutput: a data frame\nAdditional arguments: typically describe what columns (variables) to operate on"
   },
   {
     "objectID": "lessons/20_Intro_data_trans_summ/17_Intro_data_trans_summ.html#example-of-a-dplyr-function-select",
@@ -4652,7 +4652,7 @@
     "href": "lessons/10_Packages/Packages.html#packages-used-in-this-class",
     "title": "Packages",
     "section": "Packages used in this class",
-    "text": "Packages used in this class\n\n\n\ntidyverse\n\nWe install and load tidyverse\nIt is a collection of many packages\nCore tidyverse: most commonly used {tidyverse} packages\n\nComplete list of core {tidyverse} packages\n\nAdditional tidyverse packages\n\nThe additional packages are installed when the {tidyverse} package is installed, but they are not loaded when the {tidyverse} package is loaded.\nThey need to be loaded individually to use.\n\n\n\n\n\n\n\nFor loading datasets:\n\nreadr\nreadxl\nhaven\n\nFor summarizing and visualizing data:\n\n{janitor}\n{gt}\n{rstatix}\n{gtsummary}\n{naniar}\n{ggplot2}\n\nfor wrangling data\n\n{dplyr}, {tidyr}"
+    "text": "Packages used in this class\n\n\n\n\nFor loading/saving data\n\n\n\nhere\nreadr\nreadxl\nhaven\nwritexl\n\n\n\n\n\n\nFor summarizing/visualizing data\n\n\n\njanitor\ngt\nrstatix\ngtsummary\nnaniar\nggplot2\n\n\n\n\n\n\nFor wrangling data\n\n\n\ndplyr\ntidyr\ntibble\nforcats\nlubridate\nstringr"
   },
   {
     "objectID": "lessons/10_Packages/Packages.html#tidyverse",
@@ -4695,5 +4695,19 @@
     "title": "Packages",
     "section": "From installing to loading",
     "text": "From installing to loading\n\nOnly install packages once (unless you want to update them)\nInstalled from Comprehensive R Archive Network (CRAN) = package mothership\n\n \n\nOnce packages are installed, we need to load them every time we want to use them in R\nTip: at the top of your files, have a segment of code dedicated to loading packages\n\nThis way, you can easily see and load packages required for your code"
+  },
+  {
+    "objectID": "lessons/10_Packages/Packages.html#install-and-load-packages",
+    "href": "lessons/10_Packages/Packages.html#install-and-load-packages",
+    "title": "Packages",
+    "section": "Install and load packages",
+    "text": "Install and load packages\n\nNote that I am using pacman::p_load()\n\n:: is used to access a package’s function without loading the whole package\nI am accessing p_load() from the pacman package\n\n\n\npacman::p_load(\n1  tidyverse,\n2  here,\n  readxl, \n  haven, \n  writexl,\n3  janitor,\n  rstatix, \n  gt,\n  gtsummary, \n  naniar\n)\n\n\n1\n\ntidyverse contains most of our needed packages\n\n2\n\nThese are the extra packages we need for loading/saving data\n\n3\n\nThese are the extra packages we need for summarizing/visualizing data"
+  },
+  {
+    "objectID": "lessons/R10_Table_1/R13_Table_1.html#table-1-example",
+    "href": "lessons/R10_Table_1/R13_Table_1.html#table-1-example",
+    "title": "R13: Making Table 1",
+    "section": "Table 1 example",
+    "text": "Table 1 example\n\n\n\n\n\n\n\n\nAre We on the Same Page?: A Cross-Sectional Study of Patient-Clinician Goal Concordance in Rheumatoid Arthritis\nJ Barton et al.\nArthritis Care & Research.\n2021 Sep 27 https://pubmed.ncbi.nlm.nih.gov/34569172/"
   }
 ]

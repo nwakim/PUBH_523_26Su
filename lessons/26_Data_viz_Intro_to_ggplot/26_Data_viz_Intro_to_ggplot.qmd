@@ -26,13 +26,17 @@ execute:
 #| message: false
 #| warning: false
 
-library(tidyverse)
-library(lubridate)
-library(janitor)
-library(here)
-library(readxl)
-library(gt)
-library(rstatix)
+pacman::p_load(
+  here, 
+  tidyverse, 
+  writexl, 
+  rstatix, 
+  janitor, 
+  naniar,
+  gt,
+  gtsummary,
+  readxl
+)
 
 theme_set(theme_grey(base_size = 24)) 
 ```

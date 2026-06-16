@@ -289,128 +289,100 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 </div>
 </div></div>
 </section>
-<section id="another-way-to-load-and-install-packages-pacman" class="slide level2">
-<h2>Another way to load (and install) packages: <code>pacman</code></h2>
-<ul>
-<li><p>The <code>pacman</code> package has a function called <code>p_load()</code></p>
-<ul>
-<li>Can be used to both install and load packages in one step</li>
-<li>Installs the package if necessary</li>
-</ul></li>
-<li><p>Best when you are loading many packages at once</p></li>
-<li><p>For example, to load a package called <code>dplyr</code> using <code>pacman</code>, you would run the code below:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(dplyr) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div></li>
-<li><p>Note that I am using <code>pacman::p_load()</code></p>
-<ul>
-<li>This is another way to access a package’s function without loading the whole package</li>
-<li>I am accessing <code>p_load()</code> from the <code>pacman</code> package</li>
-</ul></li>
-</ul>
-</section>
 <section id="packages-used-in-this-class" class="slide level2">
 <h2>Packages used in this class</h2>
 <div class="columns">
-<div class="column" style="width:62%;">
+<div class="column" style="width:33%;">
+<div class="pink">
+<div class="pink-ttl">
+<p>For <strong>loading</strong>/<strong>saving</strong> data</p>
+</div>
+<div class="pink-cont">
 <ul>
-<li><code>tidyverse</code>
-<ul>
-<li>We install and load <code>tidyverse</code></li>
-<li>It is a collection of many packages</li>
-<li><span style="color:#C83532"><strong>Core tidyverse</strong></span>: most commonly used {tidyverse} packages
-<ul>
-<li><a href="https://tidyverse.tidyverse.org/#usage" target="_blank">Complete list of core {tidyverse} packages</a></li>
-</ul></li>
-<li><span style="color:#5BAFF8"><strong>Additional tidyverse</strong></span> packages
-<ul>
-<li>The <a href="https://tidyverse.tidyverse.org/#packages" target="_blank">additional packages</a> are installed when the {tidyverse} package is installed, but they are not loaded when the {tidyverse} package is loaded.</li>
-<li>They need to be loaded individually to use.</li>
-</ul></li>
-</ul></li>
+<li><code>here</code></li>
+<li><code>readr</code></li>
+<li><code>readxl</code></li>
+<li><code>haven</code></li>
+<li><code>writexl</code></li>
 </ul>
-</div><div class="column" style="width:8%;">
-
-</div><div class="column" style="width:30%;">
+</div>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="blue">
+<div class="blue-ttl">
+<p>For <strong>summarizing</strong>/<strong>visualizing</strong> data</p>
+</div>
+<div class="blue-cont">
 <ul>
-<li><p>For <strong>loading</strong> datasets:</p>
-<ul>
-<li><span style="color:#C83532">readr</span></li>
-<li><span style="color:#5BAFF8">readxl</span></li>
-<li><span style="color:#5BAFF8">haven</span></li>
-</ul></li>
-<li><p>For <strong>summarizing</strong> and <strong>visualizing</strong> data:</p>
-<ul>
-<li>{janitor}</li>
-<li>{gt}</li>
-<li>{rstatix}</li>
-<li>{gtsummary}</li>
-<li>{naniar}</li>
-<li><span style="color:#C83532">{ggplot2}</span></li>
-</ul></li>
-<li><p>for <strong>wrangling</strong> data</p>
-<ul>
-<li><span style="color:#C83532">{dplyr}, {tidyr}</span></li>
-</ul></li>
+<li><code>janitor</code></li>
+<li><code>gt</code></li>
+<li><code>rstatix</code></li>
+<li><code>gtsummary</code></li>
+<li><code>naniar</code></li>
+<li><code>ggplot2</code></li>
 </ul>
+</div>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="green">
+<div class="green-ttl">
+<p>For <strong>wrangling</strong> data</p>
+</div>
+<div class="green-cont">
+<ul>
+<li><code>dplyr</code></li>
+<li><code>tidyr</code></li>
+<li><code>tibble</code></li>
+<li><code>forcats</code></li>
+<li><code>lubridate</code></li>
+<li><code>stringr</code></li>
+</ul>
+</div>
+</div>
 </div></div>
 </section>
 <section id="tidyverse" class="slide level2">
 <h2>Tidyverse</h2>
 
 <img data-src="../img_slides/tidyverse_packages.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/spcanelon/tour-of-the-tidyverse/blob/master/images/pptx/tidyverse.png">Image made by Silvia Canelón</a></p></section>
-<section id="install-and-load-packages-option-1" class="slide level2">
-<h2>Install and load packages: Option 1</h2>
-<div class="columns">
-<div class="column">
-<p>Run the code below to install packages:</p>
+<section id="install-and-load-packages" class="slide level2">
+<h2>Install and load packages</h2>
+<ul>
+<li><p>Note that I am using <code>pacman::p_load()</code></p>
+<ul>
+<li><code>::</code> is used to access a package’s function without loading the whole package</li>
+<li>I am accessing <code>p_load()</code> from the <code>pacman</code> package</li>
+</ul></li>
+</ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-7"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1"></a><span class="fu">install.packages</span>(<span class="st">"here"</span>)</span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1">1</button><span id="annotated-cell-7-2" class="code-annotation-target"><a href="#annotated-cell-7-2"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="annotated-cell-7-3"><a href="#annotated-cell-7-3"></a><span class="fu">install.packages</span>(<span class="st">"writexl"</span>)</span>
-<span id="annotated-cell-7-4"><a href="#annotated-cell-7-4"></a><span class="fu">install.packages</span>(<span class="st">"rstatix"</span>) </span>
-<span id="annotated-cell-7-5"><a href="#annotated-cell-7-5"></a><span class="fu">install.packages</span>(<span class="st">"janitor"</span>)</span>
-<span id="annotated-cell-7-6"><a href="#annotated-cell-7-6"></a><span class="fu">install.packages</span>(<span class="st">"naniar"</span>)</span>
-<span id="annotated-cell-7-7"><a href="#annotated-cell-7-7"></a><span class="fu">install.packages</span>(<span class="st">"gt"</span>)</span>
-<span id="annotated-cell-7-8"><a href="#annotated-cell-7-8"></a><span class="fu">install.packages</span>(<span class="st">"gtsummary"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1">1</button><span id="annotated-cell-1-2" class="code-annotation-target"><a href="#annotated-cell-1-2"></a>  tidyverse,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="2">2</button><span id="annotated-cell-1-3" class="code-annotation-target"><a href="#annotated-cell-1-3"></a>  here,</span>
+<span id="annotated-cell-1-4"><a href="#annotated-cell-1-4"></a>  readxl, </span>
+<span id="annotated-cell-1-5"><a href="#annotated-cell-1-5"></a>  haven, </span>
+<span id="annotated-cell-1-6"><a href="#annotated-cell-1-6"></a>  writexl,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="3">3</button><span id="annotated-cell-1-7" class="code-annotation-target"><a href="#annotated-cell-1-7"></a>  janitor,</span>
+<span id="annotated-cell-1-8"><a href="#annotated-cell-1-8"></a>  rstatix, </span>
+<span id="annotated-cell-1-9"><a href="#annotated-cell-1-9"></a>  gt,</span>
+<span id="annotated-cell-1-10"><a href="#annotated-cell-1-10"></a>  gtsummary, </span>
+<span id="annotated-cell-1-11"><a href="#annotated-cell-1-11"></a>  naniar</span>
+<span id="annotated-cell-1-12"><a href="#annotated-cell-1-12"></a>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-7" data-code-lines="2" data-code-annotation="1">This will take a while to install</span>
+<span data-code-cell="annotated-cell-1" data-code-lines="2" data-code-annotation="1"><code>tidyverse</code> contains most of our needed packages</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="3,6" data-code-annotation="2">These are the extra packages we need for loading/saving data</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="7,11" data-code-annotation="3">These are the extra packages we need for summarizing/visualizing data</span>
 </dd>
 </dl>
 </div>
-</div>
-</div><div class="column">
-<p>Load packages with <code>library()</code> command:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">library</span>(here)</span>
-<span id="cb6-2"><a></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb6-3"><a></a><span class="fu">library</span>(writexl)</span>
-<span id="cb6-4"><a></a><span class="fu">library</span>(rstatix)</span>
-<span id="cb6-5"><a></a><span class="fu">library</span>(janitor)</span>
-<span id="cb6-6"><a></a><span class="fu">library</span>(naniar)</span>
-<span id="cb6-7"><a></a><span class="fu">library</span>(gt)</span>
-<span id="cb6-8"><a></a><span class="fu">library</span>(gtsummary)</span>
-<span id="cb6-9"><a></a><span class="fu">library</span>(readxl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="install-and-load-packages-option-2" class="slide level2">
-<h2>Install and load packages: Option 2</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
-<span id="cb7-2"><a></a>  here, </span>
-<span id="cb7-3"><a></a>  tidyverse, </span>
-<span id="cb7-4"><a></a>  writexl, </span>
-<span id="cb7-5"><a></a>  rstatix, </span>
-<span id="cb7-6"><a></a>  janitor, </span>
-<span id="cb7-7"><a></a>  naniar,</span>
-<span id="cb7-8"><a></a>  gt,</span>
-<span id="cb7-9"><a></a>  gtsummary,</span>
-<span id="cb7-10"><a></a>  readxl</span>
-<span id="cb7-11"><a></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="references" class="slide level2">

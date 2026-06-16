@@ -26,10 +26,12 @@ execute:
 #| message: false
 #| warning: false
 
-library(tidyverse)
-library(lubridate)
-library(janitor)
-library(here)
+pacman::p_load(
+  tidyverse, 
+  lubridate,
+  janitor,
+  here
+)
 ```
 
 ## What are R packages?
@@ -121,64 +123,55 @@ Two options to load packages:
 :::
 :::::
 
-
-## Another way to load (and install) packages: `pacman`
-
-- The `pacman` package has a function called `p_load()`
-
-  - Can be used to both install and load packages in one step
-  - Installs the package if necessary
-
-- Best when you are loading many packages at once
-
-- For example, to load a package called `dplyr` using `pacman`, you would run the code below:
-
-  ```{r}
-  #| eval: false
-  pacman::p_load(dplyr) 
-  ```
-
-- Note that I am using `pacman::p_load()`
-
-  - This is another way to access a package's function without loading the whole package
-  - I am accessing `p_load()` from the `pacman` package
-
 ## Packages used in this class
 
 :::::: columns
-::: {.column width="62%"}
-- `tidyverse`
-  - We install and load `tidyverse`
-  - It is a collection of many packages
-  - [**Core tidyverse**]{style="color:#C83532"}: most commonly used {tidyverse} packages
-    - [Complete list of core {tidyverse} packages](https://tidyverse.tidyverse.org/#usage){target="_blank"}
-  - [**Additional tidyverse**]{style="color:#5BAFF8"} packages
-    - The [additional packages](https://tidyverse.tidyverse.org/#packages){target="_blank"} are installed when the {tidyverse} package is installed, but they are not loaded when the {tidyverse} package is loaded.
-    - They need to be loaded individually to use.
+::: {.column width="33%"}
+
+::: pink
+::: pink-ttl
+For **loading**/**saving** data
+:::
+::: pink-cont
+- `here`
+- `readr`
+- `readxl`
+- `haven`
+- `writexl`
+:::
+:::
+:::
+::: {.column width="33%"}
+
+::: blue
+::: blue-ttl
+For **summarizing**/**visualizing** data
+:::
+::: blue-cont
+  - `janitor`
+  - `gt`
+  - `rstatix`
+  - `gtsummary`
+  - `naniar`
+  - `ggplot2`
+:::
+:::
 :::
 
-::: {.column width="8%"}
+::: {.column width="33%"}
+::: green
+::: green-ttl
+For **wrangling** data
 :::
-
-::: {.column width="30%"}
-- For **loading** datasets:
-
-  - [readr]{style="color:#C83532"}
-  - [readxl]{style="color:#5BAFF8"}
-  - [haven]{style="color:#5BAFF8"}
-
-- For **summarizing** and **visualizing** data:
-
-  - {janitor}
-  - {gt}
-  - {rstatix}
-  - {gtsummary}
-  - {naniar}
-  - [{ggplot2}]{style="color:#C83532"}
-
-- for **wrangling** data
-
-  - [{dplyr}, {tidyr}]{style="color:#C83532"}
+::: green-cont
+  - `dplyr`
+  - `tidyr`
+  - `tibble`
+  - `forcats`
+  - `lubridate`
+  - `stringr`
+:::
+:::
 :::
 ::::::
 
@@ -186,59 +179,31 @@ Two options to load packages:
 
 ![[Image made by Silvia Canelón](https://github.com/spcanelon/tour-of-the-tidyverse/blob/master/images/pptx/tidyverse.png)](../img_slides/tidyverse_packages.png)
 
-## Install and load packages: Option 1
+## Install and load packages
 
-::::: columns
-::: column
-Run the code below to install packages:
+- Note that I am using `pacman::p_load()`
 
-```{r}
-#| eval: FALSE
-install.packages("here")
-install.packages("tidyverse")  # <1>
-install.packages("writexl")
-install.packages("rstatix") 
-install.packages("janitor")
-install.packages("naniar")
-install.packages("gt")
-install.packages("gtsummary")
-```
-
-1.  This will take a while to install
-:::
-
-::: column
-Load packages with `library()` command:
-
-```{r}
-library(here)
-library(tidyverse)
-library(writexl)
-library(rstatix)
-library(janitor)
-library(naniar)
-library(gt)
-library(gtsummary)
-library(readxl)
-```
-:::
-:::::
-
-## Install and load packages: Option 2
+  - `::` is used to access a package's function without loading the whole package
+  - I am accessing `p_load()` from the `pacman` package
 
 ```{r}
 pacman::p_load(
-  here, 
-  tidyverse, 
-  writexl, 
+  tidyverse, #<1>
+  here, #<2>
+  readxl, 
+  haven, 
+  writexl, #<2>
+  janitor, #<3>
   rstatix, 
-  janitor, 
-  naniar,
   gt,
-  gtsummary,
-  readxl
+  gtsummary, 
+  naniar #<3>
 )
 ```
+
+1. `tidyverse` contains most of our needed packages
+2. These are the extra packages we need for loading/saving data
+3. These are the extra packages we need for summarizing/visualizing data
 
 ## References
 
