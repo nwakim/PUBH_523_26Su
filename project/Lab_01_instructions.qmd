@@ -13,11 +13,14 @@ format:
     number-depth: 4
     code-annotations: hover
     page-layout: full
+    highlight-style: ayu
+    code-block-bg: "#f8f9fa"       # Sets the background color
+    code-block-border-left: "#5BAFF8" # Enables and colors a thick left border
   pdf: default 
 editor_options: 
   chunk_output_type: console
 execute:
-  freeze: auto  # re-render only when source changes
+  freeze: auto 
 ---
 
 
@@ -27,27 +30,47 @@ execute:
 
 # PLEASE DO NOT REMOVE THIS CODE CHUNK!!!
 ### ADD YOUR LIBRARIES HERE!!! ####
-
-library(tidyverse)
-library(gtsummary)
-library(here)
+pacman::p_load( # These are my goto packages to load
+  here, 
+  tidyverse, 
+  writexl, 
+  rstatix, 
+  janitor, 
+  naniar,
+  gt,
+  gtsummary,
+  readxl
+)
 ```
 
-## Directions
+<style>
+/* Hide numbers for H1 and H2 in the main body */
+h1 .header-section-number, 
+h2 .header-section-number {
+    display: none;
+}
+</style>
 
-[You can download the `.qmd` file for this lab here.](https://github.com/nwakim/BSTA_513_26S/blob/main/project/LastName_FirstInit_Lab_01.qmd)
+## Directions {.unnumbered}
+
+[You can download the `.qmd` file for this lab here.](https://github.com/nwakim/PUBH_523_26Su/blob/main/project/LastName_FirstInit_Lab_01.qmd)
 
 The above link will take you to your **editing** file. **Please do not remove anything from this editing file!!** You will only add your code and work to this file.
 
-## Lab activities
+## Purpose {.unnumbered}
+
+**The purpose of this lab is to familiarize yourself with the Well-Being and Basic Needs Survey (WBNS) dataset**, understand its structure and components, and prepare it for further data transformations. This includes downloading the data, organizing your project files, loading the data into R, and making initial modifications to ensure it's in a working format for your project.
+
+## Lab activities 
 
 ### Familiarize yourself with the Well-Being and Basic Needs Survey
 
-Please read the [Urban Institute's page](https://www.urban.org/policy-centers/health-policy-center/projects/well-being-and-basic-needs-survey) on the Well-Being and Basic Needs Survey (WBNS) and more of their [published information of the survey](https://www.urban.org/sites/default/files/publication/98919/the_well-being_and_basic_needs_survey_1.pdf) (at least the first 4 pages). You can also read about the overarching [From Safety Net to Solid Ground Initiative](https://www.urban.org/tags/safety-net-solid-ground#about) that started the survey. Answer the following questions:
+Please read the [Urban Institute's page](https://www.urban.org/policy-centers/health-policy-center/projects/well-being-and-basic-needs-survey) on the Well-Being and Basic Needs Survey (WBNS) and more of their [published information of the survey](https://www.urban.org/sites/default/files/publication/98919/the_well-being_and_basic_needs_survey_1.pdf) (at least the first 4 pages). You can also read about the overarching [From Safety Net to Solid Ground Initiative](https://www.urban.org/tags/safety-net-solid-ground#about) that started the survey. 
+Answer the following questions:
 
 -   What is the motivation for this study? 
--   How could an analysis that looks at associations with food insecurity help facilitate change in policy?
--   Why is it important to study food insecurity?
+-   How could an information sheet on components of the WBNS help change policy?
+-   Why is it important to study basic needs?
 
 ::: callout-important
 #### Task
@@ -55,8 +78,8 @@ Please read the [Urban Institute's page](https://www.urban.org/policy-centers/he
 Answer the following questions using information on WBNS:
 
 -   What is the motivation for this study? 
--   How could an analysis that looks at associations with food insecurity help facilitate change in policy?
--   Why is it important to study food insecurity?
+-   How could an information sheet on components of the WBNS help change policy?
+-   Why is it important to study basic needs?
 :::
 
 ### File organization
@@ -77,11 +100,11 @@ Insert an image of your folder organization with the `.Rproj` file in the correc
 2.  Go to the Data & Documentation tab ![](./images/Lab_01/dnd.png)
 3.  Download the R version of the Public use data ![](./images/Lab_01/download.png)
 4.  Read and agree to the Terms of Use. After this, you will be redirected to a new page.
-5.  Log into ICPSR by clicking "Access through your institution". You should be taken to a new page where you need to select "Oregon Health & Science University" ![](./images/Lab_01/ICPSR.png)
+5.  Log into ICPSR by clicking "Access through your institution". You should be taken to a new page where you need to select "Oregon Health & Science University" \ ![](./images/Lab_01/ICPSR.png){width=300px}
 6.  Login using standard OHSU login. Then the download should begin!
 7.  Make sure to move this into your project folder under the "data" folder.
 8.  Take a look at the folders/files you just downloaded. Make sure to locate and understand the difference between the Codebook, Questionnaire, and User Guide. (Note that the website also contains the codebook if you go to the variable tab. I think the online one has an easier user interface than the pdf.)
-9. **Read the User Guide!** There is some important information about the data and how to use it.
+9. **Read the User Guide!** There is some important information about the dataset and how to use it.
 
 ::: callout-important
 #### Task
@@ -91,14 +114,14 @@ No task to report back on. Just make sure you have the data and read the User Gu
 
 ### Load the data and rename the dataset
 
-The dataset you downloaded from ICPSR comes compressed in a zip file. Once you unzip it, locate the R data file (which usually has a `.RData` or `.rda` extension) inside the data folder.
+The dataset you downloaded from ICPSR comes compressed in a zip file. Once you unzip it, locate the R data file (called `39691-0001-Data.rda`) inside the DS0001 folder.
 
-Load your data using the appropriate functions for the file type and file path. Once your data are loaded, assign the dataset a cleaner, more intuitive name for your project workflows.
+Using your `.Rproj` location and the `here()` function, load your data using the appropriate functions for the file type and file path. Once your data are loaded, assign the dataset a cleaner, more intuitive name for your project workflows. I used `wbns_data` for my dataset name, but you can choose any name you like!
 
 ::: callout-important
 #### Task
 
-Load your downloaded data file into R. Rename the loaded object to a clean dataset name of your choice.
+Load your downloaded data file into R. Rename the loaded object to a clean dataset name of your choice. (Make sure to show the code for this!)
 :::
 
 ### Decide on your project question

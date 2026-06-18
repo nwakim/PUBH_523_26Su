@@ -1,7 +1,7 @@
 ---
 title: "Homework 0"
 subtitle: "PUBH 523/623"
-description: "Due: `r library(here); source(here('class_dates.R')); pract1 %>% format('%m/%d')`"
+author: "Your name here - update this!!!!"
 date-modified: "today"
 format: 
   html:
@@ -11,15 +11,6 @@ format:
 editor_options: 
   chunk_output_type: console
 ---
-
-```{r}
-#| label: "setup"
-#| include: false
-knitr::opts_chunk$set(echo = TRUE)
-
-library(here)
-source(here("class_dates.R"))
-```
 
 ::: {.callout-note appearance="minimal"}
 **This homework does not need to be turned in on Brightspace.**

@@ -1,7 +1,7 @@
 ---
 title: "Lab 2 Instructions"
-author: "Your Name Here"
-subtitle: "PUBH 523/623: Data Transformation"
+author: "Nicky Wakim"
+subtitle: "PUBH 523/623"
 date-modified: "today"
 format: 
   html:
@@ -13,12 +13,15 @@ format:
     number-depth: 4
     code-annotations: hover
     page-layout: full
+    highlight-style: ayu
+    code-block-bg: "#f8f9fa"       # Sets the background color
+    code-block-border-left: "#5BAFF8" # Enables and colors a thick left border
+  pdf: default 
 editor_options: 
   chunk_output_type: console
 execute:
   freeze: auto 
 ---
-
 
 ```{r}
 #| message: false
@@ -26,30 +29,68 @@ execute:
 
 # PLEASE DO NOT REMOVE THIS CODE CHUNK!!!
 ### ADD YOUR LIBRARIES HERE!!! ####
-
-library(tidyverse)
-library(gtsummary)
-library(here)
+pacman::p_load( # These are my goto packages to load
+  here, 
+  tidyverse, 
+  writexl, 
+  rstatix, 
+  janitor, 
+  naniar,
+  gt,
+  gtsummary,
+  readxl
+)
 ```
 
-## Directions
+```{=html}
+<style>
+/* Hide numbers for H1 and H2 in the main body */
+h1 .header-section-number, 
+h2 .header-section-number {
+    display: none;
+}
+</style>
+```
 
-[You can download the `.qmd` file for this lab here.](https://github.com/nwakim/BSTA_513_26S/blob/main/project/LastName_FirstInit_Lab_01.qmd)
+## Directions {.unnumbered}
+
+[You can download the `.qmd` file for this lab here.](https://github.com/nwakim/PUBH_523_26Su/blob/main/project/LastName_FirstInit_Lab_01.qmd)
 
 The above link will take you to your **editing** file. **Please do not remove anything from this editing file!!** You will only add your code and work to this file.
 
+## Purpose {.unnumbered}
+
+**The purpose of this lab is to prepare our data for further investigation using several data transformations.** We will filter to our target subpopulation, select only the variables relevant to our project, and create new variables that combine information from multiple source columns. **This is meant to take your practice on data transformation one step further: translating written human language to the needed action, function, and arguments.**
+
 ## Lab activities
+
++---------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
+| Project                                                                   | Population                                                                                                                                           | Variables                                                                                                          | Composite score                                                            |
++===========================================================================+======================================================================================================================================================+====================================================================================================================+============================================================================+
+| How does food support systems help individuals                            | People under 100% FPL (filter for) and people who received free groceries or meals in the past 12 months (consequence of answering Q26D)             | FOOD_INSEC,                                                                                                        | Composite score of ease of access to free groceries or meals (Q6D's added) |
+|                                                                           |                                                                                                                                                      |                                                                                                                    |                                                                            |
+|                                                                           |                                                                                                                                                      | Q26D (1-4), up to 3 other variables that you're interested in!                                                     |                                                                            |
++---------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
+| How does trust and fair treatment at doctors effect self-reported health? | People who identify as LGBTQ                                                                                                                         | Q108B_2 (trust), Q70F_4, Q70F_5 (trt or judged unfairly bc of gender ID or sex oreint), Q27 (self-reported health) | Trust, not judged, and treated fairly (1 add for Q108B_2, Q70F_4, Q70F_5)  |
+|                                                                           |                                                                                                                                                      |                                                                                                                    |                                                                            |
+|                                                                           | (You can change this population if you want. For example, you may want to focus on anti-fat bias at the doctor's office. Check out Q70F for options) |                                                                                                                    |                                                                            |
++---------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
+| How does benefits received effect mental health of parents?               | People who have at least one child in the household                                                                                                  | Measures of mental health (Q30s),                                                                                  | Total mental health, total beenfits                                        |
+|                                                                           |                                                                                                                                                      |                                                                                                                    |                                                                            |
+|                                                                           |                                                                                                                                                      | Measures of benefits (Q53s)                                                                                        |                                                                            |
++---------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
+|                                                                           |                                                                                                                                                      |                                                                                                                    |                                                                            |
++---------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 
 ### Filtering to Your Target Subpopulation
 
 To implement an asset-focused analysis, we must first isolate the subpopulation relevant to your scope using `filter()`.
 
-* *If Option 1 or 3 (Food/Housing Safety Net):* Filter your data to households navigating budget constraints, defined as those living below 200% of the Federal Poverty Level (`FPL_LT50 == 1 | FPL50_100 == 1 | FPL100_150 == 1 | FPL150_200 == 1`).
-* *If Option 2 (Healthcare Access):* Filter to individuals relying on public coverage options.
-* *If Option 4 (Work Support):* Filter to active working families or households with children (`NUM_CHILD_HH >= 1`).
+- *If Option 1 or 3 (Food/Housing Safety Net):* Filter your data to households navigating budget constraints, defined as those living below 200% of the Federal Poverty Level (`FPL_LT50 == 1 | FPL50_100 == 1 | FPL100_150 == 1 | FPL150_200 == 1`).
+- *If Option 2 (Healthcare Access):* Filter to individuals relying on public coverage options.
+- *If Option 4 (Work Support):* Filter to active working families or households with children (`NUM_CHILD_HH >= 1`).
 
 ::: callout-important
-
 #### Task
 
 Write a pipeline that filters the dataset down to your specific population of interest. Save this as a new object called `wbns_project_sub`. Print out the number of rows before and after filtering to verify the operation.
@@ -60,11 +101,12 @@ Write a pipeline that filters the dataset down to your specific population of in
 Your dataset contains hundreds of variables. For project clarity, reduce your data frame to only columns essential for your scope.
 
 ::: callout-important
-
 #### Task
 
 Use `select()` to keep only the following columns in your subset data frame: `ID`, your demographic grouping variables (e.g., `PPETHM`, `PPGENDER`, or `PPAGE`), your programmatic support variables, and your outcome variable (e.g., `Q23`).
 :::
+
+### Rename variables for clarity
 
 ### Constructing the Combined Asset Index
 
@@ -73,22 +115,22 @@ Your project must create a brand-new variable that combines information from at 
 Use `if_else()` or `case_when()` inside your mutate pipeline to catch and handle missing values or refusals, converting them to `0` or `NA` so they do not distort your math.
 
 ::: callout-important
-
 #### Task
 
 Create your new combined asset metric using `mutate()`. Write a brief paragraph explaining:
 
-1. Which source variables you chose.
-2. The code logic you applied to handle missing values or refusals.
-3. What a high score vs. low score means on your new metric.
+1.  Which source variables you chose.
+2.  The code logic you applied to handle missing values or refusals.
+3.  What a high score vs. low score means on your new metric.
 :::
+
+## Remove NA's
 
 ### Inverting a Deficit Variable into an Asset Lens
 
 Many survey questions are framed around deficits (e.g., `Q23` asks about eating less due to lack of money). To fulfill our asset-based goal, we will use `case_when()` to invert this into a positive framing. For example, a response of "No" to `Q23` means a family maintained full dietary stability.
 
 ::: callout-important
-
 #### Task
 
 Use `mutate()` and `case_when()` to transform your primary health/well-being outcome variable into an asset-framed factor variable. Use `glimpse()` to display your final, transformed data frame.
