@@ -24,6 +24,9 @@ execute:
 
 - Copying code: the copy option on all code!
 - Accessing the source code for this site via GitHub
+- A video *might* reference something you haven't covered yet
+  - For example: I mention an "object" in the lesson on functions, but we don't cover objects until the next lesson
+  - I will always try to group videos that mention new material in a week together
 
 ## Course Overview
 

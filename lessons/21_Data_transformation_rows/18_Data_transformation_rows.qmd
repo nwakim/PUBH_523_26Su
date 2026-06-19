@@ -23,7 +23,7 @@ execute:
 ```{r}
 #| label: "setup" 
 #| include: false
-#| message: false
+#| message_yr: false
 #| warning: false
 
 library(tidyverse)
@@ -35,9 +35,9 @@ library(readxl)
 
 ```{r}
 #| echo: false
-hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
+hrs_data <- read_rds(here("./data/hrs_data.rds"))
 hrs_data <- clean_names(hrs_data) |>
-  relocate(age, .after = birthdate) # move age column to be after id column
+  relocate(age_yr, .after = birthdate) # move age_yr column to be after id column
 ```
 
 ## Data transformations on rows
@@ -69,32 +69,32 @@ hrs_data <- clean_names(hrs_data) |>
     -   `==`: equal to
     -   `!=`: not equal to
 
-## Example: filtering age 
+## Example: filtering age_yr 
 
-- Let's filter on a numeric variable, `age`: all rows with `age` values greater than 99
-  - We will expect to return rows with `age` values of 100 and above from `hrs_data`
+- Let's filter on a numeric variable, `age_yr`: all rows with `age_yr` values greater than 99
+  - We will expect to return rows with `age_yr` values of 100 and above from `hrs_data`
 
 ```{r}
 hrs_data |> # <1>
   filter( # <2>
-    age > 99 # <3>
+    age_yr > 99 # <3>
     ) # <2>
 ```
 
 1. The first argument is the data frame we want to operate on (in this case, `hrs_data`)
-2. The second argument is the condition we want to apply to filter our data (in this case, `age > 99`)
-3. The condition is specified using a comparison operator (in this case, `>`) and the variable we want to filter on (in this case, `age`)
+2. The second argument is the condition we want to apply to filter our data (in this case, `age_yr > 99`)
+3. The condition is specified using a comparison operator (in this case, `>`) and the variable we want to filter on (in this case, `age_yr`)
 
 
-## Example: filtering age, now only exact matches
+## Example: filtering age_yr, now only exact matches
 
-- Let's filter on a numeric variable, `age`: all rows with `age` values equal to 38
-  - We will expect to return rows with `age` values of 38 from `hrs_data`
+- Let's filter on a numeric variable, `age_yr`: all rows with `age_yr` values equal to 38
+  - We will expect to return rows with `age_yr` values of 38 from `hrs_data`
 
 ```{r}
 hrs_data |> 
   filter( 
-    age == 38 # <1>
+    age_yr == 38 # <1>
     ) 
 ```
 
@@ -127,7 +127,7 @@ hrs_data |>
   filter(
     degree == "Master's degree" # <1> 
     ) |> 
-  print(n = 5)
+  head()
 ```
 
 ## Example: filtering degree but mispelling the value
@@ -242,7 +242,7 @@ hrs_data |> drop_na(degree) #<1>
 
 ## Example: sort data by ascending birth year
 
--   By default, `arrage()` sorts in *ascending* order:
+-   By default, `arrage_yr()` sorts in *ascending* order:
 
 ```{r}
 hrs_data |> 
@@ -265,23 +265,23 @@ hrs_data |>
 ## Sorting datasets by multiple variables
 
 -   You can also arrange by multiple variables.
-    -   The code below sorts by `age` *first*, and then within `age`, we sort by `pn`.
+    -   The code below sorts by `age_yr` *first*, and then within `age_yr`, we sort by `pn`.
 
 ```{r}
 hrs_data |> 
-  arrange(age, ed) #<1>
+  arrange(age_yr, ed) #<1>
 ```
 
-1. This will sort by `age` first, and then within `age`, it will sort by `ed`.
+1. This will sort by `age_yr` first, and then within `age_yr`, it will sort by `ed`.
 
 ## Sorting datasets by multiple variables: order matters!
 
 ```{r}
 hrs_data |> 
-  arrange(ed, age) #<1>
+  arrange(ed, age_yr) #<1>
 ```
 
-1. This will sort by `ed` first, and then within `ed`, it will sort by `age`. This is different from the previous code chunk where we sorted by `age` first, and then within `age`, we sorted by `ed`.
+1. This will sort by `ed` first, and then within `ed`, it will sort by `age_yr`. This is different from the previous code chunk where we sorted by `age_yr` first, and then within `age_yr`, we sorted by `ed`.
 
 # `distinct()`
 
@@ -326,7 +326,7 @@ hrs_data |>
 hrs_data |> 
   distinct(
     degree, #<1>
-    self_health #<1>
+    srh #<1>
     )
 ```
 

@@ -210,3 +210,5 @@ pacman::p_load(
 - Danielle Navarro’s YouTube video on ***Installing and loading R packages***: <https://www.youtube.com/watch?v=kpHZVyDvEhQ>
   - If you want to get more information on packages
 - [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/) = package mothership
+- There is an additional textbook: [Hands-On Programming with R by Garrett Grolemund](https://www.rstudio.com/resources/books/hands-on-programming-with-r/)
+  - [Here is the chapter on packages](https://rstudio-education.github.io/hopr/packages.html#getting-help-with-help-pages)
