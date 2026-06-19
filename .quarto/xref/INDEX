@@ -253,5 +253,53 @@
   },
   "lessons/10_Packages/Packages.qmd": {
     "Packages.html": "8749d822"
+  },
+  "lessons/06_Intro_to_HRS/Intro_to_HRS.qmd": {
+    "Intro_to_HRS.html": "7f06f9b9"
+  },
+  "lessons/07_Functions/Functions.qmd": {
+    "Functions.html": "8a879b65"
+  },
+  "lessons/08_Objects/Objects.qmd": {
+    "Objects.html": "9258b9a3"
+  },
+  "lessons/19_Getting_help/Getting_help.qmd": {
+    "Getting_help.html": "3396fe02"
+  },
+  "HRS_codebook.qmd": {
+    "HRS_codebook.html": "d2f9f506"
+  },
+  "lessons/05_Comments/Comments.qmd": {
+    "Comments.html": "ae1852da"
+  },
+  "lessons/18_Code_style/Getting_help.qmd": {
+    "Getting_help.html": "c21340e1"
+  },
+  "lessons/01_Intro_to_Intro/Intro_to_Intro.qmd": {
+    "Intro_to_Intro.html": "6bfcd25d"
+  },
+  "lessons/09_Variables/Variables.qmd": {
+    "Variables.html": "5ad2315d"
+  },
+  "lessons/00_1_Orientation/Orientation.qmd": {
+    "Orientation.html": "8cea77a5"
+  },
+  "lessons/02_Download_R/Download_R.qmd": {
+    "Download_R.html": "14f08c66"
+  },
+  "lessons/03_Scripts/Scripts.qmd": {
+    "Scripts.html": "5934a3aa"
+  },
+  "lessons/12_Naming/Naming.qmd": {
+    "Naming.html": "912b5d7f"
+  },
+  "lessons/13_Quarto_docs/Quarto_docs.qmd": {
+    "Quarto_docs.html": "5e380985"
+  },
+  "lessons/04_Basics_operators/Basics_operators.qmd": {
+    "Basics_operators.html": "ea72b3c6"
+  },
+  "resources/HRS_codebook.qmd": {
+    "HRS_codebook.html": "298e2083"
   }
 }

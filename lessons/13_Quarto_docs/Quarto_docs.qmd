@@ -47,7 +47,7 @@ theme_set(theme_grey(base_size = 24))
 hrs_data2 <- read_excel(here("./data/hrs_data_narch.xlsx"))
 hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
 hrs_data <- clean_names(hrs_data) %>%
-  relocate(race_original, female, .after = degree)#
+  relocate(race_original, sex, .after = degree)#
 ```
 
 # Saving your work with Quarto

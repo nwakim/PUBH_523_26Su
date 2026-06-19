@@ -1943,7 +1943,7 @@
     "href": "lesson_references.html",
     "title": "External Resources",
     "section": "",
-    "text": "Lesson #\nLesson/Theme Name\nResources\n\n\n\n\n\n\nQuarto documents\n\nTo learn more about working with Quarto, check out our BERD workshop: Creating Professional Presentations and Websites using R/Quarto\n\n\n\n\n\nPackages\n\nDanielle Navarro’s YouTube video on Installing and loading R packages: https://www.youtube.com/watch?v=kpHZVyDvEhQ\n\nIf you want to get more information on packages\n\nComprehensive R Archive Network (CRAN) = package mothership\n\n\n\n\n\nData transformations\n\ndplyr cheat sheet\n\n\n\n\n\nData visualization (ggplot2)\n\nggplot2 package website: https://ggplot2.tidyverse.org/articles/ggplot2.html\nOnline textbook for ggplot2: https://ggplot2-book.org/\nAnother online resource for data visualization with ggplot2: https://socviz.co/index.html#preface\nAdvanced Data Viz Class at Duke"
+    "text": "Lesson #\nLesson/Theme Name\nResources\n\n\n\n\n\n\nHealth and Retirement Study (HRS)\n\nCheck out the codebook I made for us!\n\n\n\n\n\nQuarto documents\n\nTo learn more about working with Quarto, check out our BERD workshop: Creating Professional Presentations and Websites using R/Quarto\n\n\n\n\n\nPackages\n\nDanielle Navarro’s YouTube video on Installing and loading R packages: https://www.youtube.com/watch?v=kpHZVyDvEhQ\n\nIf you want to get more information on packages\n\nComprehensive R Archive Network (CRAN) = package mothership\n\n\n\n\n\nData transformations\n\ndplyr cheat sheet\n\n\n\n\n\nData visualization (ggplot2)\n\nggplot2 package website: https://ggplot2.tidyverse.org/articles/ggplot2.html\nOnline textbook for ggplot2: https://ggplot2-book.org/\nAnother online resource for data visualization with ggplot2: https://socviz.co/index.html#preface\nAdvanced Data Viz Class at Duke"
   },
   {
     "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#common-console-errors-12",
@@ -4730,5 +4730,299 @@
     "title": "Lab 2 Instructions",
     "section": "2 Remove NA’s",
     "text": "2 Remove NA’s\n\n2.1 Inverting a Deficit Variable into an Asset Lens\nMany survey questions are framed around deficits (e.g., Q23 asks about eating less due to lack of money). To fulfill our asset-based goal, we will use case_when() to invert this into a positive framing. For example, a response of “No” to Q23 means a family maintained full dietary stability.\n\n\n\n\n\n\nImportantTask\n\n\n\nUse mutate() and case_when() to transform your primary health/well-being outcome variable into an asset-framed factor variable. Use glimpse() to display your final, transformed data frame."
+  },
+  {
+    "objectID": "lessons/07_Functions/Functions.html#what-are-functions",
+    "href": "lessons/07_Functions/Functions.html#what-are-functions",
+    "title": "Lesson 4: Calling Functions",
+    "section": "What are functions?",
+    "text": "What are functions?\n\nR has many built-in functions that allow you to perform a variety of tasks\nFunctions usually take the form:\n\n\n1function_name(\n2  argument1 = input_value1,\n  argument2 = input_value2,\n  ...\n  )\n\n\n1\n\nfunction_name is the name of the function we are using. function_output\n\n2\n\nWithin the parentheses of the function, there are set arguments that we assign values to."
+  },
+  {
+    "objectID": "lessons/07_Functions/Functions.html#example-calling-the-seq-function",
+    "href": "lessons/07_Functions/Functions.html#example-calling-the-seq-function",
+    "title": "Lesson 4: Calling Functions",
+    "section": "Example: calling the seq() function",
+    "text": "Example: calling the seq() function\n\nseq() is a function that generates a sequence of numbers.\nIt has three arguments: from, to, and by\nOutput will be the sequence numbers\n\n\nseq(\n  from = 1, \n  to = 10, \n  by = 2\n)\n\n[1] 1 3 5 7 9"
+  },
+  {
+    "objectID": "lessons/07_Functions/Functions.html#we-dont-need-to-specify-the-argument-names",
+    "href": "lessons/07_Functions/Functions.html#we-dont-need-to-specify-the-argument-names",
+    "title": "Lesson 4: Calling Functions",
+    "section": "We don’t need to specify the argument names",
+    "text": "We don’t need to specify the argument names\n\nseq(1, 10, 2)\n\n[1] 1 3 5 7 9"
+  },
+  {
+    "objectID": "lessons/07_Functions/Functions.html#output-of-a-function",
+    "href": "lessons/07_Functions/Functions.html#output-of-a-function",
+    "title": "Lesson 4: Calling Functions",
+    "section": "Output of a function",
+    "text": "Output of a function\n\nWe can also assign the output of a function to an object using the assignment operator &lt;-:\n\n\nfunction_output &lt;- function_name(\n  argument1 = input_value1,\n  argument2 = input_value2,\n  ...\n  )\n\n\nThe output will not print, but it will be stored in the object function_output"
+  },
+  {
+    "objectID": "lessons/07_Functions/Functions.html#now-with-the-seq-function",
+    "href": "lessons/07_Functions/Functions.html#now-with-the-seq-function",
+    "title": "Lesson 4: Calling Functions",
+    "section": "Now with the seq() function",
+    "text": "Now with the seq() function\n\nWe will assign the output of the seq() function to an object called odds:\n\n\nodds &lt;- seq(\n  from = 1, \n  to = 10, \n  by = 2\n)\n\n\nSo odds will now contain the sequence (1,3,5,7,9)"
+  },
+  {
+    "objectID": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#the-health-and-retirement-study-hrs",
+    "href": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#the-health-and-retirement-study-hrs",
+    "title": "Introduction to HRS dataset",
+    "section": "The Health and Retirement Study (HRS)",
+    "text": "The Health and Retirement Study (HRS)\nFrom HRS website:\n\nThe University of Michigan Health and Retirement Study (HRS) is a longitudinal panel study that surveys a representative sample of approximately 20,000 people in America, supported by the National Institute on Aging (NIA U01AG009740) and the Social Security Administration.\n\n\nHRS measures many aspects of aging, including health, retirement, and economic status"
+  },
+  {
+    "objectID": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#we-are-using-synthetic-data",
+    "href": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#we-are-using-synthetic-data",
+    "title": "Introduction to HRS dataset",
+    "section": "We are using synthetic data",
+    "text": "We are using synthetic data\n\nWe will be working with a synthetic dataset from HRS\n\nWe will be using this dataset in our lessons\n\n\n \n\nHRS is a protected dataset, so I cannot publish the real data\n\n \n\nMy synthetic dataset has the same structure and variables as the real HRS data\n\nInitial correlations of the data are not preserved in this dataset!!"
+  },
+  {
+    "objectID": "lessons/19_Getting_help/Getting_help.html#common-console-errors-12",
+    "href": "lessons/19_Getting_help/Getting_help.html#common-console-errors-12",
+    "title": "Workflow: Getting help",
+    "section": "Common console errors (1/2)",
+    "text": "Common console errors (1/2)\nIncomplete commands\n\n\n\nWhen the console is waiting for a new command, the prompt line begins with &gt;\n\nIf the console prompt is +, then a previous command is incomplete\nYou can finish typing the command in the console window\n\n\n\nExample:\n\n&gt; 3 + (2*6\n+ )\n\n[1] 15"
+  },
+  {
+    "objectID": "lessons/19_Getting_help/Getting_help.html#common-console-errors-22",
+    "href": "lessons/19_Getting_help/Getting_help.html#common-console-errors-22",
+    "title": "Workflow: Getting help",
+    "section": "Common console errors (2/2)",
+    "text": "Common console errors (2/2)\nObject is not found\n\nThis happens when text is entered for a non-existent variable (object)\n\nExample:\n\nhello\n\nError:\n! object 'hello' not found\n\n\n\nCan be due to missing quotes\n\n\ninstall.packages(dplyr) \n\nError:\n! object 'dplyr' not found\n\n# correct code is: install.packages(\"dplyr\")"
+  },
+  {
+    "objectID": "lessons/19_Getting_help/Getting_help.html#there-are-many-ways-to-get-help-when-you-are-stuck",
+    "href": "lessons/19_Getting_help/Getting_help.html#there-are-many-ways-to-get-help-when-you-are-stuck",
+    "title": "Workflow: Getting help",
+    "section": "There are many ways to get help when you are stuck",
+    "text": "There are many ways to get help when you are stuck\n\nUse the ? in front of the function name to get more information!\n\nUsually if I need help with the arguments for a function\n\nGoogle or go to stackoverflow.com\n\nOften when I Google, I get redirected to something like stackoverflow\nFor example, let’s say my mean function was outputting NA. I would Google something like “keep getting NA for mean in R” Then end up here\n\nI can also go to my favorite AI tool to get help\n\nThis is most useful for getting code started if it’s complicated (we’re not really at that level yet)\nI asked ChatGPT “can you give me the code for calculating the mean in R”\n\nThis is what I got\n\nFor code generation, it gives you WAY too much\nI also asked ChatGPT “Why is the mean function in R giving me an NA?” (in above link)"
+  },
+  {
+    "objectID": "lessons/19_Getting_help/Getting_help.html#more-on-ai-usage",
+    "href": "lessons/19_Getting_help/Getting_help.html#more-on-ai-usage",
+    "title": "Workflow: Getting help",
+    "section": "More on AI usage",
+    "text": "More on AI usage\n\nIn the syllabus\nIf you cannot trace code back to the class notes, then do NOT use it!\n\nThere’s different coding practices and functions out there\nI’m giving you a specific set of tools that will serve as a good introduction\nYou should be able to explain all your code and work"
+  },
+  {
+    "objectID": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#variables-in-the-dataset",
+    "href": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#variables-in-the-dataset",
+    "title": "Introduction to HRS dataset",
+    "section": "Variables in the dataset",
+    "text": "Variables in the dataset\n\nWe have measurements on 2,728 synthetic individuals from the HRS dataset\nMeasurements include:\n\nHousehold information\nDemographics\nHealth behaviors\nPhyiscal health information\nMental health information\nEconomic information"
+  },
+  {
+    "objectID": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#check-out-our-codebook-online",
+    "href": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#check-out-our-codebook-online",
+    "title": "Introduction to HRS dataset",
+    "section": "Check out our codebook online!",
+    "text": "Check out our codebook online!"
+  },
+  {
+    "objectID": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#resources",
+    "href": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#resources",
+    "title": "Introduction to HRS dataset",
+    "section": "Resources",
+    "text": "Resources\n\nCheck out the codebook I made for us!"
+  },
+  {
+    "objectID": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#note-on-ai",
+    "href": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#note-on-ai",
+    "title": "Introduction to HRS dataset",
+    "section": "Note on AI",
+    "text": "Note on AI\n\nI used some AI to help me clean the data, rename variables, and label variables\nI also asked AI to make a few slides on the dataset"
+  },
+  {
+    "objectID": "resources/HRS_codebook.html",
+    "href": "resources/HRS_codebook.html",
+    "title": "HRS Codebook",
+    "section": "",
+    "text": "Position\nName\nLabel\nType\nUnit / Levels\nOriginal HRS Name\n\n\n\n\n1\nhhid\nHousehold ID\ncharacter\n\nHHID\n\n\n2\npn\nPerson Number\ncharacter\n\nPN\n\n\n3\nid\nHousehold identifier + person number identifier\ncharacter\n\nHHIDPN\n\n\n4\nBIRTHYR\nRespondent Birth Year\nnumeric\nyears\nRABYEAR\n\n\n5\nBIRTHMO\nRespondent Birth Month\nfactor\n\n1-12 for each month Jan-Dec\nUnknown (if 0)\n\nRABMONTH\n\n\n6\nBIRTHDATE\nRespondent Birth Date\nnumeric\n\nRABDATE\n\n\n7\nproxy\nProxy Interview Status\nfactor\n\nSelf\nProxy interview\n\nR16PROXY\n\n\n8\ncoupled\nCouple Household Status\nfactor\n\nSingle\nCoupled/partnered\n\nH16CPL\n\n\n9\nsex\nSex\nfactor\n\nMale\nFemale\n\nRAGENDER\n\n\n10\nage_mo\nAge at Interview (Months)\nnumeric\nmonths\nR16AGEM_B\n\n\n11\nage_yr\nAge at Interview (Years)\nnumeric\nyears\nR16AGEY_B\n\n\n12\ned\nYears of Education\nnumeric\nyears\nRAEDYRS\n\n\n13\ndegree\nHighest Degree Earned\nfactor\n\nNone\nGED\nHigh school diploma\nAssociate’s degree\nBachelor’s degree\nMaster’s degree\nProfessional degree (Ph.D./M.D./JD)\n\nRAEDEGRM\n\n\n14\nrace_original\nRace/Ethnicity\nfactor\n\nWhite/Caucasian\nBlack/African American\nOther\n\nRARACEM\n\n\n15\nsmoke_ever\nEver Smoked\nfactor\n\nNo\nYes\n\nR16SMOKEV\n\n\n16\nsmoke_now\nCurrent Smoker\nfactor\n\nNo\nYes\n\nR16SMOKEN\n\n\n17\ndrink\nCurrent Drinker\nfactor\n\nNo\nYes\n\nR16DRINK\n\n\n18\nheight\nSelf-Reported Height (Meters)\nnumeric\n\nR16HEIGHT\n\n\n19\nsrh\nSelf-Reported Health Status\nfactor\n\nExcellent\nVery good\nGood\nFair\nPoor\n\nR16SHLT\n\n\n20\nact_vig\nVigorous Physical Activity Frequency\nfactor\n\nEvery day\n&gt;1 per week\n1 per week\n1-3 per month\nNever\n\nR16VGACTX\n\n\n21\nbp\nEver Had High Blood Pressure\nfactor\n\nNo\nYes\n\nR16HIBP\n\n\n22\ndiab\nEver Had Diabetes\nfactor\n\nNo\nYes\n\nR16DIABE\n\n\n23\ncancer\nEver Had Cancer\nfactor\n\nNo\nYes\n\nR16CANCRE\n\n\n24\nlung\nEver Had Lung Disease\nfactor\n\nNo\nYes\n\nR16LUNGE\n\n\n25\nhrt\nEver Had Heart Problems\nfactor\n\nNo\nYes\n\nR16HEARTE\n\n\n26\nstrk\nEver Had Stroke\nfactor\n\nNo\nYes\n\nR16STROKE\n\n\n27\npsych\nEver Had Psychiatric Problems\nfactor\n\nNo\nYes\n\nR16PSYCHE\n\n\n28\nsleep\nEver Had Sleep Disorder\nfactor\n\nNo\nYes\n\nR16SLEEPE\n\n\n29\narth\nEver Had Arthritis\nfactor\n\nNo\nYes\n\nR16ARTHRE\n\n\n30\ncond_count\nTotal Number of Chronic Conditions\nnumeric\ncount (0-9)\nR16CONDE\n\n\n31\ncesd\nCES-D Depression Score\nnumeric\nscore (0-8)\nR16CESD\n\n\n32\nincome\nTotal Household Income\nnumeric\ndollars\nH16ITOT"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#quarto-.qmd-file-code-text",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#quarto-.qmd-file-code-text",
+    "title": "Quarto documents",
+    "section": "Quarto = .qmd file = Code + text",
+    "text": "Quarto = .qmd file = Code + text\nWe can take .qmd files containing code (R and other types) + plain text (like we might make in Word), and then render to it other formats (html, pdf, Word, etc) that nicely display the code and text!\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#we-often-render-a-.qmd-file-to-an-.html-file",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#we-often-render-a-.qmd-file-to-an-.html-file",
+    "title": "Quarto documents",
+    "section": "We often render a .qmd file to an .html file",
+    "text": "We often render a .qmd file to an .html file\n\n\n.qmd file\n\n\n\n\n\n\n\n\n.html output"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#before-we-get-further-in-.qmd-files",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#before-we-get-further-in-.qmd-files",
+    "title": "Quarto documents",
+    "section": "Before we get further in .qmd files",
+    "text": "Before we get further in .qmd files\n\nLet’s make sure we all have Rstudio open\nAnd then open your PUBH_523_26Su project!\n\n \nSteps for making a Quarto file\n\nCreate a Quarto file (.qmd)\nEdit a Quarto file (.qmd)\nSave the Quarto file (.qmd)\nCreate html file"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#create-a-quarto-file-.qmd",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#create-a-quarto-file-.qmd",
+    "title": "Quarto documents",
+    "section": "1. Create a Quarto file (.qmd)",
+    "text": "1. Create a Quarto file (.qmd)\n\n\nTwo options:\n\nclick on File \\(\\rightarrow\\) New File \\(\\rightarrow\\) Quarto Document…\\(\\rightarrow\\) OK,\nor in upper left corner of RStudio click on  \\(\\rightarrow\\) \n\nPop-up window selections:\n\nEnter a title and your name\nSelect HTML output format (default)\nEngine: select Knitr\nEditor: Select Use visual markdown editor\nClick Create"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#edit-a-quarto-file-.qmd",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#edit-a-quarto-file-.qmd",
+    "title": "Quarto documents",
+    "section": "2. Edit a Quarto file (.qmd)",
+    "text": "2. Edit a Quarto file (.qmd)\n\n\n\nAfter clicking on Create, you should then see the following in your editor window:\n\n \n\nYou can try editing the text or changing the code!\n\nMake sure you are only editing at the “Quarto” header and below"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#save-the-quarto-file-.qmd",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#save-the-quarto-file-.qmd",
+    "title": "Quarto documents",
+    "section": "3. Save the Quarto file (.qmd)",
+    "text": "3. Save the Quarto file (.qmd)\n\nSave the file by\n\nselecting File -&gt; Save,\nor clicking on  (towards the left above the scripting window),\nor keyboard shortcut\n\nPC: Ctrl + s\nMac: Command + s\n\n\nYou will need to specify (Use what we learned in last lesson!!)\n\na filename to save the file as\n\nALWAYS use .qmd as the filename extension for Quarto files\n\nthe folder to save the file in\nHint: this will probability go under “R_activities” and with a name like “R05_Quarto-work.qmd”"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#create-html-file",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#create-html-file",
+    "title": "Quarto documents",
+    "section": "4. Create html file",
+    "text": "4. Create html file\nWe create the .html file by rendering the .qmd file.\nTwo options:\n\nclick on the Render icon  at the top of the editor window,\nor use keyboard shortcuts\n\nMac: Command+Shift+K\nPC: Ctrl+Shift+K\n\n\n\nA new window will open with the html output.\nYou will now see both .qmd and .html files in the folder where you saved the .qmd file.\n\nThe html file will automatically have the same name as the qmd file"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#tip-changing-the-render-view",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#tip-changing-the-render-view",
+    "title": "Quarto documents",
+    "section": "Tip: changing the render view",
+    "text": "Tip: changing the render view\n\nYou can change where your .html file pops up\nI have it set to open in the “Viewer Pane” in the bottom right"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#qmd-vs.-its-.html-output",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#qmd-vs.-its-.html-output",
+    "title": "Quarto documents",
+    "section": ".qmd vs. its .html output",
+    "text": ".qmd vs. its .html output\n\n\n.qmd file\n\n\n\n\n\n\n\n\n.html output"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#types-of-quarto-content",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#types-of-quarto-content",
+    "title": "Quarto documents",
+    "section": "3 types of Quarto content",
+    "text": "3 types of Quarto content\n\nYAML metadata\nText, lists, images, tables, links\nCode chunks\n\n\nIllustration by Alison Hill and Allison Horst, for RStudio."
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#source-file-hello.qmd",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#source-file-hello.qmd",
+    "title": "Quarto documents",
+    "section": "Source File: hello.qmd",
+    "text": "Source File: hello.qmd\n---\ntitle: \"Hello, Penguins\"\nformat: html\nexecute:\n  echo: false\n---\n\n## Meet the penguins\n\nThe `penguins` data contains size measurements for \npenguins from three islands in the Palmer Archipelago, \nAntarctica.\n\nThe three species of penguins have quite distinct \ndistributions of physical dimensions (@fig-penguins).\n\n```{r}\n#| label: fig-penguins\n#| fig-cap: \"Dimensions of penguins across three species.\"\n#| warning: false\nlibrary(tidyverse, quietly = TRUE)\nlibrary(palmerpenguins)\npenguins |&gt;\n  ggplot(aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species)) +\n  scale_color_manual(\n    values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n  theme_minimal()\n```"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#yaml-metadata",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#yaml-metadata",
+    "title": "Quarto documents",
+    "section": "1. YAML metadata",
+    "text": "1. YAML metadata\n\nSet format(s) and options. Use YAML Syntax.\n---\ntitle: \"Hello, Penguins\"\nformat: html\nexecute:\n  echo: false\n---"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#text-lists-images-tables-links",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#text-lists-images-tables-links",
+    "title": "Quarto documents",
+    "section": "2. Text, lists, images, tables, links",
+    "text": "2. Text, lists, images, tables, links\n## Write with **Markdown**\nRStudio: Help &gt; Markdown Quick Reference\nRStudio, Positron and VS Code: Use the Visual Editor\n## Meet the penguins\n\nThe `penguins` data contains size measurements for \npenguins from three islands in the Palmer Archipelago, \nAntarctica.\n\nThe three species of penguins have quite distinct \ndistributions of physical dimensions (@fig-penguins)."
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#code-chunks",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#code-chunks",
+    "title": "Quarto documents",
+    "section": "3. Code chunks",
+    "text": "3. Code chunks\nR, Python, Julia, Observable, or any language with a Jupyter kernel.\n```{r}\n#| label: fig-penguins\n#| fig-cap: \"Dimensions of penguins across three species.\"\n#| warning: false\nlibrary(tidyverse, quietly = TRUE)\nlibrary(palmerpenguins)\npenguins |&gt;\n  ggplot(aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species)) +\n  scale_color_manual(\n    values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n  theme_minimal()\n```"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#code-cells",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#code-cells",
+    "title": "Quarto documents",
+    "section": "Code Cells",
+    "text": "Code Cells\nCode cells start with ```{language}, and end with ```.\nRStudio, Positron & VS Code: Use Insert Code Chunk/Cell.\n\n\n\n```{r}\n#| label: chunk-id\n```\n\n\n```{python}\n#| label: chunk-id\n```\n\n\n\nOther languages: {julia}, {ojs}\nAdd code cell options with #| comments.\nCell options control execution, figures, tables, layout and more. See them all at: https://quarto.org/docs/reference/cells/"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#execution",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#execution",
+    "title": "Quarto documents",
+    "section": "Execution Options",
+    "text": "Execution Options\n\n\n\n\n\n\n\n\nOption\nDefault\nEffects\n\n\n\n\necho\ntrue\nfalse: hide code in output\nfenced: include code cell syntax\n\n\neval\ntrue\nfalse: don’t run code\n\n\ninclude\ntrue\nfalse: don’t include code or results\n\n\noutput\ntrue\nfalse: don’t include results\nasis: treat results as raw markdown\n\n\nwarning\ntrue\nfalse: don’t include warnings in output\n\n\nerror\nfalse\ntrue: include error in output and continue with render\n\n\n\nYou can set execution options at the cell level:\n\n\n\n```{r}\n#| echo: false\n```\n\n\n```{python}\n#| echo: false\n```"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#enter-and-run-code-22",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#enter-and-run-code-22",
+    "title": "Quarto documents",
+    "section": "Enter and run code (2/2)",
+    "text": "Enter and run code (2/2)\n\nWe can run code like we saw in the lesson on Basics\nRun all code in a chunk by\n\nby clicking the play button in the top right corner of the chunk\n\nThe code output appears below the code chunk\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe output should also appear in the Console.\nSettings can be changed so that the output appears only in the Console and not below the code chunk:\n\nSelect {{&lt; fa solid gear &gt;}} (to right of Render button) and then Chunk Output in Console."
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#create-a-code-chunk",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#create-a-code-chunk",
+    "title": "Quarto documents",
+    "section": "Create a code chunk",
+    "text": "Create a code chunk\n3 options to create a code chunk\n\nClick on  at top right of the editor window, or\nKeyboard shortcut\n\n\n\n\nMac\nCommand + Option + I\n\n\nPC\nCtrl + Alt + I\n\n\n\n\nVisual editor: Select Insert -&gt; Executable Cell -&gt; R"
+  },
+  {
+    "objectID": "lessons/13_Quarto_docs/Quarto_docs.html#resources",
+    "href": "lessons/13_Quarto_docs/Quarto_docs.html#resources",
+    "title": "Quarto documents",
+    "section": "Resources",
+    "text": "Resources\n\nTo learn more about working with Quarto, check out our BERD workshop: Creating Professional Presentations and Websites using R/Quarto\nPublish and Share with Quarto\n\nPDF Cheatsheet\nhtml Cheatsheet"
+  },
+  {
+    "objectID": "lessons/04_Basics_operators/Basics_operators.html",
+    "href": "lessons/04_Basics_operators/Basics_operators.html",
+    "title": "Basics",
+    "section": "",
+    "text": "R can be used to do calculations (like a calculator)\nIt will follow the order of operations (PEMDAS) when doing calculations\n\n\n1 / 200 * 30\n\n[1] 0.15\n\n(59 + 73 + 2) / 3\n\n[1] 44.66667\n\nsin(pi / 2)\n\n[1] 1"
+  },
+  {
+    "objectID": "lessons/04_Basics_operators/Basics_operators.html#coding-basics",
+    "href": "lessons/04_Basics_operators/Basics_operators.html#coding-basics",
+    "title": "Basics",
+    "section": "",
+    "text": "R can be used to do calculations (like a calculator)\nIt will follow the order of operations (PEMDAS) when doing calculations\n\n\n1 / 200 * 30\n\n[1] 0.15\n\n(59 + 73 + 2) / 3\n\n[1] 44.66667\n\nsin(pi / 2)\n\n[1] 1"
+  },
+  {
+    "objectID": "lessons/04_Basics_operators/Basics_operators.html#different-operators",
+    "href": "lessons/04_Basics_operators/Basics_operators.html#different-operators",
+    "title": "Basics",
+    "section": "Different operators",
+    "text": "Different operators\n\nMost operators are the same as in math, but some are different\n\n \nHere are some common operators:\n\n\n\nOperation\nWritten\nIn R\n\n\n\n\nAddition\n\\(1+1\\)\n1+1\n\n\nSubtraction\n\\(2-1\\)\n2-1\n\n\nMultiplication\n\\(3\\times 2\\) or \\(3\\cdot 2\\)\n3*2\n\n\nDivision\n\\(3 / 2\\) or \\(\\dfrac{3}{2}\\)\n3/2\n\n\nExponential\n\\(4^2\\)\n4^2\n\n\nSquare root\n\\(\\sqrt{4}\\) or \\(4^{1/2}\\)\n4^(1/2) or sqrt(4)"
+  },
+  {
+    "objectID": "lessons/04_Basics_operators/Basics_operators.html#relational-operators",
+    "href": "lessons/04_Basics_operators/Basics_operators.html#relational-operators",
+    "title": "Basics",
+    "section": "Relational operators",
+    "text": "Relational operators\n\nThese operators are interpreted as questions\nR will return a true or false answer, depending on if it meets the criteria\n\n\n\n\nOperation\nIn R\n\n\n\n\nLess than\n1&lt;1\n\n\nGreater than\n1&gt;1\n\n\nLess than or equal to\n1&lt;=1\n\n\nGreater than or equal to\n1&gt;=1\n\n\nEqual to\n1==1\n\n\nNot equal to\n1!=1"
+  },
+  {
+    "objectID": "lessons/04_Basics_operators/Basics_operators.html#references",
+    "href": "lessons/04_Basics_operators/Basics_operators.html#references",
+    "title": "Basics",
+    "section": "References",
+    "text": "References\n\nYou can find more R operators here: https://bookdown.org/manishpatwal/bookdown-demo/basic-operations-in-r.html"
+  },
+  {
+    "objectID": "lessons/06_Intro_to_HRS/Intro_to_HRS.html",
+    "href": "lessons/06_Intro_to_HRS/Intro_to_HRS.html",
+    "title": "Introduction to HRS dataset",
+    "section": "",
+    "text": "From HRS website:\n\nThe University of Michigan Health and Retirement Study (HRS) is a longitudinal panel study that surveys a representative sample of approximately 20,000 people in America, supported by the National Institute on Aging (NIA U01AG009740) and the Social Security Administration.\n\n\nHRS measures many aspects of aging, including health, retirement, and economic status"
+  },
+  {
+    "objectID": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#a-little-bit-more-info-on-our-dataset",
+    "href": "lessons/06_Intro_to_HRS/Intro_to_HRS.html#a-little-bit-more-info-on-our-dataset",
+    "title": "Introduction to HRS dataset",
+    "section": "A little bit more info on our dataset",
+    "text": "A little bit more info on our dataset\n\nWe have measurements on 2,728 synthetic individuals from the HRS dataset\n\n \n\nMeasurements include:\n\nHousehold information\nDemographics\nHealth behaviors\nPhyiscal health information\nMental health information\nEconomic information"
   }
 ]

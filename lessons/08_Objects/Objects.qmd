@@ -11,10 +11,10 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 03 Slides
+    footer: "Objects"
     html-math-method: mathjax
     highlight-style: ayu
-code-annotations: below
+code-annotations: hover
 execute:
   echo: true
   freeze: auto
@@ -26,10 +26,12 @@ execute:
 #| message: false
 #| warning: false
 
-library(tidyverse)
-library(lubridate)
-library(janitor)
-library(here)
+pacman::p_load(
+  tidyverse, 
+  lubridate,
+  janitor,
+  here
+)
 ```
 
 ## What are R objects?
