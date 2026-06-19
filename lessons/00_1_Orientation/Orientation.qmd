@@ -35,3 +35,9 @@ execute:
 - You will watch the videos set in the week
 - At the end of the week, there is a practice due Sunday night at 11pm
 - Some weeks will also have labs due on Sunday night at 11pm
+
+## Communication
+
+- Slack will be the BEST place for asking questions! 
+  - This way your peers can help you and you can help your peers!
+  - I will also answer questions on Slack!

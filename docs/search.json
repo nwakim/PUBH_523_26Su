@@ -4734,35 +4734,35 @@
   {
     "objectID": "lessons/07_Functions/Functions.html#what-are-functions",
     "href": "lessons/07_Functions/Functions.html#what-are-functions",
-    "title": "Lesson 4: Calling Functions",
+    "title": "Functions",
     "section": "What are functions?",
-    "text": "What are functions?\n\nR has many built-in functions that allow you to perform a variety of tasks\nFunctions usually take the form:\n\n\n1function_name(\n2  argument1 = input_value1,\n  argument2 = input_value2,\n  ...\n  )\n\n\n1\n\nfunction_name is the name of the function we are using. function_output\n\n2\n\nWithin the parentheses of the function, there are set arguments that we assign values to."
+    "text": "What are functions?\n\nR has many built-in functions that allow you to perform a variety of tasks\nFunctions usually take the form:\n\n\n1function_name(\n2  argument1 = input_value1,\n  argument2 = input_value2,\n  ...\n  )\n\n\n1\n\nfunction_name is the name of the function we are using.\n\n2\n\nWithin the parentheses of the function, there are set arguments that we assign values to."
   },
   {
     "objectID": "lessons/07_Functions/Functions.html#example-calling-the-seq-function",
     "href": "lessons/07_Functions/Functions.html#example-calling-the-seq-function",
-    "title": "Lesson 4: Calling Functions",
+    "title": "Functions",
     "section": "Example: calling the seq() function",
-    "text": "Example: calling the seq() function\n\nseq() is a function that generates a sequence of numbers.\nIt has three arguments: from, to, and by\nOutput will be the sequence numbers\n\n\nseq(\n  from = 1, \n  to = 10, \n  by = 2\n)\n\n[1] 1 3 5 7 9"
+    "text": "Example: calling the seq() function\n\nseq() is a function that generates a sequence of numbers.\nIt has three arguments: from, to, and by\nOutput will be the sequence numbers\n\n\nseq(\n1  from = 1,\n2  to = 10,\n3  by = 2\n)\n\n\n1\n\nThe argument from is assigned the value of 1, which is the starting point of the sequence.\n\n2\n\nThe argument to is assigned the value of 10, which is the ending point of the sequence.\n\n3\n\nThe argument by is assigned the value of 2, which specifies the increment between numbers in the sequence.\n\n\n\n\n[1] 1 3 5 7 9"
   },
   {
     "objectID": "lessons/07_Functions/Functions.html#we-dont-need-to-specify-the-argument-names",
     "href": "lessons/07_Functions/Functions.html#we-dont-need-to-specify-the-argument-names",
-    "title": "Lesson 4: Calling Functions",
+    "title": "Functions",
     "section": "We don’t need to specify the argument names",
-    "text": "We don’t need to specify the argument names\n\nseq(1, 10, 2)\n\n[1] 1 3 5 7 9"
+    "text": "We don’t need to specify the argument names\n\nWe can run seq() without the argument names\nR will assume that the values are in the correct order of the arguments\n\n \nWe get the same result:\n\nseq(1, 10, 2)\n\n[1] 1 3 5 7 9"
   },
   {
     "objectID": "lessons/07_Functions/Functions.html#output-of-a-function",
     "href": "lessons/07_Functions/Functions.html#output-of-a-function",
-    "title": "Lesson 4: Calling Functions",
+    "title": "Functions",
     "section": "Output of a function",
-    "text": "Output of a function\n\nWe can also assign the output of a function to an object using the assignment operator &lt;-:\n\n\nfunction_output &lt;- function_name(\n  argument1 = input_value1,\n  argument2 = input_value2,\n  ...\n  )\n\n\nThe output will not print, but it will be stored in the object function_output"
+    "text": "Output of a function\n\nWe can also assign the output of a function to an object using the assignment operator &lt;-:\n\n\n1function_output &lt;- function_name(\n2  argument1 = input_value1,\n  argument2 = input_value2,\n  ...\n  )                                     \n\n\n1\n\nThe output of function_name is assigned to an object called function_output\n\n2\n\nWithin the parentheses of the function, there are set arguments that we assign values to.\n\n\n\n\n\nThe output will not print, but it will be stored in the object function_output"
   },
   {
     "objectID": "lessons/07_Functions/Functions.html#now-with-the-seq-function",
     "href": "lessons/07_Functions/Functions.html#now-with-the-seq-function",
-    "title": "Lesson 4: Calling Functions",
+    "title": "Functions",
     "section": "Now with the seq() function",
     "text": "Now with the seq() function\n\nWe will assign the output of the seq() function to an object called odds:\n\n\nodds &lt;- seq(\n  from = 1, \n  to = 10, \n  by = 2\n)\n\n\nSo odds will now contain the sequence (1,3,5,7,9)"
   },
@@ -5031,5 +5031,47 @@
     "title": "Introduction to HRS dataset",
     "section": "Note on AI usage",
     "text": "Note on AI usage\n\nI used some AI to help me clean the data, rename variables, and label variables\nI also asked AI to help me make the codebook"
+  },
+  {
+    "objectID": "lessons/00_1_Orientation/Orientation.html#some-good-things-to-know-for-this-class",
+    "href": "lessons/00_1_Orientation/Orientation.html#some-good-things-to-know-for-this-class",
+    "title": "Orientation to the Course",
+    "section": "Some good things to know for this class!",
+    "text": "Some good things to know for this class!\n\nCopying code: the copy option on all code!\nAccessing the source code for this site via GitHub"
+  },
+  {
+    "objectID": "lessons/00_1_Orientation/Orientation.html#course-overview",
+    "href": "lessons/00_1_Orientation/Orientation.html#course-overview",
+    "title": "Orientation to the Course",
+    "section": "Course Overview",
+    "text": "Course Overview"
+  },
+  {
+    "objectID": "lessons/00_1_Orientation/Orientation.html#each-week",
+    "href": "lessons/00_1_Orientation/Orientation.html#each-week",
+    "title": "Orientation to the Course",
+    "section": "Each week",
+    "text": "Each week\n\nA “new” week starts on Monday\nYou will watch the videos set in the week\nAt the end of the week, there is a practice due Sunday night at 11pm\nSome weeks will also have labs due on Sunday night at 11pm"
+  },
+  {
+    "objectID": "lessons/00_1_Orientation/Orientation.html#communication",
+    "href": "lessons/00_1_Orientation/Orientation.html#communication",
+    "title": "Orientation to the Course",
+    "section": "Communication",
+    "text": "Communication\n\nSlack will be the BEST place for asking questions!\n\nThis way your peers can help you and you can help your peers!\nI will also answer questions on Slack!"
+  },
+  {
+    "objectID": "lessons/07_Functions/Functions.html#example-simple-function-like-mean",
+    "href": "lessons/07_Functions/Functions.html#example-simple-function-like-mean",
+    "title": "Functions",
+    "section": "Example: simple function like mean()",
+    "text": "Example: simple function like mean()\n\nmean() is a function that generates the calculated mean of a set of numbers\nIt has one main argument: x\nOutput (automatically printed) will be the mean of the numbers in x\n\n\nmean(\n1  x = c(1, 2, 3, 4, 5, 6)\n)\n\n\n1\n\nThe argument x is assigned the value of a vector of numbers (1, 2, 3, 4, 5)\n\n\n\n\n[1] 3.5"
+  },
+  {
+    "objectID": "lessons/07_Functions/Functions.html#help-with-functions",
+    "href": "lessons/07_Functions/Functions.html#help-with-functions",
+    "title": "Functions",
+    "section": "Help with functions",
+    "text": "Help with functions\n\nIf you need a reminder of how to use a function, you can use the ? or ?? to access the help file for that function:\n\n\n1?seq\n2??read_sas\n\n\n1\n\nThe ? will take you to the help file for the seq() function, which will show you the arguments and how to use it.\n\n2\n\nThe ?? will search for any functions read_sas from your installed packages and show you a list of functions that match that search term. This is helpful when you don’t remember the package a function is in.\n\n\n\n\n \n\nCertain functions will show you the arguments if you press Tab after typing the function name and parentheses\n\n\nmean()\nsd()\n\n \n\nR will also help autofill the names of functions from your loaded packages:\n\n\nm\ns"
   }
 ]
