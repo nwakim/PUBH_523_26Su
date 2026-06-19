@@ -301,5 +301,32 @@
   },
   "resources/HRS_codebook.qmd": {
     "HRS_codebook.html": "298e2083"
+  },
+  "lessons/05_Basics_operators/Basics_operators.qmd": {
+    "Basics_operators.html": "975f1875"
+  },
+  "lessons/01_Welcome/Welcome.qmd": {
+    "Welcome.html": "ed832a96"
+  },
+  "lessons/02_Course_log/Course_log.qmd": {
+    "Course_log.html": "2ce4e1a8"
+  },
+  "lessons/04_Scripts/Scripts.qmd": {
+    "Scripts.html": "cd77b91b"
+  },
+  "lessons/09_Objects/Objects.qmd": {
+    "Objects.html": "3e5d483e"
+  },
+  "lessons/03_Download_R/Download_R.qmd": {
+    "Download_R.html": "0f5acb6f"
+  },
+  "lessons/08_Functions/Functions.qmd": {
+    "Functions.html": "a5c2ae79"
+  },
+  "lessons/07_Intro_to_HRS/Intro_to_HRS.qmd": {
+    "Intro_to_HRS.html": "e11a55ca"
+  },
+  "lessons/06_Comments/Comments.qmd": {
+    "Comments.html": "31f3e109"
   }
 }
