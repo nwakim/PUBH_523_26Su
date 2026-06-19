@@ -19,6 +19,12 @@ execute:
   freeze: auto
 ---
 
+## Important note
+
+- I will NOT be in the country from 7/2-7/22
+- I will be present on our Slack from 7/13-7/17, but otherwise I am on vacation
+  - I can potentially take meetings during 7/13-7/17, but I'm in a flipped time zone eek!
+- I've asked my colleagues, Meike and Jessica, to manage our Slack page while I'm gone
 
 ## Some good things to know for this class!
 
@@ -28,107 +34,74 @@ execute:
   - For example: I mention an "object" in the lesson on functions, but we don't cover objects until the next lesson
   - I will always try to group videos that mention new material in a week together
 
-## Course Overview
-
-![](../img_slides/course_org.png){fig-align="center" width="60%"}
-
 ## Each week
 
 - A "new" week starts on Monday
-- You will watch the videos set in the week
+- You will need to watch the videos set in the week
 - At the end of the week, there is a practice due Sunday night at 11pm
+  - This will cover the videos for that week!
 - Some weeks will also have labs due on Sunday night at 11pm
+  - Labs will cover material from previous week(s)
+  - Labs will not cover that week's material
 
 ## Communication
 
-- Slack will be the BEST place for asking questions! 
+- Slack will be the BEST place for asking questions!
   - This way your peers can help you and you can help your peers!
   - I will also answer questions on Slack!
-  
-  ## Some important tasks
+- I usually take up to 24 hours to respond (during M-F)
+  - I don't work on the weekends!
 
--   [Join the Slack page!](https://join.slack.com/t/epi525f24/shared_invite/zt-2q9fpa8h3-Yc5U91Ps0MjnemADzTM5Vw)
+## Some important tasks
 
--   Star the class website: <https://nwakim.github.io/F24_EPI_525/>
+- [Join the Slack page!](https://join.slack.com/t/pubh523623/shared_invite/zt-40eg9bxpw-IW_2bAyq6SiXdn1q_tl2Yg)
 
--   Complete the [WhenIsGood](http://whenisgood.net/gqz22ff) for office hours
+- Star the class website: <https://nwakim.github.io/PUBH_523_26Su/> 
 
--   Complete Homework 0 by this Thursday at 11pm!
+- Complete the [WhenIsGood](https://www.when2meet.com/?37173220-5IzYW) for office hours
+  - You don't need to put your name, just a unique identifier
 
-    -   Includes some items above
-    -   Think about what day of the week you would like your homeworks due
+- Complete Practice 1 due this week (Sunday at 11pm)
 
--   Highly suggest that you make an appointment with a learning specialist through [Student Academic Success Center](https://sakai.ohsu.edu/portal/site/Student_Support)!
+- Highly suggest that you make an appointment with a learning specialist through [Student Academic Success Center](https://www.ohsu.edu/education/academic-success-center)!
 
-## Let's visit the website: Homepage
+# Let's visit our website
 
-![[Homepage](https://nwakim.github.io/F24_EPID_525/)](../img_slides/site_homepage1.png)
+## Homepage
 
-## Let's visit the website: Syllabus
+## Syllabus
 
--   Course learning objectives
--   Textbook in shared folder!
--   R: we will start to learn this programming language
--   Assessments and grade breakdowns
--   Homework: 3 parts + grading
--   Feedback: in the form of exit tickets, group evals, midterm feedback, and final course
--   How to succeed in this course: resources and assignments explained
--   Late work policy / Attendance policy
--   ChatGPT and other AI technology
--   Course expectations: a few ways that I will show you respect and commitment to you as students
-    -   And a few ways I expect from you!
--   Communicating with me: give me 24 hours to reply M-F
-    -   Online communication is not my strength!
+- Course learning objectives
+- Textbooks online
+- Assessments and grade breakdowns
+- Homeworks
+- Feedback: in the form of exit tickets, group evals, midterm feedback, and final course
+- How to succeed in this course: resources and assignments explained
+- Late work policy / Attendance policy
+- ChatGPT and other AI technology
+- Course expectations: a few ways that I will show you respect and commitment to you as students
+  - And a few ways I expect from you!
+- Communicating with me: give me 24 hours to reply M-F
 
-## Let's visit the website: Schedule (1/2)
+## Schedule
 
--   Weeks, class info, exams, homeworks
-
-![](../img_slides/site_homepage2.png){fig-align="center"}
-
-## Let's visit the website: Schedule (2/2)
+- Weeks, class info, due dates
 
 |  |  |  |
-|:----------------------------|:-------------|:-----------------------------|
-| [[{{< iconify akar-icons info-fill size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample_key_info.qmd)]{style="color:#f8f5f0;"} | Key Info | I will post announcements and other important class related info here. For example, if I change a due date or discuss a common mistake in homework, I will put it here. |
-| [[{{< iconify ri slideshow-fill size=80px >}}](lessons/17_Negative_binomial_rv/17_Negative_binomial_rv.qmd)]{style="color:#f8f5f0;"} | Slides QMD | These are the basic slides that will open in your browser. |
-| [[{{< iconify bi file-earmark-pdf-fill size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample.pdf)]{style="color:#f8f5f0;"} | Slides PDF | These are the slides in pdf form for easy note taking. I'm not always the best at posting these before class, so make sure you know how to save your own copy of pdf slides! |
-| [[{{< iconify pepicons-pop pen-circle-filled size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample_notes.pdf)]{style="color:#f8f5f0;"} | Slides Notes | These are the annotated slides in pdf form. In class, I add my own notes to slides. After class, I will post them here. |
-| [[{{< iconify healthicons health-worker-form size=90px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRt)]{style="color:#f8f5f0;"} | Exit tix | These are links to that day's exit ticket. |
-| [[{{< iconify mdi video size=90px >}}](mothing)]{style="color:#f8f5f0;"} | Recording | I record our classes. This will be a link to the OneDrive folder containing this recording. |
-| [[{{< iconify pajamas question size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample_muddy_points.qmd)]{style="color:#f8f5f0;"} | Muddy Points | You will have a chance to ask questions about class in your exit tickets. If I notice a trend in confusion, I will add explanations to these "Muddy Points" |
+|---------------------------|-----------------|----------------------------|
+|  | Theme | Each lesson fits into a different theme for the class |
+| [[{{< iconify mdi video size=90px >}}](mothing)]{style="color:#f8f5f0;"} | Lesson video | I record our classes. This will be a link to the OneDrive folder containing this recording. |
+| [[{{< iconify ri slideshow-fill size=80px >}}](lessons/17_Negative_binomial_rv/17_Negative_binomial_rv.qmd)]{style="color:#f8f5f0;"} | Slides | These are the basic slides that will open in your browser. |
+|  | Textbooks | There are two textbooks that will be helpful. They are not necessary, but it might be nice to learn from a different voice. |
+|  | Due dates | At the end of each week, there are highlighted assignments with their due dates |
 
-## Let's visit the website: Search
+## Other parts of the site
 
-## Let's visit the website: Homework!
+- Search
+- Homework
+- Project
+- Resources
 
-## Decision on Homework due dates
+## More tips!
 
--   I have some set due dates in the schedule
-
--   Please look at your other classes, your calendar, etc
-
--   Consider what day of the week you would like to turn in your assignment, solutions, and video/meeting
-
--   Question in HW 0 to cast your vote and share your opinion
-
--   We have homework every week
-
-    -   Homework 8 is due on 11/26 (Wednesday before Thanksgiving break)
-    -   You will have the option of turning it in with Homework 9
-
-## Structure for this course
-
--   Learning the basic tools to understand statistics
-
--   It is going to feel useless at times, but I swear it is not!
-
--   This class will help you build a toolbox that allows to analyze data while understanding the inner theory at play
-
-## What we will cover
-
-![](../img_slides/course_map.png){fig-align="center"}
-
-## Let me know if you have questions
-
-Or if there's any contradicting information in the course site... I'm sure I made a mistake somewhere!!
+- Print a pdf of the slides
