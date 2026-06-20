@@ -19,8 +19,7 @@ editor:
 (pronounced "wah-KEEM"), Dr. W, Dr. Nicky, Professor, Professor Wakim,
 or any combination of the prior.*
 
-**Best method to contact:** Office hours or Slack for general course
-questions or E-mail/Calendly appointments for private communication.
+**Best method to contact:** Office hours or Slack for most things or E-mail for private communication.
 :::
 
 ::: {.column width="2%"}
@@ -41,12 +40,15 @@ whenever needed.
 
 ### Office Hours
 
-::: callout-warning
-**I am out of town from July 2 to July 20**
+- TBD based on our when2meet results
 
-- I can answer questions via email from July 13-17 and July 20
+::: callout-warning
+**I am out of town from July 2 to July 22**
+
+- I can answer questions via Slack/email from July 13-17
+  - *Maybe* take some meetings during that time, but I'm in a flipped time zone eek!
 - **I will not have access to my computer from July 2-12 and July
-  18-19**
+  18-22**
 :::
 
 ## My scope of practice

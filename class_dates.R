@@ -68,5 +68,5 @@ w10d2 = cal_dates[66]
 ## Week 11 dates
 w11d1 = cal_dates[71]
 w11d2 = cal_dates[73]
-proj = cal_dates[72]
+proj = cal_dates[71]
 last_day = cal_dates[76]

@@ -13,8 +13,8 @@ editor_options:
 
 ```{css, echo=FALSE}
 .title{
-  font-size: 40px;
-  color: #C2352F;
+  font-size: 30px;
+  color: #3070BF;
   background-color: #fff;
   padding: 0px;
 }
@@ -28,24 +28,16 @@ source(here("class_dates.R"))
 ## Labs
 
 | Lab | Rubric | Due Date | Topics |
-|------------------|------------------|------------------|------------------|
-| [Lab 1](/project/Lab_01_instructions.qmd) | [[{{< iconify material-symbols rubric-rounded size=30px >}}](/project/Lab_01_rubric.qmd)]{style="color:#f8f5f0;"} | `r lab1 %>% format("%m/%d")` | Learn about WBNS + prepare your folders + download data |
-| [Lab 2](/project/Lab_02_instructions.qmd) | [[{{< iconify material-symbols rubric-rounded size=30px >}}](/project/Lab_02_rubric.qmd)]{style="color:#f8f5f0;"} | `r lab2 %>% format("%m/%d")` | Filtering data + creating variables |
-| [Lab 3](/project/Lab_03_instructions.qmd) | [[{{< iconify material-symbols rubric-rounded size=30px >}}](/project/Lab_03_rubric.qmd)]{style="color:#f8f5f0;"} | `r lab3 %>% format("%m/%d")` | Summarize your data |
-| [Lab 4](/project/Lab_04_instructions.qmd) | [[{{< iconify material-symbols rubric-rounded size=30px >}}](/project/Lab_04_rubric.qmd)]{style="color:#f8f5f0;"} | `r lab4 %>% format("%m/%d")` | Visualize your data |
+|------------------------|--------------|------------------|----------------------|
+| [Lab 1](/project/Lab_01_instructions.qmd) | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab1 %>% format("%m/%d")` | Learn about WBNS + prepare your folders + download data |
+| Lab 2 | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab2 %>% format("%m/%d")` | Filtering data + creating variables |
+| Lab 3 | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab3 %>% format("%m/%d")` | Summarize your data |
+| Lab 4 | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab4 %>% format("%m/%d")` | Visualize your data |
 
 ## Final Project: Information Sheet
 
 We are going to create a scrollable information sheet (aka an html document) using the Well-Being and Basic Needs Survey.
 
-Some templates: <https://venngage.com/templates/infographics/statistical>
-
-Project on food insecurity dataset: options of things to tackle
-
-- How does better representation of question on LGBTQ between 2021 to 2023 lead to differences in missing data?
-
-- LOOK AT YOUR GEMINI SEARCH!!
-
-- 
+- Some ideas for information sheets: <https://venngage.com/templates/infographics/statistical>
 
 ## 
