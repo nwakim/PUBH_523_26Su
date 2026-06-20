@@ -1,5 +1,5 @@
 ---
-title: "Orientation to the Course"
+title: "Course logistics"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
@@ -11,7 +11,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: "Orientation to the Course"
+    footer: "Course logistics"
     html-math-method: mathjax
     highlight-style: arrow
 execute:
