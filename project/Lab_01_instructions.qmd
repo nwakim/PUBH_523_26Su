@@ -23,6 +23,10 @@ execute:
   freeze: auto 
 ---
 
+::: callout-important
+This lab is not ready to be worked on! (Nicky 6/19/26)
+:::
+
 
 ```{r}
 #| message: false
