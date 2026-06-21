@@ -328,5 +328,16 @@
   },
   "lessons/06_Comments/Comments.qmd": {
     "Comments.html": "31f3e109"
+  },
+  "practice_01.qmd": {
+    "practice_01.html": "e5702af1",
+    "practice_01.tex": "afb008e0"
+  },
+  "practice/practice_01.qmd": {
+    "practice_01.html": "9e64e7fe",
+    "practice_01.tex": "a19ba94b"
+  },
+  "lessons/11_Rproj_wds/Rproj_wdsqmd.qmd": {
+    "Rproj_wdsqmd.html": "6a72ff31"
   }
 }
