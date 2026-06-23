@@ -13,8 +13,6 @@ website:
     right:
       - href: schedule.qmd
         text: Schedule
-      - href: lesson_references.qmd
-        text: Resources      
       - href: syllabus.qmd
         text: Syllabus
       - href: instructors.qmd
@@ -23,7 +21,9 @@ website:
         text: Practice
       - href: project.qmd
         text: Project
-          
+      - href: lesson_references.qmd
+        text: Resources   
+        
 execute:
   freeze: auto
 

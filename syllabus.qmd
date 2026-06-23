@@ -104,7 +104,7 @@ This class is asynhronous, meaning we will not have set class times. However, I 
 
 #### Other helpful textbook
 
-- [Hands-On Programming with R](https://www.rstudio.com/resources/books/hands-on-programming-with-r/) by Garrett Grolemund
+- [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) by Garrett Grolemund
 
 ### Brightspace
 

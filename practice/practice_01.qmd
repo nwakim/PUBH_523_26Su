@@ -4,14 +4,13 @@ subtitle: "PUBH 523/623"
 author: "Nicky Wakim"
 date-modified: "today"
 format: 
-  html: 
+  html:
     link-external-newwindow: true
     toc: true
-    embed-resources: true
     self-contained: true
     page-layout: full
-    callout-appearance: simple
-  pdf: default 
+    html-math-method: mathjax
+    self-contained-math: true
 editor_options: 
   chunk_output_type: console
 ---

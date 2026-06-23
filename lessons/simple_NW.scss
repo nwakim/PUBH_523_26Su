@@ -61,6 +61,10 @@ div.cell-output-stdout {
   max-height: 100% !important;
 }
 
+.large-code code {
+  font-size: 1.7em !important;;
+}
+
 
 // Target the Tippy box explicitly for code annotations
 .tippy-box {

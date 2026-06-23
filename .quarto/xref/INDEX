@@ -339,5 +339,32 @@
   },
   "lessons/11_Rproj_wds/Rproj_wdsqmd.qmd": {
     "Rproj_wdsqmd.html": "6a72ff31"
+  },
+  "lessons/11_Rproj_wds/Rproj_wds.qmd": {
+    "Rproj_wds.html": "a614b6c5"
+  },
+  "lessons/07_Organization/Organization.qmd": {
+    "Organization.html": "5765c926"
+  },
+  "lessons/08_Quarto_docs/Quarto_docs.qmd": {
+    "Quarto_docs.html": "fc0710a0"
+  },
+  "lessons/10_Rproj_wds/Rproj_wds.qmd": {
+    "Rproj_wds.html": "4dbfc620"
+  },
+  "lessons/13_Objects/Objects.qmd": {
+    "Objects.html": "025e9c3d"
+  },
+  "lessons/14_Naming/Naming.qmd": {
+    "Naming.html": "07738cba"
+  },
+  "lessons/11_Intro_to_HRS/Intro_to_HRS.qmd": {
+    "Intro_to_HRS.html": "1f7a760b"
+  },
+  "lessons/12_Functions/Functions.qmd": {
+    "Functions.html": "edd989d3"
+  },
+  "lessons/09_Packages/Packages.qmd": {
+    "Packages.html": "8b3e3b1f"
   }
 }
