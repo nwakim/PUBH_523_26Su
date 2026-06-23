@@ -20,7 +20,7 @@ execute:
   freeze: auto
 ---
 
-## Why Does File Organization Matter?
+## Why does file organization matter?
 
 Good organization means you can:
 
@@ -182,7 +182,7 @@ Some people use **hyphens `-`** to separate words and **underscores `_`** to sep
 :::
 :::
 
-## Rule 4: Leading Numbers for Sequential Items
+## Rule 4: Leading numbers for sequential items
 
 Use **leading numbers** to keep files in the right order in any file browser.
 
@@ -201,7 +201,7 @@ Use **leading numbers** to keep files in the right order in any file browser.
 :::
 
 
-## Rule 5: Dates in `YYYY-MM-DD` Format
+## Rule 5: Dates in `YYYY-MM-DD` format
 
 Including dates keeps files in **chronological order** automatically.
 
@@ -223,7 +223,7 @@ Starting with the year means alphabetical order = chronological order.
 :::
 
 
-## Rule 6: Versioning (Optional)
+## Rule 6: Versioning (optional)
 
 You *can* label **different versions** of a file when you need to track changes.
 
@@ -246,17 +246,17 @@ Version labels are perfectly reasonable for coursework. For larger projects, clo
 :::
 
 
-## Organizing Your Scripts
+## Organizing your scripts/quarto docs
 
-Split your analysis into **numbered, single-purpose scripts**:
+Split your analysis into **numbered, single-purpose documents**:
 
 | Script | Does |
 |---|---|
-| `01_import_data.R` | Loads raw data, minimal changes |
-| `02_clean_data.R` | Filtering, recoding, joining |
-| `03_explore.R` | Summary stats, exploratory plots |
-| `04_model.R` | Statistical modeling |
-| `05_figures.R` | Final publication-ready plots |
+| `01_import_data.qmd` | Loads raw data, minimal changes |
+| `02_clean_data.qmd` | Filtering, recoding, joining |
+| `03_explore.qmd` | Summary stats, exploratory plots |
+| `04_model.qmd` | Statistical modeling |
+| `05_figures.qmd` | Final publication-ready plots |
 
 ::: pink
 ::: pink-cont
@@ -287,7 +287,7 @@ Analyzes student survey responses collected in March 2024.
 R 4.3+, tidyverse, ggplot2
 ```
 
-## Summary
+## Wrap-up
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -298,7 +298,6 @@ R 4.3+, tidyverse, ggplot2
 3. **Names: short, lowercase, no spaces** — use `_` to separate
 4. **Leading numbers** for sequential files and folders
 5. **Dates as `YYYY-MM-DD`** — for chronological order
-6. **Use relative paths** — so code works anywhere
 :::
 ::: {.column width="40%"}
 ::: blue
@@ -309,3 +308,8 @@ R 4.3+, tidyverse, ggplot2
 :::
 :::
 :::
+
+## Note on AI usage
+
+- I used AI (Claude) to help me organize my previous content and make some naming techniques more clear 
+- AI (Claude) also wrote the wrap-up slide

@@ -116,10 +116,10 @@ source(here("class_dates.R"))
 |  |  | 10 | [Rigor & Reproducibility]{.randr} | R projects and working directories | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/10_Rproj_wds/Rproj_wds.qmd)]{style="color:#f8f5f0;"} | [6.2](https://r4ds.hadley.nz/workflow-scripts.html#projects) | [6](https://epirhandbook.com/en/new_pages/r_projects.html) |
 |  | `{r} pract2 %>% format("%m/%d")` |  |  | [Practice 2 due]{.pract-row} |  |  |  |  |
 | [ ]{.week-row} |  |  |  | Nicky on vacation this week |  |  |  |  |
-| 3 | `{r} w3d1 %>% format("%m/%d")` | 11 | [Course info]{.info} | Introduction to HRS dataset | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/c6b9a396d1df4dd8bd14cd30b7f71659)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/07_Intro_to_HRS/Intro_to_HRS.qmd)]{style="color:#f8f5f0;"} |  |  |
-|  |  | 12 | [R Basics]{.rbasics} | Functions | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/fbccebe3180c44a38b46108138bf8bb8)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/08_Functions/Functions.qmd)]{style="color:#f8f5f0;"} | [2.4](https://r4ds.hadley.nz/workflow-basics.html#calling-functions) | [3.6](https://epirhandbook.com/en/new_pages/basics.html#functions) |
-|  |  | 13 | [R Basics]{.rbasics} | Objects | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/910d90d7a8d9444f8d6f9b256b84e334)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/09_Objects/Objects.qmd)]{style="color:#f8f5f0;"} |  | [3.10](https://epirhandbook.com/en/new_pages/basics.html#objects) |
-|  |  | 14 |  | Naming: objects and variables |  |  |  |  |
+| 3 | `{r} w3d1 %>% format("%m/%d")` | 11 | [Course info]{.info} | Introduction to HRS dataset | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/c6b9a396d1df4dd8bd14cd30b7f71659)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/11_Intro_to_HRS/Intro_to_HRS.qmd)]{style="color:#f8f5f0;"} |  |  |
+|  |  | 12 | [R Basics]{.rbasics} | Functions | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/fbccebe3180c44a38b46108138bf8bb8)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/12_Functions/Functions.qmd)]{style="color:#f8f5f0;"} | [2.4](https://r4ds.hadley.nz/workflow-basics.html#calling-functions) | [3.6](https://epirhandbook.com/en/new_pages/basics.html#functions) |
+|  |  | 13 | [R Basics]{.rbasics} | Objects | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/910d90d7a8d9444f8d6f9b256b84e334)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/13_Objects/Objects.qmd)]{style="color:#f8f5f0;"} |  | [3.10](https://epirhandbook.com/en/new_pages/basics.html#objects) |
+|  |  | 14 | [Best Practices in R]{.bestpract} | Naming: objects and variables | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
 |  | `{r} pract3 %>% format("%m/%d")` |  |  | [Practice 3 Due]{.pract-row} |  |  |  |  |
 | [ ]{.week-row} |  |  |  | Nicky out of town, but can answer emails |  |  |  |  |
 | 4 | `{r} w4d1 %>% format("%m/%d")` | 14 | [R Basics]{.rbasics} | Piping | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [3.4](https://r4ds.hadley.nz/data-transform.html#sec-the-pipe) | [8.1](https://epirhandbook.com/en/new_pages/basics.html#piping) |
@@ -145,7 +145,7 @@ source(here("class_dates.R"))
 | [ ]{.week-row} |  |  |  |  |  |  |  |  |
 | 7 | `{r} w7d1 %>% format("%m/%d")` | 28 | [Data transformation]{.trans} | Lengthening data | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [5.3](https://r4ds.hadley.nz/data-tidy.html#sec-pivoting) |  |
 |  |  | 29 | [Data transformation]{.trans} | Widening data | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} | [5.4](https://r4ds.hadley.nz/data-tidy.html#widening-data) |  |
-|  |  |  | More on quarto |  |  |  |  |  |
+|  |  |  | [Rigor & Reproducibility]{.randr} | More on quarto |  |  |  |  |
 |  | `{r} pract7 %>% format("%m/%d")` |  |  | [Practice 7 due]{.pract-row} |  |  |  |  |
 |  | `{r} lab3 %>% format("%m/%d")` |  |  | [Lab 3 due]{.lab-row} |  |  |  |  |
 | [ ]{.week-row} |  |  |  |  |  |  |  |  |
