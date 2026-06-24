@@ -116,7 +116,7 @@ What is the difference between running code in the **Console** versus running it
 
 List **two ways** you can run a line of code from an R Script in RStudio (keyboard shortcuts count!).
 
-# Question 9
+### Question 9
 
 Multnomah County's public health department tracks chlamydia cases across neighborhoods in Portland as part of routine STI surveillance. Chlamydia is the most commonly reported STI in Multnomah County, and monitoring its spread at the neighborhood level helps the health department decide where to direct testing and outreach resources.
 

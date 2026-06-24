@@ -98,7 +98,7 @@
     code span.vs { color: #86b300; } /* VerbatimString */
     code span.wa { color: #f07171; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-80a1e1612e6180acbfba524d2708a359.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-86d29bcc73d535f5f62a4df8319f6c78.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -192,8 +192,6 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../../site_libs/countdown-0.6.0/countdown.css" rel="stylesheet">
-  <script src="../../site_libs/countdown-0.6.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -211,178 +209,20 @@ Nicky Wakim
 </div>
 
 </section>
-<section id="what-is-a-working-directory" class="slide level2">
-<h2>What is a Working Directory?</h2>
-<p>The <strong>working directory</strong> is the folder R is currently “looking at” — the starting point for all file paths in your session.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># See your current working directory</span></span>
-<span id="cb1-2"><a></a><span class="fu">getwd</span>()</span>
-<span id="cb1-3"><a></a><span class="co">#&gt; [1] "/Users/jane/Documents/my_project"</span></span>
-<span id="cb1-4"><a></a></span>
-<span id="cb1-5"><a></a><span class="co"># Any relative path starts from here</span></span>
-<span id="cb1-6"><a></a><span class="fu">read.csv</span>(<span class="st">"data/raw/survey.csv"</span>)</span>
-<span id="cb1-7"><a></a><span class="co"># R looks for: /Users/jane/Documents/my_project/data/raw/survey.csv</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Warning</strong></p>
-</div>
-<div class="callout-content">
-<p>If R can’t find a file, the working directory is almost always the culprit.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="the-problem-setting-it-manually-is-fragile" class="slide level2">
-<h2>The Problem: Setting it Manually is Fragile</h2>
-<p>You <em>can</em> set the working directory by hand — but you shouldn’t.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># Breaks on any other computer</span></span>
-<span id="cb2-2"><a></a><span class="fu">setwd</span>(<span class="st">"/Users/jane/Desktop/my_project"</span>)</span>
-<span id="cb2-3"><a></a></span>
-<span id="cb2-4"><a></a><span class="co"># Also breaks if you move the folder</span></span>
-<span id="cb2-5"><a></a><span class="fu">setwd</span>(<span class="st">"C:/Users/jane/Documents/school/BIOL401/my_project"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="fragment">
-<p>This is exactly the absolute path problem from last lesson.<br>
-<strong>R Projects solve this automatically.</strong></p>
-</div>
-</section>
-<section id="what-is-an-r-project" class="slide level2">
-<h2>What is an R Project?</h2>
-<p>An <strong>R Project</strong> is a file (<code>.Rproj</code>) that sits in your project folder and tells RStudio:</p>
-<blockquote>
-<p><em>“This folder is the project root. Set the working directory here automatically.”</em></p>
-</blockquote>
-<div class="large-code">
-<pre><code>my_project/
-├── my_project.Rproj   ← the R Project file
-├── data/
-├── scripts/
-└── outputs/</code></pre>
-</div>
-<p>When you open the <code>.Rproj</code> file, RStudio sets the working directory to that folder — every time, on any computer.</p>
-</section>
-<section id="creating-an-r-project" class="slide level2">
-<h2>Creating an R Project</h2>
-<p>In RStudio: <strong>File → New Project → New Directory → New Project</strong></p>
-
-<img data-src="https://support.posit.co/hc/en-us/article_attachments/360003990994.png" class="r-stretch"><div class="fragment">
-<p>Give the project a name, choose where to save it, and click <strong>Create Project</strong>.<br>
-That’s it — RStudio drops a <code>.Rproj</code> file in the folder.</p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>You can also create a project from an <strong>existing folder</strong>: <strong>File → New Project → Existing Directory</strong></p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="opening-and-using-an-r-project" class="slide level2">
-<h2>Opening and Using an R Project</h2>
-<p><strong>Always open your project by clicking the <code>.Rproj</code> file</strong>, not by opening scripts directly.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># Once your project is open, this just works:</span></span>
-<span id="cb4-2"><a></a><span class="fu">read.csv</span>(<span class="st">"data/raw/survey.csv"</span>)</span>
-<span id="cb4-3"><a></a></span>
-<span id="cb4-4"><a></a><span class="co"># No setwd() needed. Ever.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="fragment">
-<p>RStudio shows the active project name in the <strong>top-right corner</strong>. If it says <em>“Project: (None)”</em>, you’re not in a project.</p>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Warning</strong></p>
-</div>
-<div class="callout-content">
-<p>Opening a script directly (by double-clicking it) does <strong>not</strong> activate the project or set the working directory.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="the-here-package-bonus-tool" class="slide level2">
-<h2>The <code>here</code> Package (Bonus Tool)</h2>
-<p>For scripts in subfolders, use <code>here::here()</code> to build paths from the project root — even more robustly than relative paths alone.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">library</span>(here)</span>
-<span id="cb5-2"><a></a></span>
-<span id="cb5-3"><a></a><span class="co"># Always starts from the project root, regardless of</span></span>
-<span id="cb5-4"><a></a><span class="co"># where the script lives</span></span>
-<span id="cb5-5"><a></a><span class="fu">read.csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"raw"</span>, <span class="st">"survey.csv"</span>))</span>
-<span id="cb5-6"><a></a><span class="fu">write.csv</span>(cleaned, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"processed"</span>, <span class="st">"survey_clean.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p><code>here()</code> is especially useful in <strong>Quarto/R Markdown</strong> documents, where the working directory can behave unexpectedly.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
+<section id="why-do-we-need-r-projects-and-the-here-package" class="slide level2">
+<h2>Why do we need R Projects and the <code>here</code> package?</h2>
 <div class="columns">
-<div class="column" style="width:55%;">
-<p><strong>The workflow:</strong></p>
-<ol type="1">
-<li>Create <strong>one R Project</strong> per analysis</li>
-<li>Open work by clicking the <strong><code>.Rproj</code> file</strong></li>
-<li>Use <strong>relative paths</strong> — no <code>setwd()</code>, ever</li>
-<li>Optionally use <strong><code>here::here()</code></strong> for extra robustness</li>
-</ol>
-</div><div class="column" style="width:45%;">
-<p>R Projects + good folder structure from last lesson = analysis that runs reliably anywhere, for anyone.</p>
-</div></div>
-<div class="fragment">
-<p><strong>Up next:</strong> Reading data into R</p>
+<div class="column" style="width:35%;">
+
+</div><div class="column" style="width:30%;">
+<div class="pink">
+<div class="pink-cont">
+<p><strong>Answer:</strong> Reproducibility!</p>
 </div>
-</section>
-<section id="creating-project-in-rstudio" class="slide level2">
-<h2>Creating project in RStudio</h2>
-<ul>
-<li><p>Way to designate a working directory: basically your home base when working in R</p>
-<ul>
-<li><p>We have to tell R exactly where we are in our folders and where to find other things</p></li>
-<li><p>A project makes it easier to tell R where we are</p></li>
-</ul></li>
-<li><p>Basic steps to create a project</p>
-<ul>
-<li><p>Go into RStudio</p></li>
-<li><p>Create new project for this class (under <code>File</code> or top right corner)</p>
-<ul>
-<li>I would chose “Existing Directory” since we have already set up our folders</li>
-<li>Make the new project in the <code>EPI_525_F24</code> folder</li>
-</ul></li>
-</ul></li>
-<li><p>Once we have projects, we can open one and R will automatically know that its location is the start of our working directory</p></li>
-</ul>
-</section>
-<section id="the-nice-thing-about-r-projects" class="slide level2">
-<h2>The nice thing about R projects</h2>
-<ul>
-<li>5 minute video explaining some of the nice features of R projects</li>
-</ul>
-<p><a href="https://rfortherestofus.com/2022/10/rstudio-projects" class="uri">https://rfortherestofus.com/2022/10/rstudio-projects</a></p>
-</section>
-<section id="reproducibility" class="slide level2">
-<h2>Reproducibility</h2>
+</div>
+</div><div class="column" style="width:35%;">
+
+</div></div>
 <ul>
 <li><p>Research data and code can reach the same results regardless of who is running the code</p>
 <ul>
@@ -391,21 +231,276 @@ That’s it — RStudio drops a <code>.Rproj</code> file in the folder.</p>
 <li><p>We want to set up our work so the entire folder can be moved around and work in its new location</p></li>
 </ul>
 </section>
-<section id="nickys-process-for-r-projects" class="slide level2">
-<h2>Nicky’s process for R projects</h2>
+<section id="what-is-a-working-directory" class="slide level2">
+<h2>What is a working directory?</h2>
+<div class="blue">
+<div class="blue-ttl">
+<p>Working directory</p>
+</div>
+<div class="blue-cont">
+<p>The <strong>working directory</strong> is the folder R is currently “looking at.” When you want to locate a file, it is the starting point for all file paths in your session.</p>
+</div>
+</div>
 <ul>
-<li><p>Let me show you my process</p>
-<ul>
-<li><p>I will create one in my Sample_folder</p></li>
-<li><p>I will show you how I switch between classes</p></li>
-</ul></li>
-<li><p>Make a project file in your class folder!</p></li>
+<li>The following will show me my current working directory</li>
 </ul>
 <div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_4579183f" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1">1</button><span id="annotated-cell-1-1" class="code-annotation-target"><a href="#annotated-cell-1-1"></a><span class="fu">getwd</span>()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="1" data-code-annotation="1">Function to look at the current working directory, which is where my <code>.qmd</code> file lives</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "/Users/wakim/Library/CloudStorage/OneDrive-OregonHealth&amp;ScienceUniversity/Teaching/Classes/PUBH_523_26Su/PUBH_523_26Su_site/lessons/10_Rproj_wds"</code></pre>
 </div>
 </div>
+<ul>
+<li>Any <strong>relative path</strong> starts from the current working directory</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1"></a><span class="fu">read_rds</span>(<span class="st">"../data_lessons/hrs_data.rds"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="1" data-code-annotation="1">If I want to go up a folder, I can use <code>..</code> to go up one level, and then I can access the <code>data_lessons</code> folder and the <code>hrs_data.rds</code> file.</span>
+</dd>
+</dl>
+</div>
+</div>
+<ul>
+<li>Note that the <strong>absolute file path</strong> is <code>/Users/wakim/Library/CloudStorage/OneDrive-OregonHealth&amp;ScienceUniversity/Teaching/Classes/PUBH_523_26Su/PUBH_523_26Su_site/lessons/</code> <code>data_lessons/hrs_data.rds</code></li>
+</ul>
+</section>
+<section id="the-problem-with-working-directories" class="slide level2">
+<h2>The problem with working directories</h2>
+<ul>
+<li><p>You <em>can</em> set the working directory by hand, but you should NOT!</p></li>
+<li><p>When you set a <code>wd</code> manually, it will break if you move the folder or if you are on a different computer</p></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-3"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-1" class="code-annotation-target"><a href="#annotated-cell-3-1"></a><span class="fu">setwd</span>(<span class="st">"/Users/jane/Desktop/my_project"</span>)</span>
+<span id="annotated-cell-3-2"><a href="#annotated-cell-3-2"></a></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="2">2</button><span id="annotated-cell-3-3" class="code-annotation-target"><a href="#annotated-cell-3-3"></a><span class="fu">setwd</span>(<span class="st">"C:/Users/jane/Documents/school/BIOL401/my_project"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="1" data-code-annotation="1">Breaks on any other computer</span>
+</dd>
+<dt data-target-cell="annotated-cell-3" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="3" data-code-annotation="2">Also breaks if you move the folder</span>
+</dd>
+</dl>
+</div>
+</div>
+<ul>
+<li>When you use <code>qmd</code>s, running code in the console and rendering result in two different working directories
+<ul>
+<li>Let’s walk through an example!</li>
+</ul></li>
+</ul>
+<div class="pink">
+<div class="pink-cont">
+<p>R projects and the <code>here</code> package can help <strong>fix both of these issues</strong>!</p>
+</div>
+</div>
+</section>
+<section id="what-is-an-r-project" class="slide level2">
+<h2>What is an R Project?</h2>
+<div class="blue">
+<div class="blue-ttl">
+<p>R Project</p>
+</div>
+<div class="blue-cont">
+<p>An <strong>R Project</strong> is a file (<code>.Rproj</code>) that sits in a folder and tells RStudio: “This is where I want my working directory to be set automatically.”</p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="pink">
+<div class="pink-cont">
+<p>I can add an R Project to my <code>PUBH_523_26Su</code> folder. The R project will show up as <code>PUBH_523_26Su.Rproj</code>.</p>
+</div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:35%;">
+<div class="large-code">
+<pre><code>PUBH_523_26Su/ 
+├── PUBH_523_26Su.Rproj
+├── admin/
+├── data_lessons/
+├── data_practice/
+├── data_project/
+│   ├── data_raw/  
+│   └── data_processed/    
+├── lessons/
+├── practice/
+├── project/
+└── README.txt</code></pre>
+</div>
+</div><div class="column" style="width:30%;">
+<div class="green">
+<div class="green-cont">
+<p>When you open the <code>.Rproj</code> file, RStudio sets the working directory to that folder — every time, on any computer.</p>
+</div>
+</div>
+</div></div>
+</section>
+<section id="lets-create-an-r-project" class="slide level2">
+<h2>Let’s create an R Project!</h2>
+<ul>
+<li>You can create a <span style="color:#C83532"><em>new project and folder</em></span>
+<ul>
+<li><strong>File → New Project → New Directory → New Project</strong></li>
+<li>Give the project a name, choose where to save it, and click <strong>Create Project</strong></li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>You can also create a project from an <span style="color:#459B99"><em>existing folder</em></span>
+<ul>
+<li><strong>File → New Project → Existing Directory</strong></li>
+<li>Then you’ll browse for the folder you want to create the project in</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<p>Let’s see an example!</p>
+</section>
+<section id="opening-and-using-an-r-project" class="slide level2">
+<h2>Opening and using an R Project</h2>
+<ul>
+<li>When working with files in an R Project, you want to open and work within the R project</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>You can open an R project two ways:
+<ul>
+<li>Click on the <code>.Rproj</code> file in your folder</li>
+<li>Open RStudio and select the project from the <strong>top-right corner</strong> of the window</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Once a project is open, we can work in our files and do not need to set a working directory manually
+<ul>
+<li>R Studio will automatically set the working directory to the project folder</li>
+</ul></li>
+</ul>
+<div class="red">
+<div class="red-cont">
+<p>Opening a script/qmd directly (by double-clicking it) does <strong>not</strong> activate the project or set the working directory</p>
+</div>
+</div>
+</section>
+<section id="we-still-run-into-some-issues-with-r-projects" class="slide level2">
+<h2>We still run into some issues with R Projects</h2>
+<p>We haven’t fixed this issue yet:</p>
+<blockquote>
+
+<ul>
+<li>When you use <code>qmd</code>s, running code in the console and rendering result in two different working directories
+<ul>
+<li>Let’s walk through an example!</li>
+</ul></li>
+</ul>
+
+</blockquote>
+<div class="pink">
+<div class="pink-cont">
+<p>We need the <code>here</code> package to fix this issue!</p>
+</div>
+</div>
+</section>
+<section id="the-here-package" class="slide level2">
+<h2>The <code>here</code> package</h2>
+<ul>
+<li>For scripts in subfolders, use <code>here()</code> to build paths from the project root</li>
+<li>The <code>here()</code> function makes your code start at the R project folder whether we are working in the console or rendering a <code>qmd</code> document
+<ul>
+<li>Output for <code>here()</code> returns same thing in console and on render</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-9"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="1">1</button><span id="annotated-cell-9-1" class="code-annotation-target"><a href="#annotated-cell-9-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(here)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="2">2</button><span id="annotated-cell-9-2" class="code-annotation-target"><a href="#annotated-cell-9-2"></a><span class="fu">here</span>()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-9" data-code-lines="1" data-code-annotation="1">Need to load the <code>here</code> package to use the <code>here()</code> function</span>
+</dd>
+<dt data-target-cell="annotated-cell-9" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-9" data-code-lines="2" data-code-annotation="2">The <code>here()</code> function returns the path to the project root folder, regardless of where the script lives</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "/Users/wakim/Library/CloudStorage/OneDrive-OregonHealth&amp;ScienceUniversity/Teaching/Classes/PUBH_523_26Su/PUBH_523_26Su_site"</code></pre>
+</div>
+</div></li>
+</ul>
+</section>
+<section id="now-we-can-navigate-to-our-files-in-a-robust-way" class="slide level2">
+<h2>Now we can navigate to our files in a robust way</h2>
+<ul>
+<li>We can use <code>here()</code> to navigate to files in our project folder</li>
+<li>We only need to specify the relative path from the project root folder</li>
+<li>We can input the relative path two different ways:
+<ul>
+<li>Using a comma to separate the folder/file names (<em>better practice bc it is platform agnostic</em>)</li>
+<li>Using a forward (or backward on Windows) slash to separate the folder/file names</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">here</span>(<span class="st">"lessons"</span>, <span class="st">"01_Welcome"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "/Users/wakim/Library/CloudStorage/OneDrive-OregonHealth&amp;ScienceUniversity/Teaching/Classes/PUBH_523_26Su/PUBH_523_26Su_site/lessons/01_Welcome"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">here</span>(<span class="st">"images"</span>, <span class="st">"PUBH_R.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "/Users/wakim/Library/CloudStorage/OneDrive-OregonHealth&amp;ScienceUniversity/Teaching/Classes/PUBH_523_26Su/PUBH_523_26Su_site/images/PUBH_R.png"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">here</span>(<span class="st">"images/PUBH_R.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "/Users/wakim/Library/CloudStorage/OneDrive-OregonHealth&amp;ScienceUniversity/Teaching/Classes/PUBH_523_26Su/PUBH_523_26Su_site/images/PUBH_R.png"</code></pre>
+</div>
+</div>
+</section>
+<section id="wrap-up" class="slide level2">
+<h2>Wrap-up</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<ul>
+<li>Create <strong>one R Project</strong> per analysis</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Open work by clicking the <strong><code>.Rproj</code> file</strong> or opening in R Studio</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Use <strong>relative paths</strong>: no <code>setwd()</code>, ever</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Use <strong><code>here()</code></strong> to make relative file paths</li>
+</ul>
+</div><div class="column" style="width:45%;">
+<div class="pink">
+<div class="pink-cont">
+<p>R Projects <span class="math inline">\(+\)</span> <code>here()</code> <span class="math inline">\(+\)</span> good folder structure</p>
+<p><span class="math display">\[=\]</span></p>
+<p>analysis that runs reliably anywhere, for anyone</p>
+</div>
+</div>
+</div></div>
 
 
 </section>

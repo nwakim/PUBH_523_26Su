@@ -34,8 +34,7 @@ pacman::p_load(
   readxl
 )
 
-hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
-hrs_data <- read_rds(here("./data/hrs_data.rds"))
+hrs_data <- read_rds(here("data", "hrs_data.rds"))
 hrs_data <- clean_names(hrs_data)
 ```
 
