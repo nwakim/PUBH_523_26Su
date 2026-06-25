@@ -149,7 +149,11 @@ Fill in the table below. Each package belongs to one of three categories from Le
 ::: {.callout-tip appearance="minimal"}
 ##### Tip
 
-You can use the `?` command in R to learn more about what a package does. You can also search online for each one!
+You can use the `?` command in R to learn more about what a package does. 
+
+You can also search online for each one! A quick Google search of `gtsummary` shows me a [page on the package](https://www.danieldsjoberg.com/gtsummary/) 
+
+- I see the description: "The {gtsummary} package provides an elegant and flexible way to create publication-ready analytical and summary tables..." which I can put in my table.
 :::
 
 #### Part C: Install vs. load
