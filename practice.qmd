@@ -15,7 +15,7 @@ source(here("class_dates.R"))
 | Practice | Assignment | Data | Assignment due (\@11pm) | Answers | Solutions |
 |------------|------------|------------|------------|------------|------------|
 | 1 | [[{{< iconify material-symbols assignment size=29px >}}](/practice/practice_01.qmd)]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract1 %>% format("%m/%d")` | [[{{< iconify ph key-fill size=29px >}}](/practice/practice_01_ans.qmd)]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
-| 2 | [[{{< iconify material-symbols assignment size=29px >}}](/homework/HW_02.qmd)]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract2 %>% format("%m/%d")` | [{{< iconify ph key-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
+| 2 | [[{{< iconify material-symbols assignment size=29px >}}](/practice/practice_02.qmd)]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract2 %>% format("%m/%d")` | [{{< iconify ph key-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
 | 3 | [{{< iconify material-symbols assignment size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract3 %>% format("%m/%d")` | [{{< iconify ph key-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
 | 4 | [{{< iconify material-symbols assignment size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract4 %>% format("%m/%d")` | [{{< iconify ph key-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
 | 5 | [{{< iconify material-symbols assignment size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract5 %>% format("%m/%d")` | [{{< iconify ph key-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
@@ -28,7 +28,9 @@ source(here("class_dates.R"))
 
 ## File Naming
 
-- For Practice assignments, please use the following file naming: "Lastname_Firstinitial_HW0.qmd" and "Lastname_Firstinitial_HW0.html"
+- For Practice assignments, please use the following file naming:
+  - "lastname_firstinitial_practice_01.qmd" and "lastname_firstinitial_practice_01.html"
+  - "Lastname_Firstinitial_Practice_01.qmd" and "Lastname_Firstinitial_Practice_01.html"
 
 ## Rubrics
 

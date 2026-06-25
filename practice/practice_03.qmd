@@ -1,0 +1,44 @@
+---
+title: "Practice 2"
+subtitle: "PUBH 523/623"
+author: "Your name here"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    self-contained: true
+    page-layout: full
+    html-math-method: mathjax
+    self-contained-math: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Overview
+
+This practice is mostly **hands-on**. You will set up the real folder structure you will use for the rest of the course, create your R Project, write your first `.qmd` from scratch, and practice loading packages — all skills you will rely on every week.
+
+Topics covered (Lessons 7–10):
+
+- Folder and file organization
+- Quarto and `.qmd` files
+- Packages
+- R Projects and working directories
+
+## Directions
+
+Practice assignments will follow a general format. Here are the following steps you need to follow to complete this assignment:
+
+1.  [Download the practice `.qmd` from my GitHub repository.](https://github.com/nwakim/PUBH_523_26Su/blob/main/practice/practice_02.qmd)
+2.  Save the `.qmd` file as `Lastname_Firstinitial_Practice_02.qmd` or `lastname_firstinitial_practice_02.qmd` (replace with your actual last name and first initial). Save it in your `practice/` folder with a `practice_02` subfolder if you'd like.
+3.  Open the `.qmd` in RStudio (within your project) and edit it to complete the assignment. You will add your answers directly into this file.
+4.  Keep the the boxes with the yellow stripe on the left side that explain the question.
+5.  Do all your work under and outside of the boxes with the yellow stripe.
+6.  You can delete other parts of this assignment, including:
+    - Overview
+    - Directions
+    - Boxes that contain tips
+    - Submission checklist
+    - Note on AI usage
+7.  Submit your completed practice to Brightspace as both a `.qmd` and `.html` file.
