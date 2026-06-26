@@ -34,6 +34,14 @@ library(here)
 
 ## Main ways to get unstuck
 
+::: pink
+::: pink-cont
+A huge part of coding is **learning to debug your own code** and **figure out what's going wrong.**
+:::
+:::
+
+The good news is that there are many ways to get help. These are some good steps (in order):
+
 1. [Use the `?` in front of the function name to get more information!]{style="color:#BF396F;"}
   
     -   *Best for: understanding function arguments and usage*
@@ -116,7 +124,7 @@ If `?` doesn't help, try searching across all installed packages:
 
 ::: columns
 ::: {.column width="50%"}
-**Step 1:** Pull up the help page
+[**Step 1:**]{style="color:#BF396F;"} Pull up the help page
 
 ```{r}
 #| eval: false
@@ -124,7 +132,7 @@ If `?` doesn't help, try searching across all installed packages:
 ```
 
 
-**Step 2:** Read the **Usage** and **Arguments** sections
+[**Step 2:**]{style="color:#BF396F;"} Read the **Usage** and **Arguments** sections
 
 - Arguments and Examples are very helpful sections!
 
@@ -137,7 +145,7 @@ round(x, digits = 0)
 :::
 
 ::: {.column width="50%"}
-**Step 3:** Try it out
+[**Step 3:**]{style="color:#BF396F;"} Try it out
 
 ```{r}
 round(3.14159)          #<1>
@@ -180,8 +188,8 @@ mean(x)             #<1>
 mean(x, na.rm = TRUE)  #<2>
 ```
 
-1. Returns `NA` — not what we wanted!
-2. Returns `2.333...` — ignores the missing value
+1. Returns `NA`:not what we wanted!
+2. Returns `2.333...`: ignores the missing value
 :::
 
 ::: {.column width="5%"}
@@ -251,13 +259,13 @@ paste0("Hello", "World")  #<2>
 
 ## [3. AI Tools (ChatGPT, Claude, etc.)]{style="color:#459B99;"}
 
-::: columns
-::: {.column width="50%"}
 **When AI helps most:**
 
 - Explaining what an error message means
 - Getting starter code for something new
 - Understanding what a function does
+- Adding intricate details to plotting
+- Helping with lengthy data management code
 
 **Example prompts:**
 
@@ -266,14 +274,16 @@ paste0("Hello", "World")  #<2>
 > *"Can you explain what `na.rm = TRUE` does in R?"*
 
 [See an example ChatGPT conversation →](https://chatgpt.com/share/66f8a2b9-9918-8006-88af-0dc7b64bb86a)
-:::
 
-::: {.column width="50%"}
-**Watch out for:**
+## [3. AI Tools (ChatGPT, Claude, etc.): *some hesitation*]{style="color:#459B99;"}
+
+- If you do not want to use AI, that's totally fine! You can still get help from the other methods
+
+**When using AI, watch out for:**
 
 - AI often gives you **more code than you need**
-- AI can be **confidently wrong** — always test the code it gives you
-- AI may use **functions we haven't covered yet** — stick to tools from class notes
+- AI can be **confidently wrong**: always test the code it gives you
+- AI may use **functions we haven't covered yet**: stick to tools from class notes
 
 ::: pink
 ::: pink-ttl
@@ -283,8 +293,7 @@ Course policy on AI
 If you cannot trace code back to the class notes, do **not** use it in assignments. You should be able to **explain every line** of your submitted code. See the [syllabus](https://nwakim.github.io/F24_EPI_525/syllabus.html#plagiarism-and-attribution) for details.
 :::
 :::
-:::
-:::
+
 
 ## [3. Demo: Using AI effectively]{style="color:#459B99;"}
 
@@ -336,61 +345,43 @@ AI gives you a **starting point**, not a final answer. Make sure you can explain
 :::
 :::
 
-## [4. Writing a Minimal Reproducible Example]{style="color:#C83532;"}
+## [4. Getting help from someone]{style="color:#C83532;"}
 
-When asking for help — from a classmate, on Stack Overflow, or from AI — a **reprex** makes it much easier for others to help you.
+- When asking for help (from a classmate, from me, on Stack Overflow, or from AI), you want to include:
+  - Some information about the context
+  - A reproducible example (**reprex**) 
 
-A good reprex has three parts:
+- These make it much easier for someone to help you!
 
 ::: columns
-::: {.column width="33%"}
-**📦 Packages**
-
-List every package you're using
-
-```{r}
-#| eval: false
-library(tidyverse) #<1>
-```
-
-1. Include all packages needed to run your code
+::: column
+::: orange
+::: orange-ttl
+Some information about the context
 :::
-
-::: {.column width="33%"}
-**📋 Data**
-
-Use a small built-in dataset, or `dput()` to share your own
-
-```{r}
-#| eval: false
-head(mtcars)       #<1>
-
-dput(head(my_data)) #<2>
-```
-
-1. Built-in datasets work great
-2. Share a snippet of your own data
+::: orange-cont
+- What you *expected* to happen
+- What *actually* happened
+- The **exact error message** you received
 :::
-
-::: {.column width="33%"}
-**💥 The problem**
-
-The exact code that produces the error
-
-```{r}
-#| error: true
-mean(c("a", "b", "c")) #<1>
-```
-
-1. Paste the code that isn't working
+:::
+:::
+::: column
+::: pink
+::: pink-ttl
+A good reprex has four parts:
+:::
+::: pink-cont
+- Needed packages
+- Needed data 
+- The exact code that produces the error
+- Needed code that leads to the error
+:::
+:::
 :::
 :::
 
-::: pink2
-::: pink2-cont
-Focus on making your example **self-contained and minimal** — only include what's needed to show the problem.
-:::
-:::
+- In our labs, it's good to save a `.rds` file of your `qmd`'s starting data, and share that with me
 
 ## [4. Demo: Writing a reprex]{style="color:#C83532;"}
 
@@ -400,37 +391,33 @@ Focus on making your example **self-contained and minimal** — only include wha
 :::
 :::
 
+- Focus on making your reprex self-contained and **minimal**: include what's needed, but no more!
+
+
 ::: columns
 ::: {.column width="50%"}
-**❌ A bad help request:**
+[**A bad help request:**]{style="color:#C83532;"}
 
-> *"My code isn't working, can you help?"*
+> *"My mean function isn't working, can you help?"*
 
 Nobody can debug this — there's no code, no error, no data.
+:::
 
-**✅ A good help request:**
+::: {.column width="50%"}
+[**A good help request:**]{style="color:#459B99;"}
 
 > *"I'm trying to calculate the mean of my numbers but keep getting NA. Here's my code:"*
 
 ```{r}
 library(tidyverse)      #<1>
-
 ages <- c(23, 31, NA, 45, 28) #<2>
-
 mean(ages)              #<3>
 ```
 
 1. Packages included
 2. Small, simple data included
 3. The exact code producing the problem
-:::
 
-::: {.column width="50%"}
-**Why this works:**
-
-- ✅ Anyone can copy-paste and run it immediately
-- ✅ The data is right there — no guessing
-- ✅ The expected vs. actual behavior is clearly stated
 
 **The answer someone would give:**
 
@@ -439,319 +426,25 @@ mean(ages, na.rm = TRUE)   #<1>
 ```
 
 1. `na.rm = TRUE` tells R to ignore missing values
-
-::: red
-::: red-cont
-Tell people: what you *wanted* to happen, what *actually* happened, and paste the full error message.
-:::
-:::
 :::
 :::
 
-## A troubleshooting workflow
+## Wrap-up
 
 When you get stuck, try these steps **in order:**
 
 1. **Read the error message carefully** — R is often telling you exactly what's wrong
 2. **Check for typos** — a missing comma, parenthesis, or quote causes most beginner errors
-3. **Use `?`** to check the function's expected arguments
-4. **Google the error** — paste it in with "in R" and see what comes up
-5. **Ask AI** — describe your problem clearly; paste in your code and error
-6. **Ask a human** — office hours, a classmate, or a forum with a reprex
+3. [**Use `?`** to check the function's expected arguments]{style="color:#BF396F;"}
+4. [**Google the error**: paste it in with "in R" and see what comes up]{style="color:#3070BF;"}
+5. [**Ask AI**: describe your problem clearly; paste in your code and error]{style="color:#459B99;"}
+6. [**Ask a human**: office hours, a classmate, or a forum with a reprex]{style="color:#C83532;"}
+
+- If you come to me, I will ask you if you've tried all of the above first
+  - **Not meant to be discouraging**, but a huge part of coding is learning to debug on your own and determine when you need other human help
 
 ::: blue
 ::: blue-cont
 Even experienced programmers spend a lot of time debugging. Getting better at reading error messages is one of the most valuable skills you'll build in this course.
 :::
 :::
-
-## Summary
-
-| Method | Best for | Try it when... |
-|---|---|---|
-| `?function_name` | Understanding arguments | You know the function, just not how to use it |
-| Google / Stack Overflow | Specific errors | You have an error message to search |
-| AI tools | Explanations, starter code | You want something explained or scaffolded |
-| Office hours / classmates | Stuck after all else fails | You've tried the above and are still lost |
-
-::: pink
-::: pink-cont
-Whatever help you use — you must be able to **read, understand, and explain** every line of code you submit.
-:::
-:::
-
-
-
-## [2. Google and Stack Overflow]{style="color:#3070BF;"}
-
-::: columns
-::: {.column width="55%"}
-**Tips for a good search:**
-
-- Always include **"in R"** or **"R programming"** in your query
-- Copy and paste the **exact error message** into Google
-- Add the **function or package name** if relevant
-
-**Example:** Getting `NA` from `mean()`
-
-> Google: `"mean function returning NA in R"`
-
-This leads to answers like [this Stack Overflow thread](https://stackoverflow.com/questions/25297705/mean-na-rm-true-still-returns-na), where you'd learn about `na.rm = TRUE`.
-
-```{r}
-x <- c(1, 2, NA, 4)
-mean(x)             # Returns NA
-mean(x, na.rm = TRUE)  # Returns 2.333...
-```
-:::
-
-::: {.column width="45%"}
-::: {.callout-tip}
-## Reading Stack Overflow answers
-- Check the **accepted answer** (green checkmark) first
-- Look at the **vote count** — highly upvoted answers are usually reliable
-- Read the **comments** too — they often clarify edge cases
-- Check the **date** — R and its packages change over time
-:::
-:::
-:::
-
-## 2. Demo: Google and Stack Overflow
-
-**Scenario:** You try to combine two pieces of text in R and get an unexpected error.
-
-::: columns
-::: {.column width="50%"}
-**The problem:**
-
-```{r}
-#| error: true
-"Hello" + "World"    # This seems reasonable... but fails!
-```
-
-**Step 1:** Copy the error message and search Google:
-
-> `Error in "Hello" + "World" : non-numeric argument to binary operator in R`
-
-**Step 2:** A Stack Overflow result explains that `+` is for math — string combining uses `paste()` instead.
-:::
-
-::: {.column width="50%"}
-**Step 3:** Apply what you found
-
-```{r}
-paste("Hello", "World")          # with a space
-paste0("Hello", "World")         # no space
-```
-
-::: {.callout-tip}
-### Search tip
-The phrase **"non-numeric argument to binary operator"** is a very common R error. Googling the exact error message in quotes is often faster than describing it in your own words.
-:::
-:::
-:::
-
-## [3. AI Tools (ChatGPT, Claude, etc.)]{style="color:#459B99;"}
-
-AI can be a useful coding assistant — but you need to use it wisely.
-
-::: columns
-::: {.column width="50%"}
-**When AI helps most:**
-
-- Explaining what an error message means
-- Getting starter code for something new
-- Understanding what a function does
-
-**Example prompts:**
-> "Why is the mean function in R giving me an NA?"
-
-> "Can you explain what `na.rm = TRUE` does in R?"
-
-[See an example ChatGPT conversation →](https://chatgpt.com/share/66f8a2b9-9918-8006-88af-0dc7b64bb86a)
-:::
-
-::: {.column width="50%"}
-**Watch out for:**
-
-- AI often gives you **more code than you need** — focus on extracting the piece that answers your question
-- AI can be **confidently wrong** — always test the code it gives you
-- AI may use **functions or packages we haven't covered** — stick to tools from class notes
-
-::: {.callout-warning}
-## Course policy on AI
-If you cannot trace code back to the class notes, do **not** use it in assignments. You should be able to **explain every line** of your submitted code. See the [syllabus](https://nwakim.github.io/F24_EPI_525/syllabus.html#plagiarism-and-attribution) for details.
-:::
-:::
-:::
-
-## [3. Demo: Using AI effectively]{style="color:#459B99;"}
-
-**Scenario:** You want to find the largest value in a vector but you have no idea what function to use.
-
-::: columns
-::: {.column width="50%"}
-**A vague prompt (less useful):**
-> *"how do i get the biggest number"*
-
-AI may give you a long answer with many options and extra explanation you don't need yet.
-
-**A better prompt:**
-> *"In R, I have a vector of numbers: `c(4, 7, 2, 9, 1)`. What is the simplest function to find the maximum value?"*
-
-AI response will likely point you to `max()`.
-:::
-
-::: {.column width="50%"}
-**Step 2:** Test it yourself — don't just trust it!
-
-```{r}
-scores <- c(4, 7, 2, 9, 1)
-max(scores)
-```
-
-**Step 3:** Verify you understand it
-
-```{r}
-#| eval: false
-?max    # check the docs to confirm what it does
-```
-
-::: {.callout-warning}
-## AI gives you a starting point, not a final answer
-Always run the code yourself and make sure you can explain what it does before using it in your work.
-:::
-:::
-:::
-
-## [4. Writing a Minimal Reproducible Example]{style="color:#C83532;"}
-
-When asking for help — from a classmate, on Stack Overflow, or from AI — a **reprex** (reproducible example) makes it much easier for others to help you.
-
-A good reprex has three parts:
-
-::: columns
-::: {.column width="33%"}
-**📦 Packages**
-
-List every package you're using
-
-```{r}
-#| eval: false
-library(tidyverse)
-```
-:::
-
-::: {.column width="33%"}
-**📋 Data**
-
-Use a small built-in dataset, or `dput()` to share your own
-
-```{r}
-#| eval: false
-# Use a built-in dataset
-head(mtcars)
-
-# Or share a snippet of yours
-dput(head(my_data))
-```
-:::
-
-::: {.column width="33%"}
-**💥 The problem**
-
-The code that produces the error
-
-```{r}
-#| error: true
-mean(c("a", "b", "c"))
-```
-:::
-:::
-
-::: {.callout-tip}
-## The `reprex` package
-The `reprex` package formats your example for easy pasting into Stack Overflow or GitHub. We'll keep it simple for now — just focus on making your example **self-contained and minimal**.
-:::
-
-## [4. Demo: Writing a reprex]{style="color:#C83532;"}
-
-**Scenario:** You're getting an unexpected result and want to ask your instructor or a classmate for help.
-
-::: columns
-::: {.column width="50%"}
-**❌ A bad help request:**
-
-> *"My code isn't working, can you help?"*
-
-Nobody can debug this — there's no code, no error, no data.
-
-**✅ A good help request (reprex):**
-
-> *"Hi! I'm trying to calculate the mean of my numbers but keep getting NA. Here's my code:"*
-
-```{r}
-# Packages
-library(tidyverse)
-
-# Data
-ages <- c(23, 31, NA, 45, 28)
-
-# Problem
-mean(ages)     # I expected a number but got NA
-```
-:::
-
-::: {.column width="50%"}
-**Why this works:**
-
-- ✅ Anyone can copy-paste and run it immediately
-- ✅ The data is right there — no guessing
-- ✅ The expected vs. actual behavior is clearly stated
-
-**The answer someone would give:**
-
-```{r}
-mean(ages, na.rm = TRUE)   # ignore the missing value
-```
-
-::: {.callout-tip}
-## When in doubt, include more context
-Tell people: what you *wanted* to happen, what *actually* happened, and paste the full error message.
-:::
-:::
-:::
-
-## A troubleshooting workflow
-
-When you get stuck, try these steps **in order:**
-
-1. **Read the error message carefully** — R is often telling you exactly what's wrong
-2. **Check for typos** — a missing comma, parenthesis, or quote causes most beginner errors
-3. **Use `?`** to check the function's expected arguments
-4. **Google the error** — paste it in with "in R" and see what comes up
-5. **Ask AI** — describe your problem clearly; paste in your code and error
-6. **Ask a human** — office hours, a classmate, or a forum with a reprex
-
-::: blue
-::: blue-cont
-Even experienced programmers spend a lot of time debugging. Getting better at reading error messages is one of the most valuable skills you'll build in this course.
-:::
-:::
-
-## Summary
-
-| Method | Best for | Try it when... |
-|---|---|---|
-| `?function_name` | Understanding arguments | You know the function, just not how to use it |
-| Google / Stack Overflow | Specific errors | You have an error message to search |
-| AI tools | Explanations, starter code | You want something explained or scaffolded |
-| Office hours / classmates | Stuck after all else fails | You've tried the above and are still lost |
-
-::: pink
-::: pink-cont
-Whatever help you use — you must be able to **read, understand, and explain** every line of code you submit.
-:::
-:::
-
-

@@ -31,9 +31,18 @@ library(janitor)
 library(here)
 ```
 
-## Common console errors (1/2)
+## Errors and troubleshooting are a huge part of coding!
 
-**Incomplete commands**
+## Types of common errors
+
+1. Typo errors
+2. Package errors
+3. Object errors
+4. Function syntax errors
+5. Factor errors
+6. R Markdown errors
+
+## Incomplete commands
 
 ::: columns
 ::: {.column width="50%"}
@@ -51,14 +60,20 @@ Example:
 #| warning: true
 #| prompt: true
 3 + (2*6
+```
+
+```{r}
+#| error: true
+#| message: true
+#| warning: true
+#| prompt: true
+3 + (2*6
 )
 ```
 :::
 :::
 
-## Common console errors (2/2)
-
-**Object is not found**
+## Object is not found
 
 -   This happens when text is entered for a non-existent variable (object)
 

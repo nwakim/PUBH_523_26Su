@@ -211,6 +211,12 @@ Nicky Wakim
 </section>
 <section id="main-ways-to-get-unstuck" class="slide level2">
 <h2>Main ways to get unstuck</h2>
+<div class="pink">
+<div class="pink-cont">
+<p>A huge part of coding is <strong>learning to debug your own code</strong> and <strong>figure out what’s going wrong.</strong></p>
+</div>
+</div>
+<p>The good news is that there are many ways to get help. These are some good steps (in order):</p>
 <ol type="1">
 <li><p><span style="color:#BF396F;">Use the <code>?</code> in front of the function name to get more information!</span></p>
 <ul>
@@ -322,11 +328,11 @@ Nicky Wakim
 </div>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Step 1:</strong> Pull up the help page</p>
+<p><span style="color:#BF396F;"><strong>Step 1:</strong></span> Pull up the help page</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>?round</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p><strong>Step 2:</strong> Read the <strong>Usage</strong> and <strong>Arguments</strong> sections</p>
+<p><span style="color:#BF396F;"><strong>Step 2:</strong></span> Read the <strong>Usage</strong> and <strong>Arguments</strong> sections</p>
 <ul>
 <li>Arguments and Examples are very helpful sections!</li>
 </ul>
@@ -336,7 +342,7 @@ Nicky Wakim
 <li><code>digits</code> — how many decimal places (default is 0!)</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><strong>Step 3:</strong> Try it out</p>
+<p><span style="color:#BF396F;"><strong>Step 3:</strong></span> Try it out</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-6"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1">1</button><span id="annotated-cell-6-1" class="code-annotation-target"><a href="#annotated-cell-6-1"></a><span class="fu">round</span>(<span class="fl">3.14159</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
@@ -394,11 +400,11 @@ Nicky Wakim
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-10" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-10" data-code-lines="2" data-code-annotation="1">Returns <code>NA</code> — not what we wanted!</span>
+<span data-code-cell="annotated-cell-10" data-code-lines="2" data-code-annotation="1">Returns <code>NA</code>:not what we wanted!</span>
 </dd>
 <dt data-target-cell="annotated-cell-10" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-10" data-code-lines="3" data-code-annotation="2">Returns <code>2.333...</code> — ignores the missing value</span>
+<span data-code-cell="annotated-cell-10" data-code-lines="3" data-code-annotation="2">Returns <code>2.333...</code>: ignores the missing value</span>
 </dd>
 </dl>
 </div>
@@ -489,13 +495,13 @@ Nicky Wakim
 </section>
 <section id="ai-tools-chatgpt-claude-etc." class="slide level2">
 <h2><span style="color:#459B99;">3. AI Tools (ChatGPT, Claude, etc.)</span></h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p><strong>When AI helps most:</strong></p>
 <ul>
 <li>Explaining what an error message means</li>
 <li>Getting starter code for something new</li>
 <li>Understanding what a function does</li>
+<li>Adding intricate details to plotting</li>
+<li>Helping with lengthy data management code</li>
 </ul>
 <p><strong>Example prompts:</strong></p>
 <blockquote>
@@ -505,12 +511,17 @@ Nicky Wakim
 <p><em>“Can you explain what <code>na.rm = TRUE</code> does in R?”</em></p>
 </blockquote>
 <p><a href="https://chatgpt.com/share/66f8a2b9-9918-8006-88af-0dc7b64bb86a">See an example ChatGPT conversation →</a></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Watch out for:</strong></p>
+</section>
+<section id="ai-tools-chatgpt-claude-etc.-some-hesitation" class="slide level2">
+<h2><span style="color:#459B99;">3. AI Tools (ChatGPT, Claude, etc.): <em>some hesitation</em></span></h2>
+<ul>
+<li>If you do not want to use AI, that’s totally fine! You can still get help from the other methods</li>
+</ul>
+<p><strong>When using AI, watch out for:</strong></p>
 <ul>
 <li>AI often gives you <strong>more code than you need</strong></li>
-<li>AI can be <strong>confidently wrong</strong> — always test the code it gives you</li>
-<li>AI may use <strong>functions we haven’t covered yet</strong> — stick to tools from class notes</li>
+<li>AI can be <strong>confidently wrong</strong>: always test the code it gives you</li>
+<li>AI may use <strong>functions we haven’t covered yet</strong>: stick to tools from class notes</li>
 </ul>
 <div class="pink">
 <div class="pink-ttl">
@@ -520,7 +531,6 @@ Nicky Wakim
 <p>If you cannot trace code back to the class notes, do <strong>not</strong> use it in assignments. You should be able to <strong>explain every line</strong> of your submitted code. See the <a href="https://nwakim.github.io/F24_EPI_525/syllabus.html#plagiarism-and-attribution">syllabus</a> for details.</p>
 </div>
 </div>
-</div></div>
 </section>
 <section id="demo-using-ai-effectively" class="slide level2">
 <h2><span style="color:#459B99;">3. Demo: Using AI effectively</span></h2>
@@ -577,68 +587,48 @@ Nicky Wakim
 </div>
 </div></div>
 </section>
-<section id="writing-a-minimal-reproducible-example" class="slide level2">
-<h2><span style="color:#C83532;">4. Writing a Minimal Reproducible Example</span></h2>
-<p>When asking for help — from a classmate, on Stack Overflow, or from AI — a <strong>reprex</strong> makes it much easier for others to help you.</p>
-<p>A good reprex has three parts:</p>
+<section id="getting-help-from-someone" class="slide level2">
+<h2><span style="color:#C83532;">4. Getting help from someone</span></h2>
+<ul>
+<li>When asking for help (from a classmate, from me, on Stack Overflow, or from AI), you want to include:
+<ul>
+<li>Some information about the context</li>
+<li>A reproducible example (<strong>reprex</strong>)</li>
+</ul></li>
+<li>These make it much easier for someone to help you!</li>
+</ul>
 <div class="columns">
-<div class="column" style="width:33%;">
-<p><strong>📦 Packages</strong></p>
-<p>List every package you’re using</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-19"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="1">1</button><span id="annotated-cell-19-1" class="code-annotation-target"><a href="#annotated-cell-19-1"></a><span class="fu">library</span>(tidyverse)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-19" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-19" data-code-lines="1" data-code-annotation="1">Include all packages needed to run your code</span>
-</dd>
-</dl>
+<div class="column">
+<div class="orange">
+<div class="orange-ttl">
+<p>Some information about the context</p>
+</div>
+<div class="orange-cont">
+<ul>
+<li>What you <em>expected</em> to happen</li>
+<li>What <em>actually</em> happened</li>
+<li>The <strong>exact error message</strong> you received</li>
+</ul>
 </div>
 </div>
-</div><div class="column" style="width:33%;">
-<p><strong>📋 Data</strong></p>
-<p>Use a small built-in dataset, or <code>dput()</code> to share your own</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-20"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-20" data-target-annotation="1">1</button><span id="annotated-cell-20-1" class="code-annotation-target"><a href="#annotated-cell-20-1"></a><span class="fu">head</span>(mtcars)</span>
-<span id="annotated-cell-20-2"><a href="#annotated-cell-20-2"></a></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-20" data-target-annotation="2">2</button><span id="annotated-cell-20-3" class="code-annotation-target"><a href="#annotated-cell-20-3"></a><span class="fu">dput</span>(<span class="fu">head</span>(my_data))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-20" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-20" data-code-lines="1" data-code-annotation="1">Built-in datasets work great</span>
-</dd>
-<dt data-target-cell="annotated-cell-20" data-target-annotation="2">2</dt>
-<dd>
-<span data-code-cell="annotated-cell-20" data-code-lines="3" data-code-annotation="2">Share a snippet of your own data</span>
-</dd>
-</dl>
+</div><div class="column">
+<div class="pink">
+<div class="pink-ttl">
+<p>A good reprex has four parts:</p>
 </div>
-</div>
-</div><div class="column" style="width:33%;">
-<p><strong>💥 The problem</strong></p>
-<p>The exact code that produces the error</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-21"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-21" data-target-annotation="1">1</button><span id="annotated-cell-21-1" class="code-annotation-target"><a href="#annotated-cell-21-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-21" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-21" data-code-lines="1" data-code-annotation="1">Paste the code that isn’t working</span>
-</dd>
-</dl>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] NA</code></pre>
+<div class="pink-cont">
+<ul>
+<li>Needed packages</li>
+<li>Needed data</li>
+<li>The exact code that produces the error</li>
+<li>Needed code that leads to the error</li>
+</ul>
 </div>
 </div>
 </div></div>
-<div class="pink2">
-<div class="pink2-cont">
-<p>Focus on making your example <strong>self-contained and minimal</strong> — only include what’s needed to show the problem.</p>
-</div>
-</div>
+<ul>
+<li>In our labs, it’s good to save a <code>.rds</code> file of your <code>qmd</code>’s starting data, and share that with me</li>
+</ul>
 </section>
 <section id="demo-writing-a-reprex" class="slide level2">
 <h2><span style="color:#C83532;">4. Demo: Writing a reprex</span></h2>
@@ -647,36 +637,38 @@ Nicky Wakim
 <p><strong>Scenario:</strong> You’re getting an unexpected result and want to ask your instructor or a classmate for help.</p>
 </div>
 </div>
+<ul>
+<li>Focus on making your reprex self-contained and <strong>minimal</strong>: include what’s needed, but no more!</li>
+</ul>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>❌ A bad help request:</strong></p>
+<p><span style="color:#C83532;"><strong>A bad help request:</strong></span></p>
 <blockquote>
-<p><em>“My code isn’t working, can you help?”</em></p>
+<p><em>“My mean function isn’t working, can you help?”</em></p>
 </blockquote>
 <p>Nobody can debug this — there’s no code, no error, no data.</p>
-<p><strong>✅ A good help request:</strong></p>
+</div><div class="column" style="width:50%;">
+<p><span style="color:#459B99;"><strong>A good help request:</strong></span></p>
 <blockquote>
 <p><em>“I’m trying to calculate the mean of my numbers but keep getting NA. Here’s my code:”</em></p>
 </blockquote>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-23"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-23" data-target-annotation="1">1</button><span id="annotated-cell-23-1" class="code-annotation-target"><a href="#annotated-cell-23-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="annotated-cell-23-2"><a href="#annotated-cell-23-2"></a></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-23" data-target-annotation="2">2</button><span id="annotated-cell-23-3" class="code-annotation-target"><a href="#annotated-cell-23-3"></a>ages <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">31</span>, <span class="cn">NA</span>, <span class="dv">45</span>, <span class="dv">28</span>)</span>
-<span id="annotated-cell-23-4"><a href="#annotated-cell-23-4"></a></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-23" data-target-annotation="3">3</button><span id="annotated-cell-23-5" class="code-annotation-target"><a href="#annotated-cell-23-5"></a><span class="fu">mean</span>(ages)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-19"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="1">1</button><span id="annotated-cell-19-1" class="code-annotation-target"><a href="#annotated-cell-19-1"></a><span class="fu">library</span>(tidyverse)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="2">2</button><span id="annotated-cell-19-2" class="code-annotation-target"><a href="#annotated-cell-19-2"></a>ages <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">31</span>, <span class="cn">NA</span>, <span class="dv">45</span>, <span class="dv">28</span>)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="3">3</button><span id="annotated-cell-19-3" class="code-annotation-target"><a href="#annotated-cell-19-3"></a><span class="fu">mean</span>(ages)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-23" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-19" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-23" data-code-lines="1" data-code-annotation="1">Packages included</span>
+<span data-code-cell="annotated-cell-19" data-code-lines="1" data-code-annotation="1">Packages included</span>
 </dd>
-<dt data-target-cell="annotated-cell-23" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-19" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-23" data-code-lines="3" data-code-annotation="2">Small, simple data included</span>
+<span data-code-cell="annotated-cell-19" data-code-lines="2" data-code-annotation="2">Small, simple data included</span>
 </dd>
-<dt data-target-cell="annotated-cell-23" data-target-annotation="3">3</dt>
+<dt data-target-cell="annotated-cell-19" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-23" data-code-lines="5" data-code-annotation="3">The exact code producing the problem</span>
+<span data-code-cell="annotated-cell-19" data-code-lines="3" data-code-annotation="3">The exact code producing the problem</span>
 </dd>
 </dl>
 </div>
@@ -684,21 +676,14 @@ Nicky Wakim
 <pre><code>[1] NA</code></pre>
 </div>
 </div>
-</div><div class="column" style="width:50%;">
-<p><strong>Why this works:</strong></p>
-<ul>
-<li>✅ Anyone can copy-paste and run it immediately</li>
-<li>✅ The data is right there — no guessing</li>
-<li>✅ The expected vs.&nbsp;actual behavior is clearly stated</li>
-</ul>
 <p><strong>The answer someone would give:</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-25"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-25" data-target-annotation="1">1</button><span id="annotated-cell-25-1" class="code-annotation-target"><a href="#annotated-cell-25-1"></a><span class="fu">mean</span>(ages, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-20"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-20" data-target-annotation="1">1</button><span id="annotated-cell-20-1" class="code-annotation-target"><a href="#annotated-cell-20-1"></a><span class="fu">mean</span>(ages, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-25" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-20" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-25" data-code-lines="1" data-code-annotation="1"><code>na.rm = TRUE</code> tells R to ignore missing values</span>
+<span data-code-cell="annotated-cell-20" data-code-lines="1" data-code-annotation="1"><code>na.rm = TRUE</code> tells R to ignore missing values</span>
 </dd>
 </dl>
 </div>
@@ -706,400 +691,28 @@ Nicky Wakim
 <pre><code>[1] 31.75</code></pre>
 </div>
 </div>
-<div class="red">
-<div class="red-cont">
-<p>Tell people: what you <em>wanted</em> to happen, what <em>actually</em> happened, and paste the full error message.</p>
-</div>
-</div>
 </div></div>
 </section>
-<section id="a-troubleshooting-workflow" class="slide level2">
-<h2>A troubleshooting workflow</h2>
+<section id="wrap-up" class="slide level2">
+<h2>Wrap-up</h2>
 <p>When you get stuck, try these steps <strong>in order:</strong></p>
 <ol type="1">
 <li><strong>Read the error message carefully</strong> — R is often telling you exactly what’s wrong</li>
 <li><strong>Check for typos</strong> — a missing comma, parenthesis, or quote causes most beginner errors</li>
-<li><strong>Use <code>?</code></strong> to check the function’s expected arguments</li>
-<li><strong>Google the error</strong> — paste it in with “in R” and see what comes up</li>
-<li><strong>Ask AI</strong> — describe your problem clearly; paste in your code and error</li>
-<li><strong>Ask a human</strong> — office hours, a classmate, or a forum with a reprex</li>
+<li><span style="color:#BF396F;"><strong>Use <code>?</code></strong> to check the function’s expected arguments</span></li>
+<li><span style="color:#3070BF;"><strong>Google the error</strong>: paste it in with “in R” and see what comes up</span></li>
+<li><span style="color:#459B99;"><strong>Ask AI</strong>: describe your problem clearly; paste in your code and error</span></li>
+<li><span style="color:#C83532;"><strong>Ask a human</strong>: office hours, a classmate, or a forum with a reprex</span></li>
 </ol>
+<ul>
+<li>If you come to me, I will ask you if you’ve tried all of the above first
+<ul>
+<li><strong>Not meant to be discouraging</strong>, but a huge part of coding is learning to debug on your own and determine when you need other human help</li>
+</ul></li>
+</ul>
 <div class="blue">
 <div class="blue-cont">
 <p>Even experienced programmers spend a lot of time debugging. Getting better at reading error messages is one of the most valuable skills you’ll build in this course.</p>
-</div>
-</div>
-</section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Best for</th>
-<th>Try it when…</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>?function_name</code></td>
-<td>Understanding arguments</td>
-<td>You know the function, just not how to use it</td>
-</tr>
-<tr class="even">
-<td>Google / Stack Overflow</td>
-<td>Specific errors</td>
-<td>You have an error message to search</td>
-</tr>
-<tr class="odd">
-<td>AI tools</td>
-<td>Explanations, starter code</td>
-<td>You want something explained or scaffolded</td>
-</tr>
-<tr class="even">
-<td>Office hours / classmates</td>
-<td>Stuck after all else fails</td>
-<td>You’ve tried the above and are still lost</td>
-</tr>
-</tbody>
-</table>
-<div class="pink">
-<div class="pink-cont">
-<p>Whatever help you use — you must be able to <strong>read, understand, and explain</strong> every line of code you submit.</p>
-</div>
-</div>
-</section>
-<section id="google-and-stack-overflow-1" class="slide level2">
-<h2><span style="color:#3070BF;">2. Google and Stack Overflow</span></h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p><strong>Tips for a good search:</strong></p>
-<ul>
-<li>Always include <strong>“in R”</strong> or <strong>“R programming”</strong> in your query</li>
-<li>Copy and paste the <strong>exact error message</strong> into Google</li>
-<li>Add the <strong>function or package name</strong> if relevant</li>
-</ul>
-<p><strong>Example:</strong> Getting <code>NA</code> from <code>mean()</code></p>
-<blockquote>
-<p>Google: <code>"mean function returning NA in R"</code></p>
-</blockquote>
-<p>This leads to answers like <a href="https://stackoverflow.com/questions/25297705/mean-na-rm-true-still-returns-na">this Stack Overflow thread</a>, where you’d learn about <code>na.rm = TRUE</code>.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="cn">NA</span>, <span class="dv">4</span>)</span>
-<span id="cb12-2"><a></a><span class="fu">mean</span>(x)             <span class="co"># Returns NA</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] NA</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)  <span class="co"># Returns 2.333...</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2.333333</code></pre>
-</div>
-</div>
-</div><div class="column" style="width:45%;">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Reading Stack Overflow answers</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>Check the <strong>accepted answer</strong> (green checkmark) first</li>
-<li>Look at the <strong>vote count</strong> — highly upvoted answers are usually reliable</li>
-<li>Read the <strong>comments</strong> too — they often clarify edge cases</li>
-<li>Check the <strong>date</strong> — R and its packages change over time</li>
-</ul>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="demo-google-and-stack-overflow-1" class="slide level2">
-<h2>2. Demo: Google and Stack Overflow</h2>
-<p><strong>Scenario:</strong> You try to combine two pieces of text in R and get an unexpected error.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>The problem:</strong></p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="st">"Hello"</span> <span class="sc">+</span> <span class="st">"World"</span>    <span class="co"># This seems reasonable... but fails!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `"Hello" + "World"`:
-! non-numeric argument to binary operator</code></pre>
-</div>
-</div>
-<p><strong>Step 1:</strong> Copy the error message and search Google:</p>
-<blockquote>
-<p><code>Error in "Hello" + "World" : non-numeric argument to binary operator in R</code></p>
-</blockquote>
-<p><strong>Step 2:</strong> A Stack Overflow result explains that <code>+</code> is for math — string combining uses <code>paste()</code> instead.</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Step 3:</strong> Apply what you found</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">paste</span>(<span class="st">"Hello"</span>, <span class="st">"World"</span>)          <span class="co"># with a space</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Hello World"</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">paste0</span>(<span class="st">"Hello"</span>, <span class="st">"World"</span>)         <span class="co"># no space</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "HelloWorld"</code></pre>
-</div>
-</div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Search tip</strong></p>
-</div>
-<div class="callout-content">
-<p>The phrase <strong>“non-numeric argument to binary operator”</strong> is a very common R error. Googling the exact error message in quotes is often faster than describing it in your own words.</p>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="ai-tools-chatgpt-claude-etc.-1" class="slide level2">
-<h2><span style="color:#459B99;">3. AI Tools (ChatGPT, Claude, etc.)</span></h2>
-<p>AI can be a useful coding assistant — but you need to use it wisely.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>When AI helps most:</strong></p>
-<ul>
-<li>Explaining what an error message means</li>
-<li>Getting starter code for something new</li>
-<li>Understanding what a function does</li>
-</ul>
-<p><strong>Example prompts:</strong> &gt; “Why is the mean function in R giving me an NA?”</p>
-<blockquote>
-<p>“Can you explain what <code>na.rm = TRUE</code> does in R?”</p>
-</blockquote>
-<p><a href="https://chatgpt.com/share/66f8a2b9-9918-8006-88af-0dc7b64bb86a">See an example ChatGPT conversation →</a></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Watch out for:</strong></p>
-<ul>
-<li>AI often gives you <strong>more code than you need</strong> — focus on extracting the piece that answers your question</li>
-<li>AI can be <strong>confidently wrong</strong> — always test the code it gives you</li>
-<li>AI may use <strong>functions or packages we haven’t covered</strong> — stick to tools from class notes</li>
-</ul>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Course policy on AI</strong></p>
-</div>
-<div class="callout-content">
-<p>If you cannot trace code back to the class notes, do <strong>not</strong> use it in assignments. You should be able to <strong>explain every line</strong> of your submitted code. See the <a href="https://nwakim.github.io/F24_EPI_525/syllabus.html#plagiarism-and-attribution">syllabus</a> for details.</p>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="demo-using-ai-effectively-1" class="slide level2">
-<h2><span style="color:#459B99;">3. Demo: Using AI effectively</span></h2>
-<p><strong>Scenario:</strong> You want to find the largest value in a vector but you have no idea what function to use.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>A vague prompt (less useful):</strong> &gt; <em>“how do i get the biggest number”</em></p>
-<p>AI may give you a long answer with many options and extra explanation you don’t need yet.</p>
-<p><strong>A better prompt:</strong> &gt; <em>“In R, I have a vector of numbers: <code>c(4, 7, 2, 9, 1)</code>. What is the simplest function to find the maximum value?”</em></p>
-<p>AI response will likely point you to <code>max()</code>.</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Step 2:</strong> Test it yourself — don’t just trust it!</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>scores <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">9</span>, <span class="dv">1</span>)</span>
-<span id="cb22-2"><a></a><span class="fu">max</span>(scores)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 9</code></pre>
-</div>
-</div>
-<p><strong>Step 3:</strong> Verify you understand it</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>?max    <span class="co"># check the docs to confirm what it does</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>AI gives you a starting point, not a final answer</strong></p>
-</div>
-<div class="callout-content">
-<p>Always run the code yourself and make sure you can explain what it does before using it in your work.</p>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="writing-a-minimal-reproducible-example-1" class="slide level2">
-<h2><span style="color:#C83532;">4. Writing a Minimal Reproducible Example</span></h2>
-<p>When asking for help — from a classmate, on Stack Overflow, or from AI — a <strong>reprex</strong> (reproducible example) makes it much easier for others to help you.</p>
-<p>A good reprex has three parts:</p>
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><strong>📦 Packages</strong></p>
-<p>List every package you’re using</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div><div class="column" style="width:33%;">
-<p><strong>📋 Data</strong></p>
-<p>Use a small built-in dataset, or <code>dput()</code> to share your own</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="co"># Use a built-in dataset</span></span>
-<span id="cb26-2"><a></a><span class="fu">head</span>(mtcars)</span>
-<span id="cb26-3"><a></a></span>
-<span id="cb26-4"><a></a><span class="co"># Or share a snippet of yours</span></span>
-<span id="cb26-5"><a></a><span class="fu">dput</span>(<span class="fu">head</span>(my_data))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div><div class="column" style="width:33%;">
-<p><strong>💥 The problem</strong></p>
-<p>The code that produces the error</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] NA</code></pre>
-</div>
-</div>
-</div></div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>The <code>reprex</code> package</strong></p>
-</div>
-<div class="callout-content">
-<p>The <code>reprex</code> package formats your example for easy pasting into Stack Overflow or GitHub. We’ll keep it simple for now — just focus on making your example <strong>self-contained and minimal</strong>.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="demo-writing-a-reprex-1" class="slide level2">
-<h2><span style="color:#C83532;">4. Demo: Writing a reprex</span></h2>
-<p><strong>Scenario:</strong> You’re getting an unexpected result and want to ask your instructor or a classmate for help.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>❌ A bad help request:</strong></p>
-<blockquote>
-<p><em>“My code isn’t working, can you help?”</em></p>
-</blockquote>
-<p>Nobody can debug this — there’s no code, no error, no data.</p>
-<p><strong>✅ A good help request (reprex):</strong></p>
-<blockquote>
-<p><em>“Hi! I’m trying to calculate the mean of my numbers but keep getting NA. Here’s my code:”</em></p>
-</blockquote>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="co"># Packages</span></span>
-<span id="cb29-2"><a></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb29-3"><a></a></span>
-<span id="cb29-4"><a></a><span class="co"># Data</span></span>
-<span id="cb29-5"><a></a>ages <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">31</span>, <span class="cn">NA</span>, <span class="dv">45</span>, <span class="dv">28</span>)</span>
-<span id="cb29-6"><a></a></span>
-<span id="cb29-7"><a></a><span class="co"># Problem</span></span>
-<span id="cb29-8"><a></a><span class="fu">mean</span>(ages)     <span class="co"># I expected a number but got NA</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] NA</code></pre>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><strong>Why this works:</strong></p>
-<ul>
-<li>✅ Anyone can copy-paste and run it immediately</li>
-<li>✅ The data is right there — no guessing</li>
-<li>✅ The expected vs.&nbsp;actual behavior is clearly stated</li>
-</ul>
-<p><strong>The answer someone would give:</strong></p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="fu">mean</span>(ages, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)   <span class="co"># ignore the missing value</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 31.75</code></pre>
-</div>
-</div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>When in doubt, include more context</strong></p>
-</div>
-<div class="callout-content">
-<p>Tell people: what you <em>wanted</em> to happen, what <em>actually</em> happened, and paste the full error message.</p>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="a-troubleshooting-workflow-1" class="slide level2">
-<h2>A troubleshooting workflow</h2>
-<p>When you get stuck, try these steps <strong>in order:</strong></p>
-<ol type="1">
-<li><strong>Read the error message carefully</strong> — R is often telling you exactly what’s wrong</li>
-<li><strong>Check for typos</strong> — a missing comma, parenthesis, or quote causes most beginner errors</li>
-<li><strong>Use <code>?</code></strong> to check the function’s expected arguments</li>
-<li><strong>Google the error</strong> — paste it in with “in R” and see what comes up</li>
-<li><strong>Ask AI</strong> — describe your problem clearly; paste in your code and error</li>
-<li><strong>Ask a human</strong> — office hours, a classmate, or a forum with a reprex</li>
-</ol>
-<div class="blue">
-<div class="blue-cont">
-<p>Even experienced programmers spend a lot of time debugging. Getting better at reading error messages is one of the most valuable skills you’ll build in this course.</p>
-</div>
-</div>
-</section>
-<section id="summary-1" class="slide level2">
-<h2>Summary</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Best for</th>
-<th>Try it when…</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>?function_name</code></td>
-<td>Understanding arguments</td>
-<td>You know the function, just not how to use it</td>
-</tr>
-<tr class="even">
-<td>Google / Stack Overflow</td>
-<td>Specific errors</td>
-<td>You have an error message to search</td>
-</tr>
-<tr class="odd">
-<td>AI tools</td>
-<td>Explanations, starter code</td>
-<td>You want something explained or scaffolded</td>
-</tr>
-<tr class="even">
-<td>Office hours / classmates</td>
-<td>Stuck after all else fails</td>
-<td>You’ve tried the above and are still lost</td>
-</tr>
-</tbody>
-</table>
-<div class="pink">
-<div class="pink-cont">
-<p>Whatever help you use — you must be able to <strong>read, understand, and explain</strong> every line of code you submit.</p>
 </div>
 </div>
 
