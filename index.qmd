@@ -45,7 +45,7 @@ This course provides an introduction to programming in R in public health, medic
 ::: {.column width="20%"}
 ### Links
 
-[{{< iconify material-symbols folder size=25px >}} OneDrive Folder](https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_513/Student_files?csf=1&web=1&e=uO9lgt)
+[{{< iconify material-symbols folder size=25px >}} OneDrive Folder](https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/PUBH_523_26Su/Student_files_PUBH_523_623?csf=1&web=1&e=81YRnr)
 
 
 :::

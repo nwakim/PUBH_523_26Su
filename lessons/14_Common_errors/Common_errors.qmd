@@ -1,0 +1,78 @@
+---
+title: "Common Errors"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3070BF"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: "Common Errors"
+    html-math-method: mathjax
+    highlight-style: arrow
+execute:
+  echo: true
+  freeze: auto
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+```
+
+## Common console errors (1/2)
+
+**Incomplete commands**
+
+::: columns
+::: {.column width="50%"}
+-   When the console is waiting for a new command, the prompt line begins with `>`
+    -   If the console prompt is `+`, then a previous command is incomplete
+    -   You can finish typing the command in the console window
+:::
+
+::: {.column width="50%"}
+Example:
+
+```{r}
+#| error: true
+#| message: true
+#| warning: true
+#| prompt: true
+3 + (2*6
+)
+```
+:::
+:::
+
+## Common console errors (2/2)
+
+**Object is not found**
+
+-   This happens when text is entered for a non-existent variable (object)
+
+Example:
+
+```{r}
+#| error: true
+hello
+```
+
+-   Can be due to missing quotes
+
+```{r}
+#| error: true
+install.packages(dplyr) 
+# correct code is: install.packages("dplyr")
+```

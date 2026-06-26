@@ -378,5 +378,17 @@
   },
   "practice/practice_02_ans.qmd": {
     "practice_02_ans.html": "9e478f24"
+  },
+  "lessons/14_Naming/Common_errors.qmd": {
+    "Common_errors.html": "86a17719"
+  },
+  "lessons/15_Getting_help/Getting_help.qmd": {
+    "Getting_help.html": "aadde165"
+  },
+  "lessons/14_Common_errors/Common_errors.qmd": {
+    "Common_errors.html": "35253f7b"
+  },
+  "lessons/14_Common_errors/Naming.qmd": {
+    "Naming.html": "f8c2e719"
   }
 }
