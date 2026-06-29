@@ -393,5 +393,8 @@
   },
   "lessons/16_Piping/Piping.qmd": {
     "Piping.html": "4477d51b"
+  },
+  "lessons/17_Key_operators/Key_operators.qmd": {
+    "Key_operators.html": "e90368a2"
   }
 }
