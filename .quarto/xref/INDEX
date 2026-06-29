@@ -390,5 +390,8 @@
   },
   "lessons/14_Common_errors/Naming.qmd": {
     "Naming.html": "f8c2e719"
+  },
+  "lessons/16_Piping/Piping.qmd": {
+    "Piping.html": "4477d51b"
   }
 }

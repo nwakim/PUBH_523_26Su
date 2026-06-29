@@ -13,7 +13,7 @@ format:
     height: 1100
     footer: "Getting help"
     html-math-method: mathjax
-    highlight-style: arrow
+    highlight-style: ayu
 code-annotations: hover
 execute:
   echo: true
@@ -26,10 +26,12 @@ execute:
 #| message: false
 #| warning: false
 
-library(tidyverse)
-library(lubridate)
-library(janitor)
-library(here)
+pacman::p_load(
+  tidyverse, 
+  lubridate,
+  janitor,
+  here
+)
 ```
 
 ## Main ways to get unstuck
