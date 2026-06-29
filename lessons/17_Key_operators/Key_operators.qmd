@@ -205,6 +205,11 @@ Extra note: we will "set a seed" for `sample()` because the process is random, a
 - We learned some boolean operators to expand our true/false logical work
 - We learned *many* new functions
   - We'll get to practice them in our practice assignment!
+  
+ 
+
+- Main goal was to gain recognition of functions
+- Hopefully, we can use what we learned in the lesson on getting help in R to investigate the functions more!
 
 ## Resources
 
