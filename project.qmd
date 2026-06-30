@@ -28,7 +28,7 @@ source(here("class_dates.R"))
 ## Labs
 
 | Lab | Rubric | Due Date | Topics |
-|------------------------|--------------|------------------|----------------------|
+|----|----|----|----|
 | [Lab 1](/project/Lab_01_instructions.qmd) | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab1 %>% format("%m/%d")` | Learn about WBNS + prepare your folders + download data |
 | Lab 2 | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab2 %>% format("%m/%d")` | Filtering data + creating variables |
 | Lab 3 | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab3 %>% format("%m/%d")` | Summarize your data |
