@@ -24,7 +24,7 @@ execute:
 ---
 
 ::: callout-important
-This lab is not ready to be worked on! (Nicky 6/19/26)
+This lab is **ready**! (Nicky 6/30/26)
 :::
 
 ```{r}
