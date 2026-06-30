@@ -40,7 +40,19 @@ whenever needed.
 
 ### Office Hours
 
-- TBD based on our when2meet results
+Running from 7/23-8/31
+
+::: columns
+::: {.column width="30%"}
+[Nicky's Webex](https://ohsu.webex.com/meet/wakim)
+:::
+::: {.column width="70%"}
+[{{< iconify icon-park-solid time size=24px >}}]{style="color:#C83532;"} M 3-3:30pm
+
+
+[{{< iconify icon-park-solid time size=24px >}}]{style="color:#C83532;"} Th 2-2:30pm
+:::
+:::
 
 ::: callout-warning
 **I am out of town from July 2 to July 22**

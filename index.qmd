@@ -62,15 +62,18 @@ This course provides an introduction to programming in R in public health, medic
 
 ::: {.column width="25%"}
 ### Office Hours
+
+Running from 7/23-8/31
+
 ::: columns
 ::: {.column width="30%"}
-[Nicky]()
+[Nicky](https://ohsu.webex.com/meet/wakim)
 :::
 ::: {.column width="70%"}
-[{{< iconify icon-park-solid time size=24px >}}]{style="color:#C83532;"} TBD
+[{{< iconify icon-park-solid time size=24px >}}]{style="color:#C83532;"} M 3-3:30pm
 
 
-[{{< iconify icon-park-solid time size=24px >}}]{style="color:#C83532;"} TBD
+[{{< iconify icon-park-solid time size=24px >}}]{style="color:#C83532;"} Th 2-2:30pm
 :::
 :::
 :::
