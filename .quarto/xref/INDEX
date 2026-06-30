@@ -396,5 +396,8 @@
   },
   "lessons/17_Key_operators/Key_operators.qmd": {
     "Key_operators.html": "e90368a2"
+  },
+  "lessons/19_Import_Export/Import_Export.qmd": {
+    "Import_Export.html": "e0ce4916"
   }
 }

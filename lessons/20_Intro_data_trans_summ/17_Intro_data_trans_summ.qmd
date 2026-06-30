@@ -79,7 +79,7 @@ I can use the `select()` function to select specific columns (`age` and `ed`) fr
 ```{r}
 hrs_data |> # <1> 
   select( # <2>
-    age, # <3>
+    age_yr, # <3>
     ed  # <3>
     ) # <2>
 ```
