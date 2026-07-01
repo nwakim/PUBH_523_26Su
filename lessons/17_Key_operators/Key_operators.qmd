@@ -30,16 +30,17 @@ pacman::p_load(
   tidyverse, 
   lubridate,
   janitor,
-  here
+  here, 
+  rio
 )
 ```
 
 ```{r}
 #| echo: false
-hrs_data <- read_rds(here("./data/hrs_data.rds"))
-hrs_data <- clean_names(hrs_data) |>
-  relocate(age_yr, .after = birthdate) # move age_yr column to be after id column
+hrs_data_rds <- import(here("data", "hrs_data.rds"))
+hrs_data <- clean_names(hrs_data_rds)
 ```
+
 
 ## Note
 

@@ -36,6 +36,12 @@ pacman::p_load(
 )
 ```
 
+```{r}
+#| echo: false
+hrs_data_rds <- import(here("data", "hrs_data.rds"))
+hrs_data <- clean_names(hrs_data_rds)
+```
+
 ## Importing data
 
 - We often need to work with a dataset in R
