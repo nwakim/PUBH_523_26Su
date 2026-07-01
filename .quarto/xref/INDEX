@@ -405,5 +405,8 @@
   },
   "lessons/18_Tidy_data/Tidy_data.qmd": {
     "Tidy_data.html": "a7ff0b3f"
+  },
+  "lessons/25_Data_transformation_common_errors/Data_transformation_common_errors.qmd": {
+    "Data_transformation_common_errors.html": "e6137da6"
   }
 }

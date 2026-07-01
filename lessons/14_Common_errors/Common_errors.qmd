@@ -1,5 +1,5 @@
 ---
-title: "Common Errors"
+title: "Common errors"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
@@ -11,7 +11,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: "Common Errors"
+    footer: "Common errors"
     html-math-method: mathjax
     highlight-style: ayu
 code-annotations: hover
@@ -30,11 +30,20 @@ pacman::p_load(
   tidyverse, 
   lubridate,
   # janitor,
-  here
+  here, 
+  rio
 )
 ```
 
 ## Errors and troubleshooting are a huge part of coding!
+
+
+<style>
+.small-error pre,
+.small-error .cell-output-error {
+  font-size: 0.55em;
+}
+</style>
 
 :::: pink
 ::: pink-cont
@@ -49,31 +58,8 @@ We will cover:
 1.  [How to interpret error messages]{style="color:#BF396F;"}
 2.  [The most common types of errors and how to fix them]{style="color:#3070BF;"}
 
-## Interpreting error messages
+## Error vs. Warning vs. Message
 
-::::::::: columns
-::: {.column width="55%"}
-- R error messages can feel cryptic, but they usually follow a pattern.
-
-::::: blue
-::: blue-ttl
-Pay attention to
-:::
-
-::: blue-cont
-- Which **function** is mentioned in the error
-- **Keywords** like `not found`, `unexpected`, `unused argument`, or `subscript out of bounds`
-- Any **line numbers** or column names that appear
-:::
-:::::
-:::
-
-::: {.column width="2%"}
-:::
-
-:::::: {.column width="43%"}
-
-**Error vs. Warning vs. Message:**
 
 | Type        | Meaning                                          |
 |-------------|--------------------------------------------------|
@@ -89,20 +75,38 @@ Example of a warning:
 
 log(-1)  
 ```
-::::::
-:::::::::
 
+- In this case, the code ran, but R is warning you that the result is `NaN` (not a number) because the logarithm of a negative number is undefined
+
+## Interpreting error messages
+
+- R error messages can feel cryptic, but they usually follow a pattern
+
+::::: blue
+::: blue-ttl
+Pay attention to
+:::
+
+::: blue-cont
+- Which **function** is mentioned in the error
+- **Keywords** like `not found`, `unexpected`, `unused argument`, or `subscript out of bounds`
+- Any **line numbers** or column names that appear
+:::
+:::::
 
 ## Types of common errors
 
-1.  [Typo errors]{style="color:#BF396F;"}
-2.  [Package errors]{style="color:#3070BF;"}
-3.  [Object errors]{style="color:#459B99;"}
-4.  [Function syntax errors]{style="color:#C83532;"}
-5.  [Logic errors]{style="color:#BF396F;"}
-6.  [Factor errors]{style="color:#3070BF;"}
-7.  [Plotting errors]{style="color:#459B99;"}
-8.  [R Markdown / Quarto errors]{style="color:#C83532;"}
+We will go through the following error messages:
+
+- Misspelled function or variable name
+- Mismatched parentheses
+- Function not found
+- Object not found
+- File not found
+- Subscript out of bounds
+- Wrong argument name
+- Silent logic errors
+
 
 :::: pink
 ::: pink-cont
@@ -110,26 +114,14 @@ We will go through each type with real error messages and how to fix them. Keep 
 :::
 ::::
 
+## Misspelled function or variable name
 
-## [1. Typo errors]{style="color:#BF396F;"}
-
-::::::: columns
-::::: {.column width="50%"}
-**Missing comma**
-
-```         
-Error: unexpected symbol in:
-"  geom_histogram(stat = "identity")+
-  tidyquant::geom_ma(n=7, size = 2, color = "red" lty"
-```
-
-:::: pink
-::: pink-cont
-If you see **"unexpected symbol"**, the first thing to check is a **missing comma**.
+::: blue
+::: blue-ttl
+R is case-sensitive
 :::
-::::
-
-R is case-sensitive — `Mean()` and `mean()` are different things!
+::: blue-cont
+`Mean()` and `mean()` are different things!
 
 ```{r}
 #| error: true
@@ -137,620 +129,248 @@ Mean(c(1, 2, 3))   #<1>
 ```
 
 1.  Capital M — R can't find this function
-:::::
 
-::: {.column width="50%"}
-**Mismatched parentheses**
+```{r}
+mean(c(1, 2, 3)) 
+```
+:::
+:::
 
+
+::: pink
+::: pink-ttl
+Accidental mispelling
+:::
+::: pink-cont
+```{r}
+#| error: true
+my_data <- data.frame(x = 1:5, y = 6:10)
+sumamry(my_data)   #<2>
+```
+
+2.  Typo in the function name (`sumamry` instead of `summary`)
+:::
+:::
+
+## Mismatched parentheses
+
+::: {.small-error}
 ```{r}
 #| error: true
 mean(c(1, 2, 3)   #<1>
 ```
+:::
 
-1.  Missing closing `)` — the console shows `+` waiting for more input
+- Missing closing `)` — the console shows `+` waiting for more input
+
+:::: blue
+::: blue-cont
+When the console prompt is `>`, R is ready for a new command. When it switches to `+`, a previous command is **incomplete** — finish typing it, or press **Escape** to cancel and start over.
+:::
+::::
 
 **Quick fixes:**
 
 - Use **Tab** to autocomplete function names and avoid typos
 - Check that every `(` has a closing `)`
 - Use RStudio's bracket highlighting — click next to a `(` and its match will highlight
-- Press **Escape** if the console gets stuck on `+`
-:::
-:::::::
 
-------------------------------------------------------------------------
+## Function not found, package not loaded
 
-## [2. Package errors (1/2)]{style="color:#3070BF;"}
+- This usually means you typed the function name incorrectly, or **forgot to install or load the package**
 
-**Function not found**
-
-```         
-could not find function "x"...
-```
-
-This usually means you typed the function name incorrectly, or **forgot to install or load the package**.
-
-:::::::: columns
-::: {.column width="50%"}
 ```{r}
 #| error: true
 clean_names(iris)   #<1>
 ```
 
-1.  `clean_names()` is from `janitor` — if it's not loaded, R can't find it
+1.  `clean_names()` is from `janitor`: if it's not loaded, R can't find it
 
-✅ Fix:
+::: orange
+::: orange-ttl
+Fix: make sure to load the package!
+:::
+::: orange-cont
 
 ```{r}
-library(janitor)       #<1>
-clean_names(iris) |> names()
+pacman::p_load(janitor)      #<2>
+iris_clean <- clean_names(iris)
+names(iris_clean)
 ```
 
-1.  Load the package first, then call the function
+2.  Load the package first, then call the function
+
+:::
 :::
 
-:::::: {.column width="50%"}
-::::: blue
-::: blue-ttl
-Install once, load every session
+::: pink
+::: pink-ttl
+You can also use `::` to call it without loading the whole package
 :::
-
-::: blue-cont
-- `install.packages("janitor")` — run **once**, downloads to your computer
-- `library(janitor)` — run **every session**, makes it available in R
-
-Think of it like: install = buy the book; library = open it.
-:::
-:::::
-::::::
-::::::::
-
-------------------------------------------------------------------------
-
-## [2. Package errors (2/2)]{style="color:#3070BF;"}
-
-**Masked functions — when two packages have the same function name**
-
-```         
-Error in select(data, var) : unused argument (var)
-```
-
-:::::::: columns
-::: {.column width="55%"}
-This is a classic error! Both `dplyr` and `MASS` have a `select()` function. Whichever package was loaded **last** wins — and if `MASS` was loaded after `dplyr`, you'll get the wrong `select()`.
-
+::: pink-cont
 ```{r}
-#| eval: false
-library(MASS)
-library(dplyr)
-iris |> select(Species)   #<1>
+iris_clean2 <- janitor::clean_names(iris)   #<3>
+names(iris_clean2)
 ```
 
-1.  Which `select()` is this? Depends on load order!
+3.  Recall from the Packages lesson: `package::function()` lets you use one function without `library()`
 
-✅ Fix — be explicit with `package::function()`:
-
-```{r}
-iris |> dplyr::select(Species) |> head(3)   #<1>
-```
-
-1.  No ambiguity — always uses `dplyr`'s version
+:::
 :::
 
-::: {.column width="5%"}
-:::
 
-::::: {.column width="40%"}
-**Other common masking conflicts:**
-
-| Package A | Package B | Function      |
-|-----------|-----------|---------------|
-| `dplyr`   | `MASS`    | `select()`    |
-| `dplyr`   | `plyr`    | `summarise()` |
-| `dplyr`   | `stats`   | `filter()`    |
-
-:::: blue
-::: blue-cont
-The [**conflicted** package](https://www.tidyverse.org/blog/2018/06/conflicted/) forces R to throw an error whenever a masked function is used — great for catching these silently wrong results.
-:::
-::::
-:::::
-::::::::
-
-------------------------------------------------------------------------
-
-## [3. Object errors]{style="color:#459B99;"}
-
-::::: columns
-::: {.column width="50%"}
-**Object not found**
-
-```         
-object 'x' not found
-```
+## Object not found
 
 This means R can't find a variable you referenced. Common causes:
+
+[1. You never created the object]{style="color:#BF396F;"}
+
+- This can happen if you ran something in the console, but don't have it in your current `.qmd` file when rendering
 
 ```{r}
 #| error: true
 my_summary   #<1>
 ```
 
-1.  This object was never created — code above may not have run
+1.  This object was never created: code above may not have run
+
+ 
+
+[2. You're missing quotes around a package or a string]{style="color:#459B99;"}
+```{r}
+#| error: true
+install.packages(dplyr)   #<2>
+```
+
+2.  Missing quotes: R looks for an object named `dplyr`, not the text "dplyr"
+
+    - Fix: `install.packages("dplyr")`
+
+## File not found
+
+- This happens when R can't locate a file you're trying to read in
 
 ```{r}
 #| error: true
-install.packages(dplyr)   #<1>
+import(here("data/hrs_Data.csv"))   #<2>
 ```
 
-1.  Missing quotes — R looks for an object named `dplyr`
+ 
 
-✅ Fix: `install.packages("dplyr")`
-:::
-
-::: {.column width="50%"}
-**File not found**
-
-```         
-No such file or directory
-```
-
-```{r}
-#| error: true
-#| eval: false
-read_csv("my data.csv")   #<1>
-```
-
-1.  Typo, wrong path, or file doesn't exist yet
-
-**Check:**
+For now, if you run into it, check:
 
 - Spelling of the file name
-- Forward slashes `/` not backward `\`
+- Forward slashes (MAC) vs. backward slashes (Windows)
 - Correct file extension (`.csv`, `.xlsx`, `.rds`)
-- That you are in the right **R Project**
+- That you're working inside the right **R Project**, so your working directory is where you think it is 
 
-**Subscript out of bounds**
+## Subscript out of bounds
 
-```         
-Error in 'x': subscript out of bounds
-```
-
-You tried to access an element that doesn't exist — e.g., asking for the 10th element of a 5-element vector.
-:::
-:::::
-
-------------------------------------------------------------------------
-
-## [4. Function syntax errors]{style="color:#C83532;"}
-
-**Wrong or missing argument names**
-
-:::::::: columns
-::: {.column width="50%"}
-A very common `mutate()` mistake — forgetting to repeat the column name inside `recode()`:
+- This happens when you try to access an **element** of a vector, list, or data frame that doesn't exist
 
 ```{r}
 #| error: true
-iris |>
-  mutate(Species = recode("setosa" ~ "S"))   #<1>
+x <- c(1, 2, 3, 4, 5)  #<1>
+x[3:10]  #<2>
 ```
 
-1.  `recode()` needs the column name as its first argument
+1.  `x` is a vector of length 5
+2. I try to access the 3rd to 10th elements, but some of them don't exist.
 
-✅ Fix:
+- There is no error, but R returns `NA` for the elements that don't exist
+
+ 
+
+- Here's an example of the error wording (if an error is thrown):
 
 ```{r}
-iris |>
-  mutate(Species = recode(Species,
-                          "setosa" = "S")) |>   #<1>
-  count(Species)
+#| error: true
+x[[10]]  #<3>
 ```
 
-1.  Pass `Species` as the first argument, then `OLD = NEW` pairs
-:::
+3. I try to access the 10th element iwth double brackets, but it doesn't exist.
 
-:::::: {.column width="50%"}
-**Wrong argument name**
+## Wrong argument name
 
+- This can happen if you misremember the argument name, or if you accidentally type it incorrectly
+
+::::::: columns
+::: {.column width="60%"}
 ```{r}
 #| error: true
 mean(c(1, 2, NA), remove.na = TRUE)   #<1>
 ```
 
-1.  `remove.na` is not a real argument — R ignores it and NA propagates
+1.  `remove.na` is not a real argument: R silently ignores it, and `NA` propagates through
 
-✅ Fix:
+:::: pink
+::: pink-cont
+**Notice this one didn't throw an error!** It just gave you the wrong answer! Not every mistake is loud. 
+:::
+::::
+
+- Fix: use the correct argument name
 
 ```{r}
-mean(c(1, 2, NA), na.rm = TRUE)   #<1>
+mean(c(1, 2, NA), na.rm = TRUE)   #<2>
 ```
 
-1.  The correct argument is `na.rm`
+2.  The correct argument is `na.rm`
+:::
 
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
 ::::: orange
 ::: orange-ttl
 How to find the right argument names
 :::
 
 ::: orange-cont
-Run `?function_name` and read the **Arguments** section — it lists every accepted argument and what it expects.
-:::
-:::::
-::::::
-::::::::
-
-------------------------------------------------------------------------
-
-## [5. Logic errors]{style="color:#BF396F;"}
-
-**These don't always produce an error — the code runs, but gives you the wrong answer!**
-
-::::::: columns
-::: {.column width="50%"}
-**`if` statement errors**
-
-```         
-Error in if
-```
-
-This usually means an `if` statement was applied to something that wasn't `TRUE` or `FALSE`:
-
-```{r}
-#| error: true
-x <- c(1, 2, 3)
-if (x > 1) print("big")   #<1>
-```
-
-1.  `x > 1` returns a *vector* — `if` expects a single TRUE/FALSE
-
-✅ Fix — use `any()` or `all()`:
-
-```{r}
-if (any(x > 1)) print("at least one is big")   #<1>
-```
-
-1.  `any()` collapses the vector to a single TRUE/FALSE
-:::
-
-::::: {.column width="50%"}
-**Silent logic errors (no error message!)**
-
-```{r}
-ages <- c(23, 31, 40, 45, 28)
-mean(ages[ages = 30])   #<1>
-```
-
-1.  `=` should be `==` — this silently does something wrong!
-
-✅ Fix:
-
-```{r}
-mean(ages[ages == 30])   #<1>
-```
-
-1.  `==` is "equal to"; `=` is assignment
-
-:::: pink
-::: pink-cont
-Logic errors are the sneakiest bugs. Always **check intermediate results** with `print()`, `head()`, or `View()` to confirm your data looks right at each step.
-:::
-::::
-:::::
-:::::::
-
-------------------------------------------------------------------------
-
-## [6. Factor errors]{style="color:#3070BF;"}
-
-**Factors look like character strings, but they have fixed levels — adding new values creates `NA`!**
-
-::::::: columns
-::::: {.column width="50%"}
-**Adding a value not in the levels:**
-
-```{r}
-#| warning: true
-age_cat <- factor(c("child", "adult", "elder"))
-age_cat[1] <- "infant"   #<1>
-age_cat
-```
-
-1.  "infant" is not a defined level — `NA` is introduced
-
-:::: blue
-::: blue-cont
-This error message gives it away:
-
-```         
-invalid factor level, NA generated
-```
-
-If you see it, you tried to add a value that wasn't in the factor's pre-defined levels.
-:::
-::::
-:::::
-
-::: {.column width="50%"}
-✅ Fix — convert to character first, then back to factor:
-
-```{r}
-age_cat <- factor(c("child", "adult", "elder"))
-age_cat <- as.character(age_cat)   #<1>
-age_cat[1] <- "infant"
-age_cat <- factor(age_cat)         #<2>
-levels(age_cat)
-```
-
-1.  Convert to character so any value is accepted
-2.  Re-factor with all levels present
-
-**Unexpected alphabetical ordering:**
-
-```{r}
-survey <- data.frame(
-  rating = factor(c("Agree", "Neutral", "Disagree")))
-levels(survey$rating)   #<1>
-```
-
-1.  Default is alphabetical — probably not what you want!
-
-✅ Fix with `levels =`:
-
-```{r}
-survey$rating <- factor(survey$rating,
-  levels = c("Disagree", "Neutral", "Agree"))
-levels(survey$rating)
-```
-:::
-:::::::
-
-------------------------------------------------------------------------
-
-## [7. Plotting errors]{style="color:#459B99;"}
-
-::::: columns
-::: {.column width="50%"}
-**Not enough colors for factor levels**
-
-```         
-Error: Insufficient values in manual scale. 
-3 needed but only 2 provided.
-```
-
-```{r}
-#| error: true
-ggplot(iris, aes(x = Sepal.Length, fill = Species)) +
-  geom_histogram() +
-  scale_fill_manual(values = c("orange", "purple"))   #<1>
-```
-
-1.  `iris` has 3 species, but only 2 colors were provided
-
-✅ Fix — provide one color per level (check if `NA` became a factor level too!):
+Run `?function_name` and read the **Arguments** section — it lists every accepted argument, what it expects, and its default value.
 
 ```{r}
 #| eval: false
-scale_fill_manual(values = c("orange", "purple", "green"))
+?mean
 ```
-:::
-
-::: {.column width="50%"}
-**Extra `+` at the end of a ggplot chain**
-
-```         
-Can't add x object
-```
-
-```{r}
-#| error: true
-ggplot(iris, aes(x = Sepal.Length)) +
-  geom_histogram() +   #<1>
-```
-
-1.  Trailing `+` with nothing after it
-
-✅ Fix — delete the final `+`
-
-**Extra `%>%` or `|>` in a dplyr chain**
-
-Similarly, re-arranging piped steps and leaving a stray pipe at the end (or middle) will break your code:
-
-```{r}
-#| error: true
-iris |>
-  filter(Sepal.Length > 5) |>   #<1>
-```
-
-1.  Dangling pipe — R waits for the next step but there isn't one
 :::
 :::::
 
-------------------------------------------------------------------------
-
-## [8. R Markdown / Quarto errors]{style="color:#C83532;"}
-
-::::::: columns
-::: {.column width="50%"}
-**Wrong chunk option names**
-
-```         
-Error in options[[sprintf("fig.%s", i)]]
-```
-
-Check that your chunk options use the correct names:
-
-| ❌ Wrong         | ✅ Correct           |
-|------------------|----------------------|
-| `fig.width = 5`  | `out.width = "5in"`  |
-| `fig.height = 3` | `out.height = "3in"` |
-
-**Duplicate chunk labels**
-
-```         
-Error: Duplicate chunk label 'my-plot'
-```
-
-Every code chunk label in your document must be unique. Labels also cannot contain spaces.
-
-```{{r}}
-#| label: my-plot-1   #<1>
-```
-
- 1. Add a number or descriptor to make each label unique
 :::
-
-::::: {.column width="50%"}
-**YAML indentation errors**
-
-``` yaml
----
-format: html
-  toc: true   # ❌ wrong indentation
----
-```
-
-✅ Fix:
-
-``` yaml
----
-format: 
-  html:
-    toc: true   # ✅ correct nesting
----
-```
-
-:::: red
-::: red-cont
-**Chunk runs in console but fails on render**
-
-This usually means your document is relying on objects created earlier in your **R session** that don't exist when rendering. The render starts with a **fresh environment**.
-
-Always use **Session → Restart R → Render** to catch these before submitting.
-:::
-::::
-:::::
 :::::::
 
-------------------------------------------------------------------------
+## Silent logic errors
 
-## Wrap-up: A troubleshooting checklist
+- This happens when your code runs without throwing an error, but the 'TRUE'/'FALSE' output is not what you expected
 
-When your code gives an error, work through this list:
+```{r}
+0.1 + 0.2 == 0.3   #<1>
+```
 
-:::::: columns
-::: {.column width="10%"}
-:::
+1.  You'd expect `TRUE`, but computers store decimals in binary, and `0.1 + 0.2` is actually stored as a number *very slightly* off from `0.3`, so the **comparison quietly returns `FALSE`**
 
-::: {.column width="80%"}
-| Step | What to do |
-|----------------|--------------------------------------------------------|
-| **Read** | Read the error message — what function? What keyword? |
-| **Typos** | Check spelling, capitalization, commas, and matching parentheses |
-| **Packages** | Is the right package installed *and* loaded? Any masking conflicts? |
-| **Objects** | Does the variable exist? Run `ls()` to list everything in your environment |
-| **Arguments** | Run `?function_name` and check argument names and types |
-| **Restart** | Session → Restart R → rerun from top |
-| **Google** | Search the exact error message + "in R" |
-| **Ask** | Make a reprex and ask a classmate, in office hours, or on Posit Community |
-:::
+ 
 
-::: {.column width="10%"}
-:::
-::::::
+- Fix: use `all.equal()` or a small tolerance instead of `==` when comparing decimals:
 
-:::: blue
-::: blue-cont
-Even experienced programmers encounter errors constantly. Getting faster at *reading* error messages is one of the most valuable skills you will build in this course.
+```{r}
+all.equal(0.1 + 0.2, 0.3)  #<1>
+```
+
+1.  `all.equal()` checks whether two numbers are "close enough," rather than checking for exact equality
+
+:::: pink
+::: pink-cont
+Logic errors are the sneakiest bugs. Always **check your output** or check an example if you're running many calculations. 
 :::
 ::::
 
-## Typo errors: Incomplete commands
+## Wrap-up
 
-::::: columns
-::: {.column width="50%"}
-- When the console is waiting for a new command, the prompt line begins with `>`
-  - If the console prompt is `+`, then a previous command is incomplete
-  - You can finish typing the command in the console window
-:::
+- Errors are a normal part of coding! 
+  - Don't be discouraged, R is trying to help you
+- When you get an error, read it carefully and try to understand what it's telling you
+- Recognize the most common types of errors and what might have caused them
 
-::: {.column width="50%"}
-Example:
 
-```{r}
-#| error: true
-#| message: true
-#| warning: true
-#| prompt: true
-3 + (2*6
-```
-
-```{r}
-#| error: true
-#| message: true
-#| warning: true
-#| prompt: true
-3 + (2*6
-)
-```
-:::
-:::::
-
-## Error Type 1: Typo Errors
-
-**The most common error — and the easiest to fix!**
-
-:::::: columns
-::: {.column width="50%"}
-**Misspelled function or variable name:**
-
-```{r}
-#| error: true
-# Typo in function name
-my_data <- data.frame(x = 1:5, y = 6:10)
-sumamry(my_data)
-```
-
-```{r}
-#| error: true
-# Typo in variable name
-my_datta |> head()
-```
-:::
-
-:::: {.column width="50%"}
-**Mismatched parentheses or brackets:**
-
-```{r}
-#| error: true
-mean(c(1, 2, 3)
-```
-
-::: callout-tip
-## Quick Fixes
-
-- R is **case-sensitive**: `Mean()` ≠ `mean()`
-- Use RStudio's auto-complete (Tab key) to avoid typos
-- Check that every `(` has a matching `)`
-:::
-::::
-::::::
-
-## Object is not found
-
-- This happens when text is entered for a non-existent variable (object)
-
-Example:
-
-```{r}
-#| error: true
-hello
-```
-
-- Can be due to missing quotes
-
-```{r}
-#| error: true
-install.packages(dplyr) 
-# correct code is: install.packages("dplyr")
-```
