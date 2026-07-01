@@ -5,6 +5,9 @@ format:
     page-layout: full
     link-external-newwindow: true
     toc: false
+    highlight-style: ayu
+    code-block-bg: "#f8f9fa"   
+    code-block-border-left: "#5BAFF8" 
 ---
 
 ```{r setup, include=FALSE}
