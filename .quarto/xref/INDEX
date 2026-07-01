@@ -408,5 +408,17 @@
   },
   "lessons/25_Data_transformation_common_errors/Data_transformation_common_errors.qmd": {
     "Data_transformation_common_errors.html": "e6137da6"
+  },
+  "practice/practice_03.qmd": {
+    "practice_03.html": "a66888e1"
+  },
+  "practice/practice_03_ans.qmd": {
+    "practice_03_ans.html": "6362e188"
+  },
+  "practice/practice_04.qmd": {
+    "practice_04.html": "f76fd56e"
+  },
+  "practice/practice_04_ans.qmd": {
+    "practice_04_ans.html": "c2aef8a3"
   }
 }

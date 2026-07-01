@@ -13,11 +13,11 @@ source(here("class_dates.R"))
 ```
 
 | Practice | Assignment | Data | Assignment due (\@11pm) | Answers | Solutions |
-|----|----|----|----|----|----|
+|------------|------------|------------|------------|------------|------------|
 | 1 | [[{{< iconify material-symbols assignment size=29px >}}](/practice/practice_01.qmd)]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract1 %>% format("%m/%d")` | [[{{< iconify ph key-fill size=29px >}}](/practice/practice_01_ans.qmd)]{style="color:#f8f5f0;"} | [[{{< iconify mdi folder-key size=30px >}}](https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/PUBH_523_26Su/Student_files_PUBH_523_623/practice_solns/practice_01?csf=1&web=1&e=Sg2M0K)]{style="color:#f8f5f0;"} |
 | 2 | [[{{< iconify material-symbols assignment size=29px >}}](/practice/practice_02.qmd)]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract2 %>% format("%m/%d")` | [[{{< iconify ph key-fill size=29px >}}](/practice/practice_02_ans.qmd)]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
-| 3 | [{{< iconify material-symbols assignment size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract3 %>% format("%m/%d")` | [{{< iconify ph key-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
-| 4 | [{{< iconify material-symbols assignment size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract4 %>% format("%m/%d")` | [{{< iconify ph key-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
+| 3 | [[{{< iconify material-symbols assignment size=29px >}}](/practice/practice_03.qmd)]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract3 %>% format("%m/%d")` | [[{{< iconify ph key-fill size=29px >}}](/practice/practice_03_ans.qmd)]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
+| 4 | [[{{< iconify material-symbols assignment size=29px >}}](/practice/practice_04.qmd)]{style="color:#f8f5f0;"} | [[{{< iconify tdesign data-filled size=29px >}}](https://github.com/nwakim/PUBH_523_26Su/blob/main/data/hrs_data.rds)]{style="color:#f8f5f0;"} | `r pract4 %>% format("%m/%d")` | [[{{< iconify ph key-fill size=29px >}}](/practice/practice_04_ans.qmd)]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
 | 5 | [{{< iconify material-symbols assignment size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract5 %>% format("%m/%d")` | [{{< iconify ph key-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
 | 6 | [{{< iconify material-symbols assignment size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract6 %>% format("%m/%d")` | [{{< iconify ph key-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
 | 7 | [{{< iconify material-symbols assignment size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify tdesign data-filled size=29px >}}]{style="color:#f8f5f0;"} | `r pract7 %>% format("%m/%d")` | [{{< iconify ph key-fill size=29px >}}]{style="color:#f8f5f0;"} | [{{< iconify mdi folder-key size=30px >}}]{style="color:#f8f5f0;"} |
@@ -35,5 +35,5 @@ source(here("class_dates.R"))
 ## Rubrics
 
 |   | 1 point | 0 points |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Completeness | 75% of the question parts are thoroughly worked out and have an answer. “Question parts” means the sub-questions labeled “Part \_." Answers can be incorrect or correct. For parts with longer processes and calculations, solution set up and calculations are required. | Less than 75% of question parts are thoroughly worked out. Attempts do not count as thoroughly worked out. |
