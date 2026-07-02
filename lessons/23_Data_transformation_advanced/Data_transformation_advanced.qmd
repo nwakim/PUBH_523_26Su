@@ -1,5 +1,5 @@
 ---
-title: "Data transformation: Columns, *Advanced*"
+title: "Data transformation: *Advanced*"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
@@ -11,12 +11,13 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: "Data transformation: Rows, *Advanced*"
+    footer: "Data transformation: *Advanced*"
     html-math-method: mathjax
     highlight-style: ayu
     code-annotations: hover
 execute:
   echo: true
+  eval: false
   freeze: auto
 ---
 
@@ -26,21 +27,140 @@ execute:
 #| message: false
 #| warning: false
 
-library(tidyverse)
-library(lubridate)
-library(janitor)
-library(here)
-library(readxl)
-library(gt)
-library(rstatix)
+pacman::p_load(
+  here, 
+  tidyverse, 
+  writexl, 
+  rstatix, 
+  janitor, 
+  naniar,
+  gt,
+  gtsummary,
+  readxl, 
+  rio
+)
 ```
 
 ```{r}
+#| label: "import data" 
 #| echo: false
-hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
-hrs_data <- clean_names(hrs_data)
-hrs_new = hrs_data
+hrs_data_rds <- import(here("data", "hrs_data.rds"))
+hrs_data <- clean_names(hrs_data_rds) |>
+  relocate(race_original, sex, .after = degree) |>
+  relocate(age_yr, ed, cesd, .after = birthdate) # |>
+  # select(id, age_yr, ed, cesd, degree, srh)
 ```
+
+# Rows
+
+## Filtering requires a little logic
+
+-   We can chain multiple criteria using the [`&` (AND)]{style="color:darkorange"} or [`|` (OR) operators]{style="color:darkorange"}.
+    -   But we need to review a little logic before we do this.
+
+
+
+-   If we wanted to return participants who identified as
+    -   `Female` **and** are in 10th grade,
+    -   we would use an `&` to chain these criteria together:
+
+```         
+sex == "Female" & grade == "10th"
+```
+
+
+
+-   Note that *SPELLING AND CASE MATTER*!
+    -   You must write the name of the column exactly and
+    -   also the value (i.e. "Female" not "female") exactly.
+
+## Filtering with `&` (AND) criteria
+
+```{r}
+hrs_data |>
+  filter(diab == "Yes" & 
+           degree == "Master's degree")
+
+```
+
+-   Note that we could also use the comma in this case:
+
+```{r}
+hrs_data |>
+  filter(diab == "Yes",    # <1> Comma is equivalent to "&" within filter()
+         degree == "Master's degree")
+
+```
+
+## Filtering with `|` (OR) criteria
+
+If we wanted patients who were
+
+`Female` [**or**]{style="color:darkorange"} in 10th grade
+
+we would use a `|` to chain these criteria together.
+
+```{r}
+hrs_data |>
+  filter(diab == "Yes" |
+           degree == "Master's degree")
+```
+
+::: {.callout-warning icon="false"}
+## Think about it:
+
+Which of the AND vs. OR code blocks will return a larger number of participants?
+:::
+
+## More filter examples
+
+-   See [this slide](https://jminnier-berd-r-courses.netlify.app/02-data-wrangling-tidyverse/02_data_wrangling_slides_part1.html#27){target="_blank"} from a previous BERD workshop.
+
+-   Also read the [filter section](https://r4ds.hadley.nz/data-transform.html#rows){target="_blank"} in the "Data Transformation" chapter from *R for Data Science (2e)*.
+
+<br>
+
+### More about comparison and logical operators
+
+Click [here](https://www.datamentor.io/r-programming/operator/){target="_blank"} for a useful reference for all the different operators (both logical and comparison) that you can use.
+
+## 
+
+Using %in%
+
+# `arrange()`
+
+## `arrange()` after `count()`-ing categorical data
+
+-   Another example of when `arrange()` is useful
+
+::: columns
+::: {.column width="48%"}
+-   We can also use `count()` to count all of the unique values for a categorical variable.
+-   This will also show `NA` category, which is the special missing variable type:
+
+```{r}
+hrs_data |>
+  count(age)
+```
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+-   Sometimes it helps to arrange by that category if you have many categories to view.
+-   This can also alert us if there are categorical coding mistakes (such as misspellings) in our data.
+
+```{r}
+hrs_data |>
+  count(age) |>
+  arrange(n)
+```
+:::
+:::
+
+# Columns
 
 ## Categorical data (`factor`s) 
 
@@ -294,15 +414,6 @@ hrs_new |>
 :::
 
 
-# Practice time! (part 6)
-
-1.  Create a new variable called `degree_num` in `hrs_new` that converts `degree` to numeric.
-
-2.  Create a new variable called `race_cat` that relabels `race4` to have shorter race category names: W (White), H/L (Hispanic/Latino), B/AA (Black or African American), Other (All other races). Make `race_cat` a factor variable with levels ordered by the size of the group in descending order.
-
-3.  Create a `tabyl` of the new variable `race_cat` and `race4` to check your work, including the ordering of the factors.
-
-
 # Replace missing values with `replace_na()`
 
 ## `replace_na()`
@@ -428,21 +539,5 @@ hrs_data |>
   names()
 
 ```
-
-
-# Practice time! (part 4)
-
-Perform some subsetting functions on the `hrs_data` data:
-
-1.  Use `filter()` to select people who are in 9th or 10th degree and who have income less than 25. Save the resulting dataset as `yrbss_filtered`.
-
-2.  Use `rename()` to rename 2 of the column names of `yrbss_filtered` to something more meaningful.
-
-3.  Use `select()` to keep only the columns that denote record, female, degree, income, and the 2 renamed columns.
-
-4.  Arrange the data by income, starting with the highest value and ending with the least value.
-
-5.  Save the resulting data set in the file `data/practice4_data.xslx`.
-
 
 

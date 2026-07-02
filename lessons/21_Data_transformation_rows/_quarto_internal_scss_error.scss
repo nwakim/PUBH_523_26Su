@@ -136,8 +136,13 @@ $presentation-heading-color: $dark-blue !default;
   max-height: 100% !important;
 }
 
+.reveal .slides section.scrollable {
+  overflow-y: auto; !important;
+  max-height: 100%; !important;
+}
+
 .large-code code {
-  font-size: 1.7em !important;;
+  font-size: 1.7em !important;
 }
 
 /* Target stderr (errors), stdout (text), and regular outputs directly at the code level */

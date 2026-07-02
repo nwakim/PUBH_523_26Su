@@ -59,8 +59,23 @@ $presentation-heading-color: $dark-blue !default;
   max-height: 100% !important;
 }
 
+
 .large-code code {
-  font-size: 1.7em !important;;
+  font-size: 1.7em !important;
+}
+
+/* Container for the code block */
+.reveal pre {
+  max-height: 600px !important; /* Locks height so it forces a scroll */
+  overflow-y: auto !important;  /* Enables vertical scrolling */
+  overflow-x: auto !important;  /* Enables horizontal scrolling if lines are long */
+}
+
+/* Internal code text formatting */
+.reveal pre code {
+  max-height: none !important;  /* Lets the code expand naturally inside the container */
+  white-space: pre !important;  /* Prevents automatic line wrapping */
+  word-wrap: normal !important; /* Forces horizontal scrolling instead of snapping text */
 }
 
 /* Target stderr (errors), stdout (text), and regular outputs directly at the code level */

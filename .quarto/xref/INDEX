@@ -420,5 +420,17 @@
   },
   "practice/practice_04_ans.qmd": {
     "practice_04_ans.html": "c2aef8a3"
+  },
+  "lessons/20_Intro_data_trans_summ/Intro_data_trans_summ.qmd": {
+    "Intro_data_trans_summ.html": "fb4d657b"
+  },
+  "lessons/21_Data_transformation_rows/Data_transformation_rows.qmd": {
+    "Data_transformation_rows.html": "d740e4b7"
+  },
+  "lessons/22_Data_transformation_columns/Data_transformation_columns.qmd": {
+    "Data_transformation_columns.html": "0c123d73"
+  },
+  "lessons/23_Data_transformation_advanced/Data_transformation_advanced.qmd": {
+    "Data_transformation_advanced.html": "3a8844a4"
   }
 }

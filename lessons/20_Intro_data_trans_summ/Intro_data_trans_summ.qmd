@@ -35,15 +35,16 @@ pacman::p_load(
   naniar,
   gt,
   gtsummary,
-  readxl
+  readxl, 
+  rio
 )
 ```
 
 ```{r}
 #| echo: false
 
-hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
-hrs_data <- clean_names(hrs_data)
+hrs_data_rds <- import(here("data", "hrs_data.rds"))
+hrs_data <- clean_names(hrs_data_rds)
 ```
 
 ## `dplyr` basics
@@ -58,25 +59,26 @@ hrs_data <- clean_names(hrs_data)
  
 
 - Most functions within `dplyr` have similar input and output:
-  - *Input:* a data frame (usually the first argument in the function)
-  - *Output:* a data frame
-  - *Additional arguments:* typically describe what columns (variables) to operate on
+  - [*Input:*]{style="color:#C83532"} a data frame (usually the first argument in the function)
+  - [*Output:*]{style="color:#C83532"} a data frame
+  - [*Additional arguments:*]{style="color:#C83532"} typically describe what columns (variables) to operate on
 
 ## Example of a `dplyr` function: `select()`
 
 ::: columns
-::: {.column width="30%"}
+::: {.column width="45%"}
 
 ::: pink2
 ::: pink2-cont
-I can use the `select()` function to select specific columns (`age` and `ed`) from my data frame (`hrs_data`)
+I can use the `select()` function to select specific columns (`age_yr` and `ed`) from my data frame (`hrs_data`)
 :::
 :::
 :::
 ::: {.column width="5%"}
 :::
-::: {.column width="65%"}
+::: {.column width="50%"}
 ```{r}
+#| eval: false
 hrs_data |> # <1> 
   select( # <2>
     age_yr, # <3>
@@ -88,6 +90,16 @@ hrs_data |> # <1>
 2. `select` is the function we are using on the data frame
 3. `age` and `ed` are the columns (in the data frame) that we perform the `select()` function on
 
+```{r}
+#| echo: false
+hrs_data |> 
+  select(
+    age_yr, 
+    ed  
+    ) |>
+  head(10)
+```
+
 :::
 :::
 
@@ -95,16 +107,16 @@ hrs_data |> # <1>
 
 `dplyr` functions can be categorized into four groups based on what they operate on:
 
-1. [**rows**]{style="color: #5BAFF8;"}: functions that operate on rows of a data frame 
+1. [**Rows**]{style="color: #5BAFF8;"}: functions that operate on rows of a data frame 
     - Examples: `filter()`, `slice()`
     - Under the Data Transformation lesson series
-2. [**columns**]{style="color: #E75B5C;"}: functions that operate on columns of a data frame
+2. [**Columns**]{style="color: #E75B5C;"}: functions that operate on columns of a data frame
     - Examples: `select()`, `mutate()`
     - Under the Data Transformation lesson series
-3. [**groups**]{style="color: #EF85B3;"}: functions that operate on groups of rows in a data frame 
+3. [**Groups**]{style="color: #EF85B3;"}: functions that operate on groups of rows in a data frame 
     - Examples: `group_by()`, `summarize()`
     - Under the Data Summarization lesson series
-4. [**joins**]{style="color: #459B99;"}: functions that combine two data frames based on a common key 
+4. [**Joins**]{style="color: #459B99;"}: functions that combine two data frames based on a common key 
     - Examples: `left_join()`, `inner_join()`
     - Not covered in this class
 
