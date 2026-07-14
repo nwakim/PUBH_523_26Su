@@ -4098,9 +4098,9 @@ vertical-align: -.125em;
   <li><a href="#directions" id="toc-directions" class="nav-link" data-scroll-target="#directions">Directions</a></li>
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
   <ul class="collapse">
-  <li><a href="#question-1-set-up-your-course-folder" id="toc-question-1-set-up-your-course-folder" class="nav-link" data-scroll-target="#question-1-set-up-your-course-folder">Question 1: Set Up Your Course Folder</a></li>
-  <li><a href="#question-2-packages" id="toc-question-2-packages" class="nav-link" data-scroll-target="#question-2-packages">Question 2: Packages</a></li>
-  <li><a href="#question-3-your-first-practice-.qmd" id="toc-question-3-your-first-practice-.qmd" class="nav-link" data-scroll-target="#question-3-your-first-practice-.qmd">Question 3: Your First Practice <code>.qmd</code></a></li>
+  <li><a href="#question-1-your-first-practice-.qmd" id="toc-question-1-your-first-practice-.qmd" class="nav-link" data-scroll-target="#question-1-your-first-practice-.qmd">Question 1: Your First Practice <code>.qmd</code></a></li>
+  <li><a href="#question-2-set-up-your-course-folder" id="toc-question-2-set-up-your-course-folder" class="nav-link" data-scroll-target="#question-2-set-up-your-course-folder">Question 2: Set Up Your Course Folder</a></li>
+  <li><a href="#question-3-packages" id="toc-question-3-packages" class="nav-link" data-scroll-target="#question-3-packages">Question 3: Packages</a></li>
   <li><a href="#question-4-create-your-r-project" id="toc-question-4-create-your-r-project" class="nav-link" data-scroll-target="#question-4-create-your-r-project">Question 4: Create Your R Project</a></li>
   <li><a href="#question-5-using-here-for-file-paths" id="toc-question-5-using-here-for-file-paths" class="nav-link" data-scroll-target="#question-5-using-here-for-file-paths">Question 5: Using <code>here()</code> for file paths</a></li>
   </ul></li>
@@ -4133,7 +4133,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">June 25, 2026</p>
+      <p class="date-modified">July 15, 2026</p>
     </div>
   </div>
     
@@ -4154,6 +4154,19 @@ vertical-align: -.125em;
 <li>Packages</li>
 <li>R Projects and working directories</li>
 </ul>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Note on ordering
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We’re tackling <strong>Quarto and <code>.qmd</code> files</strong>, even though it comes second in the lesson order. This way you have access to the <code>.qmd</code> as you are working through the rest of the praactice.</p>
+</div>
+</div>
 </section>
 <section id="directions" class="level2">
 <h2 class="anchored" data-anchor-id="directions">Directions</h2>
@@ -4185,8 +4198,150 @@ vertical-align: -.125em;
 </section>
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
-<section id="question-1-set-up-your-course-folder" class="level3">
-<h3 class="anchored" data-anchor-id="question-1-set-up-your-course-folder">Question 1: Set Up Your Course Folder</h3>
+<section id="question-1-your-first-practice-.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="question-1-your-first-practice-.qmd">Question 1: Your First Practice <code>.qmd</code></h3>
+<p>In Lesson 8, we walked through the three components of a <code>.qmd</code> file: the YAML header, text, and code chunks. In this question, you will demonstrate that you can create, edit, and render a <code>.qmd</code> file correctly.</p>
+<section id="part-a-downloading-the-practice-file" class="level4">
+<h4 class="anchored" data-anchor-id="part-a-downloading-the-practice-file">Part A: Downloading the practice file</h4>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Download this practice <code>.qmd</code> from the course GitHub repository, rename it, and save it in your course folder.</p>
+<ol type="1">
+<li><a href="https://github.com/nwakim/PUBH_523_26Su/blob/main/practice/practice_02.qmd">Download <code>practice_02.qmd</code> from GitHub.</a></li>
+<li>Rename the file to <code>Lastname_Firstinitial_Practice_02.qmd</code> (or <code>lastname_firstinitial_practice_02.qmd</code>), replacing with your actual last name and first initial.</li>
+<li>Save it inside your <code>practice/</code> folder. You may create a <code>practice_02/</code> subfolder if you prefer.</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you have already done this (you are reading this file in RStudio!), you are all set. Just confirm the file name is correct before moving on.</p>
+</div>
+</div>
+</section>
+<section id="part-b-check-your-yaml-header" class="level4">
+<h4 class="anchored" data-anchor-id="part-b-check-your-yaml-header">Part B: Check your YAML header</h4>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Scroll to the very top of this file and update the YAML header:</p>
+<ul>
+<li>Replace <code>&quot;Your name here&quot;</code> in <code>author:</code> with your actual name.</li>
+<li>Confirm that <code>date-modified: &quot;today&quot;</code> is present so the date updates automatically each time you render.</li>
+</ul>
+<p>Render the document and confirm your name and today’s date appear at the top of the HTML output.</p>
+</div>
+</div>
+</section>
+<section id="part-c-add-a-heading-and-paragraph" class="level4">
+<h4 class="anchored" data-anchor-id="part-c-add-a-heading-and-paragraph">Part C: Add a heading and paragraph</h4>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Directly below this callout box, add:</p>
+<ol type="1">
+<li>A <strong>level 3 heading</strong> (<code>###</code>) with a title of your choice (something about yourself or why you are taking this course)</li>
+<li>A short paragraph (2–4 sentences) of text (can be gibberish) under that heading</li>
+</ol>
+<p>You can use the Source editor or the Visual Editor.</p>
+</div>
+</div>
+<p><em>Add your heading and paragraph here:</em></p>
+</section>
+<section id="part-d-code-chunk-options" class="level4">
+<h4 class="anchored" data-anchor-id="part-d-code-chunk-options">Part D: Code chunk options</h4>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The code chunk below calculates the mean of a small vector. Adjust the chunk options so that:</p>
+<ul>
+<li>The <strong>code is hidden</strong> in the rendered output (results still show)</li>
+<li><strong>Warnings are suppressed</strong></li>
+</ul>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">15</span>, <span class="dv">16</span>, <span class="dv">23</span>, <span class="dv">42</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 18</code></pre>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Add the appropriate <code>#|</code> options at the top of the chunk. Refer to the chunk options table in Lesson 8 if you need a reminder.</p>
+</div>
+</div>
+</section>
+<section id="part-e-render-and-confirm" class="level4">
+<h4 class="anchored" data-anchor-id="part-e-render-and-confirm">Part E: Render and confirm</h4>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Render this document to HTML and confirm all of the following:</p>
+<ul>
+<li>Your screenshot from Question 1 Part B appears</li>
+<li>Your heading and paragraph from Part C appear</li>
+<li>The code chunk in Part D shows the result but <strong>not</strong> the code</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="question-2-set-up-your-course-folder" class="level3">
+<h3 class="anchored" data-anchor-id="question-2-set-up-your-course-folder">Question 2: Set Up Your Course Folder</h3>
 <p>In our lesson on folder and file organization (L7), we learned that every project should live in <strong>one well-organized folder</strong>. In this question, you will create that folder and use it for the rest of the course.</p>
 <section id="part-a-create-the-folder-structure" class="level4">
 <h4 class="anchored" data-anchor-id="part-a-create-the-folder-structure">Part A: Create the folder structure</h4>
@@ -4274,8 +4429,8 @@ vertical-align: -.125em;
 </div>
 </section>
 </section>
-<section id="question-2-packages" class="level3">
-<h3 class="anchored" data-anchor-id="question-2-packages">Question 2: Packages</h3>
+<section id="question-3-packages" class="level3">
+<h3 class="anchored" data-anchor-id="question-3-packages">Question 3: Packages</h3>
 <section id="part-a-load-the-course-packages" class="level4">
 <h4 class="anchored" data-anchor-id="part-a-load-the-course-packages">Part A: Load the course packages</h4>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
@@ -4293,7 +4448,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load all course packages here using pacman::p_load()</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load all course packages here using pacman::p_load()</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4402,155 +4557,13 @@ vertical-align: -.125em;
 <div class="callout-body-container callout-body">
 <p>A classmate wrote the following at the top of their <code>.qmd</code> file. Identify the problem and explain how to fix it.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>What is wrong with putting <code>install.packages()</code> inside a <code>.qmd</code>, and what should they do instead?</p>
 </div>
 </div>
 <p><em>Write your answer here.</em></p>
-</section>
-</section>
-<section id="question-3-your-first-practice-.qmd" class="level3">
-<h3 class="anchored" data-anchor-id="question-3-your-first-practice-.qmd">Question 3: Your First Practice <code>.qmd</code></h3>
-<p>In Lesson 8, we walked through the three components of a <code>.qmd</code> file: the YAML header, text, and code chunks. In this question, you will demonstrate that you can create, edit, and render a <code>.qmd</code> file correctly.</p>
-<section id="part-a-downloading-the-practice-file" class="level4">
-<h4 class="anchored" data-anchor-id="part-a-downloading-the-practice-file">Part A: Downloading the practice file</h4>
-<div class="callout callout-style-simple callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Task
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Download this practice <code>.qmd</code> from the course GitHub repository, rename it, and save it in your course folder.</p>
-<ol type="1">
-<li><a href="https://github.com/nwakim/PUBH_523_26Su/blob/main/practice/practice_02.qmd">Download <code>practice_02.qmd</code> from GitHub.</a></li>
-<li>Rename the file to <code>Lastname_Firstinitial_Practice_02.qmd</code> (or <code>lastname_firstinitial_practice_02.qmd</code>), replacing with your actual last name and first initial.</li>
-<li>Save it inside your <code>practice/</code> folder. You may create a <code>practice_02/</code> subfolder if you prefer.</li>
-</ol>
-</div>
-</div>
-<div class="callout callout-style-simple callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you have already done this (you are reading this file in RStudio!), you are all set. Just confirm the file name is correct before moving on.</p>
-</div>
-</div>
-</section>
-<section id="part-b-check-your-yaml-header" class="level4">
-<h4 class="anchored" data-anchor-id="part-b-check-your-yaml-header">Part B: Check your YAML header</h4>
-<div class="callout callout-style-simple callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Task
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Scroll to the very top of this file and update the YAML header:</p>
-<ul>
-<li>Replace <code>&quot;Your name here&quot;</code> in <code>author:</code> with your actual name.</li>
-<li>Confirm that <code>date-modified: &quot;today&quot;</code> is present so the date updates automatically each time you render.</li>
-</ul>
-<p>Render the document and confirm your name and today’s date appear at the top of the HTML output.</p>
-</div>
-</div>
-</section>
-<section id="part-c-add-a-heading-and-paragraph" class="level4">
-<h4 class="anchored" data-anchor-id="part-c-add-a-heading-and-paragraph">Part C: Add a heading and paragraph</h4>
-<div class="callout callout-style-simple callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Task
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Directly below this callout box, add:</p>
-<ol type="1">
-<li>A <strong>level 3 heading</strong> (<code>###</code>) with a title of your choice (something about yourself or why you are taking this course)</li>
-<li>A short paragraph (2–4 sentences) of text (can be gibberish) under that heading</li>
-</ol>
-<p>You can use the Source editor or the Visual Editor.</p>
-</div>
-</div>
-<p><em>Add your heading and paragraph here:</em></p>
-</section>
-<section id="part-d-code-chunk-options" class="level4">
-<h4 class="anchored" data-anchor-id="part-d-code-chunk-options">Part D: Code chunk options</h4>
-<div class="callout callout-style-simple callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Task
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The code chunk below calculates the mean of a small vector. Adjust the chunk options so that:</p>
-<ul>
-<li>The <strong>code is hidden</strong> in the rendered output (results still show)</li>
-<li><strong>Warnings are suppressed</strong></li>
-</ul>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">15</span>, <span class="dv">16</span>, <span class="dv">23</span>, <span class="dv">42</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 18</code></pre>
-</div>
-</div>
-<div class="callout callout-style-simple callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Add the appropriate <code>#|</code> options at the top of the chunk. Refer to the chunk options table in Lesson 8 if you need a reminder.</p>
-</div>
-</div>
-</section>
-<section id="part-e-render-and-confirm" class="level4">
-<h4 class="anchored" data-anchor-id="part-e-render-and-confirm">Part E: Render and confirm</h4>
-<div class="callout callout-style-simple callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Task
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Render this document to HTML and confirm all of the following:</p>
-<ul>
-<li>Your screenshot from Question 1 Part B appears</li>
-<li>Your heading and paragraph from Part C appear</li>
-<li>The code chunk in Part D shows the result but <strong>not</strong> the code</li>
-</ul>
-</div>
-</div>
 </section>
 </section>
 <section id="question-4-create-your-r-project" class="level3">

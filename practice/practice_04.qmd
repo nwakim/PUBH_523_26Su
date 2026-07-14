@@ -37,6 +37,12 @@ We're tackling **Import and Export (Lesson 18) first**, even though it comes thi
 
 ## Directions
 
+Download this practice `.qmd` from the course GitHub repository, rename it, and save it in your course folder.
+
+1. [Download `practice_04.qmd` from GitHub.](https://github.com/nwakim/PUBH_523_26Su/blob/main/practice/practice_04.qmd)
+2. Rename the file to `Lastname_Firstinitial_Practice_04.qmd` (or `lastname_firstinitial_practice_04.qmd`), replacing with your actual last name and first initial.
+3. Save it inside your `practice` folder. You may create a `practice_04` subfolder if you prefer.
+
 ::: {.callout-tip appearance="minimal"}
 ##### How to use this file
 
@@ -56,7 +62,7 @@ We're tackling **Import and Export (Lesson 18) first**, even though it comes thi
 ##### Needed setup
 
 - Download `hrs_data.rds` (link on practice page) and place it in an appropriate folder
-- If you haven't already, install the `rio` and `here` packages
+- Install the `rio` and `here` packages if you need to
 :::
 
 ## Questions

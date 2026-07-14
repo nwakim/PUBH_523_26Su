@@ -26,6 +26,12 @@ Topics covered (Lessons 7–10):
 - Packages
 - R Projects and working directories
 
+::: {.callout-tip appearance="minimal"}
+##### Note on ordering
+
+We're tackling **Quarto and `.qmd` files**, even though it comes second in the lesson order. This way you have access to the `.qmd` as you are working through the rest of the praactice.
+:::
+
 ## Directions
 
 ::: {.callout-tip appearance="minimal"}
@@ -44,137 +50,7 @@ Topics covered (Lessons 7–10):
 
 ## Questions
 
-### Question 1: Set Up Your Course Folder
-
-In our lesson on folder and file organization (L7), we learned that every project should live in **one well-organized folder**. In this question, you will create that folder and use it for the rest of the course.
-
-#### Part A: Create the folder structure
-
-::: {.callout-warning appearance="minimal"}
-##### Task
-
-On your computer, create a folder called `PUBH_523_26Su` or `PUBH_623_26Su` somewhere that makes sense (your Documents folder, OneDrive, etc.). Inside it, create the following subfolders (feel free to change some of the subfolders if you have a preferred organization):
-
-```         
-PUBH_523_26Su/
-├── admin/
-├── data_lessons/
-├── data_practice/
-├── data_project/
-│   ├── data_raw/
-│   └── data_processed/
-├── lessons/
-├── practice/
-├── project/
-└── README.txt
-```
-:::
-
-::: {.callout-tip appearance="minimal"}
-##### Tips
-
-- Create `README.txt` as a plain text file (open Notepad on Windows or TextEdit on Mac, save as `.txt`).
-- Create `data_raw/` and `data_processed/` *inside* the `data_project/` folder.
-- Folder names should be lowercase with underscores — no spaces!
-- You can also copy the folders from our shared folder
-:::
-
-#### Part B: Take a screenshot and insert it here
-
-::: {.callout-warning appearance="minimal"}
-##### Task
-
-Take a screenshot of your `PUBH_523_26Su` folder open in your file browser (Finder on Mac, File Explorer on Windows) so that the subfolders are visible and insert in this `.qmd`.
-:::
-
-::: {.callout-caution appearance="minimal"}
-##### Needed Steps
-
-**New skill: inserting an image into a `.qmd`**
-
-Quarto makes it easy to embed images using Markdown syntax. Here is how:
-
-**Step 1.** Save your screenshot somewhere you can find it, ideally in your `practice/` folder where you create a `practice_02` subfolder. You can name something like `practice_02_folders.png`.
-
-**Step 2.** In this `.qmd` file, insert the image.
-
-- You can do this in the Visual editor by clicking the picture icon (![](./images_practice/practice_02_insert_image.png){width="30"}) up top and browsing for your file. If you do this, switch to Source editor to see how the picture insert translates to markdown.
-- You can do this in the Source editor by typing the following line, replacing the path with your own: `![Caption describing your image](path/to/your/image.png)`
-  - Note that `here()` does not work for image paths
-
-**Step 3.** Render the document and confirm the screenshot appears in the HTML output.
-:::
-
-### Question 2: Packages
-
-#### Part A: Load the course packages
-
-::: {.callout-warning appearance="minimal"}
-##### Task
-
-In Lesson 9, we learned to use `pacman::p_load()` to install and load packages in one step. In the code chunk below, use `pacman::p_load()` to load **all of the following** packages:
-
-`tidyverse`, `here`, `readxl`, `haven`, `writexl`, `janitor`, `rstatix`, `gt`, `gtsummary`, `naniar`
-:::
-
-```{r}
-# Load all course packages here using pacman::p_load()
-
-```
-
-::: {.callout-tip appearance="minimal"}
-##### Tip
-
-If `pacman` itself is not installed yet, run `install.packages("pacman")` in your Console first (just once, do not put `install.packages()` in your `.qmd`!).
-:::
-
-#### Part B: What does each package do?
-
-::: {.callout-warning appearance="minimal"}
-##### Task
-
-Fill in the table below. Each package belongs to one of three categories from Lesson 9: **loading/saving data**, **summarizing/visualizing data**, or **wrangling data**. Note one specific thing each package is used for.
-:::
-
-| Package                       | Category | One thing it is used for |
-|-------------------------------|----------|--------------------------|
-| `here`                        |          |                          |
-| `readxl`                      |          |                          |
-| `haven`                       |          |                          |
-| `janitor`                     |          |                          |
-| `gtsummary`                   |          |                          |
-| `dplyr` (part of tidyverse)   |          |                          |
-| `ggplot2` (part of tidyverse) |          |                          |
-
-::: {.callout-tip appearance="minimal"}
-##### Tip
-
-You can use the `?` command in R to learn more about what a package does. 
-
-You can also search online for each one! A quick Google search of `gtsummary` shows me a [page on the package](https://www.danieldsjoberg.com/gtsummary/) 
-
-- I see the description: "The {gtsummary} package provides an elegant and flexible way to create publication-ready analytical and summary tables..." which I can put in my table.
-:::
-
-#### Part C: Install vs. load
-
-::: {.callout-warning appearance="minimal"}
-##### Task
-
-A classmate wrote the following at the top of their `.qmd` file. Identify the problem and explain how to fix it.
-
-```{r}
-#| eval: false
-install.packages("tidyverse")
-library(tidyverse)
-```
-
-What is wrong with putting `install.packages()` inside a `.qmd`, and what should they do instead?
-:::
-
-*Write your answer here.*
-
-### Question 3: Your First Practice `.qmd`
+### Question 1: Your First Practice `.qmd`
 
 In Lesson 8, we walked through the three components of a `.qmd` file: the YAML header, text, and code chunks. In this question, you will demonstrate that you can create, edit, and render a `.qmd` file correctly.
 
@@ -257,6 +133,136 @@ Render this document to HTML and confirm all of the following:
 - Your heading and paragraph from Part C appear
 - The code chunk in Part D shows the result but **not** the code
 :::
+
+### Question 2: Set Up Your Course Folder
+
+In our lesson on folder and file organization (L7), we learned that every project should live in **one well-organized folder**. In this question, you will create that folder and use it for the rest of the course.
+
+#### Part A: Create the folder structure
+
+::: {.callout-warning appearance="minimal"}
+##### Task
+
+On your computer, create a folder called `PUBH_523_26Su` or `PUBH_623_26Su` somewhere that makes sense (your Documents folder, OneDrive, etc.). Inside it, create the following subfolders (feel free to change some of the subfolders if you have a preferred organization):
+
+```         
+PUBH_523_26Su/
+├── admin/
+├── data_lessons/
+├── data_practice/
+├── data_project/
+│   ├── data_raw/
+│   └── data_processed/
+├── lessons/
+├── practice/
+├── project/
+└── README.txt
+```
+:::
+
+::: {.callout-tip appearance="minimal"}
+##### Tips
+
+- Create `README.txt` as a plain text file (open Notepad on Windows or TextEdit on Mac, save as `.txt`).
+- Create `data_raw/` and `data_processed/` *inside* the `data_project/` folder.
+- Folder names should be lowercase with underscores — no spaces!
+- You can also copy the folders from our shared folder
+:::
+
+#### Part B: Take a screenshot and insert it here
+
+::: {.callout-warning appearance="minimal"}
+##### Task
+
+Take a screenshot of your `PUBH_523_26Su` folder open in your file browser (Finder on Mac, File Explorer on Windows) so that the subfolders are visible and insert in this `.qmd`.
+:::
+
+::: {.callout-caution appearance="minimal"}
+##### Needed Steps
+
+**New skill: inserting an image into a `.qmd`**
+
+Quarto makes it easy to embed images using Markdown syntax. Here is how:
+
+**Step 1.** Save your screenshot somewhere you can find it, ideally in your `practice/` folder where you create a `practice_02` subfolder. You can name something like `practice_02_folders.png`.
+
+**Step 2.** In this `.qmd` file, insert the image.
+
+- You can do this in the Visual editor by clicking the picture icon (![](./images_practice/practice_02_insert_image.png){width="30"}) up top and browsing for your file. If you do this, switch to Source editor to see how the picture insert translates to markdown.
+- You can do this in the Source editor by typing the following line, replacing the path with your own: `![Caption describing your image](path/to/your/image.png)`
+  - Note that `here()` does not work for image paths
+
+**Step 3.** Render the document and confirm the screenshot appears in the HTML output.
+:::
+
+### Question 3: Packages
+
+#### Part A: Load the course packages
+
+::: {.callout-warning appearance="minimal"}
+##### Task
+
+In Lesson 9, we learned to use `pacman::p_load()` to install and load packages in one step. In the code chunk below, use `pacman::p_load()` to load **all of the following** packages:
+
+`tidyverse`, `here`, `readxl`, `haven`, `writexl`, `janitor`, `rstatix`, `gt`, `gtsummary`, `naniar`
+:::
+
+```{r}
+# Load all course packages here using pacman::p_load()
+
+```
+
+::: {.callout-tip appearance="minimal"}
+##### Tip
+
+If `pacman` itself is not installed yet, run `install.packages("pacman")` in your Console first (just once, do not put `install.packages()` in your `.qmd`!).
+:::
+
+#### Part B: What does each package do?
+
+::: {.callout-warning appearance="minimal"}
+##### Task
+
+Fill in the table below. Each package belongs to one of three categories from Lesson 9: **loading/saving data**, **summarizing/visualizing data**, or **wrangling data**. Note one specific thing each package is used for.
+:::
+
+| Package                       | Category | One thing it is used for |
+|-------------------------------|----------|--------------------------|
+| `here`                        |          |                          |
+| `readxl`                      |          |                          |
+| `haven`                       |          |                          |
+| `janitor`                     |          |                          |
+| `gtsummary`                   |          |                          |
+| `dplyr` (part of tidyverse)   |          |                          |
+| `ggplot2` (part of tidyverse) |          |                          |
+
+::: {.callout-tip appearance="minimal"}
+##### Tip
+
+You can use the `?` command in R to learn more about what a package does. 
+
+You can also search online for each one! A quick Google search of `gtsummary` shows me a [page on the package](https://www.danieldsjoberg.com/gtsummary/) 
+
+- I see the description: "The {gtsummary} package provides an elegant and flexible way to create publication-ready analytical and summary tables..." which I can put in my table.
+:::
+
+#### Part C: Install vs. load
+
+::: {.callout-warning appearance="minimal"}
+##### Task
+
+A classmate wrote the following at the top of their `.qmd` file. Identify the problem and explain how to fix it.
+
+```{r}
+#| eval: false
+install.packages("tidyverse")
+library(tidyverse)
+```
+
+What is wrong with putting `install.packages()` inside a `.qmd`, and what should they do instead?
+:::
+
+*Write your answer here.*
 
 ### Question 4: Create Your R Project
 

@@ -32,6 +32,12 @@ Topics covered (Lessons 11-15):
 
 ## Directions
 
+Download this practice `.qmd` from the course GitHub repository, rename it, and save it in your course folder.
+
+1. [Download `practice_03.qmd` from GitHub.](https://github.com/nwakim/PUBH_523_26Su/blob/main/practice/practice_03.qmd)
+2. Rename the file to `Lastname_Firstinitial_Practice_03.qmd` (or `lastname_firstinitial_practice_03.qmd`), replacing with your actual last name and first initial.
+3. Save it inside your `practice` folder. You may create a `practice_04` subfolder if you prefer.
+
 ::: {.callout-tip appearance="minimal"}
 ##### How to use this file
 

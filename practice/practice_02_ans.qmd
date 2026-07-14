@@ -23,125 +23,7 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 
 ## Questions
 
-### Question 1: Set Up Your Course Folder
-
-In our lesson on folder and file organization (L7), we learned that every project should live in **one well-organized folder**. In this question, you will create that folder and use it for the rest of the course.
-
-#### Part A: Create the folder structure
-
-::: {.callout-warning appearance="minimal"}
-##### Task
-
-On your computer, create a folder called `PUBH_523_26Su` or `PUBH_623_26Su` somewhere that makes sense (your Documents folder, OneDrive, etc.). Inside it, create the following subfolders (feel free to change some of the subfolders if you have a preferred organization):
-
-```         
-PUBH_523_26Su/
-├── admin/
-├── data_lessons/
-├── data_practice/
-├── data_project/
-│   ├── data_raw/
-│   └── data_processed/
-├── lessons/
-├── practice/
-├── project/
-└── README.txt
-```
-:::
-
-**Answer:**
-
-::: blue
-No answer given, for completion only.
-:::
-
-#### Part B: Take a screenshot and insert it here
-
-::: {.callout-warning appearance="minimal"}
-##### Task
-
-Take a screenshot of your `PUBH_523_26Su` folder open in your file browser (Finder on Mac, File Explorer on Windows) so that the subfolders are visible and insert in this `.qmd`.
-:::
-
-**Answer:**
-
-::: blue
-Here is the image path to my screenshot:
-
-```
-![](../images_practice_solns/folder_screenshot.png)
-```
-
-You will need to make sure your file path takes you to your screenshot. 
-:::
-
-### Question 2: Packages
-
-#### Part A: Load the course packages
-
-::: {.callout-warning appearance="minimal"}
-##### Task
-
-In Lesson 9, we learned to use `pacman::p_load()` to install and load packages in one step. In the code chunk below, use `pacman::p_load()` to load **all of the following** packages:
-
-`tidyverse`, `here`, `readxl`, `haven`, `writexl`, `janitor`, `rstatix`, `gt`, `gtsummary`, `naniar`
-:::
-
-**Answer:**
-
-::: blue
-No answer given, for completion only.
-:::
-
-#### Part B: What does each package do?
-
-::: {.callout-warning appearance="minimal"}
-##### Task
-
-Fill in the table below. Each package belongs to one of three categories from Lesson 9: **loading/saving data**, **summarizing/visualizing data**, or **wrangling data**. Note one specific thing each package is used for.
-:::
-
-**Answer:**
-
-::: blue
-Here is the table with select rows filled out
-
-| Package | Category | One thing it is used for |
-|--------------------|--------------------|--------------------------------|
-| `here` |  |  |
-| `readxl` | Loading/saving data | Read Excel (`.xlsx`) files into R |
-| `haven` |  |  |
-| `janitor` |  |  |
-| `gtsummary` |  |  |
-| `dplyr` (part of tidyverse) |  |  |
-| `ggplot2` (part of tidyverse) | Summarizing/visualizing data | Create data visualizations using a layered syntax |
-
-Note: other valid answers exist for each package, the above are examples.
-:::
-
-#### Part C: Install vs. load
-
-::: {.callout-warning appearance="minimal"}
-##### Task
-
-A classmate wrote the following at the top of their `.qmd` file. Identify the problem and explain how to fix it.
-
-```{r}
-#| eval: false
-install.packages("tidyverse")
-library(tidyverse)
-```
-
-What is wrong with putting `install.packages()` inside a `.qmd`, and what should they do instead?
-:::
-
-**Answer:**
-
-::: blue
-Not given
-:::
-
-### Question 3: Your First Practice `.qmd`
+### Question 1: Your First Practice `.qmd`
 
 In Lesson 8, we walked through the three components of a `.qmd` file: the YAML header, text, and code chunks. In this question, you will demonstrate that you can create, edit, and render a `.qmd` file correctly.
 
@@ -234,6 +116,126 @@ Render this document to HTML and confirm all of the following:
 
 ::: blue
 No answer given, for completion only.
+:::
+
+
+
+### Question 2: Set Up Your Course Folder
+
+In our lesson on folder and file organization (L7), we learned that every project should live in **one well-organized folder**. In this question, you will create that folder and use it for the rest of the course.
+
+#### Part A: Create the folder structure
+
+::: {.callout-warning appearance="minimal"}
+##### Task
+
+On your computer, create a folder called `PUBH_523_26Su` or `PUBH_623_26Su` somewhere that makes sense (your Documents folder, OneDrive, etc.). Inside it, create the following subfolders (feel free to change some of the subfolders if you have a preferred organization):
+
+```         
+PUBH_523_26Su/
+├── admin/
+├── data_lessons/
+├── data_practice/
+├── data_project/
+│   ├── data_raw/
+│   └── data_processed/
+├── lessons/
+├── practice/
+├── project/
+└── README.txt
+```
+:::
+
+**Answer:**
+
+::: blue
+No answer given, for completion only.
+:::
+
+#### Part B: Take a screenshot and insert it here
+
+::: {.callout-warning appearance="minimal"}
+##### Task
+
+Take a screenshot of your `PUBH_523_26Su` folder open in your file browser (Finder on Mac, File Explorer on Windows) so that the subfolders are visible and insert in this `.qmd`.
+:::
+
+**Answer:**
+
+::: blue
+Here is the image path to my screenshot:
+
+```
+![](../images_practice_solns/folder_screenshot.png)
+```
+
+You will need to make sure your file path takes you to your screenshot. 
+:::
+
+### Question 3: Packages
+
+#### Part A: Load the course packages
+
+::: {.callout-warning appearance="minimal"}
+##### Task
+
+In Lesson 9, we learned to use `pacman::p_load()` to install and load packages in one step. In the code chunk below, use `pacman::p_load()` to load **all of the following** packages:
+
+`tidyverse`, `here`, `readxl`, `haven`, `writexl`, `janitor`, `rstatix`, `gt`, `gtsummary`, `naniar`
+:::
+
+**Answer:**
+
+::: blue
+No answer given, for completion only.
+:::
+
+#### Part B: What does each package do?
+
+::: {.callout-warning appearance="minimal"}
+##### Task
+
+Fill in the table below. Each package belongs to one of three categories from Lesson 9: **loading/saving data**, **summarizing/visualizing data**, or **wrangling data**. Note one specific thing each package is used for.
+:::
+
+**Answer:**
+
+::: blue
+Here is the table with select rows filled out
+
+| Package | Category | One thing it is used for |
+|--------------------|--------------------|--------------------------------|
+| `here` |  |  |
+| `readxl` | Loading/saving data | Read Excel (`.xlsx`) files into R |
+| `haven` |  |  |
+| `janitor` |  |  |
+| `gtsummary` |  |  |
+| `dplyr` (part of tidyverse) |  |  |
+| `ggplot2` (part of tidyverse) | Summarizing/visualizing data | Create data visualizations using a layered syntax |
+
+Note: other valid answers exist for each package, the above are examples.
+:::
+
+#### Part C: Install vs. load
+
+::: {.callout-warning appearance="minimal"}
+##### Task
+
+A classmate wrote the following at the top of their `.qmd` file. Identify the problem and explain how to fix it.
+
+```{r}
+#| eval: false
+install.packages("tidyverse")
+library(tidyverse)
+```
+
+What is wrong with putting `install.packages()` inside a `.qmd`, and what should they do instead?
+:::
+
+**Answer:**
+
+::: blue
+Not given
 :::
 
 ### Question 4: Create Your R Project
