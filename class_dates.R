@@ -33,31 +33,31 @@ lab1 = cal_dates[28]
 ## Week 5 dates
 w5d1 = cal_dates[29]
 w5d2 = cal_dates[31]
-pract5 = cal_dates[35]
+pract5 = cal_dates[42]
 
 ## Week 6 dates
 w6d1 = cal_dates[36]
 w6d2 = cal_dates[38]
-pract6 = cal_dates[42]
-lab2 = cal_dates[42]
+pract6 = cal_dates[49]
+lab2 = cal_dates[49]
 
 
 ## Week 7 dates
 w7d1 = cal_dates[43]
 w7d2 = cal_dates[45]
-pract7 = cal_dates[49]
-lab3 = cal_dates[49]
+pract7 = cal_dates[56]
+lab3 = cal_dates[56]
 
 
 ## Week 8 dates
 w8d1 = cal_dates[50]
 w8d2 = cal_dates[52]
-pract8 = cal_dates[56]
+pract8 = cal_dates[63]
 
 ## Week 9 dates
 w9d1 = cal_dates[57]
 w9d2 = cal_dates[59]
-pract9 = cal_dates[63]
+pract9 = cal_dates[70]
 lab4 = cal_dates[70]
 
 ## Week 10 dates
@@ -68,5 +68,5 @@ w10d2 = cal_dates[66]
 ## Week 11 dates
 w11d1 = cal_dates[71]
 w11d2 = cal_dates[73]
-proj = cal_dates[71]
+proj = cal_dates[74]
 last_day = cal_dates[76]
