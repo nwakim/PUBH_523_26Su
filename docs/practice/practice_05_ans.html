@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your name here">
+<meta name="author" content="Nicky Wakim">
 
-<title>Practice 5 – Introduction to R</title>
+<title>Practice 5 Answers – Introduction to R</title>
 <style>
 
 code{white-space: pre-wrap;}
@@ -20,6 +20,41 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -4059,17 +4094,13 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#directions" id="toc-directions" class="nav-link" data-scroll-target="#directions">Directions</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
+  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions">Questions</a>
   <ul class="collapse">
   <li><a href="#question-1-dplyr-basics" id="toc-question-1-dplyr-basics" class="nav-link" data-scroll-target="#question-1-dplyr-basics">Question 1: <code>dplyr</code> Basics</a></li>
   <li><a href="#question-2-data-transformation-rows" id="toc-question-2-data-transformation-rows" class="nav-link" data-scroll-target="#question-2-data-transformation-rows">Question 2: Data transformation: rows</a></li>
   <li><a href="#question-3-data-transformation-columns" id="toc-question-3-data-transformation-columns" class="nav-link" data-scroll-target="#question-3-data-transformation-columns">Question 3: Data transformation: columns</a></li>
   <li><a href="#question-4-data-transformation-advanced" id="toc-question-4-data-transformation-advanced" class="nav-link" data-scroll-target="#question-4-data-transformation-advanced">Question 4: Data transformation: advanced</a></li>
   </ul></li>
-  <li><a href="#submission-checklist" id="toc-submission-checklist" class="nav-link" data-scroll-target="#submission-checklist">Submission Checklist</a></li>
-  <li><a href="#note-on-ai-usage" id="toc-note-on-ai-usage" class="nav-link" data-scroll-target="#note-on-ai-usage">Note on AI usage</a></li>
   </ul>
 </nav>
     </div>
@@ -4078,7 +4109,7 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Practice 5</h1>
+<h1 class="title">Practice 5 Answers</h1>
 <p class="subtitle lead">PUBH 523/623</p>
 </div>
 
@@ -4089,7 +4120,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Your name here </p>
+             <p>Nicky Wakim </p>
           </div>
   </div>
     
@@ -4108,73 +4139,26 @@ vertical-align: -.125em;
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This practice is mostly <strong>hands-on</strong>. You will start transforming the HRS dataset the way real analysts do: keeping and reordering the rows and columns you need, creating new variables, and combining conditions to answer more specific questions about respondents. Along the way you’ll get a little more practice with the pipe (<code>|&gt;</code>) and with data frames in general — but the focus this week is on the new <code>dplyr</code> verbs.</p>
-<p>Topics covered (Lessons 20-23):</p>
-<ul>
-<li>Intro to data transformations and summarizations</li>
-<li>Data transformation: rows</li>
-<li>Data transformation: columns</li>
-<li>Data transformations: advanced</li>
-</ul>
-</section>
-<section id="directions" class="level2">
-<h2 class="anchored" data-anchor-id="directions">Directions</h2>
-<p>Download this practice <code>.qmd</code> from the course GitHub repository, rename it, and save it in your course folder.</p>
-<ol type="1">
-<li><a href="https://github.com/nwakim/PUBH_523_26Su/blob/main/practice/practice_05.qmd">Download <code>practice_05.qmd</code> from GitHub.</a></li>
-<li>Rename the file to <code>Lastname_Firstinitial_Practice_05.qmd</code> (or <code>lastname_firstinitial_practice_05.qmd</code>), replacing with your actual last name and first initial.</li>
-<li>Save it inside your <code>practice</code> folder. You may create a <code>practice_05</code> subfolder if you prefer.</li>
-</ol>
-<div class="callout callout-style-simple callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>How to use this file
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
+<span id="annotated-cell-1-2"><a href="#annotated-cell-1-2" aria-hidden="true" tabindex="-1"></a>  tidyverse, </span>
+<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3" aria-hidden="true" tabindex="-1"></a>  rio, </span>
+<span id="annotated-cell-1-4"><a href="#annotated-cell-1-4" aria-hidden="true" tabindex="-1"></a>  here</span>
+<span id="annotated-cell-1-5"><a href="#annotated-cell-1-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="annotated-cell-1-6"><a href="#annotated-cell-1-6" aria-hidden="true" tabindex="-1"></a></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-1-7" class="code-annotation-target"><a href="#annotated-cell-1-7" aria-hidden="true" tabindex="-1"></a>hrs_data <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;hrs_data.rds&quot;</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="7" data-code-annotation="1">This file path is specific to my folder set-up.</span>
+</dd>
+</dl>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>The boxes with the <strong>yellow stripe</strong> explain what to do. Keep these in your submitted file.</li>
-<li>Do all your work <strong>below and outside</strong> of the yellow-striped boxes.
-<ul>
-<li><em>You will need to create code chunks within this document to run your R code.</em></li>
-</ul></li>
-<li>Please delete the following sections before submitting:
-<ul>
-<li>Overview</li>
-<li>Directions</li>
-<li>Tip boxes (green stripe)</li>
-<li>Caution boxes / Needed Steps (orange/red stripe)</li>
-<li>Submission checklist</li>
-<li>Note on AI usage</li>
-</ul></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-simple callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Needed setup
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>You should already have <code>hrs_data.rds</code> from Practice 4 (link on the practice page). Place it in your <code>data</code> folder if you haven’t already.
-<ul>
-<li>You can check out the <a href="./resources/HRS_codebook.qmd">codebook here</a></li>
-</ul></li>
-<li>Load the <code>tidyverse</code>, <code>here</code>, and <code>rio</code> packages. <code>tidyverse</code> includes both <code>dplyr</code> (for this week’s functions) and <code>forcats</code> (for the factor functions in Question 4).</li>
-</ul>
-</div>
-</div>
-</section>
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <section id="question-1-dplyr-basics" class="level3">
@@ -4195,7 +4179,10 @@ vertical-align: -.125em;
 <p>In 1 sentence, describe the general input and output of most <code>dplyr</code> functions. What type of object typically goes in, and what type of object comes out?</p>
 </div>
 </div>
-<p><em>Write your answer here.</em></p>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-b-sort-the-verbs" class="level4">
 <h4 class="anchored" data-anchor-id="part-b-sort-the-verbs">Part B: Sort the verbs</h4>
@@ -4217,10 +4204,10 @@ vertical-align: -.125em;
 </ol>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 19%">
-<col style="width: 36%">
-<col style="width: 19%">
-<col style="width: 25%">
+<col style="width: 9%">
+<col style="width: 42%">
+<col style="width: 17%">
+<col style="width: 29%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4289,6 +4276,82 @@ vertical-align: -.125em;
 </table>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Example of mutate:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 42%">
+<col style="width: 17%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Rows, Columns, or Groups (not yet covered)?</th>
+<th>What does it do?</th>
+<th>Expected output on <code>hrs_data</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>filter()</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>select()</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>mutate()</code></td>
+<td>Columns</td>
+<td>Creates a new column, or changes the values in an existing one</td>
+<td>Same rows, same original columns plus any new column(s) added</td>
+</tr>
+<tr class="even">
+<td><code>arrange()</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>distinct()</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>relocate()</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>rename()</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>group_by()</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>summarize()</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 </section>
 <section id="question-2-data-transformation-rows" class="level3">
@@ -4308,6 +4371,41 @@ vertical-align: -.125em;
 </div>
 <div class="callout-body-container callout-body">
 <p>Use <code>filter()</code> to keep only respondents whose <code>cond_count</code> (total number of chronic conditions) is <strong>5 or more</strong>. Assign this to <code>hrs_01_filter_conditions</code>, and use <code>nrow()</code> to report how many respondents that is.</p>
+</div>
+</div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Here’s an example to show you the pattern — the rest of your answers should follow this same style, with code chunks and a <code>#| ...</code> chunk options as needed.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>hrs_01_filter_conditions <span class="ot">&lt;-</span> hrs_data <span class="sc">|&gt;</span> </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(cond_count <span class="sc">&gt;=</span> <span class="dv">5</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(hrs_01_filter_conditions)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 97</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(hrs_01_filter_conditions)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 97 × 32
+   HHID  pn    id    BIRTHYR BIRTHMO BIRTHDATE proxy coupled sex   age_mo age_yr
+   &lt;fct&gt; &lt;fct&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;   &lt;fct&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+ 1 5511… 010   5511…    1940      10     -7170 Resp… Not a … Fema…    992     82
+ 2 5509… 020   5509…    1967       6      2722 Resp… Couple… Fema…    665     55
+ 3 5599… 010   5599…    1960      11       319 Resp… Not a … Fema…    757     63
+ 4 5501… 020   5501…    1953       6     -2361 Resp… Couple… Male     838     69
+ 5 5566… 010   5566…    1937       8     -7444 Resp… Couple… Fema…   1013     84
+ 6 5511… 020   5511…    1973       2      4763 Resp… Couple… Fema…    607     50
+ 7 5599… 010   5599…    1950       7     -3548 Resp… Not a … Fema…    868     72
+ 8 5510… 020   5510…    1957       3     -1022 Resp… Couple… Male     801     66
+ 9 5569… 010   5569…    1945       2     -5374 Resp… Not a … Male     935     77
+10 5572… 010   5572…    1971       7      4213 Resp… Not a … Fema…    618     51
+# ℹ 87 more rows
+# ℹ 21 more variables: ed &lt;dbl&gt;, degree &lt;fct&gt;, race_original &lt;fct&gt;,
+#   smoke_ever &lt;fct&gt;, smoke_now &lt;fct&gt;, drink &lt;fct&gt;, height &lt;dbl&gt;, srh &lt;fct&gt;,
+#   act_vig &lt;fct&gt;, bp &lt;fct&gt;, diab &lt;fct&gt;, cancer &lt;fct&gt;, lung &lt;fct&gt;, hrt &lt;fct&gt;,
+#   strk &lt;fct&gt;, psych &lt;fct&gt;, sleep &lt;fct&gt;, arth &lt;fct&gt;, cond_count &lt;dbl&gt;,
+#   cesd &lt;dbl&gt;, income &lt;dbl&gt;</code></pre>
+</div>
 </div>
 </div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
@@ -4336,6 +4434,10 @@ vertical-align: -.125em;
 <p>Remember: if you misspell or mis-capitalize a value for a categorical/factor variable, <code>filter()</code> will <strong>not</strong> throw an error — it will just silently return 0 rows. Always check your output!</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-b-arrange" class="level4">
 <h4 class="anchored" data-anchor-id="part-b-arrange">Part B: <code>arrange()</code></h4>
@@ -4352,6 +4454,10 @@ vertical-align: -.125em;
 <p>Sort <code>hrs_data</code> by <code>cesd</code> in <strong>descending</strong> order first, and within ties, by <code>age_yr</code> in <strong>ascending</strong> order. Assign the result to <code>hrs_03_arrange</code>, and print it using <code>tibble()</code>.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4365,7 +4471,10 @@ vertical-align: -.125em;
 <p>In 1 sentence, describe what would change about the output if you arranged by <code>age_yr</code> first and <code>cesd</code> second instead.</p>
 </div>
 </div>
-<p><em>Write your answer here.</em></p>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-c-distinct" class="level4">
 <h4 class="anchored" data-anchor-id="part-c-distinct">Part C: <code>distinct()</code></h4>
@@ -4382,6 +4491,44 @@ vertical-align: -.125em;
 <p>Use <code>distinct()</code> on <code>degree</code> and <code>race_original</code> together to see how many unique combinations of these two variables exist in <code>hrs_data</code>. Assign this to <code>hrs_04_distinct</code>, and print it using <code>tibble()</code>.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>The resulting distinct combinations would look like this:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                                degree          race_original
+1                                 &lt;NA&gt;                   &lt;NA&gt;
+2                  High school diploma        White/Caucasian
+3                      Master&#39;s degree        White/Caucasian
+4                      Master&#39;s degree Black/African American
+5  Professional degree (Ph.D./M.D./JD)        White/Caucasian
+6                                 None Black/African American
+7                   Associate&#39;s degree Black/African American
+8  Professional degree (Ph.D./M.D./JD)                  Other
+9                                  GED        White/Caucasian
+10                 High school diploma Black/African American
+11                                None        White/Caucasian
+12                  Associate&#39;s degree        White/Caucasian
+13                                None                  Other
+14                     Master&#39;s degree                  Other
+15                  Associate&#39;s degree                  Other
+16 Professional degree (Ph.D./M.D./JD) Black/African American
+17                                 GED Black/African American
+18                   Bachelor&#39;s degree        White/Caucasian
+19                                None                   &lt;NA&gt;
+20                   Bachelor&#39;s degree                  Other
+21                   Bachelor&#39;s degree Black/African American
+22                                 GED                  Other
+23                 High school diploma                  Other
+24                                &lt;NA&gt;                  Other
+25                   Bachelor&#39;s degree                   &lt;NA&gt;
+26                 High school diploma                   &lt;NA&gt;
+27                     Master&#39;s degree                   &lt;NA&gt;
+28                  Associate&#39;s degree                   &lt;NA&gt;
+29                                &lt;NA&gt; Black/African American</code></pre>
+</div>
+</div>
+</div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4394,6 +4541,10 @@ vertical-align: -.125em;
 <div class="callout-body-container callout-body">
 <p>Use <code>distinct()</code> on <code>degree</code> again, but this time with <code>.keep_all = TRUE</code>, so you keep the full row (all columns) for the first respondent found at each unique <code>degree</code> value. Assign this to <code>hrs_05_distinct_all</code>.</p>
 </div>
+</div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
 </div>
 </section>
 </section>
@@ -4415,6 +4566,10 @@ vertical-align: -.125em;
 <p>Use <code>select()</code> to keep only <code>id</code>, <code>age_yr</code>, <code>ed</code>, <code>degree</code>, <code>income</code>, <code>cesd</code>, and <code>srh</code> from <code>hrs_data</code>. Assign this to <code>hrs_06_vars_subset</code>.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4427,6 +4582,10 @@ vertical-align: -.125em;
 <div class="callout-body-container callout-body">
 <p>Starting from <code>hrs_06_vars_subset</code>, use <code>relocate()</code> to move <code>srh</code> so that it comes right after <code>id</code>. Assign this to <code>hrs_07_reloc</code>, and print it using <code>tibble()</code>.</p>
 </div>
+</div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
 </div>
 </section>
 <section id="part-b-mutate" class="level4">
@@ -4457,6 +4616,14 @@ vertical-align: -.125em;
 <p>Remember, inside <code>mutate()</code> you use a single <code>=</code>, not <code>&lt;-</code> or <code>==</code>, to define your new column.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Start with something like:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>hrs_08_mutate <span class="ot">&lt;-</span> hrs_data <span class="sc">|&gt;</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">height_ft =</span> ______ )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 </section>
 <section id="part-c-rename" class="level4">
 <h4 class="anchored" data-anchor-id="part-c-rename">Part C: <code>rename()</code></h4>
@@ -4472,6 +4639,10 @@ vertical-align: -.125em;
 <div class="callout-body-container callout-body">
 <p>Using <code>hrs_data</code>, rename <code>cesd</code> to <code>depression_score</code> and <code>srh</code> to <code>self_rated_health</code>. Assign the result to <code>hrs_09_rename</code>, and print <code>names(hrs_09_rename)</code> to confirm the change.</p>
 </div>
+</div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
 </div>
 </section>
 </section>
@@ -4493,6 +4664,10 @@ vertical-align: -.125em;
 <p>Before writing any code: do you expect <em>more</em> respondents to have diabetes <strong>AND</strong> high blood pressure (<code>bp</code>), or diabetes <strong>OR</strong> high blood pressure? Explain your reasoning in 1 sentence.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4504,6 +4679,14 @@ vertical-align: -.125em;
 </div>
 <div class="callout-body-container callout-body">
 <p>Use <code>filter()</code> with <code>&amp;</code> to find respondents who <strong>have diabetes and have high blood pressure</strong>. Assign this to <code>hrs_10_filter_diab_bp</code>.</p>
+</div>
+</div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Start with something like:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>hrs_10_filter_diab_bp <span class="ot">&lt;-</span> hrs_data <span class="sc">|&gt;</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(______ <span class="sc">&amp;</span> _______)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
@@ -4519,6 +4702,10 @@ vertical-align: -.125em;
 <p>Use <code>filter()</code> with <code>|</code> to find respondents who <strong>have diabetes or have high blood pressure</strong>. Assign this to <code>hrs_11_filter_diab_or_bp</code>.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4529,8 +4716,12 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use <code>nrow()</code> (or <code>count()</code>) on both objects to check whether your prediction from Task 1 was correct.</p>
+<p>Print <code>hrs_10_filter_diab_bp</code> and <code>hrs_11_filter_diab_or_bp</code> using <code>tibble()</code>, and reference the row count shown at the top of each output to compare how many respondents are in each data frame. Then use <code>distinct()</code> on <code>diab</code> and <code>bp</code> within each object to see which combinations of <code>diab</code> and <code>bp</code> are actually present in each dataset. Does this match your prediction from Task 1?</p>
 </div>
+</div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
 </div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4544,6 +4735,10 @@ vertical-align: -.125em;
 <div class="callout-body-container callout-body">
 <p>Now combine <strong>multiple</strong> logic statements in a single <code>filter()</code>: find respondents who <strong>have diabetes and have high blood pressure, or who have more than 5 chronic conditions</strong>. Assign this to <code>hrs_12_filter_combo</code>. Think carefully about where your parentheses go.</p>
 </div>
+</div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
 </div>
 </section>
 <section id="part-b-case_when" class="level4">
@@ -4563,7 +4758,7 @@ vertical-align: -.125em;
 <li><code>&quot;&lt;25k&quot;</code> if <code>income</code> is less than $25,000</li>
 <li><code>&quot;25k-50k&quot;</code> if <code>income</code> is at least $25,000 but less than $50,000</li>
 <li><code>&quot;50k+&quot;</code> if <code>income</code> is $50,000 or more</li>
-<li><code>&quot;unknown&quot;</code> if <code>income</code> is missing (use <code>.default</code> for this case)</li>
+<li><code>NA</code> if <code>income</code> is missing (use <code>.default</code> for this case)</li>
 </ul>
 <p>Then use <code>fct()</code> to convert <code>income_cat</code> into a factor. Assign your final result to <code>hrs_13_case_when</code>, and check your work using <code>count()</code>.</p>
 </div>
@@ -4581,6 +4776,21 @@ vertical-align: -.125em;
 <p>For the middle category, you’ll need an <code>&amp;</code> statement inside <code>case_when()</code>, similar to how we combined conditions in Part A.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Start with something like:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>hrs_13_case_when <span class="ot">&lt;-</span> hrs_data <span class="sc">|&gt;</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">income_cat =</span> <span class="fu">case_when</span>(</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>      ______ <span class="sc">~</span> ______,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>      ______ <span class="sc">~</span> ______,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>      ______ <span class="sc">~</span> ______,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">.default =</span> ______</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 </section>
 <section id="part-c-factors" class="level4">
 <h4 class="anchored" data-anchor-id="part-c-factors">Part C: Factors</h4>
@@ -4595,6 +4805,16 @@ vertical-align: -.125em;
 </div>
 <div class="callout-body-container callout-body">
 <p>Check the current class of <code>hrs_data$srh</code> using <code>class()</code>.</p>
+</div>
+</div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Example:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(hrs_data<span class="sc">$</span>srh)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;factor&quot;</code></pre>
+</div>
 </div>
 </div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
@@ -4623,6 +4843,10 @@ vertical-align: -.125em;
 <p>If you misspell one of the levels inside <code>fct_relevel()</code>, R will not throw an error — it will silently drop that level to the bottom of the order (and print a warning in the console). Double-check your spelling against the original values in <code>srh</code>!</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4635,6 +4859,10 @@ vertical-align: -.125em;
 <div class="callout-body-container callout-body">
 <p>Now suppose you had instead written <code>fct_relevel(srh, &quot;Excellent&quot;, &quot;Very good&quot;, &quot;Good&quot;, &quot;Fair&quot;, &quot;Poor&quot;)</code> — with a lowercase “g” in <code>&quot;Very good&quot;</code>. Run this version and look at the warning message R gives you. In 1-2 sentences, explain what the warning is telling you and why it happens.</p>
 </div>
+</div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
 </div>
 </section>
 <section id="part-d-selecting-columns-by-pattern-or-type" class="level4">
@@ -4652,6 +4880,14 @@ vertical-align: -.125em;
 <p>Use <code>select()</code> with <code>contains()</code> to grab all columns in <code>hrs_data</code> whose name contains <code>&quot;smoke&quot;</code>. Assign this to <code>hrs_15_select_contains</code>, and print it using <code>tibble()</code>.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Start with something like:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>hrs_15_select_contains <span class="ot">&lt;-</span> hrs_data <span class="sc">|&gt;</span> </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(________)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4665,35 +4901,14 @@ vertical-align: -.125em;
 <p>Use <code>select()</code> with <code>where(is.factor)</code> to grab all factor columns in <code>hrs_data</code>, and pipe the result into <code>names()</code> so you just see the column names.</p>
 </div>
 </div>
-</section>
-</section>
-</section>
-<section id="submission-checklist" class="level2">
-<h2 class="anchored" data-anchor-id="submission-checklist">Submission Checklist</h2>
-<p>If having a checklist helps you stay organized, check off each item below as you complete it. You do not need to submit this checklist.</p>
-<ul class="task-list">
-<li><label><input type="checkbox">Input/output of <code>dplyr</code> functions described (Q1 Part A)</label></li>
-<li><label><input type="checkbox"><code>dplyr</code> functions sorted into rows/columns/groups, with what they do and expected output (Q1 Part B)</label></li>
-<li><label><input type="checkbox"><code>hrs_01_filter_conditions</code> and <code>hrs_02_filter_srh</code> created with <code>filter()</code> (Q2 Part A)</label></li>
-<li><label><input type="checkbox"><code>hrs_03_arrange</code> created with <code>arrange()</code> on two variables, with explanation (Q2 Part B)</label></li>
-<li><label><input type="checkbox"><code>hrs_04_distinct</code> and <code>hrs_05_distinct_all</code> created with <code>distinct()</code> (Q2 Part C)</label></li>
-<li><label><input type="checkbox"><code>hrs_06_vars_subset</code> created with <code>select()</code>, then <code>srh</code> relocated after <code>id</code> in <code>hrs_07_reloc</code> (Q3 Part A)</label></li>
-<li><label><input type="checkbox"><code>hrs_08_mutate</code> created with <code>height_ft</code> and relocated next to <code>height</code> (Q3 Part B)</label></li>
-<li><label><input type="checkbox"><code>hrs_09_rename</code> created with <code>rename()</code>, names confirmed (Q3 Part C)</label></li>
-<li><label><input type="checkbox">Prediction made, <code>hrs_10_filter_diab_bp</code> and <code>hrs_11_filter_diab_or_bp</code> created and compared, <code>hrs_12_filter_combo</code> written with combined <code>&amp;</code>/<code>|</code> statement (Q4 Part A)</label></li>
-<li><label><input type="checkbox"><code>hrs_13_case_when</code> created with <code>case_when()</code> (4 categories, including <code>.default</code>), converted to a factor with <code>fct()</code>, checked with <code>count()</code> (Q4 Part B)</label></li>
-<li><label><input type="checkbox"><code>hrs_14_relevel</code> created with <code>fct_relevel()</code> on <code>srh</code>, confirmed with <code>levels()</code> (Q4 Part C)</label></li>
-<li><label><input type="checkbox"><code>hrs_15_select_contains</code> created with <code>contains()</code>, and columns selected with <code>where(is.factor)</code> (Q4 Part D)</label></li>
-<li><label><input type="checkbox">Document renders to HTML with no errors</label></li>
-<li><label><input type="checkbox">Files named correctly: <code>Lastname_Firstinitial_Practice_05.qmd</code> and <code>Lastname_Firstinitial_Practice_05.html</code> (or lowercase versions)</label></li>
-<li><label><input type="checkbox">Both <code>.qmd</code> and <code>.html</code> submitted to Brightspace</label></li>
-</ul>
-</section>
-<section id="note-on-ai-usage" class="level2">
-<h2 class="anchored" data-anchor-id="note-on-ai-usage">Note on AI usage</h2>
-<p>I used GenAI (Claude) to help me draft this practice assignment. It helped me brainstorm ideas for the assignment, and I directed it to help you complete the needed tasks that I showed in the lessons.</p>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
