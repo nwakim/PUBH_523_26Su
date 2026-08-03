@@ -441,5 +441,41 @@
   },
   "practice/practice_05_ans.qmd": {
     "practice_05_ans.html": "172ee35d"
+  },
+  "lessons/24_Data_summarization_intro/24_Data_summarization_intro.qmd": {
+    "24_Data_summarization_intro.html": "17e44502"
+  },
+  "lessons/25_Data_summarization_quick/25_Data_summarization_quick.qmd": {
+    "25_Data_summarization_quick.html": "9039cffd"
+  },
+  "lessons/26_Data_summarization_groups/26_Data_summarization_groups.qmd": {
+    "26_Data_summarization_groups.html": "ef9ea964"
+  },
+  "lessons/27_Data_summarization_tables/27_Data_summarization_tables.qmd": {
+    "27_Data_summarization_tables.html": "0285c2e3"
+  },
+  "lessons/data_summ_try/24_Data_summarization_intro.qmd": {
+    "24_Data_summarization_intro.html": "851f3ac6"
+  },
+  "lessons/data_summ_try/25_Data_summarization_quick.qmd": {
+    "25_Data_summarization_quick.html": "64475591"
+  },
+  "lessons/data_summ_try/26_Data_summarization_groups.qmd": {
+    "26_Data_summarization_groups.html": "5b18edf2"
+  },
+  "lessons/data_summ_try/27_Data_summarization_tables.qmd": {
+    "27_Data_summarization_tables.html": "c5b4302c"
+  },
+  "lessons/28_Data_transformation_common_errors/Data_transformation_common_errors.qmd": {
+    "Data_transformation_common_errors.html": "5da67cb8"
+  },
+  "lessons/29_Data_viz_Intro_to_ggplot/26_Data_viz_Intro_to_ggplot.qmd": {
+    "26_Data_viz_Intro_to_ggplot.html": "d1b6b141"
+  },
+  "lessons/26_Data_summarization_tables/26_Data_summarization_tables.qmd": {
+    "26_Data_summarization_tables.html": "49ed7b04"
+  },
+  "lessons/27_Data_summarization_groups/27_Data_summarization_groups.qmd": {
+    "27_Data_summarization_groups.html": "0aeea001"
   }
 }
