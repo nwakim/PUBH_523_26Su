@@ -477,5 +477,17 @@
   },
   "lessons/27_Data_summarization_groups/27_Data_summarization_groups.qmd": {
     "27_Data_summarization_groups.html": "0aeea001"
+  },
+  "lessons/25_Data_summarization_quick/Data_summarization_quick.qmd": {
+    "Data_summarization_quick.html": "8794c166"
+  },
+  "lessons/24_Data_summarization_intro/Data_summarization_intro.qmd": {
+    "Data_summarization_intro.html": "ab3e95e2"
+  },
+  "lessons/26_Data_summarization_tables/Data_summarization_tables.qmd": {
+    "Data_summarization_tables.html": "1e098a00"
+  },
+  "lessons/27_Data_summarization_groups/Data_summarization_groups.qmd": {
+    "Data_summarization_groups.html": "e4889ed8"
   }
 }
