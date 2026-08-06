@@ -4063,12 +4063,14 @@ vertical-align: -.125em;
   <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
   <li><a href="#lab-activities" id="toc-lab-activities" class="nav-link" data-scroll-target="#lab-activities"><span class="header-section-number">1</span> Lab activities</a>
   <ul class="collapse">
-  <li><a href="#filtering-to-your-target-subpopulation" id="toc-filtering-to-your-target-subpopulation" class="nav-link" data-scroll-target="#filtering-to-your-target-subpopulation"><span class="header-section-number">1.1</span> Filtering to Your Target Subpopulation</a></li>
-  <li><a href="#selecting-project-variables" id="toc-selecting-project-variables" class="nav-link" data-scroll-target="#selecting-project-variables"><span class="header-section-number">1.2</span> Selecting Project Variables</a></li>
-  <li><a href="#quick-browsing-of-data" id="toc-quick-browsing-of-data" class="nav-link" data-scroll-target="#quick-browsing-of-data"><span class="header-section-number">1.3</span> Quick browsing of data</a></li>
-  <li><a href="#rename-variables-for-clarity" id="toc-rename-variables-for-clarity" class="nav-link" data-scroll-target="#rename-variables-for-clarity"><span class="header-section-number">1.4</span> Rename variables for clarity</a></li>
-  <li><a href="#remove-nas" id="toc-remove-nas" class="nav-link" data-scroll-target="#remove-nas"><span class="header-section-number">1.5</span> Remove NA’s</a></li>
-  <li><a href="#constructing-the-composite-score" id="toc-constructing-the-composite-score" class="nav-link" data-scroll-target="#constructing-the-composite-score"><span class="header-section-number">1.6</span> Constructing the Composite Score</a></li>
+  <li><a href="#import-your-saved-data-from-lab-1" id="toc-import-your-saved-data-from-lab-1" class="nav-link" data-scroll-target="#import-your-saved-data-from-lab-1"><span class="header-section-number">1.1</span> Import your saved data from Lab 1</a></li>
+  <li><a href="#filtering-to-your-target-subpopulation" id="toc-filtering-to-your-target-subpopulation" class="nav-link" data-scroll-target="#filtering-to-your-target-subpopulation"><span class="header-section-number">1.2</span> Filtering to Your Target Subpopulation</a></li>
+  <li><a href="#selecting-project-variables" id="toc-selecting-project-variables" class="nav-link" data-scroll-target="#selecting-project-variables"><span class="header-section-number">1.3</span> Selecting Project Variables</a></li>
+  <li><a href="#quick-browsing-of-data" id="toc-quick-browsing-of-data" class="nav-link" data-scroll-target="#quick-browsing-of-data"><span class="header-section-number">1.4</span> Quick browsing of data</a></li>
+  <li><a href="#rename-variables-for-clarity" id="toc-rename-variables-for-clarity" class="nav-link" data-scroll-target="#rename-variables-for-clarity"><span class="header-section-number">1.5</span> Rename variables for clarity</a></li>
+  <li><a href="#remove-nas" id="toc-remove-nas" class="nav-link" data-scroll-target="#remove-nas"><span class="header-section-number">1.6</span> Remove NA’s</a></li>
+  <li><a href="#constructing-the-composite-score" id="toc-constructing-the-composite-score" class="nav-link" data-scroll-target="#constructing-the-composite-score"><span class="header-section-number">1.7</span> Constructing the Composite Score</a></li>
+  <li><a href="#export-datasets" id="toc-export-datasets" class="nav-link" data-scroll-target="#export-datasets"><span class="header-section-number">1.8</span> Export datasets</a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Lab_02_instructions.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -4097,7 +4099,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">August 4, 2026</p>
+      <p class="date-modified">August 6, 2026</p>
     </div>
   </div>
     
@@ -4191,8 +4193,24 @@ display: none;
 </tr>
 </tbody>
 </table>
-<section id="filtering-to-your-target-subpopulation" class="level3" data-number="1.1">
-<h3 data-number="1.1" class="anchored" data-anchor-id="filtering-to-your-target-subpopulation"><span class="header-section-number">1.1</span> Filtering to Your Target Subpopulation</h3>
+<section id="import-your-saved-data-from-lab-1" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="import-your-saved-data-from-lab-1"><span class="header-section-number">1.1</span> Import your saved data from Lab 1</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>From the exported data file you created in Lab 1, import your data into R using <code>import()</code> from the <code>rio</code> package. Save this as a new object called <code>wbns_00</code>. Print out the number of rows and columns to verify the import.</p>
+</div>
+</div>
+</section>
+<section id="filtering-to-your-target-subpopulation" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="filtering-to-your-target-subpopulation"><span class="header-section-number">1.2</span> Filtering to Your Target Subpopulation</h3>
 <p>To implement an asset-focused analysis, we must first isolate the subpopulation relevant to your project using <code>filter()</code>.</p>
 <ul>
 <li><strong>For Project 1:</strong> Filter to respondents under 100% of the federal poverty line by keeping rows where <code>FPL_LT50</code> <strong>or</strong> <code>FPL50_100</code> equal <code>&quot;Yes&quot;</code>.</li>
@@ -4226,8 +4244,8 @@ Caution
 </div>
 </div>
 </section>
-<section id="selecting-project-variables" class="level3" data-number="1.2">
-<h3 data-number="1.2" class="anchored" data-anchor-id="selecting-project-variables"><span class="header-section-number">1.2</span> Selecting Project Variables</h3>
+<section id="selecting-project-variables" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="selecting-project-variables"><span class="header-section-number">1.3</span> Selecting Project Variables</h3>
 <p>Your dataset contains hundreds of variables. For project clarity, reduce your data frame to only the variables in the informational table above. This means keeping ID variables, the population variables, the <strong>main</strong> variables, and suggested additional variables. If you are interested in other variables, feel free to include 0-3 additional variables not listed.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4243,8 +4261,8 @@ Caution
 </div>
 </div>
 </section>
-<section id="quick-browsing-of-data" class="level3" data-number="1.3">
-<h3 data-number="1.3" class="anchored" data-anchor-id="quick-browsing-of-data"><span class="header-section-number">1.3</span> Quick browsing of data</h3>
+<section id="quick-browsing-of-data" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="quick-browsing-of-data"><span class="header-section-number">1.4</span> Quick browsing of data</h3>
 <p>Using <code>skim()</code> or another summary function, take a quick look at your data to see what you are working with. This will help you identify any missing values or refusals that may need to be handled in your new variable construction.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4261,8 +4279,8 @@ Caution
 </div>
 </div>
 </section>
-<section id="rename-variables-for-clarity" class="level3" data-number="1.4">
-<h3 data-number="1.4" class="anchored" data-anchor-id="rename-variables-for-clarity"><span class="header-section-number">1.4</span> Rename variables for clarity</h3>
+<section id="rename-variables-for-clarity" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="rename-variables-for-clarity"><span class="header-section-number">1.5</span> Rename variables for clarity</h3>
 <p>Most variables in the WBNS dataset are named after their survey question code (e.g. <code>Q108B_2</code>), which isn’t very informative on its own and is easy to mix up as your pipeline grows. Renaming your selected variables to short, descriptive names now will make the rest of your code easier to read and less error-prone.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4278,8 +4296,8 @@ Caution
 </div>
 </div>
 </section>
-<section id="remove-nas" class="level3" data-number="1.5">
-<h3 data-number="1.5" class="anchored" data-anchor-id="remove-nas"><span class="header-section-number">1.5</span> Remove NA’s</h3>
+<section id="remove-nas" class="level3" data-number="1.6">
+<h3 data-number="1.6" class="anchored" data-anchor-id="remove-nas"><span class="header-section-number">1.6</span> Remove NA’s</h3>
 <p>During your “Quick browsing of data” step, you likely noticed some missing values and/or “Refused” or “Don’t know” responses. These need to be handled <em>before</em> you calculate your composite score, since <code>NA</code> (and non-numeric strings like <code>&quot;Refused&quot;</code>) will disrupt arithmetic and summary functions — for example, <code>5 + NA</code> returns <code>NA</code>, not <code>5</code>.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4295,8 +4313,8 @@ Caution
 </div>
 </div>
 </section>
-<section id="constructing-the-composite-score" class="level3" data-number="1.6">
-<h3 data-number="1.6" class="anchored" data-anchor-id="constructing-the-composite-score"><span class="header-section-number">1.6</span> Constructing the Composite Score</h3>
+<section id="constructing-the-composite-score" class="level3" data-number="1.7">
+<h3 data-number="1.7" class="anchored" data-anchor-id="constructing-the-composite-score"><span class="header-section-number">1.7</span> Constructing the Composite Score</h3>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4332,8 +4350,8 @@ Caution
 </div>
 </div>
 <p><strong>Below are project-specific instructions for your composite score:</strong></p>
-<section id="project-1-ease-of-accessing-free-food" class="level4" data-number="1.6.1">
-<h4 data-number="1.6.1" class="anchored" data-anchor-id="project-1-ease-of-accessing-free-food"><span class="header-section-number">1.6.1</span> Project 1: Ease of accessing free food</h4>
+<section id="project-1-ease-of-accessing-free-food" class="level4" data-number="1.7.1">
+<h4 data-number="1.7.1" class="anchored" data-anchor-id="project-1-ease-of-accessing-free-food"><span class="header-section-number">1.7.1</span> Project 1: Ease of accessing free food</h4>
 <p>Your composite combines the four <code>Q26D_</code> items, which each ask how difficult or easy a different aspect of accessing free groceries/meals was (finding a place, finding transportation, variety of food, and getting there in a reasonable time). Per the questionnaire, the response scale is <strong>Very difficult (1), Difficult (2), Neither difficult nor easy (3), Easy (4), Very easy (5), Don’t know (6)</strong>.</p>
 <ul>
 <li>Recode any value of 6 (“Don’t know”) to <code>NA</code> before converting to numeric.</li>
@@ -4344,8 +4362,8 @@ Caution
 </ul></li>
 </ul>
 </section>
-<section id="project-2-trust-courtesy-and-respect" class="level4" data-number="1.6.2">
-<h4 data-number="1.6.2" class="anchored" data-anchor-id="project-2-trust-courtesy-and-respect"><span class="header-section-number">1.6.2</span> Project 2: Trust, courtesy, and respect</h4>
+<section id="project-2-trust-courtesy-and-respect" class="level4" data-number="1.7.2">
+<h4 data-number="1.7.2" class="anchored" data-anchor-id="project-2-trust-courtesy-and-respect"><span class="header-section-number">1.7.2</span> Project 2: Trust, courtesy, and respect</h4>
 <p>Your composite combines <code>Q108B_1</code> (“I am treated with courtesy and respect by my personal health care provider”) and <code>Q108B_2</code> (“I trust my personal health care provider”). Per the questionnaire, both share the same response scale: <strong>Never true (1), Rarely true (2), Sometimes true (3), Often true (4), Always true (5)</strong></p>
 <ul>
 <li>Convert both items to numeric with <code>as.numeric()</code>. Higher values already mean <em>more</em> trust/courtesy/respect — no reverse-coding needed.</li>
@@ -4353,8 +4371,8 @@ Caution
 <li><em>Optional:</em> if you pull in <code>Q70F_4</code> and <code>Q70F_5</code>, you could build a second, related composite capturing whether the respondent felt judged unfairly based on gender identity or sexual orientation, and compare it against your trust/courtesy/respect score.</li>
 </ul>
 </section>
-<section id="project-3-mental-health-and-total-benefits-read-this-one-carefully" class="level4" data-number="1.6.3">
-<h4 data-number="1.6.3" class="anchored" data-anchor-id="project-3-mental-health-and-total-benefits-read-this-one-carefully"><span class="header-section-number">1.6.3</span> Project 3: Mental health and total benefits — <strong>read this one carefully!</strong></h4>
+<section id="project-3-mental-health-and-total-benefits-read-this-one-carefully" class="level4" data-number="1.7.3">
+<h4 data-number="1.7.3" class="anchored" data-anchor-id="project-3-mental-health-and-total-benefits-read-this-one-carefully"><span class="header-section-number">1.7.3</span> Project 3: Mental health and total benefits — <strong>read this one carefully!</strong></h4>
 <p>This project asks for <em>two</em> composite scores, and both have a wrinkle worth slowing down for. Don’t try to do it all in one <code>mutate()</code> — build it up piece by piece.</p>
 <p><strong>Mental health composite</strong> (from <code>Q30_1</code>–<code>Q30_6</code>):</p>
 <p>These six items ask how often in the past 30 days the respondent felt nervous, hopeless, restless/fidgety, so sad that nothing could cheer them up, that everything was an effort, or worthless. Per the questionnaire, it runs <strong>All of the time (1), Most of the time (2), Some of the time (3), A little of the time (4), None of the time (5)</strong>. That means a <em>lower</em> numeric code = more frequent distress (worse mental health), and a <em>higher</em> numeric code = less frequent distress (better mental health).</p>
@@ -4384,9 +4402,33 @@ Caution
 <li><strong>Add every 0/1 benefit indicator together</strong> into <code>total_benefits</code> — a count of how many <em>different</em> types of benefits the household receives (not how many <code>Q53_</code> questions they answered “Yes” to).</li>
 <li><em>Optional:</em> bucket <code>total_benefits</code> into a categorical variable (e.g., “0”, “1”, “2”, “3”, “4+”) for easier visualization later.</li>
 </ol>
-
-
 </section>
+</section>
+<section id="export-datasets" class="level3" data-number="1.8">
+<h3 data-number="1.8" class="anchored" data-anchor-id="export-datasets"><span class="header-section-number">1.8</span> Export datasets</h3>
+<p>It’s important to save your work! We want to export the datasets we created along the way so we can use them in future labs and in our final project. Use <code>export()</code> in <code>rio</code> to save the following datasets in a <code>.rda</code> file in your <code>data_project</code> folder:</p>
+<ul>
+<li><code>wbns_01_pop</code></li>
+<li><code>wbns_02_pop_vars</code></li>
+<li><code>wbns_03_renamed</code></li>
+<li><code>wbns_04_no_na</code></li>
+<li><code>wbns_05_composite</code></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Save your datasets in a <code>.rda</code> file in your <code>data_project</code> folder. Name the file something that will help you identify it later, like <code>wbns_data_lab_02_work.rda</code> or <code>wbns_data_02_pop_comp.rda</code></p>
+</div>
+</div>
+
+
 </section>
 </section>
 
