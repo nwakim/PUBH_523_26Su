@@ -499,5 +499,20 @@
   },
   "practice/practice_06_ans.qmd": {
     "practice_06_ans.html": "7979d74b"
+  },
+  "lessons/28_Data_transformation_lengthen/Data_transformation_lengthen.qmd": {
+    "Data_transformation_lengthen.html": "c48375c1"
+  },
+  "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.qmd": {
+    "Data_viz_Intro_to_ggplot.html": "4d87e217"
+  },
+  "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.qmd": {
+    "Data_viz_Design_choices.html": "cab224da"
+  },
+  "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.qmd": {
+    "Data_viz_Basic_plotting.html": "55f2029d"
+  },
+  "lessons/Z_Data_transformation_common_errors/Data_transformation_common_errors.qmd": {
+    "Data_transformation_common_errors.html": "188f4b5e"
   }
 }
