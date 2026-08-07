@@ -29,12 +29,12 @@ source(here("class_dates.R"))
 
 The labs are meant to scaffold and build the work needed to complete the final project. This will help us complete the work over the quarter instead of all at the end! If you receive feedback on something in a lab, it is expected to be fixed for the next lab and final project.
 
-| Lab Instructions | Editing file | Rubric | Due Date | Topics |
-|---------------|---------------|---------------|---------------|---------------|
-| [Lab 1](/project/Lab_01_instructions.qmd) | [[{{< iconify mdi edit-box size=30px >}}](https://github.com/nwakim/PUBH_523_26Su/blob/main/project/lastname_firstinit_lab_01.qmd)]{style="color:#f8f5f0;"} | [[{{< iconify material-symbols rubric-rounded size=30px >}}](/project/Lab_01_rubric.xlsx)]{style="color:#f8f5f0;"} | `r lab1 %>% format("%m/%d")` | Learn about WBNS + prepare your folders + download data |
-| [Lab 2](/project/Lab_02_instructions.qmd) | [[{{< iconify mdi edit-box size=30px >}}](https://github.com/nwakim/PUBH_523_26Su/blob/main/project/lastname_firstinit_lab_02.qmd)]{style="color:#f8f5f0;"} | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab2 %>% format("%m/%d")` | Filtering data + creating variables |
-| Lab 3 | [{{< iconify mdi edit-box size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab3 %>% format("%m/%d")` | Summarize your data |
-| Lab 4 | [{{< iconify mdi edit-box size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab4 %>% format("%m/%d")` | Visualize your data |
+| Lab Instructions | Points | Editing file | Rubric | Due Date | Topics |
+|--------------|--|--------------|--------------|--------------|--------------|
+| [Lab 1](/project/Lab_01_instructions.qmd) | 21 | [[{{< iconify mdi edit-box size=30px >}}](https://github.com/nwakim/PUBH_523_26Su/blob/main/project/lastname_firstinit_lab_01.qmd)]{style="color:#f8f5f0;"} | [[{{< iconify material-symbols rubric-rounded size=30px >}}](/project/Lab_01_rubric.xlsx)]{style="color:#f8f5f0;"} | `r lab1 %>% format("%m/%d")` | Learn about WBNS + prepare your folders + download data |
+| [Lab 2](/project/Lab_02_instructions.qmd) | 28 | [[{{< iconify mdi edit-box size=30px >}}](https://github.com/nwakim/PUBH_523_26Su/blob/main/project/lastname_firstinit_lab_02.qmd)]{style="color:#f8f5f0;"} | [[{{< iconify material-symbols rubric-rounded size=30px >}}](/project/Lab_02_rubric.xlsx)]{style="color:#f8f5f0;"} | `r lab2 %>% format("%m/%d")` | Filtering data + creating variables |
+| Lab 3 |  | [{{< iconify mdi edit-box size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab3 %>% format("%m/%d")` | Summarize your data |
+| Lab 4 |  | [{{< iconify mdi edit-box size=30px >}}]{style="color:#f8f5f0;"} | [{{< iconify material-symbols rubric-rounded size=30px >}}]{style="color:#f8f5f0;"} | `r lab4 %>% format("%m/%d")` | Visualize your data |
 
 ## Final Project: Information Sheet
 

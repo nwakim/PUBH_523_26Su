@@ -24,7 +24,7 @@ execute:
 ---
 
 ::: callout-important
-This lab is **ready**! (Nicky 8/2/26)
+This lab was updated on 8/6 to include some explicit instructions for importing and exporting data! (Nicky 8/6/26)
 :::
 
 ```{r}

@@ -49,6 +49,13 @@ Note that this is the editing file. **There are detailed instructions on our cou
 
 ## Lab activities
 
+### Import your saved data from Lab 1
+
+::: callout-important
+#### Task
+From the exported data file you created in Lab 1, import your data into R using `import()` from the `rio` package. Save this as a new object called `wbns_00`. Print out the number of rows and columns to verify the import.
+:::
+
 ### Filtering to Your Target Subpopulation
 
 ::: callout-important
@@ -97,4 +104,12 @@ Recode any "Refused" or "Don't know" responses to `NA` (if they aren't already),
 #### Task
 
 Create your new composite scores using `mutate()`, following the guidance above for your project. Save this as a new object called `wbns_05_composite`. Display a summary of each combined variable, and briefly explain (1-2 sentences) whether the range and direction of your composite score make sense.
+:::
+
+### Export datasets
+
+::: callout-important
+#### Task
+
+Save your datasets in a `.rda` file in your `data_project` folder. Name the file something that will help you identify it later, like `wbns_data_lab_02_work.rda` or `wbns_data_02_pop_comp.rda`
 :::
