@@ -514,5 +514,8 @@
   },
   "lessons/Z_Data_transformation_common_errors/Data_transformation_common_errors.qmd": {
     "Data_transformation_common_errors.html": "188f4b5e"
+  },
+  "lessons/29_Data_transformation_widen/Data_transformation_widen.qmd": {
+    "Data_transformation_widen.html": "1a93b667"
   }
 }

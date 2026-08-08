@@ -10701,5 +10701,75 @@
     "title": "Common errors for data transformations",
     "section": "Object is not found",
     "text": "Object is not found\n\nThis happens when text is entered for a non-existent variable (object)\n\nExample:\n\nhello\n\nError:\n! object 'hello' not found\n\n\n\nCan be due to missing quotes\n\n\ninstall.packages(dplyr) \n\nError:\n! object 'dplyr' not found\n\n# correct code is: install.packages(\"dplyr\")"
+  },
+  {
+    "objectID": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#tidy-data1",
+    "href": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#tidy-data1",
+    "title": "Data transformation: Widening data",
+    "section": "Tidy data1",
+    "text": "Tidy data1\n\n\nEach variable must have its own column\nEach observation must have its own row\nEach value must have its own cell\n\nSource: R for Data Science. Grolemund and Wickham."
+  },
+  {
+    "objectID": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#lets-look-at-an-example2-of-data-represented-in-different-ways",
+    "href": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#lets-look-at-an-example2-of-data-represented-in-different-ways",
+    "title": "Data transformation: Widening data",
+    "section": "Let’s look at an example1 of data represented in different ways",
+    "text": "Let’s look at an example1 of data represented in different ways\nWe will look at a dataset measuring tuberculosis (TB) cases for different countries. We have information on the country, year, population, and number of TB cases:\n\n\nEach column is one piece of information:\n\n\n\n# A tibble: 6 × 4\n  country      year  cases population\n  &lt;chr&gt;       &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;\n1 Afghanistan  1999    745   19987071\n2 Afghanistan  2000   2666   20595360\n3 Brazil       1999  37737  172006362\n4 Brazil       2000  80488  174504898\n5 China        1999 212258 1272915272\n6 China        2000 213766 1280428583\n\n\n\n\nPopulation and cases are “types” of counts:\n\n\n\n# A tibble: 12 × 4\n   country      year type            count\n   &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;           &lt;dbl&gt;\n 1 Afghanistan  1999 cases             745\n 2 Afghanistan  1999 population   19987071\n 3 Afghanistan  2000 cases            2666\n 4 Afghanistan  2000 population   20595360\n 5 Brazil       1999 cases           37737\n 6 Brazil       1999 population  172006362\n 7 Brazil       2000 cases           80488\n 8 Brazil       2000 population  174504898\n 9 China        1999 cases          212258\n10 China        1999 population 1272915272\n11 China        2000 cases          213766\n12 China        2000 population 1280428583\n\n\n\n\nWe look at the rate of TB cases:\n\n\n\n# A tibble: 6 × 3\n  country      year rate             \n  &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;            \n1 Afghanistan  1999 745/19987071     \n2 Afghanistan  2000 2666/20595360    \n3 Brazil       1999 37737/172006362  \n4 Brazil       2000 80488/174504898  \n5 China        1999 212258/1272915272\n6 China        2000 213766/1280428583\n\n\n\n\nSource: R for Data Science. Grolemund and Wickham. Example pulled from Section 5.2"
+  },
+  {
+    "objectID": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#what-do-we-do-when-our-data-are-not-tidy",
+    "href": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#what-do-we-do-when-our-data-are-not-tidy",
+    "title": "Data transformation: Widening data",
+    "section": "What do we do when our data are not tidy?",
+    "text": "What do we do when our data are not tidy?\n\nIn HRS data, let’s say we have data on many conditions\n\n\ntibble(hrs_long_cond)\n\n# A tibble: 15,453 × 5\n   id         sex    age_yr condition       has_condition\n   &lt;chr&gt;      &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;        \n 1 550015_010 Male       56 sleep_problems  No           \n 2 550015_010 Male       56 diabetes        No           \n 3 550015_010 Male       56 heart_disease   No           \n 4 550015_010 Male       56 lung_disease    No           \n 5 550015_010 Male       56 arthritis       No           \n 6 550015_010 Male       56 cancer          No           \n 7 550015_010 Male       56 stroke          No           \n 8 550015_010 Male       56 high_bp         No           \n 9 550015_010 Male       56 psych_condition No           \n10 550015_020 Female     49 arthritis       No           \n# ℹ 15,443 more rows\n\n\n\n\nCurrent issue: Column has_condition has information on many conditions. Yes can mean a person has diabetes or lung disease."
+  },
+  {
+    "objectID": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#the-pivot_longer-function",
+    "href": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#the-pivot_longer-function",
+    "title": "Data transformation: Widening data",
+    "section": "The pivot_longer() function",
+    "text": "The pivot_longer() function\n\ndf_wide &lt;- pivot_wider(\n  data = df_long,\n  names_from = column_with_new_headers,\n  values_from = column_with_cell_values\n)\n\n\ndata will usually be fed using the pipe operator (|&gt;)"
+  },
+  {
+    "objectID": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#visual-of-what-pivot_wider-does",
+    "href": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#visual-of-what-pivot_wider-does",
+    "title": "Data transformation: Widening data",
+    "section": "Visual of what pivot_wider() does",
+    "text": "Visual of what pivot_wider() does"
+  },
+  {
+    "objectID": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#using-the-pivot_longer-function-on-the-hrs-dataset",
+    "href": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#using-the-pivot_longer-function-on-the-hrs-dataset",
+    "title": "Data transformation: Widening data",
+    "section": "Using the pivot_longer() function on the HRS dataset",
+    "text": "Using the pivot_longer() function on the HRS dataset\n\nWe want to\n\nKeep the id column as is\nPivot the condition column into new columns, one for each condition\nPut all the values from has_condition into the new columns\n\n\n \n\n1hrs_01_wide &lt;- hrs_long_cond |&gt;\n2  pivot_wider(\n3    names_from = condition,\n4    values_from = has_condition\n  )\n\n\n1\n\nFeed hrs_long_cond into the pivot_wider() function\n\n2\n\nUse pivot_wider() to specify the columns to pivot into wider format\n\n3\n\nUse names_from to specify the old column (condition) that the new column names will be pulled from (e.g., diabetes, lung_disease, heart_disease)\n\n4\n\nUse values_from to specify the old column (has_condition) that the new column values will be pulled from (e.g., Yes, No)\n\n\n\n\n \n\n\nNote: In pivot_longer() we need quotes around the new column names, but in pivot_wider() we do NOT need quotes around the column names because they already exist in the dataset."
+  },
+  {
+    "objectID": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#lets-compare-the-before-and-after",
+    "href": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#lets-compare-the-before-and-after",
+    "title": "Data transformation: Widening data",
+    "section": "Let’s compare the before and after!",
+    "text": "Let’s compare the before and after!\n\n\nOriginal, long dataset:\n\ntibble(hrs_long_cond)\n\n# A tibble: 15,453 × 5\n   id         sex    age_yr condition       has_condition\n   &lt;chr&gt;      &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;        \n 1 550015_010 Male       56 sleep_problems  No           \n 2 550015_010 Male       56 diabetes        No           \n 3 550015_010 Male       56 heart_disease   No           \n 4 550015_010 Male       56 lung_disease    No           \n 5 550015_010 Male       56 arthritis       No           \n 6 550015_010 Male       56 cancer          No           \n 7 550015_010 Male       56 stroke          No           \n 8 550015_010 Male       56 high_bp         No           \n 9 550015_010 Male       56 psych_condition No           \n10 550015_020 Female     49 arthritis       No           \n# ℹ 15,443 more rows\n\n\n\nNew, tidy, wider dataset:\n\ntibble(hrs_01_wide)\n\n# A tibble: 1,717 × 12\n   id         sex    age_yr sleep_problems diabetes heart_disease lung_disease\n   &lt;chr&gt;      &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;    &lt;chr&gt;         &lt;chr&gt;       \n 1 550015_010 Male       56 No             No       No            No          \n 2 550015_020 Female     49 No             No       No            No          \n 3 550038_010 Male       53 No             Yes      No            No          \n 4 550041_010 Female     51 No             Yes      Yes           No          \n 5 550041_020 Male       51 No             Yes      Yes           No          \n 6 550043_010 Female     75 No             No       No            No          \n 7 550047_010 Male       54 No             No       No            No          \n 8 550063_010 Male       52 Yes            No       No            No          \n 9 550064_010 Male       56 No             Yes      No            No          \n10 550066_010 Female     80 No             Yes      No            No          \n# ℹ 1,707 more rows\n# ℹ 5 more variables: arthritis &lt;chr&gt;, cancer &lt;chr&gt;, stroke &lt;chr&gt;,\n#   high_bp &lt;chr&gt;, psych_condition &lt;chr&gt;\n\n\n\n\n\nNotes: number of rows is 9 times shorter, each individual has 1 row of observations instead of 9 rows, each condition has its own column"
+  },
+  {
+    "objectID": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#wrap-up",
+    "href": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#wrap-up",
+    "title": "Data transformation: Widening data",
+    "section": "Wrap-up",
+    "text": "Wrap-up\n\nWe don’t always get data in the format we want\n\nSometimes, it’s too long!\n\n\n \n\nThe pivot_wider() function is a great tool to help us transform our data into a tidy format\n\n \n\nThis will help us a lot in grouping summaries and visualizations"
+  },
+  {
+    "objectID": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#resources",
+    "href": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#resources",
+    "title": "Data transformation: Widening data",
+    "section": "Resources",
+    "text": "Resources\n\nMore information of the pivot_wider() function can be found here"
+  },
+  {
+    "objectID": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#the-pivot_wider-function",
+    "href": "lessons/29_Data_transformation_widen/Data_transformation_widen.html#the-pivot_wider-function",
+    "title": "Data transformation: Widening data",
+    "section": "The pivot_wider() function",
+    "text": "The pivot_wider() function\n\nThe pivot_wider() function is used to widen data, which means it takes a couple columns and spreads the data across many columns.\n\n\ndf_wide &lt;- pivot_wider(\n  data = df_long,\n  names_from = column_with_new_headers,\n  values_from = column_with_cell_values\n)\n\n\ndata will usually be fed using the pipe operator (|&gt;)\nnames_from specifies the column that will be used to create new column names\nvalues_from specifies the column that will be used to fill in the new columns with values"
   }
 ]
