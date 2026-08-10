@@ -9,8 +9,8 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-665ef5c5d77cfb05cd7a07c04fb2ab30.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.36">
 
-  <meta name="author" content="Nicky Wakim, Jessica Minnier, and Meike Niederhausen">
-  <title>Introduction to R – Quarto and .qmd’s</title>
+  <meta name="author" content="Nicky Wakim">
+  <title>Introduction to R – Quarto and .qmd’s: Revisited</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -198,162 +198,141 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#3070BF" class="quarto-title-block center">
-  <h1 class="title">Quarto and <code>.qmd</code>’s</h1>
+  <h1 class="title">Quarto and <code>.qmd</code>’s: Revisited</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Nicky Wakim, Jessica Minnier, and Meike Niederhausen 
+Nicky Wakim 
 </div>
 </div>
 </div>
 
 </section>
-<section id="what-is-quarto" class="slide level2">
-<h2>What is Quarto?</h2>
+<section id="recap-and-todays-goals" class="slide level2">
+<h2>Recap and today’s goals</h2>
 <ul>
-<li>Quarto is a <strong>publishing system</strong> that lets us combine <strong>text</strong> and <strong>code</strong> into a single document</li>
-<li>It is the successor to R Markdown — you may see both names online, but we’ll use Quarto</li>
-</ul>
-
-<img data-src="../img_slides/horst_rmarkdown_wizards_quarto.png" class="r-stretch quarto-figure-center"><p class="caption">Artwork by @allison_horst</p></section>
-<section id="qmd-file-code-text" class="slide level2">
-<h2><code>.qmd</code> file = code + text</h2>
-<p>A <code>.qmd</code> file holds two things together:</p>
+<li><p><strong>Last time</strong> (and what we’ve been using), we covered the building blocks of a <code>.qmd</code>:</p>
 <ul>
-<li><span style="color:#BF396F"><strong>Code</strong> (R or other languages)</span> — the same code you’d write in a script</li>
-<li><span style="color:#367B79"><strong>Text</strong> (like you’d write in Word)</span> — headings, explanations, formatting</li>
-</ul>
-<p>When you <strong>render</strong> the file, Quarto combines them into a polished output: <code>.html</code>, <code>.pdf</code>, <code>.docx</code>, and more.</p>
-
-<img data-src="../img_slides/horst_quarto_schematic2.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote">Artwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.</a></p></section>
-<section id="types-of-content-in-a-.qmd" class="slide level2">
-<h2>3 types of content in a <code>.qmd</code></h2>
-<p>Every <code>.qmd</code> file is made up of exactly three things:</p>
-<ol type="1">
-<li><strong>YAML metadata</strong> — settings at the top of the file (title, author, output format)</li>
-<li><strong>Text</strong> — plain writing, lists, images, links</li>
-<li><strong>Code chunks</strong> — blocks of R (or other) code</li>
-</ol>
-<p>We’ll look at each one in detail — but first, let’s see them all together in a real example.</p>
-
-<img data-src="../img_slides/horst_hedgehog_text_code.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://allisonhorst.com/horst-hill-collaborations" target="_blank">Illustration by Alison Hill and Allison Horst, for RStudio.</a></p></section>
-<section id="a-complete-.qmd-file" class="slide level2">
-<h2>A complete <code>.qmd</code> file</h2>
-<p>Here’s what a full <code>.qmd</code> file looks like — we’ll break down each piece next.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="co">---</span></span>
-<span id="cb1-2"><a></a><span class="an">title:</span><span class="co"> "Hello, Penguins"       </span></span>
-<span id="cb1-3"><a></a><span class="an">format:</span><span class="co"> html                   </span></span>
-<span id="cb1-4"><a></a><span class="an">execute:</span></span>
-<span id="cb1-5"><a></a><span class="co">  echo: false</span></span>
-<span id="cb1-6"><a></a><span class="co">---</span></span>
-<span id="cb1-7"><a></a></span>
-<span id="cb1-8"><a></a><span class="fu">## Meet the penguins           </span></span>
-<span id="cb1-9"><a></a></span>
-<span id="cb1-10"><a></a>The <span class="in">`penguins`</span> data contains size measurements for </span>
-<span id="cb1-11"><a></a>penguins from three islands in the Palmer Archipelago, </span>
-<span id="cb1-12"><a></a>Antarctica.</span>
-<span id="cb1-13"><a></a></span>
-<span id="cb1-14"><a></a><span class="in">```{r}                        </span></span>
-<span id="cb1-15"><a></a><span class="co">#| label: fig-penguins</span></span>
-<span id="cb1-16"><a></a><span class="co">#| warning: false</span></span>
-<span id="cb1-17"><a></a></span>
-<span id="cb1-18"><a></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, palmerpenguins)</span>
-<span id="cb1-19"><a></a></span>
-<span id="cb1-20"><a></a>penguins <span class="sc">|&gt;</span></span>
-<span id="cb1-21"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm, <span class="at">y =</span> bill_length_mm)) <span class="sc">+</span></span>
-<span id="cb1-22"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb1-23"><a></a>  <span class="fu">theme_minimal</span>()</span>
-<span id="cb1-24"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="yaml-metadata" class="slide level2">
-<h2>1. YAML metadata</h2>
-<div class="columns">
-<div class="column" style="width:49%;">
-<ul>
-<li><p>The YAML block sits at the <strong>very top</strong> of the file, between <code>---</code> lines</p></li>
-<li><p>It controls settings like title, author, and output format</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="co">---</span></span>
-<span id="cb2-2"><a></a><span class="an">title:</span><span class="co"> "Hello, Penguins"</span></span>
-<span id="cb2-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb2-4"><a></a><span class="an">execute:</span></span>
-<span id="cb2-5"><a></a><span class="co">  echo: false</span></span>
-<span id="cb2-6"><a></a><span class="co">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><a href="https://quarto.org/docs/reference/formats/opml.html">More YAML options</a> on Quarto website</p></li>
-</ul>
-</div><div class="column" style="width:2%;">
-
-</div><div class="column" style="width:49%;">
-<div class="blue">
-<div class="blue-ttl">
-<p>What you’ll see in your practice assignments</p>
-</div>
-<div class="blue-cont">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="co">---</span></span>
-<span id="cb3-2"><a></a><span class="an">title:</span><span class="co"> "Practice 2"</span></span>
-<span id="cb3-3"><a></a><span class="an">subtitle:</span><span class="co"> "PUBH 523/623"</span></span>
-<span id="cb3-4"><a></a><span class="an">author:</span><span class="co"> "Your name here"</span></span>
-<span id="cb3-5"><a></a><span class="an">date-modified:</span><span class="co"> "today"</span></span>
-<span id="cb3-6"><a></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb3-7"><a></a><span class="co">  html:</span></span>
-<span id="cb3-8"><a></a><span class="co">    link-external-newwindow: true</span></span>
-<span id="cb3-9"><a></a><span class="co">    toc: true</span></span>
-<span id="cb3-10"><a></a><span class="co">    self-contained: true</span></span>
-<span id="cb3-11"><a></a><span class="co">    page-layout: full</span></span>
-<span id="cb3-12"><a></a><span class="co">    html-math-method: mathjax</span></span>
-<span id="cb3-13"><a></a><span class="an">editor_options:</span><span class="co"> </span></span>
-<span id="cb3-14"><a></a><span class="co">  chunk_output_type: console</span></span>
-<span id="cb3-15"><a></a><span class="co">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="text" class="slide level2">
-<h2>2. Text</h2>
-<p>Outside of code chunks, you write plain text using <strong>Markdown</strong> formatting:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="fu">## This is a heading</span></span>
-<span id="cb4-2"><a></a></span>
-<span id="cb4-3"><a></a><span class="fu">### This is a subheading</span></span>
-<span id="cb4-4"><a></a></span>
-<span id="cb4-5"><a></a>This is a regular paragraph. You can make text **bold** or *italic*.</span>
-<span id="cb4-6"><a></a></span>
-<span id="cb4-7"><a></a><span class="ss">- </span>This is a bullet point</span>
-<span id="cb4-8"><a></a><span class="ss">- </span>Another bullet point</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ul>
-<li>More R Markdown capabilities
-<ul>
-<li><a href="https://rstudio.github.io/cheatsheets/html/rmarkdown.html">rmarkdown Cheatsheet</a></li>
-<li><strong>In RStudio:</strong> Help → Markdown Quick Reference</li>
+<li>YAML metadata, text, and code chunks</li>
+<li>Creating, editing, saving, and rendering a file</li>
 </ul></li>
 </ul>
-<div class="green">
-<div class="green-cont">
-<p><strong>Tip:</strong> Use the <strong>Visual Editor</strong> (top of the editor window) for a Word-like experience if you prefer not to write raw Markdown yet.</p>
-</div>
-</div>
-</section>
-<section id="code-chunks" class="slide level2">
-<h2>3. Code chunks</h2>
-<p>Code chunks are where your R code lives</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb5-2"><a></a><span class="co">#| label: fig-penguins</span></span>
-<span id="cb5-3"><a></a><span class="co">#| warning: false</span></span>
-<span id="cb5-4"><a></a></span>
-<span id="cb5-5"><a></a>penguins <span class="sc">|&gt;</span></span>
-<span id="cb5-6"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm, <span class="at">y =</span> bill_length_mm)) <span class="sc">+</span></span>
-<span id="cb5-7"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species))</span>
-<span id="cb5-8"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>&nbsp;</p>
 <ul>
-<li>There are 3 options to insert a new code chunk:</li>
+<li><p><strong>Today</strong>, we’ll level up with tools that are especially useful when writing and styling reports:</p>
+<ul>
+<li>Inline code</li>
+<li>LaTeX math</li>
+<li>Code chunks: cross-references and code folding</li>
+<li>Fenced divs: callouts and tabsets</li>
+</ul></li>
 </ul>
-<ol type="1">
-<li>Click the <img data-src="../img_slides/code_chunk_insert_icon.png"> button at the top of the editor</li>
-<li>Keyboard shortcut: <em>Command + Option + I</em> (Mac) / <em>Ctrl + Alt + I</em> (PC)</li>
-<li>Type out <code>```{r}</code> to start and <code>```</code> to close</li>
-</ol>
 </section>
-<section id="code-chunk-options" class="slide level2">
-<h2>Code chunk options</h2>
+<section id="inline-code-mixing-r-results-into-text" class="slide level2">
+<h2>Inline code: mixing R results into text</h2>
+<ul>
+<li>Inline code is helpful for reports and updates: your write-up <strong>automatically updates</strong> if your data or code change!!</li>
+<li>Instead of typing a number by hand, you can pull it <strong>directly from your code</strong> using inline code</li>
+</ul>
+<div class="blue">
+<div class="blue-cont">
+<p><span style="color: #5BAFF8; font-weight: bold;">Written in <code>qmd</code>:</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a>The HRS dataset has <span class="in">`r nrow(hrs_00)`</span> rows and <span class="in">`r n_distinct(hrs_00$hhid)`</span> </span>
+<span id="cb1-2"><a></a>households.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div class="red">
+<div class="red-cont">
+<p><span style="color: #C83532; font-weight: bold;">Which renders as:</span></p>
+<p>The HRS dataset has 2728 rows and 1468 households.</p>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="pink">
+<div class="pink-cont">
+<p>Inline code uses single backticks with a lowercase <code>r</code> right after the first backtick (no curly braces, unlike a chunk)</p>
+</div>
+</div>
+</section>
+<section id="inline-code-helpful-pairings" class="slide level2">
+<h2>Inline code: helpful pairings</h2>
+<ul>
+<li><code>round()</code>:control decimal places</li>
+<li><code>comma()</code>: format big numbers with commas (in <code>scales</code> package)</li>
+<li><code>percent()</code>: format proportions as <code>%</code> (in <code>scales</code> package)</li>
+</ul>
+<p><strong>Code it in R and assign to objects:</strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>mean_income <span class="ot">&lt;-</span> <span class="fu">mean</span>(hrs_00<span class="sc">$</span>income, <span class="at">na.rm =</span> T) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span> <span class="fu">comma</span>()</span>
+<span id="cb2-2"><a></a>perc_sleep <span class="ot">&lt;-</span> <span class="fu">mean</span>(hrs_00<span class="sc">$</span>sleep <span class="sc">==</span> <span class="st">"Yes"</span>, <span class="at">na.rm =</span> T) <span class="sc">|&gt;</span> <span class="fu">percent</span>(<span class="at">accuracy =</span> <span class="fl">0.1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="blue">
+<div class="blue-cont">
+<p><span style="color: #5BAFF8; font-weight: bold;">Written in <code>qmd</code>:</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a>The mean income in the HRS dataset is $<span class="in">`r mean_income`</span> and the percent </span>
+<span id="cb3-2"><a></a>of responders who have trouble sleeping is <span class="in">`r perc_sleep`</span>. </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div class="red">
+<div class="red-cont">
+<p><span style="color: #C83532; font-weight: bold;">Which renders as:</span></p>
+<p>The mean income in the HRS dataset is $91,813 and the percent of responders who have trouble sleeping is 19.6%.</p>
+</div>
+</div>
+</section>
+<section id="latex-math-writing-equations" class="slide level2">
+<h2>LaTeX math: writing equations</h2>
+<p>Quarto renders <strong>LaTeX math</strong> using MathJax — no extra setup needed</p>
+<ul>
+<li><strong>Inline math</strong>: wrap with single dollar signs — <code>$...$</code></li>
+<li><strong>Display math</strong>: wrap with double dollar signs — <code>$$...$$</code></li>
+</ul>
+<div class="blue">
+<div class="blue-cont">
+<p><span style="color: #5BAFF8; font-weight: bold;">Written in <code>qmd</code>:</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a>The slope $\beta_1$ describes the change in $Y$ for a one-unit change in $X$.</span>
+<span id="cb4-2"><a></a></span>
+<span id="cb4-3"><a></a>$$</span>
+<span id="cb4-4"><a></a>Y_i = \beta_0 + \beta_1 X_i + \epsilon_i</span>
+<span id="cb4-5"><a></a>$$</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div class="red">
+<div class="red-cont">
+<p><span style="color: #C83532; font-weight: bold;">Which renders as:</span></p>
+<p>The slope <span class="math inline">\(\beta_1\)</span> describes the change in <span class="math inline">\(Y\)</span> for a one-unit change in <span class="math inline">\(X\)</span>.</p>
+<p><span class="math display">\[
+Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="latex-math-a-worked-example" class="slide level2">
+<h2>LaTeX math: a worked example</h2>
+<p>We can use LaTeX math to write equations for the mean and proportion of a variable in our dataset</p>
+<div class="blue">
+<div class="blue-cont">
+<p><span style="color: #5BAFF8; font-weight: bold;">Written in <code>qmd</code>:</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a>$$</span>
+<span id="cb5-2"><a></a>\overline{\text{income}} = \frac{1}{n}\sum_{i=1}^{n} \text{income}_i</span>
+<span id="cb5-3"><a></a>$$</span>
+<span id="cb5-4"><a></a></span>
+<span id="cb5-5"><a></a>$\overline{\text{income}} = \text{$} <span class="in">`r mean_income`</span>$</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div class="red">
+<div class="red-cont">
+<p><span style="color: #C83532; font-weight: bold;">Which renders as:</span></p>
+<p><span class="math display">\[
+\overline{\text{income}} = \frac{1}{n}\sum_{i=1}^{n} \text{income}_i
+\]</span></p>
+<p><span class="math inline">\(\overline{\text{income}} = \text{\$}91,813\)</span></p>
+</div>
+</div>
+</section>
+<section id="previously-code-chunk-options" class="slide level2">
+<h2>Previously: code chunk options</h2>
 <p>You can control how a chunk behaves with <code>#|</code> options at the top of the chunk:</p>
 <table class="caption-top">
 <thead>
@@ -381,173 +360,694 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 </tr>
 </tbody>
 </table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-4"><pre class="sourceCode numberSource markdown code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode markdown"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1"></a><span class="in">```{r}</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-2" class="code-annotation-target"><a href="#annotated-cell-4-2"></a><span class="co">#| echo: false</span></span>
-<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3"></a><span class="co">#| warning: false </span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="2">2</button><span id="annotated-cell-4-4" class="code-annotation-target"><a href="#annotated-cell-4-4"></a><span class="co">#| eval: false</span></span>
-<span id="annotated-cell-4-5"><a href="#annotated-cell-4-5"></a><span class="in">```</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-2"><pre class="sourceCode numberSource markdown code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode markdown"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1"></a><span class="in">```{r}</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-2" class="code-annotation-target"><a href="#annotated-cell-2-2"></a><span class="co">#| echo: false</span></span>
+<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3"></a><span class="co">#| warning: false </span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2">2</button><span id="annotated-cell-2-4" class="code-annotation-target"><a href="#annotated-cell-2-4"></a><span class="co">#| eval: false</span></span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5"></a><span class="in">```</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="2" data-code-annotation="1">This is helpful if you do not want to show your code</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="2" data-code-annotation="1">This is helpful if you do not want to show your code</span>
 </dd>
-<dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="4" data-code-annotation="2">This is helpful if your <code>qmd</code> file has code that doesn’t work or takes a long time to run, but you still want to render the document</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="4" data-code-annotation="2">This is helpful if your <code>qmd</code> file has code that doesn’t work or takes a long time to run, but you still want to render the document</span>
 </dd>
 </dl>
 </section>
-<section id="making-a-.qmd-file-overview" class="slide level2">
-<h2>Making a <code>.qmd</code> file: overview</h2>
-<p>Four steps:</p>
-<ol type="1">
-<li><strong>Create</strong> a new Quarto file</li>
-<li><strong>Edit</strong> the file</li>
-<li><strong>Save</strong> the file</li>
-<li><strong>Render</strong> to create the <code>.html</code> output</li>
-</ol>
-</section>
-<section id="step-1-create-a-quarto-file" class="slide level2">
-<h2>Step 1: Create a Quarto file</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Two options:</strong></p>
-<ol type="1">
-<li><code>File</code> → <code>New File</code> → <code>Quarto Document...</code> → <code>OK</code></li>
-<li>Click <img data-src="../img_slides/green_plus_create_file.png" width="92"> in the upper left → <img data-src="../img_slides/select_quarto_option.png" width="333"></li>
-</ol>
-<p><strong>In the pop-up window:</strong></p>
+<section id="more-code-chunk-options-code-folding" class="slide level2">
+<h2>More code chunk options: code folding</h2>
 <ul>
-<li>Enter a <strong>title</strong> and your <strong>name</strong></li>
-<li>Output format: <code>HTML</code></li>
-<li>Engine: <code>Knitr</code></li>
-<li>Editor: <code>Use visual markdown editor</code></li>
-<li>Click <code>Create</code></li>
+<li><strong>Code folding</strong> lets readers choose whether to see your code</li>
+<li>Keeps reports cleaner</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="../img_slides/01_qmd_screenshot_popup.png"></p>
-</div></div>
-</section>
-<section id="step-2-edit-the-file" class="slide level2">
-<h2>Step 2: Edit the file</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>After clicking <code>Create</code>, a template <code>.qmd</code> opens in your editor</li>
-<li>Try editing the title in the YAML, or changing the text below it</li>
-<li>Make sure you only edit content <strong>at and below</strong> the <code>---</code> that ends the YAML</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../img_slides/01_qmd_screenshot.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
+<div class="blue">
+<div class="blue-cont">
+<p><span style="color: #5BAFF8; font-weight: bold;">Written in <code>qmd</code>:</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb6-2"><a></a><span class="co">#| code-fold: true</span></span>
+<span id="cb6-3"><a></a><span class="co">#| code-summary: "Calculating mean income and percent trouble sleeping"</span></span>
+<span id="cb6-4"><a></a></span>
+<span id="cb6-5"><a></a>mean_income <span class="ot">&lt;-</span> <span class="fu">mean</span>(hrs_00<span class="sc">$</span>income, <span class="at">na.rm =</span> T) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span> <span class="fu">comma</span>()</span>
+<span id="cb6-6"><a></a>perc_sleep <span class="ot">&lt;-</span> <span class="fu">mean</span>(hrs_00<span class="sc">$</span>sleep <span class="sc">==</span> <span class="st">"Yes"</span>, <span class="at">na.rm =</span> T) <span class="sc">|&gt;</span> <span class="fu">percent</span>(<span class="at">accuracy =</span> <span class="fl">0.1</span>)</span>
+<span id="cb6-7"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</div></div>
-</section>
-<section id="step-3-save-the-file" class="slide level2">
-<h2>Step 3: Save the file</h2>
-<ul>
-<li><code>File</code> → <code>Save</code></li>
-<li>Click <img data-src="../img_slides/01_Script_Save.png" width="51" height="43"> above the editor window</li>
-<li>Keyboard shortcut: <em>Ctrl + S</em> (PC) / <em>Command + S</em> (Mac)</li>
-</ul>
-<p><strong>When saving, specify:</strong></p>
-<ul>
-<li><strong>Filename</strong> — always use <code>.qmd</code> as the extension</li>
-<li><strong>Folder</strong> — save under your lessons folder as <code>lesson#_quarto_work.qmd</code></li>
-</ul>
-</section>
-<section id="step-4-render-to-html" class="slide level2">
-<h2>Step 4: Render to HTML</h2>
-<p><strong>Rendering</strong> turns your <code>.qmd</code> into a viewable <code>.html</code> file.</p>
-<p>Two options:</p>
-<ol type="1">
-<li>Click the <strong>Render</strong> icon <img data-src="../img_slides/render_icon.png"> at the top of the editor</li>
-<li>Keyboard shortcut: <em>Command + Shift + K</em> (Mac) / <em>Ctrl + Shift + K</em> (PC)</li>
-</ol>
-<p>After rendering:</p>
-<ul>
-<li>A new window opens with the HTML output</li>
-<li>Both <code>.qmd</code> and <code>.html</code> files appear in your folder — the HTML takes its name from the <code>.qmd</code></li>
-</ul>
-</section>
-<section id="qmd-vs.-.html-output" class="slide level2">
-<h2><code>.qmd</code> vs.&nbsp;<code>.html</code> output</h2>
-<ul>
-<li>In this class, you’ll turn in <strong>both</strong> files</li>
-<li>Collaborators typically only need the <code>.html</code> — they can view results without running any code themselves</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:48%;">
-<h3 id="qmd-file"><code>.qmd</code> file</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../img_slides/01_qmd_screenshot.png" class="quarto-figure quarto-figure-center" width="600"></p>
-</figure>
 </div>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<h3 id="html-output"><code>.html</code> output</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../img_slides/default_quarto_html.png" class="quarto-figure quarto-figure-center" width="650"></p>
-</figure>
+<div class="red">
+<div class="red-cont">
+<p><span style="color: #C83532; font-weight: bold;">Which renders as:</span></p>
+<div class="cell">
+<details class="code-fold">
+<summary>Calculating mean income and percent trouble sleeping</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>mean_income <span class="ot">&lt;-</span> <span class="fu">mean</span>(hrs_00<span class="sc">$</span>income, <span class="at">na.rm =</span> T) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span> <span class="fu">comma</span>()</span>
+<span id="cb7-2"><a></a>perc_sleep <span class="ot">&lt;-</span> <span class="fu">mean</span>(hrs_00<span class="sc">$</span>sleep <span class="sc">==</span> <span class="st">"Yes"</span>, <span class="at">na.rm =</span> T) <span class="sc">|&gt;</span> <span class="fu">percent</span>(<span class="at">accuracy =</span> <span class="fl">0.1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 </div>
-</div></div>
+</div>
+</div>
 </section>
-<section id="tips-customizing-your-setup" class="slide level2">
-<h2>Tips: Customizing your setup</h2>
-<div class="columns">
-<div class="column">
-<p><strong>Where does the HTML preview open?</strong></p>
+<section id="more-code-chunk-options-cross-referencing" class="slide level2">
+<h2>More code chunk options: cross referencing</h2>
 <ul>
-<li><code>Preview in Window</code> — opens in a browser tab</li>
-<li><code>Preview in Viewer Pane</code> — opens in the bottom-right RStudio pane</li>
+<li>You can <strong>label</strong> a code chunk with a figure or table, then reference it anywhere with <code>@</code></li>
+<li>Labels must start with a <strong>prefix</strong>: <code>fig-</code>, <code>tbl-</code>, <code>eq-</code>, or <code>sec-</code></li>
+<li>Quarto auto-numbers them and updates the numbers if you reorder slides</li>
 </ul>
-</div><div class="column">
-<p><strong>Where does code output appear?</strong></p>
-<ul>
-<li><code>Chunk Output Inline</code> — output appears below the chunk in the editor</li>
-<li><code>Chunk Output in Console</code> — output appears in the Console pane</li>
-</ul>
-</div></div>
 <p>&nbsp;</p>
+<ul>
+<li>We format our code chunk with a label and a figure caption (caption is “Plot of _____”)</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb8-2"><a></a><span class="co">#| label: fig-summ-stats</span></span>
+<span id="cb8-3"><a></a><span class="co">#| fig-cap: "Plot of _____"</span></span>
+<span id="cb8-4"><a></a></span>
+<span id="cb8-5"><a></a><span class="co"># Code for plot goes here!</span></span>
+<span id="cb8-6"><a></a><span class="in">```</span></span>
+<span id="cb8-7"><a></a></span>
+<span id="cb8-8"><a></a>Then we reference inline with @fig-summ-stats</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="more-code-chunk-options-example-for-cross-referencing" class="slide level2 scrollable">
+<h2>More code chunk options: Example for cross referencing</h2>
+<p>If we want to create a table of summary statistics, we can use the label to reference it later in the text:</p>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1"><span style="color: #5BAFF8; font-weight: bold;">Written in <code>qmd</code>:</span></a></li><li><a href="#tabset-1-2"><span style="color: #C83532; font-weight: bold;">Which renders as:</span></a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb9-2"><a></a><span class="co">#| label: tbl-summ-stats</span></span>
+<span id="cb9-3"><a></a><span class="co">#| fig-cap: "Summary statistics for income and trouble sleeping"</span></span>
+<span id="cb9-4"><a></a></span>
+<span id="cb9-5"><a></a>hrs_00 <span class="sc">|&gt;</span> </span>
+<span id="cb9-6"><a></a>  <span class="fu">select</span>(income, sleep) <span class="sc">|&gt;</span></span>
+<span id="cb9-7"><a></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb9-8"><a></a>    <span class="at">statistic =</span> <span class="fu">list</span>(<span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="st">"{mean} ({sd})"</span>)</span>
+<span id="cb9-9"><a></a>  )</span>
+<span id="cb9-10"><a></a><span class="in">```</span></span>
+<span id="cb9-11"><a></a></span>
+<span id="cb9-12"><a></a>In @tbl-summ-stats, we see the mean and standard deviation for income and </span>
+<span id="cb9-13"><a></a>the proportion of respondents who report trouble sleeping.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>&nbsp;</p>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>hrs_00 <span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a></a>  <span class="fu">select</span>(income, sleep) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a></a>  <span class="fu">tbl_summary</span>(<span class="at">statistic =</span> <span class="fu">list</span>(<span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="st">"{mean} ({sd})"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb10-4"><a></a>  <span class="fu">as_gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb10-5"><a></a>  <span class="fu">tab_options</span>(<span class="at">table.font.size =</span> <span class="st">"40px"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="tbl-summ-stats" class="cell quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-summ-stats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1
+</figcaption>
+<div aria-describedby="tbl-summ-stats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="thqpnqmjto" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#thqpnqmjto table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-<img data-src="../img_slides/change_output_view.png" class="quarto-figure quarto-figure-center r-stretch" style="width:60.0%"><p>&nbsp;</p>
+#thqpnqmjto thead, #thqpnqmjto tbody, #thqpnqmjto tfoot, #thqpnqmjto tr, #thqpnqmjto td, #thqpnqmjto th {
+  border-style: none;
+}
+
+#thqpnqmjto p {
+  margin: 0;
+  padding: 0;
+}
+
+#thqpnqmjto .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#thqpnqmjto .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#thqpnqmjto .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#thqpnqmjto .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#thqpnqmjto .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#thqpnqmjto .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#thqpnqmjto .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#thqpnqmjto .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#thqpnqmjto .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#thqpnqmjto .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#thqpnqmjto .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#thqpnqmjto .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#thqpnqmjto .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#thqpnqmjto .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#thqpnqmjto .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#thqpnqmjto .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#thqpnqmjto .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#thqpnqmjto .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#thqpnqmjto .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#thqpnqmjto .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#thqpnqmjto .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#thqpnqmjto .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#thqpnqmjto .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#thqpnqmjto .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#thqpnqmjto .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#thqpnqmjto .gt_left {
+  text-align: left;
+}
+
+#thqpnqmjto .gt_center {
+  text-align: center;
+}
+
+#thqpnqmjto .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#thqpnqmjto .gt_font_normal {
+  font-weight: normal;
+}
+
+#thqpnqmjto .gt_font_bold {
+  font-weight: bold;
+}
+
+#thqpnqmjto .gt_font_italic {
+  font-style: italic;
+}
+
+#thqpnqmjto .gt_super {
+  font-size: 65%;
+}
+
+#thqpnqmjto .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#thqpnqmjto .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#thqpnqmjto .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#thqpnqmjto .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#thqpnqmjto .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#thqpnqmjto .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#thqpnqmjto .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#thqpnqmjto .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#thqpnqmjto div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="stat_0" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>N = 2,728</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Total Household Income</td>
+<td class="gt_row gt_center" headers="stat_0">91,813 (128,588)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Ever Had Sleep Disorder</td>
+<td class="gt_row gt_center" headers="stat_0">534 (20%)</td>
+</tr>
+</tbody><tfoot>
+<tr class="gt_footnotes odd">
+<td colspan="2" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> Mean (SD); n (%)</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+<p>Summary statistics for income and trouble sleeping</p>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>In <a href="#/tbl-summ-stats" class="quarto-xref">Table&nbsp;1</a>, we see the mean and standard deviation for income and the proportion of respondents who report trouble sleeping.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="callout-blocks-highlight-key-info" class="slide level2">
+<h2>Callout blocks: highlight key info</h2>
+<ul>
+<li><strong>Callouts</strong> are a “fenced div” that draws the reader’s eye to important notes, warnings, or tips</li>
+<li>There are five types of callouts: <code>note</code>, <code>tip</code>, <code>warning</code>, <code>important</code>, and <code>caution</code></li>
+<li>You also have options for the appearance type: <code>default</code>, <code>minimal</code>, and <code>simple</code></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>We use <code>:::</code> and <code>{.callout-&lt;type&gt;}</code> to create a callout block, then close it with <code>:::</code> at the end</li>
+</ul>
+<div class="blue">
+<div class="blue-cont">
+<p><span style="color: #5BAFF8; font-weight: bold;">Written in <code>qmd</code>:</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a>::: {.callout-note appearance="minimal"}</span>
+<span id="cb11-2"><a></a>This is a neutral, informational note.</span>
+<span id="cb11-3"><a></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div class="red">
+<div class="red-cont">
+<p><span style="color: #C83532; font-weight: bold;">Which renders as:</span></p>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>This is a neutral, informational note.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="tabsets" class="slide level2">
+<h2>Tabsets</h2>
+<ul>
+<li><strong>Tabsets</strong> are a “fenced div” that organizes multiple views with clickable tabs</li>
+<li>We use <code>::: {.panel-tabset}</code> to create a tabset, then close it with <code>:::</code> at the end
+<ul>
+<li>Each tab is created with a header (e.g., <code>### Plot</code> or <code>### Table</code>) and the content for that tab goes below the header</li>
+</ul></li>
+</ul>
+<div class="columns">
+<div class="column" style="width:37%;">
+<div class="blue">
+<div class="blue-cont">
+<p><span style="color: #5BAFF8; font-weight: bold;">Written in <code>qmd</code>:</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a></a>::: {.panel-tabset}</span>
+<span id="cb12-2"><a></a><span class="fu">### Plot</span></span>
+<span id="cb12-3"><a></a>Your ggplot code here</span>
+<span id="cb12-4"><a></a></span>
+<span id="cb12-5"><a></a><span class="fu">### Table</span></span>
+<span id="cb12-6"><a></a>Your gt table here</span>
+<span id="cb12-7"><a></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:60%;">
+<div class="red">
+<div class="red-cont">
+<p><span style="color: #C83532; font-weight: bold;">Which renders as:</span></p>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Plot</a></li><li><a href="#tabset-2-2">Table</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<p>Your ggplot code here</p>
+</div>
+<div id="tabset-2-2">
+<p>Your gt table here</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
 </section>
 <section id="wrap-up" class="slide level2">
 <h2>Wrap-up</h2>
 <ul>
-<li>We learned about Quarto and <code>.qmd</code> files, which combine text and code into a single document</li>
+<li>We covered a few more tools for writing reports in Quarto!</li>
 </ul>
 <p>&nbsp;</p>
 <ul>
-<li>We explored the three main components of a <code>.qmd</code> file:
-<ul>
-<li>YAML metadata</li>
-<li>Text</li>
-<li>Code chunks</li>
-</ul></li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li>We practiced creating, editing, saving, and rendering a <code>.qmd</code> file to produce an HTML output</li>
+<li><strong>Inline code</strong> keeps numbers in your prose synced with your analysis</li>
+<li><strong>LaTeX math</strong> lets you write clean equations, inline or on their own line</li>
+<li><strong>Cross-references and code folding</strong> are code chunk options that help readers navigate your work</li>
+<li><strong>Callouts and tabsets</strong> are fenced divs that help you write clear, well-organized reports</li>
 </ul>
 </section>
 <section id="resources" class="slide level2">
 <h2>Resources</h2>
 <ul>
-<li><a href="https://quarto.org/docs/reference/formats/opml.html">More YAML options</a> on Quarto website</li>
-<li><a href="https://rstudio.github.io/cheatsheets/html/rmarkdown.html">rmarkdown Cheatsheet</a></li>
-<li>Publish and Share with Quarto
+<li><a href="https://quarto.org/docs/authoring/cross-references.html">Quarto: Cross-references</a></li>
+<li><a href="https://quarto.org/docs/authoring/callouts.html">Quarto: Callout blocks</a></li>
+<li><a href="https://quarto.org/docs/presentations/revealjs/index.html#tabsets">Quarto: Tabsets</a></li>
+<li><a href="https://quarto-tdg.org/">Quarto: The Practical Guide</a> by Mine Çetinkaya-Rundel and Charlotte Wickham
 <ul>
-<li><a href="https://rstudio.github.io/cheatsheets/quarto.pdf">PDF Cheatsheet</a></li>
-<li><a href="https://rstudio.github.io/cheatsheets/html/quarto.html">html Cheatsheet</a></li>
+<li>The section on <a href="https://quarto-tdg.org/authoring.html">Mastering Quarto: Markdown</a> is especially helpful for reprots</li>
 </ul></li>
-<li><a href="https://quarto-tdg.org/">Quarto: The Practical Guide</a> by by Mine Çetinkaya-Rundel and Charlotte Wickham</li>
-<li>To learn more about working with Quarto, check out our BERD workshop: <a href="https://ohsu-octri-berd.github.io/Quarto_BERD_2025/"><em>Creating Professional Presentations and Websites using R/Quarto</em></a></li>
 </ul>
 
 
@@ -555,7 +1055,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Quarto and <code>.qmd</code>’s</p>
+<p>Quarto and <code>.qmd</code>’s: Revisited</p>
 </div>
 </div></div>
 

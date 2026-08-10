@@ -517,5 +517,8 @@
   },
   "lessons/29_Data_transformation_widen/Data_transformation_widen.qmd": {
     "Data_transformation_widen.html": "1a93b667"
+  },
+  "lessons/30_Quarto_revisited/Quarto_revisited.qmd": {
+    "Quarto_revisited.html": "8bb98f9b"
   }
 }
