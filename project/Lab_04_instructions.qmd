@@ -1,4 +1,3 @@
-
 ---
 title: "Lab 4 Instructions"
 author: "Your Name Here"
