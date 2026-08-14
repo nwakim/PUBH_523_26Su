@@ -10995,5 +10995,159 @@
     "title": "Lab 3",
     "section": "1 Lab activities",
     "text": "1 Lab activities\n\n1.1 Restate your selected project\n\n\n\n\n\n\nImportantTask\n\n\n\nCopy and paste the row from the above table that corresponds to your project into your .qmd file. This will help you (and me hehe) keep track of your project question, population, main variables, and composite score(s) as you work through this lab.\n\n\n\n\n1.2 Import your saved data from Lab 2\n\n\n\n\n\n\nImportantTask\n\n\n\nFrom the .rda file you exported at the end of Lab 2, import your data into R using import() from the rio package. Save this as a new object called wbns_05_composite. Print out the number of rows and columns to verify the import.\n\n\n\n\n1.3 Quick summaries of your variables\n\n\n\n\n\n\nImportantTask\n\n\n\nTake your wbns_05_composite dataset and use skim() to generate a quick summary of your main variables and composite score(s). Save the result as a new object called quick_summaries, and print it out. Use this to check for any unexpected values, missing data, or other issues that may need to be addressed before moving forward.\n\n\n\n\n1.4 Creating categorical versions of your composite score(s)\n\n\n\n\n\n\nImportantTask\n\n\n\nUse mutate() with case_when() or cut() to create a new categorical variable for each composite score, with meaningful category labels. Save the result as a new object called wbns_06_cat. Use tabyl() or count() to display how many respondents fall into each category, and confirm no one was left out (e.g., turned into an unexpected NA).\n\n\n\n\n1.5 Building a summary table\n\n\n\n\n\n\nImportantTask\n\n\n\nUse tbl_summary() to build a clean overall summary table of your composite score(s) and other main variable. Save this as a new object called summary_table_overall, and display it.\nCustomize at least one thing about the table’s appearance or labels (e.g., with modify_header() or by relabeling variables) so it’s easier for someone unfamiliar with your project to read.\n\n\n\n\n1.6 Grouped summaries\n\n\n\n\n\n\nImportantTask\n\n\n\nUse group_by() and get_summary_stats() to calculate your composite score’s common summary statistics separately for each level of your chosen grouping variable. Write 2-3 sentences interpreting what you see. Does the composite score noticeably differ across groups? Does this align with what you’d expect given your project question?\n\n\n\n\n\n\n\n\nNote\n\n\n\nOptional/Additional: You can also pass your grouping variable into tbl_summary(by = ...) to get a nicely formatted side-by-side table instead of (or in addition to) the group_by()/get_summary_stats() output above.\n\n\n\n\n1.7 Export tables\n\n\n\n\n\n\nImportantTask\n\n\n\nSave wbns_06_cat and summary_table_overall in a .rda file in your data_project folder. Name the file something that will help you identify it later, like wbns_data_lab_03_work.rda or wbns_data_03_summ.rda."
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#introduction-to-ggplot2",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#introduction-to-ggplot2",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Introduction to ggplot2",
+    "text": "Introduction to ggplot2\n\n\n\n\n\nArtwork by @allison_horst\n\n\n\n\n\n\nArtwork by @allison_horst"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#ggplot2-in-tidyverse",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#ggplot2-in-tidyverse",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "ggplot2 in tidyverse",
+    "text": "ggplot2 in tidyverse\n\n\n\n\n\nggplot2 is tidyverse’s data visualization package\n\nThis is one of the main ways to create plots and explore data\n\n\n \n\nThe gg in “ggplot2” stands for Grammar of Graphics\n\n \n\nIt is inspired by the book Grammar of Graphics by Leland Wilkinson\n\nMake graphs/plots by combining independent components\nStart with a basic plot then add layers\n\n\n \n\nggplot2 can create plots for a single variable or for multiple variables"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#works-best-with-tidy-data1",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#works-best-with-tidy-data1",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Works best with “tidy” data1",
+    "text": "Works best with “tidy” data1\n\n\n\n\n\n\nEach variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell.\n\nSource: R for Data Science. Grolemund and Wickham."
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#grammar-of-ggplot2",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#grammar-of-ggplot2",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Grammar of ggplot2",
+    "text": "Grammar of ggplot2\n\n\n\n\n\n\n\n\n\nWe typically start at the bottom (data) and work our way up (themes)\n\nYou skip some of the layers if you don’t need them\n\n\n \n\nggplot2 needs at least the following three to produce a chart:\n\ndata, a mapping, and a layer\n\n\n \n\nFor the most part, there are default settings for the other parts:\n\nscales, facets, coordinates, and themes"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#data",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#data",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "1. Data",
+    "text": "1. Data\n\nggplot2 uses data to construct a plot\nWorks best with tidy data (when every observation is a row and each variable is a column)\nFirst step in plotting:\n\nPass the data to the ggplot function, which stores the data to be used later by other parts of the plotting system\n\nFor example, if we intend to make a graphic about the hrs_data dataset, we would start as follows:\n\n\n\nggplot(\n1  data = hrs_data\n  )\n\n\n\n1\n\nWe input the data that contains our variables of interest."
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#data-1",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#data-1",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "1. Data",
+    "text": "1. Data\n\nFor example, if we intend to make a graphic about the hrs_data dataset, we would start as follows:\n\n\n\nggplot(\n1  data = hrs_data\n  )\n\n\n\n1\n\nWe input the data that contains our variables of interest."
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#mapping",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#mapping",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "2. Mapping",
+    "text": "2. Mapping\n\nMappings use the aes() function to map variables to the different axes on a plot\n\naes() stands for “aesthetics”"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#data-mapping",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#data-mapping",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Data + Mapping",
+    "text": "Data + Mapping\n\nIf we want the age and income columns to map to the x- and y-coordinates in the plot, we can do that as follows:\n\n\n\nggplot(\n  hrs_data, \n1  mapping = aes(\n    x = age_yr,  \n    y = income\n    )\n  )\n\n\n\n1\n\nWe use the aes() function to specify the mapping of variables to axes. In this case, we are mapping age_yr to the x-axis and income to the y-axis."
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#layers",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#layers",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "3. Layers",
+    "text": "3. Layers\n\nEvery layer consists of three important parts:\n\nThe geometry that determines how data are displayed, such as points, lines, or rectangles\nThe statistical transformation that may compute new variables from the data and affect what of the data is displayed.\nThe position adjustment that primarily determines where a piece of data is being displayed\n\nA layer can be constructed using the geom_*() and stat_*() functions\n\nThese functions often determine one of the three parts of a layer, while the other two can still be specified."
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#data-mapping-layers",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#data-mapping-layers",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Data + Mapping + Layers",
+    "text": "Data + Mapping + Layers\nHere is how we can use two layers to display the age and income columns of the hrs_data dataset as points and stack a trend line on top:\n\n\nggplot(\n  hrs_data, \n  mapping = aes(\n    x = age_yr, \n    y = income\n    )\n  ) + \n1  geom_point() +\n2  geom_smooth(\n    formula = y ~ x, \n    method = \"lm\"\n    )\n\n\n\n1\n\nTo create a scatterplot\n\n2\n\nTo fit and overlay a line"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#notice-the-following-create-the-same-plot",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#notice-the-following-create-the-same-plot",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Notice: the following create the same plot",
+    "text": "Notice: the following create the same plot\n\n\nNaming the input arguments in the ggplot() function\n\nggplot(\n1  data = hrs_data,\n2  mapping = aes(\n    x = age_yr, \n    y = income\n    )\n  ) + \n  geom_point()\n\n\n1\n\nWe name the input argument for the dataset as data\n\n2\n\nWe name the input argument for the mapping as mapping\n\n\n\n\n\nMore concise, no naming input arguments\n\nggplot(\n1  hrs_data,\n2  aes(\n    x = age_yr, \n    y = income\n    )\n  ) + \n  geom_point()\n\n\n1\n\nRemoved input argument name\n\n2\n\nRemoved input argument name\n\n\n\n\n\nWe can pipe the dataset into ggplot()\n\n1hrs_data |&gt;\n  ggplot(\n    aes(\n      x = age_yr, \n      y = income\n      )\n    ) + \n  geom_point()\n\n\n1\n\nWe use the pipe operator to pass the dataset into ggplot()\n\n\n\n\n\nWe can also move aes() out of ggplot()\n\nggplot(hrs_data) + \n1  aes(\n    x = age_yr, \n    y = income\n  ) +\n  geom_point()\n\n\n1\n\nWe move the aes() function out of the ggplot() function\n\n\n\n\n\nggplot() + \n  geom_point(\n    data = hrs_data,\n    mapping = aes(x = age_yr, y = income)\n  )"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#we-can-also-make-plots-with-a-single-variable",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#we-can-also-make-plots-with-a-single-variable",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "We can also make plots with a single variable",
+    "text": "We can also make plots with a single variable\n\nData: still hrs_data\nMapping: using aesthetic to specify only one variable in the x-axis (age)\nLayers: using geom_histogram() to show a plot of the counts per age\n\n\n\nggplot(\n  hrs_data, \n1  aes(age_yr)\n  ) +\n2  geom_histogram()\n\n\n\n1\n\nWe specify only one variable in the aes() function, which will be mapped to the x-axis by default\n\n2\n\nWe use geom_histogram() to create a histogram of the counts per age_yr"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#we-can-add-more-to-plots",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#we-can-add-more-to-plots",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "We can add more to plots!",
+    "text": "We can add more to plots!\nWe can change labels!\n\n\nggplot(\n  hrs_data, \n  aes(age_yr)\n  ) +\n  geom_histogram() +\n1  labs(\n2    x = \"Age (years)\",\n3    y = \"Frequency\",\n4    title = \"Distribution of Age\"\n    )\n\n\n\n1\n\nWe use the labs() function to change the labels of the axes and title of the plot\n\n2\n\nWe change the x-axis label to “Age (years)”\n\n3\n\nWe change the y-axis label to “Frequency”\n\n4\n\nWe change the title of the plot to “Distribution of Age”"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#adding-more-to-plots",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#adding-more-to-plots",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Adding more to plots!",
+    "text": "Adding more to plots!\nIncrease (or decrease) text size so we can read it / it fits nicely!\n\n\nggplot(\n  hrs_data, \n  aes(age_yr)\n  ) +\n  geom_histogram() +\n  labs( \n    x = \"Age (years)\",\n    y = \"Frequency\",\n    title = \"Distribution of Age\"\n    ) +\n  theme(\n    axis.text = element_text(size = 28),\n    axis.title = element_text(size = 28),\n    title = element_text(size = 28)\n    )"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#notice-common-components-of-ggplot2",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#notice-common-components-of-ggplot2",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Notice: common components of ggplot2",
+    "text": "Notice: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_point() +          \n  \n  labs() +       \n  \n  theme()"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#wrap-up",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#wrap-up",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Wrap-up",
+    "text": "Wrap-up\n\nggplot2 is great data visualization tool in R\n\n \n\nGrammar of Graphics: data, mapping, layers, scales, facets, coordinates, themes\n\nWe can add a lot of different components to our plots to make them more informative and visually appealing\n\n\n \n\nWe discussed some of the options in ggplot2 but there are many more to explore!"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#resources-on-ggplot",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#resources-on-ggplot",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Resources on ggplot",
+    "text": "Resources on ggplot\n\nggplot2 package website: https://ggplot2.tidyverse.org/articles/ggplot2.html\nOnline textbook for ggplot2: https://ggplot2-book.org/\nAnother online resource for data visualization with ggplot2: https://socviz.co/index.html#preface"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#what-can-we-plot",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#what-can-we-plot",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "What can we plot?",
+    "text": "What can we plot?\n\nggplot2 can create plots for a single variable or for multiple variables"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#common-components-of-ggplot2",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#common-components-of-ggplot2",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Common components of ggplot2",
+    "text": "Common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_point() +          \n  \n  labs() +       \n  \n  theme()"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#basic-layers-of-ggplot2",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#basic-layers-of-ggplot2",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Basic layers of ggplot2",
+    "text": "Basic layers of ggplot2\n\nWe can write very intricate plots with ggplot2 by adding layers to a basic plot\nA basic plot consists of three layers:\n\nData: the dataset that contains the variables of interest\nMapping: the mapping of variables to axes\nLayer: the geometric object that represents the data\n\nThis translates to the following code:\n\nUse ggplot() to start the plot\n\nWe can pass the data and mapping to this function\n\nUse + to add a layer to the plot\nUse geom_*() or stat_*() functions to add data visuals\n\nWe can pass the data and mapping to these functions as well"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#note-common-components-of-ggplot2",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#note-common-components-of-ggplot2",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "Note: common components of ggplot2",
+    "text": "Note: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_point() +          \n  \n  labs() +       \n  \n  theme()"
+  },
+  {
+    "objectID": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#section",
+    "href": "lessons/31_Data_viz_Intro_to_ggplot/Data_viz_Intro_to_ggplot.html#section",
+    "title": "Data visualization: Introduction to ggplot2",
+    "section": "",
+    "text": "Artwork by @allison_horst\n\n\n\n\n\n\nArtwork by @allison_horst"
   }
 ]

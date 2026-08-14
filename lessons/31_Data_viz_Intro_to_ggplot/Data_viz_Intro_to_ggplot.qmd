@@ -16,8 +16,8 @@ format:
     highlight-style: ayu
 code-annotations: hover
 execute:
-  eval: false
   freeze: auto
+  echo: true
 ---
 
 ```{r}
@@ -44,19 +44,13 @@ theme_set(theme_grey(base_size = 24))
 
 ```{r}
 #| echo: false
-# library(readxl)
-# note we are saving the data from the Excel file in our environment 
-# with the object name hrs_data
-# hrs_data2 <- read_excel(here("./data/hrs_data_narch.xlsx"))
-# hrs_data <- read_excel(here("./data/hrs_data.xlsx"))
+
 hrs_data <- import(here("data", "hrs_data.rds"))
 hrs_00 <- clean_names(hrs_data) |>
   relocate(diab, degree, .after = id)
-hrs_data <- clean_names(hrs_data) %>%
-  relocate(race_original, female, .after = degree)#
 ```
 
-## Introduction to `ggplot2`
+## 
 
 ::::: columns
 ::: {.column width="46%"}
@@ -90,6 +84,11 @@ hrs_data <- clean_names(hrs_data) %>%
 
     -   Make graphs/plots by combining independent components
     -   Start with a basic plot then add layers
+
+ 
+
+- `ggplot2` can create plots for a single variable or for multiple variables
+
 :::
 :::::
 
@@ -119,6 +118,11 @@ hrs_data <- clean_names(hrs_data) %>%
 :::
 
 ::: {.column width="40%"}
+- We typically start at the bottom (data) and work our way up (themes)
+  - You skip some of the layers if you don't need them
+
+ 
+
 -   `ggplot2` needs at least the following three to produce a chart:
     -   data, a mapping, and a layer
 
@@ -129,7 +133,21 @@ hrs_data <- clean_names(hrs_data) %>%
 :::
 :::::
 
-## **Data**
+## Basic layers of `ggplot2`
+
+- We can write very intricate plots with `ggplot2` by adding layers to a basic plot
+- A basic plot consists of three layers:
+  1. [Data:]{style="color: #F39C12;"} the dataset that contains the variables of interest
+  2. [Mapping:]{style="color: #5BAFF8;"} the mapping of variables to axes
+  3. [Layer:]{style="color: #459B99;"} the geometric object that represents the data
+- This translates to the following code:
+  - Use `ggplot()` to start the plot
+    - We can pass the data and mapping to this function
+  - Use `+` to add a layer to the plot
+  - Use `geom_*()` or `stat_*()` functions to add data visuals
+    - We can pass the data and mapping to these functions as well
+
+## 1. [Data]{style="color: #F39C12;"}
 
 -   `ggplot2` uses **data** to construct a plot
 
@@ -139,13 +157,11 @@ hrs_data <- clean_names(hrs_data) %>%
 
     -   Pass the data to the `ggplot` function, which stores the data to be used later by other parts of the plotting system
 
-## Data
-
 -   For example, if we intend to make a graphic about the `hrs_data` dataset, we would start as follows:
 
 ```{r}
-#| fig-width: 10
-#| fig-height: 7
+#| fig-width: 8
+#| fig-height: 5
 #| fig-align: center
 #| output-location: column
 
@@ -156,13 +172,13 @@ ggplot(
 
 1. We input the data that contains our variables of interest.
 
-## **Mapping**
+## 2. [Mapping]{style="color: #5BAFF8;"}
 
 -   Mappings use the `aes()` function to **map** variables to the different axes on a plot
 
     -   `aes()` stands for "aesthetics"
 
-## Data + Mapping
+## [Data]{style="color: #F39C12;"} + [Mapping]{style="color: #5BAFF8;"}
 
 -   If we want the `age` and `income` columns to map to the x- and y-coordinates in the plot, we can do that as follows:
 
@@ -176,15 +192,15 @@ ggplot(
 ggplot(
   hrs_data, 
   mapping = aes( #<1>
-    x = age,  
+    x = age_yr,  
     y = income
     ) #<1>
   )
 ```
 
-1. We use the `aes()` function to specify the mapping of variables to axes. In this case, we are mapping `age` to the x-axis and `income` to the y-axis.
+1. We use the `aes()` function to specify the mapping of variables to axes. In this case, we are mapping `age_yr` to the x-axis and `income` to the y-axis.
 
-## **Layers**
+## 3. [Layers]{style="color: #459B99;"}
 
 -   Every layer consists of three important parts:
 
@@ -198,7 +214,7 @@ ggplot(
 
     -   These functions often determine one of the three parts of a layer, while the other two can still be specified.
 
-## Data + Mapping + Layers
+## [Data]{style="color: #F39C12;"} + [Mapping]{style="color: #5BAFF8;"} + [Layers]{style="color: #459B99;"}
 
 Here is how we can use two layers to display the `age` and `income` columns of the `hrs_data` dataset as points and stack a trend line on top:
 
@@ -211,7 +227,7 @@ Here is how we can use two layers to display the `age` and `income` columns of t
 ggplot(
   hrs_data, 
   mapping = aes(
-    x = age, 
+    x = age_yr, 
     y = income
     )
   ) + 
@@ -231,12 +247,13 @@ ggplot(
 ::: column
 [Naming the input arguments in the `ggplot()` function]{style="color: #5BAFF8;"}
 ```{r}
+#| echo: true
 #| eval: false
 
 ggplot(
   data = hrs_data, #<1>
   mapping = aes( #<2>
-    x = age, 
+    x = age_yr, 
     y = income
     )
   ) + 
@@ -248,12 +265,13 @@ ggplot(
 ::: column
 [More concise, no naming input arguments]{style="color: #BF396F;"}
 ```{r}
+#| echo: true
 #| eval: false
 
 ggplot(
   hrs_data, #<1>
   aes( #<2>
-    x = age, 
+    x = age_yr, 
     y = income
     )
   ) + 
@@ -265,12 +283,13 @@ ggplot(
 ::: column
 [We can pipe the dataset into `ggplot()`]{style="color: #459B99;"}
 ```{r}
+#| echo: true
 #| eval: false
 
 hrs_data |> #<1>
   ggplot(
     aes(
-      x = age, 
+      x = age_yr, 
       y = income
       )
     ) + 
@@ -281,16 +300,25 @@ hrs_data |> #<1>
 ::: column
 [We can also move `aes()` out of `ggplot()`]{style="color: #3070BF;"}
 ```{r}
+#| echo: true
 #| eval: false
 
 ggplot(hrs_data) + 
   aes( #<1>
-    x = age, 
+    x = age_yr, 
     y = income
   ) + #<1>
   geom_point()
 ```
 1. We move the `aes()` function out of the `ggplot()` function
+
+```{r}
+ggplot() + 
+  geom_point(
+    data = hrs_data,
+    mapping = aes(x = age_yr, y = income)
+  )
+```
 :::
 :::
 
@@ -310,13 +338,13 @@ ggplot(hrs_data) +
 
 ggplot(
   hrs_data, 
-  aes(age) #<1>
+  aes(age_yr) #<1>
   ) +
   geom_histogram() #<2>
 ```
 
 1. We specify only one variable in the `aes()` function, which will be mapped to the x-axis by default
-2. We use `geom_histogram()` to create a histogram of the counts per `age
+2. We use `geom_histogram()` to create a histogram of the counts per `age_yr`
 
 ## Let's take a second to try this out {visibility="hidden"}
 
@@ -352,7 +380,7 @@ We can change labels!
 
 ggplot(
   hrs_data, 
-  aes(age)
+  aes(age_yr)
   ) +
   geom_histogram() +
   labs( #<1>
@@ -380,7 +408,7 @@ Increase (or decrease) text size so we can read it / it fits nicely!
 
 ggplot(
   hrs_data, 
-  aes(age)
+  aes(age_yr)
   ) +
   geom_histogram() +
   labs( 
@@ -395,7 +423,7 @@ ggplot(
     ) #<1>
 ```
 
-## Notice: common components of `ggplot2`
+## Note: common components of `ggplot2`
 
 ::: columns
 ::: column
@@ -428,16 +456,6 @@ ggplot(
 :::
 
 
-## Take a moment {visibility="hidden"}
-
--   To add labels to your plot and change the text size if you want
--   If you have time, look up help on the `element_text()` function
-    -   See if you can tilt your text or change the color
-    
-```{r}
-#| echo: false
-countdown::countdown(5)
-```
 
 ## Wrap-up
 
