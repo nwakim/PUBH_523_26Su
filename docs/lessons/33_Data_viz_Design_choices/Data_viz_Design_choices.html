@@ -226,104 +226,558 @@ Nicky Wakim
 </div><div class="column">
 <p>&nbsp;</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1"></a><span class="fu">ggplot</span>(</span>
-<span id="annotated-cell-1-2"><a href="#annotated-cell-1-2"></a>  <span class="at">data =</span> my_data, </span>
-<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> col1, <span class="at">y =</span> col2)</span>
-<span id="annotated-cell-1-4"><a href="#annotated-cell-1-4"></a>  ) <span class="sc">+</span></span>
-<span id="annotated-cell-1-5"><a href="#annotated-cell-1-5"></a>  </span>
-<span id="annotated-cell-1-6"><a href="#annotated-cell-1-6"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span>          </span>
-<span id="annotated-cell-1-7"><a href="#annotated-cell-1-7"></a>  </span>
-<span id="annotated-cell-1-8"><a href="#annotated-cell-1-8"></a>  <span class="fu">labs</span>() <span class="sc">+</span>       </span>
-<span id="annotated-cell-1-9"><a href="#annotated-cell-1-9"></a>  </span>
-<span id="annotated-cell-1-10"><a href="#annotated-cell-1-10"></a>  <span class="fu">theme</span>()                                  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-9"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy"><code class="sourceCode r"><span id="annotated-cell-9-1"><a href="#annotated-cell-9-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-9-2"><a href="#annotated-cell-9-2"></a>  <span class="at">data =</span> my_data, </span>
+<span id="annotated-cell-9-3"><a href="#annotated-cell-9-3"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> col1, <span class="at">y =</span> col2)</span>
+<span id="annotated-cell-9-4"><a href="#annotated-cell-9-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-9-5"><a href="#annotated-cell-9-5"></a>  </span>
+<span id="annotated-cell-9-6"><a href="#annotated-cell-9-6"></a>  geom_<span class="sc">*</span>() <span class="sc">+</span>          </span>
+<span id="annotated-cell-9-7"><a href="#annotated-cell-9-7"></a>  </span>
+<span id="annotated-cell-9-8"><a href="#annotated-cell-9-8"></a>  <span class="fu">labs</span>() <span class="sc">+</span>       </span>
+<span id="annotated-cell-9-9"><a href="#annotated-cell-9-9"></a>  </span>
+<span id="annotated-cell-9-10"><a href="#annotated-cell-9-10"></a>  <span class="fu">theme</span>()                                  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div></div>
 <div class="blue">
 <div class="blue-cont">
-<p>In this lesson, we will focus on <strong>using different geometric objects</strong> and <strong>building the mapping</strong>.</p>
+<p>In this lesson, we will focus on <strong>labels</strong>, <strong>themes</strong>, and <strong>facets</strong>.</p>
 </div>
 </div>
 </section>
-<section>
-<section id="geometric-objects" class="title-slide slide level1 center">
-<h1>Geometric objects</h1>
-
-</section>
-<section id="geometric-objects-1" class="slide level2">
-<h2>Geometric objects</h2>
+<section id="basic-labelling-using-labs-titles-and-axes" class="slide level2">
+<h2>Basic labelling using <code>labs()</code>: titles and axes</h2>
 <ul>
-<li>Geometric objects (geoms) are used to represent the datapoints
-<ul>
-<li>The same variable’s data can be represented in different ways</li>
-</ul></li>
+<li>We can assign many different labels to a plot using the <code>labs()</code> function</li>
 </ul>
-<p>For example: we can plot Age vs.&nbsp;Income using a scatterplot or a smoothed line</p>
+<p>We have the following options for labelling:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span>     </span>
+<span id="annotated-cell-1-2"><a href="#annotated-cell-1-2"></a>  geom_<span class="sc">*</span>() <span class="sc">+</span>          </span>
+<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3"></a>  <span class="fu">labs</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1">1</button><span id="annotated-cell-1-4" class="code-annotation-target"><a href="#annotated-cell-1-4"></a>    <span class="at">x =</span> <span class="st">"Label for x-axis"</span>,</span>
+<span id="annotated-cell-1-5"><a href="#annotated-cell-1-5"></a>    <span class="at">y =</span> <span class="st">"Label for y-axis"</span>,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="2">2</button><span id="annotated-cell-1-6" class="code-annotation-target"><a href="#annotated-cell-1-6"></a>    <span class="at">color =</span> <span class="st">"Label for color legend"</span>,</span>
+<span id="annotated-cell-1-7"><a href="#annotated-cell-1-7"></a>    <span class="at">fill =</span> <span class="st">"Label for fill legend"</span>,</span>
+<span id="annotated-cell-1-8"><a href="#annotated-cell-1-8"></a>    <span class="at">title =</span> <span class="st">"Title for the whole plot"</span>,</span>
+<span id="annotated-cell-1-9"><a href="#annotated-cell-1-9"></a>    <span class="at">subtitle =</span> <span class="st">"Appears smaller, under the title"</span>, </span>
+<span id="annotated-cell-1-10"><a href="#annotated-cell-1-10"></a>    <span class="at">caption =</span> <span class="st">"Appears at the bottom of the plot, good for context"</span> </span>
+<span id="annotated-cell-1-11"><a href="#annotated-cell-1-11"></a>  ) <span class="sc">+</span>       </span>
+<span id="annotated-cell-1-12"><a href="#annotated-cell-1-12"></a>  <span class="fu">theme</span>()                                  </span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="4,5,8" data-code-annotation="1">Typically all you need for a plot with two variables.</span>
+</dd>
+<dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="6,7" data-code-annotation="2">Only needed if you have a legend for color or fill.</span>
+</dd>
+</dl>
+</div>
+</div>
+</section>
+<section id="example-1-new-labels-for-our-plot-of-age-vs.-self-reported-health" class="slide level2">
+<h2>Example 1: New labels for our plot of age vs.&nbsp;self-reported health</h2>
+<ul>
+<li>The following example adds all possible labels to the plot</li>
+<li>We do NOT need to add every possible label!!</li>
+</ul>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2"></a>  hrs_00, </span>
+<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr, <span class="at">y =</span> srh)</span>
+<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6"></a>  <span class="fu">geom_jitter</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="annotated-cell-2-7"><a href="#annotated-cell-2-7"></a>  <span class="fu">labs</span>(</span>
+<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8"></a>    <span class="at">x =</span> <span class="st">"Age (years)"</span>,</span>
+<span id="annotated-cell-2-9"><a href="#annotated-cell-2-9"></a>    <span class="at">y =</span> <span class="st">"Self-reported health"</span>,</span>
+<span id="annotated-cell-2-10"><a href="#annotated-cell-2-10"></a>    <span class="at">title =</span> <span class="st">"Self-reported health by age"</span>,</span>
+<span id="annotated-cell-2-11"><a href="#annotated-cell-2-11"></a>    <span class="at">subtitle =</span> <span class="st">"Data from the Health and Retirement Study (HRS)"</span>,</span>
+<span id="annotated-cell-2-12"><a href="#annotated-cell-2-12"></a>    <span class="at">caption =</span> <span class="st">"Source: HRS, 2022 wave"</span></span>
+<span id="annotated-cell-2-13"><a href="#annotated-cell-2-13"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="example-2-labels-for-color" class="slide level2">
+<h2>Example 2: Labels for color</h2>
+<ul>
+<li>Note that the HRS dataset came with really nice labels embedded in the <code>.rda</code> file</li>
+</ul>
 <div class="columns">
 <div class="column">
-<div class="cell" data-layout-align="center">
+<div class="cell">
+<details class="code-fold">
+<summary>Original labels</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">ggplot</span>(</span>
+<span id="cb1-2"><a></a>  hrs_00,</span>
+<span id="cb1-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr, <span class="at">y =</span> srh, <span class="at">color =</span> srh)</span>
+<span id="cb1-4"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb1-5"><a></a>  <span class="fu">geom_jitter</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure>
-<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column">
-<div class="cell" data-layout-align="center">
+<div class="cell">
+<details class="code-fold">
+<summary>Some label changes</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-11"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-11-1"><a href="#annotated-cell-11-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-11-2"><a href="#annotated-cell-11-2"></a>  hrs_00,</span>
+<span id="annotated-cell-11-3"><a href="#annotated-cell-11-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr, <span class="at">y =</span> srh, <span class="at">color =</span> srh)</span>
+<span id="annotated-cell-11-4"><a href="#annotated-cell-11-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-11-5"><a href="#annotated-cell-11-5"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
+<span id="annotated-cell-11-6"><a href="#annotated-cell-11-6"></a>  <span class="fu">labs</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-11" data-target-annotation="1">1</button><span id="annotated-cell-11-7" class="code-annotation-target"><a href="#annotated-cell-11-7"></a>    <span class="at">x =</span> <span class="st">"Age (years)"</span>,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-11" data-target-annotation="2">2</button><span id="annotated-cell-11-8" class="code-annotation-target"><a href="#annotated-cell-11-8"></a>    <span class="at">color =</span> <span class="st">"Self-reported </span><span class="sc">\n</span><span class="st">health"</span></span>
+<span id="annotated-cell-11-9"><a href="#annotated-cell-11-9"></a>  )</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-11" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-11" data-code-lines="7" data-code-annotation="1">Take away “at Interview” for x-axis</span>
+</dd>
+<dt data-target-cell="annotated-cell-11" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-11" data-code-lines="8" data-code-annotation="2">Added <code>\n</code> to condense the horizontal space that the legend title takes up.</span>
+</dd>
+</dl>
+</div>
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure>
-<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
 </figure>
 </div>
 </div>
 </div>
 </div></div>
 </section>
-<section id="types-of-geoms" class="slide level2">
-<h2>Types of geoms</h2>
+<section id="example-3-same-plot-without-our-nice-pre-labelled-variables" class="slide level2">
+<h2>Example 3: Same plot without our nice, pre-labelled variables</h2>
 <ul>
-<li>Common geoms include:
+<li>If we use the <code>.xlsx</code> file, we lose the labels and the SRH level order.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>hrs_xlsx <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"hrs_data.xlsx"</span>)) <span class="sc">|&gt;</span> <span class="fu">drop_na</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="columns">
+<div class="column">
+<div class="cell">
+<details class="code-fold">
+<summary>Variable names are the labels</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">ggplot</span>(</span>
+<span id="cb3-2"><a></a>  hrs_xlsx,</span>
+<span id="cb3-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr, <span class="at">y =</span> srh, <span class="at">color =</span> srh)</span>
+<span id="cb3-4"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb3-5"><a></a>  <span class="fu">geom_jitter</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column">
+<div class="cell">
+<details class="code-fold">
+<summary>Some label changes</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-13"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-13-1"><a href="#annotated-cell-13-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-13-2"><a href="#annotated-cell-13-2"></a>  hrs_xlsx,</span>
+<span id="annotated-cell-13-3"><a href="#annotated-cell-13-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr, <span class="at">y =</span> srh, <span class="at">color =</span> srh)</span>
+<span id="annotated-cell-13-4"><a href="#annotated-cell-13-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-13-5"><a href="#annotated-cell-13-5"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
+<span id="annotated-cell-13-6"><a href="#annotated-cell-13-6"></a>  <span class="fu">labs</span>(</span>
+<span id="annotated-cell-13-7"><a href="#annotated-cell-13-7"></a>    <span class="at">x =</span> <span class="st">"Age (years)"</span>,</span>
+<span id="annotated-cell-13-8"><a href="#annotated-cell-13-8"></a>    <span class="at">y =</span> <span class="st">"Self-reported health"</span>, </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="2">2</button><span id="annotated-cell-13-9" class="code-annotation-target"><a href="#annotated-cell-13-9"></a>    <span class="at">color =</span> <span class="st">"Self-reported </span><span class="sc">\n</span><span class="st">health"</span></span>
+<span id="annotated-cell-13-10"><a href="#annotated-cell-13-10"></a>  )</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-13" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-13" data-code-lines="9" data-code-annotation="2">Added <code>\n</code> to condense the horizontal space that the legend title takes up.</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="facets" class="slide level2">
+<h2>Facets</h2>
 <ul>
-<li><code>geom_histogram()</code></li>
-<li><code>geom_bar()</code></li>
-<li><code>geom_boxplot()</code></li>
-<li><code>geom_point()</code></li>
-<li><code>geom_line()</code></li>
-<li><code>geom_smooth()</code></li>
+<li>Facets allow us to create multiple plots based on one or more discrete variables
+<ul>
+<li>Discrete meaning categorical or whole number values</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>We create multiple plots based on subsets of the data
+<ul>
+<li>If each subset is determined by one variable, we use <code>facet_wrap()</code></li>
+<li>If each subset is determined by two variables, we use <code>facet_grid()</code></li>
 </ul></li>
 </ul>
 </section>
-<section id="lets-check-out-the-ggplot2-cheatsheet-together" class="slide level2">
-<h2>Let’s check out the <code>ggplot2</code> cheatsheet together</h2>
+<section id="example-4-facet_wrap" class="slide level2">
+<h2>Example 4: <code>facet_wrap()</code></h2>
+<ul>
+<li>We use <code>srh</code> as the facet variable to create a histogram of age for each level of self-reported health</li>
+</ul>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2"></a>  hrs_00,</span>
+<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr)</span>
+<span id="annotated-cell-4-4"><a href="#annotated-cell-4-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-4-5"><a href="#annotated-cell-4-5"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-6" class="code-annotation-target"><a href="#annotated-cell-4-6"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> srh)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column">
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="6" data-code-annotation="1">The <code>~</code> indicates that we are faceting by a single variable, <code>srh</code>.</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
 </section>
-<section id="examples" class="slide level2">
-<h2>EXAMPLES</h2>
-</section></section>
-<section>
-<section id="mapping" class="title-slide slide level1 center">
-<h1>Mapping</h1>
+<section id="example-5-facet_grid" class="slide level2">
+<h2>Example 5: <code>facet_grid()</code></h2>
+<ul>
+<li>We use <code>srh</code> and <code>diab</code> as the facet variables to create a histogram of age for each level of self-reported health and diabetes status</li>
+</ul>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-5-2"><a href="#annotated-cell-5-2"></a>  hrs_00,</span>
+<span id="annotated-cell-5-3"><a href="#annotated-cell-5-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr)</span>
+<span id="annotated-cell-5-4"><a href="#annotated-cell-5-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-5-5"><a href="#annotated-cell-5-5"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1">1</button><span id="annotated-cell-5-6" class="code-annotation-target"><a href="#annotated-cell-5-6"></a>  <span class="fu">facet_grid</span>(diab <span class="sc">~</span> srh)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column">
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="6" data-code-annotation="1">The <code>~</code> indicates that we are faceting by two variables, <code>diab</code> and <code>srh</code>. The first variable is used for the rows and the second variable is used for the columns.</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="complete-themes" class="slide level2">
+<h2>Complete themes</h2>
+<ul>
+<li>We can change the entire appearance of our plot with <strong>themes</strong></li>
+<li>There are several set themes in <code>ggplot2</code>: <a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">check out the page on complete themes for more!</a></li>
+</ul>
+<p>&nbsp;</p>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-14" data-code-line-numbers="3"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-14-1"><a href="#annotated-cell-14-1"></a><span class="fu">ggplot</span>(hrs_00) <span class="sc">+</span></span>
+<span id="annotated-cell-14-2"><a href="#annotated-cell-14-2"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> age_yr)) <span class="sc">+</span> </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="1">1</button><span id="annotated-cell-14-3" class="code-annotation-target"><a href="#annotated-cell-14-3"></a>  <span class="fu">theme_grey</span>()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-14" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-14" data-code-lines="3" data-code-annotation="1">This is the default theme!</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-11-1.png" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">ggplot</span>(hrs_00) <span class="sc">+</span></span>
+<span id="cb4-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> age_yr)) <span class="sc">+</span></span>
+<span id="cb4-3"><a></a>  <span class="fu">theme_bw</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-12-1.png" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">ggplot</span>(hrs_00) <span class="sc">+</span></span>
+<span id="cb5-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> age_yr)) <span class="sc">+</span></span>
+<span id="cb5-3"><a></a>  <span class="fu">theme_classic</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-13-1.png" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ggplot</span>(hrs_00) <span class="sc">+</span></span>
+<span id="cb6-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> age_yr)) <span class="sc">+</span></span>
+<span id="cb6-3"><a></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-14-1.png" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="modifying-themes" class="slide level2">
+<h2>Modifying themes</h2>
+<ul>
+<li>We can change various components of a theme using the <code>theme()</code> function</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>We can change the look of the title, axes, facets, and legend
+<ul>
+<li><a href="https://ggplot2.tidyverse.org/reference/theme.html">The input options for <code>theme()</code> is VAST</a></li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>We’re only going to touch the surface here!</li>
+</ul>
+</section>
+<section id="example-6-modifying-the-title-and-axes" class="slide level2 scrollable">
+<h2>Example 6: Modifying the title and axes</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Adding different theme elements</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-6"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-6-1"><a href="#annotated-cell-6-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-6-2"><a href="#annotated-cell-6-2"></a>  hrs_00, </span>
+<span id="annotated-cell-6-3"><a href="#annotated-cell-6-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr, <span class="at">y =</span> srh) </span>
+<span id="annotated-cell-6-4"><a href="#annotated-cell-6-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-6-5"><a href="#annotated-cell-6-5"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span> </span>
+<span id="annotated-cell-6-6"><a href="#annotated-cell-6-6"></a>  <span class="fu">geom_jitter</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span> </span>
+<span id="annotated-cell-6-7"><a href="#annotated-cell-6-7"></a>  <span class="fu">labs</span>(</span>
+<span id="annotated-cell-6-8"><a href="#annotated-cell-6-8"></a>    <span class="at">x =</span> <span class="st">"Age (years)"</span>, </span>
+<span id="annotated-cell-6-9"><a href="#annotated-cell-6-9"></a>    <span class="at">y =</span> <span class="st">"Self-reported health"</span>,</span>
+<span id="annotated-cell-6-10"><a href="#annotated-cell-6-10"></a>    <span class="at">title =</span> <span class="st">"Self-reported health by age"</span>,</span>
+<span id="annotated-cell-6-11"><a href="#annotated-cell-6-11"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-6-12"><a href="#annotated-cell-6-12"></a>  <span class="fu">theme</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1">1</button><span id="annotated-cell-6-13" class="code-annotation-target"><a href="#annotated-cell-6-13"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">color =</span> <span class="st">"blue"</span>),</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="2">2</button><span id="annotated-cell-6-14" class="code-annotation-target"><a href="#annotated-cell-6-14"></a>    <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>, <span class="at">face =</span> <span class="st">"italic"</span>, <span class="at">color =</span> <span class="st">"red"</span>),</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="3">3</button><span id="annotated-cell-6-15" class="code-annotation-target"><a href="#annotated-cell-6-15"></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>, <span class="at">color =</span> <span class="st">"red"</span>),</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="4">4</button><span id="annotated-cell-6-16" class="code-annotation-target"><a href="#annotated-cell-6-16"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">angle =</span> <span class="dv">45</span>)</span>
+<span id="annotated-cell-6-17"><a href="#annotated-cell-6-17"></a>  )</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="13" data-code-annotation="1">Changes the title size, makes it bold, and changes the color to blue</span>
+</dd>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="14" data-code-annotation="2">Changes the x-axis title size, makes it italic, and changes the color to red</span>
+</dd>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="15" data-code-annotation="3">Changes the y-axis title size and color to red</span>
+</dd>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="16" data-code-annotation="4">Changes the y-axis text size and rotates it 45 degrees</span>
+</dd>
+</dl>
+</div>
 
+</div>
+<img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
+<section id="example-7-modifying-the-facets" class="slide level2 scrollable">
+<h2>Example 7: Modifying the facets</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Adding different theme elements to facet</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-7"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-7-2"><a href="#annotated-cell-7-2"></a>  hrs_00,</span>
+<span id="annotated-cell-7-3"><a href="#annotated-cell-7-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr)</span>
+<span id="annotated-cell-7-4"><a href="#annotated-cell-7-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-7-5"><a href="#annotated-cell-7-5"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="annotated-cell-7-6"><a href="#annotated-cell-7-6"></a>  <span class="fu">facet_grid</span>(diab <span class="sc">~</span> srh) <span class="sc">+</span></span>
+<span id="annotated-cell-7-7"><a href="#annotated-cell-7-7"></a>  <span class="fu">theme</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1">1</button><span id="annotated-cell-7-8" class="code-annotation-target"><a href="#annotated-cell-7-8"></a>    <span class="at">strip.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">color =</span> <span class="st">"blue"</span>),</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="2">2</button><span id="annotated-cell-7-9" class="code-annotation-target"><a href="#annotated-cell-7-9"></a>    <span class="at">strip.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">color =</span> <span class="st">"red"</span>)</span>
+<span id="annotated-cell-7-10"><a href="#annotated-cell-7-10"></a>  )</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-7" data-code-lines="8" data-code-annotation="1">Changes the facet column label size and color to blue</span>
+</dd>
+<dt data-target-cell="annotated-cell-7" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-7" data-code-lines="9" data-code-annotation="2">Changes the facet row label size and color to red</span>
+</dd>
+</dl>
+</div>
+
+</div>
+<img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
+<section id="example-8-modifying-the-legend" class="slide level2 scrollable">
+<h2>Example 8: Modifying the legend</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Adding different theme elements to the legend</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-8"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-8-1"><a href="#annotated-cell-8-1"></a><span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-8-2"><a href="#annotated-cell-8-2"></a>  hrs_00,</span>
+<span id="annotated-cell-8-3"><a href="#annotated-cell-8-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr, <span class="at">y =</span> srh, <span class="at">color =</span> srh)</span>
+<span id="annotated-cell-8-4"><a href="#annotated-cell-8-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-8-5"><a href="#annotated-cell-8-5"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
+<span id="annotated-cell-8-6"><a href="#annotated-cell-8-6"></a>  <span class="fu">labs</span>(</span>
+<span id="annotated-cell-8-7"><a href="#annotated-cell-8-7"></a>    <span class="at">x =</span> <span class="st">"Age (years)"</span>, </span>
+<span id="annotated-cell-8-8"><a href="#annotated-cell-8-8"></a>    <span class="at">color =</span> <span class="st">"Self-reported health"</span></span>
+<span id="annotated-cell-8-9"><a href="#annotated-cell-8-9"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-8-10"><a href="#annotated-cell-8-10"></a>  <span class="fu">theme</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-8" data-target-annotation="1">1</button><span id="annotated-cell-8-11" class="code-annotation-target"><a href="#annotated-cell-8-11"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span></span>
+<span id="annotated-cell-8-12"><a href="#annotated-cell-8-12"></a>  )</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-8" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-8" data-code-lines="11" data-code-annotation="1">Moving the legend to the bottom of the plot instead of the right (default)</span>
+</dd>
+</dl>
+</div>
+
+</div>
+<img data-src="Data_viz_Design_choices_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
+<section id="saving-plots" class="slide level2">
+<h2>Saving plots</h2>
+<ul>
+<li>We can save a plot as an image for later use: <em>way better quality than taking a screenshot of the plot</em></li>
+<li>We need to assign the plot to an R object, and then we can save the R object as an image or pdf</li>
+<li>We use <code>ggsave()</code> to save an R object (that’s a plot)</li>
+</ul>
+<p>Let’s say I saved my plot from Example 8 as <code>plot_age_srh</code>:</p>
+<div class="columns">
+<div class="column">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-18"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-18" data-target-annotation="1">1</button><span id="annotated-cell-18-1" class="code-annotation-target"><a href="#annotated-cell-18-1"></a>plot_age_srh <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(</span>
+<span id="annotated-cell-18-2"><a href="#annotated-cell-18-2"></a>  hrs_00,</span>
+<span id="annotated-cell-18-3"><a href="#annotated-cell-18-3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_yr, <span class="at">y =</span> srh, <span class="at">color =</span> srh)</span>
+<span id="annotated-cell-18-4"><a href="#annotated-cell-18-4"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-18-5"><a href="#annotated-cell-18-5"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
+<span id="annotated-cell-18-6"><a href="#annotated-cell-18-6"></a>  <span class="fu">labs</span>(</span>
+<span id="annotated-cell-18-7"><a href="#annotated-cell-18-7"></a>    <span class="at">x =</span> <span class="st">"Age (years)"</span>, </span>
+<span id="annotated-cell-18-8"><a href="#annotated-cell-18-8"></a>    <span class="at">color =</span> <span class="st">"Self-reported health"</span></span>
+<span id="annotated-cell-18-9"><a href="#annotated-cell-18-9"></a>  ) <span class="sc">+</span></span>
+<span id="annotated-cell-18-10"><a href="#annotated-cell-18-10"></a>  <span class="fu">theme</span>(</span>
+<span id="annotated-cell-18-11"><a href="#annotated-cell-18-11"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span></span>
+<span id="annotated-cell-18-12"><a href="#annotated-cell-18-12"></a>  )</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-18" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-18" data-code-lines="1" data-code-annotation="1">I assign the output (aka my plot) to <code>plot_age_srh</code></span>
+</dd>
+</dl>
+</div>
+</div>
+</div><div class="column">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-19"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-19-1"><a href="#annotated-cell-19-1"></a><span class="fu">ggsave</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="1">1</button><span id="annotated-cell-19-2" class="code-annotation-target"><a href="#annotated-cell-19-2"></a>  <span class="at">filename =</span> <span class="fu">here</span>(</span>
+<span id="annotated-cell-19-3"><a href="#annotated-cell-19-3"></a>    <span class="st">"images"</span>, </span>
+<span id="annotated-cell-19-4"><a href="#annotated-cell-19-4"></a>    <span class="st">"plot_age_srh.png"</span></span>
+<span id="annotated-cell-19-5"><a href="#annotated-cell-19-5"></a>    ),</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="2">2</button><span id="annotated-cell-19-6" class="code-annotation-target"><a href="#annotated-cell-19-6"></a>  <span class="at">plot =</span> plot_age_srh,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="3">3</button><span id="annotated-cell-19-7" class="code-annotation-target"><a href="#annotated-cell-19-7"></a>  <span class="at">width =</span> <span class="dv">5</span>,</span>
+<span id="annotated-cell-19-8"><a href="#annotated-cell-19-8"></a>  <span class="at">height =</span> <span class="dv">3</span>,</span>
+<span id="annotated-cell-19-9"><a href="#annotated-cell-19-9"></a>  <span class="at">units =</span> <span class="st">"in"</span>,</span>
+<span id="annotated-cell-19-10"><a href="#annotated-cell-19-10"></a>  <span class="at">dpi =</span> <span class="dv">200</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-19" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-19" data-code-lines="2,5" data-code-annotation="1">We need to tell <code>R</code> where we want the image to end up in our files</span>
+</dd>
+<dt data-target-cell="annotated-cell-19" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-19" data-code-lines="6" data-code-annotation="2">We give <code>R</code> the name of the plot</span>
+</dd>
+<dt data-target-cell="annotated-cell-19" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-19" data-code-lines="7,8" data-code-annotation="3">We need to adjust the height and width to make the plot readable in the image</span>
+</dd>
+</dl>
+</div>
+</div>
+</div></div>
 </section>
-<section id="aesthetic-mapping" class="slide level2">
-<h2>Aesthetic mapping</h2>
+<section id="wrap-up" class="slide level2">
+<h2>Wrap-up</h2>
 <ul>
-<li>If we want to change the visual properties of the plotted data, we use <strong>aesthetic mapping</strong>
+<li>We went over additional layers for <code>ggplot2</code></li>
+</ul>
+<p>&nbsp;</p>
 <ul>
-<li>This is not about the design choices of the figure, but the aesthetics of the <strong>data</strong></li>
-</ul></li>
-<li>Here are a list of common aesthetic options (from the <a href="https://epirhandbook.com/en/new_pages/ggplot_basics.html#plot-aesthetics">Epi Handbook</a>):
+<li>We can use <strong>labels</strong> to make plots more readable to viewers</li>
+<li>We can use <strong>facets</strong> to wrap plots by subsets of data</li>
+<li>We can use <strong>themes</strong> to change the overall appearance of a plot</li>
+<li>We can use <strong><code>ggsave()</code></strong> to save plots as images</li>
+</ul>
+<p>&nbsp;</p>
 <ul>
-<li><code>shape</code> = Display a point with geom_point() as a dot, star, triangle, or square…</li>
-<li><code>fill</code> = The interior color (e.g.&nbsp;of a bar or boxplot)</li>
-<li><code>color</code> = The exterior line of a bar, boxplot, etc., or the point color if using geom_point()</li>
-<li><code>size</code> = Size (e.g.&nbsp;line thickness, point size)</li>
-<li><code>alpha</code> = Transparency (1 = opaque, 0 = invisible)</li>
-<li><code>binwidth</code> = Width of histogram bins (for <code>geom_histogram()</code> only)</li>
-<li><code>width</code> = Width of bar plot columns (for <code>geom_bar()</code> only)</li>
-<li><code>linetype</code> = Line type (e.g.&nbsp;solid, dashed, dotted)</li>
-</ul></li>
+<li>Check out more on <code>ggplot2</code>: it has a lot of capabilities!</li>
 </ul>
 </section>
 <section id="resources" class="slide level2">
@@ -331,10 +785,20 @@ Nicky Wakim
 <ul>
 <li><a href="https://rstudio.github.io/cheatsheets/html/data-visualization.html"><code>ggplot2</code> Cheatsheet in html form</a></li>
 <li><a href="https://rstudio.github.io/cheatsheets/data-visualization.pdf"><code>ggplot2</code> Cheatsheet in pdf form</a></li>
+<li><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">List of complete themes</a></li>
+<li><a href="https://ggplot2.tidyverse.org/reference/theme.html">Modify components of a theme</a></li>
+<li><a href="https://ggplot2.tidyverse.org/reference/ggsave.html">Page on <code>ggsave()</code></a></li>
+<li>Online textbook for <code>ggplot2</code>: <a href="https://ggplot2-book.org/" class="uri">https://ggplot2-book.org/</a></li>
+<li>Another online resource for data visualization with <code>ggplot2</code>: <a href="https://socviz.co/index.html#preface" class="uri">https://socviz.co/index.html#preface</a></li>
+<li><a href="https://vizdata.org/">Advanced Data Viz Class at Duke</a></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>If you found these lessons on Data Visualization fun, I highly suggest you look into Dr.&nbsp;Bedrick’s <a href="https://dmice.ohsu.edu/bedricks/courses/bmi525_spring_2025/">Data Visualization course</a> in the Spring!</li>
 </ul>
 
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

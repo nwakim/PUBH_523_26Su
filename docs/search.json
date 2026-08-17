@@ -1943,7 +1943,7 @@
     "href": "lesson_references.html",
     "title": "External Resources",
     "section": "",
-    "text": "Lesson #\nLesson/Theme Name\nResources\n\n\n\n\n7\nHealth and Retirement Study (HRS)\n\nCheck out the codebook I made for us!\n\n\n\n9\nObjects\n\nThere is an additional textbook: Hands-On Programming with R by Garrett Grolemund\n\nHere is the chapter on objects\n\nPage on tibble package\n\n\n\n10\nPackages\n\nDanielle Navarro’s YouTube video on Installing and loading R packages: https://www.youtube.com/watch?v=kpHZVyDvEhQ\n\nIf you want to get more information on packages\n\nComprehensive R Archive Network (CRAN) = package mothership\nThere is an additional textbook: Hands-On Programming with R by Garrett Grolemund\n\nHere is the chapter on packages\n\n\n\n\n13\nQuarto documents\n\nTo learn more about working with Quarto, check out our BERD workshop: Creating Professional Presentations and Websites using R/Quarto\n\n\n\n16\nPiping\n\nTidyverse style guide on pipes\nMore on the two pipes\n\nDifferences between the base R and magrittr pipes - Tidyverse blog post by Hadley Wickham\nDiscussion of differences on Stack Overflow\nR 4.1.0 pipe overview\nComparing pipes: Base-R |&gt; vs {magrittr} %&gt;%\n\nthis resource includes examples and\nalso how to change the “default” pipe in RStudio from %&gt;% to |&gt; (keyboard shortcut will use |&gt;)\n\n\n\n\n\n20-23\nData transformations\n\ndplyr cheat sheet\nSee this slide from a previous BERD workshop.\nAlso read the filter section in the “Data Transformation” chapter from R for Data Science (2e)\nClick here for a useful reference for all the different operators (both logical and comparison) that you can use.\nSee more examples from the {tidyselect} webpage.\n\n\n\n25-27\nData visualization (ggplot2)\n\nggplot2 package website: https://ggplot2.tidyverse.org/articles/ggplot2.html\nOnline textbook for ggplot2: https://ggplot2-book.org/\nAnother online resource for data visualization with ggplot2: https://socviz.co/index.html#preface\nAdvanced Data Viz Class at Duke\n\n\n\n\n\nMore to be added as course progresses!"
+    "text": "Lesson #\nLesson/Theme Name\nResources\n\n\n\n\n7\nHealth and Retirement Study (HRS)\n\nCheck out the codebook I made for us!\n\n\n\n9\nObjects\n\nThere is an additional textbook: Hands-On Programming with R by Garrett Grolemund\n\nHere is the chapter on objects\n\nPage on tibble package\n\n\n\n10\nPackages\n\nDanielle Navarro’s YouTube video on Installing and loading R packages: https://www.youtube.com/watch?v=kpHZVyDvEhQ\n\nIf you want to get more information on packages\n\nComprehensive R Archive Network (CRAN) = package mothership\nThere is an additional textbook: Hands-On Programming with R by Garrett Grolemund\n\nHere is the chapter on packages\n\n\n\n\n13\nQuarto documents\n\nTo learn more about working with Quarto, check out our BERD workshop: Creating Professional Presentations and Websites using R/Quarto\n\n\n\n16\nPiping\n\nTidyverse style guide on pipes\nMore on the two pipes\n\nDifferences between the base R and magrittr pipes - Tidyverse blog post by Hadley Wickham\nDiscussion of differences on Stack Overflow\nR 4.1.0 pipe overview\nComparing pipes: Base-R |&gt; vs {magrittr} %&gt;%\n\nthis resource includes examples and\nalso how to change the “default” pipe in RStudio from %&gt;% to |&gt; (keyboard shortcut will use |&gt;)\n\n\n\n\n\n20-23\nData transformations\n\ndplyr cheat sheet\nSee this slide from a previous BERD workshop.\nAlso read the filter section in the “Data Transformation” chapter from R for Data Science (2e)\nClick here for a useful reference for all the different operators (both logical and comparison) that you can use.\nSee more examples from the {tidyselect} webpage.\n\n\n\n24-27\nData summarization\n\n\n\n31-33\nData visualization (ggplot2)\n\nggplot2 Cheatsheet in html form\nggplot2 Cheatsheet in pdf form\nList of complete themes\nModify components of a theme\nPage on ggsave()\nOnline textbook for ggplot2: https://ggplot2-book.org/\nAnother online resource for data visualization with ggplot2: https://socviz.co/index.html#preface\nAdvanced Data Viz Class at Duke\n\n\n\n\n\nMore to be added as course progresses!"
   },
   {
     "objectID": "lessons/16_Workflow_getting_help/16_Workflow_getting_help.html#common-console-errors-12",
@@ -10504,7 +10504,7 @@
     "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#recall-common-components-of-ggplot2",
     "title": "Data visualization: Design choices",
     "section": "Recall: common components of ggplot2",
-    "text": "Recall: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_point() +          \n  \n  labs() +       \n  \n  theme()                                  \n\n\n\n\nIn this lesson, we will focus on using different geometric objects and building the mapping."
+    "text": "Recall: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_*() +          \n  \n  labs() +       \n  \n  theme()                                  \n\n\n\n\nIn this lesson, we will focus on labels, themes, and facets."
   },
   {
     "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#geometric-objects-1",
@@ -10546,14 +10546,14 @@
     "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#resources",
     "title": "Data visualization: Design choices",
     "section": "Resources",
-    "text": "Resources\n\nggplot2 Cheatsheet in html form\nggplot2 Cheatsheet in pdf form"
+    "text": "Resources\n\nggplot2 Cheatsheet in html form\nggplot2 Cheatsheet in pdf form\nList of complete themes\nModify components of a theme\nPage on ggsave()\nOnline textbook for ggplot2: https://ggplot2-book.org/\nAnother online resource for data visualization with ggplot2: https://socviz.co/index.html#preface\nAdvanced Data Viz Class at Duke\n\n \n\nIf you found these lessons on Data Visualization fun, I highly suggest you look into Dr. Bedrick’s Data Visualization course in the Spring!"
   },
   {
     "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#recall-common-components-of-ggplot2",
     "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#recall-common-components-of-ggplot2",
     "title": "Data visualization: Basic plotting",
     "section": "Recall: common components of ggplot2",
-    "text": "Recall: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_*() +          \n  \n  labs() +       \n  \n  theme()                                  \n\n\n\n\nIn this lesson, we will focus on ."
+    "text": "Recall: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_*() +          \n  \n  labs() +       \n  \n  theme()                                  \n\n\n\n\nIn this lesson, we will focus on using different geometric objects and building the mapping."
   },
   {
     "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#geometric-objects-1",
@@ -11282,5 +11282,131 @@
     "title": "Data visualization: Basic plotting",
     "section": "Wrap-up",
     "text": "Wrap-up\n\nWe can use different geometric objects to represent data in different ways\nSome geometric objects only work for certain types of data than others\n\n \n\nWe can set aesthetics of datapoints in ggplot2\n\nIncluding color, fill, size, transparency, shape, and more\n\n\n \n\nColor should add information to our plots!"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#basic-labelling-using-labs-titles-and-axes",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#basic-labelling-using-labs-titles-and-axes",
+    "title": "Data visualization: Design choices",
+    "section": "Basic labelling using labs(): titles and axes",
+    "text": "Basic labelling using labs(): titles and axes\n\nWe can assign many different labels to a plot using the labs() function\n\nWe have the following options for labelling:\n\nggplot() +     \n  geom_*() +          \n  labs(\n1    x = \"Label for x-axis\",\n    y = \"Label for y-axis\",\n2    color = \"Label for color legend\",\n    fill = \"Label for fill legend\",\n    title = \"Title for the whole plot\",\n    subtitle = \"Appears smaller, under the title\", \n    caption = \"Appears at the bottom of the plot, good for context\" \n  ) +       \n  theme()                                  \n\n\n1\n\nTypically all you need for a plot with two variables.\n\n2\n\nOnly needed if you have a legend for color or fill."
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#labelling-data",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#labelling-data",
+    "title": "Data visualization: Design choices",
+    "section": "Labelling data",
+    "text": "Labelling data"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#themes",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#themes",
+    "title": "Data visualization: Design choices",
+    "section": "Themes",
+    "text": "Themes"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#facets",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#facets",
+    "title": "Data visualization: Design choices",
+    "section": "Facets",
+    "text": "Facets\n\nFacets allow us to create multiple plots based on one or more discrete variables\n\nDiscrete meaning categorical or whole number values\n\n\n \n\nWe create multiple plots based on subsets of the data\n\nIf each subset is determined by one variable, we use facet_wrap()\nIf each subset is determined by two variables, we use facet_grid()"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#saving-plots",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#saving-plots",
+    "title": "Data visualization: Design choices",
+    "section": "Saving plots",
+    "text": "Saving plots\n\nWe can save a plot as an image for later use: way better quality than taking a screenshot of the plot\nWe need to assign the plot to an R object, and then we can save the R object as an image or pdf\nWe use ggsave() to save an R object (that’s a plot)\n\nLet’s say I saved my plot from Example 8 as plot_age_srh:\n\n\n\n1plot_age_srh &lt;- ggplot(\n  hrs_00,\n  aes(x = age_yr, y = srh, color = srh)\n  ) +\n  geom_jitter() +\n  labs(\n    x = \"Age (years)\", \n    color = \"Self-reported health\"\n  ) +\n  theme(\n    legend.position = \"bottom\"\n  )\n\n\n1\n\nI assign the output (aka my plot) to plot_age_srh\n\n\n\n\n\n\nggsave(\n1  filename = here(\n    \"images\", \n    \"plot_age_srh.png\"\n    ),\n2  plot = plot_age_srh,\n3  width = 5,\n  height = 3,\n  units = \"in\",\n  dpi = 200)\n\n\n1\n\nWe need to tell R where we want the image to end up in our files\n\n2\n\nWe give R the name of the plot\n\n3\n\nWe need to adjust the height and width to make the plot readable in the image"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#wrap-up",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#wrap-up",
+    "title": "Data visualization: Design choices",
+    "section": "Wrap-up",
+    "text": "Wrap-up\n\nWe went over additional layers for ggplot2\n\n \n\nWe can use labels to make plots more readable to viewers\nWe can use facets to wrap plots by subsets of data\nWe can use themes to change the overall appearance of a plot\nWe can use ggsave() to save plots as images\n\n \n\nCheck out more on ggplot2: it has a lot of capabilities!"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-1-new-labels-for-our-plot-of-age-vs.-self-reported-health",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-1-new-labels-for-our-plot-of-age-vs.-self-reported-health",
+    "title": "Data visualization: Design choices",
+    "section": "Example 1: New labels for our plot of age vs. self-reported health",
+    "text": "Example 1: New labels for our plot of age vs. self-reported health\n\nThe following example adds all possible labels to the plot\nWe do NOT need to add every possible label!!\n\n\n\nggplot(\n  hrs_00, \n  aes(x = age_yr, y = srh)\n  ) +\n  geom_boxplot() +\n  geom_jitter(alpha = 0.2) +\n  labs(\n    x = \"Age (years)\",\n    y = \"Self-reported health\",\n    title = \"Self-reported health by age\",\n    subtitle = \"Data from the Health and Retirement Study (HRS)\",\n    caption = \"Source: HRS, 2022 wave\"\n  )"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-2-labels-for-color",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-2-labels-for-color",
+    "title": "Data visualization: Design choices",
+    "section": "Example 2: Labels for color",
+    "text": "Example 2: Labels for color\n\nNote that the HRS dataset came with really nice labels embedded in the .rda file\n\n\n\n\n\nOriginal labels\nggplot(\n  hrs_00,\n  aes(x = age_yr, y = srh, color = srh)\n  ) +\n  geom_jitter()\n\n\n\n\n\n\n\n\n\n\n\n\nSome label changes\nggplot(\n  hrs_00,\n  aes(x = age_yr, y = srh, color = srh)\n  ) +\n  geom_jitter() +\n  labs(\n1    x = \"Age (years)\",\n2    color = \"Self-reported \\nhealth\"\n  )\n\n\n\n1\n\nTake away “at Interview” for x-axis\n\n2\n\nAdded \\n to condense the horizontal space that the legend title takes up."
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-3-same-plot-without-our-nice-pre-labelled-variables",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-3-same-plot-without-our-nice-pre-labelled-variables",
+    "title": "Data visualization: Design choices",
+    "section": "Example 3: Same plot without our nice, pre-labelled variables",
+    "text": "Example 3: Same plot without our nice, pre-labelled variables\n\nIf we use the .xlsx file, we lose the labels and the SRH level order.\n\n\nhrs_xlsx &lt;- import(here(\"data\", \"hrs_data.xlsx\")) |&gt; drop_na()\n\n\n\n\n\nVariable names are the labels\nggplot(\n  hrs_xlsx,\n  aes(x = age_yr, y = srh, color = srh)\n  ) +\n  geom_jitter()\n\n\n\n\n\n\n\n\n\n\n\n\nSome label changes\nggplot(\n  hrs_xlsx,\n  aes(x = age_yr, y = srh, color = srh)\n  ) +\n  geom_jitter() +\n  labs(\n    x = \"Age (years)\",\n    y = \"Self-reported health\", \n2    color = \"Self-reported \\nhealth\"\n  )\n\n\n\n2\n\nAdded \\n to condense the horizontal space that the legend title takes up."
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#set-themes",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#set-themes",
+    "title": "Data visualization: Design choices",
+    "section": "Set themes",
+    "text": "Set themes\n\nWe can change the entire appearance of our plot with themes\nThere are several set themes in ggplot2: check out the page on complete themes for more!\n\n \n\n\n\nggplot(hrs_00) +\n  geom_histogram(aes(x = age_yr)) + \n1  theme_grey()\n\n\n1\n\nThis is the default theme!\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(hrs_00) +\n  geom_histogram(aes(x = age_yr)) +\n  theme_bw()\n\n\n\n\n\n\n\n\n\n\nggplot(hrs_00) +\n  geom_histogram(aes(x = age_yr)) +\n  theme_classic()\n\n\n\n\n\n\n\n\n\n\nggplot(hrs_00) +\n  geom_histogram(aes(x = age_yr)) +\n  theme_minimal()"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#modifying-themes",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#modifying-themes",
+    "title": "Data visualization: Design choices",
+    "section": "Modifying themes",
+    "text": "Modifying themes\n\nWe can change various components of a theme using the theme() function\n\n \n\nWe can change the look of the title, axes, facets, and legend\n\nThe input options for theme() is VAST\n\n\n \n\nWe’re only going to touch the surface here!"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#complete-themes",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#complete-themes",
+    "title": "Data visualization: Design choices",
+    "section": "Complete themes",
+    "text": "Complete themes\n\nWe can change the entire appearance of our plot with themes\nThere are several set themes in ggplot2: check out the page on complete themes for more!\n\n \n\n\n\nggplot(hrs_00) +\n  geom_histogram(aes(x = age_yr)) + \n1  theme_grey()\n\n\n1\n\nThis is the default theme!\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(hrs_00) +\n  geom_histogram(aes(x = age_yr)) +\n  theme_bw()\n\n\n\n\n\n\n\n\n\n\nggplot(hrs_00) +\n  geom_histogram(aes(x = age_yr)) +\n  theme_classic()\n\n\n\n\n\n\n\n\n\n\nggplot(hrs_00) +\n  geom_histogram(aes(x = age_yr)) +\n  theme_minimal()"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-facet_wrap",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-facet_wrap",
+    "title": "Data visualization: Design choices",
+    "section": "Example: facet_wrap()",
+    "text": "Example: facet_wrap()\n\n\nggplot(\n  hrs_00,\n  aes(x = age_yr)\n  ) +\n  geom_histogram() +\n  facet_wrap(~ srh)"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-4-facet_wrap",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-4-facet_wrap",
+    "title": "Data visualization: Design choices",
+    "section": "Example 4: facet_wrap()",
+    "text": "Example 4: facet_wrap()\n\nWe use srh as the facet variable to create a histogram of age for each level of self-reported health\n\n\n\nggplot(\n  hrs_00,\n  aes(x = age_yr)\n  ) +\n  geom_histogram() +\n1  facet_wrap(~ srh)\n\n\n\n1\n\nThe ~ indicates that we are faceting by a single variable, srh."
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-5-facet_grid",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-5-facet_grid",
+    "title": "Data visualization: Design choices",
+    "section": "Example 5: facet_grid()",
+    "text": "Example 5: facet_grid()\n\nWe use srh and diab as the facet variables to create a histogram of age for each level of self-reported health and diabetes status\n\n\n\nggplot(\n  hrs_00,\n  aes(x = age_yr)\n  ) +\n  geom_histogram() +\n1  facet_grid(diab ~ srh)\n\n\n\n1\n\nThe ~ indicates that we are faceting by two variables, diab and srh. The first variable is used for the rows and the second variable is used for the columns."
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-6-modifying-the-title-and-axes",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-6-modifying-the-title-and-axes",
+    "title": "Data visualization: Design choices",
+    "section": "Example 6: Modifying the title and axes",
+    "text": "Example 6: Modifying the title and axes\n\n\nAdding different theme elements\nggplot(\n  hrs_00, \n  aes(x = age_yr, y = srh) \n  ) +\n  geom_boxplot() + \n  geom_jitter(alpha = 0.2) + \n  labs(\n    x = \"Age (years)\", \n    y = \"Self-reported health\",\n    title = \"Self-reported health by age\",\n  ) +\n  theme(\n1    plot.title = element_text(size = 30, face = \"bold\", color = \"blue\"),\n2    axis.title.x = element_text(size = 20, face = \"italic\", color = \"red\"),\n3    axis.title.y = element_text(size = 20, color = \"red\"),\n4    axis.text.y = element_text(size = 16, angle = 45)\n  )\n\n\n\n1\n\nChanges the title size, makes it bold, and changes the color to blue\n\n2\n\nChanges the x-axis title size, makes it italic, and changes the color to red\n\n3\n\nChanges the y-axis title size and color to red\n\n4\n\nChanges the y-axis text size and rotates it 45 degrees"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-7-modifying-the-facets",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-7-modifying-the-facets",
+    "title": "Data visualization: Design choices",
+    "section": "Example 7: Modifying the facets",
+    "text": "Example 7: Modifying the facets\n\n\nAdding different theme elements to facet\nggplot(\n  hrs_00,\n  aes(x = age_yr)\n  ) +\n  geom_histogram() +\n  facet_grid(diab ~ srh) +\n  theme(\n1    strip.text.x = element_text(size = 16, color = \"blue\"),\n2    strip.text.y = element_text(size = 16, color = \"red\")\n  )\n\n\n\n1\n\nChanges the facet column label size and color to blue\n\n2\n\nChanges the facet row label size and color to red"
+  },
+  {
+    "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-8-modifying-the-legend",
+    "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#example-8-modifying-the-legend",
+    "title": "Data visualization: Design choices",
+    "section": "Example 8: Modifying the legend",
+    "text": "Example 8: Modifying the legend\n\n\nAdding different theme elements to the legend\nggplot(\n  hrs_00,\n  aes(x = age_yr, y = srh, color = srh)\n  ) +\n  geom_jitter() +\n  labs(\n    x = \"Age (years)\", \n    color = \"Self-reported health\"\n  ) +\n  theme(\n1    legend.position = \"bottom\"\n  )\n\n\n\n1\n\nMoving the legend to the bottom of the plot instead of the right (default)"
   }
 ]

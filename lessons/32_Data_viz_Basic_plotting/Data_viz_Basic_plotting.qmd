@@ -115,7 +115,7 @@ ggplot(
 
 ::: blue
 ::: blue-cont
-In this lesson, we will focus on .
+In this lesson, we will focus on **using different geometric objects** and **building the mapping**.
 :::
 :::
 
