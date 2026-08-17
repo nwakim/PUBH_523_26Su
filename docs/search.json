@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\nDate\nLes-son\nTheme\nTopic\nLesson video\nSlides\nTB 1\nTB 2\n\n\n\n\n1\n06/22\n1\nCourse info\nWelcome\n\n\nIntro\n\n\n\n\n\n2\nCourse info\nCourse logistics\n\n\n\n\n\n\n\n\n3\nR Basics\nDownload + Intro to R & Rstudio\n\n\n\n3.4-3.5\n\n\n\n\n4\nR Basics\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n5\nR Basics\nBasics\n\n\n2.1\n8.2\n\n\n\n\n6\nBest Practices in R\nComments\n\n\n2.2\n\n\n\n\n06/28\n\n\nPractice 1 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n2\n06/29\n7\nRigor & Reproducibility\nFolder and file Organization\n\n\n\n\n\n\n\n\n8\nRigor & Reproducibility\nQuarto and .qmd’s\n\n\n28\n\n\n\n\n\n9\nR Basics\nPackages\n\n\n\n3.7\n\n\n\n\n10\nRigor & Reproducibility\nR projects and working directories\n\n\n6.2.3-6.2.4\n6\n\n\n\n07/05\n\n\nPractice 2 due\n\n\n\n\n\n\n \n\n\n\nNicky on vacation this week\n\n\n\n\n\n\n3\n07/06\n11\nCourse info\nIntroduction to HRS dataset\n\n\n\n\n\n\n\n\n12\nR Basics\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n13\nR Basics\nObjects\n\n\n\n3.10\n\n\n\n\n14\nBest Practices in R\nCommon Errors\n\n\n\n47.2\n\n\n\n\n15\nBest Practices in R\nGetting help\n\n\n8\n\n\n\n\n07/12\n\n\nPractice 3 Due\n\n\n\n\n\n\n \n\n\n\nNicky out of town, but can answer emails\n\n\n\n\n\n\n4\n07/13\n16\nR Basics\nPiping\n\n\n3.4, 4.3\n8.1\n\n\n\n\n17\nR Basics\nKey operators and functions\n\n\n12.3\n8.2\n\n\n\n\n18\nR Basics\nImport and Export\n\n\n7\n7\n\n\n\n\n19\nR Basics\nTidy data\n\n\n5.2\n4.1\n\n\n\n07/19\n\n\nPractice 4 due\n\n\n\n\n\n\n\n07/19\n\n\nLab 1 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n5\n07/20\n\n\nCatch-up week, no work\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n6\n07/27\n20\nData transformation\nIntro to data transformations and summarizations\n\n\n3.1\n\n\n\n\n\n21\nData transformation\nData transformation: rows\n\n\n3.2\n13.7-13.8\n\n\n\n\n22\nData transformation\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n23\nData transformation\nData transformations: advanced\n\n\n12.2, 16\n11\n\n\n\n08/02\n\n\nPractice 5 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n7\n08/03\n24\nData summarization\nData summarization: Intro\n\n\n\n17\n\n\n\n\n25\nData summarization\nData summarization: quick summaries\n\n\n\n17\n\n\n\n\n26\nData summarization\nData summarization: tables\n\n\n\n17\n\n\n\n\n27\nData summarization\nData summarization: grouped summaries\n\n\n3.5\n17\n\n\n\n08/09\n\n\nPractice 6 due\n\n\n\n\n\n\n\n08/09\n\n\nLab 2 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n8\n08/10\n28\nData transformation\nLengthening data\n\n\n5.3\n\n\n\n\n\n29\nData transformation\nWidening data\n\n\n5.4\n\n\n\n\n\n30\nRigor & Reproducibility\nQuarto and .qmd’s: Revisited\n\n\n28\n\n\n\n\n08/16\n\n\nPractice 7 due\n\n\n\n\n\n\n\n08/16\n\n\nLab 3 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n9\n08/17\n30\nData visualization\nData visualization: Intro to ggplot\n\n\n1.1-1.3\n30.2-30.5\n\n\n\n\n31\nData visualization\nData visualization: Basic plotting\n\n\n9.2-9.3\n30.4-30.5\n\n\n\n\n32\nData visualization\nData visualization: Design choices\n\n\n1.5\n\n\n\n\n\n\n\nCommon errors for data visualization\n\n\n\n\n\n\n\n08/23\n\n\nPractice 8 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n10\n08/24\n33\n\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n34\n\nMissing data: transformations\n\n\n\n\n\n\n\n\n\nCourse info\nProject help\n\n\n\n\n\n\n\n08/30\n\n\nPractice 9 due\n\n\n\n\n\n\n\n08/30\n\n\nLab 4 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n11\n08/31\n\n\nFinal week\n\n\n\n\n\n\n\n09/03\n\n\nFinal Project due"
+    "text": "Week\nDate\nLes-son\nTheme\nTopic\nLesson video\nSlides\nTB 1\nTB 2\n\n\n\n\n1\n06/22\n1\nCourse info\nWelcome\n\n\nIntro\n\n\n\n\n\n2\nCourse info\nCourse logistics\n\n\n\n\n\n\n\n\n3\nR Basics\nDownload + Intro to R & Rstudio\n\n\n\n3.4-3.5\n\n\n\n\n4\nR Basics\nR scripts\n\n\n6.1\n3.8\n\n\n\n\n5\nR Basics\nBasics\n\n\n2.1\n8.2\n\n\n\n\n6\nBest Practices in R\nComments\n\n\n2.2\n\n\n\n\n06/28\n\n\nPractice 1 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n2\n06/29\n7\nRigor & Reproducibility\nFolder and file Organization\n\n\n\n\n\n\n\n\n8\nRigor & Reproducibility\nQuarto and .qmd’s\n\n\n28\n\n\n\n\n\n9\nR Basics\nPackages\n\n\n\n3.7\n\n\n\n\n10\nRigor & Reproducibility\nR projects and working directories\n\n\n6.2.3-6.2.4\n6\n\n\n\n07/05\n\n\nPractice 2 due\n\n\n\n\n\n\n \n\n\n\nNicky on vacation this week\n\n\n\n\n\n\n3\n07/06\n11\nCourse info\nIntroduction to HRS dataset\n\n\n\n\n\n\n\n\n12\nR Basics\nFunctions\n\n\n2.4\n3.6\n\n\n\n\n13\nR Basics\nObjects\n\n\n\n3.10\n\n\n\n\n14\nBest Practices in R\nCommon Errors\n\n\n\n47.2\n\n\n\n\n15\nBest Practices in R\nGetting help\n\n\n8\n\n\n\n\n07/12\n\n\nPractice 3 Due\n\n\n\n\n\n\n \n\n\n\nNicky out of town, but can answer emails\n\n\n\n\n\n\n4\n07/13\n16\nR Basics\nPiping\n\n\n3.4, 4.3\n8.1\n\n\n\n\n17\nR Basics\nKey operators and functions\n\n\n12.3\n8.2\n\n\n\n\n18\nR Basics\nImport and Export\n\n\n7\n7\n\n\n\n\n19\nR Basics\nTidy data\n\n\n5.2\n4.1\n\n\n\n07/19\n\n\nPractice 4 due\n\n\n\n\n\n\n\n07/19\n\n\nLab 1 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n5\n07/20\n\n\nCatch-up week, no work\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n6\n07/27\n20\nData transformation\nIntro to data transformations and summarizations\n\n\n3.1\n\n\n\n\n\n21\nData transformation\nData transformation: rows\n\n\n3.2\n13.7-13.8\n\n\n\n\n22\nData transformation\nData transformation: columns\n\n\n3.3\n\n\n\n\n\n23\nData transformation\nData transformations: advanced\n\n\n12.2, 16\n11\n\n\n\n08/02\n\n\nPractice 5 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n7\n08/03\n24\nData summarization\nData summarization: Intro\n\n\n\n17\n\n\n\n\n25\nData summarization\nData summarization: quick summaries\n\n\n\n17\n\n\n\n\n26\nData summarization\nData summarization: tables\n\n\n\n17\n\n\n\n\n27\nData summarization\nData summarization: grouped summaries\n\n\n3.5\n17\n\n\n\n08/09\n\n\nPractice 6 due\n\n\n\n\n\n\n\n08/09\n\n\nLab 2 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n8\n08/10\n28\nData transformation\nLengthening data\n\n\n5.3\n\n\n\n\n\n29\nData transformation\nWidening data\n\n\n5.4\n\n\n\n\n\n30\nRigor & Reproducibility\nQuarto and .qmd’s: Revisited\n\n\n28\n\n\n\n\n08/16\n\n\nPractice 7 due\n\n\n\n\n\n\n\n08/16\n\n\nLab 3 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n9\n08/17\n31\nData visualization\nData visualization: Intro to ggplot\n\n\n1.1-1.3\n30.2-30.5\n\n\n\n\n32\nData visualization\nData visualization: Basic plotting\n\n\n9.2-9.3\n30.4-30.5\n\n\n\n\n33\nData visualization\nData visualization: Design choices\n\n\n1.5\n\n\n\n\n08/23\n\n\nPractice 8 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n10\n08/24\n33\n\nMissing data: summarization and visualization\n\n\n\n\n\n\n\n\n34\n\nMissing data: transformations\n\n\n\n\n\n\n\n\n\nCourse info\nProject help\n\n\n\n\n\n\n\n08/30\n\n\nPractice 9 due\n\n\n\n\n\n\n\n08/30\n\n\nLab 4 due\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n11\n08/31\n\n\nFinal week\n\n\n\n\n\n\n\n09/03\n\n\nFinal Project due"
   },
   {
     "objectID": "index.html",
@@ -10502,49 +10502,49 @@
   {
     "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#recall-common-components-of-ggplot2",
     "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#recall-common-components-of-ggplot2",
-    "title": "Data visualization: Basic plotting",
+    "title": "Data visualization: Design choices",
     "section": "Recall: common components of ggplot2",
     "text": "Recall: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_point() +          \n  \n  labs() +       \n  \n  theme()                                  \n\n\n\n\nIn this lesson, we will focus on using different geometric objects and building the mapping."
   },
   {
     "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#geometric-objects-1",
     "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#geometric-objects-1",
-    "title": "Data visualization: Basic plotting",
+    "title": "Data visualization: Design choices",
     "section": "Geometric objects",
     "text": "Geometric objects\n\nGeometric objects (geoms) are used to represent the datapoints\n\nThe same variable’s data can be represented in different ways\n\n\nFor example: we can plot Age vs. Income using a scatterplot or a smoothed line"
   },
   {
     "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#types-of-geoms",
     "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#types-of-geoms",
-    "title": "Data visualization: Basic plotting",
+    "title": "Data visualization: Design choices",
     "section": "Types of geoms",
     "text": "Types of geoms\n\nCommon geoms include:\n\ngeom_histogram()\ngeom_bar()\ngeom_boxplot()\ngeom_point()\ngeom_line()\ngeom_smooth()"
   },
   {
     "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#lets-check-out-the-ggplot2-cheatsheet-together",
     "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#lets-check-out-the-ggplot2-cheatsheet-together",
-    "title": "Data visualization: Basic plotting",
+    "title": "Data visualization: Design choices",
     "section": "Let’s check out the ggplot2 cheatsheet together",
     "text": "Let’s check out the ggplot2 cheatsheet together"
   },
   {
     "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#examples",
     "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#examples",
-    "title": "Data visualization: Basic plotting",
+    "title": "Data visualization: Design choices",
     "section": "EXAMPLES",
     "text": "EXAMPLES"
   },
   {
     "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#aesthetic-mapping",
     "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#aesthetic-mapping",
-    "title": "Data visualization: Basic plotting",
+    "title": "Data visualization: Design choices",
     "section": "Aesthetic mapping",
     "text": "Aesthetic mapping\n\nIf we want to change the visual properties of the plotted data, we use aesthetic mapping\n\nThis is not about the design choices of the figure, but the aesthetics of the data\n\nHere are a list of common aesthetic options (from the Epi Handbook):\n\nshape = Display a point with geom_point() as a dot, star, triangle, or square…\nfill = The interior color (e.g. of a bar or boxplot)\ncolor = The exterior line of a bar, boxplot, etc., or the point color if using geom_point()\nsize = Size (e.g. line thickness, point size)\nalpha = Transparency (1 = opaque, 0 = invisible)\nbinwidth = Width of histogram bins (for geom_histogram() only)\nwidth = Width of bar plot columns (for geom_bar() only)\nlinetype = Line type (e.g. solid, dashed, dotted)"
   },
   {
     "objectID": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#resources",
     "href": "lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.html#resources",
-    "title": "Data visualization: Basic plotting",
+    "title": "Data visualization: Design choices",
     "section": "Resources",
     "text": "Resources\n\nggplot2 Cheatsheet in html form\nggplot2 Cheatsheet in pdf form"
   },
@@ -10553,7 +10553,7 @@
     "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#recall-common-components-of-ggplot2",
     "title": "Data visualization: Basic plotting",
     "section": "Recall: common components of ggplot2",
-    "text": "Recall: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_point() +          \n  \n  labs() +       \n  \n  theme()                                  \n\n\n\n\nIn this lesson, we will focus on using different geometric objects and building the mapping."
+    "text": "Recall: common components of ggplot2\n\n\n\nCommon components of ggplot2 include:\n\nggplot(): the main function to create a plot\naes(): the function to specify the mapping of variables to axes\ngeom_*() or stat_*(): functions to add layers to the plot\nlabs(): the function to change labels of axes and title\ntheme(): the function to adjust non-data plot elements such as text size,\n\n\n\n \n\nggplot(\n  data = my_data, \n  mapping = aes(x = col1, y = col2)\n  ) +\n  \n  geom_*() +          \n  \n  labs() +       \n  \n  theme()                                  \n\n\n\n\nIn this lesson, we will focus on using different geometric objects and building the mapping."
   },
   {
     "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#geometric-objects-1",
@@ -10567,7 +10567,7 @@
     "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#types-of-geoms",
     "title": "Data visualization: Basic plotting",
     "section": "Types of geoms",
-    "text": "Types of geoms\n\nCommon geoms include:\n\ngeom_histogram()\ngeom_bar()\ngeom_boxplot()\ngeom_point()\ngeom_line()\ngeom_smooth()"
+    "text": "Types of geoms\n\nCheck out ggplot2 cheatsheet for a list of common geom_*() functions\n\n\n\n\n\nCommon geom_*() for plots with one variable:\n\n\n\ngeom_histogram() (for numeric)\ngeom_bar() (for categorical)\ngeom_boxplot()\ngeom_density()\ngeom_dotplot()\n\n\n\n\n\n\nCommon geom_*() for plots with two or more variables:\n\n\n\ngeom_point()\ngeom_line()\ngeom_boxplot()\ngeom_smooth()\ngeom_jitter()"
   },
   {
     "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#lets-check-out-the-ggplot2-cheatsheet-together",
@@ -10588,14 +10588,14 @@
     "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#aesthetic-mapping",
     "title": "Data visualization: Basic plotting",
     "section": "Aesthetic mapping",
-    "text": "Aesthetic mapping\n\nIf we want to change the visual properties of the plotted data, we use aesthetic mapping\n\nThis is not about the design choices of the figure, but the aesthetics of the data\n\nHere are a list of common aesthetic options (from the Epi Handbook):\n\nshape = Display a point with geom_point() as a dot, star, triangle, or square…\nfill = The interior color (e.g. of a bar or boxplot)\ncolor = The exterior line of a bar, boxplot, etc., or the point color if using geom_point()\nsize = Size (e.g. line thickness, point size)\nalpha = Transparency (1 = opaque, 0 = invisible)\nbinwidth = Width of histogram bins (for geom_histogram() only)\nwidth = Width of bar plot columns (for geom_bar() only)\nlinetype = Line type (e.g. solid, dashed, dotted)"
+    "text": "Aesthetic mapping\n\nIf we want to change the visual properties of the plotted data, we use aesthetic mapping\n\nThis is not about the design choices of the figure, but the aesthetics of the data representation\n\nHere are a list of common aesthetic options (from the Epi Handbook):\n\nx = The x-axis variable\ny = The y-axis variable\nshape = Display a point with geom_point() as a dot, star, triangle, or square…\nfill = The interior color (e.g. of a bar or boxplot)\ncolor = The exterior line of a bar, boxplot, etc., or the point color if using geom_point()\nsize = Size (e.g. line thickness, point size)\nalpha = Transparency (1 = opaque, 0 = invisible)\nbinwidth = Width of histogram bins (for geom_histogram() only)\nwidth = Width of bar plot columns (for geom_bar() only)\nlinetype = Line type (e.g. solid, dashed, dotted)"
   },
   {
     "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#resources",
     "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#resources",
     "title": "Data visualization: Basic plotting",
     "section": "Resources",
-    "text": "Resources\n\nggplot2 Cheatsheet in html form\nggplot2 Cheatsheet in pdf form"
+    "text": "Resources\n\nggplot2 Cheatsheet in html form\nggplot2 Cheatsheet in pdf form\nWall Street Journal Guide to Information Graphics"
   },
   {
     "objectID": "lessons/Z_Data_transformation_common_errors/Data_transformation_common_errors.html",
@@ -11149,5 +11149,138 @@
     "title": "Data visualization: Introduction to ggplot2",
     "section": "",
     "text": "Artwork by @allison_horst\n\n\n\n\n\n\nArtwork by @allison_horst"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#recall-grammar-of-ggplot2",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#recall-grammar-of-ggplot2",
+    "title": "Data visualization: Basic plotting",
+    "section": "Recall: Grammar of ggplot2",
+    "text": "Recall: Grammar of ggplot2\n\n\n\n\n\n\n\n\n\nWe typically start at the bottom (data) and work our way up (themes)\n\nYou skip some of the layers if you don’t need them\n\n\n \n\nggplot2 needs at least the following three to produce a chart:\n\ndata, a mapping, and a layer\n\n\n \n\nFor the most part, there are default settings for the other parts:\n\nscales, facets, coordinates, and themes"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-1-one-continuous-variable",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-1-one-continuous-variable",
+    "title": "Data visualization: Basic plotting",
+    "section": "Example 1: One continuous variable",
+    "text": "Example 1: One continuous variable\n\n\n\n\nCode to make a histogram for age\nggplot(hrs_00) +\n  geom_histogram(aes(x = age_yr))\n\n\n\n\n\n\n\n\n\n\n\n\nCode to make a density plot for age\nggplot(hrs_00) +\n  geom_density(aes(x = age_yr))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode to make a boxplot for age\nggplot(hrs_00) +\n  geom_boxplot(aes(x = age_yr))\n\n\n\n\n\n\n\n\n\n\n\n\nCode to make a dotplot for age\nggplot(hrs_00) +\n  geom_dotplot(aes(x = age_yr))"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-1-one-continuous-variable-12",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-1-one-continuous-variable-12",
+    "title": "Data visualization: Basic plotting",
+    "section": "Example 1: One continuous variable (1/2)",
+    "text": "Example 1: One continuous variable (1/2)\n\n\n\nggplot(hrs_00) +\n1  geom_histogram(aes(x = age_yr))\n\n\n1\n\nThe geom_histogram() function is used to create a histogram of the age_yr variable.\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(hrs_00) +\n2  geom_density(aes(x = age_yr))\n\n\n2\n\nThe geom_density() function is used to create a density plot of the age_yr variable."
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-1-one-continuous-variable-22",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-1-one-continuous-variable-22",
+    "title": "Data visualization: Basic plotting",
+    "section": "Example 1: One continuous variable (2/2)",
+    "text": "Example 1: One continuous variable (2/2)\n\n\n\nggplot(hrs_00) +\n3  geom_boxplot(aes(x = age_yr))\n\n\n3\n\nThe geom_boxplot() function is used to create a boxplot of the age_yr variable.\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(hrs_00) +\n4  geom_dotplot(aes(x = age_yr))\n\n\n4\n\nThe geom_dotplot() function is used to create a dot plot of the age_yr variable."
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-2-one-continuous-one-categorical-variable-12",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-2-one-continuous-one-categorical-variable-12",
+    "title": "Data visualization: Basic plotting",
+    "section": "Example 2: One continuous, one categorical variable (1/2)",
+    "text": "Example 2: One continuous, one categorical variable (1/2)\n\n\n\nggplot(hrs_00) +\n1  geom_boxplot(\n    aes(x = age_yr, y = srh)\n    )\n\n\n1\n\nThe geom_boxplot() function is used to create a boxplot of the age_yr variable (on the x-axis), grouped by the srh variable (on the y-axis).\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(hrs_00) +\n2  geom_jitter(\n    aes(x = age_yr, y = srh)\n    )\n\n\n2\n\nThe geom_jitter() function is used to create a scatterplot of the age_yr variable (on the x-axis), grouped by the srh variable (on the y-axis). The points are jittered (spaced apart) to avoid overplotting."
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-2-one-continuous-one-categorical-variable-12-1",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-2-one-continuous-one-categorical-variable-12-1",
+    "title": "Data visualization: Basic plotting",
+    "section": "Example 2: One continuous, one categorical variable (1/2)",
+    "text": "Example 2: One continuous, one categorical variable (1/2)\n\n\n\n1pacman::p_load(ggridges)\nggplot(hrs_00) +\n2  geom_density_ridges(\n    aes(x = age_yr, y = srh)\n    )\n\n\n1\n\nThe ggridges package is needed for the geom_density_ridges() function.\n\n2\n\nWe can use geom_density_ridges() to create a density plots of the age_yr variable (on the x-axis), grouped by the srh variable (on the y-axis). The density plots are stacked on top of each other to create a ridge plot.\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(\n  hrs_00, \n3  aes(x = age_yr, y = srh)\n  ) +\n4  geom_boxplot() +\n5  geom_jitter(alpha = 0.2)\n\n\n3\n\nWe can move aes() into ggplot() since both geom_boxplot() and geom_jitter() use the same mapping\n\n4\n\nWe can add a boxplot\n\n5\n\nThen we can stack a jitter plot on top of the boxplot to show the individual data points. The alpha argument is used to make the points more transparent."
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#geometric-objects",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#geometric-objects",
+    "title": "Data visualization: Basic plotting",
+    "section": "Geometric objects",
+    "text": "Geometric objects\n\nGeometric objects (geom’s) are used to represent the datapoints (aka observations)\n\nThe same variable’s data can be represented in different ways\n\n\nFor example: we can plot Age vs. Income using a scatterplot or a smoothed line\n\n\n\n\nScatterplot of Age vs. Income\nggplot(\n  hrs_data, \n  mapping = aes(\n    x = age_yr, \n    y = income\n    )\n  ) + \n  geom_point() +\n  ylim(0, 2000000)\n\n\n\n\n\n\n\n\n\n\n\n\nLine plot of Age vs. Income\nggplot(\n  hrs_data, \n  mapping = aes(\n    x = age_yr, \n    y = income\n    )\n  ) + \n  geom_smooth() +\n  ylim(0, 2000000)"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-3-scatterplot-of-age-vs.-income",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-3-scatterplot-of-age-vs.-income",
+    "title": "Data visualization: Basic plotting",
+    "section": "Example 3: Scatterplot of age vs. income",
+    "text": "Example 3: Scatterplot of age vs. income\n\n\nOriginal plot:\n\nggplot(hrs_00, \n       aes(x = age_yr, y = srh)\n       ) +\n  geom_jitter()\n\n\n\n\n\n\n\n\n\nChanged aesthetics of the points:\n\nggplot(hrs_00, aes(x = age_yr, y = srh)) +\n  geom_jitter(\n      color = \"darkgreen\", \n      size = 0.5, \n      alpha = 0.2\n    )"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-4-barplot-of-self-rated-health",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-4-barplot-of-self-rated-health",
+    "title": "Data visualization: Basic plotting",
+    "section": "Example 4: Barplot of self-rated health",
+    "text": "Example 4: Barplot of self-rated health\n\n\nggplot(\n  hrs_00, \n  aes(x = srh)\n  ) +\n  geom_bar(\n1    color = \"black\",\n2    fill = \"lightblue\",\n3    width = 0.5\n    )\n\n\n\n1\n\nWe changed the color of the bars to black (color is the outline of the bars)\n\n2\n\nWe changed the fill color of the bars to light blue\n\n3\n\nWe changed the width of the bars to 0.5 (we would use binwidth for geom_histogram())"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#you-can-set-these-aesthetics-to-a-variable-in-your-dataset-or-to-a-constant-value",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#you-can-set-these-aesthetics-to-a-variable-in-your-dataset-or-to-a-constant-value",
+    "title": "Data visualization: Basic plotting",
+    "section": "You can set these aesthetics to a variable in your dataset or to a constant value",
+    "text": "You can set these aesthetics to a variable in your dataset or to a constant value"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-3-scatterplot-of-age-vs.-self-reported-health",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-3-scatterplot-of-age-vs.-self-reported-health",
+    "title": "Data visualization: Basic plotting",
+    "section": "Example 3: Scatterplot of age vs. self-reported health",
+    "text": "Example 3: Scatterplot of age vs. self-reported health\n\n\n\n\nOriginal scatterplot of age vs. self-reported health\nggplot(\n  hrs_00,\n  aes(x = age_yr, y = srh)\n  ) +\n  geom_jitter()\n\n\n\n\n\n\n\n\n\n\n\n\nScatterplot with changed data aesthetics\nggplot(\n  hrs_00, \n  aes(x = age_yr, y = srh)\n  ) +\n  geom_jitter(\n1      color = \"darkgreen\",\n2      size = 0.5,\n3      alpha = 0.2\n    )\n\n\n\n1\n\nWe changed the color of the points to dark green\n\n2\n\nWe changed the size of the points to 0.5 (smaller than the default size of 1)\n\n3\n\nWe changed the transparency of the points to 0.2 (more transparent than the default alpha of 1)"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#big-warning",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#big-warning",
+    "title": "Data visualization: Basic plotting",
+    "section": "BIG WARNING!",
+    "text": "BIG WARNING!\nColor is often NOT needed in a plot!!\n\nIn general, when you add color, you should adding information to the plot, not just for aesthetics\nAnd that color should not be conveyed by existing text"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#aesthetic-mappingsetting",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#aesthetic-mappingsetting",
+    "title": "Data visualization: Basic plotting",
+    "section": "Aesthetic mapping/setting",
+    "text": "Aesthetic mapping/setting\n\nIf we want to change the visual properties of the plotted data, we use aesthetic mapping/setting\n\nThis is not about the design choices of the figure, but the aesthetics of the data representation\n\nHere are a list of common aesthetic options (from the Epi Handbook):\n\nx = The x-axis variable\ny = The y-axis variable\nshape = Display a point with geom_point() as a dot, star, triangle, or square…\nfill = The interior color (e.g. of a bar or boxplot)\ncolor = The exterior line of a bar, boxplot, etc., or the point color if using geom_point()\nsize = Size (e.g. line thickness, point size)\nalpha = Transparency (1 = opaque, 0 = invisible)\nbinwidth = Width of histogram bins (for geom_histogram() only)\nwidth = Width of bar plot columns (for geom_bar() only)\nlinetype = Line type (e.g. solid, dashed, dotted)"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#two-ways-of-setting-aesthetics",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#two-ways-of-setting-aesthetics",
+    "title": "Data visualization: Basic plotting",
+    "section": "Two ways of setting aesthetics",
+    "text": "Two ways of setting aesthetics\n\n\n\n\nOutside aes() (aesthetic setting)\n\n\n\nThis is what we’ve been doing so far\nWe set the aesthetics of the data to a specific value\n\nLike darkgreen or 0.5\n\nThese settings are not based on the data\n\nFor example:\n\nggplot(\n  hrs_00,\n  aes(x = age_yr, y = srh)\n  ) +\n1  geom_jitter(color = \"darkgreen\")\n\n\n1\n\ndarkgreen is a specific value within geom_jitter() but not in aes()\n\n\n\n\n\n\n\n\n\nInside aes() (aesthetic mapping)\n\n\n\nWe can also set the aesthetics of the data based on the data itself\nLet’s say we want the type of dots to be based on the self-reported health variable\n\nWe can do this by putting the shape aesthetic inside aes()\n\n\nFor example:\n\nggplot(\n  hrs_00,\n2  aes(x = age_yr, y = srh, color = srh)\n  ) +\n  geom_jitter()\n\n\n2\n\nNow we put color = srh inside aes() so that the color of the dots is based on the self-reported health variable"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-inside-and-outside-aes",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-inside-and-outside-aes",
+    "title": "Data visualization: Basic plotting",
+    "section": "Example inside and outside aes()",
+    "text": "Example inside and outside aes()\n\n\n\nggplot(\n  hrs_00,\n  aes(x = age_yr, y = srh)\n  ) +\n  geom_jitter(color = \"darkgreen\")\n\n\n\n\n\n\n\n\n\n\nggplot(\n  hrs_00,\n  aes(x = age_yr, y = srh, color = srh)\n  ) +\n  geom_jitter()"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-outside-and-inside-aes",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#example-outside-and-inside-aes",
+    "title": "Data visualization: Basic plotting",
+    "section": "Example outside and inside aes()",
+    "text": "Example outside and inside aes()\n\n\n\nggplot(\n  hrs_00,\n  aes(x = age_yr, y = srh)\n  ) +\n  geom_jitter(color = \"darkgreen\")\n\n\n\n\n\n\n\n\n\n\nggplot(\n  hrs_00,\n  aes(x = age_yr, y = srh, color = srh)\n  ) +\n  geom_jitter()"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#better-example-of-color",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#better-example-of-color",
+    "title": "Data visualization: Basic plotting",
+    "section": "Better example of color",
+    "text": "Better example of color\n\n\nggplot(\n  hrs_00,\n  aes(\n    x = age_yr, \n    color = sex\n    )\n  ) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#better-example-of-fillcolor",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#better-example-of-fillcolor",
+    "title": "Data visualization: Basic plotting",
+    "section": "Better example of fill/color",
+    "text": "Better example of fill/color\n\nColor is good when it adds information to the plot\nThis is helpful when we want to compare the distribution of different categories\n\nFor example: distribution of age in our dataset between males and females\n\n\n\n\nggplot(\n  hrs_00,\n  aes(\n    x = age_yr, \n    fill = sex\n    )\n  ) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#wrap-up",
+    "href": "lessons/32_Data_viz_Basic_plotting/Data_viz_Basic_plotting.html#wrap-up",
+    "title": "Data visualization: Basic plotting",
+    "section": "Wrap-up",
+    "text": "Wrap-up\n\nWe can use different geometric objects to represent data in different ways\nSome geometric objects only work for certain types of data than others\n\n \n\nWe can set aesthetics of datapoints in ggplot2\n\nIncluding color, fill, size, transparency, shape, and more\n\n\n \n\nColor should add information to our plots!"
   }
 ]
