@@ -530,5 +530,11 @@
   "project/lastname_firstinit_lab_03.qmd": {
     "lastname_firstinit_lab_03.html": "957540db",
     "lastname_firstinit_lab_03.tex": "c1211e1c"
+  },
+  "practice/practice_08.qmd": {
+    "practice_08.html": "0a470147"
+  },
+  "practice/practice_08_ans.qmd": {
+    "practice_08_ans.html": "aaf2a587"
   }
 }
