@@ -101,7 +101,7 @@ source(here("class_dates.R"))
 
 ::: sched
 | Week | Date | Les-son | Theme | Topic | Lesson video | Slides | [TB 1](https://r4ds.hadley.nz/) | [TB 2](https://epirhandbook.com/en/) |
-|:---|:---|:---|----|:---|:--:|:--:|:--:|:--:|
+|:-------|:-------|:-------|--------|:-------|:------:|:------:|:------:|:------:|
 | 1 | `{r} w1d1 %>% format("%m/%d")` | 1 | [Course info]{.info} | Welcome | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/30380318cd394eeca67f2008319beda5)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/01_Welcome/Welcome.qmd)]{style="color:#f8f5f0;"} | [Intro](https://r4ds.hadley.nz/intro.html) |  |
 |  |  | 2 | [Course info]{.info} | Course logistics | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/aa9a5dfec11c47d79eb88fe394bb2282)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/02_Course_log/Course_log.qmd)]{style="color:#f8f5f0;"} |  |  |
 |  |  | 3 | [R Basics]{.rbasics} | Download + Intro to R & Rstudio | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/77f8aea2a5bf4b26acc886a28de33569)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/03_Download_R/Download_R.qmd)]{style="color:#f8f5f0;"} |  | [3.4-3.5](https://epirhandbook.com/en/new_pages/basics.html#installation) |
@@ -156,12 +156,12 @@ source(here("class_dates.R"))
 |  |  | 33 | [Data visualization]{.viz} | Data visualization: Design choices | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/d344674bab9d4b91a2813c1cba3502e6)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.qmd)]{style="color:#f8f5f0;"} | [1.5](https://r4ds.hadley.nz/data-visualize.html#visualizing-relationships) | [30.6-30.10](https://epirhandbook.com/en/new_pages/ggplot_basics.html#ggplot_basics_facet) |
 |  | `{r} pract8 %>% format("%m/%d")` |  |  | [Practice 8 due]{.pract-row} |  |  |  |  |
 | [ ]{.week-row} |  |  |  |  |  |  |  |  |
-| 10 | `{r} w10d1 %>% format("%m/%d")` | 33 |  | Missing data: summarization and visualization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-|  |  | 34 |  | Missing data: transformations | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+| 10 | `{r} w10d1 %>% format("%m/%d")` | 33 | [Data transformation]{.trans} | Missing data: summarization and visualization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+|  |  | 34 | [Data transformation]{.trans} | Missing data: transformations | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
 |  |  |  | [Course info]{.info} | Project help |  |  |  |  |
 |  | `{r} pract9 %>% format("%m/%d")` |  |  | [Practice 9 due]{.pract-row} |  |  |  |  |
 |  | `{r} lab4 %>% format("%m/%d")` |  |  | [Lab 4 due]{.lab-row} |  |  |  |  |
 | [ ]{.week-row} |  |  |  |  |  |  |  |  |
-| 11 | `{r} w11d1 %>% format("%m/%d")` |  |  | Final week |  |  |  |  |
+| 11 | `{r} w11d1 %>% format("%m/%d")` |  |  | Final week, no lessons |  |  |  |  |
 |  | `{r} proj %>% format("%m/%d")` |  |  | [Final Project due]{.proj-row} |  |  |  |  |
 :::

@@ -4,7 +4,7 @@ library(dplyr)
 # Set the first day of class: "Term begins" date in OHSU academic calendar
 first_day = as.Date("6/22/26", "%m/%d/%y")
 # Set last day of the class: "Term ends" date in OHSU academic calendar
-last_day = as.Date("9/5/26", "%m/%d/%y")
+last_day = as.Date("9/6/26", "%m/%d/%y")
 
 # Create the calendar dates sequence
 cal_dates = seq(from = first_day, to = last_day, by = "day")
@@ -68,5 +68,5 @@ w10d2 = cal_dates[66]
 ## Week 11 dates
 w11d1 = cal_dates[71]
 w11d2 = cal_dates[73]
-proj = cal_dates[74]
-last_day = cal_dates[76]
+proj = cal_dates[77]
+last_day = cal_dates[77]
