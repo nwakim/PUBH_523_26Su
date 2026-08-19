@@ -112,6 +112,10 @@ $presentation-heading-color: $dark-blue !default;
   }
 }
 
+// Change column size??
+
+.reveal .custom-size div.column:first-child { width: 35%; }
+.reveal .custom-size div.column:not(:first-child) { width: 65%; }
 
 
 // My added divs

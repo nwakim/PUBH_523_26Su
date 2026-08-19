@@ -156,8 +156,8 @@ source(here("class_dates.R"))
 |  |  | 33 | [Data visualization]{.viz} | Data visualization: Design choices | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/d344674bab9d4b91a2813c1cba3502e6)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/33_Data_viz_Design_choices/Data_viz_Design_choices.qmd)]{style="color:#f8f5f0;"} | [1.5](https://r4ds.hadley.nz/data-visualize.html#visualizing-relationships) | [30.6-30.10](https://epirhandbook.com/en/new_pages/ggplot_basics.html#ggplot_basics_facet) |
 |  | `{r} pract8 %>% format("%m/%d")` |  |  | [Practice 8 due]{.pract-row} |  |  |  |  |
 | [ ]{.week-row} |  |  |  |  |  |  |  |  |
-| 10 | `{r} w10d1 %>% format("%m/%d")` | 33 | [Data transformation]{.trans} | Missing data: summarization and visualization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
-|  |  | 34 | [Data transformation]{.trans} | Missing data: transformations | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
+| 10 | `{r} w10d1 %>% format("%m/%d")` | 34 | [Data ]{.trans}visualization | Missing data: summarization and visualization | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/34_Missing_data_summ_viz/Missing_data_summ_viz.qmd)]{style="color:#f8f5f0;"} |  |  |
+|  |  | 35 | [Data transformation]{.trans} | Missing data: transformations | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [{{< iconify ri slideshow-fill size=30px >}}]{style="color:#f8f5f0;"} |  |  |
 |  |  |  | [Course info]{.info} | Project help |  |  |  |  |
 |  | `{r} pract9 %>% format("%m/%d")` |  |  | [Practice 9 due]{.pract-row} |  |  |  |  |
 |  | `{r} lab4 %>% format("%m/%d")` |  |  | [Lab 4 due]{.lab-row} |  |  |  |  |
