@@ -38,8 +38,14 @@ The labs are meant to scaffold and build the work needed to complete the final p
 
 ## Final Project: Information Sheet
 
-We are going to create a scrollable information sheet (aka an html document) using the Well-Being and Basic Needs Survey.
+**The final project is due `r proj %>% format("%m/%d")`.**
 
-- Some ideas for information sheets: <https://venngage.com/templates/infographics/statistical>
+We are going to create an information sheet using the Well-Being and Basic Needs Survey. The following links will give you the needed instructions, rubric, and template to complete the final project. 
 
-## 
+[{{< iconify fa6-solid sheet-plastic size=30px >}} Final Project Instructions](/project/Final_Project_Instructions.qmd)
+
+[{{< iconify material-symbols rubric-rounded size=30px >}} Final Project Rubric](/project/Final_project_rubric.xlsx)
+
+[{{< iconify mdi edit-box size=30px >}} Final Project Template](/project/Final_Project_template.pptx)
+
+
