@@ -11708,7 +11708,7 @@
     "href": "lessons/35_Missing_data_transformations/Missing_data_transformations.html#what-do-we-do-with-missing-data",
     "title": "Missing data: transformations",
     "section": "What do we do with missing data?",
-    "text": "What do we do with missing data?\n\nFiltering out missing values with drop_na()\nA common gotcha: how filter() silently drops NAs\n\n \n\nWe will also use naniar functions to work with NAs in a more flexible way\n\nFilling in missing values with replace_na()\nReplacing a factor level with NA using replace_with_na()\n\n\n \n\nNot covered in this class (but very important in practice):\n\nImputation methods for filling in missing values\nWeighting methods for adjusting for missingness"
+    "text": "What do we do with missing data?\n\nFiltering out missing values with drop_na()\nA common gotcha: how filter() silently drops NAs\n\n \n\nWe will also use naniar functions to work with NAs in a more flexible way\n\nFilling in missing values with replace_na() (and fct_na_value_to_level() for factors)\nReplacing a values (numbers or levels) with NA using replace_with_na()\n\n\n \n\nNot covered in this course (but very important in practice):\n\nImputation methods for filling in missing values\nWeighting methods for adjusting for missingness"
   },
   {
     "objectID": "lessons/35_Missing_data_transformations/Missing_data_transformations.html#before-we-start",

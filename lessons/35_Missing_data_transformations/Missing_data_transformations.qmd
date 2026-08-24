@@ -63,12 +63,12 @@ hrs_00 <- hrs_data |>
  
 
 - We will also use `naniar` functions to work with `NA`s in a more flexible way
-  - *Filling in* missing values with `replace_na()`
-  - Replacing a factor level with `NA` using `replace_with_na()`
+  - *Filling in* missing values with `replace_na()` (and `fct_na_value_to_level()` for factors)
+  - *Replacing* a values (numbers or levels) with `NA` using `replace_with_na()`
   
  
 
-- Not covered in this class (but very important in practice): 
+- Not covered in this course (but very important in practice): 
   - Imputation methods for filling in missing values
   - Weighting methods for adjusting for missingness
 

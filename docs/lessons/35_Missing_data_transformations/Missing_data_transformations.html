@@ -238,13 +238,13 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <ul>
 <li>We will also use <code>naniar</code> functions to work with <code>NA</code>s in a more flexible way
 <ul>
-<li><em>Filling in</em> missing values with <code>replace_na()</code></li>
-<li>Replacing a factor level with <code>NA</code> using <code>replace_with_na()</code></li>
+<li><em>Filling in</em> missing values with <code>replace_na()</code> (and <code>fct_na_value_to_level()</code> for factors)</li>
+<li><em>Replacing</em> a values (numbers or levels) with <code>NA</code> using <code>replace_with_na()</code></li>
 </ul></li>
 </ul>
 <p>&nbsp;</p>
 <ul>
-<li>Not covered in this class (but very important in practice):
+<li>Not covered in this course (but very important in practice):
 <ul>
 <li>Imputation methods for filling in missing values</li>
 <li>Weighting methods for adjusting for missingness</li>
@@ -269,23 +269,23 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <span id="cb2-4"><a></a>  <span class="fu">tab_options</span>(<span class="at">table.font.size =</span> <span class="fu">px</span>(<span class="dv">40</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="msdmjbmcyd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#msdmjbmcyd table {
+<div id="cbdwsejrez" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cbdwsejrez table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#msdmjbmcyd thead, #msdmjbmcyd tbody, #msdmjbmcyd tfoot, #msdmjbmcyd tr, #msdmjbmcyd td, #msdmjbmcyd th {
+#cbdwsejrez thead, #cbdwsejrez tbody, #cbdwsejrez tfoot, #cbdwsejrez tr, #cbdwsejrez td, #cbdwsejrez th {
   border-style: none;
 }
 
-#msdmjbmcyd p {
+#cbdwsejrez p {
   margin: 0;
   padding: 0;
 }
 
-#msdmjbmcyd .gt_table {
+#cbdwsejrez .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -311,12 +311,12 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-left-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_caption {
+#cbdwsejrez .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#msdmjbmcyd .gt_title {
+#cbdwsejrez .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -328,7 +328,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-width: 0;
 }
 
-#msdmjbmcyd .gt_subtitle {
+#cbdwsejrez .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -340,7 +340,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-top-width: 0;
 }
 
-#msdmjbmcyd .gt_heading {
+#cbdwsejrez .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -352,13 +352,13 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_bottom_border {
+#cbdwsejrez .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_col_headings {
+#cbdwsejrez .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -373,7 +373,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_col_heading {
+#cbdwsejrez .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -393,7 +393,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   overflow-x: hidden;
 }
 
-#msdmjbmcyd .gt_column_spanner_outer {
+#cbdwsejrez .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -405,15 +405,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 4px;
 }
 
-#msdmjbmcyd .gt_column_spanner_outer:first-child {
+#cbdwsejrez .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#msdmjbmcyd .gt_column_spanner_outer:last-child {
+#cbdwsejrez .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#msdmjbmcyd .gt_column_spanner {
+#cbdwsejrez .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -425,11 +425,11 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   width: 100%;
 }
 
-#msdmjbmcyd .gt_spanner_row {
+#cbdwsejrez .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#msdmjbmcyd .gt_group_heading {
+#cbdwsejrez .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -455,7 +455,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   text-align: left;
 }
 
-#msdmjbmcyd .gt_empty_group_heading {
+#cbdwsejrez .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -470,15 +470,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   vertical-align: middle;
 }
 
-#msdmjbmcyd .gt_from_md > :first-child {
+#cbdwsejrez .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#msdmjbmcyd .gt_from_md > :last-child {
+#cbdwsejrez .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#msdmjbmcyd .gt_row {
+#cbdwsejrez .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -497,7 +497,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   overflow-x: hidden;
 }
 
-#msdmjbmcyd .gt_stub {
+#cbdwsejrez .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -510,7 +510,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#msdmjbmcyd .gt_stub_row_group {
+#cbdwsejrez .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -524,15 +524,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   vertical-align: top;
 }
 
-#msdmjbmcyd .gt_row_group_first td {
+#cbdwsejrez .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#msdmjbmcyd .gt_row_group_first th {
+#cbdwsejrez .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#msdmjbmcyd .gt_summary_row {
+#cbdwsejrez .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -542,16 +542,16 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#msdmjbmcyd .gt_first_summary_row {
+#cbdwsejrez .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_first_summary_row.thick {
+#cbdwsejrez .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#msdmjbmcyd .gt_last_summary_row {
+#cbdwsejrez .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -561,7 +561,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_grand_summary_row {
+#cbdwsejrez .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -571,7 +571,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#msdmjbmcyd .gt_first_grand_summary_row {
+#cbdwsejrez .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -581,7 +581,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-top-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_last_grand_summary_row_top {
+#cbdwsejrez .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -591,11 +591,11 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_striped {
+#cbdwsejrez .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#msdmjbmcyd .gt_table_body {
+#cbdwsejrez .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -604,7 +604,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_footnotes {
+#cbdwsejrez .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -618,7 +618,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_footnote {
+#cbdwsejrez .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -627,7 +627,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#msdmjbmcyd .gt_sourcenotes {
+#cbdwsejrez .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -641,7 +641,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#msdmjbmcyd .gt_sourcenote {
+#cbdwsejrez .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -649,72 +649,72 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#msdmjbmcyd .gt_left {
+#cbdwsejrez .gt_left {
   text-align: left;
 }
 
-#msdmjbmcyd .gt_center {
+#cbdwsejrez .gt_center {
   text-align: center;
 }
 
-#msdmjbmcyd .gt_right {
+#cbdwsejrez .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#msdmjbmcyd .gt_font_normal {
+#cbdwsejrez .gt_font_normal {
   font-weight: normal;
 }
 
-#msdmjbmcyd .gt_font_bold {
+#cbdwsejrez .gt_font_bold {
   font-weight: bold;
 }
 
-#msdmjbmcyd .gt_font_italic {
+#cbdwsejrez .gt_font_italic {
   font-style: italic;
 }
 
-#msdmjbmcyd .gt_super {
+#cbdwsejrez .gt_super {
   font-size: 65%;
 }
 
-#msdmjbmcyd .gt_footnote_marks {
+#cbdwsejrez .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#msdmjbmcyd .gt_asterisk {
+#cbdwsejrez .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#msdmjbmcyd .gt_indent_1 {
+#cbdwsejrez .gt_indent_1 {
   text-indent: 5px;
 }
 
-#msdmjbmcyd .gt_indent_2 {
+#cbdwsejrez .gt_indent_2 {
   text-indent: 10px;
 }
 
-#msdmjbmcyd .gt_indent_3 {
+#cbdwsejrez .gt_indent_3 {
   text-indent: 15px;
 }
 
-#msdmjbmcyd .gt_indent_4 {
+#cbdwsejrez .gt_indent_4 {
   text-indent: 20px;
 }
 
-#msdmjbmcyd .gt_indent_5 {
+#cbdwsejrez .gt_indent_5 {
   text-indent: 25px;
 }
 
-#msdmjbmcyd .katex-display {
+#cbdwsejrez .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#msdmjbmcyd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#cbdwsejrez div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -814,23 +814,23 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <span id="cb5-5"><a></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
 <span id="cb5-6"><a></a>  <span class="fu">tab_options</span>(<span class="at">table.font.size =</span> <span class="fu">px</span>(<span class="dv">40</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="lrudsovhii" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#lrudsovhii table {
+<div id="bctqaboizv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bctqaboizv table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#lrudsovhii thead, #lrudsovhii tbody, #lrudsovhii tfoot, #lrudsovhii tr, #lrudsovhii td, #lrudsovhii th {
+#bctqaboizv thead, #bctqaboizv tbody, #bctqaboizv tfoot, #bctqaboizv tr, #bctqaboizv td, #bctqaboizv th {
   border-style: none;
 }
 
-#lrudsovhii p {
+#bctqaboizv p {
   margin: 0;
   padding: 0;
 }
 
-#lrudsovhii .gt_table {
+#bctqaboizv .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -856,12 +856,12 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-left-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_caption {
+#bctqaboizv .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#lrudsovhii .gt_title {
+#bctqaboizv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -873,7 +873,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-width: 0;
 }
 
-#lrudsovhii .gt_subtitle {
+#bctqaboizv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -885,7 +885,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-top-width: 0;
 }
 
-#lrudsovhii .gt_heading {
+#bctqaboizv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -897,13 +897,13 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_bottom_border {
+#bctqaboizv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_col_headings {
+#bctqaboizv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -918,7 +918,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_col_heading {
+#bctqaboizv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +938,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   overflow-x: hidden;
 }
 
-#lrudsovhii .gt_column_spanner_outer {
+#bctqaboizv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -950,15 +950,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 4px;
 }
 
-#lrudsovhii .gt_column_spanner_outer:first-child {
+#bctqaboizv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lrudsovhii .gt_column_spanner_outer:last-child {
+#bctqaboizv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lrudsovhii .gt_column_spanner {
+#bctqaboizv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -970,11 +970,11 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   width: 100%;
 }
 
-#lrudsovhii .gt_spanner_row {
+#bctqaboizv .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#lrudsovhii .gt_group_heading {
+#bctqaboizv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1000,7 +1000,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   text-align: left;
 }
 
-#lrudsovhii .gt_empty_group_heading {
+#bctqaboizv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1015,15 +1015,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   vertical-align: middle;
 }
 
-#lrudsovhii .gt_from_md > :first-child {
+#bctqaboizv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lrudsovhii .gt_from_md > :last-child {
+#bctqaboizv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lrudsovhii .gt_row {
+#bctqaboizv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1042,7 +1042,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   overflow-x: hidden;
 }
 
-#lrudsovhii .gt_stub {
+#bctqaboizv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1055,7 +1055,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#lrudsovhii .gt_stub_row_group {
+#bctqaboizv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1069,15 +1069,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   vertical-align: top;
 }
 
-#lrudsovhii .gt_row_group_first td {
+#bctqaboizv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lrudsovhii .gt_row_group_first th {
+#bctqaboizv .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#lrudsovhii .gt_summary_row {
+#bctqaboizv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1087,16 +1087,16 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#lrudsovhii .gt_first_summary_row {
+#bctqaboizv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_first_summary_row.thick {
+#bctqaboizv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lrudsovhii .gt_last_summary_row {
+#bctqaboizv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1106,7 +1106,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_grand_summary_row {
+#bctqaboizv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1116,7 +1116,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#lrudsovhii .gt_first_grand_summary_row {
+#bctqaboizv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1126,7 +1126,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-top-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_last_grand_summary_row_top {
+#bctqaboizv .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1136,11 +1136,11 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_striped {
+#bctqaboizv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lrudsovhii .gt_table_body {
+#bctqaboizv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1149,7 +1149,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_footnotes {
+#bctqaboizv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1163,7 +1163,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_footnote {
+#bctqaboizv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1172,7 +1172,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#lrudsovhii .gt_sourcenotes {
+#bctqaboizv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1186,7 +1186,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#lrudsovhii .gt_sourcenote {
+#bctqaboizv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1194,72 +1194,72 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#lrudsovhii .gt_left {
+#bctqaboizv .gt_left {
   text-align: left;
 }
 
-#lrudsovhii .gt_center {
+#bctqaboizv .gt_center {
   text-align: center;
 }
 
-#lrudsovhii .gt_right {
+#bctqaboizv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lrudsovhii .gt_font_normal {
+#bctqaboizv .gt_font_normal {
   font-weight: normal;
 }
 
-#lrudsovhii .gt_font_bold {
+#bctqaboizv .gt_font_bold {
   font-weight: bold;
 }
 
-#lrudsovhii .gt_font_italic {
+#bctqaboizv .gt_font_italic {
   font-style: italic;
 }
 
-#lrudsovhii .gt_super {
+#bctqaboizv .gt_super {
   font-size: 65%;
 }
 
-#lrudsovhii .gt_footnote_marks {
+#bctqaboizv .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#lrudsovhii .gt_asterisk {
+#bctqaboizv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lrudsovhii .gt_indent_1 {
+#bctqaboizv .gt_indent_1 {
   text-indent: 5px;
 }
 
-#lrudsovhii .gt_indent_2 {
+#bctqaboizv .gt_indent_2 {
   text-indent: 10px;
 }
 
-#lrudsovhii .gt_indent_3 {
+#bctqaboizv .gt_indent_3 {
   text-indent: 15px;
 }
 
-#lrudsovhii .gt_indent_4 {
+#bctqaboizv .gt_indent_4 {
   text-indent: 20px;
 }
 
-#lrudsovhii .gt_indent_5 {
+#bctqaboizv .gt_indent_5 {
   text-indent: 25px;
 }
 
-#lrudsovhii .katex-display {
+#bctqaboizv .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#lrudsovhii div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#bctqaboizv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1677,23 +1677,23 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <span id="cb17-4"><a></a>  <span class="fu">tab_options</span>(<span class="at">table.font.size =</span> <span class="fu">px</span>(<span class="dv">35</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="cqphhcbihb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#cqphhcbihb table {
+<div id="nyuuvqufrq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nyuuvqufrq table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#cqphhcbihb thead, #cqphhcbihb tbody, #cqphhcbihb tfoot, #cqphhcbihb tr, #cqphhcbihb td, #cqphhcbihb th {
+#nyuuvqufrq thead, #nyuuvqufrq tbody, #nyuuvqufrq tfoot, #nyuuvqufrq tr, #nyuuvqufrq td, #nyuuvqufrq th {
   border-style: none;
 }
 
-#cqphhcbihb p {
+#nyuuvqufrq p {
   margin: 0;
   padding: 0;
 }
 
-#cqphhcbihb .gt_table {
+#nyuuvqufrq .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1719,12 +1719,12 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-left-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_caption {
+#nyuuvqufrq .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#cqphhcbihb .gt_title {
+#nyuuvqufrq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1736,7 +1736,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-width: 0;
 }
 
-#cqphhcbihb .gt_subtitle {
+#nyuuvqufrq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1748,7 +1748,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-top-width: 0;
 }
 
-#cqphhcbihb .gt_heading {
+#nyuuvqufrq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1760,13 +1760,13 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_bottom_border {
+#nyuuvqufrq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_col_headings {
+#nyuuvqufrq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1781,7 +1781,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_col_heading {
+#nyuuvqufrq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1801,7 +1801,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   overflow-x: hidden;
 }
 
-#cqphhcbihb .gt_column_spanner_outer {
+#nyuuvqufrq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1813,15 +1813,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 4px;
 }
 
-#cqphhcbihb .gt_column_spanner_outer:first-child {
+#nyuuvqufrq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#cqphhcbihb .gt_column_spanner_outer:last-child {
+#nyuuvqufrq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#cqphhcbihb .gt_column_spanner {
+#nyuuvqufrq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1833,11 +1833,11 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   width: 100%;
 }
 
-#cqphhcbihb .gt_spanner_row {
+#nyuuvqufrq .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#cqphhcbihb .gt_group_heading {
+#nyuuvqufrq .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1863,7 +1863,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   text-align: left;
 }
 
-#cqphhcbihb .gt_empty_group_heading {
+#nyuuvqufrq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1878,15 +1878,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   vertical-align: middle;
 }
 
-#cqphhcbihb .gt_from_md > :first-child {
+#nyuuvqufrq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#cqphhcbihb .gt_from_md > :last-child {
+#nyuuvqufrq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#cqphhcbihb .gt_row {
+#nyuuvqufrq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1905,7 +1905,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   overflow-x: hidden;
 }
 
-#cqphhcbihb .gt_stub {
+#nyuuvqufrq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1918,7 +1918,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#cqphhcbihb .gt_stub_row_group {
+#nyuuvqufrq .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1932,15 +1932,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   vertical-align: top;
 }
 
-#cqphhcbihb .gt_row_group_first td {
+#nyuuvqufrq .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#cqphhcbihb .gt_row_group_first th {
+#nyuuvqufrq .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#cqphhcbihb .gt_summary_row {
+#nyuuvqufrq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1950,16 +1950,16 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#cqphhcbihb .gt_first_summary_row {
+#nyuuvqufrq .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_first_summary_row.thick {
+#nyuuvqufrq .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#cqphhcbihb .gt_last_summary_row {
+#nyuuvqufrq .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1969,7 +1969,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_grand_summary_row {
+#nyuuvqufrq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1979,7 +1979,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#cqphhcbihb .gt_first_grand_summary_row {
+#nyuuvqufrq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1989,7 +1989,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-top-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_last_grand_summary_row_top {
+#nyuuvqufrq .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1999,11 +1999,11 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_striped {
+#nyuuvqufrq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#cqphhcbihb .gt_table_body {
+#nyuuvqufrq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2012,7 +2012,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_footnotes {
+#nyuuvqufrq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2026,7 +2026,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_footnote {
+#nyuuvqufrq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2035,7 +2035,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#cqphhcbihb .gt_sourcenotes {
+#nyuuvqufrq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2049,7 +2049,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#cqphhcbihb .gt_sourcenote {
+#nyuuvqufrq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2057,72 +2057,72 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#cqphhcbihb .gt_left {
+#nyuuvqufrq .gt_left {
   text-align: left;
 }
 
-#cqphhcbihb .gt_center {
+#nyuuvqufrq .gt_center {
   text-align: center;
 }
 
-#cqphhcbihb .gt_right {
+#nyuuvqufrq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#cqphhcbihb .gt_font_normal {
+#nyuuvqufrq .gt_font_normal {
   font-weight: normal;
 }
 
-#cqphhcbihb .gt_font_bold {
+#nyuuvqufrq .gt_font_bold {
   font-weight: bold;
 }
 
-#cqphhcbihb .gt_font_italic {
+#nyuuvqufrq .gt_font_italic {
   font-style: italic;
 }
 
-#cqphhcbihb .gt_super {
+#nyuuvqufrq .gt_super {
   font-size: 65%;
 }
 
-#cqphhcbihb .gt_footnote_marks {
+#nyuuvqufrq .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#cqphhcbihb .gt_asterisk {
+#nyuuvqufrq .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#cqphhcbihb .gt_indent_1 {
+#nyuuvqufrq .gt_indent_1 {
   text-indent: 5px;
 }
 
-#cqphhcbihb .gt_indent_2 {
+#nyuuvqufrq .gt_indent_2 {
   text-indent: 10px;
 }
 
-#cqphhcbihb .gt_indent_3 {
+#nyuuvqufrq .gt_indent_3 {
   text-indent: 15px;
 }
 
-#cqphhcbihb .gt_indent_4 {
+#nyuuvqufrq .gt_indent_4 {
   text-indent: 20px;
 }
 
-#cqphhcbihb .gt_indent_5 {
+#nyuuvqufrq .gt_indent_5 {
   text-indent: 25px;
 }
 
-#cqphhcbihb .katex-display {
+#nyuuvqufrq .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#cqphhcbihb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nyuuvqufrq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2165,23 +2165,23 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
 <span id="cb18-4"><a></a>  <span class="fu">tab_options</span>(<span class="at">table.font.size =</span> <span class="fu">px</span>(<span class="dv">35</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="rfaolrswtz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rfaolrswtz table {
+<div id="qlgktiemld" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qlgktiemld table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rfaolrswtz thead, #rfaolrswtz tbody, #rfaolrswtz tfoot, #rfaolrswtz tr, #rfaolrswtz td, #rfaolrswtz th {
+#qlgktiemld thead, #qlgktiemld tbody, #qlgktiemld tfoot, #qlgktiemld tr, #qlgktiemld td, #qlgktiemld th {
   border-style: none;
 }
 
-#rfaolrswtz p {
+#qlgktiemld p {
   margin: 0;
   padding: 0;
 }
 
-#rfaolrswtz .gt_table {
+#qlgktiemld .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2207,12 +2207,12 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-left-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_caption {
+#qlgktiemld .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rfaolrswtz .gt_title {
+#qlgktiemld .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2224,7 +2224,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-width: 0;
 }
 
-#rfaolrswtz .gt_subtitle {
+#qlgktiemld .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2236,7 +2236,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-top-width: 0;
 }
 
-#rfaolrswtz .gt_heading {
+#qlgktiemld .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2248,13 +2248,13 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_bottom_border {
+#qlgktiemld .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_col_headings {
+#qlgktiemld .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2269,7 +2269,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_col_heading {
+#qlgktiemld .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2289,7 +2289,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   overflow-x: hidden;
 }
 
-#rfaolrswtz .gt_column_spanner_outer {
+#qlgktiemld .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2301,15 +2301,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 4px;
 }
 
-#rfaolrswtz .gt_column_spanner_outer:first-child {
+#qlgktiemld .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rfaolrswtz .gt_column_spanner_outer:last-child {
+#qlgktiemld .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rfaolrswtz .gt_column_spanner {
+#qlgktiemld .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2321,11 +2321,11 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   width: 100%;
 }
 
-#rfaolrswtz .gt_spanner_row {
+#qlgktiemld .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rfaolrswtz .gt_group_heading {
+#qlgktiemld .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2351,7 +2351,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   text-align: left;
 }
 
-#rfaolrswtz .gt_empty_group_heading {
+#qlgktiemld .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2366,15 +2366,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   vertical-align: middle;
 }
 
-#rfaolrswtz .gt_from_md > :first-child {
+#qlgktiemld .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rfaolrswtz .gt_from_md > :last-child {
+#qlgktiemld .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rfaolrswtz .gt_row {
+#qlgktiemld .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2393,7 +2393,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   overflow-x: hidden;
 }
 
-#rfaolrswtz .gt_stub {
+#qlgktiemld .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2406,7 +2406,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#rfaolrswtz .gt_stub_row_group {
+#qlgktiemld .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2420,15 +2420,15 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   vertical-align: top;
 }
 
-#rfaolrswtz .gt_row_group_first td {
+#qlgktiemld .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rfaolrswtz .gt_row_group_first th {
+#qlgktiemld .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rfaolrswtz .gt_summary_row {
+#qlgktiemld .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2438,16 +2438,16 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#rfaolrswtz .gt_first_summary_row {
+#qlgktiemld .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_first_summary_row.thick {
+#qlgktiemld .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rfaolrswtz .gt_last_summary_row {
+#qlgktiemld .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2457,7 +2457,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_grand_summary_row {
+#qlgktiemld .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2467,7 +2467,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#rfaolrswtz .gt_first_grand_summary_row {
+#qlgktiemld .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2477,7 +2477,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-top-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_last_grand_summary_row_top {
+#qlgktiemld .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2487,11 +2487,11 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_striped {
+#qlgktiemld .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rfaolrswtz .gt_table_body {
+#qlgktiemld .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2500,7 +2500,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-bottom-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_footnotes {
+#qlgktiemld .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2514,7 +2514,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_footnote {
+#qlgktiemld .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2523,7 +2523,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#rfaolrswtz .gt_sourcenotes {
+#qlgktiemld .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2537,7 +2537,7 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   border-right-color: #D3D3D3;
 }
 
-#rfaolrswtz .gt_sourcenote {
+#qlgktiemld .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2545,72 +2545,72 @@ Nicky Wakim, Jessica Minnier, and Meike Niederhausen
   padding-right: 5px;
 }
 
-#rfaolrswtz .gt_left {
+#qlgktiemld .gt_left {
   text-align: left;
 }
 
-#rfaolrswtz .gt_center {
+#qlgktiemld .gt_center {
   text-align: center;
 }
 
-#rfaolrswtz .gt_right {
+#qlgktiemld .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rfaolrswtz .gt_font_normal {
+#qlgktiemld .gt_font_normal {
   font-weight: normal;
 }
 
-#rfaolrswtz .gt_font_bold {
+#qlgktiemld .gt_font_bold {
   font-weight: bold;
 }
 
-#rfaolrswtz .gt_font_italic {
+#qlgktiemld .gt_font_italic {
   font-style: italic;
 }
 
-#rfaolrswtz .gt_super {
+#qlgktiemld .gt_super {
   font-size: 65%;
 }
 
-#rfaolrswtz .gt_footnote_marks {
+#qlgktiemld .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rfaolrswtz .gt_asterisk {
+#qlgktiemld .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rfaolrswtz .gt_indent_1 {
+#qlgktiemld .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rfaolrswtz .gt_indent_2 {
+#qlgktiemld .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rfaolrswtz .gt_indent_3 {
+#qlgktiemld .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rfaolrswtz .gt_indent_4 {
+#qlgktiemld .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rfaolrswtz .gt_indent_5 {
+#qlgktiemld .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rfaolrswtz .katex-display {
+#qlgktiemld .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rfaolrswtz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#qlgktiemld div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
