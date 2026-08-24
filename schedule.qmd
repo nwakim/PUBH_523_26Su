@@ -157,7 +157,7 @@ source(here("class_dates.R"))
 |  | `{r} pract8 %>% format("%m/%d")` |  |  | [Practice 8 due]{.pract-row} |  |  |  |  |
 | [ ]{.week-row} |  |  |  |  |  |  |  |  |
 | 10 | `{r} w10d1 %>% format("%m/%d")` | 34 | [Data visualization]{.viz} | Missing data: summarization and visualization | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/7ffaaba7d7014d88a477732eb0737ecd)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/34_Missing_data_summ_viz/Missing_data_summ_viz.qmd)]{style="color:#f8f5f0;"} |  | [20.4](https://epirhandbook.com/en/new_pages/missing_data.html#assess-missingness-in-a-data-frame) |
-|  |  | 35 | [Data transformation]{.trans} | Missing data: transformations | [{{< iconify mdi video size=34px >}}]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/35_Missing_data_transformations/Missing_data_transformations.qmd)]{style="color:#f8f5f0;"} |  |  |
+|  |  | 35 | [Data transformation]{.trans} | Missing data: transformations | [[{{< iconify mdi video size=34px >}}](https://www.loom.com/share/04599c305ec14ee5b3649460bd2e8e09)]{style="color:#f8f5f0;"} | [[{{< iconify ri slideshow-fill size=30px >}}](lessons/35_Missing_data_transformations/Missing_data_transformations.qmd)]{style="color:#f8f5f0;"} |  |  |
 |  | `{r} pract9 %>% format("%m/%d")` |  |  | [Practice 9 due]{.pract-row} |  |  |  |  |
 |  | `{r} lab4 %>% format("%m/%d")` |  |  | [Lab 4 due]{.lab-row} |  |  |  |  |
 | [ ]{.week-row} |  |  |  |  |  |  |  |  |
