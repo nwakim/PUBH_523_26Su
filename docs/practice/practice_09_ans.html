@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your name here">
+<meta name="author" content="Nicky Wakim">
 
-<title>Practice 9 – Introduction to R</title>
+<title>Practice 9 Answers – Introduction to R</title>
 <style>
 
 code{white-space: pre-wrap;}
@@ -20,6 +20,41 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -4059,17 +4094,13 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#directions" id="toc-directions" class="nav-link" data-scroll-target="#directions">Directions</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
+  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions">Questions</a>
   <ul class="collapse">
   <li><a href="#question-1-missingness-statistics" id="toc-question-1-missingness-statistics" class="nav-link" data-scroll-target="#question-1-missingness-statistics">Question 1: Missingness statistics</a></li>
   <li><a href="#question-2-visualizing-missingness" id="toc-question-2-visualizing-missingness" class="nav-link" data-scroll-target="#question-2-visualizing-missingness">Question 2: Visualizing missingness</a></li>
   <li><a href="#question-3-filtering-out-missing-values" id="toc-question-3-filtering-out-missing-values" class="nav-link" data-scroll-target="#question-3-filtering-out-missing-values">Question 3: Filtering out missing values</a></li>
   <li><a href="#question-4-filling-in-and-recoding-missing-values" id="toc-question-4-filling-in-and-recoding-missing-values" class="nav-link" data-scroll-target="#question-4-filling-in-and-recoding-missing-values">Question 4: Filling in and recoding missing values</a></li>
   </ul></li>
-  <li><a href="#submission-checklist" id="toc-submission-checklist" class="nav-link" data-scroll-target="#submission-checklist">Submission Checklist</a></li>
-  <li><a href="#note-on-ai-usage" id="toc-note-on-ai-usage" class="nav-link" data-scroll-target="#note-on-ai-usage">Note on AI usage</a></li>
   </ul>
 </nav>
     </div>
@@ -4078,7 +4109,7 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Practice 9</h1>
+<h1 class="title">Practice 9 Answers</h1>
 <p class="subtitle lead">PUBH 523/623</p>
 </div>
 
@@ -4089,7 +4120,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Your name here </p>
+             <p>Nicky Wakim </p>
           </div>
   </div>
     
@@ -4108,60 +4139,9 @@ vertical-align: -.125em;
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This practice is about missing data: first <em>finding and describing</em> it, then <em>doing something about it</em>. You will use the <code>naniar</code> package to count and visualize missingness in the HRS dataset, then use functions from <code>tidyr</code>, <code>dplyr</code>, <code>forcats</code>, and <code>naniar</code> to filter, fill in, and recode missing values.</p>
-<p>Topics covered (Lessons 34-35):</p>
-<ul>
-<li>Missing data: summarization and visualization</li>
-<li>Missing data: transformations</li>
-</ul>
-</section>
-<section id="directions" class="level2">
-<h2 class="anchored" data-anchor-id="directions">Directions</h2>
-<p>Download this practice <code>.qmd</code> from the course GitHub repository, rename it, and save it in your course folder.</p>
-<ul>
-<li>Download <code>practice_09.qmd</code> from GitHub.</li>
-<li>Rename the file to <code>Lastname_Firstinitial_Practice_09.qmd</code> (or <code>lastname_firstinitial_practice_09.qmd</code>), replacing with your actual last name and first initial.</li>
-<li>Save it inside your <code>practice</code> folder. You may create a <code>practice_09</code> subfolder if you prefer.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="How to use this file">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>How to use this file
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The boxes with the yellow stripe explain what to do. Keep these in your submitted file. Do all your work below and outside of the yellow-striped boxes. You will need to create code chunks within this document to run your R code.</p>
-<p>Please delete the following sections before submitting:</p>
-<ul>
-<li>Overview</li>
-<li>Directions</li>
-<li>Tip boxes (green stripe)</li>
-<li>Caution boxes / Needed Steps (orange/red stripe)</li>
-<li>Submission checklist</li>
-<li>Note on AI usage</li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled" title="Needed setup">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Needed setup
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You should already have <code>hrs_data.rds</code> from Practice 4 (link on the practice page). Place it in your <code>data</code> folder if you haven’t already. You can check out the codebook <a href="https://github.com/nwakim/PUBH_523_26Su/blob/main/synthetic_HRS_codebook.docx">here</a>.</p>
-<p>Load the <code>tidyverse</code>, <code>here</code>, <code>rio</code>, <code>naniar</code>, <code>janitor</code>, and <code>gt</code> packages. You’ll need to install <code>naniar</code>, <code>janitor</code>, and <code>gt</code> if you haven’t already (you should already have the rest from previous weeks).</p>
-</div>
-</div>
-</section>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <section id="question-1-missingness-statistics" class="level3">
@@ -4169,10 +4149,10 @@ vertical-align: -.125em;
 <p>In Lesson 34, we saw how to get quick, high-level counts of missingness before doing anything else with a dataset.</p>
 <section id="part-a-import-dataset" class="level4">
 <h4 class="anchored" data-anchor-id="part-a-import-dataset">Part A: Import dataset</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4182,13 +4162,60 @@ vertical-align: -.125em;
 <p>Import <code>hrs_data.rds</code> and assign it to <code>hrs_data</code>.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Here’s an example to show you the pattern — the rest of your answers should follow this same style, with code chunks and a <code>#| ...</code> chunk options as needed.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>hrs_data <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;hrs_data.rds&quot;</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Missing `trust` will be set to FALSE by default for RDS in 2.0.0.</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(hrs_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 2,728
+Columns: 32
+$ HHID          &lt;fct&gt; 552754, 555339, 559734, 558143, 554789, 551018, 550516, …
+$ pn            &lt;fct&gt; 010, 020, 010, 020, 020, 010, 010, 010, 020, 010, 010, 0…
+$ id            &lt;chr&gt; &quot;552754_010&quot;, &quot;555339_020&quot;, &quot;559734_010&quot;, &quot;558143_020&quot;, …
+$ BIRTHYR       &lt;dbl&gt; 1967, 1966, 1967, 1973, 1950, 1970, 1960, 1971, 1952, 19…
+$ BIRTHMO       &lt;dbl&gt; 9, 7, 3, 10, 7, 1, 1, 4, 9, 1, 10, 6, 12, 5, 2, 7, 11, 1…
+$ BIRTHDATE     &lt;dbl&gt; 2814, 2387, 2602, 5036, -3153, 3667, 14, 4122, -2664, 22…
+$ proxy         &lt;fct&gt; Respondent, Respondent, Respondent, Respondent, Responde…
+$ coupled       &lt;fct&gt; Not a couple HH, Couple HH, Couple HH, Couple HH, Couple…
+$ sex           &lt;fct&gt; Female, Female, Male, Male, Male, Female, Male, Male, Ma…
+$ age_mo        &lt;dbl&gt; 665, 676, 663, 600, 860, 632, 749, 621, 845, 679, 641, 6…
+$ age_yr        &lt;dbl&gt; 55, 56, 55, 50, 71, 52, 62, 51, 70, 56, 53, 54, 53, 60, …
+$ ed            &lt;dbl&gt; NA, 12, NA, 16, 16, 17, 11, 13, 16, NA, NA, NA, 12, 12, …
+$ degree        &lt;fct&gt; NA, High school diploma, NA, Master&#39;s degree, Master&#39;s d…
+$ race_original &lt;fct&gt; NA, White/Caucasian, NA, White/Caucasian, Black/African …
+$ smoke_ever    &lt;fct&gt; No, No, No, No, No, No, No, No, No, No, No, No, No, No, …
+$ smoke_now     &lt;fct&gt; No, Yes, Yes, Yes, No, No, Yes, No, No, Yes, No, No, No,…
+$ drink         &lt;fct&gt; No, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, No, No,…
+$ height        &lt;dbl&gt; 1.4986, 1.6002, 1.9050, 1.8796, 1.7526, 1.5494, 1.7780, …
+$ srh           &lt;fct&gt; Fair, Good, Very Good, Excellent, Good, Poor, Excellent,…
+$ act_vig       &lt;fct&gt; Never, Never, Never, &gt;1 per week, 1 per week, Never, Nev…
+$ bp            &lt;fct&gt; No, Yes, Yes, No, No, No, Yes, Yes, Yes, No, No, No, Yes…
+$ diab          &lt;fct&gt; No, No, No, No, Yes, Yes, No, No, No, No, No, No, No, Ye…
+$ cancer        &lt;fct&gt; No, No, No, No, Yes, No, No, No, Yes, No, No, No, No, No…
+$ lung          &lt;fct&gt; No, No, No, No, No, Yes, No, No, No, No, No, No, Yes, No…
+$ hrt           &lt;fct&gt; No, No, No, No, Yes, No, No, No, No, No, No, No, No, Yes…
+$ strk          &lt;fct&gt; No, No, No, No, No, No, No, No, No, No, No, No, No, Yes,…
+$ psych         &lt;fct&gt; No, No, No, No, Yes, Yes, No, No, No, Yes, Yes, No, Yes,…
+$ sleep         &lt;fct&gt; Yes, Yes, No, No, Yes, Yes, No, Yes, Yes, Yes, Yes, No, …
+$ arth          &lt;fct&gt; No, No, Yes, Yes, No, Yes, No, No, No, No, No, No, No, N…
+$ cond_count    &lt;dbl&gt; 0, 1, 2, 1, 4, 4, 1, 1, 2, 1, 1, 0, 2, 4, 0, 1, 0, 0, 1,…
+$ cesd          &lt;dbl&gt; 1, 6, 0, 1, 3, 7, 1, 2, 1, 1, 7, 2, 4, 0, 0, 4, 2, 1, 1,…
+$ income        &lt;dbl&gt; 35000.00, 0.00, 108400.00, 526192.00, 148320.00, 28266.5…</code></pre>
+</div>
+</div>
+</div>
 </section>
 <section id="part-b-total-missingness-in-the-dataset" class="level4">
 <h4 class="anchored" data-anchor-id="part-b-total-missingness-in-the-dataset">Part B: Total missingness in the dataset</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4198,13 +4225,17 @@ vertical-align: -.125em;
 <p>Use <code>n_miss()</code> on <code>hrs_data</code> to find the total number of missing cells across the entire dataset.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-c-proportion-of-missingness-in-the-dataset" class="level4">
 <h4 class="anchored" data-anchor-id="part-c-proportion-of-missingness-in-the-dataset">Part C: Proportion of missingness in the dataset</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4214,13 +4245,22 @@ vertical-align: -.125em;
 <p>Use <code>prop_miss()</code> on <code>hrs_data</code> to find the proportion of all cells in the dataset that are missing.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop_miss</span>(hrs_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.01774423</code></pre>
+</div>
+</div>
+</div>
 </section>
 <section id="part-d-missingness-in-a-single-variable" class="level4">
 <h4 class="anchored" data-anchor-id="part-d-missingness-in-a-single-variable">Part D: Missingness in a single variable</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4230,10 +4270,10 @@ vertical-align: -.125em;
 <p>Use <code>n_miss()</code> on just the <code>srh</code> column of <code>hrs_data</code> to find how many values are missing for self-reported health.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tip</span>Tip
@@ -4243,13 +4283,17 @@ vertical-align: -.125em;
 <p>You can pull out a single column with <code>$</code>, e.g. <code>hrs_data$srh</code>.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-e-missingness-summary-table" class="level4">
 <h4 class="anchored" data-anchor-id="part-e-missingness-summary-table">Part E: Missingness summary table</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4260,7 +4304,10 @@ vertical-align: -.125em;
 <p>Which variable has the most missing values? Which has the least?</p>
 </div>
 </div>
-<p><em>Write your answer here.</em></p>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 </section>
 <section id="question-2-visualizing-missingness" class="level3">
@@ -4268,10 +4315,10 @@ vertical-align: -.125em;
 <p>In Lesson 34, we also covered a few plotting functions from <code>naniar</code> that help us see <em>where</em> and <em>how</em> data is missing.</p>
 <section id="part-a-a-birds-eye-view-with-vis_miss" class="level4">
 <h4 class="anchored" data-anchor-id="part-a-a-birds-eye-view-with-vis_miss">Part A: A bird’s-eye view with <code>vis_miss()</code></h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4281,13 +4328,21 @@ vertical-align: -.125em;
 <p>Use <code>vis_miss()</code> on <code>hrs_data</code> to visualize missingness across the whole dataset. Assign the plot to <code>hrs_02_plot_vis_miss</code> and display it.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Start with something like:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>hrs_02_plot_vis_miss <span class="ot">&lt;-</span> hrs_data <span class="sc">|&gt;</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">______</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 </section>
 <section id="part-b-customize-the-plot" class="level4">
 <h4 class="anchored" data-anchor-id="part-b-customize-the-plot">Part B: Customize the plot</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4298,11 +4353,10 @@ vertical-align: -.125em;
 <p>Looking at your plot, is missingness concentrated in a few variables, spread across many observations, or both?</p>
 </div>
 </div>
-<p><em>Write your answer here.</em></p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tip</span>Tip
@@ -4312,13 +4366,17 @@ vertical-align: -.125em;
 <p><code>theme(axis.text.x = element_text(angle = 20, hjust = 0))</code> adjusts the angle and alignment of the x-axis text.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-c-missingness-by-group-with-gg_miss_fct" class="level4">
 <h4 class="anchored" data-anchor-id="part-c-missingness-by-group-with-gg_miss_fct">Part C: Missingness by group with <code>gg_miss_fct()</code></h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4329,14 +4387,17 @@ vertical-align: -.125em;
 <p>Does missingness look similar across <code>degree</code>, or does one group have noticeably more missing data for certain variables?</p>
 </div>
 </div>
-<p><em>Write your answer here.</em></p>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-d-missingness-intersections-with-gg_miss_upset" class="level4">
 <h4 class="anchored" data-anchor-id="part-d-missingness-intersections-with-gg_miss_upset">Part D: Missingness intersections with <code>gg_miss_upset()</code></h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4347,7 +4408,10 @@ vertical-align: -.125em;
 <p>Which combination of variables is missing together most often? Is there a variable that tends to be missing mostly on its own?</p>
 </div>
 </div>
-<p><em>Write your answer here.</em></p>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 </section>
 <section id="question-3-filtering-out-missing-values" class="level3">
@@ -4355,10 +4419,10 @@ vertical-align: -.125em;
 <p>In Lesson 35, we covered how to remove rows with missing data, and a common gotcha when using <code>filter()</code> on a column with <code>NA</code>s.</p>
 <section id="part-a-check-missingness-before-you-drop-anything" class="level4">
 <h4 class="anchored" data-anchor-id="part-a-check-missingness-before-you-drop-anything">Part A: Check missingness before you drop anything</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4368,10 +4432,10 @@ vertical-align: -.125em;
 <p>Before dropping any rows, pipe <code>hrs_data</code> into <code>miss_var_summary()</code> and then <code>gt()</code> again, just like Question 1 Part E, so you have a “before” table to compare to later. Assign it to <code>hrs_06_summary_before</code>.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tip</span>Tip
@@ -4381,13 +4445,17 @@ vertical-align: -.125em;
 <p>Getting in the habit of checking missingness <em>before</em> and <em>after</em> you drop or fill in values helps you catch mistakes, like accidentally dropping more rows than you meant to.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-b-drop-rows-missing-anything" class="level4">
 <h4 class="anchored" data-anchor-id="part-b-drop-rows-missing-anything">Part B: Drop rows missing anything</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4397,14 +4465,17 @@ vertical-align: -.125em;
 <p>Use <code>drop_na()</code> on <code>hrs_data</code> (with no arguments) to remove any row that has <em>any</em> missing value. Assign the result to <code>hrs_07_dropna_all</code>. How many rows are left compared to <code>hrs_data</code>?</p>
 </div>
 </div>
-<p><em>Write your answer here.</em></p>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-c-drop-rows-missing-specific-columns" class="level4">
 <h4 class="anchored" data-anchor-id="part-c-drop-rows-missing-specific-columns">Part C: Drop rows missing specific columns</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4414,14 +4485,21 @@ vertical-align: -.125em;
 <p>Now use <code>drop_na()</code> on <code>hrs_data</code> again, but this time only target the <code>act_vig</code> and <code>bp</code> columns, so rows are only dropped if one of <em>those two</em> columns is missing. Assign the result to <code>hrs_08_dropna_cols</code>. How does the number of rows compare to <code>hrs_07_dropna_all</code>?</p>
 </div>
 </div>
-<p><em>Write your answer here.</em></p>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Start with something like:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>hrs_08_dropna_cols <span class="ot">&lt;-</span> hrs_data <span class="sc">|&gt;</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(______, ______)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 </section>
 <section id="part-d-the-filter-gotcha" class="level4">
 <h4 class="anchored" data-anchor-id="part-d-the-filter-gotcha">Part D: The <code>filter()</code> gotcha</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4432,13 +4510,17 @@ vertical-align: -.125em;
 <p>Then, use <code>filter()</code> on <code>hrs_data</code> to keep only rows where <code>smoke_ever != &quot;No&quot;</code>. Assign the result to <code>hrs_09_filter_gotcha</code>. Use <code>tabyl()</code> on the <code>smoke_ever</code> column of <code>hrs_09_filter_gotcha</code> to check what happened to the missing values.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-e-fixing-the-gotcha-with-filter_out" class="level4">
 <h4 class="anchored" data-anchor-id="part-e-fixing-the-gotcha-with-filter_out">Part E: Fixing the gotcha with <code>filter_out()</code></h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4448,6 +4530,10 @@ vertical-align: -.125em;
 <p>Redo Part D, but use <code>filter_out()</code> instead of <code>filter()</code> to exclude <code>smoke_ever == &quot;No&quot;</code> while keeping the <code>NA</code>s. Assign the result to <code>hrs_10_filter_out_fixed</code>. Confirm with <code>tabyl()</code> that the missing values are still there this time.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 </section>
 <section id="question-4-filling-in-and-recoding-missing-values" class="level3">
@@ -4455,10 +4541,10 @@ vertical-align: -.125em;
 <p>In Lesson 35, we also covered how to fill in missing values instead of dropping them, and how to turn a specific value into <code>NA</code> when needed.</p>
 <section id="part-a-fill-in-a-numeric-variable" class="level4">
 <h4 class="anchored" data-anchor-id="part-a-fill-in-a-numeric-variable">Part A: Fill in a numeric variable</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4469,14 +4555,23 @@ vertical-align: -.125em;
 <p>Is filling in a missing value with the overall mean always a good idea? Why or why not?</p>
 </div>
 </div>
-<p><em>Write your answer here.</em></p>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Start with something like:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>hrs_11_cesd_filled <span class="ot">&lt;-</span> hrs_data <span class="sc">|&gt;</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">cesd_filled =</span> <span class="fu">replace_na</span>(______, ______)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 </section>
 <section id="part-b-fill-in-a-factor-variable" class="level4">
 <h4 class="anchored" data-anchor-id="part-b-fill-in-a-factor-variable">Part B: Fill in a factor variable</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4486,10 +4581,10 @@ vertical-align: -.125em;
 <p>Starting from <code>hrs_11_cesd_filled</code>, use <code>mutate()</code> and <code>fct_na_value_to_level()</code> to create a new column, <code>degree_filled</code>, that replaces any missing <code>degree</code> with a new level called <code>&quot;Unknown&quot;</code>. Assign the result to <code>hrs_12_degree_filled</code>.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Tip</span>Tip
@@ -4499,13 +4594,23 @@ vertical-align: -.125em;
 <p><code>replace_na()</code> does not work on factor columns. Use <code>fct_na_value_to_level()</code> instead whenever the column you’re filling in is a factor.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Start with something like:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>hrs_12_degree_filled <span class="ot">&lt;-</span> hrs_11_cesd_filled <span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">degree_filled =</span> <span class="fu">fct_na_value_to_level</span>(______, <span class="at">level =</span> ______)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 </section>
 <section id="part-c-check-your-work" class="level4">
 <h4 class="anchored" data-anchor-id="part-c-check-your-work">Part C: Check your work</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4515,13 +4620,17 @@ vertical-align: -.125em;
 <p>Use <code>tabyl()</code> to compare <code>degree</code> and <code>degree_filled</code> in <code>hrs_12_degree_filled</code> (hint: <code>tabyl()</code> can take two column names to cross-tabulate them). Confirm that every row that was <code>NA</code> in <code>degree</code> now shows <code>&quot;Unknown&quot;</code> in <code>degree_filled</code>.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 </section>
 <section id="part-d-turn-a-valid-value-into-na" class="level4">
 <h4 class="anchored" data-anchor-id="part-d-turn-a-valid-value-into-na">Part D: Turn a valid value into <code>NA</code></h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4532,13 +4641,24 @@ vertical-align: -.125em;
 <p>Use <code>tabyl()</code> to compare the original <code>drink</code> column to your new <code>drink_na</code> column and confirm the replacement worked as expected.</p>
 </div>
 </div>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Start with something like:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>hrs_13_replace_with_na <span class="ot">&lt;-</span> hrs_12_degree_filled <span class="sc">|&gt;</span> </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">drink_na =</span> drink) <span class="sc">|&gt;</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">replace_with_na</span>(<span class="at">replace =</span> <span class="fu">list</span>(</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">______ =</span> ______</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  ))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 </section>
 <section id="part-e-summarize-your-final-cleaned-dataset" class="level4">
 <h4 class="anchored" data-anchor-id="part-e-summarize-your-final-cleaned-dataset">Part E: Summarize your final, cleaned dataset</h4>
-<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Warning</span>Task
@@ -4548,43 +4668,14 @@ vertical-align: -.125em;
 <p>Take <code>hrs_12_degree_filled</code> (from Part B, before Part D’s practice-only recoding) and run <code>miss_var_summary()</code> and <code>gt()</code> on it one more time. Assign it to <code>hrs_14_summary_after</code>. Compare it to <code>hrs_06_summary_before</code> from Question 3 Part A. Which variables now show less missingness, and why?</p>
 </div>
 </div>
-<p><em>Write your answer here.</em></p>
-</section>
-</section>
-</section>
-<section id="submission-checklist" class="level2">
-<h2 class="anchored" data-anchor-id="submission-checklist">Submission Checklist</h2>
-<p>If having a checklist helps you stay organized, check off each item below as you complete it. You do not need to submit this checklist.</p>
-<ul class="task-list">
-<li><label><input type="checkbox"><code>hrs_data</code> imported (Q1 Part A)</label></li>
-<li><label><input type="checkbox">Total missing count found with <code>n_miss()</code> (Q1 Part B)</label></li>
-<li><label><input type="checkbox">Total missing proportion found with <code>prop_miss()</code> (Q1 Part C)</label></li>
-<li><label><input type="checkbox">Missing count for <code>srh</code> found with <code>n_miss()</code> (Q1 Part D)</label></li>
-<li><label><input type="checkbox"><code>hrs_01_summary_table</code> created with <code>miss_var_summary()</code> and <code>gt()</code>, with question answered (Q1 Part E)</label></li>
-<li><label><input type="checkbox"><code>hrs_02_plot_vis_miss</code> created with <code>vis_miss()</code> (Q2 Part A)</label></li>
-<li><label><input type="checkbox"><code>hrs_03_plot_vis_miss_clean</code> created with an added <code>theme()</code> layer, with question answered (Q2 Part B)</label></li>
-<li><label><input type="checkbox"><code>hrs_04_plot_fct</code> created with <code>gg_miss_fct()</code>, with question answered (Q2 Part C)</label></li>
-<li><label><input type="checkbox"><code>hrs_05_plot_upset</code> created with <code>gg_miss_upset()</code>, with question answered (Q2 Part D)</label></li>
-<li><label><input type="checkbox"><code>hrs_06_summary_before</code> created as a “before” missingness table (Q3 Part A)</label></li>
-<li><label><input type="checkbox"><code>hrs_07_dropna_all</code> created with <code>drop_na()</code>, with question answered (Q3 Part B)</label></li>
-<li><label><input type="checkbox"><code>hrs_08_dropna_cols</code> created with targeted <code>drop_na()</code>, with question answered (Q3 Part C)</label></li>
-<li><label><input type="checkbox"><code>hrs_09_filter_gotcha</code> created and checked with <code>tabyl()</code> (Q3 Part D)</label></li>
-<li><label><input type="checkbox"><code>hrs_10_filter_out_fixed</code> created with <code>filter_out()</code> and checked with <code>tabyl()</code> (Q3 Part E)</label></li>
-<li><label><input type="checkbox"><code>hrs_11_cesd_filled</code> created with <code>replace_na()</code>, with question answered (Q4 Part A)</label></li>
-<li><label><input type="checkbox"><code>hrs_12_degree_filled</code> created with <code>fct_na_value_to_level()</code> (Q4 Part B)</label></li>
-<li><label><input type="checkbox"><code>degree</code> vs. <code>degree_filled</code> checked with <code>tabyl()</code> (Q4 Part C)</label></li>
-<li><label><input type="checkbox"><code>hrs_13_replace_with_na</code> created with <code>replace_with_na()</code> and checked with <code>tabyl()</code> (Q4 Part D)</label></li>
-<li><label><input type="checkbox"><code>hrs_14_summary_after</code> created and compared to <code>hrs_06_summary_before</code>, with question answered (Q4 Part E)</label></li>
-<li><label><input type="checkbox">Document renders to HTML with no errors</label></li>
-<li><label><input type="checkbox">Files named correctly: <code>Lastname_Firstinitial_Practice_09.qmd</code> and <code>Lastname_Firstinitial_Practice_09.html</code> (or lowercase versions)</label></li>
-<li><label><input type="checkbox">Both <code>.qmd</code> and <code>.html</code> submitted to Brightspace</label></li>
-</ul>
-</section>
-<section id="note-on-ai-usage" class="level2">
-<h2 class="anchored" data-anchor-id="note-on-ai-usage">Note on AI usage</h2>
-<p>I used GenAI (Claude) to help me draft this practice assignment. It helped me brainstorm ideas for the assignment, and I directed it to help you complete the needed tasks that I showed in the lessons.</p>
+<div class="blue">
+<p><strong>Answer:</strong></p>
+<p>Not given</p>
+</div>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
