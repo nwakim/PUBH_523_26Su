@@ -156,7 +156,8 @@
     "Lab_01_instructions.tex": "f8db7d2e"
   },
   "project/Lab_04_instructions.qmd": {
-    "Lab_04_instructions.html": "fbca602c"
+    "Lab_04_instructions.html": "fbca602c",
+    "Lab_04_instructions.tex": "200fd597"
   },
   "project/Lab_03_instructions.qmd": {
     "Lab_03_instructions.html": "83b19899"
@@ -546,5 +547,12 @@
   "project/Final_Project_instructions.qmd": {
     "Final_Project_instructions.html": "925d221e",
     "Final_Project_instructions.tex": "a1992d04"
+  },
+  "practice/practice_09.qmd": {
+    "practice_09.html": "e1efdf7c"
+  },
+  "project/lastname_firstinit_lab_04.qmd": {
+    "lastname_firstinit_lab_04.html": "51d54260",
+    "lastname_firstinit_lab_04.tex": "f5563878"
   }
 }

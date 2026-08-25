@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nicky Wakim">
+<meta name="author" content="Your name here">
 
-<title>Final Project Instructions – Introduction to R</title>
+<title>Practice 9 – Introduction to R</title>
 <style>
 
 code{white-space: pre-wrap;}
@@ -20,41 +20,6 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
-}
-
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-{ counter-reset: source-line 0; }
-pre.numberSource code > span
-{ position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-{ content: counter(source-line);
-position: relative; left: -1em; text-align: right; vertical-align: baseline;
-border: none; display: inline-block;
--webkit-touch-callout: none; -webkit-user-select: none;
--khtml-user-select: none; -moz-user-select: none;
--ms-user-select: none; user-select: none;
-padding: 0 4px; width: 4em;
-}
-pre.numberSource { margin-left: 3em; padding-left: 4px; }
-div.sourceCode
-{ }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -4094,31 +4059,26 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose"><span class="header-section-number">1</span> Purpose</a></li>
-  <li><a href="#what-your-information-sheet-should-include" id="toc-what-your-information-sheet-should-include" class="nav-link" data-scroll-target="#what-your-information-sheet-should-include"><span class="header-section-number">2</span> What your information sheet should include</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#directions" id="toc-directions" class="nav-link" data-scroll-target="#directions">Directions</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
   <ul class="collapse">
-  <li><a href="#title-author-headline-takeaway" id="toc-title-author-headline-takeaway" class="nav-link" data-scroll-target="#title-author-headline-takeaway"><span class="header-section-number">2.1</span> Title + Author + Headline takeaway</a></li>
-  <li><a href="#background-why-it-matters" id="toc-background-why-it-matters" class="nav-link" data-scroll-target="#background-why-it-matters"><span class="header-section-number">2.2</span> Background / why it matters</a></li>
-  <li><a href="#population-who-we-looked-at" id="toc-population-who-we-looked-at" class="nav-link" data-scroll-target="#population-who-we-looked-at"><span class="header-section-number">2.3</span> Population / who we looked at</a></li>
-  <li><a href="#findings" id="toc-findings" class="nav-link" data-scroll-target="#findings"><span class="header-section-number">2.4</span> Findings</a></li>
-  <li><a href="#so-what-what-does-this-mean" id="toc-so-what-what-does-this-mean" class="nav-link" data-scroll-target="#so-what-what-does-this-mean"><span class="header-section-number">2.5</span> So what? / What does this mean?</a></li>
-  <li><a href="#data-source-and-limitations" id="toc-data-source-and-limitations" class="nav-link" data-scroll-target="#data-source-and-limitations"><span class="header-section-number">2.6</span> Data source and limitations</a></li>
+  <li><a href="#question-1-missingness-statistics" id="toc-question-1-missingness-statistics" class="nav-link" data-scroll-target="#question-1-missingness-statistics">Question 1: Missingness statistics</a></li>
+  <li><a href="#question-2-visualizing-missingness" id="toc-question-2-visualizing-missingness" class="nav-link" data-scroll-target="#question-2-visualizing-missingness">Question 2: Visualizing missingness</a></li>
+  <li><a href="#question-3-filtering-out-missing-values" id="toc-question-3-filtering-out-missing-values" class="nav-link" data-scroll-target="#question-3-filtering-out-missing-values">Question 3: Filtering out missing values</a></li>
+  <li><a href="#question-4-filling-in-and-recoding-missing-values" id="toc-question-4-filling-in-and-recoding-missing-values" class="nav-link" data-scroll-target="#question-4-filling-in-and-recoding-missing-values">Question 4: Filling in and recoding missing values</a></li>
   </ul></li>
-  <li><a href="#tips-for-exporting-and-polishing-your-visuals" id="toc-tips-for-exporting-and-polishing-your-visuals" class="nav-link" data-scroll-target="#tips-for-exporting-and-polishing-your-visuals"><span class="header-section-number">3</span> Tips for exporting and polishing your visuals</a>
-  <ul class="collapse">
-  <li><a href="#getting-your-images-out-of-r" id="toc-getting-your-images-out-of-r" class="nav-link" data-scroll-target="#getting-your-images-out-of-r"><span class="header-section-number">3.1</span> Getting your images out of R</a></li>
-  <li><a href="#polishing-plots-and-tables-before-you-export-them" id="toc-polishing-plots-and-tables-before-you-export-them" class="nav-link" data-scroll-target="#polishing-plots-and-tables-before-you-export-them"><span class="header-section-number">3.2</span> Polishing plots and tables before you export them</a></li>
-  </ul></li>
-  <li><a href="#before-you-submit" id="toc-before-you-submit" class="nav-link" data-scroll-target="#before-you-submit"><span class="header-section-number">4</span> Before you submit</a></li>
+  <li><a href="#submission-checklist" id="toc-submission-checklist" class="nav-link" data-scroll-target="#submission-checklist">Submission Checklist</a></li>
+  <li><a href="#note-on-ai-usage" id="toc-note-on-ai-usage" class="nav-link" data-scroll-target="#note-on-ai-usage">Note on AI usage</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Final_Project_instructions.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Final Project Instructions</h1>
+<h1 class="title">Practice 9</h1>
 <p class="subtitle lead">PUBH 523/623</p>
 </div>
 
@@ -4129,7 +4089,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Nicky Wakim </p>
+             <p>Your name here </p>
           </div>
   </div>
     
@@ -4148,207 +4108,481 @@ vertical-align: -.125em;
 </header>
 
 
-<div class="callout callout-style-default callout-warning callout-titled">
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This practice is about missing data: first <em>finding and describing</em> it, then <em>doing something about it</em>. You will use the <code>naniar</code> package to count and visualize missingness in the HRS dataset, then use functions from <code>tidyr</code>, <code>dplyr</code>, <code>forcats</code>, and <code>naniar</code> to filter, fill in, and recode missing values. Along the way you’ll get a little more practice with <code>select()</code>, the pipe (<code>|&gt;</code>), and even adding a <code>theme()</code>/<code>labs()</code> layer to a <code>ggplot2</code>-based plot from previous weeks, but the focus this week is on missing data.</p>
+<p>Topics covered (Lessons 34-35):</p>
+<ul>
+<li>Missing data: summarization and visualization</li>
+<li>Missing data: transformations</li>
+</ul>
+</section>
+<section id="directions" class="level2">
+<h2 class="anchored" data-anchor-id="directions">Directions</h2>
+<p>Download this practice <code>.qmd</code> from the course GitHub repository, rename it, and save it in your course folder.</p>
+<ul>
+<li>Download <code>practice_09.qmd</code> from GitHub.</li>
+<li>Rename the file to <code>Lastname_Firstinitial_Practice_09.qmd</code> (or <code>lastname_firstinitial_practice_09.qmd</code>), replacing with your actual last name and first initial.</li>
+<li>Save it inside your <code>practice</code> folder. You may create a <code>practice_09</code> subfolder if you prefer.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="How to use this file">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Important
+<span class="screen-reader-only">Tip</span>How to use this file
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>These instructions are ALMOST complete, but not quite!! You can check this page to get a sense of the project, but I would not follow the guidelines strictly for now!</p>
-<p>Nicky (8/24/2026)</p>
+<p>The boxes with the yellow stripe explain what to do. Keep these in your submitted file. Do all your work below and outside of the yellow-striped boxes. You will need to create code chunks within this document to run your R code.</p>
+<p>Please delete the following sections before submitting:</p>
+<ul>
+<li>Overview</li>
+<li>Directions</li>
+<li>Tip boxes (green stripe)</li>
+<li>Caution boxes / Needed Steps (orange/red stripe)</li>
+<li>Submission checklist</li>
+<li>Note on AI usage</li>
+</ul>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-important callout-titled" title="Needed setup">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Important</span>Needed setup
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Please turn in your final <strong>.pptx</strong> file and <strong>.pdf</strong> version on Brightspace, using the naming convention <code>lastname_firstinit_final_project.pptx</code> and <code>lastname_firstinit_final_project.pdf</code>.</p>
-<p>Your final project builds <em>directly</em> on Labs 1–4. You should not need to code much more beyond your labs! You’re taking the data, composite score(s), summary table, and visualizations you already built and turning them into a <strong>one-page information sheet</strong> that someone outside this class could read and understand in a couple of minutes.</p>
-<p>Most of this project is about <strong>translating your work into plain language</strong> and <strong>polishing your visuals</strong> so they can stand alone for a specific audience.</p>
+<p>You should already have <code>hrs_data.rds</code> from Practice 4 (link on the practice page). Place it in your <code>data</code> folder if you haven’t already. You can check out the codebook <a href="https://github.com/nwakim/PUBH_523_26Su/blob/main/synthetic_HRS_codebook.docx">here</a>.</p>
+<p>Load the <code>tidyverse</code>, <code>here</code>, <code>rio</code>, <code>naniar</code>, <code>janitor</code>, and <code>gt</code> packages. You’ll need to install <code>naniar</code>, <code>janitor</code>, and <code>gt</code> if you haven’t already (you should already have the rest from previous weeks).</p>
 </div>
 </div>
-<section id="purpose" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="purpose"><span class="header-section-number">1</span> Purpose</h2>
-<p>Across Labs 1–4 you turned the raw Well-Being and Basic Needs Survey (WBNS) into a cleaned dataset, built a composite score, summarized it in a table, and visualized it. In this final project, you will translate that work for a reader who has never seen your code: a <strong>one-page information sheet</strong>, built from the provided PowerPoint template, that presents your project focus, your key findings, and why they matter.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<section id="question-1-missingness-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="question-1-missingness-statistics">Question 1: Missingness statistics</h3>
+<p>In Lesson 34, we saw how to get quick, high-level counts of missingness before doing anything else with a dataset.</p>
+<section id="part-a-import-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="part-a-import-dataset">Part A: Import dataset</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Warning</span>Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Two examples are provided as inspiration, but at two different scales:</p>
-<ul>
-<li><a href="https://venngage.com/templates/infographics/statistical">Venngage statistical infographic templates</a>: you can use these as inspiration for <em>styling and layout</em>.</li>
-<li><a href="https://multco.us/info/health-data-reports">Multnomah County Health Data and Reports</a>: you can use these as inspiration for <em>content, structure, and language</em>.
-<ul>
-<li>A lot of these are very long, but I think it’s helpful for you to see what a public health department puts out for the public!</li>
-</ul></li>
-</ul>
+<p>Import <code>hrs_data.rds</code> and assign it to <code>hrs_data</code>.</p>
 </div>
 </div>
 </section>
-<section id="what-your-information-sheet-should-include" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="what-your-information-sheet-should-include"><span class="header-section-number">2</span> What your information sheet should include</h2>
-<p>Use the provided PowerPoint template (<code>final_project_template.pptx</code>) as your starting point. It is sized for a normal sheet of paper (8.5” × 11”, one slide) and laid out with the sections below already placed for you — replace the placeholder text and placeholder image boxes with your own content. You’re welcome to adjust the layout, but the following information should appear somewhere on your page:</p>
-<ol type="1">
-<li><strong>Title + Author + Headline takeaway</strong>: a short title and one plain-language sentence that captures your single most important finding. If someone only reads one line on your whole page, this should be it.</li>
-<li><strong>Background / Why it matters</strong>: a few sentences on what the WBNS is and why your topic matters, drawing on what you wrote for Lab 1 (motivation for the study, why basic needs matter).</li>
-<li><strong>Population / Who we looked at</strong>:a plain-language description of your population and sample size — no code, no variable names like <code>FPL_LT50</code> (e.g. “adults living below the poverty line who received free groceries or meals in the past year”).</li>
-<li><strong>Findings</strong>: 2-3 short findings, each pairing <strong>one image</strong> (a polished plot or table, exported from R, see below) with <strong>1-3 sentences of plain-language description</strong> for each finding. Structure them so they build on each other:
-<ul>
-<li><strong>Finding 1: One main variable on its own.</strong> Describe what you found for a single main variable by itself (not yet in relation to anything else) — for example, the overall distribution of your composite score, or what share of your population fell into each category of your other main variable.</li>
-<li><strong>Finding 2: the relationship between your two main variables.</strong> This is the heart of your project question. Show how your composite score compares across the groups of your other main variable (this is exactly what your Lab 3 grouped summary and Lab 4 visualization already show you).</li>
-<li><strong>Finding 3 (optional): one main variable alongside one additional variable.</strong> If you have room, take one main variable and break it down by one of the suggested additional variables from your Lab 2 table (e.g., a demographic variable) to add texture to your story.</li>
-</ul>
-Your tables and plots are hopefully already completed from Labs 3/4. At this point, you should focus on choosing which findings to present, polishing the table/visual, and describing the finding in plain language.</li>
-<li><strong>So what? / What does this mean?</strong>: a few sentences connecting your findings back to your original question: why does this matter, and what might it suggest for programs or policy?</li>
-<li><strong>Data source and limitations</strong>: a short citation of the WBNS, and at least one honest limitation of your analysis (e.g., small sample size after filtering, self-reported data, cross-sectional so no causal claims).</li>
-</ol>
-<p>The sections below will give more detail on what is expected in each section.</p>
-<section id="title-author-headline-takeaway" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="title-author-headline-takeaway"><span class="header-section-number">2.1</span> Title + Author + Headline takeaway</h3>
-<p>This is the dark banner at the very top of the template — the first (and maybe only) thing a reader sees.</p>
-<ul>
-<li><strong>Title:</strong> Keep it descriptive, not clever. You don’t need a pun, a play on words, or a catchy hook — a plain title like “Food Security Among Free Food Recipients” does the job. A reader should know what your page is about before they’ve read a single full sentence.</li>
-<li><strong>Author:</strong> Include your name here.</li>
-<li><strong>Headline takeaway:</strong> One sentence, in plain language, that states your single most important finding. This is the sentence you’d want someone to remember if they only read one line on the whole page. Write it the way you’d say it out loud to a person — not like the results line of a hypothesis test (e.g., “Most adults who received free groceries or meals also reported experiencing food insecurity,” not “Food insecurity was observed in X% of the sample”).</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
+<section id="part-b-total-missingness-in-the-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="part-b-total-missingness-in-the-dataset">Part B: Total missingness in the dataset</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Warning</span>Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>It’s often easier to write this section <em>last</em>, after you’ve written your findings — it’s much easier to summarize a story you’ve already told than to write the summary first.</p>
+<p>Use <code>n_miss()</code> on <code>hrs_data</code> to find the total number of missing cells across the entire dataset.</p>
 </div>
 </div>
 </section>
-<section id="background-why-it-matters" class="level3" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="background-why-it-matters"><span class="header-section-number">2.2</span> Background / why it matters</h3>
-<p>This goes under <strong>“Why This Matters”</strong> on the left side of the page, just below the title banner. In 2-4 sentences:</p>
-<ul>
-<li>Briefly explain what the Well-Being and Basic Needs Survey is (a survey of adults’ experiences with finances, poverty, hardship, housing, and safety-net programs)
-<ul>
-<li>A quick sentence is enough, this isn’t the focus.</li>
-</ul></li>
-<li>Spend the rest of the space on why <em>your specific topic</em> matters. Pull from what you wrote in Lab 1 about your motivation for choosing this project
-<ul>
-<li>Why should a reader care about food security, LGBTQ+ healthcare trust, or mental health and benefit receipt (whichever is your project)?</li>
-</ul></li>
-</ul>
-<p>Write it as if you’re explaining your project to a relative with no public health background.</p>
-</section>
-<section id="population-who-we-looked-at" class="level3" data-number="2.3">
-<h3 data-number="2.3" class="anchored" data-anchor-id="population-who-we-looked-at"><span class="header-section-number">2.3</span> Population / who we looked at</h3>
-<p>This goes under <strong>“Who We Looked At”</strong> on the right side, parallel to the background section. In a similar amount of space, plainly state:</p>
-<ul>
-<li>Who qualified for your study population (the filtering criteria from Lab 2) — described in plain English, not variable names. Instead of “FPL_LT50 == 1,” write something like “adults living below the federal poverty line.”</li>
-<li>Your final sample size, after all of your data cleaning in Labs 2-3 (the template literally has a <code>&lt;number&gt;</code> placeholder for this — don’t skip it, a reader will want to know how many people your findings are based on).</li>
-</ul>
-<p>Avoid any variable names or question codes (<code>FOOD_INSEC</code>, <code>Q27</code>, etc.) — if you wouldn’t say it out loud to a stranger, rewrite it.</p>
-</section>
-<section id="findings" class="level3" data-number="2.4">
-<h3 data-number="2.4" class="anchored" data-anchor-id="findings"><span class="header-section-number">2.4</span> Findings</h3>
-<p>Each finding box in the template has <strong>two</strong> pieces of text, not one:</p>
-<ul>
-<li>A <strong>short headline</strong> above the image (a few words, not a full sentence) — think of it like a newspaper subhead that names the point of that finding at a glance, e.g. “Access Difficulty Varies by Food Security Status.”</li>
-<li>A <strong>1-3 sentence caption</strong> below each image that spells the finding out in plain language.</li>
-</ul>
-<p>Use the 2-3 findings to build your story in order (see the structure above): Finding 1 introduces one main variable on its own, Finding 2 shows the relationship between your two main variables (this is your core result), and the optional Finding 3 adds one additional variable for texture. For example, a Finding 1 headline/caption pair might look like:</p>
-<blockquote class="blockquote">
-<p><strong>Headline:</strong> Most Respondents Reported Food Insecurity</p>
-<p><strong>Caption:</strong> Among adults who received free groceries or meals in the past year, approximately 75% also reported experiencing food insecurity in the past 12 months.</p>
-</blockquote>
-<p>(If you’re on Project 3, a Finding 1 caption might instead read something like: “72% of respondents reported feeling nervous or hopeless at least some of the time in the past 30 days.”)</p>
-<p>For every caption, state the number, then say what it means, not “the mean composite score was 14.3,” but something closer to “most people in our sample reported relatively easy access to free food.” Keep your language <strong>descriptive, not causal</strong>: say what you found (e.g., “respondents who reported X also more often reported Y”), not that one thing caused, drove, or explains another. A single survey snapshot can’t support that kind of claim. Words like “associated with” or “related to” also imply statistical testing you haven’t done here, so we need to stick to desriptive language.</p>
-</section>
-<section id="so-what-what-does-this-mean" class="level3" data-number="2.5">
-<h3 data-number="2.5" class="anchored" data-anchor-id="so-what-what-does-this-mean"><span class="header-section-number">2.5</span> So what? / What does this mean?</h3>
-<p>This is the shaded callout box near the bottom of the page. In a few sentences, connect your findings back to your original project question: why does this matter, and what might it suggest for programs or policy? You don’t need to make formal policy recommendations — just describe the implication in plain language, and keep it as descriptive as your findings (avoid claiming your data proves a program should change; describe what your findings might suggest is worth a closer look).</p>
-</section>
-<section id="data-source-and-limitations" class="level3" data-number="2.6">
-<h3 data-number="2.6" class="anchored" data-anchor-id="data-source-and-limitations"><span class="header-section-number">2.6</span> Data source and limitations</h3>
-<p>This is the small-print line at the very bottom of the page. In one or two sentences:</p>
-<ul>
-<li>Cite the WBNS (see the Lab 1 resources for how to cite it).</li>
-<li>Name at least one honest limitation of your analysis — for example, your sample size after filtering, the fact that responses are self-reported, or that the survey is cross-sectional (a single point in time), so your findings describe what respondents reported together, not what caused what.</li>
-</ul>
-</section>
-</section>
-<section id="tips-for-exporting-and-polishing-your-visuals" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="tips-for-exporting-and-polishing-your-visuals"><span class="header-section-number">3</span> Tips for exporting and polishing your visuals</h2>
-<section id="getting-your-images-out-of-r" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="getting-your-images-out-of-r"><span class="header-section-number">3.1</span> Getting your images out of R</h3>
-<p>Everything you place into the PowerPoint template is a static image (<code>.png</code> or <code>.jpg</code>) — there’s no live R code in a PowerPoint file, so you’ll export your finished plots and tables from your Lab 3/4 <code>.qmd</code> and then place the image files into the template.</p>
-<p>This will require you to write some more code or adjust your previously saved images. Adjustments are usually needed to make sure it is legible within the powerpoint.</p>
-<p>It might also be nice to create a new folder within your project folder called <code>images</code> to hold all of your exported images.</p>
-<p><strong>Saving a <code>ggplot</code>:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&quot;plots/ease_food_by_insecurity.png&quot;</span>, <span class="at">plot =</span> my_plot,</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">width =</span> <span class="dv">5</span>, <span class="at">height =</span> <span class="dv">4</span>, <span class="at">units =</span> <span class="st">&quot;in&quot;</span>, <span class="at">dpi =</span> <span class="dv">300</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ul>
-<li>Save at <code>dpi = 300</code> or higher so it looks crisp on a printed page.</li>
-<li>Match the <code>width</code>/<code>height</code> roughly to the space you have in the template so you don’t have to stretch or squish it later</li>
-</ul>
-<p><strong>Saving a <code>gtsummary</code>/<code>gt</code> table as an image:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  gtsummary, </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  gt, </span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  webshot2</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>my_table <span class="ot">&lt;-</span> <span class="fu">tbl_summary</span>(wbns_06_cat, <span class="at">by =</span> FOOD_INSEC) <span class="sc">|&gt;</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_gt</span>()</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">gtsave</span>(<span class="at">data =</span> my_table, <span class="at">file =</span> <span class="fu">here</span>(<span class="st">&quot;project&quot;</span>, <span class="st">&quot;images&quot;</span>, <span class="st">&quot;food_ins_table.png&quot;</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>gtsave()</code> needs the <code>webshot2</code> package installed the first time (<code>install.packages(&quot;webshot2&quot;)</code>). If you’d rather not install anything new, you can also just take a screenshot of the rendered table from your Viewer pane — that works fine for a one-pager.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<section id="part-c-proportion-of-missingness-in-the-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="part-c-proportion-of-missingness-in-the-dataset">Part C: Proportion of missingness in the dataset</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Warning</span>Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Whichever route you use, open the image file afterward and check that it’s actually readable at a glance — text that looked fine on your screen can turn out tiny once it’s shrunk into a template box.</p>
+<p>Use <code>prop_miss()</code> on <code>hrs_data</code> to find the proportion of all cells in the dataset that are missing.</p>
 </div>
 </div>
 </section>
-<section id="polishing-plots-and-tables-before-you-export-them" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="polishing-plots-and-tables-before-you-export-them"><span class="header-section-number">3.2</span> Polishing plots and tables before you export them</h3>
-<p>The plots and table you made for Lab 3/4 were built for you and your instructor — they may still have default <code>ggplot</code> gray backgrounds, variable names as axis labels, or titles like “Boxplot of trust_courtesy_respect by Q27.” Before exporting, revise each one so it can stand on its own for a general audience:</p>
-<ul>
-<li>A plain-language, descriptive title (not a variable name)</li>
-<li>Axis or column labels in plain language (no raw variable names or question codes)</li>
-<li>A deliberate color choice, ideally consistent across your visuals</li>
-<li>A caption noting the data source, if it doesn’t already appear elsewhere on your page (e.g., “Source: 2024 Well-Being and Basic Needs Survey”)</li>
+<section id="part-d-missingness-in-a-single-variable" class="level4">
+<h4 class="anchored" data-anchor-id="part-d-missingness-in-a-single-variable">Part D: Missingness in a single variable</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>n_miss()</code> on just the <code>srh</code> column of <code>hrs_data</code> to find how many values are missing for self-reported health.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can pull out a single column with <code>$</code>, e.g. <code>hrs_data$srh</code>.</p>
+</div>
+</div>
+</section>
+<section id="part-e-missingness-summary-table" class="level4">
+<h4 class="anchored" data-anchor-id="part-e-missingness-summary-table">Part E: Missingness summary table</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>miss_var_summary()</code> on <code>hrs_data</code> to get one row per variable with its count and percent missing. Pipe the result into <code>gt()</code> to make it a nicer table. Assign the table to <code>hrs_01_summary_table</code> and display it.</p>
+<p>Which variable has the most missing values? Which has the least?</p>
+</div>
+</div>
+<p><em>Write your answer here.</em></p>
+</section>
+</section>
+<section id="question-2-visualizing-missingness" class="level3">
+<h3 class="anchored" data-anchor-id="question-2-visualizing-missingness">Question 2: Visualizing missingness</h3>
+<p>In Lesson 34, we also covered a few plotting functions from <code>naniar</code> that help us see <em>where</em> and <em>how</em> data is missing.</p>
+<section id="part-a-a-birds-eye-view-with-vis_miss" class="level4">
+<h4 class="anchored" data-anchor-id="part-a-a-birds-eye-view-with-vis_miss">Part A: A bird’s-eye view with <code>vis_miss()</code></h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>vis_miss()</code> on <code>hrs_data</code> to visualize missingness across the whole dataset. Assign the plot to <code>hrs_02_plot_vis_miss</code> and display it.</p>
+</div>
+</div>
+</section>
+<section id="part-b-customize-the-plot" class="level4">
+<h4 class="anchored" data-anchor-id="part-b-customize-the-plot">Part B: Customize the plot</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>vis_miss()</code> returns a <code>ggplot2</code> object, so you can add layers to it just like the plots you built last week. Take <code>hrs_02_plot_vis_miss</code> and add a <code>theme()</code> layer that rotates the x-axis text labels by 20 degrees (<code>angle = 20</code>) so they’re easier to read. Assign the result to <code>hrs_03_plot_vis_miss_clean</code> and display it.</p>
+<p>Looking at your plot, is missingness concentrated in a few variables, spread across many observations, or both?</p>
+</div>
+</div>
+<p><em>Write your answer here.</em></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>theme(axis.text.x = element_text(angle = 20, hjust = 0))</code> adjusts the angle and alignment of the x-axis text.</p>
+</div>
+</div>
+</section>
+<section id="part-c-missingness-by-group-with-gg_miss_fct" class="level4">
+<h4 class="anchored" data-anchor-id="part-c-missingness-by-group-with-gg_miss_fct">Part C: Missingness by group with <code>gg_miss_fct()</code></h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>gg_miss_fct()</code> on <code>hrs_data</code>, stratifying by <code>sex</code> (set <code>fct = sex</code>). Assign the plot to <code>hrs_04_plot_fct</code> and display it.</p>
+<p>Does missingness look similar across <code>sex</code>, or does one group have noticeably more missing data for certain variables?</p>
+</div>
+</div>
+<p><em>Write your answer here.</em></p>
+</section>
+<section id="part-d-missingness-intersections-with-gg_miss_upset" class="level4">
+<h4 class="anchored" data-anchor-id="part-d-missingness-intersections-with-gg_miss_upset">Part D: Missingness intersections with <code>gg_miss_upset()</code></h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>gg_miss_upset()</code> on <code>hrs_data</code>, setting <code>nsets = 10</code> and <code>text.scale = 2</code>. Assign the plot to <code>hrs_05_plot_upset</code> and display it.</p>
+<p>Which combination of variables is missing together most often? Is there a variable that tends to be missing mostly on its own?</p>
+</div>
+</div>
+<p><em>Write your answer here.</em></p>
+</section>
+</section>
+<section id="question-3-filtering-out-missing-values" class="level3">
+<h3 class="anchored" data-anchor-id="question-3-filtering-out-missing-values">Question 3: Filtering out missing values</h3>
+<p>In Lesson 35, we covered how to remove rows with missing data, and a common gotcha when using <code>filter()</code> on a column with <code>NA</code>s.</p>
+<section id="part-a-check-missingness-before-you-drop-anything" class="level4">
+<h4 class="anchored" data-anchor-id="part-a-check-missingness-before-you-drop-anything">Part A: Check missingness before you drop anything</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before dropping any rows, pipe <code>hrs_data</code> into <code>miss_var_summary()</code> and then <code>gt()</code> again, just like Question 1 Part E, so you have a “before” table to compare to later. Assign it to <code>hrs_06_summary_before</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Getting in the habit of checking missingness <em>before</em> and <em>after</em> you drop or fill in values helps you catch mistakes, like accidentally dropping more rows than you meant to.</p>
+</div>
+</div>
+</section>
+<section id="part-b-drop-rows-missing-anything" class="level4">
+<h4 class="anchored" data-anchor-id="part-b-drop-rows-missing-anything">Part B: Drop rows missing anything</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>drop_na()</code> on <code>hrs_data</code> (with no arguments) to remove any row that has <em>any</em> missing value. Assign the result to <code>hrs_07_dropna_all</code>. How many rows are left compared to <code>hrs_data</code>?</p>
+</div>
+</div>
+<p><em>Write your answer here.</em></p>
+</section>
+<section id="part-c-drop-rows-missing-specific-columns" class="level4">
+<h4 class="anchored" data-anchor-id="part-c-drop-rows-missing-specific-columns">Part C: Drop rows missing specific columns</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Now use <code>drop_na()</code> on <code>hrs_data</code> again, but this time only target the <code>race_original</code> and <code>ed</code> columns, so rows are only dropped if one of <em>those two</em> columns is missing. Assign the result to <code>hrs_08_dropna_cols</code>. How does the number of rows compare to <code>hrs_07_dropna_all</code>?</p>
+</div>
+</div>
+<p><em>Write your answer here.</em></p>
+</section>
+<section id="part-d-the-filter-gotcha" class="level4">
+<h4 class="anchored" data-anchor-id="part-d-the-filter-gotcha">Part D: The <code>filter()</code> gotcha</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>tabyl()</code> (from <code>janitor</code>) on <code>hrs_data$srh</code> to see how many missing values <code>srh</code> has and confirm its categories.</p>
+<p>Then, use <code>filter()</code> on <code>hrs_data</code> to keep only rows where <code>srh != &quot;Poor&quot;</code>. Assign the result to <code>hrs_09_filter_gotcha</code>. Use <code>tabyl()</code> on the <code>srh</code> column of <code>hrs_09_filter_gotcha</code> to check what happened to the missing values.</p>
+</div>
+</div>
+</section>
+<section id="part-e-fixing-the-gotcha-with-filter_out" class="level4">
+<h4 class="anchored" data-anchor-id="part-e-fixing-the-gotcha-with-filter_out">Part E: Fixing the gotcha with <code>filter_out()</code></h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Redo Part D, but use <code>filter_out()</code> instead of <code>filter()</code> to exclude <code>srh == &quot;Poor&quot;</code> while keeping the <code>NA</code>s. Assign the result to <code>hrs_10_filter_out_fixed</code>. Confirm with <code>tabyl()</code> that the missing values are still there this time.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="question-4-filling-in-and-recoding-missing-values" class="level3">
+<h3 class="anchored" data-anchor-id="question-4-filling-in-and-recoding-missing-values">Question 4: Filling in and recoding missing values</h3>
+<p>In Lesson 35, we also covered how to fill in missing values instead of dropping them, and how to turn a specific value into <code>NA</code> when needed.</p>
+<section id="part-a-fill-in-a-numeric-variable" class="level4">
+<h4 class="anchored" data-anchor-id="part-a-fill-in-a-numeric-variable">Part A: Fill in a numeric variable</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>mutate()</code> and <code>replace_na()</code> to create a new column, <code>height_filled</code>, in <code>hrs_data</code> that replaces any missing <code>height</code> with the mean height (use <code>na.rm = TRUE</code> inside <code>mean()</code>). Assign the result to <code>hrs_11_height_filled</code>.</p>
+<p>Is filling in a missing value with the overall mean always a good idea? Why or why not?</p>
+</div>
+</div>
+<p><em>Write your answer here.</em></p>
+</section>
+<section id="part-b-fill-in-a-factor-variable" class="level4">
+<h4 class="anchored" data-anchor-id="part-b-fill-in-a-factor-variable">Part B: Fill in a factor variable</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Starting from <code>hrs_11_height_filled</code>, use <code>mutate()</code> and <code>fct_na_value_to_level()</code> to create a new column, <code>race_filled</code>, that replaces any missing <code>race_original</code> with a new level called <code>&quot;Unknown&quot;</code>. Assign the result to <code>hrs_12_race_filled</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>replace_na()</code> does not work on factor columns. Use <code>fct_na_value_to_level()</code> instead whenever the column you’re filling in is a factor.</p>
+</div>
+</div>
+</section>
+<section id="part-c-check-your-work" class="level4">
+<h4 class="anchored" data-anchor-id="part-c-check-your-work">Part C: Check your work</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>tabyl()</code> to compare <code>race_original</code> and <code>race_filled</code> in <code>hrs_12_race_filled</code> (hint: <code>tabyl()</code> can take two column names to cross-tabulate them). Confirm that every row that was <code>NA</code> in <code>race_original</code> now shows <code>&quot;Unknown&quot;</code> in <code>race_filled</code>.</p>
+</div>
+</div>
+</section>
+<section id="part-d-turn-a-valid-value-into-na" class="level4">
+<h4 class="anchored" data-anchor-id="part-d-turn-a-valid-value-into-na">Part D: Turn a valid value into <code>NA</code></h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose, just for practice, we wanted to treat everyone with <code>sex == &quot;Male&quot;</code> as missing for the <code>sex</code> column (this is <strong>not</strong> something you’d actually want to do with real data, but it shows how the function works). First, use <code>mutate()</code> to make a copy of the column called <code>sex_na</code>. Then use <code>replace_with_na()</code> to replace <code>&quot;Male&quot;</code> with <code>NA</code> in the <code>sex_na</code> column. Assign the result to <code>hrs_13_replace_with_na</code>.</p>
+<p>Use <code>tabyl()</code> to compare the original <code>sex</code> column to your new <code>sex_na</code> column and confirm the replacement worked as expected.</p>
+</div>
+</div>
+</section>
+<section id="part-e-summarize-your-final-cleaned-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="part-e-summarize-your-final-cleaned-dataset">Part E: Summarize your final, cleaned dataset</h4>
+<div class="callout callout-style-default callout-warning callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Take <code>hrs_12_race_filled</code> (from Part B, before Part D’s practice-only recoding) and run <code>miss_var_summary()</code> and <code>gt()</code> on it one more time. Assign it to <code>hrs_14_summary_after</code>. Compare it to <code>hrs_06_summary_before</code> from Question 3 Part A. Which variables now show less missingness, and why?</p>
+</div>
+</div>
+<p><em>Write your answer here.</em></p>
+</section>
+</section>
+</section>
+<section id="submission-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="submission-checklist">Submission Checklist</h2>
+<p>If having a checklist helps you stay organized, check off each item below as you complete it. You do not need to submit this checklist.</p>
+<ul class="task-list">
+<li><label><input type="checkbox"><code>hrs_data</code> imported and <code>hrs_data</code> created with the selected columns (Q1 Part A)</label></li>
+<li><label><input type="checkbox">Total missing count found with <code>n_miss()</code> (Q1 Part B)</label></li>
+<li><label><input type="checkbox">Total missing proportion found with <code>prop_miss()</code> (Q1 Part C)</label></li>
+<li><label><input type="checkbox">Missing count for <code>srh</code> found with <code>n_miss()</code> (Q1 Part D)</label></li>
+<li><label><input type="checkbox"><code>hrs_01_summary_table</code> created with <code>miss_var_summary()</code> and <code>gt()</code>, with question answered (Q1 Part E)</label></li>
+<li><label><input type="checkbox"><code>hrs_02_plot_vis_miss</code> created with <code>vis_miss()</code> (Q2 Part A)</label></li>
+<li><label><input type="checkbox"><code>hrs_03_plot_vis_miss_clean</code> created with an added <code>theme()</code> layer, with question answered (Q2 Part B)</label></li>
+<li><label><input type="checkbox"><code>hrs_04_plot_fct</code> created with <code>gg_miss_fct()</code>, with question answered (Q2 Part C)</label></li>
+<li><label><input type="checkbox"><code>hrs_05_plot_upset</code> created with <code>gg_miss_upset()</code>, with question answered (Q2 Part D)</label></li>
+<li><label><input type="checkbox"><code>hrs_06_summary_before</code> created as a “before” missingness table (Q3 Part A)</label></li>
+<li><label><input type="checkbox"><code>hrs_07_dropna_all</code> created with <code>drop_na()</code>, with question answered (Q3 Part B)</label></li>
+<li><label><input type="checkbox"><code>hrs_08_dropna_cols</code> created with targeted <code>drop_na()</code>, with question answered (Q3 Part C)</label></li>
+<li><label><input type="checkbox"><code>hrs_09_filter_gotcha</code> created and checked with <code>tabyl()</code> (Q3 Part D)</label></li>
+<li><label><input type="checkbox"><code>hrs_10_filter_out_fixed</code> created with <code>filter_out()</code> and checked with <code>tabyl()</code> (Q3 Part E)</label></li>
+<li><label><input type="checkbox"><code>hrs_11_height_filled</code> created with <code>replace_na()</code>, with question answered (Q4 Part A)</label></li>
+<li><label><input type="checkbox"><code>hrs_12_race_filled</code> created with <code>fct_na_value_to_level()</code> (Q4 Part B)</label></li>
+<li><label><input type="checkbox"><code>race_original</code> vs. <code>race_filled</code> checked with <code>tabyl()</code> (Q4 Part C)</label></li>
+<li><label><input type="checkbox"><code>hrs_13_replace_with_na</code> created with <code>replace_with_na()</code> and checked with <code>tabyl()</code> (Q4 Part D)</label></li>
+<li><label><input type="checkbox"><code>hrs_14_summary_after</code> created and compared to <code>hrs_06_summary_before</code>, with question answered (Q4 Part E)</label></li>
+<li><label><input type="checkbox">Document renders to HTML with no errors</label></li>
+<li><label><input type="checkbox">Files named correctly: <code>Lastname_Firstinitial_Practice_09.qmd</code> and <code>Lastname_Firstinitial_Practice_09.html</code> (or lowercase versions)</label></li>
+<li><label><input type="checkbox">Both <code>.qmd</code> and <code>.html</code> submitted to Brightspace</label></li>
 </ul>
-<p>A <code>tbl_summary()</code> table is great for a report but can be dense on a one-pager — consider whether a simple bar chart of your grouped summary statistics would land faster for your audience than the full table.</p>
 </section>
-</section>
-<section id="before-you-submit" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="before-you-submit"><span class="header-section-number">4</span> Before you submit</h2>
-<p>Read your finished page as if you were a stranger seeing it for the first time — does it read cleanly top to bottom, does every visual have a caption, and is there anything left over that still sounds like it was written for this class instead of for a general audience (leftover variable names, stats without interpretation, placeholder text from the template)?</p>
-<p>Confirm your files are named <code>lastname_firstinit_final_project.pptx</code> and <code>lastname_firstinit_final_project.pdf</code> before uploading to Brightspace.</p>
+<section id="note-on-ai-usage" class="level2">
+<h2 class="anchored" data-anchor-id="note-on-ai-usage">Note on AI usage</h2>
+<p>I used GenAI (Claude) to help me draft this practice assignment. It helped me brainstorm ideas for the assignment, and I directed it to help you complete the needed tasks that I showed in the lessons.</p>
 
 
 </section>
@@ -4700,64 +4934,25 @@ Tip
           }
         };
       }
-        const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
-        for (let i=0; i<annoteTargets.length; i++) {
-          const annoteTarget = annoteTargets[i];
-          const targetCell = annoteTarget.getAttribute("data-target-cell");
-          const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
-          const contentFn = () => {
-            const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-            if (content) {
-              const tipContent = content.cloneNode(true);
-              tipContent.classList.add("code-annotation-tip-content");
-              return tipContent.outerHTML;
-            }
-          }
-          const config = {
-            allowHTML: true,
-            content: contentFn,
-            onShow: (instance) => {
-              selectCodeLines(instance.reference);
-              instance.reference.classList.add('code-annotation-active');
-              window.tippy.hideAll();
-            },
-            onHide: (instance) => {
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
               unselectCodeLines();
-              instance.reference.classList.remove('code-annotation-active');
-            },
-            maxWidth: 300,
-            delay: [50, 0],
-            duration: [200, 0],
-            offset: [5, 10],
-            arrow: true,
-            appendTo: function(el) {
-              return el.parentElement.parentElement.parentElement;
-            },
-            interactive: true,
-            interactiveBorder: 10,
-            theme: 'quarto',
-            placement: 'right',
-            popperOptions: {
-              modifiers: [
-              {
-                name: 'flip',
-                options: {
-                  flipVariations: false, // true by default
-                  allowedAutoPlacements: ['right'],
-                  fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
-                },
-              },
-              {
-                name: 'preventOverflow',
-                options: {
-                  mainAxis: false,
-                  altAxis: false
-                }
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
               }
-              ]        
-            }      
-          };
-          window.tippy(annoteTarget, config); 
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
         }
     const findCites = (el) => {
       const parentEl = el.parentElement;

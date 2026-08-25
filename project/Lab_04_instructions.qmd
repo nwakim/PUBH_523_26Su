@@ -69,11 +69,11 @@ Your final project's one-page information sheet is built around three findings:
 
 1. One main variable on its own
 2. The relationship between your two main variables
-3. (Optional) one main variable alongside one additional variable
+3. One main variable alongside one additional variable
 
-For Findings 2 and 3, you'll use the **categorical** version of your composite score (from Lab 3, Section 1.4) rather than the raw numeric score — category breakdowns like "33% described access as difficult" are easier for a general audience to take in at a glance than a mean and standard deviation.
+For Findings 2 and 3, you'll use the **categorical** version of your composite score (from Lab 3) rather than the raw numeric score. Category breakdowns like "33% described access as difficult" are easier for a general audience to take in at a glance than a mean and standard deviation.
 
-This lab has you build one polished visualization for each of these. By the end of this lab, you should have 2-3 finished, publication-ready plots (or a table image) saved as image files — the same files you'll drag directly into your final project template. Some of the `ggplot2` code here is more involved than what you've used before, so this lab walks through each new piece in more detail than usual — take your time with it.
+This lab has you build one polished visualization for each of these. By the end of this lab, you should have 3 finished, publication-ready plots saved as image files, which you can use in your final project. Some of the `ggplot2` code here is more involved than what you've used before, so this lab walks through each new piece in more detail than usual.
 
 ## Lab activities
 
@@ -112,13 +112,15 @@ In the final project, we will present 2-3 findings. These findings will include 
 For Finding 1 and 3, write down which variable(s) you will visualize. 
 :::
 
-### Finding 1: create the dataframe
+### Finding 1: Create the dataframe
 
 We want to visualize one of your main variables on its own. The variable you choose to visualize should be one of the main variables from the table above. This will be a categorical version of your composite score (from Lab 3) or the other main variable (e.g., `FOOD_INSEC`, `Q27`).
 
 Before plotting, we want to summarize the data into percentages to make our display a little more polished for the audience. We will summarize our main variable into a small dataframe of counts and percentages using `count()` and `mutate()`:
 
-```r
+```{r}
+#| eval: false
+
 finding1_data <- wbns_06_cat |>
   count(<your_main_variable>) |>              # <1>
   mutate(pct = n / sum(n) * 100)               # <2>
@@ -136,7 +138,9 @@ Use `count()` and `mutate()` to build a small dataframe of counts and percentage
 
 Using the `finding1_data` dataframe you just built, create a bar chart of your main variable using `ggplot2`. The code below gives a starting point for this plot. Note that we are using `geom_col()` instead of `geom_bar()` here because we already calculated the percentages ourselves in `finding1_data`. `geom_col()` plots the y-values you give it directly, while `geom_bar()` would try to do its own internal counting.
 
-```r
+```{r}
+#| eval: false
+
 finding1_plot <- ggplot(finding1_data, aes(x = <your_main_variable>, y = pct)) +
   geom_col() + #<1>
   geom_text(aes(label = paste0(round(pct, 1), "%")), vjust = -0.5, #<2>
@@ -150,7 +154,7 @@ finding1_plot #<7>
 ```
 1. Check out the extra arguments in `geom_col()`! You can change the fill or the width of the bars. 
 2. `geom_text()` adds the percentage labels above each bar. `vjust = -0.5` nudges the labels slightly above the top of the bar, and `paste0(round(pct, 1), "%")` rounds the percentage to one decimal place and adds a percent sign.
-3. Your data still has the raw category values (e.g., `"Yes"` and `"No"`) — `scale_x_discrete(labels = ...)` lets you swap in reader-friendly labels for the x-axis *without changing your underlying data*. The names on the left of each `=` (`"No"`, `"Yes"`) must exactly match the values in your data; the names on the right are what the reader will actually see.
+3. Your data still has the raw category values (e.g., `"Yes"` and `"No"`). `scale_x_discrete(labels = ...)` lets you swap in reader-friendly labels for the x-axis *without changing your underlying data*. The names on the left of each `=` (`"No"`, `"Yes"`) must exactly match the values in your data; the names on the right are what the reader will actually see.
 4. We can add limits to the y-axis. When we plot percentages, it is often a good idea to plot the y-axis from 0 to 100. Check out the `limits` argument in `scale_y_continuous()` to set the y-axis limits.
 5. `labs()` lets you add a title, x-axis label, and y-axis label. Use plain-language labels rather than variable names or question codes.
 6. We can adjust the theme and font size!
@@ -161,110 +165,128 @@ finding1_plot #<7>
 Build your Finding 1 visualization using `ggplot2`, adding and editing the code above with your own variable and category labels. Save the plot as a new object (e.g., `finding1_plot`).
 :::
 
-### 1.5 Finding 2 — visualize the relationship between your two main variables
+### Finding 2: Create the dataframe
 
-This is the heart of your project, and it's the finding most directly built from your Lab 3 work. Use the **categorical** version of your composite score here (e.g., `ease_free_food_cat`) rather than the raw numeric score — a reader can take in "33% described access as difficult" much faster than a mean and standard deviation.
+Use the **categorical** version of your composite score here (e.g., `ease_free_food_cat`) rather than the raw numeric score. (In the final project, you may wish to use the number and a table from Lab 3 might be more appropriate to include.)
 
-Unlike Finding 1, you now need percentages calculated *within* each group of your other main variable (e.g., what percentage of the "food insecure" group falls into each access category?). `geom_bar()`'s automatic counting can't do that "within-group" calculation on its own, so this time you'll calculate the percentages yourself first, then hand `ggplot2` the finished numbers.
+Unlike Finding 1, you now need percentages calculated *within* each group of your other main variable (e.g., what percentage of the "food insecure" group falls into each access category?). `count()` and `mutate()` alone can't do that "within-group" calculation, so this time you'll add `group_by()` before you calculate `pct`.
 
-```r
+```{r}
+#| eval: false
+
 finding2_data <- wbns_06_cat |>
-  count(FOOD_INSEC, ease_free_food_cat) |>            # <1>
-  group_by(FOOD_INSEC) |>                              # <2>
-  mutate(pct = n / sum(n) * 100) |>
+  count(<your_grouping_variable>, <your_categorical_composite>) |>   # <1>
+  group_by(<your_grouping_variable>) |>                              # <2>
+  mutate(pct = ______) |> #<3>
   ungroup()
 
 finding2_data
 ```
-1. `count(FOOD_INSEC, ease_free_food_cat)` counts how many respondents fall into every *combination* of the two variables (e.g., "food insecure AND difficult access," "food insecure AND moderate access," and so on), storing the result in a new column called `n`.
-2. `group_by(FOOD_INSEC)` tells the following `mutate()` to calculate `sum(n)` *separately within each `FOOD_INSEC` group*, rather than across the whole table — that's what makes `pct` a percentage *within* each group (summing to 100% for "food insecure" and 100% for "not food insecure") instead of a percentage of the grand total. `ungroup()` at the end removes that grouping so it doesn't silently affect anything later.
+1. Replace `<your_grouping_variable>` and `<your_categorical_composite>` with your two main variables. `count()` counts how many respondents fall into every *combination* of the two variables (e.g., "food insecure AND difficult access," "food insecure AND moderate access," and so on), storing the result in a new column called `n`.
+2. `group_by(<your_grouping_variable>)` tells the following `mutate()` to calculate `sum(n)` *separately within each group*.
+3. Calculate the percent of each category within its group. The formula is the same as Finding 1. 
 
-Now that you have exact percentages calculated, plot them with `geom_col()` instead of `geom_bar()` — `geom_col()` plots the y-values you give it directly (no internal counting), which is what you want since you already did the counting yourself.
+::: {.callout-important}
+#### Task
+Use `count()`, `group_by()`, and `mutate()` to build a dataframe of within-group percentages for your two main variables. Save it as a new object called `finding2_data`.
+:::
 
-```r
-ggplot(finding2_data, aes(x = FOOD_INSEC, y = pct, fill = ease_free_food_cat)) +
-  geom_col(width = 0.55) +                                                       # <1>
-  geom_text(aes(label = paste0(round(pct), "%")),
-            position = position_stack(vjust = 0.5),                             # <2>
-            color = "white", fontface = "bold", size = 4.5) +
-  scale_x_discrete(labels = c("No" = "Not food insecure", "Yes" = "Food insecure")) +
-  scale_fill_manual(values = c("Difficult access" = "#01414A",                   # <3>
-                                "Moderate access" = "#028090",
-                                "Easy access" = "#8ED1D6"),
-                     name = NULL) +
-  labs(
-    title = "Placeholder title",
-    x = NULL,
-    y = "Percent of respondents"
+### Finding 2: Visualize the relationship between your two main variables
+
+Using the `finding2_data` dataframe you just built, create a 100%-stacked bar chart with `ggplot2`. As in Finding 1, we use `geom_col()` instead of `geom_bar()` since you already calculated the percentages yourself. The code below gives a starting point for this plot.
+
+```{r}
+#| eval: false
+
+finding2_plot <- ggplot(finding2_data, 
+  aes(
+      x = <your_grouping_variable>, 
+      y = pct, 
+      fill = <your_categorical_composite>
+      )
   ) +
-  theme_minimal() +
-  theme(legend.position = "bottom")
+  geom_col() + #<1>
+  geom_text(aes(label = paste0(round(pct), "%")), #<2>
+            position = position_stack(vjust = 0.5), #<2>
+            color = "white", fontface = "bold", size = 4.5) + #<2>
+  scale_x_discrete(labels = ________) + #<3>
+  labs(______) + #<4>
+  theme_minimal(base_size = 12) #<5>
+
+finding2_plot #<6>
 ```
-1. Mapping `fill = ease_free_food_cat` (in the `ggplot()` line above) tells `geom_col()` to draw one segment per category, stacked on top of each other by default — this is what creates the 100%-stacked bar.
-2. `geom_text()` places its labels at the same x/y position as the data by default, which for stacked bars means the *top* of each segment. `position = position_stack(vjust = 0.5)` moves each label to the vertical *center* of its own segment instead, so it doesn't look like it belongs to the segment above it.
-3. `scale_fill_manual()` lets you assign a specific, deliberate color to each category by name (rather than `ggplot2`'s default color choices) — here, a 3-shade teal palette where darker means more difficult access. The names on the left must exactly match the category labels in your data.
+1. Mapping `fill = <your_categorical_composite>` (in the `ggplot()` line above) tells `geom_col()` to draw one segment per category, stacked on top of each other by default. This creates the 100%-stacked bar. Check out the extra arguments in `geom_col()` too, like `width`.
+2. `geom_text()` places its labels at the same x/y position as the data by default, which for stacked bars means the *top* of each segment. `position = position_stack(vjust = 0.5)` moves each label to the vertical *center* of its own segment instead, so it doesn't look like it belongs to the segment above it. `paste0(round(pct), "%")` builds the label text from your calculated percentage.
+3. Same as Finding 1: swap in reader-friendly labels for your x-axis categories without changing your underlying data. The names on the left must exactly match the raw category values in your data.
+4. Same as Finding 1: add a plain-language title, x-axis label, and y-axis label. Keep your title **descriptive, not causal**.
+5. Same as Finding 1:djust the theme and font size if you'd like.
+6. Same as Finding 1: adjust the theme and font size if you'd like.
 
 ::: {.callout-tip}
-If your composite score doesn't split cleanly into a small number of meaningful categories, a boxplot of the raw numeric score (`geom_boxplot(aes(x = FOOD_INSEC, y = ease_free_food))`) is a reasonable alternative — just be consistent about which form (categorical or continuous) you use across Findings 2 and 3.
+If your composite score doesn't split cleanly into a small number of meaningful categories, a boxplot of the raw numeric score (`geom_boxplot(aes(x = <your_grouping_variable>, y = <your_numeric_composite>))`) is a reasonable alternative, just be consistent about which form (categorical or continuous) you use across Findings 2 and 3.
 :::
 
 ::: {.callout-important}
 #### Task
-Build your Finding 2 visualization using `ggplot2`, following the pattern above with your own variables. Save the plot as a new object (e.g., `finding2_plot`).
+Build your Finding 2 visualization using `ggplot2`, adding and editing the code above with your own variables and category labels. Save the plot as a new object (e.g., `finding2_plot`).
 :::
 
-### 1.6 Finding 3, optional — visualize one main variable + one additional variable
+### Finding 3: Create the dataframe
 
-If you have time and want a third finding, pick one of the suggested additional variables from your Lab 2 table and pair it with the categorical version of one of your main variables, using the exact same approach as Finding 2: `count()` + `group_by()` + `mutate()` to calculate within-group percentages, then `geom_col()` with `fill` and `position_stack()` to plot them.
+Pick one of the suggested additional variables from your Lab 2 table and pair it with the categorical version of one of your main variables.
 
 ::: {.callout-caution}
-Your additional variables haven't been cleaned yet the way your main variables were in Lab 2 — they may still contain "Don't know," "Refused," or skip-pattern missingness. Take a quick look with `count()` or `skim()` before you plot, and handle any `NA`/"Don't know"/"Refused" values the same way you did for your main variables in Lab 2 (Section 1.6). Skipping this step can quietly distort your plot.
+Your additional variables haven't been cleaned yet the way your main variables were in Lab 2, they may still contain "Don't know," "Refused," or skip-pattern missingness. Take a quick look with `count()` or `skim()` before you build this dataframe, and handle any `NA`/"Don't know"/"Refused" values the same (or improved) way you did for your main variables in Lab 2 (Section 1.6). Skipping this step can quietly distort your plot.
 :::
 
-```r
-ggplot(finding3_data, aes(x = <your_additional_variable>, y = pct, fill = ease_free_food_cat)) +
-  geom_col(width = 0.55) +
+Once your additional variable is cleaned, build the dataframe the exact same way you did for Finding 2:
+
+```{r}
+#| eval: false
+
+finding3_data <- wbns_06_cat |>
+  count(<your_additional_variable>, <your_categorical_composite>) |>
+  group_by(<your_additional_variable>) |>
+  mutate(pct = _______) |>
+  ungroup()
+
+finding3_data
+```
+
+::: {.callout-important}
+#### Task
+Clean your chosen additional variable, then use `count()`, `group_by()`, and `mutate()` to build a dataframe of within-group percentages. Save it as a new object called `finding3_data`.
+:::
+
+### Finding 3: Visualize one main variable + one additional variable
+
+Same approach as Finding 2, again using the categorical version of your composite score so the story stays consistent across findings.
+
+```{r}
+#| eval: false
+
+finding3_plot <- ggplot(finding3_data, 
+  aes(
+      x = <your_additional_variable>, 
+      y = pct, 
+      fill = <your_categorical_composite>)
+      ) +
+  geom_col() +
   geom_text(aes(label = paste0(round(pct), "%")),
             position = position_stack(vjust = 0.5),
             color = "white", fontface = "bold", size = 4.5) +
-  scale_x_discrete(labels = c("Placeholder raw value 1" = "Placeholder clean label 1",
-                               "Placeholder raw value 2" = "Placeholder clean label 2")) +
-  scale_fill_manual(values = c("Difficult access" = "#01414A",
-                                "Moderate access" = "#028090",
-                                "Easy access" = "#8ED1D6"),
-                     name = NULL) +
-  labs(
-    title = "Placeholder title",
-    x = NULL,
-    y = "Percent of respondents"
-  ) +
-  theme_minimal() +
-  theme(legend.position = "bottom")
+  scale_x_discrete(labels = ________) +
+  labs(______) +
+  theme_minimal(base_size = 12)
+
+finding3_plot
 ```
 
-If you're unsure what any piece of this code is doing, revisit the annotated explanations under Finding 2 above — `count()`/`group_by()`/`mutate()`, `geom_col()`, `position_stack()`, and `scale_fill_manual()` all work exactly the same way here.
-
-::: {.callout-important}
-## Task (optional)
-Build your Finding 3 visualization using `ggplot2`. Save the plot as a new object (e.g., `finding3_plot`).
-:::
-
-### 1.7 Polish your visualizations for a general audience
-
-Claude: can you incorporate this activity into EACH finding activity?
-
-The plots you just built were built quickly, for you and your instructor — they likely still have `ggplot2`'s default gray background, a placeholder title, and axis labels pulled straight from variable names. Before you export them, revise **each** plot so it could stand on its own in front of someone outside this class:
-
-- A plain-language, descriptive title (not a variable name or question code)
-- Axis and legend labels in plain language
-- A deliberate, consistent color choice across all of your visuals (pick 1-2 colors and reuse them)
-- A caption noting the data source, e.g. `labs(caption = "Source: 2024 Well-Being and Basic Needs Survey")`
-
-Keep your titles **descriptive, not causal** — a title like "Ease-of-Access Score by Food Security Status" is appropriate; a title implying one thing caused another (e.g., "Difficult Access Leads to Food Insecurity") is not something a single cross-sectional survey can support.
+If you're unsure what any piece of this code is doing, revisit the annotated explanations under Finding 2 above.
 
 ::: {.callout-important}
 #### Task
-Revise the titles, axis labels, colors, and captions of each plot you built in this lab so they're ready for a general audience. Display your final, polished version of each plot.
+Build your Finding 3 visualization using `ggplot2`, adding and editing the code above with your own variables and category labels. Save the plot as a new object (e.g., `finding3_plot`).
 :::
 
 ### Export your visualizations and save your environment 
@@ -272,23 +294,21 @@ Revise the titles, axis labels, colors, and captions of each plot you built in t
 Save each of your finished plots as a `.png` file. These files will be used in later in the final project! If you need to adjust the size and look of your plots, you will need to come back to this lab, modify them, and re-export them.
 
 Example: 
-```r
-ggsave("plots/finding1_ease_food_category.png", plot = finding1_plot,
-       width = 5, height = 5, units = "in", dpi = 300)
+```{r}
+#| eval: false
 
-ggsave("plots/finding2_ease_food_by_insecurity.png", plot = finding2_plot,
-       width = 5, height = 6, units = "in", dpi = 300)
+ggsave(here("<insert file path>"), plot = finding1_plot,
+       width = 5, height = 5, units = "in", dpi = 300)
 ```
 
 - Save at `dpi = 300` or higher so your plot looks crisp on a printed page.
 - Use a descriptive file name for each plot (e.g., `finding1_...`, `finding2_...`) so they're easy to find later.
-- If you built a table instead of a plot for any of your findings, use `gtsave()` the same way you'll see described in your final project instructions.
 
 ::: {.callout-important}
 #### Task
 Export each of your polished visualizations as a `.png` file into your `plots` folder. Include a screenshot showing the exported files in your `plots` folder.
 :::
 
-## Looking ahead to your final project
+## Last word: Looking ahead to your final project
 
-The plots you polished and exported in this lab are exactly what will go into the three finding boxes on your final project template — you shouldn't need to rebuild or re-polish them later. What's left for the final project is mostly writing: a title, a headline takeaway, background, population, a short headline and caption for each finding, a "so what," and your data source and limitations. If you want a preview of how these pieces fit together, take a look at the final project instructions and template now.
+The plots you polished and exported in this lab are exactly what will go into the three finding boxes on your final project template. You may need to adjust these plots or saved images for your information sheet. 

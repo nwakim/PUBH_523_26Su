@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nicky Wakim">
+<meta name="author" content="Your name here!">
 
-<title>Final Project Instructions – Introduction to R</title>
+<title>Lab 4 – Introduction to R</title>
 <style>
 
 code{white-space: pre-wrap;}
@@ -20,41 +20,6 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
-}
-
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-{ counter-reset: source-line 0; }
-pre.numberSource code > span
-{ position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-{ content: counter(source-line);
-position: relative; left: -1em; text-align: right; vertical-align: baseline;
-border: none; display: inline-block;
--webkit-touch-callout: none; -webkit-user-select: none;
--khtml-user-select: none; -moz-user-select: none;
--ms-user-select: none; user-select: none;
-padding: 0 4px; width: 4em;
-}
-pre.numberSource { margin-left: 3em; padding-left: 4px; }
-div.sourceCode
-{ }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -4094,31 +4059,28 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose"><span class="header-section-number">1</span> Purpose</a></li>
-  <li><a href="#what-your-information-sheet-should-include" id="toc-what-your-information-sheet-should-include" class="nav-link" data-scroll-target="#what-your-information-sheet-should-include"><span class="header-section-number">2</span> What your information sheet should include</a>
+  <li><a href="#lab-activities" id="toc-lab-activities" class="nav-link active" data-scroll-target="#lab-activities"><span class="header-section-number">1</span> Lab activities</a>
   <ul class="collapse">
-  <li><a href="#title-author-headline-takeaway" id="toc-title-author-headline-takeaway" class="nav-link" data-scroll-target="#title-author-headline-takeaway"><span class="header-section-number">2.1</span> Title + Author + Headline takeaway</a></li>
-  <li><a href="#background-why-it-matters" id="toc-background-why-it-matters" class="nav-link" data-scroll-target="#background-why-it-matters"><span class="header-section-number">2.2</span> Background / why it matters</a></li>
-  <li><a href="#population-who-we-looked-at" id="toc-population-who-we-looked-at" class="nav-link" data-scroll-target="#population-who-we-looked-at"><span class="header-section-number">2.3</span> Population / who we looked at</a></li>
-  <li><a href="#findings" id="toc-findings" class="nav-link" data-scroll-target="#findings"><span class="header-section-number">2.4</span> Findings</a></li>
-  <li><a href="#so-what-what-does-this-mean" id="toc-so-what-what-does-this-mean" class="nav-link" data-scroll-target="#so-what-what-does-this-mean"><span class="header-section-number">2.5</span> So what? / What does this mean?</a></li>
-  <li><a href="#data-source-and-limitations" id="toc-data-source-and-limitations" class="nav-link" data-scroll-target="#data-source-and-limitations"><span class="header-section-number">2.6</span> Data source and limitations</a></li>
+  <li><a href="#restate-your-selected-project" id="toc-restate-your-selected-project" class="nav-link" data-scroll-target="#restate-your-selected-project"><span class="header-section-number">1.1</span> Restate your selected project</a></li>
+  <li><a href="#import-your-saved-data-from-lab-3" id="toc-import-your-saved-data-from-lab-3" class="nav-link" data-scroll-target="#import-your-saved-data-from-lab-3"><span class="header-section-number">1.2</span> Import your saved data from Lab 3</a></li>
+  <li><a href="#plan-your-three-findings" id="toc-plan-your-three-findings" class="nav-link" data-scroll-target="#plan-your-three-findings"><span class="header-section-number">1.3</span> Plan your three findings</a></li>
+  <li><a href="#finding-1-create-the-dataframe" id="toc-finding-1-create-the-dataframe" class="nav-link" data-scroll-target="#finding-1-create-the-dataframe"><span class="header-section-number">1.4</span> Finding 1: Create the dataframe</a></li>
+  <li><a href="#finding-1-visualize-one-main-variable" id="toc-finding-1-visualize-one-main-variable" class="nav-link" data-scroll-target="#finding-1-visualize-one-main-variable"><span class="header-section-number">1.5</span> Finding 1: Visualize one main variable</a></li>
+  <li><a href="#finding-2-create-the-dataframe" id="toc-finding-2-create-the-dataframe" class="nav-link" data-scroll-target="#finding-2-create-the-dataframe"><span class="header-section-number">1.6</span> Finding 2: Create the dataframe</a></li>
+  <li><a href="#finding-2-visualize-the-relationship-between-your-two-main-variables" id="toc-finding-2-visualize-the-relationship-between-your-two-main-variables" class="nav-link" data-scroll-target="#finding-2-visualize-the-relationship-between-your-two-main-variables"><span class="header-section-number">1.7</span> Finding 2: Visualize the relationship between your two main variables</a></li>
+  <li><a href="#finding-3-create-the-dataframe" id="toc-finding-3-create-the-dataframe" class="nav-link" data-scroll-target="#finding-3-create-the-dataframe"><span class="header-section-number">1.8</span> Finding 3: Create the dataframe</a></li>
+  <li><a href="#finding-3-visualize-one-main-variable-one-additional-variable" id="toc-finding-3-visualize-one-main-variable-one-additional-variable" class="nav-link" data-scroll-target="#finding-3-visualize-one-main-variable-one-additional-variable"><span class="header-section-number">1.9</span> Finding 3: Visualize one main variable + one additional variable</a></li>
+  <li><a href="#export-your-visualizations-and-save-your-environment" id="toc-export-your-visualizations-and-save-your-environment" class="nav-link" data-scroll-target="#export-your-visualizations-and-save-your-environment"><span class="header-section-number">1.10</span> Export your visualizations and save your environment</a></li>
   </ul></li>
-  <li><a href="#tips-for-exporting-and-polishing-your-visuals" id="toc-tips-for-exporting-and-polishing-your-visuals" class="nav-link" data-scroll-target="#tips-for-exporting-and-polishing-your-visuals"><span class="header-section-number">3</span> Tips for exporting and polishing your visuals</a>
-  <ul class="collapse">
-  <li><a href="#getting-your-images-out-of-r" id="toc-getting-your-images-out-of-r" class="nav-link" data-scroll-target="#getting-your-images-out-of-r"><span class="header-section-number">3.1</span> Getting your images out of R</a></li>
-  <li><a href="#polishing-plots-and-tables-before-you-export-them" id="toc-polishing-plots-and-tables-before-you-export-them" class="nav-link" data-scroll-target="#polishing-plots-and-tables-before-you-export-them"><span class="header-section-number">3.2</span> Polishing plots and tables before you export them</a></li>
-  </ul></li>
-  <li><a href="#before-you-submit" id="toc-before-you-submit" class="nav-link" data-scroll-target="#before-you-submit"><span class="header-section-number">4</span> Before you submit</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Final_Project_instructions.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lastname_firstinit_lab_04.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Final Project Instructions</h1>
+<h1 class="title">Lab 4</h1>
 <p class="subtitle lead">PUBH 523/623</p>
 </div>
 
@@ -4129,7 +4091,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Nicky Wakim </p>
+             <p>Your name here! </p>
           </div>
   </div>
     
@@ -4154,203 +4116,181 @@ vertical-align: -.125em;
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Important
+Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>These instructions are ALMOST complete, but not quite!! You can check this page to get a sense of the project, but I would not follow the guidelines strictly for now!</p>
-<p>Nicky (8/24/2026)</p>
+<p>Note that this is the editing file. <strong>There are detailed instructions on our course page for Lab 2 that are not in this file.</strong></p>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="lab-activities" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="lab-activities"><span class="header-section-number">1</span> Lab activities</h2>
+<section id="restate-your-selected-project" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="restate-your-selected-project"><span class="header-section-number">1.1</span> Restate your selected project</h3>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Important</span>Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Please turn in your final <strong>.pptx</strong> file and <strong>.pdf</strong> version on Brightspace, using the naming convention <code>lastname_firstinit_final_project.pptx</code> and <code>lastname_firstinit_final_project.pdf</code>.</p>
-<p>Your final project builds <em>directly</em> on Labs 1–4. You should not need to code much more beyond your labs! You’re taking the data, composite score(s), summary table, and visualizations you already built and turning them into a <strong>one-page information sheet</strong> that someone outside this class could read and understand in a couple of minutes.</p>
-<p>Most of this project is about <strong>translating your work into plain language</strong> and <strong>polishing your visuals</strong> so they can stand alone for a specific audience.</p>
+<p>Copy and paste the row from the above table that corresponds to your project into your <code>.qmd</code> file, same as you did in Lab 3.</p>
 </div>
 </div>
-<section id="purpose" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="purpose"><span class="header-section-number">1</span> Purpose</h2>
-<p>Across Labs 1–4 you turned the raw Well-Being and Basic Needs Survey (WBNS) into a cleaned dataset, built a composite score, summarized it in a table, and visualized it. In this final project, you will translate that work for a reader who has never seen your code: a <strong>one-page information sheet</strong>, built from the provided PowerPoint template, that presents your project focus, your key findings, and why they matter.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+</section>
+<section id="import-your-saved-data-from-lab-3" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="import-your-saved-data-from-lab-3"><span class="header-section-number">1.2</span> Import your saved data from Lab 3</h3>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Important</span>Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Two examples are provided as inspiration, but at two different scales:</p>
-<ul>
-<li><a href="https://venngage.com/templates/infographics/statistical">Venngage statistical infographic templates</a>: you can use these as inspiration for <em>styling and layout</em>.</li>
-<li><a href="https://multco.us/info/health-data-reports">Multnomah County Health Data and Reports</a>: you can use these as inspiration for <em>content, structure, and language</em>.
-<ul>
-<li>A lot of these are very long, but I think it’s helpful for you to see what a public health department puts out for the public!</li>
-</ul></li>
-</ul>
+<p>From the <code>.rda</code> file you exported at the end of Lab 3, import <code>wbns_06_cat</code> and <code>summary_table_overall</code> into R using <code>load()</code> or <code>import()</code> from the <code>rio</code> package. Print out the number of rows and columns of <code>wbns_06_cat</code> to verify the import.</p>
 </div>
 </div>
 </section>
-<section id="what-your-information-sheet-should-include" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="what-your-information-sheet-should-include"><span class="header-section-number">2</span> What your information sheet should include</h2>
-<p>Use the provided PowerPoint template (<code>final_project_template.pptx</code>) as your starting point. It is sized for a normal sheet of paper (8.5” × 11”, one slide) and laid out with the sections below already placed for you — replace the placeholder text and placeholder image boxes with your own content. You’re welcome to adjust the layout, but the following information should appear somewhere on your page:</p>
-<ol type="1">
-<li><strong>Title + Author + Headline takeaway</strong>: a short title and one plain-language sentence that captures your single most important finding. If someone only reads one line on your whole page, this should be it.</li>
-<li><strong>Background / Why it matters</strong>: a few sentences on what the WBNS is and why your topic matters, drawing on what you wrote for Lab 1 (motivation for the study, why basic needs matter).</li>
-<li><strong>Population / Who we looked at</strong>:a plain-language description of your population and sample size — no code, no variable names like <code>FPL_LT50</code> (e.g. “adults living below the poverty line who received free groceries or meals in the past year”).</li>
-<li><strong>Findings</strong>: 2-3 short findings, each pairing <strong>one image</strong> (a polished plot or table, exported from R, see below) with <strong>1-3 sentences of plain-language description</strong> for each finding. Structure them so they build on each other:
-<ul>
-<li><strong>Finding 1: One main variable on its own.</strong> Describe what you found for a single main variable by itself (not yet in relation to anything else) — for example, the overall distribution of your composite score, or what share of your population fell into each category of your other main variable.</li>
-<li><strong>Finding 2: the relationship between your two main variables.</strong> This is the heart of your project question. Show how your composite score compares across the groups of your other main variable (this is exactly what your Lab 3 grouped summary and Lab 4 visualization already show you).</li>
-<li><strong>Finding 3 (optional): one main variable alongside one additional variable.</strong> If you have room, take one main variable and break it down by one of the suggested additional variables from your Lab 2 table (e.g., a demographic variable) to add texture to your story.</li>
-</ul>
-Your tables and plots are hopefully already completed from Labs 3/4. At this point, you should focus on choosing which findings to present, polishing the table/visual, and describing the finding in plain language.</li>
-<li><strong>So what? / What does this mean?</strong>: a few sentences connecting your findings back to your original question: why does this matter, and what might it suggest for programs or policy?</li>
-<li><strong>Data source and limitations</strong>: a short citation of the WBNS, and at least one honest limitation of your analysis (e.g., small sample size after filtering, self-reported data, cross-sectional so no causal claims).</li>
-</ol>
-<p>The sections below will give more detail on what is expected in each section.</p>
-<section id="title-author-headline-takeaway" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="title-author-headline-takeaway"><span class="header-section-number">2.1</span> Title + Author + Headline takeaway</h3>
-<p>This is the dark banner at the very top of the template — the first (and maybe only) thing a reader sees.</p>
-<ul>
-<li><strong>Title:</strong> Keep it descriptive, not clever. You don’t need a pun, a play on words, or a catchy hook — a plain title like “Food Security Among Free Food Recipients” does the job. A reader should know what your page is about before they’ve read a single full sentence.</li>
-<li><strong>Author:</strong> Include your name here.</li>
-<li><strong>Headline takeaway:</strong> One sentence, in plain language, that states your single most important finding. This is the sentence you’d want someone to remember if they only read one line on the whole page. Write it the way you’d say it out loud to a person — not like the results line of a hypothesis test (e.g., “Most adults who received free groceries or meals also reported experiencing food insecurity,” not “Food insecurity was observed in X% of the sample”).</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
+<section id="plan-your-three-findings" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="plan-your-three-findings"><span class="header-section-number">1.3</span> Plan your three findings</h3>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Important</span>Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>It’s often easier to write this section <em>last</em>, after you’ve written your findings — it’s much easier to summarize a story you’ve already told than to write the summary first.</p>
+<p>For Finding 1 and 3, write down which variable(s) you will visualize.</p>
 </div>
 </div>
-</section>
-<section id="background-why-it-matters" class="level3" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="background-why-it-matters"><span class="header-section-number">2.2</span> Background / why it matters</h3>
-<p>This goes under <strong>“Why This Matters”</strong> on the left side of the page, just below the title banner. In 2-4 sentences:</p>
 <ul>
-<li>Briefly explain what the Well-Being and Basic Needs Survey is (a survey of adults’ experiences with finances, poverty, hardship, housing, and safety-net programs)
-<ul>
-<li>A quick sentence is enough, this isn’t the focus.</li>
-</ul></li>
-<li>Spend the rest of the space on why <em>your specific topic</em> matters. Pull from what you wrote in Lab 1 about your motivation for choosing this project
-<ul>
-<li>Why should a reader care about food security, LGBTQ+ healthcare trust, or mental health and benefit receipt (whichever is your project)?</li>
-</ul></li>
-</ul>
-<p>Write it as if you’re explaining your project to a relative with no public health background.</p>
-</section>
-<section id="population-who-we-looked-at" class="level3" data-number="2.3">
-<h3 data-number="2.3" class="anchored" data-anchor-id="population-who-we-looked-at"><span class="header-section-number">2.3</span> Population / who we looked at</h3>
-<p>This goes under <strong>“Who We Looked At”</strong> on the right side, parallel to the background section. In a similar amount of space, plainly state:</p>
-<ul>
-<li>Who qualified for your study population (the filtering criteria from Lab 2) — described in plain English, not variable names. Instead of “FPL_LT50 == 1,” write something like “adults living below the federal poverty line.”</li>
-<li>Your final sample size, after all of your data cleaning in Labs 2-3 (the template literally has a <code>&lt;number&gt;</code> placeholder for this — don’t skip it, a reader will want to know how many people your findings are based on).</li>
-</ul>
-<p>Avoid any variable names or question codes (<code>FOOD_INSEC</code>, <code>Q27</code>, etc.) — if you wouldn’t say it out loud to a stranger, rewrite it.</p>
-</section>
-<section id="findings" class="level3" data-number="2.4">
-<h3 data-number="2.4" class="anchored" data-anchor-id="findings"><span class="header-section-number">2.4</span> Findings</h3>
-<p>Each finding box in the template has <strong>two</strong> pieces of text, not one:</p>
-<ul>
-<li>A <strong>short headline</strong> above the image (a few words, not a full sentence) — think of it like a newspaper subhead that names the point of that finding at a glance, e.g. “Access Difficulty Varies by Food Security Status.”</li>
-<li>A <strong>1-3 sentence caption</strong> below each image that spells the finding out in plain language.</li>
-</ul>
-<p>Use the 2-3 findings to build your story in order (see the structure above): Finding 1 introduces one main variable on its own, Finding 2 shows the relationship between your two main variables (this is your core result), and the optional Finding 3 adds one additional variable for texture. For example, a Finding 1 headline/caption pair might look like:</p>
-<blockquote class="blockquote">
-<p><strong>Headline:</strong> Most Respondents Reported Food Insecurity</p>
-<p><strong>Caption:</strong> Among adults who received free groceries or meals in the past year, approximately 75% also reported experiencing food insecurity in the past 12 months.</p>
-</blockquote>
-<p>(If you’re on Project 3, a Finding 1 caption might instead read something like: “72% of respondents reported feeling nervous or hopeless at least some of the time in the past 30 days.”)</p>
-<p>For every caption, state the number, then say what it means, not “the mean composite score was 14.3,” but something closer to “most people in our sample reported relatively easy access to free food.” Keep your language <strong>descriptive, not causal</strong>: say what you found (e.g., “respondents who reported X also more often reported Y”), not that one thing caused, drove, or explains another. A single survey snapshot can’t support that kind of claim. Words like “associated with” or “related to” also imply statistical testing you haven’t done here, so we need to stick to desriptive language.</p>
-</section>
-<section id="so-what-what-does-this-mean" class="level3" data-number="2.5">
-<h3 data-number="2.5" class="anchored" data-anchor-id="so-what-what-does-this-mean"><span class="header-section-number">2.5</span> So what? / What does this mean?</h3>
-<p>This is the shaded callout box near the bottom of the page. In a few sentences, connect your findings back to your original project question: why does this matter, and what might it suggest for programs or policy? You don’t need to make formal policy recommendations — just describe the implication in plain language, and keep it as descriptive as your findings (avoid claiming your data proves a program should change; describe what your findings might suggest is worth a closer look).</p>
-</section>
-<section id="data-source-and-limitations" class="level3" data-number="2.6">
-<h3 data-number="2.6" class="anchored" data-anchor-id="data-source-and-limitations"><span class="header-section-number">2.6</span> Data source and limitations</h3>
-<p>This is the small-print line at the very bottom of the page. In one or two sentences:</p>
-<ul>
-<li>Cite the WBNS (see the Lab 1 resources for how to cite it).</li>
-<li>Name at least one honest limitation of your analysis — for example, your sample size after filtering, the fact that responses are self-reported, or that the survey is cross-sectional (a single point in time), so your findings describe what respondents reported together, not what caused what.</li>
+<li><strong>Finding 1 variable:</strong></li>
+<li><strong>Finding 3 variable(s) (optional):</strong></li>
 </ul>
 </section>
-</section>
-<section id="tips-for-exporting-and-polishing-your-visuals" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="tips-for-exporting-and-polishing-your-visuals"><span class="header-section-number">3</span> Tips for exporting and polishing your visuals</h2>
-<section id="getting-your-images-out-of-r" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="getting-your-images-out-of-r"><span class="header-section-number">3.1</span> Getting your images out of R</h3>
-<p>Everything you place into the PowerPoint template is a static image (<code>.png</code> or <code>.jpg</code>) — there’s no live R code in a PowerPoint file, so you’ll export your finished plots and tables from your Lab 3/4 <code>.qmd</code> and then place the image files into the template.</p>
-<p>This will require you to write some more code or adjust your previously saved images. Adjustments are usually needed to make sure it is legible within the powerpoint.</p>
-<p>It might also be nice to create a new folder within your project folder called <code>images</code> to hold all of your exported images.</p>
-<p><strong>Saving a <code>ggplot</code>:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&quot;plots/ease_food_by_insecurity.png&quot;</span>, <span class="at">plot =</span> my_plot,</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">width =</span> <span class="dv">5</span>, <span class="at">height =</span> <span class="dv">4</span>, <span class="at">units =</span> <span class="st">&quot;in&quot;</span>, <span class="at">dpi =</span> <span class="dv">300</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ul>
-<li>Save at <code>dpi = 300</code> or higher so it looks crisp on a printed page.</li>
-<li>Match the <code>width</code>/<code>height</code> roughly to the space you have in the template so you don’t have to stretch or squish it later</li>
-</ul>
-<p><strong>Saving a <code>gtsummary</code>/<code>gt</code> table as an image:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  gtsummary, </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  gt, </span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  webshot2</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>my_table <span class="ot">&lt;-</span> <span class="fu">tbl_summary</span>(wbns_06_cat, <span class="at">by =</span> FOOD_INSEC) <span class="sc">|&gt;</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_gt</span>()</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">gtsave</span>(<span class="at">data =</span> my_table, <span class="at">file =</span> <span class="fu">here</span>(<span class="st">&quot;project&quot;</span>, <span class="st">&quot;images&quot;</span>, <span class="st">&quot;food_ins_table.png&quot;</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>gtsave()</code> needs the <code>webshot2</code> package installed the first time (<code>install.packages(&quot;webshot2&quot;)</code>). If you’d rather not install anything new, you can also just take a screenshot of the rendered table from your Viewer pane — that works fine for a one-pager.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<section id="finding-1-create-the-dataframe" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="finding-1-create-the-dataframe"><span class="header-section-number">1.4</span> Finding 1: Create the dataframe</h3>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Important</span>Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Whichever route you use, open the image file afterward and check that it’s actually readable at a glance — text that looked fine on your screen can turn out tiny once it’s shrunk into a template box.</p>
+<p>Use <code>count()</code> and <code>mutate()</code> to build a small dataframe of counts and percentages for your Finding 1 variable. Save it as a new object called <code>finding1_data</code>.</p>
 </div>
 </div>
 </section>
-<section id="polishing-plots-and-tables-before-you-export-them" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="polishing-plots-and-tables-before-you-export-them"><span class="header-section-number">3.2</span> Polishing plots and tables before you export them</h3>
-<p>The plots and table you made for Lab 3/4 were built for you and your instructor — they may still have default <code>ggplot</code> gray backgrounds, variable names as axis labels, or titles like “Boxplot of trust_courtesy_respect by Q27.” Before exporting, revise each one so it can stand on its own for a general audience:</p>
-<ul>
-<li>A plain-language, descriptive title (not a variable name)</li>
-<li>Axis or column labels in plain language (no raw variable names or question codes)</li>
-<li>A deliberate color choice, ideally consistent across your visuals</li>
-<li>A caption noting the data source, if it doesn’t already appear elsewhere on your page (e.g., “Source: 2024 Well-Being and Basic Needs Survey”)</li>
-</ul>
-<p>A <code>tbl_summary()</code> table is great for a report but can be dense on a one-pager — consider whether a simple bar chart of your grouped summary statistics would land faster for your audience than the full table.</p>
+<section id="finding-1-visualize-one-main-variable" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="finding-1-visualize-one-main-variable"><span class="header-section-number">1.5</span> Finding 1: Visualize one main variable</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Build your Finding 1 visualization using <code>ggplot2</code>, adding and editing the code above with your own variable and category labels. Save the plot as a new object (e.g., <code>finding1_plot</code>).</p>
+</div>
+</div>
 </section>
+<section id="finding-2-create-the-dataframe" class="level3" data-number="1.6">
+<h3 data-number="1.6" class="anchored" data-anchor-id="finding-2-create-the-dataframe"><span class="header-section-number">1.6</span> Finding 2: Create the dataframe</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>count()</code>, <code>group_by()</code>, and <code>mutate()</code> to build a dataframe of within-group percentages for your two main variables. Save it as a new object called <code>finding2_data</code>.</p>
+</div>
+</div>
 </section>
-<section id="before-you-submit" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="before-you-submit"><span class="header-section-number">4</span> Before you submit</h2>
-<p>Read your finished page as if you were a stranger seeing it for the first time — does it read cleanly top to bottom, does every visual have a caption, and is there anything left over that still sounds like it was written for this class instead of for a general audience (leftover variable names, stats without interpretation, placeholder text from the template)?</p>
-<p>Confirm your files are named <code>lastname_firstinit_final_project.pptx</code> and <code>lastname_firstinit_final_project.pdf</code> before uploading to Brightspace.</p>
+<section id="finding-2-visualize-the-relationship-between-your-two-main-variables" class="level3" data-number="1.7">
+<h3 data-number="1.7" class="anchored" data-anchor-id="finding-2-visualize-the-relationship-between-your-two-main-variables"><span class="header-section-number">1.7</span> Finding 2: Visualize the relationship between your two main variables</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Build your Finding 2 visualization using <code>ggplot2</code>, adding and editing the code above with your own variables and category labels. Save the plot as a new object (e.g., <code>finding2_plot</code>).</p>
+</div>
+</div>
+</section>
+<section id="finding-3-create-the-dataframe" class="level3" data-number="1.8">
+<h3 data-number="1.8" class="anchored" data-anchor-id="finding-3-create-the-dataframe"><span class="header-section-number">1.8</span> Finding 3: Create the dataframe</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Clean your chosen additional variable, then use <code>count()</code>, <code>group_by()</code>, and <code>mutate()</code> to build a dataframe of within-group percentages. Save it as a new object called <code>finding3_data</code>.</p>
+</div>
+</div>
+</section>
+<section id="finding-3-visualize-one-main-variable-one-additional-variable" class="level3" data-number="1.9">
+<h3 data-number="1.9" class="anchored" data-anchor-id="finding-3-visualize-one-main-variable-one-additional-variable"><span class="header-section-number">1.9</span> Finding 3: Visualize one main variable + one additional variable</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Build your Finding 3 visualization using <code>ggplot2</code>, adding and editing the code above with your own variables and category labels. Save the plot as a new object (e.g., <code>finding3_plot</code>).</p>
+</div>
+</div>
+</section>
+<section id="export-your-visualizations-and-save-your-environment" class="level3" data-number="1.10">
+<h3 data-number="1.10" class="anchored" data-anchor-id="export-your-visualizations-and-save-your-environment"><span class="header-section-number">1.10</span> Export your visualizations and save your environment</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Export each of your polished visualizations as a <code>.png</code> file into your <code>plots</code> folder. Include a screenshot showing the exported files in your <code>plots</code> folder.</p>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

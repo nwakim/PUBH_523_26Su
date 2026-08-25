@@ -23,6 +23,13 @@ execute:
   freeze: auto 
 ---
 
+::: callout-warning
+#### Important
+These instructions are ALMOST complete, but not quite!! You can check this page to get a sense of the project, but I would not follow the guidelines strictly for now!
+
+Nicky (8/24/2026)
+:::
+
 
 ::: {.callout-note}
 Please turn in your final **.pptx** file and **.pdf** version on Brightspace, using the naming convention `lastname_firstinit_final_project.pptx` and `lastname_firstinit_final_project.pdf`.
