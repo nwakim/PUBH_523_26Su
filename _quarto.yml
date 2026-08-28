@@ -21,7 +21,7 @@ website:
         text: Practice
       - href: project.qmd
         text: Project
-      - href: lesson_references.qmd
+      - href: resources.qmd
         text: Resources   
         
 execute:

@@ -1,5 +1,6 @@
 ---
-title: "HRS Codebook"
+title: "HRS Codebook: Information on Variables"
+description: "This resource contains a table of the variables within the HRS dataset, including their descriptions, levels, and label."
 format: 
   html:
     page-layout: full
